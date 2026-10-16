@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "{\"model\":\"typesafe/jev-1.13-20260917\",\"answers\":{\"q1\":{\"type\":\"choice\",\"choice\":\"two_protocol_groups\",\"probabilities\":{\"within_run_replicates\":0,\"conflicting\":0,\"all_original\":0,\"all_smbb\":0,\"two_protocol_groups\":1,\"not_stated\":0,\"other\":0},\"confidence\":1},\"q2\":{\"type\":\"choice\",\"choice\":\"bundled_changes\",\"probabilities\":{\"conflicting\":0,\"smoothing_only\":0,\"initialization_only\":0,\"not_stated\":0,\"bundled_changes\":1},\"confidence\":1}},\"usage\":{\"input_tokens\":1294,\"output_tokens\":151,\"cost\":0.000054348},\"id\":\"gen-dec-1789972191-VoaRyFsmN8vKnkWSelAf\",\"provider\":\"TypeSafe\"}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 06:29:51 GMT"
+  },
+  "latency_seconds": 0.34175550000509247,
+  "transport_error": null,
+  "received_at": "2026-09-21T06:29:51.381706+00:00"
+}

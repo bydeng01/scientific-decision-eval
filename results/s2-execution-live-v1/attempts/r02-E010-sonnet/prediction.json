@@ -1,0 +1,66 @@
+{
+  "job_id": "r02-E010-sonnet",
+  "group_id": "E010",
+  "model_id": "sonnet",
+  "repeat": 1,
+  "answers": {
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false,
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    "clauses": {
+      "independent_assignment": "inconsistent",
+      "zero_exposure": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "claude-sonnet-5",
+  "response_id": "msg_011CfG7bbuHzCGUhjZFp8eLs",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1991,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "input_tokens": 1991,
+    "output_tokens": 27,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": 0.004252,
+    "usage_cost_upper_estimate_usd": 0.004252,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.9869434169959277,
+    "derivation_wall_seconds": 5.116700776852667e-05,
+    "derivation_cpu_seconds": 5.100000000002325e-05
+  },
+  "request_sha256": "2953d1824f29e33736caff3aa4cb624d7a4666c12bf721375fb72ed35bc7dbcf",
+  "receipt_sha256": "dfb184d081eaa1118a792855755895ea698d8a9b3839677b264ef6c29371a355",
+  "simulated": false,
+  "halt_model": false
+}

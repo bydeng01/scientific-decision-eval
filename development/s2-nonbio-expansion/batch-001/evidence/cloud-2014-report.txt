@@ -1,0 +1,507 @@
+
+=== PDF PAGE 1 ===
+Wyoming Weather 
+Modification
+Pilot Program (WWMPP)
+Colorado River Water User’s Association
+Annual Meeting
+Las Vegas, Nevada
+ 
+ 
+ 
+ 
+ Barry LawrenceWyoming Water Development OfficeCheyenne, WYRoy RasmussenNational Center for Atmospheric ResearchBoulder, CO
+December 11, 2014
+
+
+=== PDF PAGE 2 ===
+Presentation Overview
+n
+Results of the WWMPP Study
+n
+Next Steps: Collaborative Weather Modification  
+
+
+=== PDF PAGE 3 ===
+Wyoming Weather 
+Modification Pilot Program
+Funding Acknowledgements
+Wyoming State Legislature
+ 
+Legislative Select Water Committee
+Wyoming Water Development Commission
+ 
+n
+University of Wyoming Office of Water Programs
+n
+Central Arizona Project
+n
+Colorado Water Board of California 
+–
+ 
+Six
+-
+Agency Committee
+n
+Southern Nevada Water Authority
+Additional Funding
+
+=== PDF PAGE 4 ===
+n
+High resolution computer modeling 
+of the clouds and airflow should be 
+used to support both operations 
+and evaluations.
+n
+Remote
+-
+controlled ground
+-
+based 
+seeding generators should be used 
+to optimize targeting.
+n
+Program evaluation should be 
+independent
+and use both physical 
+and statistical methods. 
+n
+Physical studies that examine processes 
+important to the seeding concepts.
+n
+Randomized experiment: quantitative 
+assessment.
+WWMPP consistent 
+with the 2003 
+National Research Council Report:
+
+
+=== PDF PAGE 5 ===
+Operations …
+n
+Weather Modification, Inc.
+–
+Fargo, ND
+n
+Heritage Environmental, Denver, CO
+n
+National Center for Atmospheric
+Research 
+–
+Boulder, CO
+n
+Desert Research Institute, Reno, NV
+Research & Evaluation …
+
+
+=== PDF PAGE 6 ===
+Program 
+Components
+
+=== PDF PAGE 7 ===
+Weather Balloon Launches (Saratoga, WY)
+
+=== PDF PAGE 8 ===
+Radiometers
+Units deployed near:
+   
+-
+ 
+Boulder, WY
+         
+(Wind River Range)
+   
+-
+ 
+Saratoga, WY
+         
+(Medicine Bow Range)
+   
+-
+ 
+Savery
+, WY
+             
+(Sierra Madre Range)
+
+
+=== PDF PAGE 9 ===
+Feburary 4, 2008Wyoming Weather Modification
+Targeting – “Detailed” profile snow samples 
+Trace chemistry snow sample collection
+
+
+=== PDF PAGE 10 ===
+D1: 18km
+D2: 6kmD3: 2km
+NCAR Weather Research and Forecast Numerical Model
+
+=== PDF PAGE 11 ===
+High Resolution
+Precipitation Gauge Sites 
+Three gauges per site(Two different style gauges)
+
+=== PDF PAGE 12 ===
+Education & 
+Outreach
+Efforts
+
+
+=== PDF PAGE 13 ===
+WWMPP Target Areas
+Operations were conducted annually from 15 November through 15 April, barring suspension.
+Evaluation – modeling studies
+Randomized Seeding Experiment
+
+=== PDF PAGE 14 ===
+Scientific Evaluation of the Wyoming Weather Modification Pilot Project (WWMPP)
+Roy Rasmussen, Sarah 
+Tessendorf
+, Courtney 
+Weeks
+, 
+Lulin
+Xue
+, Kyoko 
+Ikeda, Scott 
+Landolt
+and Dan Breed 
+National Center for Atmospheric Research
+
+=== PDF PAGE 15 ===
+Approach to the  Evaluation
+n
+Will apply the accumulation of evidence 
+approach to evaluation 
+recommended by  
+National Research Council 2003 report on 
+Weather 
+Modification 
+focused on 
+the 
+following areas:
+1. Statistical 
+2. Physical 
+3. Modeling 
+2003 National Research Council Report:•Program evaluation should be independent and use both physical and statistical methods. •High resolution computer modeling should be used to support both operations and evaluations.
+
+
+=== PDF PAGE 16 ===
+Randomized Crossover Experimental Design
+Similarity in storm conditions affecting both ranges allow for the possibility of a “cross-over” design resulting in paired data (seeded and control cases), and statistically is the most efficient design to conduct and evaluate.
+
+=== PDF PAGE 17 ===
+What variable used to evaluate the program? 4 hour precipitation accumulation  from snowgauges
+Three gauges per siteTwo different style gauges (ETI, Geonor)Resolution: 1-min, 0.1 mm
+
+=== PDF PAGE 18 ===
+Summary of Cases and Seeding Decisions over 
+the Medicine Bow Range for 118 quality 
+controlled cases
+
+
+=== PDF PAGE 19 ===
+Primary Statistical Results
+The primary statistical results (confirmatory analysis) using 
+the 
+snowgauge
+data with a randomized cross
+-
+over statistical 
+design are:
+RRR = 1.03               (3% increase in precipitation)
+P
+-
+value = 0.28         (28% chance that occurs by chance)
+Since the p
+-
+value is greater than 0.05, the statistical test 
+does not reject the null hypothesis that there is no effect of 
+cloud seeding.   
+
+=== PDF PAGE 20 ===
+Primary statistical analysis
+
+
+=== PDF PAGE 21 ===
+Further Exploratory Statistical 
+Analysis
+Further analysis of the data suggested two 
+primary physical effects impacting the statistical 
+analysis of the 4
+-
+hr precipitation data: 
+1.
+Down
+-
+wind seeding of the Med Bow Range by 
+the Sierra Madre generators
+2.
+Minimum number of generator hours per case 
+(or coverage of the cloud with silver iodide).
+
+=== PDF PAGE 22 ===
+Examination of the potential 
+of downwind seeding of the 
+Medicine Bows by Sierra 
+Madre
+Downwind Seeding of Med Bows by Sierra Madre
+
+=== PDF PAGE 23 ===
+Ice Nuclei Plume 
+Detection and Snow 
+Sampling 
+Mountain Meadows Cabins, Medicine Bow Range, December 2008
+Downwind Impacts
+
+=== PDF PAGE 24 ===
+n
+The 
+ground
+-
+based AINC measurements 
+indicated that silver iodide reached the Medicine 
+Bow target in 21 Sierra Madre seeding cases. 
+n
+Eliminating 
+these 21 cases from the 
+118 snow 
+gauge 
+cases 
+increased the RRR from 1.03 to 
+1.04.
+
+=== PDF PAGE 25 ===
+An 
+AgI
+cloud seeding 
+parameterization implemented 
+into the Weather Research and 
+Forecast NCAR modelXue et al., 2013: Implementation of a silver iodide cloud seeding parameterization in WRF. Part I: Model description and idealized 2D sensitivity tests. JAMC.Xue et al., 2013: Implementation of a silver iodide cloud seeding parameterization in WRF. Part II: 3D simulations of actual seeding events and sensitivity tests. JAMC.
+Downwind Seeding of the Medicine Bow by the Sierra Madre
+
+=== PDF PAGE 26 ===
+
+
+=== PDF PAGE 27 ===
+Simulated precipitation from nucleation of AgI
+
+=== PDF PAGE 28 ===
+Simulated increase in precipitation due to cloud seeding with AgI
+X Target
+
+=== PDF PAGE 29 ===
+The model estimated 18 cases of enhanced 
+precipitation in the 
+Medicine Bow target 
+during  
+Sierra Madre seeding 
+cases (for 2009/2010, 
+2011/2012, 2013/2014). 
+Eliminating 
+these 
+18 
+cases from the 
+118 snow 
+gauge 
+cases 
+increased the RRR from 1.03 to 
+1.09.
+
+=== PDF PAGE 30 ===
+Eliminating cases of 
+downwind 
+seeding of the Med Bows by Sierra Madre 
+seeding from silver iodide ground based measurements and model estimates of 
+seeding precipitation and applying the statistical analysis results in values of 
+RRR from 1.04 to 1.09. 
+
+
+=== PDF PAGE 31 ===
+Impact of the number of generators 
+active per case on the 
+snowguage
+statistics
+Impact of the number of generators active per case
+
+=== PDF PAGE 32 ===
+
+
+=== PDF PAGE 33 ===
+effect
+Procedure: Simulate three years of 
+the RSE using the exact seeding 
+timing and conditions (57 cases)
+Seasons2009/2010 2011/20122013/2014
+
+=== PDF PAGE 34 ===
+Summary of Cases and Seeding 
+Decisions
+
+
+=== PDF PAGE 35 ===
+Eliminating cases with generator hours per case of less 
+than 21 
+hours and applying the statistical analysis 
+results in values of RRR from 
+1.03 
+to 
+1.17. 
+
+
+=== PDF PAGE 36 ===
+Simulation of the impact 
+of 
+AgI
+seeding with the 
+WRF model shows 10
+-
+15% increase in 
+precipitation 
+
+=== PDF PAGE 37 ===
+Model estimate of seeding effect by direct simulation of 
+seeding and natural cloud for ½ of the RSE cases 
+shows 10
+-
+15% increase over a season
+
+
+=== PDF PAGE 38 ===
+Conclusion:
+The accumulated 
+evidence 
+from the 
+statistical, modeling, 
+and physical studies 
+suggests a positive 
+orographic seeding 
+effect, over a winter 
+season, between 5 
+and 15% in the 
+Medicine Bow and 
+Sierra Madre Ranges, 
+for 
+seedable
+cases 
+based on the RSE 
+criteria and for which 
+sufficient ground
+-
+based silver iodide 
+seeding was 
+achieved
+
+
+=== PDF PAGE 39 ===
+http://wwdc.state.wy.us
+
+=== PDF PAGE 40 ===
+Next Steps: 
+Collaborative Weather 
+Modification
+
+
+=== PDF PAGE 41 ===
+Wyoming Weather Modification Project
+WindRiverRange
+SierraMadreMedicineBow
+Evaluation modeling studies
+Randomized seeding experiment
+Final Results Presentation December 10, 2014
+
+=== PDF PAGE 42 ===
+Wyoming Weather Modification Project
+WindRiverRangeOperations 2014-15
+
+
+=== PDF PAGE 43 ===
+Wind River Range
+n
+WWMPP GROUND
+-
+BASED GENERATOR
+n
+WWMPP GROUND
+-
+BASED GENERATOR
+(LOWER BASIN FUNDED)
+n
+RADIOMETER 
+
+
+=== PDF PAGE 44 ===
+2014 Wyoming Legislative Session
+Omnibus Water Bill 
+-
+Construction
+n
+Included $240K cost share funding for continued 
+operations in the Wind River Range for Winter 
+‘14/15 with a total project cost of $930,000.
+n
+State of Wyoming’s participation capped at 25%
+to reflect:
+-
+Historical participation of three Lower Basin funding partners
+-
+Acknowledgement of other States’ programs
+-
+Believe majority of benefits will be accrued downstream
+
+=== PDF PAGE 45 ===
+Wind River Range Winter 2014
+-
+15
+Funding Partners
+Operations:
+n
+Southern Nevada Water Authority
+n
+Central Arizona Project
+n
+Colorado Water Board of California 
+–
+Six
+-
+Agency Committee
+n
+Arizona Dept. of Water Resources
+n
+Utah Division of Water Resources
+Modeling and Evaluation:
+n
+US Bureau of Reclamation
+
+
+=== PDF PAGE 46 ===
+n
+No ownership of any additional water 
+produced is implied.
+n
+No expectation of a certain amount of water 
+being delivered downstream.
+n
+Treated as a natural event.
+n
+Subject to Wyoming Water Law.
+n
+An effort to improve system conditions.
+Basic Tenets of Program
+
+=== PDF PAGE 47 ===
+Wyoming Weather Modification Project
+WindRiverRangeOperations 2014-15
+
+=== PDF PAGE 48 ===
+Wyoming Weather Modification Project
+WindRiverRangeOperations 2014-15Phase II Feasibility StudyWyoming  Range
+
+=== PDF PAGE 49 ===
+Flow Augmentation in the Upper Colorado
+WindRiverRangePhase II Feasibility StudyWyoming  Range
+SierraMadreRandomized seeding experiment
+Evaluation modeling studies
+
+=== PDF PAGE 50 ===
+ral.ucar.edu/projects/wyoming/

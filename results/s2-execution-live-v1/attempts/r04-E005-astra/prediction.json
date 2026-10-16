@@ -1,0 +1,60 @@
+{
+  "job_id": "r04-E005-astra",
+  "group_id": "E005",
+  "model_id": "astra",
+  "repeat": 3,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-6-astra",
+  "response_id": "resp_0d712f713741b75e016ab0cfb3f3b487d2b2274f4a94210899",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 833,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 857
+    },
+    "input_tokens": 833,
+    "output_tokens": 24,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0116125,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.0100686670048162,
+    "derivation_wall_seconds": 4.383400664664805e-05,
+    "derivation_cpu_seconds": 4.2999999999793204e-05
+  },
+  "request_sha256": "9f3461838b6e0284a2577c12c178f0a3e940567c795a9998f10abf8da96b7a04",
+  "receipt_sha256": "d18cd75c1b05cc0dbd6445a93952ed665c92c8b012b5455a6510bd8e48b12d36",
+  "simulated": false,
+  "halt_model": false
+}

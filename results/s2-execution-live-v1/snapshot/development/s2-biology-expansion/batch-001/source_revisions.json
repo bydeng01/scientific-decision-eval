@@ -1,0 +1,82 @@
+{
+  "revision_id": "SOURCE-QUALIFICATION-20260921-B004",
+  "recorded_at_utc": "2026-09-21T05:42:05.131660+00:00",
+  "authorized_by": "user",
+  "summary": "B004 now describes multiple mutant alleles in founder #30 and distinguishes the author-manuscript count of five from the six entries in publisher Figure 3C.",
+  "references_changed": false,
+  "question_instructions_or_options_changed": false,
+  "deterministic_outputs_changed": false,
+  "new_human_scientific_approval": false,
+  "input_revisions": [
+    {
+      "problem_id": "B004",
+      "prior_decision_id": "BIO-UR004",
+      "before_problem_input_sha256": "afa73b70f9a4cbb47a28e41605fd23ac85a132706cf5a2c3154763ffec9868ad",
+      "after_problem_input_sha256": "8da21997970a1f4b42c4ea2e75f6baa039eb1233b490813a2d067d23405fc432",
+      "edits": [
+        {
+          "path": [
+            "evidence",
+            0,
+            "text"
+          ],
+          "before": "Tyr4a, Tyr4b, and Cas9 RNAs were introduced into zygotes. Tail-DNA analysis identified five mutant alleles in completely albino hybrid founder #30. The authors attribute the within-founder diversity to mosaicism, potentially arising from editing that persisted into cleavage stages. Deep sequencing reported 57 mutant alleles meeting its read-frequency threshold across 23 hybrid founders; these are not 57 injected animals.",
+          "after": "Tyr4a, Tyr4b, and Cas9 RNAs were introduced into zygotes. Tail-DNA analysis identified multiple mutant alleles in completely albino hybrid founder #30. The authors attribute the within-founder diversity to mosaicism, potentially arising from editing that persisted into cleavage stages. Deep sequencing reported 57 mutant alleles meeting its read-frequency threshold across 23 hybrid founders; these are not 57 injected animals."
+        },
+        {
+          "path": [
+            "records",
+            "record_origin"
+          ],
+          "before": "Source Results and Methods, as archived in NCBI BioC XML; published aggregate counts, not a new sequence reanalysis or unique-origin count.",
+          "after": "Source Results and Methods, as archived in NCBI BioC XML; published aggregate counts, not a new sequence reanalysis or unique-origin count. The value 5 for founder #30 is the author-manuscript prose report; publisher Figure 3C lists six allele entries. The exact total remains unresolved."
+        }
+      ]
+    }
+  ],
+  "preexisting_file_revisions": {
+    "development/s2-nonbio-expansion/batch-001/sources.json": {
+      "before_sha256": "077848311435cd3bbebbebc15349a8c6589264c35f28111135d84541ead216c4",
+      "after_sha256": "61bc1f763d2bfa2d9d5a1e328d6c04ac4927049d6a1ec3cd576d5f0e959d51ed"
+    },
+    "development/s2-nonbio-expansion/batch-001/REVIEW_LOG.md": {
+      "before_sha256": "f421966ab5f2ba85f32840ed57f498e53a827a8d2d852aaef23983c813a2d3e4",
+      "after_sha256": "c668780916ae6ea59d1114930788592a1d4b8cf9d0f804b514316b6c5cb7f632",
+      "at_source_revision_start_sha256": "815be4ded61badcdd4bd89b7ea253ab72e5d27e50135e5d9e56be08ce628ac29",
+      "preserved_prior_review": "UR005-F01 and its E005 numerical limitations predate this source qualification. The recorded revision concerns E010 wording and its source-revision note."
+    },
+    "development/s2-nonbio-expansion/batch-001/checks.json": {
+      "before_sha256": "34acb08f0670527bc69a7ef26332e2b6caf7508c44c199b8b031fb5732e865af",
+      "after_sha256": "59371040b26c08f9583533a47a4a6a1aba3dc03c07ea5a1ec7c6378c5de95b74"
+    },
+    "development/s2-nonbio-expansion/batch-001/inputs.json": {
+      "before_sha256": "ab62bf85d5c5c60d8d3df3155273aa79dda4583f9981e8ef6a7aaffbe37353f5",
+      "after_sha256": "715dbf5518303a3fd13a92047a32aedfb00259d83fb5729f35b56566abbb0f13"
+    },
+    "development/s2-nonbio-expansion/batch-001/checks.sha256": {
+      "before_sha256": "b83bbbf994f3f353d615b01d685396f89be22fef1aa872d39cb13c2aa6913e48",
+      "after_sha256": "fab84f485e38c555ae9f45c24d7157216ec266df650f5a78844f4eb0b0178a3f"
+    },
+    "development/s2-nonbio-expansion/batch-001/verify_batch.py": {
+      "before_sha256": "d0ee50289f7a2c15064dc79aebdd7777aebbed8ca2b6dcea50b0a0e7ab74886f",
+      "after_sha256": "7e06f5302fb7bf5a6436aad26617edc9564e312fc92b1dd40f054e809d65e5be"
+    },
+    "development/s2-nonbio-expansion/batch-001/BATCH_REVIEW.md": {
+      "before_sha256": "29f5b819d9f2fb18df6cb8b79ef2183eaebe9f70b76d42001549e2523d680818",
+      "after_sha256": "8648da244b37b26b158c380d8987a56468a46cb8820d78a840b485739a2bfeb2",
+      "at_source_revision_start_sha256": "7eae928b03a90962463c36c3701a9d760b1ff130ae523e4204e1faa063d3de88",
+      "preserved_prior_review": "UR005-F01 and its E005 numerical limitations predate this source qualification. The recorded revision concerns E010 wording and its source-revision note."
+    }
+  },
+  "preserved_review_appendices": {
+    "development/s2-nonbio-expansion/batch-001/review_decisions.json": {
+      "original_sha256": "4bf57acf4428659de75c3bc0cee8a1f91486e39f90e6f8172ce4b888b80b14f0",
+      "observed_sha256": "6a573e89a4e167b877a38011bdb67957b54116ab3abe450bc1e45e5e13bc1f82",
+      "follow_up_ids": [
+        "UR005-F01"
+      ],
+      "scope": "The user review appendix was already present before the B004/E010 source edits and is unchanged by them. Removing only the appended field reproduces the original inventoried bytes."
+    }
+  },
+  "preexisting_file_revision_scope": "Historical before/after hashes cover the E010 source qualification and associated documentation and checks. UR005-F01 identifies the preceding E005 review; collection_inventory.json retains the earlier inventory."
+}

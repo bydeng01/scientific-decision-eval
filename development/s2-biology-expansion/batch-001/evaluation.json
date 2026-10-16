@@ -1,0 +1,212 @@
+{
+  "schema_version": "s2-biology-expansion-v1",
+  "evaluation_only": true,
+  "batch_id": "biology-batch-001",
+  "problems": [
+    {
+      "problem_id": "B001",
+      "review_status": "user_reviewed",
+      "questions": [
+        {
+          "question_id": "B001-Q01",
+          "reference_option": "f0_pregnant_dams",
+          "rationale": "The treatment and breeding descriptions restrict experimental injections to F0 pregnant females. Descendant census entries do not record new administration.",
+          "downstream_role": "Select administration recipients before code separates F3 census size from F3 injection count.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR001",
+          "reviewed_by": "user"
+        },
+        {
+          "question_id": "B001-Q02",
+          "reference_option": "mother_embryo_and_fetal_germline",
+          "rationale": "The Results explicitly include the F1 embryo and its F2-producing germ cells in the original exposure window. No repeat injection is required for that developmental exposure.",
+          "downstream_role": "Map the biological compartments to generation indices; code finds the first later generation outside the original window.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR001",
+          "reviewed_by": "user"
+        }
+      ],
+      "deterministic_work": "Filter the Dioxin census and F3 rows; add female and male counts. Use the administration relation to derive the number of newly injected F3 animals. Encode the included developmental compartments as F0/F1/F2 and find the first later generation outside that window. Compare each clause separately.",
+      "inference_boundary": "This audits administration and developmental exposure accounting, not the reported toxicological effects or an epigenetic mechanism. F3 being outside the original window is a protocol-defined classification, not a chemical measurement or proof of inheritance. The number of distinct F0 ancestors represented by the selected F3 animals remains unknown; litter totals are not a pedigree.",
+      "reference_provenance": "References reviewed and accepted without changes by the user in BIO-UR001. No model prediction.",
+      "expected_code_output": {
+        "status": "derived",
+        "semantic_choices": [
+          "f0_pregnant_dams",
+          "mother_embryo_and_fetal_germline"
+        ],
+        "counts": {
+          "F3_pups": 162,
+          "F3_weaned_litters": 14,
+          "newly_injected_F3_animals": 0,
+          "first_generation_beyond_original_window": 3,
+          "distinct_F0_ancestors": null
+        },
+        "clauses": {
+          "new_F3_injections": "inconsistent",
+          "first_generation_beyond_window": "inconsistent"
+        },
+        "final_label": "inconsistent"
+      }
+    },
+    {
+      "problem_id": "B002",
+      "review_status": "user_reviewed",
+      "questions": [
+        {
+          "question_id": "B002-Q01",
+          "reference_option": "shared_then_separate",
+          "rationale": "Table 1 tests sampling from one culture; Table 2 compares separate pre-selection cultures. The selected column headers retain that distinction.",
+          "downstream_role": "Select the growth-history grouping; code counts the rows and groups each series.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR002",
+          "reviewed_by": "user"
+        },
+        {
+          "question_id": "B002-Q02",
+          "reference_option": "clonal_descendants",
+          "rationale": "The source distinguishes a mutation from its proliferating descendants. Colony abundance can therefore exceed the number of origins, without revealing the exact origin count.",
+          "downstream_role": "Prevent colony totals from being used as an exact independent-mutation count.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR002",
+          "reviewed_by": "user"
+        }
+      ],
+      "deterministic_work": "Count selected table rows, sum colony records, group growth histories using Q01, and use Q02 to block a one-colony/one-origin identity. Do not invent colony-to-mutation links or estimate mutation rates.",
+      "inference_boundary": "Separate culture growth histories do not identify each mutation origin or certify all error-independence assumptions. The mutation interpretation is supplied by the source, not newly established by a variance calculation here. All colony totals and averages are bookkeeping only.",
+      "reference_provenance": "References reviewed and accepted without changes by the user in BIO-UR002. No model prediction.",
+      "expected_code_output": {
+        "status": "derived",
+        "semantic_choices": [
+          "shared_then_separate",
+          "clonal_descendants"
+        ],
+        "counts": {
+          "platings": {
+            "11a": 10,
+            "11": 10
+          },
+          "growth_histories": {
+            "11a": 1,
+            "11": 10
+          },
+          "colony_totals": {
+            "11a": 514,
+            "11": 624
+          },
+          "exact_mutation_origins": null
+        },
+        "clauses": {
+          "independent_histories_11a": "inconsistent",
+          "one_colony_one_origin": "inconsistent"
+        },
+        "final_label": "inconsistent"
+      }
+    },
+    {
+      "problem_id": "B003",
+      "review_status": "user_reviewed",
+      "questions": [
+        {
+          "question_id": "B003-Q01",
+          "reference_option": "rna_before_library",
+          "rationale": "The methods place equal-RNA pooling before cDNA and library preparation. This differs from multiplexing separately indexed animal libraries.",
+          "downstream_role": "Classify whether pooling precedes individual observation; code evaluates the claimed post-assay-only averaging, filters the selected pools, and deduplicates contributors.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR003",
+          "reviewed_by": "user"
+        },
+        {
+          "question_id": "B003-Q02",
+          "reference_option": "pool_aggregate",
+          "rationale": "The reported bulk profile belongs to the combined RNA preparation. Individual libraries are a separate arm and cannot be credited as profiles produced by the selected pooled libraries.",
+          "downstream_role": "Keep pool-level profiles separate from source-animal counts and individually observed outcomes.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR003",
+          "reviewed_by": "user"
+        }
+      ],
+      "deterministic_work": "Filter pool_size=8, deduplicate contributor IDs within genotype and across selected pools, and count libraries. Use Q02 to record the profile level. Never expand one pooled expression vector into per-mouse observations.",
+      "inference_boundary": "The mice remain real biological contributors. Two preparations from the same contributors do not sample two new cohorts. The source includes individual sequencing elsewhere, so unavailable individual outcomes here refers only to the selected pooled-arm profiles. No effective sample size or general verdict on pooling is assigned; litter relationships are not reconstructed.",
+      "reference_provenance": "References reviewed and accepted without changes by the user in BIO-UR003. No model prediction.",
+      "expected_code_output": {
+        "status": "derived",
+        "semantic_choices": [
+          "rna_before_library",
+          "pool_aggregate"
+        ],
+        "counts": {
+          "selected_libraries": 4,
+          "distinct_contributors": 16,
+          "distinct_contributors_by_genotype": {
+            "Brd1+/-": 8,
+            "WT": 8
+          },
+          "contributor_appearances": 32,
+          "separately_observed_contributor_profiles": 0
+        },
+        "clauses": {
+          "distinct_mice": "inconsistent",
+          "individual_profiles": "inconsistent",
+          "pooling_only_after_individual_measurement": "inconsistent"
+        },
+        "final_label": "inconsistent"
+      }
+    },
+    {
+      "problem_id": "B004",
+      "review_status": "user_reviewed",
+      "questions": [
+        {
+          "question_id": "B004-Q01",
+          "reference_option": "within_founder_mosaicism",
+          "rationale": "Multiple mutant alleles were reported within albino founder #30. A shared visible phenotype does not make those cells one uniform allelic treatment.",
+          "downstream_role": "Reject phenotype-based homogeneous-genotype replication and keep founder counts separate from allele entries.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR004",
+          "reviewed_by": "user"
+        },
+        {
+          "question_id": "B004-Q02",
+          "reference_option": "preexisting_albino_allele",
+          "rationale": "The Discussion explicitly gives the inherited FVB/NJ allele as the reason these hybrid mosaics were not tested with albino mates. The positive C57BL/6N crosses do not validate the hybrids.",
+          "downstream_role": "Evaluate whether offspring phenotype identifies a newly induced allele. Code keeps the unsupported exact number of validated lines unknown.",
+          "review_status": "user_reviewed",
+          "approved_by_user": true,
+          "approval_decision_id": "BIO-UR004",
+          "reviewed_by": "user"
+        }
+      ],
+      "deterministic_work": "Compare the source-reported founder total with the claimed 57; retain the separately reported allele total. Use Q01 for genotype uniformity and Q02 for the need for discriminating germline evidence. Do not deduplicate alleles into founder IDs or infer an exact number of validated lines.",
+      "inference_boundary": "Reported alleles are neither cell counts nor independently validated lines. A 5% read threshold is an assay reporting rule, not a threshold for germline transmission or complete enumeration of mosaic cells. Germline-line counts remain unknown, not zero. Founder #30 and the untested hybrid mosaics are different scopes within the same intervention problem.",
+      "reference_provenance": "References reviewed and accepted without changes by the user in BIO-UR004. No model prediction.",
+      "expected_code_output": {
+        "status": "derived",
+        "semantic_choices": [
+          "within_founder_mosaicism",
+          "preexisting_albino_allele"
+        ],
+        "counts": {
+          "deep_sequenced_hybrid_founders": 23,
+          "reported_mutant_alleles": 57,
+          "validated_new_germline_lines": null
+        },
+        "clauses": {
+          "every_albino_founder_uniform": "inconsistent",
+          "separately_injected_founders": "inconsistent",
+          "validated_new_germline_lines": "insufficient_evidence",
+          "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+        },
+        "final_label": "inconsistent"
+      }
+    }
+  ],
+  "expected_output_preparation": "Manually specified from reviewed source transcriptions; checked against offline derivation. No model predictions or scientific validation are implied by a passing check."
+}

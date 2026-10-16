@@ -1,0 +1,74 @@
+{
+  "job_id": "r04-B002-luna",
+  "group_id": "B002",
+  "model_id": "luna",
+  "repeat": 3,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_0d3c49184f0de5f1016ab0cf85e3ec87d29d4a2eab53c1b0a3",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1217
+      },
+      "output_tokens": 64,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1284
+    },
+    "input_tokens": 1220,
+    "output_tokens": 64,
+    "resource_errors": [],
+    "cached_input_tokens": 1217,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 36,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0003818,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.3241574580024462,
+    "derivation_wall_seconds": 5.6124990805983543e-05,
+    "derivation_cpu_seconds": 5.600000000027805e-05
+  },
+  "request_sha256": "702a4fbca914e62232aacb9973942668b824fe5d09efff16b7b2bb104aeb1cb8",
+  "receipt_sha256": "9875eef483c6b2476cee632328a2130e445f3b3ccdabe1ab079085dc412b994a",
+  "simulated": false,
+  "halt_model": false
+}

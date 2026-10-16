@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789978268-Y5F9CrVoyrdhBJVA3bki\",\"object\":\"chat.completion\",\"created\":1789978268,\"model\":\"moonshotai/kimi-k3\",\"provider\":\"Moonshot AI\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"complementary_assignment\\\",\\\"q2\\\":\\\"assignment_only\\\"}\",\"refusal\":null,\"reasoning\":\"We need answer based evidence. Q1 within EU random one range and not other = complementary assignment. Q2 label by itself zero? Evidence says contamination reached other in cases, so no, assignment planned while physical exposure additional. assignment_only. Return JSON.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"We need answer based evidence. Q1 within EU random one range and not other = complementary assignment. Q2 label by itself zero? Evidence says contamination reached other in cases, so no, assignment planned while physical exposure additional. assignment_only. Return JSON.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1197,\"completion_tokens\":75,\"total_tokens\":1272,\"cost\":0.004716,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.004716,\"upstream_inference_prompt_cost\":0.003591,\"upstream_inference_completions_cost\":0.001125},\"completion_tokens_details\":{\"reasoning_tokens\":51,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:11:13 GMT"
+  },
+  "latency_seconds": 13.96937983299722,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:11:21.911659+00:00"
+}

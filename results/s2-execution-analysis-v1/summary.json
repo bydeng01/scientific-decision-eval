@@ -1,0 +1,721 @@
+{
+  "source_report": "results/s2-execution-live-v1/reports/20260921T063548757325Z.json",
+  "source_report_sha256": "0ca97386c26007be84af032cef49b018d51b370bbf123a47ff6b7505ca7ad21b",
+  "analysis_script_sha256": "1f7f4eb99cce2caf350fc81b41f1d03d92bbfce7ec3d03460c1f7328548f2386",
+  "scope": {
+    "groups": 20,
+    "scientific_choices": 40,
+    "engineering_choices": 1,
+    "code_scientific_choices": 20,
+    "model_scientific_choices": 20,
+    "model_groups": 10,
+    "models": 6,
+    "repeats": 5,
+    "independently_reviewed_choices": 18,
+    "independently_reviewed_model_choices": 14
+  },
+  "execution": {
+    "terminal_records": 300,
+    "http_200": 299,
+    "uncertain_transport": 1,
+    "retries": 0,
+    "fallbacks": 0,
+    "manifest_to_report_seconds": 528.85301
+  },
+  "verification": {
+    "prepared_source_and_request_hashes": "passed",
+    "saved_response_reparse": "passed",
+    "attempt_artifacts_matching_original_report": 900,
+    "rescored_model_reports_exactly_equal": 6,
+    "expected_null_fields_preserved_in_received_model_derivations": 179,
+    "network": "disabled",
+    "new_model_calls": 0
+  },
+  "models": {
+    "jev": {
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 50,
+      "semantic_choices_fixed_denominator": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "model_dependent_labels_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 70,
+        "denominator": 70,
+        "accuracy": 1.0
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 200,
+        "denominator": 200,
+        "accuracy": 1.0
+      },
+      "per_repeat": [
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [],
+      "latency_seconds": {
+        "mean": 0.3448375340597704,
+        "median": 0.33513356250477955,
+        "p95_nearest_rank": 0.44225775002269074,
+        "min": 0.24238570799934678,
+        "max": 0.8577562909922563
+      },
+      "latency_known_requests": 50,
+      "input_tokens": {
+        "known_subtotal": 70875,
+        "missing_records": 0,
+        "total": 70875
+      },
+      "output_tokens": {
+        "known_subtotal": 8330,
+        "missing_records": 0,
+        "total": 8330
+      },
+      "cache_write_tokens_reconciled_known_subtotal": null,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": null,
+      "cost": {
+        "basis": "provider_reported",
+        "known_subtotal_usd": 0.00297675,
+        "total_usd": 0.00297675,
+        "missing_requests": 0,
+        "provider_reported_original": {
+          "known_subtotal": 0.0029767500000000002,
+          "missing_records": 0,
+          "total": 0.0029767500000000002
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.0029767500000000002,
+          "missing_records": 0,
+          "total": 0.0029767500000000002
+        }
+      }
+    },
+    "luna": {
+      "served_models": [
+        "gpt-5.6-luna"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 50,
+      "semantic_choices_fixed_denominator": {
+        "correct": 99,
+        "denominator": 100,
+        "accuracy": 0.99
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 99,
+        "denominator": 100,
+        "accuracy": 0.99
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 49,
+        "denominator": 50,
+        "accuracy": 0.98
+      },
+      "model_dependent_labels_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 69,
+        "denominator": 70,
+        "accuracy": 0.9857142857142858
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 199,
+        "denominator": 200,
+        "accuracy": 0.995
+      },
+      "per_repeat": [
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 19,
+          "denominator": 20,
+          "accuracy": 0.95
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [
+        "B002-Q01"
+      ],
+      "latency_seconds": {
+        "mean": 1.6866802415798885,
+        "median": 1.5087325835047523,
+        "p95_nearest_rank": 2.752823500020895,
+        "min": 0.958324665989494,
+        "max": 6.045960249990458
+      },
+      "latency_known_requests": 50,
+      "input_tokens": {
+        "known_subtotal": 52290,
+        "missing_records": 0,
+        "total": 52290
+      },
+      "output_tokens": {
+        "known_subtotal": 3173,
+        "missing_records": 0,
+        "total": 3173
+      },
+      "cache_write_tokens_reconciled_known_subtotal": 6180,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": 1783,
+      "cost": {
+        "basis": "saved_usage_and_run_price_snapshot_estimate",
+        "known_subtotal_usd": 0.010125,
+        "total_usd": 0.010125,
+        "missing_requests": 0,
+        "provider_reported_original": {
+          "known_subtotal": 0,
+          "missing_records": 50,
+          "total": null
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.0168801,
+          "missing_records": 0,
+          "total": 0.0168801
+        }
+      }
+    },
+    "terra": {
+      "served_models": [
+        "gpt-5.6-terra"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 49,
+      "semantic_choices_fixed_denominator": {
+        "correct": 98,
+        "denominator": 100,
+        "accuracy": 0.98
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 98,
+        "denominator": 98,
+        "accuracy": 1.0
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 49,
+        "denominator": 50,
+        "accuracy": 0.98
+      },
+      "model_dependent_labels_exact": {
+        "correct": 49,
+        "denominator": 50,
+        "accuracy": 0.98
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 68,
+        "denominator": 70,
+        "accuracy": 0.9714285714285714
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 198,
+        "denominator": 200,
+        "accuracy": 0.99
+      },
+      "per_repeat": [
+        {
+          "correct": 18,
+          "denominator": 20,
+          "accuracy": 0.9
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [],
+      "latency_seconds": {
+        "mean": 1.311747859669279,
+        "median": 1.165925375011284,
+        "p95_nearest_rank": 2.1474302079877816,
+        "min": 0.9022129999939352,
+        "max": 3.9819715000048745
+      },
+      "latency_known_requests": 49,
+      "input_tokens": {
+        "known_subtotal": 51070,
+        "missing_records": 1,
+        "total": null
+      },
+      "output_tokens": {
+        "known_subtotal": 1274,
+        "missing_records": 1,
+        "total": null
+      },
+      "cache_write_tokens_reconciled_known_subtotal": 4963,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": 0,
+      "cost": {
+        "basis": "saved_usage_and_run_price_snapshot_estimate",
+        "known_subtotal_usd": 0.0754135,
+        "total_usd": null,
+        "missing_requests": 1,
+        "provider_reported_original": {
+          "known_subtotal": 0,
+          "missing_records": 50,
+          "total": null
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.142963,
+          "missing_records": 1,
+          "total": null
+        }
+      }
+    },
+    "sol": {
+      "served_models": [
+        "gpt-5.6-sol"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 50,
+      "semantic_choices_fixed_denominator": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "model_dependent_labels_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 70,
+        "denominator": 70,
+        "accuracy": 1.0
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 200,
+        "denominator": 200,
+        "accuracy": 1.0
+      },
+      "per_repeat": [
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [],
+      "latency_seconds": {
+        "mean": 1.509170550839044,
+        "median": 1.384772438002983,
+        "p95_nearest_rank": 2.370116040983703,
+        "min": 1.042085541994311,
+        "max": 3.067326916992897
+      },
+      "latency_known_requests": 50,
+      "input_tokens": {
+        "known_subtotal": 52290,
+        "missing_records": 0,
+        "total": 52290
+      },
+      "output_tokens": {
+        "known_subtotal": 1300,
+        "missing_records": 0,
+        "total": 1300
+      },
+      "cache_write_tokens_reconciled_known_subtotal": 6180,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": 0,
+      "cost": {
+        "basis": "saved_usage_and_run_price_snapshot_estimate",
+        "known_subtotal_usd": 0.152348,
+        "total_usd": 0.152348,
+        "missing_requests": 0,
+        "provider_reported_original": {
+          "known_subtotal": 0,
+          "missing_records": 50,
+          "total": null
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.28745,
+          "missing_records": 0,
+          "total": 0.28745
+        }
+      }
+    },
+    "astra": {
+      "served_models": [
+        "gpt-6-astra"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 50,
+      "semantic_choices_fixed_denominator": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "model_dependent_labels_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 70,
+        "denominator": 70,
+        "accuracy": 1.0
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 200,
+        "denominator": 200,
+        "accuracy": 1.0
+      },
+      "per_repeat": [
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [],
+      "latency_seconds": {
+        "mean": 2.653096110881306,
+        "median": 2.383803375501884,
+        "p95_nearest_rank": 4.41841337500955,
+        "min": 1.7700747920025606,
+        "max": 5.688054875005037
+      },
+      "latency_known_requests": 50,
+      "input_tokens": {
+        "known_subtotal": 52290,
+        "missing_records": 0,
+        "total": 52290
+      },
+      "output_tokens": {
+        "known_subtotal": 1300,
+        "missing_records": 0,
+        "total": 1300
+      },
+      "cache_write_tokens_reconciled_known_subtotal": 6180,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": 0,
+      "cost": {
+        "basis": "saved_usage_and_run_price_snapshot_estimate",
+        "known_subtotal_usd": 0.38087,
+        "total_usd": 0.38087,
+        "missing_requests": 0,
+        "provider_reported_original": {
+          "known_subtotal": 0,
+          "missing_records": 50,
+          "total": null
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.718625,
+          "missing_records": 0,
+          "total": 0.718625
+        }
+      }
+    },
+    "sonnet": {
+      "served_models": [
+        "claude-sonnet-5"
+      ],
+      "planned_requests": 50,
+      "valid_responses": 50,
+      "semantic_choices_fixed_denominator": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "semantic_choices_observed_only_secondary": {
+        "correct": 100,
+        "denominator": 100,
+        "accuracy": 1.0
+      },
+      "model_dependent_outcomes_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "model_dependent_labels_exact": {
+        "correct": 50,
+        "denominator": 50,
+        "accuracy": 1.0
+      },
+      "reviewed_subset_model_choices": {
+        "correct": 70,
+        "denominator": 70,
+        "accuracy": 1.0
+      },
+      "full_scientific_workflow_choices": {
+        "correct": 200,
+        "denominator": 200,
+        "accuracy": 1.0
+      },
+      "per_repeat": [
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        },
+        {
+          "correct": 20,
+          "denominator": 20,
+          "accuracy": 1.0
+        }
+      ],
+      "variable_question_ids": [],
+      "latency_seconds": {
+        "mean": 2.5466294065397235,
+        "median": 2.1623144790064543,
+        "p95_nearest_rank": 5.421917457977543,
+        "min": 1.3589997500239406,
+        "max": 6.036926083994331
+      },
+      "latency_known_requests": 50,
+      "input_tokens": {
+        "known_subtotal": 98560,
+        "missing_records": 0,
+        "total": 98560
+      },
+      "output_tokens": {
+        "known_subtotal": 1539,
+        "missing_records": 0,
+        "total": 1539
+      },
+      "cache_write_tokens_reconciled_known_subtotal": 0,
+      "reasoning_or_thinking_tokens_reconciled_known_subtotal": 84,
+      "cost": {
+        "basis": "saved_usage_and_run_price_snapshot_estimate",
+        "known_subtotal_usd": 0.21251,
+        "total_usd": 0.21251,
+        "missing_requests": 0,
+        "provider_reported_original": {
+          "known_subtotal": 0,
+          "missing_records": 50,
+          "total": null
+        },
+        "original_upper_estimate": {
+          "known_subtotal": 0.21251,
+          "missing_records": 0,
+          "total": 0.21251
+        }
+      }
+    }
+  },
+  "errors": [
+    {
+      "model_id": "luna",
+      "repeat_number": 2,
+      "group_id": "B002",
+      "question_id": "B002-Q01",
+      "route": "model",
+      "reference": "shared_then_separate",
+      "prediction": "separate_then_shared",
+      "correct": false,
+      "failure": null,
+      "recent_independent_review": true
+    },
+    {
+      "model_id": "terra",
+      "repeat_number": 1,
+      "group_id": "B002",
+      "question_id": "B002-Q01",
+      "route": "model",
+      "reference": "shared_then_separate",
+      "prediction": null,
+      "correct": false,
+      "failure": "transport_uncertain",
+      "recent_independent_review": true
+    },
+    {
+      "model_id": "terra",
+      "repeat_number": 1,
+      "group_id": "B002",
+      "question_id": "B002-Q02",
+      "route": "model",
+      "reference": "clonal_descendants",
+      "prediction": null,
+      "correct": false,
+      "failure": "transport_uncertain",
+      "recent_independent_review": true
+    }
+  ],
+  "code_only": {
+    "scientific_choices": {
+      "correct": 20,
+      "denominator": 40,
+      "accuracy": 0.5
+    },
+    "scientific_outcomes": {
+      "correct": 15,
+      "denominator": 25,
+      "accuracy": 0.6
+    }
+  },
+  "oracle": {
+    "groups_exact": 20,
+    "denominator": 20,
+    "model_performance": false,
+    "wall_seconds": 0.0005213330150581896
+  },
+  "model_reference_fallback_counts": {},
+  "reconciled_cost": {
+    "known_response_subtotal_usd": 0.83424325,
+    "total_usd": null,
+    "unknown_requests": [
+      "r01-B002-terra"
+    ],
+    "basis": "Jev reported cost plus other providers' token-price estimates; not an invoice"
+  },
+  "accounting_findings": [
+    {
+      "location": "development/s2-execution-v1/providers.py:118",
+      "field": "input_tokens_details.cache_write_tokens",
+      "impact": "199 OpenAI responses have this field; old normalization reads cache_creation_tokens instead. Quality scores unaffected. Reconciled only in this analysis."
+    },
+    {
+      "location": "development/s2-execution-v1/providers.py:120",
+      "field": "output_tokens_details.thinking_tokens",
+      "impact": "50 Anthropic responses have this field; old normalization reads reasoning_tokens instead. Output totals and cost already include these tokens."
+    }
+  ]
+}

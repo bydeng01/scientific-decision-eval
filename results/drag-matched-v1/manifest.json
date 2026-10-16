@@ -1,0 +1,27 @@
+{
+  "source": "results/drag-development-v2",
+  "scope": "matched exposed development diagnostic: two systems, four states, eight new calls",
+  "case_ids": [
+    "dev-00-r1",
+    "dev-00-r2",
+    "dev-01-r1",
+    "dev-01-r2"
+  ],
+  "total_budget_usd": 10,
+  "initial_cap_usd": 1.0,
+  "carry_in_usd": 0.013161616,
+  "full_batch_reserved_upper_usd": 0.774575616,
+  "sha256": {
+    "budget_reconciliation.json": "c6a9521ab7c527bdd85eb57f10b6b527a01e41527885e70425aed009cfb99424",
+    "carry_in.jsonl": "966f33c6e545a3b5a197a18ed5f71ea332a82815b35e4a6d246abec3b5f24932",
+    "plans.json": "3dc05b05b08a5c18c76a993fefeb6495def50b7b9ed2ad8f8f23a2fa09b0df5b",
+    "reference.jsonl": "6df2b4f2ba3d53842375d4741205d129876cb621e1b7cb1a04d0f55765a67910",
+    "requests.jsonl": "a30c23d93c4999201df0bd8c7906d3dae33004d1751581064cc46ede7bf3615f",
+    "sources/DRAG_MATCHED_CHECK.md": "10c717d77d9577566c03bd90b22d9abe47d1ee8dca54d6d44d385d617f949681",
+    "sources/configure_science_keys.py": "8ad99b84aead1aae92427c5c79066f400ce1f804bf6192f080d046d45feeb1aa",
+    "sources/drag_baseline_control.py": "2b7e41a6772ab9a91a2d7fae6062a7a58ca9d6f09eae84c57a7e93d517f228ed",
+    "sources/drag_matched_comparison.py": "a9ac31fba60e30f9998af9c23f52efc6e73ba27bbcaf44501b7247bb8e5f90c0",
+    "sources/drag_pilot.py": "abd09c8e1a1a80d522e990d61462d90e4b13de482ac13fb57d77ece34bd6f061",
+    "sources/test_drag_matched_comparison.py": "b466990744d75e230deb9b216c0bb967a9be9278e15675f46c6e41726c929760"
+  }
+}

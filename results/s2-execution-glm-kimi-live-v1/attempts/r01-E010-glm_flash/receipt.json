@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789978282-iV6z5ZewYot6B6P4Peah\",\"object\":\"chat.completion\",\"created\":1789978282,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"Fireworks\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"complementary_assignment\\\",\\\"q2\\\":\\\"assignment_only\\\"}\",\"refusal\":null,\"reasoning\":\"Answer q1: \\\"both_seeded\\\"? Within an EU, seeding randomly assigned to one range and not the other — complementary assignment. q2: \\\"assignment_only\\\" — cross-range contamination discussed, so label doesn't establish zero exposure.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"Answer q1: \\\"both_seeded\\\"? Within an EU, seeding randomly assigned to one range and not the other — complementary assignment. q2: \\\"assignment_only\\\" — cross-range contamination discussed, so label doesn't establish zero exposure.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":944,\"completion_tokens\":64,\"total_tokens\":1008,\"cost\":0.0001736,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0001736,\"upstream_inference_prompt_cost\":0.0001416,\"upstream_inference_completions_cost\":0.000032},\"completion_tokens_details\":{\"reasoning_tokens\":48,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:11:24 GMT"
+  },
+  "latency_seconds": 3.5743568330071867,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:11:25.489610+00:00"
+}

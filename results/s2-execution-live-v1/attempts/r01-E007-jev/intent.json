@@ -1,0 +1,93 @@
+{
+  "started_at": "2026-09-21T06:29:12.941071+00:00",
+  "request_sha256": "0bc243a4cd255dcbe13e1efba99cd3f77b3c6f4b53c30dd21fbb76dba74d1498",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": {
+      "target_treatment": "Original CMIP6 biomass-burning forcing versus the revised SMBB implementation in CESM2-LENS2.",
+      "scope": "All 100 documented LENS2 members, with the forcing change during 1990-2020. Member groups and initialization dates follow the official page; no independent climate-state count is inferred from output fields.",
+      "evidence": [
+        {
+          "source_id": "LENS2-DOC",
+          "location": "Initialization groups; Modifications incorporated in the second half",
+          "kind": "source_faithful_adaptation",
+          "text": "LENS2 has two 50-member halves: original biomass-burning forcing and an 11-year-running-mean version, SMBB, affecting 1990-2020. At each of four macro-initialization dates (1231, 1251, 1281, 1301), the first ten micro-perturbation members use original forcing and the second ten use SMBB. Ten additional even-decade initializations use original forcing; ten odd-decade initializations use SMBB."
+        },
+        {
+          "source_id": "LENS2-DOC",
+          "location": "Remaining modification paragraphs",
+          "kind": "source_faithful_adaptation",
+          "text": "The SMBB implementation also corrects emission-dataset issues and changes the timing of a crop-harvest carbon-flux term. The project reports no significant solution changes from the former corrections and no climate-changing impacts from the latter. Additional output fields also differ."
+        }
+      ],
+      "records": {
+        "macro_start_dates": [
+          1231,
+          1251,
+          1281,
+          1301
+        ],
+        "original_micro_members_per_date": 10,
+        "smbb_micro_members_per_date": 10,
+        "original_extra_start_years": [
+          1001,
+          1021,
+          1041,
+          1061,
+          1081,
+          1101,
+          1121,
+          1141,
+          1161,
+          1181
+        ],
+        "smbb_extra_start_years": [
+          1011,
+          1031,
+          1051,
+          1071,
+          1091,
+          1111,
+          1131,
+          1151,
+          1171,
+          1191
+        ]
+      }
+    },
+    "questions": {
+      "q1": {
+        "type": "choice",
+        "instructions": "How should the documented members be classified with respect to the original versus SMBB biomass-burning forcing protocol? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "all_original": "Every member uses the original biomass-burning forcing protocol.",
+          "all_smbb": "Every member uses the SMBB biomass-burning forcing protocol.",
+          "two_protocol_groups": "The collection contains members using each of the two documented forcing protocols.",
+          "within_run_replicates": "Each member contains separate original and SMBB runs as internal replicate executions.",
+          "other": "The evidence establishes a different substantive answer from those listed.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      },
+      "q2": {
+        "type": "choice",
+        "instructions": "Does the documented difference between these halves isolate biomass-burning smoothing as the only implementation change? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "smoothing_only": "Yes; the two halves differ only in the biomass-burning smoothing operation.",
+          "bundled_changes": "No; the SMBB half also incorporates other documented implementation changes.",
+          "initialization_only": "No forcing or code difference is present; only the initial conditions differ.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      }
+    },
+    "provider": {
+      "allow_fallbacks": false
+    }
+  },
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "job_id": "r01-E007-jev",
+  "attempt": 1,
+  "repeat": 0,
+  "simulated": false
+}

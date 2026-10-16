@@ -1,0 +1,72 @@
+{
+  "job_id": "r05-E005-deepseek_pro",
+  "group_id": "E005",
+  "model_id": "deepseek_pro",
+  "repeat": 4,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4-pro-0813",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789976341-eMEOa8UvxnUOo5cwOVH0",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 974,
+      "completion_tokens": 301,
+      "total_tokens": 1275,
+      "cost": 0.00247764,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00247764,
+        "upstream_inference_prompt_cost": 0.00128568,
+        "upstream_inference_completions_cost": 0.00119196
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 283,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 974,
+    "output_tokens": 301,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 283,
+    "reported_cost_usd": 0.00247764,
+    "usage_cost_estimate_usd": 0.00247764,
+    "usage_cost_upper_estimate_usd": 0.00247764,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 9.007038208015729,
+    "derivation_wall_seconds": 5.849997978657484e-05,
+    "derivation_cpu_seconds": 5.8000000000113516e-05
+  },
+  "request_sha256": "9ceb27ebf7ff9bdb0129939ff61ed7f3e3744aabbc5bffa8a841d4a2c82df3e5",
+  "receipt_sha256": "f9c30b96070b1fdd727f8c3b576fafe15feea7210333b0fe42cf9e38bcde84ad",
+  "simulated": false,
+  "halt_model": false
+}

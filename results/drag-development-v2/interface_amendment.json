@@ -1,0 +1,9 @@
+{
+  "source_ledger": "results/drag-development-v1/api_ledger.jsonl",
+  "sha256": "ad6939643c13d24e5082bd3b57402315ab9945366ce159b46b17d1953f2418fd",
+  "reason": "Accepted exact resolved Jev snapshot; probabilities and raw response unchanged; no retry.",
+  "carried_cost_usd": 3.8976e-05,
+  "carried_budget_charge_usd": 0.01,
+  "exposed_development_case": "empty-prior",
+  "data_and_prompts_unchanged": true
+}

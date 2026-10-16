@@ -1,0 +1,66 @@
+{
+  "job_id": "r04-B004-sol",
+  "group_id": "B004",
+  "model_id": "sol",
+  "repeat": 3,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_016e6a62f3f98eb5016ab0cfcc62e487d2a0fb43e0dee00f25",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1290,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1287
+      },
+      "output_tokens": 32,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1322
+    },
+    "input_tokens": 1290,
+    "output_tokens": 32,
+    "resource_errors": [],
+    "cached_input_tokens": 1287,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00709,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.2001262090052478,
+    "derivation_wall_seconds": 4.641700070351362e-05,
+    "derivation_cpu_seconds": 4.600000000021254e-05
+  },
+  "request_sha256": "cf704bde99f5243522ebd7fb17a0bb5d53e7d8ef7b46bc24d8b023c926f210a0",
+  "receipt_sha256": "e1885ec203572be442d74d75a775121cffd05fa8aeb594041bbd0c7c71c02e60",
+  "simulated": false,
+  "halt_model": false
+}

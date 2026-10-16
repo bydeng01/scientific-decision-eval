@@ -1,0 +1,80 @@
+{
+  "job_id": "r02-E006-jev",
+  "group_id": "E006",
+  "model_id": "jev",
+  "repeat": 1,
+  "answers": {
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independent_phase_draws": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "E006-Q01": {
+      "probabilities": {
+        "other": 0,
+        "not_stated": 0,
+        "phase_reversed": 1,
+        "independent_draws": 0,
+        "output_resampling": 0,
+        "identical_field": 0,
+        "conflicting": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    },
+    "E006-Q02": {
+      "probabilities": {
+        "other": 0,
+        "not_stated": 0,
+        "all_runs_average": 0,
+        "individual_execution": 0,
+        "pair_difference": 0,
+        "pair_average": 1,
+        "conflicting": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972226-SLem6iLRGTQ3aErGyRIv",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1175,
+      "output_tokens": 161,
+      "cost": 4.935e-05
+    },
+    "input_tokens": 1175,
+    "output_tokens": 161,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 4.935e-05,
+    "usage_cost_estimate_usd": 4.935e-05,
+    "usage_cost_upper_estimate_usd": 4.935e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.3579256249940954,
+    "derivation_wall_seconds": 3.7999998312443495e-05,
+    "derivation_cpu_seconds": 3.700000000006476e-05
+  },
+  "request_sha256": "43a204bcd36a3f1d306b7a4326f2b01b9941759763ab54f6c03020d952c9f90e",
+  "receipt_sha256": "3edc7cdb00f54a6675332091c0f2104d91b300c615036cebc85595d92d295365",
+  "simulated": false,
+  "halt_model": false
+}

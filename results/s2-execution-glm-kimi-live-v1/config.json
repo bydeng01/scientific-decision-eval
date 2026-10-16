@@ -1,0 +1,97 @@
+{
+  "version": "s2-execution-dev-v3-glm-kimi",
+  "status": "development_not_frozen",
+  "prepared_on": "2026-09-21",
+  "budget": {
+    "policy": "no_monetary_cap_requested_by_user",
+    "cap_usd": null,
+    "historical_caps_apply": false,
+    "instruction_date": "2026-09-21",
+    "historical_ledger": "development/s2-nonbio-v1/budget.json",
+    "historical_accounting": "preserved; do not combine old estimates with new measured charges"
+  },
+  "repetitions": 5,
+  "concurrency": 1,
+  "timeout_seconds": 300,
+  "max_retries": 0,
+  "max_fallbacks": 0,
+  "request_size_limit_bytes": 98304,
+  "schedule_seed": 20260921,
+  "models": [
+    {
+      "id": "glm_flash",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "z-ai/glm-5.3-flash",
+      "accepted_response_models": [
+        "z-ai/glm-5.3-flash",
+        "z-ai/glm-5.3-flash-20260826"
+      ],
+      "provider_slug": "fireworks",
+      "accepted_response_providers": [
+        "Fireworks"
+      ],
+      "catalog_endpoint": "Fireworks | z-ai/glm-5.3-flash-20260826",
+      "quantization": "unknown",
+      "tier": "low_cost",
+      "reasoning_effort": "high",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 0.15,
+        "output": 0.5,
+        "cached_input": 0.03
+      }
+    },
+    {
+      "id": "kimi_k3",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "moonshotai/kimi-k3",
+      "accepted_response_models": [
+        "moonshotai/kimi-k3",
+        "moonshotai/kimi-k3-20260715"
+      ],
+      "provider_slug": "moonshotai/mxfp4",
+      "accepted_response_providers": [
+        "Moonshot AI"
+      ],
+      "catalog_endpoint": "Moonshot AI | moonshotai/kimi-k3-20260715",
+      "quantization": "mxfp4",
+      "tier": "higher_capability",
+      "reasoning_effort": "high",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 3.0,
+        "output": 15.0,
+        "cached_input": 0.3
+      }
+    }
+  ],
+  "conditions": [
+    "code_only",
+    "model_semantics_plus_code",
+    "reference_oracle"
+  ],
+  "rationale": {
+    "repetitions": "Five repeated executions describe within-input answer stability and latency spread. They do not add independent cases and are not a power calculation. No majority-vote replacement.",
+    "concurrency": "One request in flight avoids local queue and cross-model load confounding in this small latency comparison.",
+    "timeout": "300-second total deadline; interrupted or timed-out requests remain operationally uncertain and are not replaced.",
+    "retries": "Zero automatic retries or fallback: preserve first-attempt failure rates and prevent duplicate billing after ambiguous transport. Repetitions are planned independent executions, not failure replacements.",
+    "output_cap": "32768 tokens including reasoning and final JSON, inherited from the first two cohorts and supported by both selected endpoints.",
+    "versions": "Named GLM 5.3 Flash and Kimi K3 routes, catalog snapshots 20260826 and 20260715, accepted returned model IDs recorded. This does not identify immutable weights.",
+    "tiers": "Two user-selected additions: GLM-5.3-Flash and Kimi K3. The earlier eleven models are excluded from this run.",
+    "routing": "OpenRouter uses existing credentials. GLM is restricted to Fireworks, whose catalog includes strict structured outputs. The Z.AI endpoint lists response_format but not structured_outputs. Kimi is restricted to Moonshot AI at moonshotai/mxfp4. No fallback or automatic retry.",
+    "effort": "Both models support low/high/max in their first-party documentation. Request high explicitly through the router as the middle available effort, avoiding unsupported medium. This is not matched internal compute; actual upstream behavior remains observable only through saved responses and usage.",
+    "accounting": "OpenRouter-reported response charges are primary. Catalog token-price estimates are separate; absent cache-write counts or rates remain unknown. No promotional route was selected. Reasoning tokens are included in completion totals once."
+  },
+  "cohort": {
+    "id": "s2-glm-kimi-v1",
+    "previous_runs": [
+      "results/s2-execution-live-v1",
+      "results/s2-execution-extension-live-v1"
+    ],
+    "authorization": "GLM-5.3-Flash and Kimi evaluated on the selected S2 development questions.",
+    "comparison": "Same development evidence packets, question maps, references, derivation and scoring. Third execution cohort; latency comparisons across cohorts are descriptive.",
+    "new_models_only": true
+  }
+}

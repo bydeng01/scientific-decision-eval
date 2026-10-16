@@ -1,0 +1,136 @@
+[
+  {
+    "file": "evidence/NIST-pri55.html",
+    "requested_url": "https://www.itl.nist.gov/div898/handbook/pri/section5/pri55.htm",
+    "accessed_at_utc": "2026-09-21T01:36:21.427188+00:00",
+    "status_code": 200,
+    "final_url": "https://www.itl.nist.gov/div898/handbook/pri/section5/pri55.htm",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "ba4c750fe596ce6d7df5d8bef9ec18b40d784125b78ae38f0be26b1d82364f55",
+    "bytes": 37328
+  },
+  {
+    "file": "evidence/NIST-foldover.html",
+    "requested_url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3381.htm",
+    "accessed_at_utc": "2026-09-21T01:36:21.427516+00:00",
+    "status_code": 200,
+    "final_url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3381.htm",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5ce42511d8b3cc0f0964db482b93561b4f3ee7e01df5f504a6d1343620dad7a9",
+    "bytes": 28486
+  },
+  {
+    "file": "evidence/wind.html",
+    "requested_url": "https://wes.copernicus.org/articles/6/1427/2021/",
+    "accessed_at_utc": "2026-09-21T01:36:21.427656+00:00",
+    "status_code": 200,
+    "final_url": "https://wes.copernicus.org/articles/6/1427/2021/",
+    "content_type": "text/html",
+    "sha256": "429d9c3c385ed280dbfddad94c786388773b71cf14475fb37f02db5ea15735d5",
+    "bytes": 397300
+  },
+  {
+    "file": "evidence/wind.pdf",
+    "requested_url": "https://wes.copernicus.org/articles/6/1427/2021/wes-6-1427-2021.pdf",
+    "accessed_at_utc": "2026-09-21T01:36:21.427736+00:00",
+    "status_code": 200,
+    "final_url": "https://wes.copernicus.org/articles/6/1427/2021/wes-6-1427-2021.pdf",
+    "content_type": "application/pdf",
+    "sha256": "ea2b2387eaecbcbbe155f78314edaa5e5eebf2bc33772446d52fc79e15dc403b",
+    "bytes": 15293788
+  },
+  {
+    "file": "evidence/lens2.html",
+    "requested_url": "https://www.cesm.ucar.edu/community-projects/lens2",
+    "accessed_at_utc": "2026-09-21T01:36:21.427828+00:00",
+    "status_code": 200,
+    "final_url": "https://www.cesm.ucar.edu/community-projects/lens2",
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "e55f4947ca41f7b658a03f3e181a8dd361f3b0777891c5a54cb431039c5d5cb5",
+    "bytes": 50733
+  },
+  {
+    "file": "evidence/catalyst.html",
+    "requested_url": "https://www.nature.com/articles/s41598-020-77629-3",
+    "accessed_at_utc": "2026-09-21T01:36:21.427953+00:00",
+    "status_code": 200,
+    "final_url": "https://www.nature.com/articles/s41598-020-77629-3",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "ffdd0810b489b8cf94f0b57827b255d02a5311c31e88ce37e1e827c67354dfef",
+    "bytes": 327627
+  },
+  {
+    "file": "evidence/catalyst.pdf",
+    "requested_url": "https://www.nature.com/articles/s41598-020-77629-3.pdf",
+    "accessed_at_utc": "2026-09-21T01:36:21.583408+00:00",
+    "status_code": 200,
+    "final_url": "https://www.nature.com/articles/s41598-020-77629-3.pdf",
+    "content_type": "application/pdf",
+    "sha256": "27afc42e3afdc27d696f74e9602bb695d3861bc85209727f368b5c34b3036be8",
+    "bytes": 1981678
+  },
+  {
+    "file": "evidence/powder.html",
+    "requested_url": "https://www.mdpi.com/2071-1050/15/21/15582",
+    "accessed_at_utc": "2026-09-21T01:36:21.642046+00:00",
+    "status_code": 403,
+    "final_url": "https://www.mdpi.com/2071-1050/15/21/15582",
+    "content_type": "text/html",
+    "error": "403 Client Error: Forbidden for url: https://www.mdpi.com/2071-1050/15/21/15582"
+  },
+  {
+    "file": "evidence/powder-repository.html",
+    "requested_url": "https://researchonline.jcu.edu.au/86205/",
+    "accessed_at_utc": "2026-09-21T01:36:21.711303+00:00",
+    "status_code": 200,
+    "final_url": "https://researchonline.jcu.edu.au/86205/",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "a23c06f315d803e9d473179fc60191fd2386abd67c5be21a2dc91aef5eeb5a86",
+    "bytes": 39876
+  },
+  {
+    "file": "evidence/paired-fixed-1806.01871v1.pdf",
+    "requested_url": "https://arxiv.org/pdf/1806.01871v1",
+    "accessed_at_utc": "2026-09-21T01:36:21.937604+00:00",
+    "status_code": 200,
+    "final_url": "https://arxiv.org/pdf/1806.01871v1",
+    "content_type": "application/pdf",
+    "sha256": "b4286fe0b70fe00a55aaca095eb9dcb8d003bd5813b1cf06ac487f60f161ac85",
+    "bytes": 3532654
+  },
+  {
+    "file": "evidence/fatigue-2107.02685v3.pdf",
+    "requested_url": "https://arxiv.org/pdf/2107.02685v3",
+    "accessed_at_utc": "2026-09-21T01:36:22.308711+00:00",
+    "status_code": 200,
+    "final_url": "https://arxiv.org/pdf/2107.02685v3",
+    "content_type": "application/pdf",
+    "sha256": "6053d04b294f955154073f8eb8292dddd640dd6c018c4fe143e2693090842c07",
+    "bytes": 2313705
+  },
+  {
+    "file": "evidence/metrology.pdf",
+    "requested_url": "https://www.metrology.pg.gda.pl/full/2009/M%26MS_2009_377.pdf",
+    "accessed_at_utc": "2026-09-21T01:36:22.347520+00:00",
+    "error": "HTTPSConnectionPool(host='www.metrology.pg.gda.pl', port=443): Max retries exceeded with url: /full/2009/M%26MS_2009_377.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='www.metrology.pg.gda.pl', port=443): Failed to resolve 'www.metrology.pg.gda.pl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+  },
+  {
+    "file": "evidence/cloud-seeding.html",
+    "requested_url": "https://journals.ametsoc.org/view/journals/apme/57/11/jamc-d-17-0335.1.xml",
+    "accessed_at_utc": "2026-09-21T01:36:22.682778+00:00",
+    "status_code": 403,
+    "final_url": "https://journals.ametsoc.org/view/journals/apme/57/11/jamc-d-17-0335.1.xml",
+    "content_type": "text/html",
+    "error": "403 Client Error: Forbidden for url: https://journals.ametsoc.org/view/journals/apme/57/11/jamc-d-17-0335.1.xml"
+  },
+  {
+    "file": "evidence/foldover-2507.14648.pdf",
+    "requested_url": "https://arxiv.org/pdf/2507.14648",
+    "accessed_at_utc": "2026-09-21T01:36:22.783801+00:00",
+    "status_code": 200,
+    "final_url": "https://arxiv.org/pdf/2507.14648",
+    "content_type": "application/pdf",
+    "sha256": "41da02cb882c5d23604a20ee5aba05d4be40f6cce779e22b98d441b4c5c78da2",
+    "bytes": 413200
+  }
+]

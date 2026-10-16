@@ -1,0 +1,72 @@
+{
+  "job_id": "r03-E004-qwen_max",
+  "group_id": "E004",
+  "model_id": "qwen_max",
+  "repeat": 2,
+  "answers": {
+    "E004-Q01": "mixed_histories",
+    "E004-Q02": "partial_identification"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "exact_parent_lot_count": null,
+      "complete_assignment_available": false,
+      "claim_assessment": "inconsistent_single_history; insufficient_exact_assignments"
+    },
+    "clauses": {
+      "single_history": "inconsistent",
+      "exact_assignments": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975614-vMgrc8HDe01i0b7BAL2A",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 788,
+      "completion_tokens": 609,
+      "total_tokens": 1397,
+      "cost": 0.00523,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00523,
+        "upstream_inference_prompt_cost": 0.001576,
+        "upstream_inference_completions_cost": 0.003654
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 591,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 788,
+    "output_tokens": 609,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 591,
+    "reported_cost_usd": 0.00523,
+    "usage_cost_estimate_usd": 0.00523,
+    "usage_cost_upper_estimate_usd": 0.005624,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 15.677974416990764,
+    "derivation_wall_seconds": 0.00012395798694342375,
+    "derivation_cpu_seconds": 0.000124000000000013
+  },
+  "request_sha256": "7d9092ffde3530cd19d844383589f8da2a7e2becbbd2d68a291efba59b3066df",
+  "receipt_sha256": "a6a0b843a2fa1c658e0a5c3098c09d5b368fea7f5688a2147d2d5b9bc22e186d",
+  "simulated": false,
+  "halt_model": false
+}

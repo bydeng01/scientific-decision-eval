@@ -1,0 +1,56 @@
+{
+  "provider": "openai",
+  "case_id": "empty-prior",
+  "request": {
+    "model": "gpt-6-astra",
+    "instructions": "Infer which physical law generated the observations under the explicitly specified prior and observation model. Return probabilities over H1, H2, H3 that approximate the posterior given ALL observations. Integrate over the listed parameter possibilities, keeping the same parameters across experiments. The three hypotheses are exhaustive. When evidence is weak, distribute probability across plausible hypotheses instead of committing to one.\nAnswer definitions: {\"H1\": \"Linear drag: dv/dt = -a*v, b=0.\", \"H2\": \"Quadratic drag: dv/dt = -b*v*abs(v), a=0.\", \"H3\": \"Mixed drag: dv/dt = -a*v - b*v*abs(v), a>0 and b>0.\"}",
+    "input": "{\"task\": \"Identify a dimensionless drag law from independent noisy velocity measurements.\", \"model_priors\": {\"H1\": 0.3333333333333333, \"H2\": 0.3333333333333333, \"H3\": 0.3333333333333333}, \"parameter_priors\": {\"H1\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.2, 0.0], [0.4, 0.0], [0.8, 0.0]]}, \"H2\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.0, 0.2], [0.0, 0.4], [0.0, 0.8]]}, \"H3\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.1, 0.1], [0.1, 0.2], [0.1, 0.4], [0.2, 0.1], [0.2, 0.2], [0.2, 0.4], [0.4, 0.1], [0.4, 0.2], [0.4, 0.4]]}}, \"observation_model\": {\"noise\": \"independent additive Gaussian noise at each observation\", \"known_standard_deviation\": 0.04, \"initial_velocity\": \"known exactly; no measurement at t=0 is included\", \"shared_parameters\": \"one fixed (a,b) for all experiments in this state\"}, \"analytic_solution_for_positive_initial_velocity\": {\"a_positive\": \"v(t)=v0*exp(-a*t)/(1+(b*v0/a)*(1-exp(-a*t)))\", \"a_zero\": \"v(t)=v0/(1+b*v0*t)\"}, \"experiments\": []}",
+    "reasoning": {
+      "effort": "low"
+    },
+    "max_output_tokens": 2048,
+    "service_tier": "default",
+    "store": false,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "name": "mechanism_probabilities",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "probabilities": {
+              "type": "object",
+              "properties": {
+                "H1": {
+                  "type": "number"
+                },
+                "H2": {
+                  "type": "number"
+                },
+                "H3": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "H1",
+                "H2",
+                "H3"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "probabilities"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "endpoint": "https://api.openai.com/v1/responses",
+  "reserve_usd": 0.1566125,
+  "source_sha256": "2b7e41a6772ab9a91a2d7fae6062a7a58ca9d6f09eae84c57a7e93d517f228ed",
+  "shared_initial_stage_cap_usd": 1.0,
+  "scope": "empty-data interface and prior control only"
+}

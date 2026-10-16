@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-20T01:12:08.380405+00:00",
+  "budget_usd": 0.9358024,
+  "parent_cost_usd": 0.0641976,
+  "scope": "post-inspection diagnostic on exposed cases",
+  "cases": 8,
+  "requests": 16,
+  "max_reserved_usd": 0.08514000000000001,
+  "sha256": {
+    "cases.jsonl": "e4481d31db8a4773c7c7e279a57aefb32df905c3a788565f712d5dce38501df3",
+    "requests.jsonl": "eaaa94457d1434cefdb720914c91bef80a69cd3bd9b52473096715e5655b89b2",
+    "scripts/credit_diagnostic.py": "165e63b687e86c372601d392ee7cde7732609a509e87fd4c7ab52099e9e4dcd8",
+    "scripts/document_pilot.py": "de6a9614144b6393ef92d46dfa29225a2c8823b1bc03fb202ab6264fa43085ea",
+    "DIAGNOSTIC_PROTOCOL.md": "c59cf60f91bbeb295ddbec325e38f2ab301666b5c8f00671c936de75d1e05e24"
+  }
+}

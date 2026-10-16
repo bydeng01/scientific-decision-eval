@@ -1,0 +1,65 @@
+{
+  "started_at": "2026-09-21T06:35:25.882838+00:00",
+  "request_sha256": "43a204bcd36a3f1d306b7a4326f2b01b9941759763ab54f6c03020d952c9f90e",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": {
+      "target_treatment": "Paired-fixed initialization for the N1000 cosmological N-body simulation set.",
+      "scope": "Only the 100 paired-fixed realizations in Table 1's N1000 row; exclude its 100 standard realizations and all other simulation sets. One paired-fixed realization contains two phase-related executions.",
+      "evidence": [
+        {
+          "source_id": "COS-2018",
+          "location": "Section 2, PDF pp. 2-3; Table 1, PDF p. 4",
+          "kind": "source_faithful_adaptation",
+          "text": "The two fixed fields of a pair use the same fixed Fourier amplitudes, with phases shifted by pi between them. Table 1 lists 100 N1000 paired-fixed realizations and states that each corresponds to two simulations. The simulations are separate executions, not two output snapshots of one execution."
+        },
+        {
+          "source_id": "COS-2018",
+          "location": "Section 3.2, PDF p. 5, Equation 10 and cross-correlation discussion",
+          "kind": "source_faithful_adaptation",
+          "text": "The authors first average the two simulations' values for a paired-fixed realization, then calculate statistics across realizations. They explicitly analyze the cross-correlation within pairs. Phase flipping does not imply that every evolved observable has perfect negative correlation."
+        }
+      ],
+      "records": {
+        "paired_realizations": 100,
+        "executions_per_paired_realization": 2
+      }
+    },
+    "questions": {
+      "q1": {
+        "type": "choice",
+        "instructions": "How are the initial phase fields of the two simulations within one paired-fixed realization related? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "independent_draws": "Both phase fields are independently drawn from the specified phase distribution.",
+          "phase_reversed": "One phase field is obtained from the other by a pi phase shift, with the same fixed amplitudes.",
+          "identical_field": "Both simulations use the identical phase field without phase reversal.",
+          "output_resampling": "The pair is produced by resampling outputs from one completed simulation.",
+          "other": "The evidence establishes a different substantive answer from those listed.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      },
+      "q2": {
+        "type": "choice",
+        "instructions": "In the source's paired-fixed statistical construction, which quantity contributes one value before statistics are taken across realizations? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "individual_execution": "The output of each individual execution, entered separately as an independent realization.",
+          "pair_average": "The average of the two corresponding outputs within a paired-fixed realization.",
+          "pair_difference": "The difference between the two corresponding outputs within a paired-fixed realization.",
+          "all_runs_average": "One average across every N1000 execution, without distinct realization values.",
+          "other": "The evidence establishes a different substantive answer from those listed.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      }
+    },
+    "provider": {
+      "allow_fallbacks": false
+    }
+  },
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "job_id": "r05-E006-jev",
+  "attempt": 1,
+  "repeat": 4,
+  "simulated": false
+}

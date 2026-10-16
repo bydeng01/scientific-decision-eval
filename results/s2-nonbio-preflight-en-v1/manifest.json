@@ -1,0 +1,36 @@
+{
+  "started_at_utc": "2026-09-21T00:14:44.693100+00:00",
+  "python": "3.12.8",
+  "mode": "offline_dry_run",
+  "language": "en",
+  "input_revision": "s2-nonbio-en-v1",
+  "split": "reviewed_development",
+  "paid_execution_enabled": false,
+  "input_and_code_sha256": {
+    "development/s2-nonbio-v1/inputs/cases.json": "efc7c632e9a39e25bb2752278cbbf08b7c2c58ff7dd6ff091a403aa7ea721246",
+    "development/s2-nonbio-v1/inputs/evidence.json": "6c36186233b22594f224456739510481a48b37930dd54563f6f53b98c936d966",
+    "development/s2-nonbio-v1/inputs/sources.json": "ee85c4f837b9bc7389ab539c1f9902d1e5c512d4d6ba765798210527561a27cd",
+    "development/s2-nonbio-v1/evaluation/references.json": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+    "development/s2-nonbio-v1/budget.json": "986be5578bdeb3fa6866f3fea02ab24ec31a775c5fa1c89584a3c332cd5cec21",
+    "development/s2-nonbio-v1/run.py": "6d66dfb62c3079de420319ba58f1368ab2cd73bda5f24bfea7617ca5c896fe06",
+    "development/s2-nonbio-v1/rules.py": "50db9181e9b409d0c33bae2546213484b1013d95d12dc4348fc5098ac4ac795e",
+    "development/s2-nonbio-v1/score.py": "c6bfc8a07b238edc4086f1959f1d1027ca4f5de3c1c91a2fbcfed5081532c38a",
+    "development/s2-nonbio-v1/test_preflight.py": "ef74b05f4c37de3a6f3e4bf6463cc74d114d5657b970193d9b546579963d1a6e",
+    "development/s2-nonbio-v1/check_counts.py": "da8e854f47f939609d1a70a59acf1b1764cf4b77137571953ab2ea190303ccae",
+    "development/s2-nonbio-v1/official_api_check.json": "421645894ff5bf46795deb991e1d6067ba7f7efae200f803c46fa39bdeea11c4",
+    "development/s2-nonbio-v1/LANGUAGE_MIGRATION.json": "f4a1a9fd469347803839880febccf5179c0bae705abd86bf0ceac0eebd677b3a"
+  },
+  "predictions_sha256_before_loading_references": "83b9ddc1c2dcdadfb5c6ee3b4c4405ab9bc15ce89473668e873fcf6ae5614d05",
+  "artifact_sha256": {
+    "SUMMARY.md": "2f1453ea95fa63e4a07c22e80312b959b007dec6a764497e3f5421773f30a4f7",
+    "actual_inputs.jsonl": "a63ebe1e3fa1844d998174cd73be48e7abbca226f3b36b3048aee3dae2692140",
+    "call_matrix.json": "94eb8dadbf918bbf1caf1164d1973db51768c1143e94553bacba62fece4e3622",
+    "model_attempts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model_requests.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "oracle_predictions.jsonl": "22949eb38434ccc26ac46ccd874b944b68ab34bc5c992fc2f6bcceba4e10c471",
+    "predictions.jsonl": "83b9ddc1c2dcdadfb5c6ee3b4c4405ab9bc15ce89473668e873fcf6ae5614d05",
+    "resource_summary.json": "3c049aa7cd50e2451a551432cb8fcf9278841e17553d7407f093c0446fef0661",
+    "resources.jsonl": "17d9b91148ec4e0249ca218441ca1892a7ec26b57d1a3a53f72f8373f707aa8a",
+    "scores.json": "8ac4dfec3d855be7932c53d90a0770cf4166e8014c8516861bee996eb1a7b906"
+  }
+}

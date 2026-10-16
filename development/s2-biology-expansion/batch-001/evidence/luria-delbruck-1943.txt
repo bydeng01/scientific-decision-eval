@@ -1,0 +1,1374 @@
+
+PDF PAGE 1
+MUTATIONS OF BACTERIA FROM VIRUS SENSITIVITY 
+TO VIRUS RESISTANCE’-’ 
+S. E. LURIAS AND M. DELBROCK 
+Indiana University, Bloomingion, Indiana, and 
+va’enderbilt Universily, Nashville, Tennessee 
+Received May 29, 1943 
+INTRODUCTION 
+HEN a pure bacterial culture is. attacked by a bacterial virus, the cul- 
+W ture will clear after a few hours due to destruction of the sensitive ceIls 
+by the virus. However, after further incubation for a few hours, or sometimes 
+days, the culture will often become turbid again, due to the growth of a bac- 
+terial variant which is resistant to the action of the virus. This variant can be 
+isolated and freed from the virus and will in many cases retain its resistance 
+to the action of the virus even if subcultured through many generations in the 
+absence of the virus. While the sensitive strain adsorbed the virus readily, the 
+resistant variant will generally not show any affinity to it. 
+The resistant bacterial variants appear readily in cultures grown from a 
+single cell. They were, therefore, certainly not present when the culture was 
+started. Their resistance is generally rather specific. It does not extend to 
+viruses that are found to differ by other criteria from the strain in whose pres- 
+ence the resistant culture developed. The variant may differ from the original 
+strain in morphological or metabolic characteristics, or in serological type or in 
+colony type. Most often, however, no such correlated changes are apparent, 
+and the variant may be distinguished from the original strain only by its re- 
+sistance to the inciting strain of virus. 
+The nature of these variants and the manner in which they originate have 
+been discussed by many authors, and numerous attempts have been made to 
+correlate the phenomenon with other instances of bacterial variation. 
+The net effect of the addition of virus consists of the appearance of a vari- 
+ant strain, characterized by a new stable character-namely, 
+resistance to the 
+inciting virus. The situation has often been expressed by saying that bacterial 
+viruses are powerful “dissociating agents.” While this expression summarizes 
+adequately the net effect, it must not be taken to imply anything about the 
+mechanism by which the result is brought about. A moment’s reflection will 
+show that there are greatly differing mechanisms which might produce the 
+same end result. 
+D’HERELLE (1926) and many other investigators believed that the virus 
+by direct action induced the resistant variants. GRATIA (1921), BURNET (I929), 
+and others, on the other hand, believed that the resistant bacterial variants 
+are produced by mutation in the culture prior to the addition of virus. The 
+*Aided by grants from the D A Z I ~ 
+FOUNDATION 
+FOR MEDICAL RESEARCH 
+and from the 
+* Fellow of the GUGGENHEIM 
+FOUNDATION. 
+Theory by M. D., experiments by S. E. L. 
+ROCKEFELLER 
+FOUNDATION. 
+GENETICS a8: 491 November 1943 
+
+
+PDF PAGE 2
+492 
+S. E. LURIA AND M. DELBRUCK 
+virus merely brings the variants into prominence by eliminating all sensitive 
+bacteria. 
+Neither of these views seems to have been rigorously proved in any single 
+instance. BURNET’S 
+(1929) work on isolations of colonies, morphologically 
+distinguishable prior to the addition of virus, which proved resistant to the 
+virus comes nearest to this goal. His results appear to support the mutation 
+hypothesis for colony variants. It may seem peculiar that this simple and im- 
+portant question should not have been settled long ago, but a close analysis of 
+the problem in hand will show that a decision can only be reached by a more 
+subtle quantitative study than has hitherto been applied in this field of re- 
+search. 
+Let us begin by restating the basic experimental finding. 
+A bacterial culture is grown from a single cell. At a certain moment, the 
+culture is plated with virus in excess. Upon incubation, one finds that a very 
+small fraction of the bacteria survived the attack of the virus, as indicated by 
+the development of a small number of resistant colonies, consisting of bacteria 
+which do not even adsorb the virus. 
+Let us focus our attention on the first generation of the resistant variant- 
+that is, on those bacteria which survive immediately after the virus has been 
+added. These survivors we may call the “original variants.” We know that 
+these bacteria and their offspring are resistant to the virus. We may formulate 
+three alternative hypotheses regarding them. 
+a. Hypothesis of mutation to immunity. The original variants were resistant 
+before the virus was added, and, like their offspring, did not even adsorb it. On 
+this hypothesis the virus did not interact at all with the original variants, 
+the origin of which must be ascribed to “mutations” that occur quite inde- 
+pendently of the virus. Naming such hereditary changes “mutations” of course 
+does not imply a detailed similarity with any of the classes of mutations that 
+have been analyzed in terms of genes for higher organisms. The similarity 
+may be merely a formal one. 
+b. Hypothesis of acquired immunity. The original variants interacted with 
+the virus, but survived the attack. We may then inquire into the predisposing 
+cause which effected the survival of these bacteria in contradistinction to the 
+succumbing ones. The predisposing cause may be hereditary or random. Ac- 
+cordingly we arrive at two alternative hypotheses-namely, 
+bl. Hypothesis of acquired immunity of hereditarily predisposed individuals. 
+The original variants originated by mutations occurring independently of the 
+presence of virus. When the virus is added, the variants will interact with it, 
+but they will survive the interaction, just as there may be families which are 
+hereditarily predisposed to survive an otherwise fatal virus infection. Since we 
+know that the offspring of the original variants do not adsorb the virus, we 
+must further assume that the infection caused this additional hereditary 
+change. 
+. 
+bz. Hypothesis of acquired immunity-hereditary 
+aj[er infection. The original 
+variants are predisposed to survival by random physiological variations in 
+size, age, etc. of the bacteria, or maybe even by random variations in the 
+
+
+PDF PAGE 3
+MUTATIONS OF BACTERIA 
+493 
+point of attack of the virus on the bacterium. After survival of such random 
+individuals, however, we must assume that their offspring are hereditarily 
+immune, since they do not even adsorb the virus. 
+These alternative hypotheses may be grouped by first considering the origin 
+of the hereditary difference. Do the original variants trace back to mutations 
+which occur independently of the virus, such that these bacteria belong to a 
+few clones, or do they represent a random sample of the entire bacterial popu- 
+lation? The first alternative may then be subdivided further, according to 
+whether the original variants do or do not interact with the virus. Disregarding 
+for the moment this subdivision, we may formulate two hypotheses: 
+I. First hypothesis (mutation): There is a finite probability for any bac- 
+terium to mutate during its life time from “sensitive” to “resistant.” Every 
+offspring of such a mutant will be resistant, unless reverse mutation occurs. 
+The term “resistant” means here that the bacterium will not be killed if ex- 
+posed to virus, and the possibility of its interaction with virus is left open. 
+2. Second hypothesis (acquired hereditary immunity): There is a small finite 
+probability for any bacterium to survive an attack by the virus. Survival of 
+an infection confers immunity not only to the individual but also to its off- 
+spring. The probability of survival in the first instance does not run in clones. 
+If we find that a bacterium survives an attack, we cannot from this information 
+infer that close relatives of it, other than descendants, are likely to survive the 
+attack. 
+The last statement contains the essential difference between the two hy- 
+potheses. On the mutation hypothesis, the mutation to resistance may occur 
+any time prior to the addition of virus. The culture therefore will contain 
+“clones of resistant bacteria” of various sizes, whereas on the hypothesis of 
+acquired immunity the bacteria which survive an attack by the virus will be 
+a random sample of the culture. 
+For the discussion of the experimental possibility of distinction between 
+these two hypotheses, it is important to keep in mind that the offspring of a 
+tested bacterium which survives is resistant on either hypothesis. Repeated 
+tests on a bacterium at different times, or on a bacterium and on its offspring, 
+could therefore give no information of help in deciding the present issue. Thus, 
+one has to resort to less direct methods. Two main differences may be derived 
+from the hypotheses: 
+First, if the individual cells of a very large number of microcolonies, each 
+containing only a few bacteria, were examined for resistance, a pronounced 
+correlation between the types found in a single colony would be expected on 
+the mutation hypothesis, while a random distribution of resistants would be 
+expected on the hypothesis of acquired hereditary immunity. This experiment, 
+however, is not practicable, both on account of the difficulty of manipulation 
+and on account of the small proportion of resistant bacteria. 
+Second, on the hypothesis of resistance due to mutation, the proportion of 
+resistant bacteria should increase with time, in a growing culture, as new 
+mutants constantly add to their ranks. 
+
+
+PDF PAGE 4
+494 
+In contrast to this increase in the proportion of resistants on the mutation 
+hypothesis, a constant proportion of resistants may be expected on the hy- 
+pothesis of acquired hereditary immunity, as long as the physiological condi- 
+tions of the culture do not change. To test this point, accurate determinations of 
+the proportion of resistant bacteria in a growing culture and in successive sub- 
+cultures are required. In the attempt to determine accurately the proportion 
+of resistant bacteria, great variations of the proportions were found, and results 
+did not seem to be reproducible from day to day. 
+Eventually, it was realized that these fluctuations were not due to any un- 
+controlled conditions of our experiments, but that, on the contrary, large 
+fluctuations are a necessary consequence of the mutation hypothesis and that 
+the quantitative study of the fluctuations may serve to test the hypothesis. 
+The present paper will be concerned with the theoretical analysis of the 
+probability distribution of the number of resistant bacteria to be expected on 
+either hypothesis and with experiments from which this distribution may be 
+inferred. 
+While the theory is here applied to a very special case, it will be apparent 
+that the problem is a general one, encountered in any case of mutation in uni- 
+parental populations. It is the belief of the authors that the quantitative study 
+of bacterial variation, which until now has made such little progress, has been 
+hampered by the apparent lack of reproducibility of results, which, as we shall 
+show, lies in the very nature of the problem and is an essential element for its 
+analysis. It is our hope that this study may encourage the resumption of quan- 
+titative work on other problems of bacterial variation. 
+S. E. LUFUA AND M. DELBRUCK 
+THEORY 
+The aim of the theory is the analysis of the probability distributions of the 
+number of resistant bacteria to be expected on the hypothesis of acquired 
+immunity and on the hypothesis of mutation. 
+The basic assumption of the hypothesis of acquired hereditary immunity 
+is the assumption of a fixed small chance for each bacterium to survive an at- 
+tack by the virus. In this case we may therefore expect a binomial distribution 
+of the number of resistant bacteria, or, in cases where the chance of survival 
+is small, a Poisson distribution. 
+The basic assumption of the mutation hypothesis is the assumption of a 
+fixed small chance per time unit for each bacterium to undergo a mutation to 
+resistance. The assumption of a fixed chance per time unit is reasonable only 
+for bacteria in an identical state. Actually the chance may vary in some manner 
+during the life cycle of each bacterium and may also vary when the physio- 
+logical conditions of the culture vary, particularly when growth slows down on 
+account of crowding of the culture. With regard to the first of these variations, 
+the assumed chance represents the average chance per time unit, averaged 
+over the life cycle of a bacterium. With regard to the second variation, it 
+seems reasonable to assume that the chance is proportional to the growth rate 
+of the bacteria. We will then obtain the same results as on the simple assump- 
+
+
+PDF PAGE 5
+MUTATIONS OF BACTERIA 
+49s 
+tion of a fixed chance per time unit, 
+we agree to measure time in units of divi- 
+sion cycles of the bacteria, or any proportional unit. 
+We shall choose as time unit the average division time of the bacteria, di- 
+vided by In 2, so that the number Nt of bacteria in a growing culture as func- 
+tion of time t follows the equations 
+(1) 
+dNt/dt = N,, 
+and Nt = Noet. 
+We may then define the chance of mutation for each bacterium during the 
+time element dt as 
+(2) 
+adt, 
+so that a is the chance of mutation per bacterium per time unit, or the “muta- 
+tion rate.” 
+If a bacterium is capable of different mutations, each of which results in 
+resistance, the mutation rate here considered will be the sum of the mutation 
+rates associated with each of the different mutations. 
+The number dm of mutations which occur in a growing culture during a 
+time interval dt is then equal to this chance (2) multiplied by the number 
+of bacteria: or 
+(3 ) 
+dm = adtN,, 
+and from this equation the number m of mutations which occur during any 
+finite time interval may be found by integration to be 
+(4) 
+m = a(Nt - No) 
+or, in words, to be equal to the chance of mutation per bacterium per time unit 
+multiplied by the increase in the number of bacteria. 
+The bacteria which mutate during any time element dt form a random 
+sample of the bacteria present at that time. For small mutation rates, their 
+number will therefore be distributed according to Poisson’s law. Since the 
+mutations occuring in different time intervals are quite independent from each 
+other, the distribution of all mutations will also be according to Poisson’s law. 
+This prediction cannot be verified directly, because what we observe, when 
+we count the number of resistant bacteria in a culture, is not the number of 
+mutations which have occurred, but the number of resistant bacteria which 
+have arisen by multiplication of those which mutated, the amount of multipli- 
+cation depending on how far back the mutation occurred. 
+If, however, the premise of the mutation hypothesis can be proved by other 
+means, the prediction of a Poisson distribution of the number of mutations 
+’ We assume that the number of resistant bacteria is at all times small in comparison with the 
+total number of bacteria. If this condition is not fulfilled, the total number of bacteria in this 
+equation has to be replaced by the number of sensitive bacteria. The subsequent theoretical de- 
+velopments will then become a little more complicated. For the case studied in the experimental 
+part of this paper the condition is fulfilled. 
+
+
+PDF PAGE 6
+496 
+S. E. LUNA AND M. DELBRUCK 
+may be used. to determine the mutation rate. It is only necessary to determine 
+the fraction of cultures showing no mutation in a large series of similar cultures. 
+This fraction PO, according to theory, should be: 
+( 5 ) 
+po = e-m. 
+From this equation the average number m of mutations may be calculated, 
+and hence the mutation rate a from equation (4). 
+Let us now turn to the discussion of the distribution of the number of 
+resistant bacteria. 
+The average number of resistant bacteria is easily obtained by noting that 
+this number increases on two accounts-namely, 
+first on account of new muta- 
+tions, second on account of the growth of resistant bacteria from previous 
+mutations. During a time element dt the increase on the first account will be, 
+by equation ( 3 ) : adtNt. Nt, the number of bacteria present at time t, is 
+given by equation (I). The increase on the second account will depend on the 
+growth rate of the resistant bacteria. In the simple case, which we shall 
+treat here, this growth rate is the same as that of the sensitive bacteria, and 
+the increment on this account is p dt, where p is the average number of re- 
+sistant bacteria present at time t. We have then as the total rate of increase 
+of the average number of resistant bacteria dp/dt = aNt+p and upon integra- 
+tion 
+(6) 
+p = taNt 
+if we assume that at time zero the culture contained no resistant bacteria. 
+It will be seen that the average number of resistant bacteria increases more 
+rapidly than the total number of bacteria. Indeed the fraction of resistant 
+bacteria in the culture increases proportionally to time. This, as pointed out 
+in the introduction, is a distinguishing feature of the mutation hypothesis 
+but unfortunately, as will be seen in the sequel, is not susceptible to experi- 
+mental verification due to statistical fluctuations. 
+The resistant bacteria in any culture may be grouped, for the purpose of 
+this analysis, into clones, taking together all those which derive from the 
+same mutation. We may say that the culture contains clones of various age 
+and size, calling “age” of a clone the time since its parent mutation occurred 
+and “size” of a clone the number of bacteria in a clone at the time of observa- 
+tion. It is clear that size and age of a clone determine each other. If, in par- 
+ticular, we make the simplifying hypothesis that the resistant bacteria grow 
+as fast as the normal sensitive strain, the relation between size and age will be 
+expressed by equation (I), with appropriate meaning given to the symbols. 
+The relation implies that the size of a clone increases exponentially with its 
+age. On the other hand, the frequency with which clones of different ages may 
+be encountered in any culture must decrease exponentially with age, according 
+to equations (3) and (I). 
+Combining these two results-namely, 
+that clone size increases exponen- 
+tially with clone age and that frequency of clones of different age decreases 
+exponentially with clone age-we 
+see that the two factors cancel when the 
+
+
+PDF PAGE 7
+MUTATIONS OF BACTERIA 
+49 7 
+average number of bacteria belonging to clones of one age group is considered. 
+In other words, at the time of observation we shall have, on the average, as 
+many resistant bacteria stemming from mutations which occurred during the 
+first generation after the culture was started as stemming from mutations 
+which occurred during the last generation before observation, or during any 
+other single generation. 
+On the other hand, for small mutation rates it is very improbable that any 
+mutation will occur during the early generations of a single or of a limited num- 
+ber of experimental cultures. It follows that the average number of resistant 
+bacteria derived from a limited number of experimental cultures will, probably, 
+be considerably smaller than the theoretical value given by equation (6), and, 
+improbably, the experimental value will be much larger than the theoretical 
+value. The situation is similar to the operation of a (fair) slot machine, where 
+the average return from a limited number of plays is probably considerably 
+less than the input, and improbably, when the jackpot is hit, the return is 
+much bigger than the input. 
+This result characterizes the distribution of the'number of resistant bacteria 
+as a distribution with a long and significant tail of rare cases of high numbers of 
+resistant bacteria, and therefore as a distribution with a n abnormally high vari- 
+ance. This variance will be calculated below. 
+For such distributions the averages derived from limited numbers of samples 
+yield very poor estimates of the true averages. Somewhat better estimates of 
+the averages may in such cases be obtained by omitting, in the calculation of 
+the theoretical averages, the contribution to these averages of those events 
+which probably will not occur in any of our limited number of samples. We 
+may do this, in the integration leading to equation (6), by putting the lower 
+limit of integration not at time zero, when the cultures were started, but at a 
+certain time t o , prior to which mutations were not likely to occur in any of our 
+experimental cultures. We then obtain as a likely average r of the number of 
+resistant bacteria in a limited number of samples, instead of equation (6), 
+r = (t - to)aNt. 
+It now remains to choose an appropriate value for the time interval t - to. 
+For this purpose we return to equation (4, in which it was stated that the 
+average number of mutations which occur in a culture is equal to the mutation 
+rate multiplied by the increase of the number of bacteria. Let us then choose 
+t o such that up to that time just one mutation occurred, on the average, in a 
+group of C similar cultures, or 
+I = aC(Nt, - NO). 
+In this equation we may neglect No, the number of bacteria in each inoculum, 
+in comparison with Nto, the number of bacteria in each culture at the critical 
+time to. We may also express Nto in terms of Nt, the number of bacteria at the 
+time of observation, applying equation (I) : 
+N = N,e-(t-to). 
+t o 
+
+
+PDF PAGE 8
+498 
+We thus obtain 
+(7) 
+t' - t o = ln(NtCa). 
+Equations (6a) and (7) may be combined to eliminate t-to and to yield 
+a relation between the observable quantities r and Nt on the one hand and 
+the mutation rate a on the other hand, to be determined by this equation: 
+(8) 
+r = aNtln (NtCa). 
+This simple transcendental equation determining a may be solved by any 
+standard numerical method. In figure I, the relation between r and aNt is 
+plotted for several values of C. 
+S. E. LUIUA AND M. DELBRtfCK 
+FIGURE 
+1.-The 
+value of aNt as a function of r for various values of C. The upper left hand part 
+of the figure gives the curves for low values of aNt and of r on a larger scale. See text. 
+Estimates of a obtained from equation (8) will be too high if in any of the 
+experimental cultures a mutation happened to occur prior to time to. From the 
+definition of t o it will be seen that this can be expected to happen in little more 
+than half of the cases. 
+While we have thus obtained a relation permitting an estimate of the muta- 
+tion rate from the observation of a limited number of cultures, this relation is 
+in no way a test of the correctness of the underlying assumptions and, in par- 
+ticular, is not a test of the mutation hypothesis itself. In order to find such 
+tests of the correctness of the assumption we must derive further quantitative 
+relations concerning the distribution of the number of resistant bacteria and 
+compare them with experimental results. 
+
+
+PDF PAGE 9
+MUTATIONS OF BACTERIA 
+499 
+Since we have seen that the mutation hypothesis, in contrast to the hypothe- 
+sis of acquired immunity, predicts a distribution of the number of resistant 
+bacteria with a long tail of high numbers of resistant bacteria, the determina- 
+tion of the variance of the distribution should be helpful in differentiating be- 
+tween the two hypotheses. We may here again determine first the true vari- 
+ance-that 
+is, the variance of the complete distribution-and 
+second the likely 
+variance in a limited number of cultures, by omitting those cases which are 
+not likely to occur in a limited number of cultures. 
+The variance may be calculated in a simple manner by considering sep- 
+arately the variances of the partial distributions of resistant bacteria, each 
+partial distribution comprising the resistant bacteria belonging to clones of 
+one age group. The distribution of the total number of resistant bacteria is 
+the resultant of the superposition of these independent partial distributions. 
+Each partial distribution is due to the mutations which occurred during a 
+certain time interval d7, extending from (t-.) 
+to (t-T+dr). 
+The average 
+number of mutations which occurred during this interval is, according to 
+equation (3), 
+(9) 
+dm = aN,dT = aNte-rd7. 
+These mutations will be distributed according to Poisson’s law, so that the 
+variance of each of these distributions is equal to the mean of the distribution. 
+We are however not interested in the distribution of the number of mutations 
+but in the distribution of the number of resistant bacteria which stem from 
+these mutations at the time of observation-that 
+is, after the time interval r. 
+Each original mutant has then grown into a clone of size er. The distribution 
+of the resistant bacteria stemming from mutations occurred in the time inter- 
+val d7 has therefore an average value which is er times greater than the average 
+number of mutations, and a variance which is e2r times greater than the vari- 
+ance of the number of mutations. Thus we find for the average number of 
+resistant bacteria: 
+dp = aNtdr, 
+and for the variance of this number 
+vanp = aNterd7. 
+From this variance of the partial distribution, the variance of the distribution 
+of all resistant bacteria may be found simply by integrating over the appro- 
+priate time interval-that 
+is, either from time t to time o (7 from o to t), if 
+the true variance is wanted, or from time t to time t o (7 from o to t- to), if the 
+likely variance in a limited number of cultures is wanted. In the first case we 
+obtain : 
+(10) 
+var, = aNt(et - I). 
+In the second case we obtain: 
+(1oa) 
+var, = aNt[e(t-to) - I]. 
+
+
+PDF PAGE 10
+500 
+S. E. LURIA AND M. DELBRUCK 
+Substituting here the previously found value of (t-to) 
+and neglecting the 
+second term in the brackets, we obtain: 
+(11) 
+varr = Ca2Nt2. 
+Comparing this value of the likely variance with the value of the likely 
+average, from equation (8), we see that the ratio of the standard deviation 
+to the average is: 
+(12) 
+d\/vBT,/r = &/In 
+(NtCa). 
+It is seen that this ratio depends on the logarithm of the mutation rate and 
+will consequently be only a little smaller for mutation rates many thousand 
+times greater than those considered in the experiments reported in this paper. 
+In the beginning of this theoretical discussion we pointed out that the 
+hypothesis of acquired immunity leads to the prediction of a distribution of 
+the number of resistant bacteria according to Poisson’s law, and therefore to 
+the prediction of a variance equal to the average. On the other hand, if we com- 
+pare the average, equation (8), with the variance, equation (11), (not, as above, 
+with the square root of the variance), we obtain 
+( 1 4 
+varr = rNtCa/ln (NtCa). 
+Equation (Iza) shows that the likely ratio between variance and average is 
+much greater than unity on the hypothesis of mutation, if (NtCa), the total 
+number of mutations which occurred in our cultures, is large compared to 
+unity! 
+It is possible to carry the analysis still further and to evaluate the higher 
+moments of the distribution function of the number of resistant bacteria, or 
+even the distribution function itself. The moments are comparatively easy to 
+obtain, while the calculation of the distribution function involves considerable 
+6 In some of the experiments reported in the present paper we did not determine the total 
+number of resistant bacteria in each culture, but the number contained in a small sample from 
+each culture. In these cases the variance of the distribution of the number of resistant bacteria 
+will be slightly increased by the sampling error. The proper procedure is here first to find the 
+average number of resistant bacteria per culture by multiplying the average per sample by the 
+ratio 
+(‘3) 
+volume of culture 
+volume of sample’ 
+second, to evaluate the mutation rate with the help of equation (8); third, to figure the likely 
+variance for the cultures by equation (11); fourth, to divide this variance by the square of the 
+ratio (13) to obtain that part of the variance in the samples which is due to the chance distribution 
+of the mutations. The experimental variance should be greater than this value, on account of 
+the sampling variance. The sampling variance is in all our cases only a small correction to the 
+total variance, and it is sufficient to use its upper limit, that of the Poisson distribution, in our 
+calculations. Consequently, when comparing the experimental with the calculated values, we 
+first subtract from the experimental value the sampling variance, which we take to be equal to 
+the average number of resistant bacteria. 
+
+
+PDF PAGE 11
+MUTATIONS OF BACTERIA 
+501 
+mathematical difficulties. An approximation to the beginning of the distribu- 
+tion function-that 
+is, to its values for small numbers of resistant bacteria- 
+may be obtained by grouping mutations according to the bacterial generation 
+during which they occurred. For instance, the probability of obtaining seven 
+resistant bacteria may be broken down into the sum of the following alterna- 
+tive events: (a) seven mutations during the last generation; jb) three mutations 
+during the last generation and two mutations one generation back; (c) three 
+mutations during the last generation and one mutation two generations back; 
+(d) one mutation during the last generation and three mutations one genera- 
+tion back; (e) one mutation during the last generation, one mutation one gen- 
+eration back and one mutation two generations back. 
+The probability of each of these events depends only on the mutation rate 
+and on the final number of bacteria. 
+The grouping of mutations according to the bacterial generation during 
+which they occurred, and the assumption that the bacteria increase in simple 
+geometric progression, simplify the calculation sufficiently to permit numerical 
+computation. On the other hand, the classes with two, four, eight, etc., mu- 
+tants are artificially favored by this procedure, so that a somewhat uneven 
+distribution results, with too high values for two, four, eight, etc., resistant 
+bacteria (see fig. 2 ) . 
+MATERIAL AND METHODS 
+The material used for our experimental study consisted of a bacterial virus 
+CY and of its host, Escherichia coli B (DELBRUCK and LURIA 1942). Secondary 
+cultures after apparently complete lysis of B by virus a show up within a few 
+hours from the time of clearing. They consist of cells which are resistant to 
+the action of virus CY, but sensitive to a series of other viruses active on B. 
+The resistant cells breed true and can be established easily as pure cultures. 
+No trace of virus could be found in any pure culture of the resistant bacteria 
+studied in this paper. The resistant strains are therefore to be considered as 
+non-lysogenic. 
+Tests were made to see whether the resistance to virus a was a stable char- 
+acter of the resistant strains. In the first place, it was found that virus a is 
+not appreciably adsorbed by any of the resistant strains. In the second place, 
+when a certain amount of virus CY is mixed with a growing culture of a resistant 
+strain, no measurable increase of the titer of virus a occurs over a period of 
+several hours. This is a very sensitive test for the occurrence of sensitive bac- 
+teria, and its negative result for all resistant strains shows that reversion to 
+sensitivity must be a very rare event. 
+Morphologically a t least two types of colonies of resistant bacteria may be 
+distinguished. The first type of colony is similar to the type produced by the 
+sensitive strain both in size and in the character of the surface and of the 
+edge. The second type of colony is much smaller and translucent. The differ- 
+ence in colony type is maintained in subcultures. Microscopically the bacteria 
+from these two types of colonies are indistinguishable. They also do not differ 
+
+
+PDF PAGE 12
+502 
+S. E. LURIA AND M. DELBRUCK 
+from each other or from the sensitive strain in their fermentation reactions on 
+common sugars and in the characteristics of their growth curves in nutrient 
+broth. In particular, the lag periods, the division times during the logarithmic 
+phase of growth, and the maximum titers attained are identical for the sensi- 
+tive strain and for the two variants. Both variants, therefore, fulfill the require- 
+ments for the applicability of the theory developed above. 
+In the presentation of our experimental results we have lumped the counts 
+of the two types of colonies together, because: (I) theoretically, this is equiva- 
+lent to summing the corresponding mutation rates; (2) experimentally, we 
+are not certain whether each of these types does not actually comprise a diver- 
+sity of variants; (3) experimentally, no correlation appeared to exist between 
+the occurrence of these variants, which shows the independence of the causes 
+of their occurrence. 
+Cultures of B were grown either in nutrient broth (containing .5 percent 
+NaC1) or in an asparagin-glucose synthetic medium. In the latter, the division 
+time during the logarithmic phase of growth was 35 minutes, as compared 
+with rg minutes in broth. In synthetic medium, the acidity increased during 
+the time of incubation from pH 7 to pH 5. 
+In cultures of strain B, between  IO-^ and 10-6 of the bacteria are found 
+usually to give colonies resistant to the action of virus a when samples of such 
+cultures are plated with large amounts of virus. In order to be reasonably cer- 
+tain that the resistant bacteria found in the test had not been introduced into 
+the test culture with the initial inoculum, the test cultures were always started 
+with very small inocula, containing between 50 and 500 bacteria from a grow- 
+ing culture. Thus any resistant bacterium found at the moment of testing 
+(when the culture contains between IO* and 5x10~ 
+bacteria/cc) must be an 
+offspring of one of the sensitive bacteria of the inoculum. 
+All platings were made on nutrient agar plates. The plating experiments for 
+counting the number of resistant bacteria in a liquid culture of the sensitive 
+strain were done by plating either a portion or the entire culture with a. large 
+amount of virus a. The virus was plated first, and spread over the entire sur- 
+face of the agar. A few minutes later the bacterial suspension to be tested was 
+spread over the central part of the plate, leaving a margin of at least one cen- 
+timeter. Thus all bacteria were surrounded by large numbers of virus par- 
+ticles. 
+Microscopic examination of plates seeded in this manner showed that lysis 
+takes place very quickly; only bacteria which at the time of plating were in 
+the process of division may sometimes complete the division. The resistant 
+colonies which appear after incubation are therefore due to resistant bacterial 
+cells present at the time of plating. 
+The total number of bacteria present in the culture to be tested was deter- 
+mined by colony counts in the usual manner. 
+The resistant colonies of the large type appear after 12-16 hours of incuba- 
+tion, the colonies of the small type appear after 18-24 hours, and never reach 
+half the size of the former ones. Counts were usually made after 2 4 and 48 
+hours. 
+
+
+PDF PAGE 13
+MUTATIONS OF BACTERIA 
+503 
+EXPERIMENTAL 
+A Test of the Reliability of the Plating Method 
+In our experiments we wanted to study the fluctuations of the numbers of 
+resistant bacteria found in cultures of sensitive bacteria. It was therefore 
+necessary to show first that the method of testing did not involve any unrecog- 
+nized variables, which caused the number of resistant colonies to vary from 
+plate to plate or from sample to sample. 
+Therefore, parallel platings were made using a series of samples from the 
+same bacterial culture. If our plating method is reliable, fluctuations should 
+in this arrangement be due to random sampling only, and the variance from a 
+series of such samples should be equal to the mean. 
+Table I gives the results of three such experiments. It will be seen that in 
+TABLE 
+I 
+The number of resistant bacteria in different samples from the same culture. 
+EXP. NO. loa 
+EXP. NO. 11a 
+EXP. NO. 3 
+SAMPLE NO. 
+~ S I S T A N T COLONIES 
+RESISTANT COLONIES 
+RESISTANT COLONIES 
+I 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+I O 
+mean 
+variance 
+2 
+P 
+I4 
+I5 
+I3 
+I5 
+I4 
+26 
+16 
+I3 
+21 
+20 
+16.7 
+I5 
+9 
+.4 
+46 
+56 
+52 
+48 
+65 
+44 
+49 
+51 
+56 
+47 
+51.4 
+27 
+5.3 
+.8 
+4 
+2 
+2 
+I 
+5 
+4 
+4 
+7 
+2 
+2 
+3.3 
+3.8 
+I2 
+.2 
+all three cases variance and mean agree as well as may be expected. There is 
+therefore no reason to assume that the method of sampling or plating intro- 
+duces any fluctuations into our results besides the sampling error. 
+Fluctuations of the Number of Resistant Bacteria in Samples from a 
+Series of Similar Cultures 
+As pointed out in the introduction and in the theoretical part, the hy- 
+pothesis of acquired immunity and the hypothesis of mutation lead to radi- 
+cally different predictions regarding the distribution of the number of resistant 
+bacteria in a series of similar cultures. The hypothesis of acquired immunity 
+predicts a variance equal to the average, as in sampling, while the mutation 
+hypothesis predicts a much greater variance. 
+Series of five to IOO cultures were set up in parallel with small equal inocula, 
+and were grown until maximum titer was reached. Three kinds of cultures 
+
+
+PDF PAGE 14
+504 
+S. E. LURIA AND M. DELBRUCK 
+were used-namely: 
+(I) 10.0 cc aerated broth cultures; (2) .2 cc broth cultures; 
+(3) .2 cc synthetic medium cultures. 
+The results of all tests for the number of resistant bacteria are summarized 
+in table 2 and table 3. 
+TABLE 
+z 
+The number of resistan! bacteria in series of similar cultures. 
+EXPERIMENT NO. 
+I 
+IO 
+I1 
+15 
+16 
+17 
+zia 
+zIb 
+Number of cultures 
+9 
+8 
+10 
+10 
+2 0 
+1 2 
+I9 
+5 
+Volume of cultures, cc 
+10.0 
+10.0 
+10.0 
+10.0 
+. 2 * 
+.2' 
+. 2 
+10.0 
+Volume of samples, cc 
+.OS 
+.OS 
+.OS 
+.OS 
+.08 
+.08 
+.OS 
+.OS 
+Culture No. 
+I 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+1 0 
+I1 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+I9 
+2 0 
+10 
+29 
+30 
+6 
+I 
+I 
+0 
+38 
+18 
+41 
+10 
+5 
+0 
+0 
+0 
+28 
+125 
+I 7 
+40 
+I O 
+3 
+0 
+0 
+35 
+10 
+2 0 
+45 
+8 
+0 
+7 
+0 
+107 
+14 
+31 
+183 
+24 
+0 
+0 
+8 
+13 
+27 
+30 
+I 2 
+13 
+5 
+303 
+I 
+3 
+7 
+173 
+165 
+0 
+0 
+0 
+17 
+17 
+23 
+15 
+5 
+0 
+I 
+17 
+57 
+6 
+0 
+3 
+0 
+5 1 
+10 
+6 
+48 
+15 
+107 
+I 
+0 
+0 
+4 
+0 
+0 
+19 
+0 
+0 
+I 
+0 
+0 
+17 
+0 
+11 
+64 
+0 
+0 
+0 
+35 
+Average per sample 
+26.8 
+23.8 
+62 
+26.2 
+11.35 
+30 
+3.8 
+48.2 
+Variance (corrected for 
+sampling) 
+1217 
+84 
+3498 
+2178 
+694 
+6620 
+40.8 
+I171 
+Bacteriaperculture 
+3.4X10'0 
+4 
+XIO'Q 4 
+X1ol0 2.gX1olQ 5.6X108 
+5 X I O ~ I . I X I O ~ 3.2X10'~ 
+Mutation rate 
+1.8X10-8 1.4X10-8 4.1Xio-8 
+Z.IXIO-8 1.1x1o-6 
+3.0X10-8 3.3Xro-* 3.0x10-8 
+L
+~
+-
+ 
+Standard deviation exp. 
+1.3 
+.39 
+.g5 
+1.8 
+2.3 
+2.7 
+1 . 7 
+Average per culture 
+5360 
+4760 
+12400 
+5240 
+28.4 
+. 75 
+15.1 
+8440 
+Average 
+{calc. 
+.35 
+.33 
+.33 
+.37 
+.94 
+,67 
+1.04 
+. 2 6 
+* Cultures in synthetic medium. 
+It will be seen that in every experiment the fluctuation of the numbers of 
+resistant bacteria is tremendously higher than could be accounted for by the 
+sampling errors, in striking contrast to the results of plating from the same 
+culture (see table I) and in conflict with the expectations from the hypothesis 
+of acquired immunity. 
+We want to see next whether these results fit the expectations fromthe 
+hypothesis of mutation. We must therefore compare the experimental results 
+with the relations developed in the theoretical part, keeping in mind that the 
+theory contains several simplifying assumptions. 
+First we can compare, according to equation (12), the experimental and the 
+calculated values of the ratio between the standard deviation and the average 
+of the numbers of resistant bacteria. These ratios are included in tables 2 and 
+3. It is seen that the experimental and theoretical values are reasonably close. 
+
+
+PDF PAGE 15
+MUTATIONS OF BACTERIA 
+50.5 
+However, in all but one case the experimental ratio is greater than the value 
+calculated from the theory-that 
+is, the variability is even greater than pre- 
+dicted. 
+TABLE 
+3 
+Distribution of the numbers of resistant bacteria in series of similar cdfures. 
+EXPERIMENT NO. 
+2 2 
+23 
+Number of cultures 
+I O 0 
+87 
+Volume of cultures, cc 
+.2* 
+.2* 
+Volume of samples, cc 
+-05 
+. 2 
+Resistant 
+bacteria 
+0 
+I 
+2 
+3 
+4 
+5 
+6- IO 
+21- 50 
+51- IO0 
+201- 500 
+501-roo0 
+11- 
+20 
+101- 200 
+Number o j 
+cultures 
+57 
+5 
+3 
+7 
+2 0 
+2 
+I 
+2 
+2 
+0 
+0 
+0 
+I 
+Resistant 
+bacteria 
+0 
+I 
+2 
+3 
+4 
+5 
+6- IO 
+21- 50 
+51- I00 
+201- 500 
+501-1000 
+11- 
+20 
+101- 200 
+Number of 
+cultures 
+29 
+I7 
+4 
+3 
+3 
+5 
+6 
+7 
+5 
+4 
+2 
+2 
+0 
+Average per sample 
+IO. I 2 
+Average per culture 
+40.48 
+Variance (corrected for sampling) 
+6270 
+Bacteria per culture 
+Mutation rate 
+Standard deviation exp. 
+Average i 
+calc. 
+2 . 8 X IO* 
+2 . 3 X IO-* 
+7.8 
+1.5 
+28.6 
+28.6 
+6431 
+2.4 Xro* 
+2.8 
+1.5 
+2.37 x 
+1 0 6 
+* Cultures in synthetic medium. 
+A part of this discrepancy may be accounted for by the fact that the 
+time to, mutations occurring prior to which were disregarded by the theory, 
+was chosen in such a manner that on the average one mutation would occur 
+prior to time to. This mutation, if it occurs, will of course tend to increase the 
+variance, and in some of the experiments the high value of the experimental 
+variance can be traced directly to one exceptional culture in which a mutation 
+had evidently occurred several generations prior to time to. Unfortunately, 
+there is no general criterion by which one might eliminate such cultures from 
+the statistical analysis, because, in a culture with an exceptionally high count 
+of resistant bacteria, these do not necessarily stem from one exceptionally 
+early mutation, but may also be due to an exceptionally large number of 
+mutations after time to. 
+There may also be other reasons why the observed variances are higher than 
+the expected ones. First of all, the simplifying assumption that the mutation 
+
+
+PDF PAGE 16
+506 
+S. E. LUNA AND M. DELBRtfCK 
+rate per bacterial generation is independent of the physiological state of the 
+bacteria may be too simple. If the mutation rate is higher for actively growing 
+bacteria than for bacteria near the saturation limit of the cultures, early muta- 
+tions and big clone sizes will be favored, and therefore higher variations of the 
+numbers of resistant bacteria can be expected. Second, the assumption of a 
+sudden transition from sensitivity to resistance may also be too simple. It is 
+conceivable that the character “resistance to virus” may not fully develop in 
+the bacterial cell in which the mutation occurs, but only in its offspring, after 
+one or more generations. However, if this were the case, cultures with only one 
+or two resistant bacteria should be relatively rare. The last experiment listed 
+in table 3, in which the entire cultures were plated, shows a rather high propor- 
+tion of cultures with only one resistant bacterium. This seems to show that the 
+cultures 
+% 
+50 
+40 
+30 
+20 
+IO 
+FIGURE 
+z.-Experimental 
+(Experiment No. 23) and calculated distributions of the numbers 
+of resistpt bacteria in a series of similar cultures. Solid columns: experimental. Cross-hatched 
+columns: calculated. 
+character “resistance to virus” in general does come to expression in the bac- 
+terial cell in which the corresponding mutation occurred, as assumed by the 
+theory. 
+Another way of comparing the experimental results with the theory is to 
+compare the experimental distribution of resistant bacteria with the approxi- 
+mate distribution calculated by the method outlined at the end of the theo- 
+retical part. The theoretical distribution has to be calculated from the aver- 
+age number of mutations per culture given by equation (5). Only experi- 
+ments wheqe the whole culture is tested can therefore be used for such a 
+comparison. This method tests the fitting of the expectations for small numbers 
+of resistant bacteria, in contrast to the comparison of the standard deviations, 
+which involves predominantly the cultures with high numbers of resistant 
+bacteria. 
+Figure 2 shows the experimental and calculated distributions for Experi- 
+ment No. 23; the cultures with more than nine resistant bacteria are lumped 
+together in one class, since the distribution has not been calculated for values 
+higher than nine. 
+It is seen that the fitting for small values is satisfactory. In particular, the 
+
+
+PDF PAGE 17
+MUTATIONS OF BACTERIA 
+507 
+number of cultures with one resistant bacterium very closely fits the expecta- 
+tion. The classes with two, four, eight, etc., resistant bacteria are bound to 
+be favored in the theoretical distribution, as explained in the theoretical part. 
+The results shown in figure 2 also confirm the assumption that the dis- 
+crepancy between experimental and calculated standard deviations must be 
+due to an excess of cultures with large numbers of resistant bacteria. 
+Summing up the evidence, we may say that the experiments show clearly 
+that the resistant bacteria appear in similar cultures not as random samples 
+but in groups of varying sizes, indicating a correlating cause for such grouping, 
+and that the assumption of genetic relatedness of the bacteria of such groups 
+offers the simplest explanation for them. 
+Mutation Rate 
+As pointed out in the theoretical part of this paper, mutation rates may be 
+estimated from the experiments by two essentially different methods. The 
+first method makes use of the fact that the number of mutations in a series of 
+similar cultures should be distributed in accordance with Poisson’s law; the 
+average number of mutations per culture is calculated from the proportion 
+of cultures containing no resistant bacteria at the moment of the test, accord- 
+ing to equation (5). 
+There are two technical difficulties involved in the application of this 
+method. In the first place, rather large numbers of cultures have to be handled 
+and conditions have to be chosen so that the proportion of resistant bacteria 
+is neither too small nor too large. In the second place, the entire cultures have 
+to be tested, which means, in our method of testing, that cultures of rather 
+small volume have to be used and great care must be taken to plate as nearly 
+as possible the entire culture. 
+Experiment No. 23 (see table 3 ) permits an estimate of the mutation rate 
+by this method. Out of 87 cultures, no resistant bacteria were found in 2 9 
+cultures, a proportion of .33. From equation ( 5 ) we calculate therefore that the 
+average number of mutations per culture in this experiment was 1.10. Since 
+the total number of bacteria per culture was 2.4X108, we obtain as the mu- 
+tation rate, from equation (4), 
+a = .47 X  IO-^ mutations per bacterium per time unit 
+= .32 X IO-* mutations per bacterium per division cycle. 
+This calculation makes use exclusively of the proportion of cultures contain- 
+ing no resistant bacteria. It is therefore inefficient in its use of the information 
+gathered in the experiment. 
+The second method makes use of the average number of resistant bacteria 
+per culture. The relation of this average number with the mutation rate was 
+discussed in the theoretical part of this paper and was found to be expressed 
+by equation (8). The mutation rates calculated by this method for each experi- 
+ment are collected in table 4. 
+
+
+PDF PAGE 18
+508 
+S. E. LURIA AND M. DELBRUCK 
+TABLE 
+4 
+Values oj mutation rate from different experiments. 
+EXPEBIhUZNT NO. 
+NUMBER OF CULTURES VOLUME OF CULTURES 
+MUTATION RATE 
+I 
+IO 
+I1 
+1.5 
+16 
+17 
+21a 
+21b 
+23 
+22 
+9 
+8 
+IO 
+IO 
+20 
+I2 
+I9 
+5 
+87 
+IO0 
+CC 
+10.0 
+10.0 
+10.0 
+10.0 
+.2* 
+.2* 
+. 2 
+10.0 
+.2* 
+.2* 
+Mutations per bacterium 
+per time unil 
+I , 8X 10-8 
+I . 4X IO-^ 
+4.1X10-8 
+2 . I x 10-8 
+I . I x 10-8 
+3 .OX 10-8 
+3. OX 10-8 
+2.3X IO-^ 
+2.4X 10-8 
+3.3 x IO-' 
+Average 
+2.45 x 1 6 ' 
+~~ 
+* Cultures in synthetic medium. 
+It will be seen that the values of the mutation rate obtained by the second 
+method are all higher than the value found by the first method. This dis- 
+crepancy may be traced back to the same cause as the discrepancy between 
+the calculated and observed values of the standard deviation of the numbers 
+of resistant bacteria. This, we found, was due to an excess of early mutations, 
+giving rise to big clones of resistant bacteria. These big clones do not affect 
+the mutation rate calculated by the first method, but they do affect the results 
+of the second method, which is based on the average number of resistant bac- 
+teria. 
+One sees in table 4 that the mutation rate calculated by the second method 
+does not vary greatly from experiment to experiment. In particular, it will be 
+noted that there is no significant difference between the values obtained from 
+cultures in broth and from cultures in synthetic medium, notwithstanding the 
+considerable difference of metabolic activity and of growth rate of the bacteria 
+in these two media. This shows that the simple assumption of a fixed small 
+chance of mutation per physiological time unit is vindicated by the results. 
+It may also be noted in table 4 that there is no significant difference between 
+the mutation rates obtained from IO cc cultures and those obtained from .2 cc 
+cultures, or between the experiments with many and those with few cultures. 
+The variability of the value of the mutation rate seems to be solely due to the 
+peculiar probability distribution of the number of resistant bacteria in series 
+of similar cultures predicted by the mutation theory. 
+At this point an experiment may be mentioned by which it was desired to 
+find out whether or not mutations occur in a culture after the bacteria have 
+ceased growing. A culture was grown to saturation and was then tested re- 
+peatedly for resistant bacteria and for total number of bacteria over several 
+
+
+PDF PAGE 19
+MUTATIONS OF BACTERIA 
+509 
+days. The proportion of resistant bacteria did not change, even when the 
+sensitive bacteria began to die, showing that the resistant bacteria have the 
+same death rate in aging cultures as the sensitive bacteria. 
+DISCUSSION 
+We consider the above results as proof that in our case the resistance to 
+virus is due to a heritable change of the bacterial cell which occurs independ- 
+ently of the action of the virus. It remains to be seen whether or not this is 
+the general rule. There is reason to suspect that the mechanism is more com- 
+plex in cases where the resistant culture develops only several days after lysis 
+of the sensitive bacteria. 
+The proportion of mutant organisms in a culture and the mutation rate are 
+far smaller in our case than in other studied cases of heritable bacterial varia- 
+tion. The possibility of investigation of such rare mutations is in our case 
+merely the result of the method of detecting the mutant organisms. In other 
+cases, the variants are detected by changes in the colony type which is pro- 
+duced by the mutant organism, either in the pigmentation or in the character 
+of the surface or the edge of the colony. Often, colonies of intermediate charac- 
+ter occur, and it is difficult to decide whether they are mixed colonies or stem 
+from bacteria with intermediate character. This is particularly true of cases 
+where, the mutation rate is high and where reverse mutation occurs. Fairly 
+high mutation rates, however, are a prerequisite of any study of colony vari- 
+ants, since the number of colonies that can be examined is limited by practical 
+reasons. 
+The study of mutations causing virus resistance is free of these difficulties. 
+The segregation of the mutant from the normal organisms occurs in the one- 
+cell stage by elimination of the normal individuals, and the character of the 
+colony which develops from a mutant organism is of secondary importance. 
+Owing to the total elimination of the normal individuals, the number of organ- 
+isms which may be examined is very much higher than for any other method; 
+more than 108 bacteria may be tested on a single plate. Since the mutations 
+to virus resistance are often associated with other significant characters, the 
+method may well assume importance with regard to the general problems of 
+bacterial variation. 
+It must not be supposed that the peculiar statistical difficulties encountered 
+in our case are restricted to cases of very low mutation rates. The essential 
+condition for the occurrence of the peculiar distribution studied in the theoreti- 
+cal part of this paper is the following: the initial number of bacteria in a culture 
+must be so small that the number oj mutations which occur during thefirst division 
+cycle o j the bacteria is a small number. This will always be true, however great 
+the mutation rate, if one studies cultures containing initially a small number of 
+organisms. 
+In a series of very interesting studies of the color variants of Serratia mar- 
+cescens, BUNTING (1g4oa, 194ob, 1942; BUNTING and INGRAHAM 
+1942) suc- 
+ceeded to some extent in obviating the statistical difficulties by always using 
+
+
+PDF PAGE 20
+S O 
+S. E. LURIA AND M. DELBRUCK 
+inocula of about IOO,OOO bacteria. In some of her cases this number was suffi- 
+ciently high to result in numerous mutations during the first division cycle 
+of the bacteria. In other cases the number was apparently not high enough, 
+since the author reports troublesome variations of the fractions of variants in 
+successive subcultures. In those cases where the size of the inocula was high 
+enough, the author succeeded in deriving reproducible values for the mutation 
+rates from the study of single cultures, followed through numerous subcultures. 
+In these cases it is sufficient to apply the equations of the theory referring to 
+the average numbers of mutants as a function of time. It is clear, however, 
+that this method is applicable only in cases of mutation rates of at least IO+ 
+per bacterium per division cycle. 
+In our case, as in many others, the virus resistant variants do not exhibit 
+any striking correlated physiological changes. There is therefore little oppor- 
+tunity for an inquiry into the nature of the physiological changes responsible 
+for the resistance to virus. Since the offspring of the mutant bacteria, when iso- 
+lated after the test, are unable to synthesize the surface elements to which the 
+virus is specifically adsorbed in the sensitive strain, one might suppose that 
+this loss is a direct effect of the mutation. However, it is also conceivable that 
+the loss occurs upon contact with virus, since it is detected only after such 
+contact (hypothesis bl). In some of the cases studied by BURNET (192g), 
+where the mutational change to resistance is correlated with a change of phase, 
+from smooth to rough or vice versa, the change of the surface structure must 
+be a direct result of the mutation, since the mutant colonies may be picked up 
+prior to the resistance test and, when tested, exhibit the typical change of 
+affinity of the surface structure. These findings make it more probable that 
+the loss of surface affinity to virus is a direct effect of the mutation. 
+The alteration of specific surface structures due to genetic change is a phe- 
+nomenon of the widest occurrence. The genetic factors determining the anti- 
+genic properties of erythrocytes are well known. There is evidence (WEBSTER 
+1937; HOLMES 
+1938; STEVENSON, SCHULTZ, and CLARK 1939) that resistance 
+or sensitivity to virus in plants and animals is correlated with, or even de- 
+pendent on, genetic changes, possibly affecting the antigenic make-up of the 
+cellular surface. The proof that resistance to a bacterial virus may be traced 
+to a specific genetic change may assume importance, therefore, with regard to 
+thegeneral problems of virus sensitivity and virus resistance. 
+SUMMARY 
+The distribution of the numbers of virus resistant bacteria in series of similar 
+cultures of a virus-sensitive strain has been analyzed theoretically on the basis 
+of two current hypotheses concerning the origin of the resistant bacteria. 
+The distribution has been studied experimentally and has been found to 
+conform with the conclusions drawn from the hypothesis that the resistant 
+bacteria arise by mutations of sensitive cells independently of the action of 
+virus. 
+The mutation rate has been determined experimentally. 
+
+
+PDF PAGE 21
+MUTATIONS OF BACTERIA 
+5 1 1 
+LITERATURE CITED 
+. 
+BUNTING, M. I., 194oa A description of some color variants produced by Serratia marcescens, 
+strain 274. J. Bact. 40: 57-68. 
+1940b The production of stable populations of color variants of Serratia marcescens #274 
+in rapidly growing cultures. J. Bact. 40: 69-81. 
+1942 Factors affecting the distribution of color variants in aging broth cultures of Serratia 
+maicescens #274. J. Bact. 43: 593-606. 
+BUNTING, 
+M. I., and L. J. INGRAHAM, 
+1942 The distribution of color variants in aging broth 
+cultures of Serratia marcescens #274. J. Bact. 43: 585-591. 
+BURNET, F. M., 1929 Smooth-rough variation in bacteria in its relation to bacteriophage. 
+J. Path. Bact. 32: 15-42. 
+DELBRUCK, 
+M., 
+and S. E. LURIA, 1942 Interference between bacterial viruses. I. Arch. Biochem. 
+I: 111-141. 
+GRATIA, 
+A., 1921 
+D’HERELLE, 
+F., 1926 The Bacteriophage and Its Behavior. Baltimore: Williams and Wilkins. 
+HOLMES, F. O., 1938 Inheritance of resistance to tobacco-mosaic disease in tobacco. Phyto- 
+STEVENSON, 
+F. J., E. S. SCHULTZ, 
+and C. F. CLARK, 
+1939 Inheritance of immunity from virus X 
+WEBSTER, 
+L. T., 1937 Inheritance of resistance of mice to enteric bacterial and neurotropic virus 
+Studies on the d’Herelle phenomenon. J. Exp. Med. 34: 115-131. 
+pathology 28: 553-561. 
+(latent mosaic) in the potato. Phytopathology 29: 362-365. 
+infections. J. Exp. Med. 65: 261-286. 

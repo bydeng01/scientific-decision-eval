@@ -1,0 +1,78 @@
+{
+  "prepared_at_utc": "2026-09-21T03:51:49.442079+00:00",
+  "case_content_approved_by_user": true,
+  "scope_extension_authorized_by_user": true,
+  "next_group_for_review": null,
+  "presentation_order": [
+    "B001",
+    "B002",
+    "B003",
+    "B004"
+  ],
+  "review_rule": "Review status is recorded per group and question. Source checks and arithmetic checks do not constitute independent human review.",
+  "groups": {
+    "B001": {
+      "status": "user_reviewed",
+      "questions": {
+        "B001-Q01": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR001"
+        },
+        "B001-Q02": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR001"
+        }
+      }
+    },
+    "B002": {
+      "status": "user_reviewed",
+      "questions": {
+        "B002-Q01": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR002"
+        },
+        "B002-Q02": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR002"
+        }
+      }
+    },
+    "B003": {
+      "status": "user_reviewed",
+      "questions": {
+        "B003-Q01": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR003"
+        },
+        "B003-Q02": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR003"
+        }
+      }
+    },
+    "B004": {
+      "status": "user_reviewed",
+      "questions": {
+        "B004-Q01": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR004"
+        },
+        "B004-Q02": {
+          "status": "user_reviewed",
+          "approved_by_user": true,
+          "decision": "BIO-UR004"
+        }
+      }
+    }
+  },
+  "updated_at_utc": "2026-09-21T04:30:47.073373+00:00",
+  "case_content_approved_by_user_definition": "True only when every biological group has explicit user acceptance; individual approvals are recorded under groups.",
+  "reviewed_by": "user"
+}

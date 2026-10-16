@@ -1,0 +1,133 @@
+{
+  "batch_id": "biology-batch-001",
+  "decisions": [
+    {
+      "decision_id": "BIO-UR001",
+      "recorded_at_utc": "2026-09-21T04:07:34.258005+00:00",
+      "reviewer": "user",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "B001"
+      ],
+      "approved_questions": {
+        "B001-Q01": {
+          "reference_option": "f0_pregnant_dams",
+          "question_input_sha256": "0f7629a7e964a534afbfc3fe2bf07cce59aed1d8bd0101e0440098076ab18c0c"
+        },
+        "B001-Q02": {
+          "reference_option": "mother_embryo_and_fetal_germline",
+          "question_input_sha256": "86f22c877e430fd8a0f6174a387cd574de643a59be09facee719d10dbd71ad36"
+        }
+      },
+      "approved_problem_input_sha256": {
+        "B001": "f9d9ab7e16a6740cc7ddab0fb4d975415e9317009e54bb5cfbd526bec7df0375"
+      },
+      "approved_reference_content_sha256": {
+        "B001": "9baf7a76fd3c4ebc8ba80eda8c41f6b59b374dce11f4c2525a4b1a5d93149de1"
+      },
+      "user_review_summary_english": "Accepted references: B001-Q01 = f0_pregnant_dams; B001-Q02 = mother_embryo_and_fetal_germline. F3 pups = 162, newly injected F3 animals = 0, and F3 is the first generation beyond the original direct-exposure window under the adopted definition. Distinct F0 ancestors remains null. Administration accounting remains separate from developmental exposure classification.",
+      "summary_provenance": "Summary of the recorded review on 2026-09-21; accepted content is identified by the accompanying hashes.",
+      "approval_scope": "B001: the listed questions, reference answers, evidence scope and inference boundary.",
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "pre_review_checks_sha256": "1c736409ac6fba18f4f8cab173f9beef0ac444dfdeef39758a19185c12a3e7c5"
+    },
+    {
+      "decision_id": "BIO-UR002",
+      "recorded_at_utc": "2026-09-21T04:13:54.871653+00:00",
+      "reviewer": "user",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "B002"
+      ],
+      "approved_questions": {
+        "B002-Q01": {
+          "reference_option": "shared_then_separate",
+          "question_input_sha256": "090fa2a3a84445c3df11254f99b759725cb85f43435609f13daf4aaa10a07421"
+        },
+        "B002-Q02": {
+          "reference_option": "clonal_descendants",
+          "question_input_sha256": "1aff2a2438f1cbcdd0c19770955f18f1e3f9983d9c43b9c4c829b64e8249927f"
+        }
+      },
+      "approved_problem_input_sha256": {
+        "B002": "6aa605f64d34cf5ce24f737a99ce7c7fe8aee5de33c9830a3ceb3b0ed28f3293"
+      },
+      "approved_reference_content_sha256": {
+        "B002": "5782973815c895aec7e093485e503dc7ef01b2d94704ab827a59e139eaa480cc"
+      },
+      "user_review_summary_english": "Accepted references: B002-Q01 = shared_then_separate; B002-Q02 = clonal_descendants. Each selected series contains 10 plating records; experiment 11a represents 1 pre-selection growth history and experiment 11 represents 10. Colony totals are 514 and 624, respectively. Exact mutation origins remains null, both claim clauses are inconsistent, and the final label is inconsistent. Culture histories, descendant cells, observed colonies, and mutation origins remain distinct.",
+      "summary_provenance": "Summary of the recorded review on 2026-09-21; accepted content is identified by the accompanying hashes.",
+      "approval_scope": "B002: the listed questions, reference answers, evidence scope and inference boundary.",
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "pre_review_checks_sha256": "3324bfcee5d96f3c4ebd4880a222e919ef6781a1a7590f8006c0d9057ea8f46b"
+    },
+    {
+      "decision_id": "BIO-UR003",
+      "recorded_at_utc": "2026-09-21T04:17:00.473362+00:00",
+      "reviewer": "user",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "B003"
+      ],
+      "approved_questions": {
+        "B003-Q01": {
+          "reference_option": "rna_before_library",
+          "question_input_sha256": "bf6b60b5338434943072cf085fa2afaf44b72b7da77d32e367582acd5fbdb494"
+        },
+        "B003-Q02": {
+          "reference_option": "pool_aggregate",
+          "question_input_sha256": "65011e7ab5e2ac6a9a26e1a259364be0d45de125ce362a15d9098b0397967629"
+        }
+      },
+      "approved_problem_input_sha256": {
+        "B003": "39f4755471bb5317f78ba64e297527ce4a0f96cf9bf7e913dac244cb81b74114"
+      },
+      "approved_reference_content_sha256": {
+        "B003": "6f1676993b526acdbf0f93b6441b7912a95a93b9f192fa856f799fa3e5e3251e"
+      },
+      "user_review_summary_english": "Accepted references: B003-Q01 = rna_before_library; B003-Q02 = pool_aggregate. RNA is combined before cDNA synthesis and library preparation. The four selected pooled-library profiles describe the combined RNA pools; individual sequencing in a separate arm does not supply animal-level attribution within those libraries. The selected arm contains 16 distinct contributors, 32 contributor appearances, four pool-level expression profiles, and zero separately observed contributor profiles. The final label is inconsistent.",
+      "summary_provenance": "Summary of the recorded review on 2026-09-21; accepted content is identified by the accompanying hashes.",
+      "approval_scope": "B003: the listed questions, reference answers, evidence scope and inference boundary.",
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "pre_review_checks_sha256": "d9c84ae62a92f2a9df4de961d654e1d840ab85e3b4d72d417e81fcaec795ea85"
+    },
+    {
+      "decision_id": "BIO-UR004",
+      "recorded_at_utc": "2026-09-21T04:30:47.073373+00:00",
+      "reviewer": "user",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "B004"
+      ],
+      "approved_questions": {
+        "B004-Q01": {
+          "reference_option": "within_founder_mosaicism",
+          "question_input_sha256": "08ad50c71c3c762c2fcb59547a726fc371a62f7598bca5a767e1571d3f4f64ed"
+        },
+        "B004-Q02": {
+          "reference_option": "preexisting_albino_allele",
+          "question_input_sha256": "08999b56b54c1545ab85adfbc6f12541ac76088e8e160701feb8c7c57f42b268"
+        }
+      },
+      "approved_problem_input_sha256": {
+        "B004": "afa73b70f9a4cbb47a28e41605fd23ac85a132706cf5a2c3154763ffec9868ad"
+      },
+      "approved_reference_content_sha256": {
+        "B004": "41b0073cea6a616ca615e23e8707dedd825718cbe57049f7b3042d6553ffd6a0"
+      },
+      "user_review_summary_english": "Accepted references: B004-Q01 = within_founder_mosaicism; B004-Q02 = preexisting_albino_allele. Multiple mutant alleles in founder #30 tail DNA show that albinism does not establish one uniform Tyr genotype. The inherited FVB/NJ albino allele prevents offspring phenotype alone from identifying transmission of a newly induced allele. The 23 founders and 57 reported alleles are distinct quantities; allele counts do not establish injected-animal or germline-validated line counts. The validated_new_germline_lines value remains null.",
+      "summary_provenance": "Summary of the recorded review on 2026-09-21; accepted content is identified by the accompanying hashes.",
+      "approval_scope": "B004: the listed questions, reference answers, evidence scope and inference boundary.",
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "pre_review_checks_sha256": "6798ac78ae44de1fc33e76e34b4eaccf5a8e6d3f3e1838ad0dcbf709a757930f"
+    }
+  ]
+}

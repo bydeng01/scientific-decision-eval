@@ -1,0 +1,73 @@
+{
+  "job_id": "r04-E009-kimi_k3",
+  "group_id": "E009",
+  "model_id": "kimi_k3",
+  "repeat": 3,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978672-mdVDf9rtUaManEinJC7t",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1009,
+      "completion_tokens": 284,
+      "total_tokens": 1293,
+      "cost": 0.0052134,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0052134,
+        "upstream_inference_prompt_cost": 0.0009534,
+        "upstream_inference_completions_cost": 0.00426
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 259,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1009,
+    "output_tokens": 284,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 259,
+    "reported_cost_usd": 0.0052134,
+    "usage_cost_estimate_usd": 0.0052134,
+    "usage_cost_upper_estimate_usd": 0.007287,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 9.066224542009877,
+    "derivation_wall_seconds": 4.862502100877464e-05,
+    "derivation_cpu_seconds": 4.899999999996574e-05
+  },
+  "request_sha256": "afa243512118ec8f8a8bae709b7b0d5b14b0b7261fdb6055e2980f7045b04a50",
+  "receipt_sha256": "a9e372f2278d6c6f30016464f79fb08ad82b5ea266fbd3eeae225c88889bb42f",
+  "simulated": false,
+  "halt_model": false
+}

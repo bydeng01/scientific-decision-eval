@@ -1,0 +1,226 @@
+[
+  {
+    "provider": "anthropic",
+    "case_id": "dev-00-r1",
+    "request": {
+      "model": "claude-sonnet-5",
+      "system": "Infer which physical law generated the observations under the explicitly specified prior and observation model. Return probabilities over H1, H2, H3 that approximate the posterior given ALL observations. Integrate over the listed parameter possibilities, keeping the same parameters across experiments. The three hypotheses are exhaustive. When evidence is weak, distribute probability across plausible hypotheses instead of committing to one.\nAnswer definitions: {\"H1\": \"Linear drag: dv/dt = -a*v, b=0.\", \"H2\": \"Quadratic drag: dv/dt = -b*v*abs(v), a=0.\", \"H3\": \"Mixed drag: dv/dt = -a*v - b*v*abs(v), a>0 and b>0.\"}",
+      "messages": [
+        {
+          "role": "user",
+          "content": "{\"task\": \"Identify a dimensionless drag law from independent noisy velocity measurements.\", \"model_priors\": {\"H1\": 0.3333333333333333, \"H2\": 0.3333333333333333, \"H3\": 0.3333333333333333}, \"parameter_priors\": {\"H1\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.2, 0.0], [0.4, 0.0], [0.8, 0.0]]}, \"H2\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.0, 0.2], [0.0, 0.4], [0.0, 0.8]]}, \"H3\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.1, 0.1], [0.1, 0.2], [0.1, 0.4], [0.2, 0.1], [0.2, 0.2], [0.2, 0.4], [0.4, 0.1], [0.4, 0.2], [0.4, 0.4]]}}, \"observation_model\": {\"noise\": \"independent additive Gaussian noise at each observation\", \"known_standard_deviation\": 0.04, \"initial_velocity\": \"known exactly; no measurement at t=0 is included\", \"shared_parameters\": \"one fixed (a,b) for all experiments in this state\"}, \"analytic_solution_for_positive_initial_velocity\": {\"a_positive\": \"v(t)=v0*exp(-a*t)/(1+(b*v0/a)*(1-exp(-a*t)))\", \"a_zero\": \"v(t)=v0/(1+b*v0*t)\"}, \"experiments\": [{\"initial_velocity\": 0.6, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [0.5461681472084099, 0.5774908869777492, 0.5373606999804755, 0.3595939636603349, 0.305562590610069, 0.14295042590338136]}]}"
+        }
+      ],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "low",
+        "format": {
+          "type": "json_schema",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "probabilities": {
+                "type": "object",
+                "properties": {
+                  "H1": {
+                    "type": "number"
+                  },
+                  "H2": {
+                    "type": "number"
+                  },
+                  "H3": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "H1",
+                  "H2",
+                  "H3"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "probabilities"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "reserve_usd": 0.090942,
+    "condition": "sonnet-low-8192"
+  },
+  {
+    "provider": "anthropic",
+    "case_id": "dev-00-r2",
+    "request": {
+      "model": "claude-sonnet-5",
+      "system": "Infer which physical law generated the observations under the explicitly specified prior and observation model. Return probabilities over H1, H2, H3 that approximate the posterior given ALL observations. Integrate over the listed parameter possibilities, keeping the same parameters across experiments. The three hypotheses are exhaustive. When evidence is weak, distribute probability across plausible hypotheses instead of committing to one.\nAnswer definitions: {\"H1\": \"Linear drag: dv/dt = -a*v, b=0.\", \"H2\": \"Quadratic drag: dv/dt = -b*v*abs(v), a=0.\", \"H3\": \"Mixed drag: dv/dt = -a*v - b*v*abs(v), a>0 and b>0.\"}",
+      "messages": [
+        {
+          "role": "user",
+          "content": "{\"task\": \"Identify a dimensionless drag law from independent noisy velocity measurements.\", \"model_priors\": {\"H1\": 0.3333333333333333, \"H2\": 0.3333333333333333, \"H3\": 0.3333333333333333}, \"parameter_priors\": {\"H1\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.2, 0.0], [0.4, 0.0], [0.8, 0.0]]}, \"H2\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.0, 0.2], [0.0, 0.4], [0.0, 0.8]]}, \"H3\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.1, 0.1], [0.1, 0.2], [0.1, 0.4], [0.2, 0.1], [0.2, 0.2], [0.2, 0.4], [0.4, 0.1], [0.4, 0.2], [0.4, 0.4]]}}, \"observation_model\": {\"noise\": \"independent additive Gaussian noise at each observation\", \"known_standard_deviation\": 0.04, \"initial_velocity\": \"known exactly; no measurement at t=0 is included\", \"shared_parameters\": \"one fixed (a,b) for all experiments in this state\"}, \"analytic_solution_for_positive_initial_velocity\": {\"a_positive\": \"v(t)=v0*exp(-a*t)/(1+(b*v0/a)*(1-exp(-a*t)))\", \"a_zero\": \"v(t)=v0/(1+b*v0*t)\"}, \"experiments\": [{\"initial_velocity\": 0.6, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [0.5461681472084099, 0.5774908869777492, 0.5373606999804755, 0.3595939636603349, 0.305562590610069, 0.14295042590338136]}, {\"initial_velocity\": 3.0, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [2.91197217516831, 2.6934579502474296, 2.424226420595513, 2.0159187004043853, 1.659975532252507, 1.0119653529488581]}]}"
+        }
+      ],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "low",
+        "format": {
+          "type": "json_schema",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "probabilities": {
+                "type": "object",
+                "properties": {
+                  "H1": {
+                    "type": "number"
+                  },
+                  "H2": {
+                    "type": "number"
+                  },
+                  "H3": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "H1",
+                  "H2",
+                  "H3"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "probabilities"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "reserve_usd": 0.091368,
+    "condition": "sonnet-low-8192"
+  },
+  {
+    "provider": "anthropic",
+    "case_id": "dev-01-r1",
+    "request": {
+      "model": "claude-sonnet-5",
+      "system": "Infer which physical law generated the observations under the explicitly specified prior and observation model. Return probabilities over H1, H2, H3 that approximate the posterior given ALL observations. Integrate over the listed parameter possibilities, keeping the same parameters across experiments. The three hypotheses are exhaustive. When evidence is weak, distribute probability across plausible hypotheses instead of committing to one.\nAnswer definitions: {\"H1\": \"Linear drag: dv/dt = -a*v, b=0.\", \"H2\": \"Quadratic drag: dv/dt = -b*v*abs(v), a=0.\", \"H3\": \"Mixed drag: dv/dt = -a*v - b*v*abs(v), a>0 and b>0.\"}",
+      "messages": [
+        {
+          "role": "user",
+          "content": "{\"task\": \"Identify a dimensionless drag law from independent noisy velocity measurements.\", \"model_priors\": {\"H1\": 0.3333333333333333, \"H2\": 0.3333333333333333, \"H3\": 0.3333333333333333}, \"parameter_priors\": {\"H1\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.2, 0.0], [0.4, 0.0], [0.8, 0.0]]}, \"H2\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.0, 0.2], [0.0, 0.4], [0.0, 0.8]]}, \"H3\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.1, 0.1], [0.1, 0.2], [0.1, 0.4], [0.2, 0.1], [0.2, 0.2], [0.2, 0.4], [0.4, 0.1], [0.4, 0.2], [0.4, 0.4]]}}, \"observation_model\": {\"noise\": \"independent additive Gaussian noise at each observation\", \"known_standard_deviation\": 0.04, \"initial_velocity\": \"known exactly; no measurement at t=0 is included\", \"shared_parameters\": \"one fixed (a,b) for all experiments in this state\"}, \"analytic_solution_for_positive_initial_velocity\": {\"a_positive\": \"v(t)=v0*exp(-a*t)/(1+(b*v0/a)*(1-exp(-a*t)))\", \"a_zero\": \"v(t)=v0/(1+b*v0*t)\"}, \"experiments\": [{\"initial_velocity\": 0.6, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [0.5488994658200629, 0.5675784108518979, 0.5312451850779923, 0.5009187832869066, 0.4813699725444841, 0.3670300737400451]}]}"
+        }
+      ],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "low",
+        "format": {
+          "type": "json_schema",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "probabilities": {
+                "type": "object",
+                "properties": {
+                  "H1": {
+                    "type": "number"
+                  },
+                  "H2": {
+                    "type": "number"
+                  },
+                  "H3": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "H1",
+                  "H2",
+                  "H3"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "probabilities"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "reserve_usd": 0.090942,
+    "condition": "sonnet-low-8192"
+  },
+  {
+    "provider": "anthropic",
+    "case_id": "dev-01-r2",
+    "request": {
+      "model": "claude-sonnet-5",
+      "system": "Infer which physical law generated the observations under the explicitly specified prior and observation model. Return probabilities over H1, H2, H3 that approximate the posterior given ALL observations. Integrate over the listed parameter possibilities, keeping the same parameters across experiments. The three hypotheses are exhaustive. When evidence is weak, distribute probability across plausible hypotheses instead of committing to one.\nAnswer definitions: {\"H1\": \"Linear drag: dv/dt = -a*v, b=0.\", \"H2\": \"Quadratic drag: dv/dt = -b*v*abs(v), a=0.\", \"H3\": \"Mixed drag: dv/dt = -a*v - b*v*abs(v), a>0 and b>0.\"}",
+      "messages": [
+        {
+          "role": "user",
+          "content": "{\"task\": \"Identify a dimensionless drag law from independent noisy velocity measurements.\", \"model_priors\": {\"H1\": 0.3333333333333333, \"H2\": 0.3333333333333333, \"H3\": 0.3333333333333333}, \"parameter_priors\": {\"H1\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.2, 0.0], [0.4, 0.0], [0.8, 0.0]]}, \"H2\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.0, 0.2], [0.0, 0.4], [0.0, 0.8]]}, \"H3\": {\"distribution\": \"uniform over listed (a,b) pairs\", \"pairs\": [[0.1, 0.1], [0.1, 0.2], [0.1, 0.4], [0.2, 0.1], [0.2, 0.2], [0.2, 0.4], [0.4, 0.1], [0.4, 0.2], [0.4, 0.4]]}}, \"observation_model\": {\"noise\": \"independent additive Gaussian noise at each observation\", \"known_standard_deviation\": 0.04, \"initial_velocity\": \"known exactly; no measurement at t=0 is included\", \"shared_parameters\": \"one fixed (a,b) for all experiments in this state\"}, \"analytic_solution_for_positive_initial_velocity\": {\"a_positive\": \"v(t)=v0*exp(-a*t)/(1+(b*v0/a)*(1-exp(-a*t)))\", \"a_zero\": \"v(t)=v0/(1+b*v0*t)\"}, \"experiments\": [{\"initial_velocity\": 0.6, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [0.5488994658200629, 0.5675784108518979, 0.5312451850779923, 0.5009187832869066, 0.4813699725444841, 0.3670300737400451]}, {\"initial_velocity\": 3.0, \"times\": [0.1, 0.3, 0.6, 1.0, 1.6, 2.5], \"observed_velocity\": [2.9335484763442596, 2.499510944302843, 2.1703481480939204, 1.889520273063741, 1.4771856415986067, 1.2295637284368597]}]}"
+        }
+      ],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "low",
+        "format": {
+          "type": "json_schema",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "probabilities": {
+                "type": "object",
+                "properties": {
+                  "H1": {
+                    "type": "number"
+                  },
+                  "H2": {
+                    "type": "number"
+                  },
+                  "H3": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "H1",
+                  "H2",
+                  "H3"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "probabilities"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "reserve_usd": 0.091372,
+    "condition": "sonnet-low-8192"
+  }
+]

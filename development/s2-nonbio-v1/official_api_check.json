@@ -1,0 +1,44 @@
+{
+  "checked_date": "2026-09-20",
+  "verification_method": "read-only official web documentation; no authenticated request or inference",
+  "selected_for_current_batch": false,
+  "openrouter": {
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "method": "POST",
+    "request_fields": ["model", "state", "questions"],
+    "choice_fields": ["type", "instructions", "criteria"],
+    "response_fields": ["answers", "id", "model", "provider", "usage"],
+    "choice_response_fields": ["choice", "probabilities", "confidence"],
+    "usage_fields_shown_in_official_example": ["input_tokens", "output_tokens", "cost"],
+    "input_usd_per_million_tokens": "0.042",
+    "output_usd_per_million_tokens": "0",
+    "context_tokens_listed": 32000,
+    "api_reference": "https://openrouter.ai/docs/api/api-reference/alphadecisions/submit-a-decisions-questions-and-answers-request",
+    "pricing_source": "https://openrouter.ai/typesafe/jev-1.13",
+    "live_contract_status": "not_measured; documentation verified only"
+  },
+  "typesafe_direct_reference": {
+    "model": "jev-1.13.0",
+    "endpoint": "POST /v1/systemone",
+    "input_usd_per_million_tokens": "0.042",
+    "output_usd_per_million_tokens": "0",
+    "total_context_tokens": 64000,
+    "state_plus_longest_question_tokens": 32000,
+    "default_sdk_retry_behavior": "backoff retries enabled; do not assume one SDK invocation means one paid attempt",
+    "source": "https://docs.typesafe.ai/models"
+  },
+  "division_of_work_source": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+  "current_batch": {
+    "model": null,
+    "remaining_atomic_questions": [],
+    "base_calls": 0,
+    "repeats": 0,
+    "retry_limit": 0,
+    "fallback_limit": 0,
+    "max_attempts_including_failures": 0,
+    "worst_api_cost_usd": "0.000000000",
+    "budget_basis": "no model branch; independent of tokenizer, cache discount or output rate",
+    "future_nonzero_batch": "Requires a concrete residual task on reviewed inputs, bounded attempts including failures, verified current pricing and a new budget calculation. No live adapter is enabled here."
+  }
+}

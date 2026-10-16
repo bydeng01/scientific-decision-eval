@@ -1,0 +1,72 @@
+{
+  "job_id": "r02-E006-qwen_flash",
+  "group_id": "E006",
+  "model_id": "qwen_flash",
+  "repeat": 1,
+  "answers": {
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independent_phase_draws": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-flash",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975072-vjEForFxeLxFdp4PpoRD",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 816,
+      "completion_tokens": 603,
+      "total_tokens": 1419,
+      "cost": 0.000302898,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000302898,
+        "upstream_inference_prompt_cost": 1.9488e-05,
+        "upstream_inference_completions_cost": 0.00028341
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 577,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 816,
+    "output_tokens": 603,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 577,
+    "reported_cost_usd": 0.000302898,
+    "usage_cost_estimate_usd": 0.00030289799999999996,
+    "usage_cost_upper_estimate_usd": 0.00044660999999999995,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 16.768313417007448,
+    "derivation_wall_seconds": 0.00011866699787788093,
+    "derivation_cpu_seconds": 5.799999999989147e-05
+  },
+  "request_sha256": "69b3dbcfcd64419e904b390c8d01918f97964561d49558a02614ef7a23a57b7d",
+  "receipt_sha256": "2a3b7d3e6ec3fed17e8bf68cf635be27189e240dc43fe7a9d28c7164c6f5624a",
+  "simulated": false,
+  "halt_model": false
+}

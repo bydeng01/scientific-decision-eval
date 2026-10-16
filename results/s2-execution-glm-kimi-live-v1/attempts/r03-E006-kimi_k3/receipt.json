@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789978560-Dd2qSe7RbHf9eaqZ1E2E\",\"object\":\"chat.completion\",\"created\":1789978560,\"model\":\"moonshotai/kimi-k3\",\"provider\":\"Moonshot AI\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"phase_reversed\\\",\\\"q2\\\":\\\"pair_average\\\"}\",\"refusal\":null,\"reasoning\":\"q1: evidence says same fixed Fourier amplitudes, phases shifted by pi between them. That's phase_reversed. Separate executions not output snapshots. q2: authors first average the two simulations' values for a paired-fixed realization, then statistics across realizations. Quantity contributes one value before statistics across realizations = pair_average. Need output raw JSON only.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"q1: evidence says same fixed Fourier amplitudes, phases shifted by pi between them. That's phase_reversed. Separate executions not output snapshots. q2: authors first average the two simulations' values for a paired-fixed realization, then statistics across realizations. Quantity contributes one value before statistics across realizations = pair_average. Need output raw JSON only.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1002,\"completion_tokens\":96,\"total_tokens\":1098,\"cost\":0.0023724,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":768,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0023724,\"upstream_inference_prompt_cost\":0.0009324,\"upstream_inference_completions_cost\":0.00144},\"completion_tokens_details\":{\"reasoning_tokens\":72,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:16:03 GMT"
+  },
+  "latency_seconds": 5.801905917003751,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:16:05.994656+00:00"
+}

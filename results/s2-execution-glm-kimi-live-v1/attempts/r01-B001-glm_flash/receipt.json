@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789978336-JTk9G2Z6BrDVdorNvDiS\",\"object\":\"chat.completion\",\"created\":1789978336,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"Fireworks\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"f0_pregnant_dams\\\",\\\"q2\\\":\\\"mother_embryo_and_fetal_germline\\\"}\",\"refusal\":null,\"reasoning\":\"Q1: evidence says only pregnant F0 rats received injections. Answer: f0_pregnant_dams.\\n\\nQ2: paper distinguishes injected F0 mother, directly exposed F1 embryo, and germ cells inside that embryo generating F2. Answer: mother_embryo_and_fetal_germline.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"Q1: evidence says only pregnant F0 rats received injections. Answer: f0_pregnant_dams.\\n\\nQ2: paper distinguishes injected F0 mother, directly exposed F1 embryo, and germ cells inside that embryo generating F2. Answer: mother_embryo_and_fetal_germline.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1131,\"completion_tokens\":91,\"total_tokens\":1222,\"cost\":0.00021515,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00021515,\"upstream_inference_prompt_cost\":0.00016965,\"upstream_inference_completions_cost\":0.0000455},\"completion_tokens_details\":{\"reasoning_tokens\":63,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:12:19 GMT"
+  },
+  "latency_seconds": 3.5899641670112032,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:12:20.326362+00:00"
+}

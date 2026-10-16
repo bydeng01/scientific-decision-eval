@@ -1,0 +1,8 @@
+{
+  "http_status": null,
+  "raw_body": null,
+  "response_headers": {},
+  "latency_seconds": null,
+  "transport_error": "InterruptedWithoutReceipt",
+  "simulated": false
+}

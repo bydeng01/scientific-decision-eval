@@ -1,0 +1,937 @@
+{
+  "schema_version": "s2-expansion-inputs-v1",
+  "batch_id": "batch-001",
+  "problems": [
+    {
+      "problem_id": "E001",
+      "title": "Wafer regrouping across two processing stages",
+      "source_ids": [
+        "N-STRIP"
+      ],
+      "target_treatment": "Joint implant-factor (A, B, C) and anneal-factor (D, E, F) settings in NIST Figure 5.16.",
+      "scope": "The single illustrated block: implant combinations 1-8 and anneal combinations 1-8. Each figure cell is one wafer. Combination numbers are treatment codes, not persistent wafer serial numbers.",
+      "evidence": [
+        {
+          "source_id": "N-STRIP",
+          "location": "Strip-Plot Designs; Figure 5.16 and execution paragraphs",
+          "kind": "source_faithful_adaptation",
+          "text": "Each implant setting processes eight wafers together. After all implant batches, every anneal batch receives one wafer from each implant batch and is annealed at its assigned D/E/F setting. Thus annealing regroups the wafers. The first implant setting executed is 3 and the first anneal setting executed is 5; treatment codes are not execution-order indices."
+        },
+        {
+          "source_id": "N-STRIP",
+          "location": "Three sizes of experimental units; Replication",
+          "kind": "source_faithful_adaptation",
+          "text": "The handbook assigns implant effects to implant batches, anneal effects to anneal batches, and cross-stage interactions to individual wafers. The figure is one block or replicate. Without replicated blocks, it describes using A*B*C and D*E*F as error terms only under models excluding those three-factor interactions; each then supplies one degree of freedom."
+        }
+      ],
+      "scientific_claim": "Within the illustrated block, each complete implant-by-anneal setting combination has eight separately processed wafer replicates.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "implant_setting_codes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "anneal_setting_codes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "wafers_per_intersection": 1,
+        "illustrated_blocks": 1
+      },
+      "source_assets": [
+        "evidence/NIST-pri55.html",
+        "evidence/NIST-figure-5-16.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E001-Q01",
+          "instruction": "For this block, how are the wafer memberships of implant batches related to those of anneal batches? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "same_partition": "Each implant batch remains intact as one corresponding anneal batch.",
+            "anneal_nested": "Each anneal batch is wholly contained within one implant batch, and at least one implant batch supplies multiple anneal batches.",
+            "implant_nested": "Each implant batch is wholly contained within one anneal batch, and at least one anneal batch contains multiple implant batches.",
+            "crossed_regrouping": "Each anneal batch combines wafers from multiple implant batches, and each implant batch supplies multiple anneal batches.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E001-Q02",
+          "instruction": "Which experimental unit does the source assign to interaction effects involving both an implant factor and an anneal factor in this block? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "implant_batch": "The group of wafers processed together in one implant operation.",
+            "anneal_batch": "The group of wafers processed together in one anneal operation.",
+            "wafer": "An individual wafer receiving one implant setting and one anneal setting.",
+            "whole_block": "The complete block containing all implant and anneal setting combinations.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E002",
+      "title": "Controller applications across hourly switches",
+      "source_ids": [
+        "WIND-2021"
+      ],
+      "target_treatment": "Baseline versus wake-steering controller mode on upstream turbine SMV6, with SMV5 downstream.",
+      "scope": "The reported SMV experiment's hourly mode toggles and one-minute analysis records; no new turbine deployment or complete campaign count is inferred.",
+      "evidence": [
+        {
+          "source_id": "WIND-2021",
+          "location": "Sections 2.1-2.2 and Figure 5, PDF pp. 4-6",
+          "kind": "source_faithful_adaptation",
+          "text": "Measurements are downsampled to one-minute records. Figure 5 switches SMV6 between baseline and wake-steering control hourly. The offset within controlled periods follows the wind-dependent controller schedule; hourly mode assignment is different from instantaneous yaw offset."
+        },
+        {
+          "source_id": "WIND-2021",
+          "location": "Sections 4.1-4.3, PDF pp. 9-10",
+          "kind": "source_faithful_adaptation",
+          "text": "After operational and power-curve filtering, the first ten minutes after each mode switch are removed for yaw-controller transients. Further power and lidar-availability filters apply to yaw analyses. The authors bootstrap one-minute observations at least 2,000 times, by wind-direction bin where applicable, resampling baseline and controlled observations separately."
+        }
+      ],
+      "scientific_claim": "Each retained one-minute observation represents a separately assigned controller-mode application.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {},
+      "source_assets": [
+        "evidence/wind.html",
+        "evidence/wind.pdf",
+        "evidence/wind-p06.png",
+        "evidence/wind-p09.png",
+        "evidence/wind-p10.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E002-Q01",
+          "instruction": "What defines the reported allocation of baseline versus wake-steering mode on SMV6? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "fixed_turbine": "Each turbine receives a fixed controller mode for the whole experiment.",
+            "hourly_switch": "Controller mode alternates across hourly periods on the same turbine.",
+            "minute_randomization": "Each one-minute measurement receives a new independently randomized controller mode.",
+            "analysis_bin": "Post hoc wind-direction bins define separate controller-mode assignments.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E002-Q02",
+          "instruction": "What is the role of the first ten minutes after a controller-mode switch in the reported analysis? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "transition_exclusion": "They are a transition segment of the switched application, excluded to allow for controller transients.",
+            "separate_treatment": "They are a separately assigned third controller treatment.",
+            "baseline_relabel": "They are relabeled as baseline observations regardless of the switched mode.",
+            "new_replication": "They are independent repeat applications retained to estimate controller replication.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E003",
+      "title": "Catalyst recovery across reaction cycles",
+      "source_ids": [
+        "CAT-2020"
+      ],
+      "target_treatment": "Cu-AmP-CPG catalyst 1 used for benzyl azide 2a plus propargyl alcohol 3a to produce 4a.",
+      "scope": "The eight consecutive recycling cycles in Figure 2; Figure 3's C1-C3 kinetic curves provide context. The different-substrate series in Table 3 is excluded.",
+      "evidence": [
+        {
+          "source_id": "CAT-2020",
+          "location": "Recycling procedure, PDF pp. 3 and 6; Figure 2, PDF p. 5",
+          "kind": "source_faithful_adaptation",
+          "text": "The recycling reaction uses 2a (0.25 mmol), 3a (0.38 mmol), catalyst (10 mg, 5 mol%), and t-BuOH/water (1:1) at 70 degrees C for two hours. Solids are separated, washed, and the recovered catalyst is used in the next cycle. Figure 2 reports eight consecutive cycles with high endpoint conversion."
+        },
+        {
+          "source_id": "CAT-2020",
+          "location": "Results, PDF p. 3; Figure 3, PDF p. 5",
+          "kind": "source_faithful_adaptation",
+          "text": "The source reports that reaction rates begin to decrease after two cycles, despite completion before the two-hour endpoint. Figure 3 distinguishes C1, C2, and C3. Catalyst synthesis is described separately from recovery and reuse."
+        }
+      ],
+      "scientific_claim": "The eight Figure 2 cycles are eight independent preparations of fresh catalyst 1 tested once each.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {},
+      "source_assets": [
+        "evidence/catalyst.html",
+        "evidence/catalyst.pdf",
+        "evidence/catalyst-p03.png",
+        "evidence/catalyst-p05.png",
+        "evidence/catalyst-p06.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E003-Q01",
+          "instruction": "What material relationship connects the catalyst used in consecutive Figure 2 reaction cycles? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "fresh_preparation": "Each cycle uses catalyst from a newly performed synthesis, with no recovered catalyst carried forward.",
+            "recovered_carryover": "Catalyst recovered from the preceding reaction is carried into the next reaction cycle.",
+            "fresh_aliquots": "Each cycle uses a previously unused aliquot split from one preparation before any reaction.",
+            "one_reaction_samples": "The cycle labels identify repeated samples of one uninterrupted reaction mixture.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E004",
+      "title": "Powder top-up and incomplete lineage coverage",
+      "source_ids": [
+        "POW-2023"
+      ],
+      "target_treatment": "Recycling history of Ti-6Al-4V feedstock used in the LPBF top-up process.",
+      "scope": "Section 2.3's build-8-and-later top-up regime through build 10. The question concerns feedstock provenance, not the number of tensile specimens or scan tracks.",
+      "evidence": [
+        {
+          "source_id": "POW-2023",
+          "location": "Section 2.3 and Figures 1-2, PDF pp. 4-6",
+          "kind": "source_faithful_adaptation",
+          "text": "The process refreshes recovered powder with added powder. From build 8, the authors add previously reused powder with different extents of recycling. The R index aggregates powder consumption and input history; its assumptions relate degradation to material built and exclude interactions. The paper explains why a simple reuse-cycle number is inadequate."
+        },
+        {
+          "source_id": "POW-2023",
+          "location": "Section 2.3 final paragraphs, PDF p. 6",
+          "kind": "source_faithful_adaptation",
+          "text": "Characterized R values 0.00, 0.04, 0.15, 0.24, and 0.40 refer to virgin powder and the starts of builds 1, 3, 6, and 10, respectively, with top-up as necessary. R can increase during a build as powder is converted into solid material. The build-8 paragraph describes the addition of previously reused powder of various recycling extents."
+        }
+      ],
+      "scientific_claim": "Build 8 feedstock can be represented as one parent lot whose particles all have the same prior recycling history; its exact parent-lot assignments can be recovered from the reported bulk history alone.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {},
+      "source_assets": [
+        "evidence/powder.pdf",
+        "evidence/powder-repository.html",
+        "evidence/powder-p05.png",
+        "evidence/powder-p06.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E004-Q01",
+          "instruction": "Which membership pattern is established for the prior recycling histories of powder entering the build-8-and-later top-up regime? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "one_common_history": "All entering powder shares one identical prior recycling history.",
+            "mixed_histories": "Entering powder combines portions with different prior recycling histories.",
+            "virgin_replacement": "Each build replaces all recovered powder with unused virgin powder.",
+            "separate_unmixed": "Different-history portions are processed separately without mixing in a build's feedstock.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E004-Q02",
+          "instruction": "How completely does the supplied evidence identify every input portion's original lot, mixture fraction, and prior-build history for build 8? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope. Use partial_identification when some required provenance is established but the requested complete assignment is unavailable; this takes precedence over not_stated. A known mixture is not itself a conflict.",
+          "options": {
+            "complete_assignment": "All requested lot identities, mixture fractions, and prior-build histories are established for every input portion.",
+            "partial_identification": "Some provenance is established, including the presence of different reuse histories, but the complete requested input-portion assignment is unavailable.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E005",
+      "title": "Outcome-dependent stress assignment in a staircase",
+      "source_ids": [
+        "FAT-2022"
+      ],
+      "target_treatment": "Applied fatigue stress in the regular staircase test of 304L stainless-steel foil specimens.",
+      "scope": "Table 2's staircase/up-down protocol as implemented in Section 4 and Figure 11(a). Figure 11(b-d) are other protocols, not additional observations of the selected allocation rule.",
+      "evidence": [
+        {
+          "source_id": "FAT-2022",
+          "location": "Table 2, PDF p. 3",
+          "kind": "source_faithful_adaptation",
+          "text": "In the staircase protocol, the first specimen receives the starting stress. The next specimen receives a stress step down after failure or a step up after runout of the preceding specimen. Each specimen contributes one test. In the separately described step protocol, the same specimen is retested at increasing stress after runout."
+        },
+        {
+          "source_id": "FAT-2022",
+          "location": "Section 4 and Table 3, PDF p. 17; Figure 11(a), PDF p. 18",
+          "kind": "source_faithful_adaptation",
+          "text": "The experimental material is 304L foil. Specimens were extracted randomly across the foil and assigned to protocols in randomized order to reduce time effects. Table 3 states a 325 MPa start and 30 MPa steps. Figure 11(a) plots the regular staircase sequence; the caption also states 30 MPa increments. The rendered table and figure accompany this evidence."
+        }
+      ],
+      "scientific_claim": "Because specimen selection and protocol order were randomized, the stresses in the regular staircase were independently randomized across specimens.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "starting_stress_MPa": 325,
+        "step_MPa": 30
+      },
+      "source_assets": [
+        "evidence/fatigue-2107.02685v3.pdf",
+        "evidence/fatigue-2107.02685v3-p03.png",
+        "evidence/fatigue-2107.02685v3-p17.png",
+        "evidence/fatigue-2107.02685v3-p18.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E005-Q01",
+          "instruction": "What determines the next specimen's applied stress in the selected regular staircase protocol? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "independent_randomization": "A fresh random draw selects stress independently of preceding outcomes.",
+            "response_adaptive": "The preceding specimen's failure or runout determines an upward or downward stress step.",
+            "fixed_level": "The initial stress is retained unchanged for every specimen.",
+            "preordered_schedule": "A preassigned stress sequence is followed regardless of preceding outcomes.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E005-Q02",
+          "instruction": "When this regular staircase advances after an outcome, which physical specimen receives the next stress setting? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "new_specimen": "A new specimen receives the next setting, and the preceding specimen's single test is complete.",
+            "same_specimen": "The same specimen receives the next setting as another step in its loading history.",
+            "whole_foil": "The complete foil receives the next setting collectively before specimens are extracted.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E006",
+      "title": "Two executions within one paired-fixed realization",
+      "source_ids": [
+        "COS-2018"
+      ],
+      "target_treatment": "Paired-fixed initialization for the N1000 cosmological N-body simulation set.",
+      "scope": "Only the 100 paired-fixed realizations in Table 1's N1000 row; exclude its 100 standard realizations and all other simulation sets. One paired-fixed realization contains two phase-related executions.",
+      "evidence": [
+        {
+          "source_id": "COS-2018",
+          "location": "Section 2, PDF pp. 2-3; Table 1, PDF p. 4",
+          "kind": "source_faithful_adaptation",
+          "text": "The two fixed fields of a pair use the same fixed Fourier amplitudes, with phases shifted by pi between them. Table 1 lists 100 N1000 paired-fixed realizations and states that each corresponds to two simulations. The simulations are separate executions, not two output snapshots of one execution."
+        },
+        {
+          "source_id": "COS-2018",
+          "location": "Section 3.2, PDF p. 5, Equation 10 and cross-correlation discussion",
+          "kind": "source_faithful_adaptation",
+          "text": "The authors first average the two simulations' values for a paired-fixed realization, then calculate statistics across realizations. They explicitly analyze the cross-correlation within pairs. Phase flipping does not imply that every evolved observable has perfect negative correlation."
+        }
+      ],
+      "scientific_claim": "The N1000 paired-fixed subset supplies 200 independently drawn initial phase fields because it contains 200 separately executed simulations.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "paired_realizations": 100,
+        "executions_per_paired_realization": 2
+      },
+      "source_assets": [
+        "evidence/paired-fixed-1806.01871v1.pdf",
+        "evidence/paired-fixed-1806.01871v1-p02.png",
+        "evidence/paired-fixed-1806.01871v1-p04.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E006-Q01",
+          "instruction": "How are the initial phase fields of the two simulations within one paired-fixed realization related? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "independent_draws": "Both phase fields are independently drawn from the specified phase distribution.",
+            "phase_reversed": "One phase field is obtained from the other by a pi phase shift, with the same fixed amplitudes.",
+            "identical_field": "Both simulations use the identical phase field without phase reversal.",
+            "output_resampling": "The pair is produced by resampling outputs from one completed simulation.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E006-Q02",
+          "instruction": "In the source's paired-fixed statistical construction, which quantity contributes one value before statistics are taken across realizations? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "individual_execution": "The output of each individual execution, entered separately as an independent realization.",
+            "pair_average": "The average of the two corresponding outputs within a paired-fixed realization.",
+            "pair_difference": "The difference between the two corresponding outputs within a paired-fixed realization.",
+            "all_runs_average": "One average across every N1000 execution, without distinct realization values.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E007",
+      "title": "Ensemble membership after a forcing-protocol revision",
+      "source_ids": [
+        "LENS2-DOC"
+      ],
+      "target_treatment": "Original CMIP6 biomass-burning forcing versus the revised SMBB implementation in CESM2-LENS2.",
+      "scope": "All 100 documented LENS2 members, with the forcing change during 1990-2020. Member groups and initialization dates follow the official page; no independent climate-state count is inferred from output fields.",
+      "evidence": [
+        {
+          "source_id": "LENS2-DOC",
+          "location": "Initialization groups; Modifications incorporated in the second half",
+          "kind": "source_faithful_adaptation",
+          "text": "LENS2 has two 50-member halves: original biomass-burning forcing and an 11-year-running-mean version, SMBB, affecting 1990-2020. At each of four macro-initialization dates (1231, 1251, 1281, 1301), the first ten micro-perturbation members use original forcing and the second ten use SMBB. Ten additional even-decade initializations use original forcing; ten odd-decade initializations use SMBB."
+        },
+        {
+          "source_id": "LENS2-DOC",
+          "location": "Remaining modification paragraphs",
+          "kind": "source_faithful_adaptation",
+          "text": "The SMBB implementation also corrects emission-dataset issues and changes the timing of a crop-harvest carbon-flux term. The project reports no significant solution changes from the former corrections and no climate-changing impacts from the latter. Additional output fields also differ."
+        }
+      ],
+      "scientific_claim": "All 100 LENS2 members replicate the original biomass-burning forcing implementation; differences between the two documented halves isolate the effect of smoothing that forcing.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "macro_start_dates": [
+          1231,
+          1251,
+          1281,
+          1301
+        ],
+        "original_micro_members_per_date": 10,
+        "smbb_micro_members_per_date": 10,
+        "original_extra_start_years": [
+          1001,
+          1021,
+          1041,
+          1061,
+          1081,
+          1101,
+          1121,
+          1141,
+          1161,
+          1181
+        ],
+        "smbb_extra_start_years": [
+          1011,
+          1031,
+          1051,
+          1071,
+          1091,
+          1111,
+          1131,
+          1151,
+          1171,
+          1191
+        ]
+      },
+      "source_assets": [
+        "evidence/lens2.html"
+      ],
+      "questions": [
+        {
+          "question_id": "E007-Q01",
+          "instruction": "How should the documented members be classified with respect to the original versus SMBB biomass-burning forcing protocol? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "all_original": "Every member uses the original biomass-burning forcing protocol.",
+            "all_smbb": "Every member uses the SMBB biomass-burning forcing protocol.",
+            "two_protocol_groups": "The collection contains members using each of the two documented forcing protocols.",
+            "within_run_replicates": "Each member contains separate original and SMBB runs as internal replicate executions.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E007-Q02",
+          "instruction": "Does the documented difference between these halves isolate biomass-burning smoothing as the only implementation change? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "smoothing_only": "Yes; the two halves differ only in the biomass-burning smoothing operation.",
+            "bundled_changes": "No; the SMBB half also incorporates other documented implementation changes.",
+            "initialization_only": "No forcing or code difference is present; only the initial conditions differ.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E008",
+      "title": "Exact treatment repetition within a foldover design",
+      "source_ids": [
+        "FOLD-2025",
+        "N-FOLD"
+      ],
+      "target_treatment": "The complete eight-factor coded treatment setting in the ethylene experiment.",
+      "scope": "All 20 run columns of Table 7, factors 1-8 and response y. Column numbers in the transcription are left-to-right table indices assigned for this package, not claimed original run IDs or chronological order.",
+      "evidence": [
+        {
+          "source_id": "FOLD-2025",
+          "location": "Section 6, PDF pp. 22-23; Table 7, PDF p. 23",
+          "kind": "source_faithful_adaptation",
+          "text": "The ethylene experiment uses 20 runs and eight process factors. The authors prepare a fresh salt sample for each run and clean the vessel. Oxidation and regeneration steps include gas collection. Table 7 treats each column as a run; the preceding text explicitly describes the arrangement as replicates and foldover pairs. The source reports p=2 pure-error degrees of freedom and f=1 fake-factor degree of freedom."
+        },
+        {
+          "source_id": "FOLD-2025",
+          "location": "Introduction, PDF p. 2; N-FOLD, foldover definition",
+          "kind": "source_faithful_adaptation",
+          "text": "Foldover reverses coded factor signs to create additional treatment settings and address aliasing. Complementary settings can belong to a foldover pair without being the same complete treatment condition. The full Table 7 transcription is supplied below; no repeated columns are removed."
+        }
+      ],
+      "scientific_claim": "The 20 Table 7 executions are ten complete treatment conditions, each repeated twice, because the runs are arranged in foldover pairs.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "factor_order": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "column_index_definition": "Left-to-right position in Table 7; not execution chronology.",
+        "runs": [
+          {
+            "column": 1,
+            "factor_settings": [
+              "+",
+              "-",
+              "+",
+              "+",
+              "+",
+              "-",
+              "-",
+              "-"
+            ],
+            "y": 0.3
+          },
+          {
+            "column": 2,
+            "factor_settings": [
+              "-",
+              "+",
+              "-",
+              "-",
+              "-",
+              "+",
+              "+",
+              "+"
+            ],
+            "y": 0.65
+          },
+          {
+            "column": 3,
+            "factor_settings": [
+              "+",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "+"
+            ],
+            "y": 0.41
+          },
+          {
+            "column": 4,
+            "factor_settings": [
+              "-",
+              "+",
+              "+",
+              "+",
+              "+",
+              "+",
+              "+",
+              "-"
+            ],
+            "y": 0.53
+          },
+          {
+            "column": 5,
+            "factor_settings": [
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+",
+              "+",
+              "+"
+            ],
+            "y": 0.62
+          },
+          {
+            "column": 6,
+            "factor_settings": [
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "y": 0.42
+          },
+          {
+            "column": 7,
+            "factor_settings": [
+              "+",
+              "-",
+              "+",
+              "+",
+              "+",
+              "+",
+              "-",
+              "+"
+            ],
+            "y": 0.28
+          },
+          {
+            "column": 8,
+            "factor_settings": [
+              "-",
+              "+",
+              "-",
+              "-",
+              "-",
+              "-",
+              "+",
+              "-"
+            ],
+            "y": 0.65
+          },
+          {
+            "column": 9,
+            "factor_settings": [
+              "+",
+              "+",
+              "+",
+              "-",
+              "+",
+              "-",
+              "+",
+              "-"
+            ],
+            "y": 0.64
+          },
+          {
+            "column": 10,
+            "factor_settings": [
+              "-",
+              "-",
+              "-",
+              "+",
+              "-",
+              "+",
+              "-",
+              "+"
+            ],
+            "y": 0.33
+          },
+          {
+            "column": 11,
+            "factor_settings": [
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+"
+            ],
+            "y": 0.39
+          },
+          {
+            "column": 12,
+            "factor_settings": [
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+"
+            ],
+            "y": 0.35
+          },
+          {
+            "column": 13,
+            "factor_settings": [
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-"
+            ],
+            "y": 0.57
+          },
+          {
+            "column": 14,
+            "factor_settings": [
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-"
+            ],
+            "y": 0.6
+          },
+          {
+            "column": 15,
+            "factor_settings": [
+              "-",
+              "+",
+              "+",
+              "-",
+              "+",
+              "-",
+              "-",
+              "+"
+            ],
+            "y": 0.66
+          },
+          {
+            "column": 16,
+            "factor_settings": [
+              "+",
+              "-",
+              "-",
+              "+",
+              "-",
+              "+",
+              "+",
+              "-"
+            ],
+            "y": 0.25
+          },
+          {
+            "column": 17,
+            "factor_settings": [
+              "+",
+              "+",
+              "-",
+              "+",
+              "-",
+              "-",
+              "-",
+              "+"
+            ],
+            "y": 0.5
+          },
+          {
+            "column": 18,
+            "factor_settings": [
+              "-",
+              "-",
+              "+",
+              "-",
+              "+",
+              "+",
+              "+",
+              "-"
+            ],
+            "y": 0.41
+          },
+          {
+            "column": 19,
+            "factor_settings": [
+              "+",
+              "+",
+              "+",
+              "-",
+              "-",
+              "+",
+              "+",
+              "-"
+            ],
+            "y": 0.59
+          },
+          {
+            "column": 20,
+            "factor_settings": [
+              "-",
+              "-",
+              "-",
+              "+",
+              "+",
+              "-",
+              "-",
+              "+"
+            ],
+            "y": 0.35
+          }
+        ]
+      },
+      "source_assets": [
+        "evidence/foldover-2507.14648.pdf",
+        "evidence/foldover-2507.14648-p22.png",
+        "evidence/foldover-2507.14648-p23.png",
+        "evidence/foldover-table7.png",
+        "evidence/NIST-foldover.html"
+      ],
+      "questions": [
+        {
+          "question_id": "E008-Q01",
+          "instruction": "Which relation defines exact repetition of the complete treatment condition for replication accounting in this coded eight-factor experiment? Do not compare columns or count repetitions; code will apply the selected relation to every supplied row. Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "complete_setting_equality": "Separate run executions have identical settings for all eight coded process factors.",
+            "sign_complement": "Separate run executions have opposite signs for every coded process factor.",
+            "main_factor_match": "Separate run executions match on a selected main factor even if the other seven settings differ.",
+            "same_run_gas_samples": "Multiple gas collections come from one run, regardless of that run's complete factor settings.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E009",
+      "title": "Shared traceability across laboratory calibrations",
+      "source_ids": [
+        "MET-2016"
+      ],
+      "target_treatment": "DC-voltage calibration of the same Fluke 5700A multifunction calibrator at a common setting s, with the shared INRIM 10 V reference-standard contribution.",
+      "scope": "Sections III-V's INRIM-Lab / Cal-Lab interlaboratory comparison. Restrict the dependence judgment to the DC-voltage traceability term in Equation 5; do not generalize it to all uncertainty components or electrical quantities.",
+      "evidence": [
+        {
+          "source_id": "MET-2016",
+          "location": "Sections III.A-IV, PDF pp. 2-3; Figure 3",
+          "kind": "source_faithful_adaptation",
+          "text": "The comparison uses verification without adjustment. The Cal-Lab traceability chain shares standards calibrated at INRIM with the INRIM-Lab chain, creating partial correlation. For DC voltage, Equation 5 identifies the INRIM calibration uncertainty of the 10 V standard in both chains."
+        },
+        {
+          "source_id": "MET-2016",
+          "location": "Section V, PDF p. 3, Equations 1-5; Conclusions, PDF p. 6",
+          "kind": "source_faithful_adaptation",
+          "text": "Cal-Lab measures before and after INRIM-Lab. Its two values at the same setting s are averaged to reduce possible calibrator drift in the comparison. The difference uncertainty includes a covariance term: u(d)^2 = u(E_L)^2 + u(E_I)^2 - 2 r u(E_L)u(E_I). Equation 5 gives r = u_B(std_DCV)^2/[u(E_I)u(E_L)]. The authors report high instrument stability."
+        }
+      ],
+      "scientific_claim": "Different laboratory names make the two laboratory results independent realizations of the shared DC-voltage reference calibration, so this covariance contribution can be dropped.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {},
+      "source_assets": [
+        "evidence/metrology-1510.07866v3.pdf",
+        "evidence/metrology-1510.07866v3-p03.png",
+        "evidence/metrology-1510.07866v3-p04.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E009-Q01",
+          "instruction": "What relationship does the source establish between the laboratories' DC-voltage results with respect to the reference-calibration contribution in Equation 5? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "independent_reference": "The laboratories use independent realizations of this reference-calibration contribution.",
+            "shared_reference": "The laboratories share a reference-calibration contribution that induces covariance between their results.",
+            "identical_measurement": "The laboratory labels refer to the same measurement result copied into both records.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E009-Q02",
+          "instruction": "What role do the Cal-Lab measurements before and after the INRIM visit play in this comparison? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "bracketing_average": "They are repeated Cal-Lab measurements that bracket the INRIM visit and are averaged for the comparison.",
+            "two_laboratories": "They represent two additional laboratories providing separate interlaboratory results.",
+            "adjustment_contrast": "They are a before-and-after contrast of an intentional calibrator adjustment performed for this comparison.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "E010",
+      "title": "Complementary allocation to paired mountain ranges",
+      "source_ids": [
+        "CLOUD-2018",
+        "CLOUD-2014"
+      ],
+      "target_treatment": "Assignment of ground-based silver-iodide cloud seeding to Sierra Madre or Medicine Bow during a four-hour experimental unit (EU).",
+      "scope": "The 118 quality-controlled EUs used in the WWMPP primary analysis. One EU includes the paired ranges. Target sites are HY (Sierra Madre) and GL (Medicine Bow); auxiliary gauges and possible cross-range contamination do not redefine the assigned treatment.",
+      "evidence": [
+        {
+          "source_id": "CLOUD-2018",
+          "location": "Section 2, Figure 1 explanation, and Table 1 with its caption, pp. 2640-2643",
+          "kind": "source_faithful_adaptation",
+          "text": "Within an EU, seeding is randomly assigned to one range and not the other. The authors explicitly say the Medicine Bow assignment plot would have the opposite shading from the Sierra Madre plot. The authors report 154 EUs, 27 precipitation-QC exclusions, and nine additional generator-performance exclusions, leaving 118 for the primary analysis. The monthly generator-exclusion cells in Table 1 sum to eight, while its margins and the prose report nine; the retained count here follows the authors' reported totals."
+        },
+        {
+          "source_id": "CLOUD-2018",
+          "location": "Section 2a and Figure 2, pp. 2642-2643",
+          "kind": "source_faithful_adaptation",
+          "text": "The design has eight generators per range and multiple precipitation gauges; gauge QC is conducted without knowledge of seeding assignments."
+        },
+        {
+          "source_id": "CLOUD-2014",
+          "location": "Slides 16-18, 24 and 29",
+          "kind": "source_faithful_adaptation",
+          "text": "The presentation shows the paired design, four-hour measurements, and a 118-case Medicine Bow assignment plot. Slide 24 reports ground-based ice-nucleus measurements indicating that silver iodide reached Medicine Bow in 21 Sierra Madre seeding cases. Slide 29 reports 18 modeled cases of enhanced precipitation in Medicine Bow during Sierra Madre seeding in winters 2009/10, 2011/12, and 2013/14. These are different diagnostics within the same trial reported in 2018."
+        }
+      ],
+      "scientific_claim": "The two range records in every retained EU represent two independently randomized seeding decisions, and the assigned-unseeded range is thereby confirmed to have no seeding exposure.",
+      "claim_origin": "benchmark_constructed; not attributed to the source authors",
+      "records": {
+        "initial_EUs": 154,
+        "precipitation_QC_exclusions": 27,
+        "generator_exclusions": 9,
+        "reported_retained_EUs": 118,
+        "ranges_per_EU": 2
+      },
+      "source_assets": [
+        "evidence/cloud-2014-report.pdf",
+        "evidence/cloud-2014-report-p16.png",
+        "evidence/cloud-2014-report-p17.png",
+        "evidence/cloud-2014-report-p18.png",
+        "evidence/cloud-2014-report-p24.png",
+        "evidence/cloud-2014-report-p29.png"
+      ],
+      "questions": [
+        {
+          "question_id": "E010-Q01",
+          "instruction": "How are the two range-level seeding assignments related within one retained EU? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "independent_assignments": "Each range is independently randomized, so both or neither can be assigned seeding within that EU.",
+            "complementary_assignment": "One joint allocation selects the seeded range, and the other range receives the complementary unseeded assignment.",
+            "both_seeded": "Both ranges are assigned seeding together as one treated pair.",
+            "permanent_range": "One range is permanently assigned seeding and the other remains unseeded throughout the study.",
+            "other": "The evidence establishes a different substantive answer from those listed.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        },
+        {
+          "question_id": "E010-Q02",
+          "instruction": "Does an assigned-unseeded label, by itself, establish zero physical exposure to seeding material in this study? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+          "options": {
+            "zero_exposure_established": "Yes; assignment to the unseeded range establishes that it received no seeding material.",
+            "assignment_only": "No; it establishes the planned allocation, while physical exposure requires additional evidence because cross-range contamination is discussed.",
+            "exposure_confirmed_everywhere": "No; the label establishes that every unseeded range-period was physically exposed to seeding material.",
+            "not_stated": "The supplied evidence does not establish the requested judgment.",
+            "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+          }
+        }
+      ]
+    }
+  ]
+}

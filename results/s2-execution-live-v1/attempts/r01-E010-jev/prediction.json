@@ -1,0 +1,81 @@
+{
+  "job_id": "r01-E010-jev",
+  "group_id": "E010",
+  "model_id": "jev",
+  "repeat": 0,
+  "answers": {
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false,
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    "clauses": {
+      "independent_assignment": "inconsistent",
+      "zero_exposure": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "E010-Q01": {
+      "probabilities": {
+        "independent_assignments": 0,
+        "not_stated": 0,
+        "other": 0,
+        "both_seeded": 0,
+        "conflicting": 0,
+        "complementary_assignment": 1,
+        "permanent_range": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    },
+    "E010-Q02": {
+      "probabilities": {
+        "not_stated": 0.01,
+        "zero_exposure_established": 0.01,
+        "exposure_confirmed_everywhere": 0,
+        "conflicting": 0.01,
+        "assignment_only": 0.97
+      },
+      "confidence": 0.97,
+      "raw_probability_sum": 1.0
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972048-8iAdVCQkCWdU5DwWHwjP",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1409,
+      "output_tokens": 161,
+      "cost": 5.9178e-05
+    },
+    "input_tokens": 1409,
+    "output_tokens": 161,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 5.9178e-05,
+    "usage_cost_estimate_usd": 5.9178e-05,
+    "usage_cost_upper_estimate_usd": 5.9178e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.36900954201701097,
+    "derivation_wall_seconds": 3.937500878237188e-05,
+    "derivation_cpu_seconds": 3.900000000001125e-05
+  },
+  "request_sha256": "94b9a1dba30dc437f21786c20cefc5ed4f6dad73e99f3e43009a43e4be0e316b",
+  "receipt_sha256": "5a2b51f6b08f9dc3ebe7f158c0d51075f992cece35fc28184a5386914f216d2f",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,3512 @@
+
+=== PDF PAGE 1 ===
+Draft version June 7, 2018
+Preprint typeset using LATEX style emulateapj v. 01/23/15
+STATISTICAL PROPERTIES OF PAIRED FIXED FIELDS
+Francisco Villaescusa-Navarro1,†, Sigurd Naess 1, Shy Genel 1,2, Andrew Pontzen 3, Benjamin W andelt1,4,5,
+Lauren Anderson 1, Andreu Font-Ribera 2, Nicholas Battaglia 1,6,7, David N. Spergel 7,1
+1Center for Computational Astrophysics, Flatiron Institute, 162 5th Avenue, 10010, New York, NY, USA
+2Columbia Astrophysics Laboratory, Columbia University, 550 West 120th Street, New York, NY 10027, USA
+3Department of Physics and Astronomy, University College London, 132 Hampstead Road, London, NW1 2PS, United Kingdom
+4Institut d’Astrophysique de Paris 98bis, Boulevard Arago, 75014 Paris, France
+5Sorbonne Universites, Institut Lagrange de Paris 98 bis Boulevard Arago, 75014 Paris, France
+6Department of Astronomy, Cornell University, Ithaca, NY, 14853, USA and
+7Department of Astrophysical Sciences, Princeton University, Peyton Hall, Princeton NJ 08544-0010, USA
+Draft version June 7, 2018
+ABSTRACT
+The initial conditions of cosmological simulations are commonly drawn from a Gaussian ensemble.
+The limited number of modes inside a simulation volume gives rise to statistical ﬂuctuations known
+as sample variance, limiting the accuracy of simulation predictions. Fixed ﬁelds oﬀer an alternative
+initialization strategy; they have the same power spectrum as standard Gaussian ﬁelds but without
+intrinsic amplitude scatter at linear order. Paired ﬁxed ﬁelds consists of two ﬁxed ﬁelds with opposite
+phases that cancel phase correlations which otherwise induce second-order scatter in the non-linear
+power spectrum. We study the statistical properties of those ﬁelds for 19 diﬀerent quantities at
+diﬀerent redshifts through a large set of 600 N-body and 506 state-of-the-art magneto-hydrodynamic
+simulations covering a wide range of scales, mass and spatial resolutions. We ﬁnd that paired ﬁxed
+simulations do not introduce a bias on any of the examined quantities. We quantify the statistical
+improvement brought by these simulations, over standard ones, on diﬀerent power spectra such as
+matter, halos, CDM, gas, stars, black-holes and magnetic ﬁelds, ﬁnding that they can reduce their
+variance by factors as large as 10 6. We quantify the improvement achieved by ﬁxing and by pairing,
+showing that sample variance in some quantities can be highly suppressed by pairing after ﬁxing.
+Paired ﬁxed simulations do not change the scatter in quantities such as the probability distribution
+function of matter density, or the halo, void or stellar mass functions. We argue that procedures
+aiming at reducing the sample variance of those quantities are unlikely to work. Our results show that
+paired ﬁxed simulations do not aﬀect either mean relations or scatter of galaxy properties, and suggest
+that the information embedded in 1-pt statistics is highly complementary to that in clustering.
+Keywords: large-scale structure of universe – methods: numerical – methods: statistical
+1. INTRODUCTION
+The standard model of cosmology is a well established
+theoretical framework that explains with great success a
+large and diverse range of cosmological observables. The
+parameters of the model represent fundamental physics
+quantities such as the nature of dark energy, the density
+of dark matter or the sum of the neutrino masses. The
+goal of current and upcoming cosmological surveys is to
+determine the value of those parameters with the highest
+accuracy possible, in order to improve our knowledge of
+fundamental physics.
+The amount of information that can be extracted from
+cosmological surveys depends on the accuracy of the the-
+oretical model. For instance, theoretical predictions are
+very accurate and fast-to-compute in the linear regime,
+but the amount of information that can be extracted
+with them is limited, since that regime can only accu-
+rately describe the largest scales. Perturbation theory
+(Bernardeau et al. 2002) is an ideal tool to make accurate
+theoretical predictions in the mildly non-linear regime.
+However, theoretical predictions in the fully non-linear
+regime require numerical simulations.
+Ideally, the best way to extract cosmological infor-
+mation would be by evaluating the likelihood in every
+† fvillaescusa@ﬂatironinstitute.org
+point of the parameter space by using the theoretical
+prediction from cosmological hydrodynamic simulations.
+This procedure has been impractical so far (see how-
+ever Palanque-Delabrouille et al. 2015, for similar eﬀorts
+with the Lyα-forest) due to several factors: 1) the vol-
+ume of the parameter space can be very large, requiring
+many simulations for sampling it; 2) a very large num-
+ber of simulations are needed to compute the covariance
+matrix in each point of the parameter space; 3) simu-
+lations covering representative survey volumes with the
+required mass resolution are computationally expensive;
+4) each simulation has an intrinsic variance, commonly
+called sample variance, arising from the limited number
+of modes it contains, such that many simulations are
+needed to compute the mean.
+The ﬁrst point can be addressed by running simula-
+tions on a subset of strategic locations in the parameter
+space (see e.g. Heitmann et al. 2009). For the second
+and third points, a large amount of work has been car-
+ried out to speed up the running time of N-body simu-
+lations and to evaluate the covariance matrix, at the ex-
+pense of accuracy (Scoccimarro & Sheth 2002; Kitaura &
+Heß 2013; Kitaura et al. 2014; Tassev et al. 2013, 2015;
+Howlett et al. 2015; Chuang et al. 2015a; Feng et al.
+2016a; Monaco et al. 2002a; Taﬀoni et al. 2002; Monaco
+et al. 2002b, 2013; Chuang et al. 2015b; Rizzo et al. 2017).
+arXiv:1806.01871v1  [astro-ph.CO]  5 Jun 2018
+
+=== PDF PAGE 2 ===
+2 Francisco Villaescusa-Navarro et al.
+Those methods, however, do not include the non-linear
+eﬀects of baryons.
+The scope of this paper is to investigate how to miti-
+gate the fourth point, i.e. the intrinsic sample variance
+attached to each simulation. We focus our attention on
+paired ﬁxed ﬁelds, introduced in Pontzen et al. (2016);
+Angulo & Pontzen (2016). Those ﬁelds can be obtained
+from Gaussian density ﬁelds by performing certain op-
+erations on the amplitudes and/or the phases of their
+modes. Angulo & Pontzen (2016) showed that numeri-
+cal simulations run with those ﬁelds as initial conditions
+lead to quantities, such as the matter power spectrum,
+with a much lower variance than those obtained from
+traditional Gaussian ﬁelds.
+The purpose of this work is to further investigate the
+properties of paired ﬁxed ﬁelds and 1) identify the quan-
+tities for which paired ﬁxed ﬁelds help in reducing the
+intrinsic statistical scatter, 2) quantify the statistical im-
+provement, 3) study whether a bias is introduced in any
+quantities.
+We carry out our study using a large set of 600 N-body
+simulations with diﬀerent box sizes and mass and spatial
+resolutions. We use them to study the impact of paired
+ﬁxed simulations on the matter, halo and halo-matter
+power spectra, the halo bias, the probability distribution
+function of matter density, the halo mass function and
+the void mass function.
+We then study the statistical properties of paired ﬁxed
+simulations using a set of∼ 500 state-of-the-art magneto-
+hydrodynamic simulations. We investigate the properties
+of the above quantities, along with the power spectra of
+the other components: gas, cold dark matter (CDM),
+stars, black-holes and magnetic ﬁelds. We also study the
+impact of paired ﬁxed ﬁelds on the star-formation rate
+history, on the stellar mass function and on several inter-
+nal galaxy properties such as radii or maximum circular
+velocity.
+This paper is organized as follows. In section 2 we de-
+ﬁne Gaussian, paired Gaussian, ﬁxed and paired ﬁxed
+ﬁelds. The set of numerical simulations run for this
+project is described in section 3, where we also explain
+the tools we use to carry out the statistical analysis. We
+present the results from our N-body and hydrodynamic
+simulations in sections 4 and 5 and 6 for large, inter-
+mediate and small scales, respectively. In section 7 we
+investigate whether we can generate ﬁelds with reduced
+sample variance in both their the 1-pt and 2-pt statis-
+tics. Finally, we draw the main conclusions of this paper
+in section 8.
+2. DEFINITIONS
+We now deﬁne what Gaussian, paired Gaussian, ﬁxed
+and paired ﬁxed ﬁelds are. For a given density ﬁeldρ(⃗ x),
+the density contrast is deﬁned as
+δ(⃗ x) = ρ(⃗ x)− ¯ρ
+¯ρ , (1)
+where ¯ρ =⟨ρ(⃗ x)⟩. We express its value in Fourier-space
+as
+δ(⃗k) = 1
+(2π)3
+∫
+d3⃗ xe−i⃗k·⃗ xδ(⃗ x) =Aeiθ (2)
+where A is the mode’s amplitude and θ is its phase. We
+notice that the value of both A and θ depend on the
+particular wavelength, ⃗k, considered. Since the density
+ﬁeld is real the modes satisfy δ(−⃗k) =δ∗(⃗k). The power
+spectrum of the ﬁeld is deﬁned as
+⟨δ(⃗k1)δ∗(⃗k2)⟩ =δD(⃗k1−⃗k2)P (k1) (3)
+and for a simulation of box size L and volume V = L3
+the above equation reads
+P (k1) = (2π)3
+V δ⃗k1,⃗k2
+⟨δ(⃗k1)δ∗(⃗k2)⟩ . (4)
+In a Gaussian density ﬁeld θ is a random variable dis-
+tributed uniformly between 0 and 2 π whereas A follows
+a Rayleigh distribution
+p(A)dA = A
+σ2e−A2/2σ2
+dA , (5)
+with σ2 = VP (k)/(16π3). The mean value of the mode
+amplitude is
+⟨A⟩ =
+∫ ∞
+0
+A2
+σ2e−A2/2σ2
+dA =
+√
+VP (k)
+32π2 . (6)
+A density ﬁeld built as above will satisfy
+⟨δ(⃗k)δ∗(⃗k)⟩ =⟨A2⟩ =
+∫ ∞
+0
+A3
+σ2e−A2/2σ2
+dA = VP (k)
+(2π)3 .
+(7)
+A Gaussian ﬁeld is completely described by its 2-pt cor-
+relation function, or power spectrum.
+It is interesting to consider a diﬀerent distribution for
+the amplitudes of the modes that fulﬁlls two conditions:
+1) the amplitude of the power spectrum is the same as
+in Gaussian ﬁelds, i.e. ⟨δ(⃗k)δ∗(⃗k)⟩ = VP (k)/(2π)3 and
+2) it has no intrinsic scatter. The following distribution
+satisﬁes these two conditions:
+p(A)dA =δD
+(
+A−
+√
+VP (k)
+(2π)3
+)
+dA . (8)
+We note that in such ﬁelds, the value we assign to each
+mode with wavenumber⃗k is not the mean of the Rayleigh
+distribution (see Eq. 6). We emphasize that ﬁelds con-
+structed with amplitudes drawn from the above distri-
+bution are not Gaussian.
+We deﬁne Gaussian, paired Gaussian, ﬁxed and paired
+ﬁxed ﬁelds as follows:
+• Gaussian ﬁeld: A ﬁeld with δ(⃗k) = Aeiθ, where
+A follows the Rayleigh distribution of Eq. 5.
+• Paired Gaussian ﬁeld: A pair of Gaussian ﬁelds,
+δ1(⃗k) = Aeiθ and δ2(⃗k) = Aei(θ+π) = −δ1(⃗k),
+where the values of A and θ are the same for the
+two ﬁelds and A follows the Rayleigh distribution
+of Eq. 5.
+• Fixed ﬁeld : A ﬁeld with δ(⃗k) = Aeiθ, where A
+follows the distribution of Eq. 8.
+• Paired ﬁxed ﬁeld: A pair of ﬁelds, δ1(⃗k) =Aeiθ
+and δ2(⃗k) = Aei(θ+π) =−δ1(⃗k), where the values
+of A and θ are the same for the two ﬁelds and A
+follows the distribution of Eq. 8.
+
+=== PDF PAGE 3 ===
+Statistical properties of paired fixed fields 3
+In all the above ﬁelds θ is a random variable distributed
+uniformly between 0 and 2 π. Any of the above ﬁelds
+satisﬁes the Hermitian condition: δ(−⃗k) = δ∗(⃗k). In
+Fig. 1 we show the 2D power spectrum from a Gaussian
+and ﬁxed ﬁeld and its comparison with the input power
+spectrum. We also show schematically the eﬀects of non-
+linear evolution.
+Paired Gaussian ﬁelds were introduced in Pontzen
+et al. (2016). Fixed ﬁelds have been relatively well known
+(see e.g. Viel et al. 2010). Paired ﬁxed ﬁelds were ﬁrst
+studied in Angulo & Pontzen (2016).
+In this paper we have run simulations where the initial
+conditions have been generated using the above ﬁelds.
+We refer to these simulations as standard, paired, ﬁxed
+and paired ﬁxed simulations.
+We note that although Gaussian and ﬁxed ﬁelds share,
+by construction, the same power spectrum, they diﬀer
+in higher order correlations like the trispectrum. For
+instance, the variance of the power spectrum
+σ(P (k)) =⟨
+(
+P (k)− ¯P (k)
+)2
+⟩
+= (2π)6
+V 2 ⟨δ(⃗k)δ∗(⃗k)δ(⃗k)δ∗(⃗k)⟩− ¯P 2(k) (9)
+is equal toP (k) for Gaussian ﬁelds but is identically zero
+for ﬁxed ﬁelds. For this reason, we expect that the scatter
+in the matter power spectrum of ﬁxed (and paired ﬁxed)
+ﬁelds will be lower than in Gaussian ﬁelds. One of the
+purposes of this paper is to study the reduction on the
+scatter of a considered quantity achieved by ﬁxed and
+paired ﬁxed simulations.
+On the other hand, the value of some quantities,
+e.g. the probability distribution function (pdf) of the
+density ﬁeld, will depend on the value of the n-point
+correlation function. Since the value of these functions
+may be diﬀerent in Gaussian and ﬁxed ﬁelds, we expect
+that ﬁxed, and paired ﬁxed, simulations may introduce a
+bias on the value of those quantities. Angulo & Pontzen
+(2016) argued using perturbation theory that observ-
+able quantities should be unbiased but the accuracy of
+that statement in the non-linear evolution remains to be
+tested. Thus, the other key point of this work is to quan-
+tify the magnitude of that bias.
+3. METHODS
+In this section we describe the numerical simulations
+run for this work. We also explain the statistical analysis
+we carry out to quantify 1) whether paired ﬁxed simula-
+tions introduce a bias on the considered quantity and 2)
+the statistical improvement achieved over standard sim-
+ulations.
+3.1. Numerical simulations
+A large number of realizations is needed to study the
+statistical properties of paired ﬁxed simulations. Thus,
+in this work we have run an unusually large number,
+∼ 1000, of standard and paired ﬁxed simulations.
+The purpose of this paper is to investigate the prop-
+erties of those ﬁelds across a large range of scales, from
+linear to fully non-linear scales. Doing so with a single
+set of simulations would require the simulations to have
+a large box size and a large number of particles. Having
+a sensible number of those simulations will be computa-
+tionally expensive. Thus, we decided to run three dif-
+ferent sets of simulations that encompass three diﬀerent
+ranges of scales: 1) N-body simulations with box sizes of
+1000 h−1Mpc at low mass resolution, 2) hydrodynamic
+simulations with boxes of 200 h−1Mpc at intermediate
+mass resolution and 3) both N-body and hydrodynamic
+simulations with boxes of 20 h−1Mpc at high mass reso-
+lution.
+All our simulations share the same value of the cosmo-
+logical parameters, Ω m = 0.3175, Ω b = 0.049, Ων = 0,
+ns = 0.96, h = 0.67, σ8 = 0.834, that are in agreement
+with the results by Planck (Planck Collaboration et al.
+2016c). We have generated the initial conditions by dis-
+placing and assigning peculiar velocities to particles ini-
+tially laid down on a regular grid by using the Zel’dovich
+approximation at z = 99. The initial power spectrum
+and growth rates are computed by rescaling the z = 0
+matter power spectrum and transfer functions according
+to the method described by Zennaro et al. (2017), i.e. we
+account for both the scale-dependence of the growth fac-
+tor and growth rate in simulations with 2 ﬂuids.
+The N-body simulations were run using the Gadget-
+III code, last described in Springel (2005). They consist
+of two diﬀerent sets. One set follows the evolution of
+5123 CDM particles in a periodic box of 1000 comov-
+ing h−1Mpc while in the other 256 3 CDM particles are
+evolved in a box size of 20 comoving h−1Mpc. The grav-
+itational softening is set to 50 and 2 comoving h−1kpc,
+respectively. We call these sets N1000 and N20, and
+we use them to study the statistical properties of paired
+ﬁxed ﬁelds on large and small scales (and for very mas-
+sive and low-mass objects), respectively. Each set con-
+tains 300 simulations: 100 standard simulations and 100
+pairs of ﬁxed simulations. We will show results obtained
+from the N1000 set, while the N20 is mainly used to
+cross-check the results of the H20 simulation set that we
+describe below.
+We also have two diﬀerent sets of magneto-
+hydrodynamic simulations, run with the arepo code
+(Springel 2010). In one, we follow the evolution of 640 3
+CDM plus 6403 gas particles in a periodic box of 200 co-
+movingh−1 Mpc, while in the other we have a box of 20
+comoving h−1Mpc with 256 3 CDM plus 256 3 gas parti-
+cles. Both use the IllustrisTNG models of galaxy forma-
+tion, which include gas radiative cooling, star-formation,
+metal enrichment, galactic winds, and black hole accre-
+tion and feedback (Weinberger et al. 2017; Pillepich et al.
+2018b). The numerical methods and subgrid physics
+models build upon the Illustris simulation model (Vo-
+gelsberger et al. 2013, 2014a,b; Torrey et al. 2014; Genel
+et al. 2014). The softening lengths are 8 and 2 comoving
+h−1kpc, respectively. We name these sets H200 and H20,
+correspondingly. H200 has 56 simulations, 26 standard
+and 15 pairs, while H20 is made of 450 simulations: 250
+standard and 100 pairs. We use the H200 simulations,
+which are very close to the TNG300-3 simulation (Mari-
+nacci et al. 2017; Naiman et al. 2017; Nelson et al. 2018;
+Pillepich et al. 2018a; Springel et al. 2018), to study the
+improvement on diﬀerent power spectra (matter, CDM,
+gas) introduced by paired ﬁxed simulations on interme-
+diate scales. The H20 set is used to study the properties
+of paired ﬁxed simulations on very small scales and to in-
+vestigate the impact of those ﬁelds on galaxy properties.
+
+=== PDF PAGE 4 ===
+4 Francisco Villaescusa-Navarro et al.
+Standard simulationAmplitude fixing
+Gaussian realization Empirical power spectrum After evolving
+Empirical power spectrum After evolving
+realimag realimag
+random phases
+Fixed power,
+kx
+ky
+Input power spectrum
+Input power spectrum
+Figure 1. Toy example illustrating sample variance in standard (top row) and ﬁxed (bottom row) simulations. In both cases, a random
+density ﬁeld (center-left, here shown as the real and and imaginary Fourier components) is drawn from an input power spectrum (leftmost),
+but because the ﬁxed simulations ﬁx the complex amplitude, they avoid introducing sample variance into the empirical power spectrum
+measured from the random realization (center-right). The rightmost panels show a sketch of the eﬀect of further evolution: linear scales
+simply grow proportionally, preserving whatever sample variance was present, while on smaller scales, non-linearities and mode mixing
+reintroduce some of the suppressed cosmic variance in the ﬁxed simulation (see ﬁgure 4).
+Name Type Code # Standard # paired ﬁxed N 1/3
+CDM N 1/3
+gas mCDM mgas ϵ Box size
+realizations realizations (h−1M⊙) (h−1M⊙) (h−1kpc) (h−1Mpc)
+N1000 N-body Gadget3 100 100 512 - 6.6× 1011 - 50 1000
+N20 N-body Gadget3 100 100 256 - 4.2× 107 - 2 20
+H200 Hydrodynamic Arepo 26 15 640 640 2.3× 109 4.2× 108 8 200
+H20 Hydrodynamic Arepo 250 100 256 256 3.6× 107 6.5× 106 2 20
+T able 1
+Speciﬁcations of the simulations run for this paper. The value of the cosmological parameters is the same for all simulations:
+Ωm = 0.3175, Ωb = 0.049, Ων = 0,ns = 0.96,h = 0.67,σ8 = 0.834. We have four diﬀerent sets of simulations, with diﬀerent box sizes and
+numbers of particles. The ﬁrst letter of the name set represents whether it is an N-body (N) or hydrodynamic (H) simulation, while the
+number thereafter is the box size in h−1 Mpc. Note that one paired ﬁxed realization corresponds to two simulations with random phases
+ﬂipped by π. The physics included in our magneto-hydrodynamic simulations is: radiative cooling, star formation, metal enrichment,
+galactic winds, black hole accreting and feedback. The H200 simulations are similar to the IllustrisTNG300-3 simulation.
+A summary of our simulation suite is shown in Table 1.
+Snapshots are saved at diﬀerent redshifts, from z =
+15 down to z = 0. In this work we focus on redshifts
+0, 1 and 5. Dark matter halos are identiﬁed using the
+Friends-of-Friends algorithm (Davis et al. 1985) with a
+value of the linking length parameter b = 0.2. In the
+hydrodynamic simulations we identify galaxies through
+the subfind algorithm (Springel et al. 2001). We use
+the algorithm described in Banerjee & Dalal (2016) to
+identify voids in the matter distribution of our snapshots.
+3.2. Formalism
+Here we describe the formalism we use to carry out
+the statistical analysis for each quantity considered in
+this paper. The most important goals of this work are
+to 1) study whether paired ﬁxed simulations introduce a
+bias with respect to standard simulations and 2) quantify
+the statistical improvement achieved by ﬁxed and paired
+ﬁxed simulations in comparison with standard simula-
+tions.
+Throughout the paper we show plots that share the
+same structure and contain information on the above two
+statistical properties. An example of such a plot appears
+in the left panel of Fig. 2.
+We compute each quantity for each standard and
+paired ﬁxed realization in the considered simulation set.
+For example, the left panel of Fig. 2 considers the matter
+power spectrum at z = 99. We denote by Xs,i and Xpf,i
+the value of that quantity from the realization i of the
+standard and paired ﬁxed simulations, respectively. We
+
+=== PDF PAGE 5 ===
+Statistical properties of paired fixed fields 5
+compute the value of Xpf,i as
+Xpf,i = 1
+2[Xpf,i,1 +Xpf,i,2] (10)
+where Xpf,i,1 and Xpf,i,2 are the considered quantity in
+each simulation of a paired ﬁxed realization 2. From Xs,i
+and Xpf,i we estimate the mean and variance of each
+simulation type as
+¯Xα≡⟨Xα⟩ = 1
+N
+N∑
+i=1
+Xα,i (11)
+σ2
+α≡
+⟨
+(Xα− ¯Xα)2⟩
+=
+∑N
+i=1(Xα,i− ¯Xα)2
+N− 1 (12)
+where α ={s, pf}. The upper panel always shows the
+mean and standard deviation from the standard and
+paired ﬁxed simulations in blue and red, respectively.
+In the second panel of each ﬁgure we quantify the bias
+introduced by the paired ﬁxed simulations with respect
+to standard simulations. We calculate it by computing
+¯Xs− ¯Xpf
+σs−pf
+(13)
+where σs−pf is the expected error on the diﬀerence be-
+tween the means from the standard and paired ﬁxed sim-
+ulations. In this paper we have assumed that all the con-
+sidered quantities are normally distributed. In that case,
+the expected error on the diﬀerence of the means is 3
+σ2
+s−pf = σ2
+s
+Ns
++
+σ2
+pf
+Npf
+, (14)
+whereNs andNpf are the number of standard and paired
+ﬁxed realizations. We note that this is a reasonable as-
+sumption for power spectra, where the amplitude in a
+given k-bin receives contributions from many diﬀerent
+independent modes. For halo/void mass functions and
+pdfs, a more appropriate distribution will be a Poisso-
+nian. However, in this work we only show results for
+bins that contain many halos/voids/cells. In that case,
+the Poisson distribution is well approximated by a Gaus-
+sian.
+The green line in the second panel measures thus the
+bias introduced by the paired ﬁxed procedure, with re-
+spect to the standard simulations, in σ units. The grey
+band indicates where the bias is less than 2 σ.
+In the third and fourth panels we quantify the sta-
+tistical improvement achieved by the paired ﬁxed sim-
+ulations with respect to the standard simulations. The
+normalized variance4 of the paired ﬁxed simulations can
+2 In the case of the non-linear power spectrum this demonstra-
+bly cancels phase correlation errors at leading order. For other
+quantities, it may be possible to construct improved estimators us-
+ing cross-correlations between simulations, but this is beyond the
+scope of the present work.
+3 Since the standard and paired ﬁxed simulations have diﬀerent
+random seeds, the covariance between them vanishes.
+4 While ﬁxed simulations only contain one simulation, paired
+ﬁxed contain two. For quantities in which pairing and ﬁxing do
+not help, we will still see an improvement when using paired ﬁxed
+simulations simply because we are estimating the quantity through
+be expressed as
+σ2
+pf =σ2
+f (1 +r) , (15)
+where σf is the variance of individual ﬁxed simulations
+σ2
+f =⟨(Xpf,1− ¯Xpf)2⟩ =⟨(Xpf,2− ¯Xpf)2⟩ (16)
+and r is the cross-correlation coeﬃcient between Xpf,1
+and Xpf,2
+r = 1
+σ2
+fN
+N∑
+i=1
+(Xpf,i,1− ¯Xpf,1)(Xpf,i,2− ¯Xpf,2). (17)
+We note that σ2
+f can be interpreted as the variance ob-
+tained by ﬁxing the amplitude without doing pairing
+(i.e. the variance of ﬁxed simulations), while the value
+of r measures the correlation between the two sets of
+pairs and 1 + r can be interpreted as the statistical im-
+provement on the variance achieved by pairing.
+The third panel of Fig. 2 shows the value of √1 +r.
+If the two pair quantities are independent, r = 0, and√1 +r = 1. In this case pairing does not bring any
+improvement and the variance of paired ﬁxed simulations
+will be just the variance of ﬁxed simulations 5. If the
+two pairs are completely correlated, r = 1, pairing does
+actually worsens the results. This happens because the
+second simulation adds no information and is therefore
+wasted. Finally, if both pair quantities are completely
+anti-correlated, r =−1, the variance of the paired ﬁxed
+simulations reduces to 0. This can be understood taking
+into account that if both pair quantities are completely
+anti-correlated, asXpf,1 increases its value,Xpf,2 shrinks
+such that 1
+2(Xpf,1 +Xpf,1) remains constant. Thus, the
+lower the value ofr, the larger the improvement brought
+by pairing. We emphasize that this is the improvement
+achieved by pairing once ﬁxed. In other words, the value
+of r from just paired simulations that are not ﬁxed can
+be diﬀerent from that of paired ﬁxed (see appendix A for
+further details). We provide explanations for the actual
+values in that ﬁgure in section 4.
+Finally, in the fourth panel of Fig. 2 we show the ra-
+tios between the standard deviations of the standard and
+paired ﬁxed simulations (solid black line), σs/σpf, and
+between the standard and ﬁxed simulations (solid pur-
+ple line), σs/σf. The purple line quantiﬁes the statistical
+improvement achieved by ﬁxing the amplitude while the
+black line represents the gain obtained by ﬁxing and pair-
+ing. We notice that the black line can be obtained from
+the purple line and the line in the third panel through
+Eq. 15. The dashed horizontal line in the fourth panel
+shows a value of 1, indicating the level where ﬁxed and
+paired ﬁxed simulations do not bring any statistical im-
+provement over standard simulations. The black line is
+also surrounded by a grey shaded region (hard to see in
+Fig. 2 due to the large dynamic range), indicating the
+two simulations instead of one. We correct for that by computing
+the normalized variance, so that we can compare directly σpf, σf
+and σp (see appendix A for further details).
+5 Notice that we expect an improvement of 1/
+√
+2 in the variance
+if we compute a quantity with two independent measurements in-
+stead of one (see appendix A). However, in this work we are in-
+terested in the net gain, so we reabsorb that improvement in our
+deﬁnition.
+
+=== PDF PAGE 6 ===
+6 Francisco Villaescusa-Navarro et al.
+associated error on the standard deviation ratio, which
+we estimate as (see appendix B)
+σ
+( σs
+σpf
+)
+= 1
+2
+( σs
+σpf
+)√
+2
+Ns
++ 2
+Npf
+(18)
+We only show it for the black line for clarity.
+4. LARGE SCALES: N-BODY
+In this section we study the statistical properties of
+paired ﬁxed ﬁelds on large scales using the N1000 N-
+body simulations. The halo catalogues are comprised of
+all halos with masses above ≃ 1.5× 1013 h−1M⊙.
+4.1. Initial conditions
+We start by quantifying the improvement achieved by
+paired ﬁxed simulations at the level of initial conditions,
+as we naively expect that non-linear evolution can, in
+general, only degrade it. We focus our analysis on the
+matter power spectrum and on the matter density pdf.
+4.1.1. Clustering
+For each realization of the standard and paired ﬁxed
+simulations in the N1000 set we have computed the mat-
+ter power spectrum at z = 99.
+We show the results in the left panel of Fig. 2. We
+ﬁnd an excellent agreement between the results of both
+simulation sets, with paired ﬁxed no introducing a bias
+on the results. Note that a few points show a bias larger
+than 2σ; this is expected under the assumption that the
+data is independent and normally distributed, which im-
+plies that≃ 5% of the points should exhibit a bias larger
+than 2σ.
+From the third panel we can see that the power spectra
+from the two simulations of each paired ﬁxed realization
+are highly anti-correlated on almost all scales. We note
+that the deviation of √1 +r from 0 is due primarily to
+aliasing. We have explicitly tested this by computing the
+power spectra using a grid with fewer cells. This anti-
+correlation is the origin of the large improvement that we
+obtain by pairing once we ﬁx the amplitude, as we will
+see below.
+From the fourth panel we can see how ﬁxed simulations
+highly reduce the sample variance present in the standard
+simulations: from a factor of≃ 103 atk≃ 10−2 hMpc−1
+to a few atk = 1hMpc−1. We ﬁnd that the improvement
+worsens at smaller scales. This is an eﬀect of the way
+the power spectrum is measured in an individual box; as
+we move to smaller scales, there are rapidly increasing
+number of modes per k-bin. Thus, the measured power
+spectrum asymptotes to the ensemble average at high
+k and no initial improvement is achieved by ﬁxing the
+power in this limit.
+Paired ﬁxed simulations further reduce the sample
+variance amplitude with respect to ﬁxed simulations,
+with ratios as large as 105 on the largest scales we probe.
+The improvement brought by pairing has its origin in
+the fact that the ﬁrst order non-linear perturbations
+are cancelled (Pontzen et al. 2016). Even at z = 99,
+the Zel’dovich approximation has introduced such non-
+linearities.
+4.1.2. Probability distribution function
+We now investigate another key quantity to understand
+our results at lower redshifts: the probability distribution
+function (pdf) of the matter density ﬁeld in real-space.
+For each initial condition realization of the standard
+and paired ﬁxed simulations we have computed the mat-
+ter density ﬁeld by assigning particle positions to a
+grid with 128 3 cells using the cloud-in-cell (CIC) mass-
+assignment scheme. We have then computed the pdf as
+the fraction of cells with matter overdensity, 1+δ =ρ/¯ρ,
+in the interval [ρ,ρ +dρ]/¯ρ. We show the results of our
+statistical analysis in the right panel of Fig. 2.
+As already pointed out in Angulo & Pontzen (2016),
+the pdf of paired ﬁxed simulations shows a good agree-
+ment with that from standard simulations, as can be seen
+from the ﬁrst panel. From the second panel we can see
+that paired ﬁxed simulations do not introduce a bias on
+the matter density pdf with respect to the results from
+standard simulations.
+In the third panel we show the cross-correlation coeﬃ-
+cient between the pairs of the paired (orange) and paired
+ﬁxed (black) simulations. We ﬁnd that in both cases the
+valuer is compatible with 0 (√1 +r = 1), meaning that
+the results of both pairs are independent from each other.
+Thus, pairing does not help in reducing the variance on
+the matter density pdf from the standard simulations.
+We show the statistical improvement achieved by ﬁxed
+and paired ﬁxed simulations, with respect to standard
+simulations, in the fourth panel. We ﬁnd that all sim-
+ulation types exhibit the same scatter as standard sim-
+ulations. We do not ﬁnd improvements on the variance
+amplitude for ﬁxed or paired ﬁxed simulations, mean-
+ing that ﬁxing the amplitude does not reduce the pdf
+ﬂuctuations either. In some ways this is a blessing: the
+local statistical properties of a ﬁxed ﬁeld are identical to
+the properties of its Gaussian counterpart and therefore
+one can expect local physics such as galaxy formation to
+proceed correctly in a ﬁxed Universe.
+Thus, we conclude that while paired ﬁxed simulations
+can reduce the scatter on the power spectrum of the ini-
+tial conditions by large factors, the pdf does not beneﬁt
+from this and its scatter remains unchanged. We will see
+below that other quantities tightly related to the pdf,
+such as the halo or void mass functions, the stellar mass
+function or intrinsic galaxies properties will not exhibit
+signiﬁcant statistical improvement when estimated using
+paired ﬁxed simulations.
+We ﬁnd only modest improvements on the variance
+of paired ﬁxed simulations on the halo mass function,
+matter density pdf and star-formation rate history, when
+analyzing the H20 simulations, as we will see in section
+6.
+4.2. Clustering
+For each simulation in N1000 we have computed the
+matter and halo auto-power spectrum and the halo-
+matter cross-power spectrum. The results of our sta-
+tistical analysis are displayed in Fig. 3.
+The upper row shows the results for the matter power
+spectrum at redshifts 0 (top-left), 1 (top-middle) and 5
+(top-right). The bottom row displays the results for the
+halo-matter cross-power spectrum (bottom-left) and halo
+power spectrum (bottom-right). For those quantities we
+
+=== PDF PAGE 7 ===
+Statistical properties of paired fixed fields 7
+10-4
+10-3
+10-2
+10-1
+value
+Pmm(k) [(h −1Mpc)3] : z=99
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias (σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+104
+105
+σs/σ
+fixed
+paired fixed
+10-4
+10-3
+10-2
+10-1
+100
+101
+102
+value
+matter pdf : z=99
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias (σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+√
+1 + r
+0.94 0.96 0.98 1.00 1.02 1.04 1.06 1.08
+(1 + δ)
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+σs/σ
+fixed paired fixed
+Figure 2. Most of the plots shown in this paper have the same structure, that we describe in detail here. First panel: Mean and
+standard deviation of the considered quantity from the standard (blue) and paired ﬁxed simulations (red). Second panel : An important
+aspect of our study is to investigate whether paired ﬁxed simulations introduce a bias on the considered quantity. In this panel we show the
+diﬀerence between the means from the two simulation sets, divided by the expected error on the diﬀerence (see text for details). This panel
+quantiﬁes thus the statistical agreement between both data sets. Any point within the grey region indicates that the agreement between
+means is within 2σ. The black dashed line indicates a 0 σ bias. Third panel: The other important quantify in paired ﬁxed simulations
+is the statistical improvement they achieve with respect to standard simulations. For the considered quantity, the variance from standard
+and paired ﬁxed simulations is given by σ2
+s and σ2
+pf, respectively. We can express σpf as σpf = σf
+√
+(1 +r), where σf is the standard
+deviation of each individual pair and r is the cross-correlation coeﬃcient between the pairs. Expressing the variance in that way is very
+helpful as the improvement achieved by ﬁxing the amplitude and ﬂipping the phase is embedded in the value of σf and r, respectively. In
+this panel we show the value of √1 +r. 0 values mean that the errors are completely anti-correlated and a large statistical improvement
+can be achieved. When the quantities from the two pairs are independent (dashed black line) r = 0 and √1 +r = 1 and no statistical
+improvement is brought by pairing. If both simulations are completely correlated the value of √1 +r is
+√
+2 and the normalized variance
+worsen. F ourth panel: This panel shows the ratios between the standard deviation from the standard and paired ﬁxed simulationsσs/σpf
+(black line) and from the standard and ﬁxed simulations σs/σf (purple line). That ratio indicates the statistical improvement achieved by
+the ﬁxing and pair ﬁxing over traditional simulations. The grey region around the black line in that panel represents the 1 σ uncertainty
+on the ratio. The dashed line indicate 1 and can be interpreted as no statistical improvement with respect to standard simulations. We
+can see how ﬁxed and paired ﬁxed simulations largely reduce the scatter on the matter power spectrum, while they leave the variance on
+the matter density pdf unaﬀected.
+only show results at z = 0, since at z = 5 the number
+density of halos in our simulations is very low and results
+are very similar at z = 1.
+From the ﬁrst panels we can see that the agreement
+between the results of the standard and paired ﬁxed sim-
+ulations is very good in all cases. In the second panels
+we quantify the bias introduced by the paired ﬁxed simu-
+lations with respect to standard simulations, and ﬁnd no
+evidence for a bias for any of the three quantities at the
+diﬀerent redshifts considered. We emphasize that with
+a ﬁnite number of simulations, this kind of claim has to
+be considered as an upper bound. It may be that paired
+ﬁxed simulations induce a bias on those quantities, but
+its magnitude is too small for detection with 100 real-
+izations. We notice that in some cases, e.g. the matter
+power spectrum at z = 0, there seem to be a system-
+atic bias oﬀset on small scales. This is however due to
+the fact that modes on those small scales are highly cor-
+related, through non-linear evolution, and therefore not
+fully independent.
+In the third panels we show the value of the cross-
+correlation coeﬃcient. We ﬁnd that for all the considered
+quantities on small scales, k ≳ 0.2− 0.5 hMpc−1, its
+value is compatible with√1 +r = 1, indicating that the
+power spectra from the two pairs are independent. In
+that case, pairing does not help in reducing the statistical
+error due to sample variance. We ﬁnd that the value
+of√1 +r is smaller than 1 on scales larger than k ≳
+0.2− 0.5 hMpc−1. The scale at which √1 +r equals 1
+decreases with redshift, independently of the considered
+power spectrum, but the eﬀect is more pronounced in the
+matter power spectrum.
+The value of√1 +r for the matter power spectrum can
+be as low as≃ 4× 10−2, pointing out that pairing, once
+ﬁxed, can reduce the scatter of the standard simulations
+by that factor. The value of √1 +r increases with scale,
+until reaching the value of 1. At z = 5 however, we
+ﬁnd a dip around 3 × 10−2 hMpc−1. It is interesting
+
+=== PDF PAGE 8 ===
+8 Francisco Villaescusa-Navarro et al.
+103
+104
+value
+Pmm(k) [(h −1Mpc)3] : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+10-2
+10-1
+100
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+102
+103
+104
+value
+Pmm(k) [(h −1Mpc)3] : z=1
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+10-2
+10-1
+100
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+101
+102
+103
+value
+Pmm(k) [(h −1Mpc)3] : z=5
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+10-2
+10-1
+100
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+103
+104
+value
+Phm(k) [(h −1Mpc)3] : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+104
+value
+Phh(k) [(h −1Mpc)3] : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+Figure 3. Impact of paired ﬁxed simulations on the clustering of matter (top row), halos (bottom-right) and on the halo-matter cross-
+power spectrum (bottom-left). We show results at redshifts 0 (left column), 1 (middle column) and 5 (right column) for matter, and at
+z = 0 for the halo and halo-matter power spectra. paired ﬁxed simulations can reduce the sample variance scatter on these power spectra
+by large quantities without introducing a bias on them.
+to notice that the lowest values of √1 +r take place at
+z = 0 rather than z = 5. At present, we do not have an
+explanation for this.
+We ﬁnd much higher values of √1 +r for the matter-
+halo and the halo-halo power spectra than for the matter
+power spectrum. In those cases, we also ﬁnd a dip around
+4× 10−2 hMpc−1. On large scales, the value of √1 +r
+barely goes below 0.7, indicating that pairing can only
+reduce the variance by ≃ 0.7. We notice that halos are
+the main driver of the increase in the value of√1 +r, as
+on large scales the halo power spectrum barely deviates
+from 1.
+From the fourth panels of Fig. 3 we can see that for
+the matter power spectrum on large scales, reductions
+on the standard deviation of standard simulations can
+be as large as 10 3, at all redshifts considered. Since the
+standard deviation on the mean from standard simula-
+tions goes as∝ 1/√Ns, the above numbers can be inter-
+preted as follows. A single paired ﬁxed simulation can
+be used to evaluate the amplitude and shape of the mat-
+ter power spectrum on large scales, with an error equal
+to that achieved by running∼ 106 standard simulations.
+On small scales,k∼ 0.2−0.4hMpc−1, the ratios tend to
+1, showing that no improvement is achieved by the ﬁxed
+or paired ﬁxed simulations. The reason for why ﬁxed
+and paired ﬁxed simulations do not improve the statis-
+tics of standard simulations on small scales is that in
+the non-linear regime, modes get mixed in a complicated
+manner that aﬀects both the amplitudes and phases and
+gives rises to sample variance. We show this schemat-
+ically in Fig. 4, where a set of complex numbers with
+ﬁxed amplitude end up with very diﬀerent amplitudes
+after each mode mixes with its neighbors. This happens
+because whether complex numbers with the same ampli-
+tude add up or cancel depends on whether their phases
+align. In ﬁxed and paired ﬁxed simulations the phases
+
+=== PDF PAGE 9 ===
+Statistical properties of paired fixed fields 9
+1/25
+_1 + + + +( ) =
+Mix
+After mode mixing amplitudes
+are no longer fixedAmplitude fixed initial condition
+Arbitrary mode mixing example
+Figure 4. Illustration of how mode mixing from non-linear evolution introduces sample variance in ﬁxed simulations. Left: In the initial
+conditions each cell in Fourier space has a random phase (the arrow) but a ﬁxed amplitude (the radius of the circle).Right: After each mode
+mixes with its neighbors, some amplitudes grow and others diminish, depending on how their phases align with those of their neighbors.
+Hence, the amplitudes are no longer ﬁxed after mixing, reintroducing sample variance. The exact form of mixing shown here is just an
+example, while any kind of mixing will have similar eﬀects.
+are random6.
+We notice however that on very small scales and atz =
+0, thePmm(k) results for σs/σ are between 2 and 3. The
+improvement on those scales is mostly coming from ﬁxing
+the amplitude rather than from pairing. We also observe
+this eﬀect in the smaller box size simulations that we
+study in section 5. Thus, the above argument can explain
+the behavior we ﬁnd in simulations only qualitatively.
+The statistical improvement on large scales is much
+smaller for the halo-matter and halo-halo power spectra.
+For the halo-matter cross-power spectrum, we reach val-
+ues of σs/σpf≃ 6 on large scales at both redshifts 0 and
+1. For the halo auto-power spectrum those values shrink
+to σs/σpf ≃ 3. For those two power spectra no statis-
+tical improvement is achieved by ﬁxed or paired ﬁxed
+simulations on scales smaller than k ≳ 0.3 hMpc−1.
+We conclude that while paired ﬁxed simulations can
+yield very large statistical improvements,σs/σpf≃ 1000,
+for the matter power spectrum, for the halo-matter and
+halo power spectra the gain is much smaller, σs/σpf∼ 5,
+but still valuable.
+4.3. Halo bias
+We now turn our attention to the halo bias. For each
+standard and paired ﬁxed realization we have computed
+the halo bias using the estimator
+b(k) = Phm(k)
+Pmm(k) (19)
+We show the results of our statistical analysis in the top-
+left panel of Fig. 5. We only show the results at z = 0
+since at z = 1 our conclusions are unchanged. From the
+ﬁrst panel we see the very good agreement between the
+results of both simulations while in the second panel we
+show that paired ﬁxed simulations do not introduce a
+6 In paired ﬁxed simulations there is a correlation between the
+phases in the initial conditions of the two simulations in a pair.
+The argument regarding random phases applies however to the
+mode-mixing of each individual simulation in a pair.
+bias on this quantity. The value of the cross-correlation
+coeﬃcient is, for almost all scales, compatible with 0
+(√1 +r = 1), implying that pairing does not help in
+reducing the scatter. Finally, in the fourth panel we can
+see how ﬁxing the amplitude does not reduce the scatter
+either, and therefore, paired ﬁxed simulations exhibit the
+same scatter in the halo bias as standard simulations.
+We have repeated the above analysis by computing the
+bias as b(k) =
+√
+Phh(k)/Pmm(k), reaching identical con-
+clusions: ﬁxed and paired ﬁxed simulations exhibit the
+same scatter on the halo bias as standard simulations.
+This result may appear surprising at ﬁrst since, as we
+saw above, paired ﬁxed simulations can reduce the scat-
+ter on the matter, halo-matter and halo power spectra
+by factors as large as 10 3, 6 and 3, respectively. In order
+to understand the reason for this result let us write the
+variance of the halo bias at linear order (see appendix B
+for the derivation)
+σ2
+b = 1
+2N(k)
+(Phh(k)Pmm(k)−P 2
+hm
+P 2mm
+)
+, (20)
+where N(k) is the number of independent modes in the
+considered k-interval and the halo power spectrum in-
+cludes both cosmological signal and the shot-noise term,
+i.e. Phh(k) = P cosmo
+hh (k) + 1/¯n. If the shot-noise am-
+plitude were zero, Phh = b2Pmm, Phm = bPmm(k) and
+the linear-order variance of the bias would be zero too.
+This tells us that in the absence of shot-noise, the halo-
+matter and matter-matter power spectra are perfectly
+correlated, and hence their ratio, the halo bias, has zero
+variance.
+What breaks this perfect correlation and becomes the
+source of variance in our bias estimate, is the presence of
+shot-noise in the halo power spectrum. The amplitude of
+the shot-noise on large scales is the same in paired ﬁxed
+and standard simulations, as it only depends on the halo
+number density. Thus, it should not be surprising after
+all that the scatter in the halo bias from paired ﬁxed and
+standard simulations is the same as well.
+
+=== PDF PAGE 10 ===
+10 Francisco Villaescusa-Navarro et al.
+1.30
+1.35
+1.40
+1.45
+1.50
+1.55value
+Phm(k)/Pmm(k) : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-2 10-1 100
+k [hMpc−1]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-5
+10-4
+10-3
+10-2
+10-1
+100
+101
+value
+pdf : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-2 10-1 100 101 102
+1 + δ
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-10
+10-9
+10-8
+10-7
+10-6
+10-5
+value
+VMF [h 4Mpc−4] : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+5 10 15 20 25 30 35
+R [h −1Mpc]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-22
+10-21
+10-20
+10-19
+10-18
+10-17
+value
+HMF [h 4Mpc−3M −1
+⊙ ] : z=0
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+1014 1015
+M [h −1M ⊙ ]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+Figure 5. Impact of paired ﬁxed simulations on halo bias (top-left), matter density pdf (top-right), void mass function (bottom-left)
+and halo mass function (bottom right) at z = 0 from the N1000 simulation set. Paired ﬁxed simulations do not introduce a bias on these
+quantities but they do not reduce their scatter neither.
+We leave for future work a formal derivation of this
+result on mildly non-linear scales and a deeper under-
+standing on why paired ﬁxed simulations do not even
+reduce the scatter of the halo bias on non-linear scales.
+4.4. Matter density pdf
+We now focus our attention on the probability distri-
+bution function of the matter density ﬁeld. For each
+realization of the standard and paired ﬁxed simulations
+we have computed the matter density ﬁeld on a grid with
+1283 cells using the cloud-in-cell (CIC) mass assignment
+scheme. We show the results of our analysis in the top-
+right panel of Fig. 5. We only show results at z = 0 since
+results at higher redshift do not change our conclusions.
+Unlike the matter power spectrum, where both pair-
+ing and amplitude ﬁxing greatly reduced the variance,
+the matter density pdf is indiﬀerent to these techniques,
+at least on this scale. There is however no harm: the bias
+is consistent with zero, showing full agreement between
+standard and paired ﬁxed simulations. But there is also
+no beneﬁt: the value of √1 +r is consistent with 1, so
+pairing after ﬁxing is of no help, and the all eﬀects of am-
+plitude ﬁxing are washed out in this basis. See however
+Subsection 6.3 for how this changes on smaller scales.
+We can interpret these results by taking into account
+that paired ﬁxed simulations do not reduce the scatter on
+the pdf already at the starting redshift of the simulation
+(see Subsection 4.1). Thus, it is unlikely that non-linear
+evolution would lead to diﬀerent pdfs at low redshift.
+4.5. Halo and void mass functions
+Here we study the impact of paired ﬁxed simulations
+on the halo and void mass functions. For each standard
+and paired ﬁxed simulations we have computed the halo
+mass function, deﬁned as the number density of halos
+per mass interval. We show the results in the bottom-
+right panel of Fig. 5. We have also computed the void
+mass function, deﬁned as the number density of voids
+per radius interval, for each realization of the standard
+and paired ﬁxed simulations. We show the results in the
+
+=== PDF PAGE 11 ===
+Statistical properties of paired fixed fields 11
+bottom-left panel of Fig. 5. For both cases we only show
+results at z = 0, as higher redshifts lead to identical
+conclusions.
+From the upper panels we ﬁnd that the agreement be-
+tween the standard and paired ﬁxed simulations is very
+good for both the halo and void mass functions and in the
+second panels we show that no bias is introduced on these
+quantities by the paired ﬁxed simulations. In the third
+panels we show the cross-correlation coeﬃcient from the
+results of each pair. Our results are compatible with the√1 +r = 1, pointing out that the results of each pair
+are independent. From the fourth panels we ﬁnd that
+no statistical improvement on these two quantities from
+ﬁxed or paired ﬁxed simulations.
+We believe that paired ﬁxed simulations do not im-
+prove the abundance of halos and voids statistics because
+the formation of those takes place on small scales, where
+the 1-pt properties are more relevant to determining the
+ﬁnal outcome. As we saw in subsection 4.1, these are not
+aﬀected by the ﬁxing and pairing procedure.
+In Section 6 we will however see that paired ﬁxed simu-
+lations slightly reduce the scatter of the halo mass func-
+tion and matter density pdf when analyzing hydrody-
+namic simulations with small box sizes. This may be
+related to non-linearities reaching the halo ﬁltering scale
+but further exploration is deferred to future work.
+We thus conclude that large-scale box size paired ﬁxed
+simulations reduce the scatter on clustering quantities
+like the matter, halo-matter or halo power spectra. They
+however do not help in reducing the scatter of the halo
+bias or on 1-point statistics like the halo or void mass
+functions, or the matter density pdf.
+5. INTERMEDIATE SCALES: HYDRODYNAMIC
+In this section we investigate the statistical properties
+of paired ﬁxed simulations on intermediate scales using
+state-of-the-art magneto-hydrodynamic simulations. We
+carry out the statistical analysis using the H200 simula-
+tions. Those simulations are computationally expensive,
+so we could only run 56 of them: 26 standard and 15
+paired ﬁxed realizations. This small number of simula-
+tions does not allow us to reach robust statistical conclu-
+sions for most of the quantities considered in this paper.
+For this reason we focus our analysis on clustering, where
+the eﬀect is large enough to establish that paired ﬁxed
+simulations do reduce the intrinsic scatter due to sample
+variance.
+We have also computed the matter density pdf, the
+halo mass function and the void mass function, and our
+results are in agreement with those from large scales,
+i.e. paired ﬁxed simulations do not introduce a bias but
+also do not reduce the intrinsic scatter. However, the
+associated error bars are too large to rule out a small
+statistical improvement such as that we observe in the
+H20 simulations (see section 6).
+5.1. Clustering
+For each standard and paired ﬁxed simulation we have
+computed the matter, CDM, gas, stars and black-holes
+power spectrum at redshifts 0, 1 and 5. The relatively
+low resolution of the H200 simulation highly aﬀects the
+power spectrum of stars and black-holes, due to the
+large amplitude of the shot-noise, on all scales we probe.
+Hence, we focus our analysis on the matter, CDM and
+gas power spectra.
+We show our results in Fig. 6. From the ﬁrst pan-
+els we deduce that the agreement between the diﬀerent
+power spectra from the diﬀerent simulations is very good
+at all redshifts. From the second panels we see that no
+bias is introduced by paired ﬁxed simulations, with re-
+spect to standard simulations, on these power spectra.
+At redshift 5, we can see how results from the two sim-
+ulation types are in agreement, within 2 σ, with a small
+fraction of points exceeding that threshold, as expected.
+At z = 1, we ﬁnd that many scales exhibit a discrep-
+ancy of≃ 2σ for the three diﬀerent power spectra. We
+emphasize that those scales are highly correlated, so it is
+expected that if one scale deviates, the others will exhibit
+the same behavior. Since the number of realizations we
+have in the H200 is very small, it is not unreasonable to
+expect mean diﬀerences of ≃ 2σ. We ﬁnd similar results
+at z = 0, where in some cases, e.g. gas power spectrum
+on very small scales, the diﬀerence between the mean of
+both data sets can be around 3 σ, but again, on highly
+correlated scales. In order to verify that this bias is not
+statistically signiﬁcant we have repeated the above anal-
+ysis but removing some random paired ﬁxed or standard
+simulations. By doing so, we ﬁnd that in most of the
+cases the bias between the two data sets decreases and
+remains below 2σ. This points out that our low number
+of realizations may be underestimating the intrinsic scat-
+ter. Furthermore, as we will see in the next section, with
+a much larger number of hydrodynamic simulations cov-
+ering a range of scales similar to those we explore here,
+we do not ﬁnd a bias on any of the power spectra stud-
+ied here. This reinforces our interpretation that the bias
+we ﬁnd in the H200 simulations may be due to statisti-
+cal ﬂuctuations. More simulations are however needed
+to clearly disentangle this issue.
+We ﬁnd that the power spectra from the two pairs are
+strongly anti-correlated on large scales, for all the con-
+sidered ﬁelds. This translates, as we shall see below, into
+large statistical improvements of the paired ﬁxed simu-
+lations with respect to standard simulations. On smaller
+scales the value of the cross-correlation coeﬃcient tends
+to zero, although usually remains smaller than zero. We
+note that at z = 0 and for k≃ 1.5 hMpc−1, the cross-
+correlation coeﬃcient exhibits a signiﬁcant dip. That dip
+also seems to take place at higher redshifts but on smaller
+scales.
+On large scales and for ﬁxed simulations we ﬁnd an
+improvement on the standard deviation of standard sim-
+ulations that ranges from≃ 7 at z = 0 to≃ 30 at z = 5.
+The improvement for paired ﬁxed simulations is much
+higher, induced by the low values of the cross-correlation
+coeﬃcient. It is worth pointing out that running one
+paired ﬁxed realization can be used to determine the
+mean of the matter, CDM or gas power spectrum with
+an error equal to that achieved by running ≃ 900 stan-
+dard simulations for k≃ 0.1 hMpc−1, a very important
+scale for BAO studies. On smaller scales the statistical
+improvement vanishes, although we observe some resid-
+ual improvement on scales where the value of the cross-
+correlation coeﬃcient is below 0.
+We thus conclude that paired ﬁxed simulations bring
+large statistical improvements on the matter, CDM and
+
+=== PDF PAGE 12 ===
+12 Francisco Villaescusa-Navarro et al.
+102
+103
+104
+value
+Pmm(k) [(h −1Mpc)3] : z=0
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+101
+102
+103
+104
+value
+Pmm(k) [(h −1Mpc)3] : z=1
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+100
+101
+102
+103
+value
+Pmm(k) [(h −1Mpc)3] : z=5
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+102
+103
+104
+value
+Pcc(k) [(h −1Mpc)3] : z=0
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+101
+102
+103
+104
+value
+Pcc(k) [(h −1Mpc)3] : z=1
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+100
+101
+102
+103
+value
+Pcc(k) [(h −1Mpc)3] : z=5
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+102
+103
+104
+value
+Pgg(k) [(h −1Mpc)3] : z=0
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+101
+102
+103
+104
+value
+Pgg(k) [(h −1Mpc)3] : z=1
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+100
+101
+102
+103
+value
+Pgg(k) [(h −1Mpc)3] : z=5
+26 standard      simulations
+15 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-1 100
+k [hMpc−1]
+100
+101
+102
+103
+σs/σ
+paired fixed fixed
+Figure 6. Impact of paired ﬁxed simulations on the clustering of matter (top row), CDM (middle row) and gas (bottom row) from the
+magneto-hydrodynamic simulations set H200 at redshifts 0 (left column), 1 (middle column) and 5 (right column). paired ﬁxed simulations
+largely reduce the sample variance errors associated to standard simulations on large-scales. We believe that some of the rather large bias
+values we ﬁnd are not statistical signiﬁcant.
+
+=== PDF PAGE 13 ===
+Statistical properties of paired fixed fields 13
+10-5
+10-4
+10-3
+10-2
+10-1
+100
+101
+value
+pdf : z=99
+100 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+0.7 0.8 0.9 1.0 1.1 1.2
+1 + δ
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+Figure 7. Impact of paired ﬁxed simulations on the matter den-
+sity pdf of the initial conditions of the H20 simulation set. Contrary
+to what we found for the N1000 simulations, for small smoothing
+scales we ﬁnd that ﬁxed and paired ﬁxed simulations can slightly
+reduce the scatter in the matter density pdf without introducing a
+bias on it. The statistical improvement takes places over diﬀerent
+overdensities in a complicated manner.
+gas power spectra on large scales from full hydrodynamic
+simulations.
+6. SMALL SCALES: HYDRODYNAMIC
+We now push the limits of paired ﬁxed simulations by
+studying their properties on small scales through the H20
+hydrodynamic set. We focus our analysis on clustering,
+1-point statistics and internal galaxy properties.
+6.1. Initial conditions
+We have computed the matter, CDM, and gas power
+spectra of each realization of the H20 simulations. The
+result of our statistical analysis for these quantities is
+similar to what we found for the N1000 simulations, i.e.
+a very large improvement on the largest scales of the
+box, while on smaller scales, the variance reduction is
+smaller. We thus do not show these results as they do
+not add much to our discussion.
+We have also computed the matter density pdf for each
+standard and paired ﬁxed realization of the H20 simula-
+tions using a grid with 64 3 cells by employing the CIC
+mass-assignment scheme. Fig. 7 shows the result of our
+analysis. We ﬁnd that paired ﬁxed simulations do not in-
+troduce a bias on the matter density pdf of the standard
+simulations.
+The value of √1 +r is compatible with 1 for almost
+all overdensities, with deviations being mostly statistical
+ﬂuctuations. From the fourth panel we can see that both,
+ﬁxed and paired ﬁxed simulations reduce the scatter of
+the matter density pdf of standard simulations in a non-
+trivial way. Those improvements, although small, are not
+statistical ﬂuctuations. We obtain very similar results
+for the matter ﬁeld when using the N20 simulations. We
+leave it for future work to understand the reason for why
+paired ﬁxed simulations reduce the scatter of the matter
+density pdf relative to standard simulations in the way
+they do.
+6.2. Clustering
+For each standard and paired ﬁxed realization we have
+computed the power spectrum of matter, CDM, gas,
+magnetic ﬁelds, stars, black holes, halos and halo-matter.
+In Fig. 8 we show the results at redshifts 0, 1 and 5 for
+the total matter and gas power spectra (for gas only at
+redshifts 0 and 1) in the top and middle rows, respec-
+tively. We do not show the results for CDM since they
+are pretty similar to those from total matter and gas.
+The results for gas at z = 5 are also similar to those
+of matter at that redshift. In the middle-right panel
+we show the results for the magnetic ﬁeld power spec-
+trum, while in the bottom row we display our ﬁndings
+for the stars, black-holes and the halo-matter power spec-
+tra. Since our conclusions for those components do not
+change signiﬁcantly with redshift, we only show those at
+z = 0.
+From the ﬁrst panels we can see that the agreement be-
+tween the results of the two simulation types is very good.
+In the second panels we demonstrate that for all power
+spectra and considered redshifts the bias introduced by
+paired ﬁxed simulations, with respect to standard sim-
+ulations, is compatible with 0. We emphasize that the
+scales we probe with the H20 simulations are highly non-
+linear and correlated, as expected. This is why the green
+curves look so smooth in comparison with those of, e.g.,
+Fig. 3.
+We ﬁnd that on almost all scales, for all power spectra,
+and at all redshifts, the value of √1 +r is lower than 1,
+pointing out that the power spectra from the two pairs
+of the paired ﬁxed simulations exhibit a degree of anti-
+correlation. At z = 0, and on the largest scales we can
+probe with the H20 simulations, the value of √1 +r is
+around 0.7. At higher redshift that value shrinks, reach-
+ing≃ 0.2 for matter, CDM and gas atz = 5. As we move
+to smaller scales, the value of the cross-correlation coef-
+ﬁcient increases. At low redshift and for matter, CDM
+and gas it tends to 1, while for stars and black-holes it
+remains quite constant at √1 +r≃ 0.8. We observe a
+similar behavior at z = 5 for matter, CDM and gas.
+In the fourth panel we see that at low redshift, the im-
+provement on the sample variance reduction is moderate,
+with the standard deviation ratio reaching factors of 2 to
+3 for matter, CDM and gas on the largest scales. For the
+magnetic ﬁelds, stars and black-holes the improvement
+is slightly lower, but almost scale-independent, with the
+exception of the magnetic ﬁeld. As we move to smaller
+scales, the improvement decreases, although showing a
+non-monotonic dependence with redshift. The diﬀerence
+between the improvement from ﬁxed and paired ﬁxed is
+not large at low-redshifts, while at z = 5 it can be a
+factor of almost 5 on the largest scales.
+We note that the power spectrum of the magnetic ﬁeld,
+stars and black-holes is highly aﬀected by shot-noise. It
+
+=== PDF PAGE 14 ===
+14 Francisco Villaescusa-Navarro et al.
+100
+101
+102
+103
+value
+Pmm(k) [(h −1Mpc)3] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+10-1
+100
+101
+102
+value
+Pmm(k) [(h −1Mpc)3] : z=1
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+10-2
+10-1
+100
+101
+value
+Pmm(k) [(h −1Mpc)3] : z=5
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+10-1
+100
+101
+102
+103
+value
+Pgg(k) [(h −1Mpc)3] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+10-1
+100
+101
+102
+value
+Pgg(k) [(h −1Mpc)3] : z=1
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+100
+101
+σs/σ
+paired fixed fixed
+101
+102
+103
+value
+PB(k) [(h −1Mpc)3Gauss2] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+102
+103
+value
+Pss(k) [(h −1Mpc)3] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+0
+1
+2
+3
+4
+5
+σs/σ
+paired fixed fixed
+102
+103
+value
+Pbh(k) [(h −1Mpc)3] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+0
+1
+2
+3
+4
+5
+σs/σ
+paired fixed fixed
+10-2
+10-1
+100
+101
+102
+value
+Phm(k) [(h −1Mpc)3] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+100 101
+k [hMpc−1]
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+σs/σ
+paired fixed fixed
+Figure 8. Impact of paired ﬁxed simulations on the power spectrum of matter (top-row), gas (left and middle panels of middle row),
+magnetic ﬁelds (right panel of middle row), stars (bottom-left), black-holes (bottom-middle) and halo-matter (bottom-right) from the N20
+simulations. Results for matter and gas are shown are redshifts 0 (left column), 1 (middle column) and 5 (right column, only for matter),
+while for magnetic ﬁelds, stars, black holes and the halo-matter we only show results at z = 0 since we observe little time evolution. Paired
+ﬁxed simulations do not introduce a bias on any of these quantities and improve the statistics of standard simulations.
+
+=== PDF PAGE 15 ===
+Statistical properties of paired fixed fields 15
+is thus interesting to see that paired ﬁxed simulations
+help to reduce the intrinsic error on it.
+We ﬁnd very interesting results for the halo-matter
+cross-power spectrum. The value of √1 +r exhibits an
+oscillatory behavior that is not due to statistical ﬂuctu-
+ations and whose value is, in almost all scales, below 1.
+From the fourth panel we can see how on scales larger
+than ≃ 2 hMpc−1 ﬁxed and paired ﬁxed simulations
+slightly improve the statistics of the standard simula-
+tions. The oscillatory features we found in the value of
+the cross-correlation coeﬃcient are reﬂected in the statis-
+tical improvement of paired ﬁxed simulations, although
+ﬁxed simulations also present that behavior, to a lesser
+extent.
+We ﬁnd similar oscillatory features in the halo auto-
+power spectrum and the halo bias. While in the former
+are not due to the behavior of the cross-correlation coef-
+ﬁcient, the latter exhibit the same features as the halo-
+matter power spectrum. We believe that the oscillations
+in the standard deviation ratio of the diﬀerent halo power
+spectra are related to the features we observe in the mat-
+ter density pdf of the initial conditions, that propagate to
+the matter density pdf and halo mass function at lower
+redshift (see next Subsection). A more detailed study of
+this is beyond the scope of the present paper.
+We thus conclude that even with small box size hy-
+drodynamic simulations where all scales are non-linear
+at low-redshift, paired ﬁxed simulations always produce
+power spectra with lower scatters than those from stan-
+dard simulations. The statistical improvement can be
+pretty large at high redshift. Our results also point out
+that paired ﬁxed simulations do not introduce a bias on
+any of the above power spectra.
+6.3. 1-point statistics
+We now study the impact of paired ﬁxed simulations
+on 1-pt statistics. We focus our analysis on the halo mass
+function, void mass function, the matter density pdf, the
+star-formation rate history and the stellar mass function.
+We only show results at z = 07 since our conclusions are
+unchanged at higher redshifts.
+6.3.1. Halo mass function
+For each realization of the standard and paired ﬁxed
+simulations we have extracted halo catalogues by select-
+ing all halos with masses above ≃ 9× 108 h−1M⊙. We
+have then computed the halo mass function for each re-
+alization and show the results in the top-left panel of
+Fig. 9. We ﬁnd an excellent agreement between the re-
+sults of both simulation types and our results point out
+that paired ﬁxed simulations do not introduce a bias. We
+can also see that the value of the √1 +r is compatible
+with 1 for all halo masses.
+From the fourth panel we can see how ﬁxed and paired
+ﬁxed simulations slightly reduce the scatter on the halo
+mass function from standard simulations for some halo
+masses. This contrasts with our results of section 4,
+where we found that paired ﬁxed simulations do not re-
+duce the scatter in the halo mass function. Note however
+that in section 4 we only probed halos with masses above
+7 For the star-formation rate history we show results between
+redshifts 0 and 15.
+≃ 1013 h−1M⊙, thus, for the halo mass range common
+to both simulations, our results are in agreement.
+We note that the statistical improvement is not very
+signiﬁcant, taking into account the errorbars associated
+to the paired ﬁxed simulations. In order to verify the ro-
+bustness of this results we have repeated the same anal-
+ysis but using the N20 simulations, which are N-body
+and contain a diﬀerent number of paired ﬁxed realiza-
+tions. By doing so we ﬁnd very similar results to what
+we ﬁnd with the H20 simulations, implying that the im-
+provement is not a statistical ﬂuctuation, but a physical
+eﬀect.
+Understanding the origin of this improvement on the
+halo mass function of small halos is beyond the scope of
+the current work.
+6.3.2. Void mass function
+For each realization of the standard and paired ﬁxed
+simulations we have extracted voids in the matter ﬁeld.
+In the top-middle panel of Fig. 9 we show the results
+for the void mass function. As always, we ﬁnd a good
+agreement between the results of both simulations types,
+and a bias between the mean of both simulations that is
+below≃ 2σ. The value of the cross-correlation coeﬃcient
+is compatible with 0 (√1 +r = 1) for most of the void
+radii. We ﬁnd that ﬁxed and paired ﬁxed simulations do
+not reduce the scatter on the void mass function. This is
+in agreement with our ﬁndings for larger voids in section
+4.
+6.3.3. Matter density pdf
+We have computed the matter density ﬁeld on a grid
+with 643 cells using the CIC interpolation scheme for each
+realization of the standard and paired ﬁxed simulations.
+Our results for the pdf of the matter ﬁeld are shown in the
+top-right panel of Fig. 9. We ﬁnd good agreement among
+the results of both simulation types and that most of the
+points are below 2σ. The value of √1 +r is compatible
+with 1 for all overdensities with the exception of two dips
+for values of 1+δ around 0.04 and 0.4. The origin of those
+dips is unclear to us, but we have veriﬁed that they are
+not statistical ﬂuctuations. We obtain similar results by
+using the N20 simulations.
+The fourth panel shows the statistical improvement
+achieved by ﬁxed and paired ﬁxed simulations with re-
+spect to standard simulations. We ﬁnd that for overden-
+sities larger than≃ 5, ﬁxed and paired ﬁxed simulations
+do not reduce the intrinsic scatter of the standard simula-
+tions. For lower overdensities, we do however observe im-
+provements. Those come from both the ﬁxed and paired
+ﬁxed simulations, and manifest themselves as 2 bumps
+for overdensity values similar to those quoted above. In
+paired ﬁxed simulations the improvement is more pro-
+nounced on those bumps due to the anti-correlation of
+the pdfs we ﬁnd in the third panel. This result is diﬀer-
+ent to what we found in Section 4, where we concluded
+that paired ﬁxed simulations do not reduce the scatter
+of the matter density pdf. We notice however that the
+scales we are probing in the two cases are very diﬀer-
+ent. Besides, for these very small smoothing scales, we
+ﬁnd that paired ﬁxed simulations slightly improve the
+statistics of the matter density pdf already in the initial
+conditions (see Subsection 6.1). Future investigation of
+
+=== PDF PAGE 16 ===
+16 Francisco Villaescusa-Navarro et al.
+10-18
+10-17
+10-16
+10-15
+10-14
+10-13
+10-12
+10-11
+10-10
+10-9
+value
+HMF [h 4Mpc−3M −1
+⊙ ] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+109 1010 1011 1012 1013
+M [h −1M ⊙ ]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-6
+10-5
+10-4
+10-3
+10-2
+10-1
+100
+value
+VMF [h 4Mpc−4] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+0 1 2 3 4 5 6 7 8
+R [h −1Mpc]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-5
+10-4
+10-3
+10-2
+10-1
+100
+101
+value
+pdf : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+10-2 10-1 100 101 102
+1 + δ
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-17
+10-16
+10-15
+10-14
+10-13
+10-12
+10-11
+value
+Stellar mass function [h 4Mpc−3M −1
+⊙ ] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+10-5
+10-4
+10-3
+10-2
+10-1
+value
+Star − formation rate history [M ⊙ yr−1Mpc−3]
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+√
+1 + r
+0 2 4 6 8 10 12 14
+z
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+σs/σ
+paired fixed fixed
+Figure 9. Impact of paired ﬁxed simulations on the halo mass function (top-left), void mass function (top-middle), matter density
+pdf (top-right), stellar mass function (bottom left) and star-formation rate history (bottom-right) from the N20 magneto-hydrodynamic
+simulations atz = 0. We ﬁnd similar results at higher redshifts. paired ﬁxed simulations do not introduce a bias on any of these quantities
+and they slightly improve the statistics of some quantities in a complicated manner.
+this eﬀect will be required to disentangle whether the
+improvement propagates from the initial conditions or is
+brought by non-linear evolution.
+6.3.4. Stellar mass function
+The results for the stellar mass function from the H20
+simulation set are shown in the bottom-left panel of
+Fig. 9. As expected, the results from the two simula-
+tion types show a good agreement, and we ﬁnd no bias
+between their means within 2σ (ﬁrst and second panels).
+The third panel shows that the value of √1 +r is com-
+patible with 1 for all stellar masses. Finally, we ﬁnd no
+evidence for statistical improvement of ﬁxed and paired
+ﬁxed simulations over standard simulations for the stellar
+mass function (fourth panel).
+6.3.5. Star-formation rate history
+We have computed the star-formation rate history of
+each standard and paired ﬁxed realization as the sum of
+the star-formation rates of all gas particles divided by
+the simulation volume. That quantity informs us about
+the rate at which stars are being formed at a given red-
+shift, and therefore, complements the stellar mass func-
+tion when studying overall abundance. We show the re-
+sults of our statistical analysis in the bottom-right panel
+of Fig. 9. The agreement between the results of both
+simulations is excellent and we ﬁnd no evidence that
+paired ﬁxed simulations introduce a bias on that quan-
+tity. The value of the cross-correlation coeﬃcient is com-
+patible with 0 (√1 +r = 1), although between redshifts
+4 and 12 it is less than 1.
+We ﬁnd that ﬁxed simulations barely improve the
+statistics of standard simulations, although there exist
+two signiﬁcant bumps at redshifts≃ 4 and≃ 9. The im-
+provement is slightly larger in paired ﬁxed simulations,
+
+=== PDF PAGE 17 ===
+Statistical properties of paired fixed fields 17
+due to the values of the cross-correlation coeﬃcient being
+less than 1 at some redshifts.
+6.4. Galaxy properties
+The above results point out that, at least for cluster-
+ing related quantities, paired ﬁxed or ﬁxed simulations
+can improve the statistics of standard simulations with-
+out introducing a bias on the results. Thus, state-of-
+the-art cosmological hydrodynamic simulations such as
+IllustrisTNG (Marinacci et al. 2017; Naiman et al.
+2017; Nelson et al. 2018; Pillepich et al. 2018a; Springel
+et al. 2018), Eagle (Schaye et al. 2015), HorizonAGN
+(Dubois et al. 2014), Magneticum (Dolag et al. 2017)
+or BlueTides (Feng et al. 2016b) will highly beneﬁt, for
+clustering analysis, by generating their initial conditions
+through ﬁxed or paired ﬁxed ﬁelds rather than standard
+Gaussian ﬁelds.
+On the other hand, the main analysis scope of the
+above simulations is usually not clustering, but rather
+galaxy properties and evolution. It is thus very impor-
+tant to investigate 1) whether paired ﬁxed simulations
+introduce a bias in internal galaxy properties and 2)
+whether the intrinsic physical scatter in their properties
+is changed in paired ﬁxed simulations. The purpose of
+this section is to answer these two questions.
+For each galaxy in each realization of the standard and
+paired ﬁxed simulations, we have computed a number of
+diﬀerent internal quantities using thesubfind algorithm:
+stellar mass, star-formation rate, radius, black-hole mass,
+maximum circular velocity and metallicity of star form-
+ing gas. We limit our analysis to well-resolved galax-
+ies, which we deﬁne as those with a stellar mass above
+109 h−1M⊙. We then make a scatter plot between the
+above quantities and stellar mass from the results of both
+simulation types. Finally, we take narrow bins in stellar
+mass and compute the mean and standard deviation of
+the results for the considered quantity.
+The above procedure is slightly diﬀerent from the
+treatment we have been using for the paired ﬁxed simula-
+tions. For all the quantities considered so far in this work,
+we have estimated the value for the paired ﬁxed realiza-
+tion as the average between the results within each pair.
+Here, for each paired ﬁxed realization we just create the
+scatter plot and compute mean and standard deviation
+values for all galaxies (in a mass bin) together, without
+separating ﬁrst between each simulation in the pair. This
+is because there is no way to pair individual objects for
+taking an average; indeed, individual halos become voids
+in their paired partner (Pontzen et al. 2016).
+We show the results of this analysis in Fig. 10. From
+the ﬁrst panels we can see that the agreement between
+the results of both simulation types is very good, as in all
+the other quantities considered in this work. From the
+second panels we can see that paired ﬁxed simulations do
+not introduce a bias on any of the studied internal galaxy
+properties. We have estimated the error on the diﬀerence
+of the means through Eq. 14, but using the number of
+points in standard and paired ﬁxed simulations in each
+bin as the value of Ns and Npf, respectively.
+The third panels show the ratio between the intrinsic
+scatter from each simulation type. Since the distribution
+of some of those properties is highly non-Gaussian, e.g.
+the distribution of star-formation rates at ﬁxed stellar
+mass, using Eq. 18 with Ns and Npf being the number
+of standard and paired ﬁxed points in the scatter plot will
+underestimate the errors on the ratio of the standard de-
+viations. To avoid that, we have computed the errors on
+the ratio using bootstrap: for each studied quantity, we
+have created 15000 bootstrap catalogues. For each cata-
+logue we have computed the ratio between the standard
+deviation of the standard and paired ﬁxed simulations.
+Finally, we compute the standard deviation of the results
+from the previous step to get an estimate of the error on
+the standard deviation ratio from the whole sample. We
+create bootstrap catalogues by randomly subsampling,
+with replacement, the initial catalogues from the stan-
+dard and paired ﬁxed simulations.
+The errors we obtain using this procedure are very sim-
+ilar to the ones we derive through Eq. 18 for the radii,
+black-hole mass and maximum circular velocity versus
+stellar mass quantities, but very diﬀerent for the star-
+formation rate versus stellar mass.
+We ﬁnd that paired ﬁxed simulations exhibit the same
+scatter on the considered quantities as standard simula-
+tions. In this case, this is precisely what we want, be-
+cause the scatter on those quantities is due to internal
+physical processes and not to sample variance. We notice
+however that we ﬁnd a signiﬁcantly lower scatter in the
+standard simulations for the star-formation rate vs stel-
+lar mass of galaxies with stellar masses ≃ 1011 h−1M⊙.
+In that case, the ratio between the standard deviations
+is diﬀerent from 1 at ≃ 3.5σ. Although the probability
+of having a point with such low standard deviation ratio
+is pretty low (under the assumption that the variance
+of standard and paired ﬁxed is the same), we believe it
+is not completely unreasonable given the large number
+of quantities considered. More simulations are however
+needed to disentangle whether this is a statistical ﬂuc-
+tuation or pointing towards an increase in the scatter in
+paired ﬁxed simulations.
+We thus conclude that galaxies in paired ﬁxed simula-
+tions look very much like those in standard simulations.
+We ﬁnd no evidence that paired ﬁxed simulations intro-
+duce a bias and they do not reduce the internal physical
+scatter on their internal properties.
+7. IMPROVING 1-POINT STATISTICS
+So far we have seen that while paired ﬁxed simulations
+can greatly reduce the sample variance in the power spec-
+tra, they have little to no eﬀect on 1-pt statistics like the
+matter density pdf. The fact that amplitude ﬁxing only
+works for the power spectra is not that surprising, since
+that procedure was designed to carefully tune complex
+amplitudes in Fourier space while letting the phases stay
+random. However, this clean separation between am-
+plitudes and phases only exists in Fourier space. Other
+bases can be expressed as combinations of many diﬀerent
+Fourier modes, and as we have seen (Fig. 4) mixing the
+amplitudes of ﬁxed modes undoes the ﬁxing.
+However, just like amplitude ﬁxing is an operation de-
+signed to minimize sample variance in the power spec-
+trum, we could construct diﬀerent operations to mini-
+mize sample variance in other observables. For example,
+we could optimize for low sample variance in the initial 1-
+point function of the density ﬁeld by replacing the value
+in each grid cell with the value from the theoretical ini-
+tial 1-point function at that cell’s quantile: if there are
+a total of n cells in the initial mass ﬁeld, then the value
+
+=== PDF PAGE 18 ===
+18 Francisco Villaescusa-Navarro et al.
+10-1
+100
+101
+102
+value
+Star − formation rate [M ⊙ yr−1] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.6
+0.8
+1.0
+1.2
+1.4
+σs/σ
+paired fixed
+100
+101
+102
+value
+Galaxy radius [h −1kpc] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.6
+0.8
+1.0
+1.2
+1.4
+σs/σ
+paired fixed
+107
+108
+109
+1010
+value
+Black hole mass [h −1M ⊙ ] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.6
+0.8
+1.0
+1.2
+1.4
+σs/σ
+paired fixed
+102
+103
+value
+Vmax [kms−1] : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.6
+0.8
+1.0
+1.2
+1.4
+σs/σ
+paired fixed
+10-3
+10-2
+10-1
+value
+Metallicity star − forming gas : z=0
+250 standard      simulations
+100 paired fixed simulations
+3
+2
+1
+0
+1
+2
+3
+bias(σ)
+109 1010 1011 1012
+M ∗ [h −1M ⊙ ]
+0.6
+0.8
+1.0
+1.2
+1.4
+σs/σ
+paired fixed
+Figure 10. Impact of paired ﬁxed simulations on internal galaxy properties. We show star-formation rate (top-left), radius (top-middle),
+black-hole mass (top-right), maximum circular velocity (bottom-left), and metallicity of star-forming gas (bottom-right) as function of
+stellar mass. paired ﬁxed simulations do not reduce the intrinsic physical scatter in these quantities and they do not introduce a bias on
+them. Galaxies in paired ﬁxed simulations look thus completely normal.
+of the cell with the k’th largest value (counting from 0)
+would be replaced by the theoretical cumulative distri-
+bution’s (2k + 1)/(2n)’th quantile (see the left panel of
+Fig. 11).
+We can call this operation CDF-ﬁxing, and it does
+eliminate the sample variance in the pdf of the density
+ﬁeld in the initial conditions. Furthermore, since ampli-
+tude ﬁxing and CDF-ﬁxing are deﬁned in very diﬀerent
+spaces, it turns out to be possible to perform both at
+the same time to high accuracy. A simple algorithm that
+achieves this is to iterate between ﬁxing amplitudes in
+Fourier space and ﬁxing the CDF in real space (see the
+middle and right panels of Fig. 11).
+In the same way that amplitude ﬁxing for the power
+spectrum works as long as Fourier modes do not mix,
+CDF-ﬁxing works as long as real-space cells do not mix.
+Both conditions are fulﬁlled under linear evolution, but
+once non-linear eﬀects appear CDF-ﬁxing breaks down
+much more quickly than amplitude ﬁxing. This hap-
+pens because, while non-linear eﬀects are relatively local-
+ized in Fourier space (they are most important at small
+scales), they occur practically everywhere in real space.
+Soon after non-linear eﬀects become important, all cells
+would start mixing and the careful tuning of quantiles
+needed to cancel sample variance in the pdf would be
+lost.
+Moreover, the reduction of the 1-point function sample
+variance only happens for the exact set of cells it was de-
+ﬁned for. Changing the resolution, or even just applying
+a non-integer displacement in position to the cells, will
+lead to destructive mixing. For example, if we optimize
+the pdf at a given grid size, but measure it after down-
+sampling to half resolution, the pixel mixing inherent in
+this operation completely destroys the sample variance
+cancellation. This is shown in Fig. 12.
+For the halo and void mass functions the problem is
+even worse, as the location and size of each halo and void
+are not known at the outset, preventing us from tuning
+the volumes that will end up as halos or voids to have
+reduced variance. And as we have seen, the tuning needs
+to exactly match the position and size of the objects we
+care about for there to be any eﬀect. For example, simply
+tuning the pdf will not help as each halo and void is a
+combination of multiple cells.
+We conclude that while we can generate initial con-
+ditions with highly suppressed sample variance in the
+power spectrum, the corresponding operation for the
+matter density pdf is too fragile for practical use, and
+would not survive even a small amount of non-linearities
+and mode mixing. Even if such an operation were
+
+=== PDF PAGE 19 ===
+Statistical properties of paired fixed fields 19
+δF(  )
+δDensity contrast      (1e−3)
+Deviation due to cosmic variance
+Actual value
+Ideal value
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+−2.5 −2 −1.5 −1 −0.5 0 0.5 1 1.5 2 2.5
+1e-08
+1e-07
+1e-06
+1e-05
+0.0001
+0.001
+-6 -4 -2 0 2 4 6
+frequency
+density contrast (1e-3)
+1 point function
+normal std dev
+a x+c x std dev
+1e-08
+1e-06
+0.0001
+0.01
+1
+100
+1 10 100
+Power
+Wave number k
+power spectrum
+normal std dev
+a x+c x std dev
+Figure 11. Left: Sample variance in the 1-point function of a Gaussian density ﬁeld shows up as a random deviation of the empirical
+cumulative distribution function (red points) from the expected value (black curve). CDF-ﬁxing the distribution consists of replacing each
+value with its corresponding point on the curve (green points). Middle and right : Approximate CDF-ﬁxing and amplitude ﬁxing can be
+applied at the same time by iteratively CDF-ﬁxing and amplitude ﬁxing the same ﬁeld, resulting in reduced sample variance in both the
+one point function and the power spectrum.
+δF(  )
+After downsampling
+CDF fixed simulation
+δ
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+−2.5 −2 −1.5 −1 −0.5 0 0.5 1 1.5 2 2.5
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+1 2 4 8 16 32
+white/normal std dev ratio
+Downsampling factor
+Figure 12. Left: CDF-ﬁxing is a nonlocal operation that only applies to a speciﬁc basis. This is an example of how a sample variance
+free CDF-ﬁxed simulation (red points) completely loses its whiteness after being downsampled to half its original resolution. Any operation
+or change in basis that mixes voxel values will have this eﬀect, making CDF-ﬁxing very fragile. Right: A ﬁeld can be approximately
+CDF-ﬁxed on multiple length scales at the same time by iteratively CDF-ﬁxing each scale. Here a density ﬁeld was CDF-ﬁxed at full
+resolution (downsampling factor of 1) and ﬁve power-of-two reductions in resolution (2,4,8,16,32). The variance was then measured on
+these scales as well as several intermediate scales. The scales that were explicitly CDF-ﬁxed have reduced standard deviation, but almost
+no beneﬁt is seen at any other length scale.
+possible, we believe that it would not improve any other
+1-point statistics like the halo and void mass functions
+due to the locality and non-linearity involved in the
+formation of those objects and the highly non-linear
+mode mixing involved thereby.
+8. DISCUSSION AND CONCLUSIONS
+Numerical simulations are an invaluable tool for un-
+derstanding a large variety of processes such as the non-
+linear growth of matter perturbations, the abundance of
+halos and the formation and evolution of galaxies. The
+most powerful way to extract information from cosmo-
+logical surveys will be to contrast observations versus
+theoretical predictions from simulations.
+The initial conditions of cosmological simulations are
+usually generated from Gaussian ﬁelds. The reason is
+that cosmic microwave background observations have
+shown that the temperature ﬂuctuations in the early
+Universe can be very accurately described by Gaussian
+ﬁelds (Planck Collaboration et al. 2016b,a), whose prop-
+erties are completely determined by their power spectra.
+The Fourier modes of a Gaussian ﬁeld can be written
+as δ(⃗k) = Aeiθ, where A follows the Rayleigh distribu-
+tion of Eq. 5 and θ is a random variable with a uniform
+distribution between 0 and 2π.
+Running simulations with initial conditions gener-
+ated from Gaussian ﬁelds gives rise to sample variance,
+i.e. statistical ﬂuctuations arising from the fact that the
+modes distribution is not fully sampled. That problem
+is particularly important on scales approaching the box
+size, where only a few modes are sampled by simulations.
+To evaluate the likelihood and compute posteriors, the
+theoretical prediction should be free of statistical ﬂuctu-
+ations. For this reason, many simulations are needed to
+beat down sample variance.
+Fixed ﬁelds (see e.g. Viel et al. 2010) are those with
+δ(⃗k) =Aeiθ, where A takes a ﬁxed value as speciﬁed by
+Eq. 8 and θ is a random variable with an uniform distri-
+
+=== PDF PAGE 20 ===
+20 Francisco Villaescusa-Navarro et al.
+bution between 0 and 2π. The properties of those ﬁelds
+are that they share the same power spectrum of Gaussian
+ﬁelds but they do not exhibit any scatter around it.
+Paired ﬁxed ﬁelds consists on two ﬁxed ﬁelds δ1(⃗k) =
+Aeiθ, δ2(⃗k) = Aei(θ+π) =−δ1(⃗k), where the value of A
+andθ is the same in both. In Angulo & Pontzen (2016) it
+was shown that if simulations are run with initial condi-
+tions generated from those ﬁelds, large reductions on the
+sample variance amplitude of several important quanti-
+ties can be achieved. The ﬁxing serves to prevent sample
+variance in the linear amplitudes, while the pairing allows
+us to cancel some of the leading-order eﬀects of phase
+correlations on non-linear evolution in a ﬁnite box.
+In this work we have further explored the properties
+of paired ﬁxed ﬁelds by quantifying 1) the sample vari-
+ance reduction achieved and 2) the bias introduced by
+paired ﬁxed simulations with respect to standard sim-
+ulations. We have carried out our analysis by using a
+large set of N-body (600) and state-of-the-art magneto-
+hydrodynamic (506) simulations. Our simulations cover
+a wide range of scales as well as mass and spatial res-
+olutions, hence allowing us to investigate the statistical
+properties of paired ﬁxed simulations in many diﬀerent
+setups. We have analyzed the impact of paired ﬁxed sim-
+ulations in many diﬀerent quantities: matter, CDM, gas,
+stars, black-holes, magnetic ﬁeld, halos and halo-matter
+power spectra, matter density ﬁeld pdfs, void and halo
+mass functions, star-formation rate history, stellar mass
+function and internal galaxy properties such as black-hole
+mass or galaxy radii.
+We now enumerate the main conclusions of this work.
+A summary the impact of paired ﬁxed simulations on
+diﬀerent statistics is shown in table 2.
+• We ﬁnd that paired ﬁxed ﬁelds do not introduce a
+bias, with respect to standard Gaussian ﬁelds, on
+any of the quantities we have investigated in this
+paper. This is not an absolute statement. It may
+be that paired ﬁxed simulations introduce a bias,
+but its magnitude has to be small since we do not
+ﬁnd it with our rather large simulation set.
+• Paired ﬁxed simulations reduce the scatter on
+the power spectrum of matter, halos, halo-matter,
+CDM, gas, stars, black-holes and magnetic ﬁelds.
+The scatter reduction depends primarily on scale,
+with the variance on large scales being much more
+suppressed than on small scales.
+• Paired ﬁxed simulations do not reduce the scatter
+on the halo bias. The linear order explanation is
+that the variance on the halo bias is due to the
+amplitude of the shot-noise, that is the same in
+standard and paired ﬁxed simulations.
+• For large box sizes paired ﬁxed simulations do not
+reduce the variance of the matter density pdf or
+the halo and void mass functions. For the matter
+density pdf, we ﬁnd no improvement already in the
+initial conditions. Pairing has no eﬀect because it
+simply mirrors the pdf around δ = 0, and there is
+no special connection between points with values
+δ = +a and δ =−a in a simulation. Amplitude
+ﬁxing has no eﬀect either on the pdf since it is
+deﬁned in real space, where the Fourier amplitudes
+and phases are scrambled.
+• For small boxes we ﬁnd a small statistically signif-
+icant improvement on the matter density pdf and
+the halo mass function, but not on the void mass
+function. This may be due to a small reduction on
+the sample variance amplitude on the matter den-
+sity pdf of those simulations that is already present
+in the initial conditions.
+• We ﬁnd that paired ﬁxed simulations do not re-
+duce the scatter on the stellar mass function, while
+they seem to marginally improve it on the star-
+formation rate history. We think this follows due
+to the locality of the relevant physics.
+• Galaxies in paired ﬁxed simulations look com-
+pletely normal. We do not ﬁnd any bias among
+the several intrinsic quantities, such as radii, black
+hole mass, star-formation rate, metallicity, max-
+imum circular velocity and stellar mass, that we
+have investigated. The intrinsic, physical, scatter
+on those quantities, is not reduced by paired ﬁxed
+simulations.
+• We have shown that procedures aiming at ﬁxing the
+matter density pdf in the initial conditions are very
+fragile, and it seems almost impossible to ﬁx the pdf
+on all possible scales. We thus conclude that it is
+unlikely that general operations performed in the
+initial conditions can be used to reduce the sam-
+ple variance associated to statistics like the matter
+density pdf, the halo or the void mass functions.
+From the above results we can derive two further con-
+clusions. First, let us recall that the value of parts of
+the trispectrum and higher order moments are expected
+to be diﬀerent in standard and ﬁxed simulations. But
+we do not see any biases in any of our measured quan-
+tities. This suggests the perturbation theory argument
+of Angulo & Pontzen (2016) - that the modiﬁcations do
+not propagate to observables except in a very speciﬁc,
+measure-zero subset - seems to hold even in highly non-
+linear regimes.
+The second conclusion is that, since paired ﬁxed simu-
+lations help in reducing the scatter of clustering-related
+quantities while they do not improve the statistics of 1-
+pt quantities (or improve them marginally), we believe
+that the two quantities cannot be very correlated. If they
+were, we would have expected that as we reduce the scat-
+ter in one, the other should also be aﬀected by it. We
+thus believe that the information embedded in cluster-
+ing and 1-pt statistics should be highly complementary.
+While this is not surprising (see e.g. Schaan et al. 2014),
+our conclusions arise from a completely diﬀerent method-
+ology than more traditional methods.
+This paper constitutes an empirical conﬁrmation of the
+beneﬁts brought about by paired ﬁxed simulations. We
+believe that upcoming large box size hydrodynamic simu-
+lations can highly beneﬁt by being run with initial condi-
+tions from paired ﬁxed ﬁelds. If running two simulations
+is computationally expensive, a ﬁxed ﬁeld can be used to
+generate the initial conditions.
+
+=== PDF PAGE 21 ===
+Statistical properties of paired fixed fields 21
+Simulation Ns Npf Statistics redshift Bias? max(σs/σ f ) max(σs/σ pf ) Corresponding
+set ﬁgure
+N1000 100 100
+Pmm (k)
+99 no 1,169.0 136,821.0 2
+5 no 176.9 1, 464.1 3
+1 no 80.0 1, 472.4 3
+0 no 49.6 1, 187.4 3
+Phm (k) 0 no 6.3 7.3 3
+Phh(k) 0 no 3.2 3.5 3
+Phm (k)/P mm (k) 0 no 1.3 1.6 5
+matter pdf 99 no 1.4 1.4 2
+0 no 1.3 1.3 5
+halo mass function 0 no 1.3 1.3 5
+void mass function 0 no 1.2 1.3 5
+H200 26 15
+Pmm (k)
+5 no 31.2 771.9 6
+1 no 10.8 87.1 6
+0 no 6.9 34.0 6
+Pcc(k)
+5 no? 31.3 761.0 6
+1 no? 10.9 92.0 6
+0 no 7.0 34.3 6
+Pgg(k)
+5 no? 37.2 426.3 6
+1 no 16.0 59.0 6
+0 no 8.8 29.3 6
+H20 250 100
+Pmm (k)
+5 no 5.9 25.4 8
+1 no 2.3 4.1 8
+0 no 1.8 2.6 8
+Pgg(k)
+5 no 6.3 23.9 8
+1 no 2.4 4.3 8
+0 no 1.8 2.7 8
+Pss(k) 0 no 1.8 2.1 8
+Pbh(k) 0 no 1.6 2.4 8
+PB(k) 0 no 1.6 2.1 8
+Phm (k) 0 no 1.9 2.5 8
+halo mass function 0 no 1.7 1.8 9
+void mass function 0 no 1.4 1.6 9
+matter pdf 99 no 1.5 1.6 7
+0 no 1.6 2.2 9
+stellar mass function 0 no 1.2 1.2 9
+star formation rate history [0-15] no 1.5 1.7 9
+star formation rate vs stellar mass 0 no − 1.4 10
+radius vs stellar mass 0 no − 1.2 10
+black hole mass vs stellar mass 0 no − 1.2 10
+Vmax vs stellar mass 0 no − 1.1 10
+Metallicity vs stellar mass 0 no − 1.2 10
+T able 2
+This table summarizes the main ﬁndings of this work. The ﬁrst column indicates the simulation set used to carry out the analysis. The
+ﬁrst letter indicates whether it is from N-body (N) or hydrodynamic (N) simulations, while the following number represents the
+simulation box size in h−1Mpc. The second and third columns show the numbers of standard and pairs of ﬁxed simulations comprising
+each set, respectively. The fourth column represents the statistic considered and its redshift is shown in the ﬁfth column. The sixth
+column indicates whether we ﬁnd that paired ﬁxed simulations introduce a bias on the considered quantity with respect to standard
+simulations. The maximum reduction on the standard deviation from standard simulations achieved by ﬁxed and paired ﬁxed simulations
+is shown in the seventh and eighth columns. The relative error on those values is given by 0 .5
+√
+2/Ns + 2/Npf. For galaxy properties (last
+ﬁve rows) we estimated the errors through bootstrap, ﬁnding that paired ﬁxed simulations do not reduce the intrinsic scatter on galaxy
+properties. Finally, the ninth column shows the corresponding ﬁgure where we plot our results for the considered quantity. We note that
+for the matter density pdf, we ﬁnd larger reductions on the scatter of standard simulations, but we do not quote them as they are due to
+statistical ﬂuctuations.
+
+=== PDF PAGE 22 ===
+22 Francisco Villaescusa-Navarro et al.
+ACKNOWLEDGEMENTS
+This work has made extensive use of the python
+pylians libraries, publicly available at https://
+github.com/franciscovillaescusa/Pylians. The
+simulations have been run in the Gordon cluster at the
+San Diego Supercomputer Center. The work of FVN,
+SN, SG, LA, NB and DNS is supported by the Simons
+Foundation. AP is funded by the Royal Society. This
+work was partially enabled by funding from the UCL
+Cosmoparticle Initiative.
+APPENDIX
+A. V ARIANCE OF PAIRED FIXED SIMULATIONS
+In this appendix we derive Eq. 15 and discuss the diﬀerent origins of the statistical improvement of paired ﬁxed
+simulations over traditional simulations for any generic quantity.
+Suppose we are considering a quantity, Xs, e.g. the amplitude of the power spectrum at a given wavenumber k, or
+the halo mass function at mass M, from standard simulations, with a variance given by
+σ2
+s =⟨(Xs− ¯Xs)2⟩ =⟨X2
+s⟩− ¯X2
+s , (A1)
+where ¯Xs =⟨Xs⟩. Now consider the same quantity but estimated through the paired ﬁxed simulations
+Xpf = 1
+2(Xpf,1 +Xpf,2) , (A2)
+whereXpf,1 andXpf,2 are the value of X from the two pairs of a paired ﬁxed simulation. The variance of Xpf is given
+by
+σ2
+pf =⟨(Xpf− ¯Xpf)2⟩ =⟨X2
+pf⟩− ¯X2
+pf (A3)
+= 1
+4
+(
+⟨X2
+pf,1⟩ +⟨X2
+pf,2⟩ + 2⟨Xpf,1Xpf,2⟩− ¯X2
+pf,1− ¯X2
+pf,2− 2 ¯Xpf,1 ¯Xpf,2
+)
+(A4)
+= 1
+4
+(
+σ2
+pf,1 +σ2
+pf,2 + 2cov12
+)
+(A5)
+where cov 12 =⟨(Xpf,1− ¯Xpf,1)(Xpf,2− ¯Xpf,2)⟩. Finally, since the variance of the two pairs from the paired ﬁxed
+simulations is the same, σpf,1 =σpf,2 =σf, we obtain
+σ2
+pf =σ2
+f
+(1 +r
+2
+)
+(A6)
+where the cross-correlation coeﬃcient r is deﬁned as r = cov12/σ2
+f , and it satisﬁes −1 ⩽ r ⩽ 1. We note that the
+variance of each individual pair within paired ﬁxed simulations is, by deﬁnition, equivalent to the variance of individual
+ﬁxed simulations. This is why we write σf above. It is interesting to consider some limiting situations:
+• The two sets of simulations of paired ﬁxed simulations are independent, r = 0, and their variance is the same as
+in standard simulations, σs =σf. In this case, statistical improvement of the paired ﬁxed Gaussian simulations
+will be just σpf = σs/
+√
+2. In this situation, the variance reduction arises simply because in the paired ﬁxed
+simulations the quantity considered is estimated using two independent realizations instead of one.
+• The two sets of simulations of paired ﬁxed simulations are completely correlated, r = 1 and the variance of each
+set is the same as in standard simulations, σs =σf. In this case no improvement is achieved by the paired ﬁxed
+simulations: σpf =σs. This corresponds to a situation where the two paired ﬁxed simulations are equivalent to
+one, e.g. the second is the same as the ﬁrst, and therefore no improvement can be achieved.
+• The two sets of simulations of paired ﬁxed simulations are completely anti-correlated, r =−1. In this case,
+the variance of the paired ﬁxed simulations will be 0, independently of the variance of each pair, σf. The
+interpretation of this situation is that since the two simulations in each pair are completely anti-correlated, if
+Xpf,1 increases its value Xpf,2 will decrease, such as Xpf,1 +Xpf,2 will be kept constant.
+• The variance of each set of paired ﬁxed simulations is lower than the variance of the standard simulations,
+σ2
+f < σ2
+s . In this case, even if the two paired ﬁxed simulations are completely correlated, there will be a
+statistical improvement. This happens simply because even if the two pairs are completely correlated, i.e. only
+one independent realization is available, its variance is lower than that of a standard simulation. We notice that
+this case applies to ﬁxed simulations as well.
+From the above arguments we see that, in most situations, paired ﬁxed simulations will perform better than standard
+simulations by a factor of at least 1 /
+√
+2. This arises because each paired ﬁxed realization contains two simulations
+while ﬁxed or standard does only one. In order to avoid that artiﬁcial improvement, and to be able to carry out a fair
+
+=== PDF PAGE 23 ===
+Statistical properties of paired fixed fields 23
+comparison, in this paper we work with the normalized variance, deﬁned as the variance per number of simulations.
+In that case, we can express the normalized variance of paired ﬁxed simulations as
+σ2
+pf =σ2
+f (1 +r). (A7)
+This is the expression we have used along the text. It is interesting to relate the diﬀerent pieces of Eq. A7 with
+the properties of the paired ﬁxed ﬁelds. On the one hand, a ﬁxed ﬁeld is expected to have diﬀerent variance from a
+standard Gaussian ﬁeld. Thus, the improvement of the ﬁxed ﬁelds will arise from σf in Eq. A7. On the other hand,
+the two simulations in a pair, independently on whether they are from pair simulations or paired ﬁxed simulations,
+will contribute to the variance through r. We however emphasize that the value of r will, in general, be diﬀerent for
+paired and paired ﬁxed simulations. Thus, the correct interpretation of the (1+ r) factor is the statistical improvement
+brought by pairing (for paired simulations) or by pairing once the amplitude is ﬁxed (for paired ﬁxed simulations).
+In other words, for paired simulations σf = σs and any statistical improvement arises solely from r. For ﬁxed
+simulations the statistical improvement comes through σf, while for paired ﬁxed simulations the improvement comes
+from both, by ﬁxing the amplitude through σf and by pairing, once ﬁxed, through the value of r.
+B. V ARIANCE OF THE RATIO
+Here we derive the expression we use to compute the variance of the ratio of two quantities. In general, given two
+random variables X and Y the distribution of their ratio Z =Y/X cannot be expressed analytically. We now derive
+a well-known expression for the variance of the ratio making the assumption that the variances of both X and Y are
+smaller than their mean values. Given two random variables, X and Y , with means and variances given by
+¯X =⟨X⟩ σ2
+x =⟨(X− ¯X)2⟩
+¯Y =⟨Y⟩ σ2
+y =⟨(Y− ¯Y )2⟩
+we can Taylor expand any function of them, Z =f(X,Y ), around the mean as
+Z≃f( ¯X, ¯Y ) + ∂f
+∂X
+⏐⏐⏐⏐ ¯X, ¯Y
+(X− ¯X) + ∂f
+∂Y
+⏐⏐⏐⏐ ¯X, ¯Y
+(Y− ¯Y ) +... (B1)
+At leading order, the mean of Z will be given by ¯Z =f( ¯X, ¯Y ) while its variance
+σ2
+z =⟨(Z− ¯Z)2⟩≃
+⟨(∂f
+∂X
+⏐⏐⏐⏐ ¯X, ¯Y
+(X− ¯X) + ∂f
+∂Y
+⏐⏐⏐⏐ ¯X, ¯Y
+(Y− ¯Y )
+)2⟩
++... (B2)
+=
+(∂f
+∂X
+⏐⏐⏐⏐ ¯X, ¯Y
+)2
+σ2
+x +
+(∂f
+∂Y
+⏐⏐⏐⏐ ¯X, ¯Y
+)2
+σ2
+y + 2
+(∂f
+∂X
+⏐⏐⏐⏐ ¯X, ¯Y
+)(∂f
+∂Y
+⏐⏐⏐⏐ ¯X, ¯Y
+)
+σxσyr +... (B3)
+where r is the cross-correlation coeﬃcient between X and Y . In the case where Z =Y/X we obtain
+σ2
+z≃
+¯Y 2
+¯X4σ2
+x + σ2
+y
+¯X2− 2
+¯Y
+¯X3σxσyr (B4)
+We can ﬁnally express the above quantity as
+σ2
+z≃
+¯Y 2
+¯X2
+(
+σ2
+x
+¯X2 + σ2
+y
+¯Y 2− 2rσx
+¯X
+σy
+¯Y
+)
+. (B5)
+Forb =Phm(k)/Pmm(k) the above expression reduces to
+σ2
+b≃ 1
+2N(k)
+(Phh(k)Pmm(k)−P 2
+hm
+P 2mm
+)
+(B6)
+where we have used the fact that at linear order (see e.g. Smith 2009)
+σ2(Pmm(k)) =P 2
+mm(k)
+N(k) (B7)
+σ2(Phm(k)) =P 2
+hm(k) +Phh(k)Pmm(k)
+2N(k) (B8)
+r =Phm(k)Pmm(k) (B9)
+where N(k) is the number of independent modes in the interval [ k,k +dk] where the diﬀerent power spectra are
+measured andPhh(k) is the halo power spectrum, which includes both the cosmological signal and the shot-noise term
+Phh(k) =P cosmo
+hh (k) + ¯n−1 (B10)
+
+=== PDF PAGE 24 ===
+24 Francisco Villaescusa-Navarro et al.
+where ¯n is the mean number density of halos.
+We can also use Eq. B5 to compute the error on the ratio between the standard deviation of standard and paired
+ﬁxed simulations. Let us ﬁrst compute the variance of r2 =σ2
+s/σ2
+pf
+σ2
+r2 = σ4
+s
+σ4
+pf
+(
+σ2
+σ2s
+σ4s
++
+σ2
+σ2
+pf
+σ4
+pf
+)
+(B11)
+where σ2
+σ2s
+and σ2
+σ2
+pf
+denote the variance on the variance of standard and paired ﬁxed simulations, respectively. Under
+the assumption that data is Gaussian distributed, the quantity ∑N
+i=1(X− ¯X)2 follows a χ2 distribution with with N
+degrees of freedom. Thus, the variance of the variance is given by σ2
+σ2 = 2σ4/N and we obtain
+σ2
+r2 = σ4
+s
+σ4
+pf
+( 2
+Ns
++ 2
+Npf
+)
+(B12)
+We are however interested in the variance of the standard deviations, i.e. σ2
+r. By using the above Taylor expansion
+we obtain σ2
+r2 = 4r2σ2
+r, thus, the standard deviation of the standard deviation ratio is given by
+σr = 1
+2
+( σs
+σpf
+)√
+2
+Ns
++ 2
+Npf
+. (B13)
+REFERENCES
+Angulo, R. E., & Pontzen, A. 2016, MNRAS, 462, L1,
+[arXiv:1603.05253]
+Banerjee, A., & Dalal, N. 2016, J. Cosmology Astropart. Phys.,
+11, 015, [arXiv:1606.06167]
+Bernardeau, F., Colombi, S., Gazta˜ naga, E., & Scoccimarro, R.
+2002, Phys. Rep., 367, 1, [arXiv:astro-ph/0112551]
+Chuang, C.-H., Kitaura, F.-S., Prada, F., Zhao, C., & Yepes, G.
+2015a, MNRAS, 446, 2621, [arXiv:1409.1124]
+Chuang, C.-H. et al. 2015b, MNRAS, 452, 686, [arXiv:1412.7729]
+Davis, M., Efstathiou, G., Frenk, C. S., & White, S. D. M. 1985,
+ApJ, 292, 371
+Dolag, K., Mevius, E., & Remus, R.-S. 2017, Galaxies, 5, 35,
+[arXiv:1708.00027]
+Dubois, Y. et al. 2014, MNRAS, 444, 1453, [arXiv:1402.1165]
+Feng, Y., Chu, M.-Y., & Seljak, U. 2016a, ArXiv e-prints,
+[arXiv:1603.00476]
+Feng, Y., Di-Matteo, T., Croft, R. A., Bird, S., Battaglia, N., &
+Wilkins, S. 2016b, MNRAS, 455, 2778, [arXiv:1504.06619]
+Genel, S. et al. 2014, MNRAS, 445, 175, [arXiv:1405.3749]
+Heitmann, K., Higdon, D., White, M., Habib, S., Williams, B. J.,
+Lawrence, E., & Wagner, C. 2009, ApJ, 705, 156,
+[arXiv:0902.0429]
+Howlett, C., Manera, M., & Percival, W. J. 2015, Astronomy and
+Computing, 12, 109, [arXiv:1506.03737]
+Kitaura, F.-S., & Heß, S. 2013, MNRAS, 435, L78,
+[arXiv:1212.3514]
+Kitaura, F.-S., Yepes, G., & Prada, F. 2014, MNRAS, 439, L21,
+[arXiv:1307.3285]
+Marinacci, F. et al. 2017, ArXiv e-prints, 1707.03396,
+[arXiv:1707.03396]
+Monaco, P., Sefusatti, E., Borgani, S., Crocce, M., Fosalba, P.,
+Sheth, R. K., & Theuns, T. 2013, MNRAS, 433, 2389,
+[arXiv:1305.1505]
+Monaco, P., Theuns, T., & Taﬀoni, G. 2002a, MNRAS, 331, 587,
+[arXiv:astro-ph/0109323]
+Monaco, P., Theuns, T., Taﬀoni, G., Governato, F., Quinn, T., &
+Stadel, J. 2002b, ApJ, 564, 8, [arXiv:astro-ph/0109322]
+Naiman, J. P. et al. 2017, ArXiv e-prints, 1707.03401,
+[arXiv:1707.03401]
+Nelson, D. et al. 2018, MNRAS, 475, 624, [arXiv:1707.03395]
+Palanque-Delabrouille, N. et al. 2015, J. Cosmology Astropart.
+Phys., 11, 011, [arXiv:1506.05976]
+Pillepich, A. et al. 2018a, MNRAS, 475, 648, [arXiv:1707.03406]
+——. 2018b, MNRAS, 473, 4077, [arXiv:1703.02970]
+Planck Collaboration et al. 2016a, A&A, 594, A16,
+[arXiv:1506.07135]
+——. 2016b, A&A, 594, A17, [arXiv:1502.01592]
+——. 2016c, A&A, 594, A13, [arXiv:1502.01589]
+Pontzen, A., Slosar, A., Roth, N., & Peiris, H. V. 2016,
+Phys. Rev. D, 93, 103519, [arXiv:1511.04090]
+Rizzo, L. A., Villaescusa-Navarro, F., Monaco, P., Munari, E.,
+Borgani, S., Castorina, E., & Sefusatti, E. 2017, J. Cosmology
+Astropart. Phys., 1, 008, [arXiv:1610.07624]
+Schaan, E., Takada, M., & Spergel, D. N. 2014, Phys. Rev. D, 90,
+123523, [arXiv:1406.3330]
+Schaye, J. et al. 2015, MNRAS, 446, 521, [arXiv:1407.7040]
+Scoccimarro, R., & Sheth, R. K. 2002, MNRAS, 329, 629,
+[arXiv:astro-ph/0106120]
+Smith, R. E. 2009, MNRAS, 400, 851, [arXiv:0810.1960]
+Springel, V. 2005, MNRAS, 364, 1105,
+[arXiv:arXiv:astro-ph/0505010]
+——. 2010, MNRAS, 401, 791, [arXiv:0901.4107]
+Springel, V. et al. 2018, MNRAS, 475, 676, [arXiv:1707.03397]
+Springel, V., White, S. D. M., Tormen, G., & Kauﬀmann, G.
+2001, MNRAS, 328, 726, [arXiv:arXiv:astro-ph/0012055]
+Taﬀoni, G., Monaco, P., & Theuns, T. 2002, MNRAS, 333, 623,
+[arXiv:astro-ph/0109324]
+Tassev, S., Eisenstein, D. J., Wandelt, B. D., & Zaldarriaga, M.
+2015, ArXiv e-prints, [arXiv:1502.07751]
+Tassev, S., Zaldarriaga, M., & Eisenstein, D. J. 2013, J.
+Cosmology Astropart. Phys., 6, 036, [arXiv:1301.0322]
+Torrey, P., Vogelsberger, M., Genel, S., Sijacki, D., Springel, V.,
+& Hernquist, L. 2014, MNRAS, 438, 1985, [arXiv:1305.4931]
+Viel, M., Haehnelt, M. G., & Springel, V. 2010, J. Cosmology
+Astropart. Phys., 6, 015, [arXiv:1003.2422]
+Vogelsberger, M., Genel, S., Sijacki, D., Torrey, P., Springel, V.,
+& Hernquist, L. 2013, MNRAS, 436, 3031, [arXiv:1305.2913]
+Vogelsberger, M. et al. 2014a, Nature, 509, 177, [arXiv:1405.1418]
+——. 2014b, MNRAS, 444, 1518, [arXiv:1405.2921]
+Weinberger, R. et al. 2017, MNRAS, 465, 3291, [arXiv:1607.03486]
+Zennaro, M., Bel, J., Villaescusa-Navarro, F., Carbone, C.,
+Sefusatti, E., & Guzzo, L. 2017, MNRAS, 466, 3244,
+[arXiv:1605.05283]

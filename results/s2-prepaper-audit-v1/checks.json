@@ -1,0 +1,411 @@
+{
+  "credential_files_read": 0,
+  "http_status_counts": {
+    "200": 597,
+    "429": 52,
+    "None": 1
+  },
+  "label_granularity": [
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E004",
+      "reported_label": "inconsistent_single_history; insufficient_exact_assignments"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E005",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E006",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E007",
+      "reported_label": "inconsistent_in_both_clauses"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E009",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "E010",
+      "reported_label": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "B001",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "B002",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "B003",
+      "reported_label": "inconsistent"
+    },
+    {
+      "canonical_final_label": "inconsistent",
+      "group_id": "B004",
+      "reported_label": "inconsistent"
+    }
+  ],
+  "masked_by_outcome_projection": [
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E004-Q01",
+      "wrong_option": "virgin_replacement"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E004-Q01",
+      "wrong_option": "separate_unmixed"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E005-Q02",
+      "wrong_option": "same_specimen"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E005-Q02",
+      "wrong_option": "whole_foil"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E006-Q01",
+      "wrong_option": "identical_field"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E006-Q01",
+      "wrong_option": "output_resampling"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E006-Q02",
+      "wrong_option": "pair_difference"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E007-Q02",
+      "wrong_option": "initialization_only"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E009-Q02",
+      "wrong_option": "adjustment_contrast"
+    },
+    {
+      "entire_derived_object_unchanged": true,
+      "question_id": "E010-Q01",
+      "wrong_option": "both_seeded"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B001-Q01",
+      "wrong_option": "isolated_germ_cells"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B002-Q02",
+      "wrong_option": "repeated_image"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B003-Q01",
+      "wrong_option": "indexed_libraries_only"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B003-Q01",
+      "wrong_option": "tissue_before_extraction"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B003-Q02",
+      "wrong_option": "new_single_animal"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B004-Q01",
+      "wrong_option": "no_edit_detected"
+    },
+    {
+      "entire_derived_object_unchanged": false,
+      "question_id": "B004-Q02",
+      "wrong_option": "no_germline_possible"
+    }
+  ],
+  "new_model_calls": 0,
+  "raw_recount": {
+    "astra": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "deepseek_flash": {
+      "absent": 4,
+      "canonical_inconsistent_labels": 48,
+      "correct": 96,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 48
+    },
+    "deepseek_pro": {
+      "absent": 2,
+      "canonical_inconsistent_labels": 49,
+      "correct": 98,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 49
+    },
+    "glm_flash": {
+      "absent": 82,
+      "canonical_inconsistent_labels": 9,
+      "correct": 18,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 9
+    },
+    "jev": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "kimi_k3": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "luna": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 99,
+      "planned_answers": 100,
+      "requests": 50,
+      "semantic_errors": 1,
+      "successful_requests": 50
+    },
+    "opus5": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "qwen_flash": {
+      "absent": 16,
+      "canonical_inconsistent_labels": 42,
+      "correct": 83,
+      "planned_answers": 100,
+      "requests": 50,
+      "semantic_errors": 1,
+      "successful_requests": 42
+    },
+    "qwen_max": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 95,
+      "planned_answers": 100,
+      "requests": 50,
+      "semantic_errors": 5,
+      "successful_requests": 50
+    },
+    "sol": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "sonnet": {
+      "canonical_inconsistent_labels": 50,
+      "correct": 100,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 50
+    },
+    "terra": {
+      "absent": 2,
+      "canonical_inconsistent_labels": 49,
+      "correct": 98,
+      "planned_answers": 100,
+      "requests": 50,
+      "successful_requests": 49
+    }
+  },
+  "semantic_errors": [
+    {
+      "job_id": "r02-B002-luna",
+      "prediction": "separate_then_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r01-B002-qwen_flash",
+      "prediction": "separate_then_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r01-B002-qwen_max",
+      "prediction": "both_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r02-B002-qwen_max",
+      "prediction": "both_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r03-B002-qwen_max",
+      "prediction": "separate_then_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r04-B002-qwen_max",
+      "prediction": "both_separate",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    },
+    {
+      "job_id": "r05-B002-qwen_max",
+      "prediction": "separate_then_shared",
+      "question_id": "B002-Q01",
+      "reference": "shared_then_separate"
+    }
+  ],
+  "single_wrong_option_probes": 109,
+  "source_hashes": {
+    "development/s2-execution-v3/derive.py": "f99afe3d65c8f1c0742432d94251f2046d96e3735485b96b301db63613c125f5",
+    "development/s2-execution-v3/scoring.py": "f788d88e1f928e61dd2394215b23ad86805a7489269a5f18de4050cd2bcbefd5",
+    "results/s2-prepaper-audit-v1/check.py": "4c9b6f851e02bccaf74e6ab8f7fe3c97056fee2ab04a06ca12acae45e8223e40"
+  },
+  "unchanged_existing_files": 2408,
+  "unique_success_response_ids": 597,
+  "unscored_nonbio_field_corruptions": [
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E004",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E004",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E004",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E005",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E005",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E005",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E006",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E006",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E006",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E007",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E007",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E007",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E009",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E009",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E009",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "status",
+      "full_projection_exact": true,
+      "group_id": "E010",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "clauses",
+      "full_projection_exact": true,
+      "group_id": "E010",
+      "joint_metric_exact": true
+    },
+    {
+      "field": "final_label",
+      "full_projection_exact": true,
+      "group_id": "E010",
+      "joint_metric_exact": true
+    }
+  ]
+}

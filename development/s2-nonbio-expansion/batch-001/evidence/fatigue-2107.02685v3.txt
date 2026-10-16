@@ -1,0 +1,903 @@
+
+=== PDF PAGE 1 ===
+1 
+ 
+Bayesian Optimised Collection 
+Strategies for Fatigue Strength Testing 
+CM Magazzeni1 *, R Rose1 *, C Gearhart2, J Gong1, AJ Wilkinson1 
+1 Department of Materials, University of Oxford, Parks Road, OX1 3PH, Oxford, United Kingdom 
+2 National Renewables Energy Labs, Denver W Pkwy, Golden, CO 80401, United States  
+* : Corresponding author: christopher.magazzeni@queens.ox.ac.uk   
+ABSTRACT 
+A statistical framework is presented enabling optimal sampling and analysis of constant life fatigue 
+data. Protocols using Bayesian maximum entropy sampling are built based on conventional staircase 
+and stress step methods, reducing the requirement of prior knowledge for data collection. The 
+Bayesian Staircase method shows improved parameter estimation efficiency, and the Bayesian 
+Stress Step method shows equal accuracy to the standard method at larger step size allowing 
+experimentalists to lessen concerns of loading history. Statistical methods for determining model 
+suitability are shown, highlighting the influence of protocol. Experimental validation is performed, 
+showing the applicability of the methods in laboratory testing.  
+ 
+  
+
+=== PDF PAGE 2 ===
+2 
+ 
+Table 1: Glossary of symbols 
+Nomenclature  
+𝑆 Stress amplitude 
+𝜃 Vector of model parameters 
+𝜇 Mean 
+𝜎 Standard Deviation 
+𝛷  Cumulative distribution function 
+𝑝 Probability 
+𝒙 Vector of previous test stresses 
+𝒋 Vector of previous test results 
+𝑥𝑖,𝑘 Test stress of specimen 𝑖 at stress increment 𝑘 
+𝑗𝑖,𝑘 Test result of specimen 𝑖 at stress increment 𝑘 
+𝑓𝑆 Probability density function of fatigue strength 
+𝐹𝑆 Cumulative distribution function of fatigue strength 
+𝐼 Shannon Information 
+𝑒𝑛𝑡 Expected information (Entropy) 
+𝛶 Gain in entropy 
+𝛼, 𝛽, 𝑐 Basquin Constants 
+𝑈 Utility function 
+𝑀 Probability model 
+𝐿 Likelihood function 
+𝐿̂ Maximum value of the likelihood function 
+𝑘 Number of parameters in the probability model 
+𝑛 Number of observations 
+Abbreviations  
+HCF High Cycle Fatigue 
+LCF Low Cycle Fatigue 
+MAP Maximum a Posteriori Probability 
+HPD Highest Posterior Density 
+BIC Bayes Information Criterion 
+CDF Cumulative Distribution Function 
+PDF Probability Density Function 
+ 
+  
+
+=== PDF PAGE 3 ===
+3 
+ 
+1 INTRODUCTION  
+The fatigue of materials affects the longevity of engineered components, causing failures in service 
+with often-costly outcomes 1. The life of materials is known to decrease with increasing cyclic plastic 
+strain and/or stress. Populating the characteristic stress vs life—or SN curve—can be carried out by 
+subjecting test specimens to cyclic loading. Fatigue data is often collected by considering the number 
+of cycles for each specimen to fail “life testing”, though sometimes – such as in the High Cycle 
+Fatigue (HCF) region – the fatigue strength (distribution in strength at a given life) is needed. 
+Obtaining better estimates of fatigue strength parameters could inform more efficient engineering 
+designs, and faster data collection enables shorter, lower cost, development cycles. The staircase 
+and step methods are the most common protocols for obtaining these results with single tests, or 
+with multiple tests on an individual specimen, respectively. These protocols are described in brief in 
+Table 2, with more extensive descriptions in papers and standards 2–8. 
+Table 2: Description of conventional fatigue strength protocols.  
+Protocol Description Class  
+Staircase 
+/ Up-
+down 
+The first specimen is tested at the starting stress. For the next specimen, 
+the stress is decreased or increased by a step size if the preceding 
+specimen failed or ran out, respectively. The final state (failed or runout) 
+of each specimen is recorded. 
+Single 
+Test  
+Step 
+Specimens are initially tested at the starting stress. If the specimen runs 
+out, it is tested again increasing the stress by the step size until failure. 
+The runout and failure stress is recorded for each specimen. 
+Multiple 
+Test  
+ 
+In single-test strategies such as the staircase method, protocol parameters and data analysis are 
+ambiguous, conflicting, or require prior knowledge of the system. As reported by Lin, Lu and Lee 9, 
+there is disagreement within the standards on key protocol parameters for step testing such as 
+sample size, starting stress, and step size as well as the method for analysing test data. The Dixon-
+Mood 3 method, a common analysis technique used in industry for staircase data, discards half of 
+the test data (failures or runouts), assumes a normal distribution in failure life, and recommends 
+stress increments approximately equal to the sample set standard deviation which is not initially 
+known. Pollak’s investigation 10 on simulated test data showed the effect of sample size and starting 
+stress on estimates of the standard deviation and developed correction functions to increase the 
+speed of convergence of the mean estimate. Engler-Pinto et al. developed a maximum likelihood-
+based framework for analysing staircase data which includes the information from all the specimens, 
+further incorporating life testing to generate parametric probabilistic SN curves 11,12. These studies all 
+highlight the sensitivity of the protocol parameters in the analysis of single-test results. 
+In comparison to staircase protocols, stress step methods have the advantage that all specimens are 
+tested to failure. However, there is significant debate over the reliability of step test data due to 
+concerns over the effect of previous tests, through damage or coaxing 2,13–17. Furthermore, as each 
+specimen is tested multiple times, the experimental time taken per specimen can be higher than 
+staircase testing. Nevertheless, these effects have not been fully characterised and the testing 
+strategy remains in use across the academic literature 18,19,28–37,20–27. For these reasons, step sizes are 
+generally advised to be above 5% of the fatigue limit 4. However, this requires prior knowledge of 
+
+=== PDF PAGE 4 ===
+4 
+ 
+material properties and is dependent on the life being tested, as well as the continued debate over 
+whether this is sufficient to avoid damage/coaxing. While larger step sizes reduce the effect of 
+loading history, there is a trade-off between accuracy and precision: the details of sample 
+distribution are lost when carrying out tests at larger step size.  
+There is also disagreement in the analysis of these results: the ASTM guide suggests using the mean 
+of the runout and failure stress as the fatigue strength of that specimen 4, whereas Lerch et al. use 
+the runout stresses only 17. While some analysis methods aiming to account for coaxing or damage 
+effects are available 30,33, extensive data are required to conclude their applicability and all agree 
+that a larger step size reduces the effect.  
+We present two improved protocols for the collection of characteristic fatigue strength distribution 
+parameters using a Bayesian Optimised Maximum Entropy Sampling method.  Based on Lindley’s 
+approach 38–40, this broadly aims to design an experiment that maximises some expected 
+experimental aim, such as the information gained from each subsequent specimen. In this field, a 
+function is created which expresses the utility of testing at any location given the information from a 
+prior. Bayesian optimal experimental design is discussed in reviews from DasGupta 41, Chaloner and 
+Verdinelli 42, and more recently by Ryan, Drovandi et al 43,44. We present this method applied to 
+simulated results followed by its application in a laboratory experiment. The toolbox is available 
+open source on the GitHub repository “BayesOptFatigue” 45. 
+2 APPLYING BAYES THEORY TO FATIGUE TESTING 
+The experimental design is optimised such that, based on information from all previous specimens, 
+the subsequent specimen provides a maximised increase in the predictive capability of the model. To 
+describe this, the 𝑖𝑡ℎ specimen is tested at a stress level 𝑥𝑖 with result 𝑗𝑖 ∈ {1,0}, indicating that the 
+specimen has runout (𝑗𝑖 = 0) or failed (𝑗𝑖 = 1) by the target life. In tests with multiple stresses per 
+specimen we denote the stress level by a second index 𝑘: 𝑥𝑖,𝑘. As we consider only step testing 
+protocols with constant step size, the test levels denoted by 𝑘 start from 𝑥𝑖,1 and incrementing by 
+the step size 𝜉 such that for some specimen 𝑥𝑖: 
+ 
+𝑥𝑖,𝑘 = 𝑥𝑖,𝑘−1 + 𝜉 
+ 
+(1) 
+The data from all tested specimens is collected to form the matrices 𝒙 and 𝒋, which contain the 
+stresses and results from every specimen and step increment such that every row corresponds to a 
+specimen. For single test protocols, this matrix becomes a vector where each entry is a new 
+specimen. The distribution in failure stress is modelled with parameters 𝜽. For demonstration 
+purposes, we start with the example of a normal distribution which is represented by the 
+parameters mean (𝜇) and standard deviation (𝜎), i.e. 𝜽 = [𝜇, 𝜎]. 
+A Bayesian approach evaluates the probabilities of model parameters given observations, built on 
+Bayes rule Eq. (2): 
+ 
+𝑝(𝜽|[𝒋, 𝒙]) = 𝑝(𝒋|[𝒙, 𝜽])𝑝(𝜽)
+𝑝(𝒋, 𝒙)  (2) 
+The posterior 𝑝(𝜽|[𝒋, 𝒙]) describes the probability supporting the model parameters.  This posterior 
+is inferred from the prior, 𝑝(𝜽), which describes the probability supporting the model without any 
+
+=== PDF PAGE 5 ===
+5 
+ 
+data, the likelihood function 𝑝(𝒋|[𝒙, 𝜽]) which gives the likelihood of collecting the data given the 
+model parameters, and finally the marginal likelihood 𝑝(𝒋, 𝒙) of collecting the data Eq. (3): 
+ 
+𝑝(𝑗, 𝑥) = ∫ 𝒅𝜽𝑝(𝒋|[𝒙, 𝜽])𝑝(𝜽) (3) 
+The prior used is constant with a range in mean and standard deviation that should cover a 
+parameter space to confidently include the model parameters. A reasonable assumption in a 
+metallic case could, for example, cover a mean from 0 MPa to the Ultimate Tensile Stress (UTS) and 
+standard deviation between 1 and half the UTS. A discussion of initial prior choice is given in Section 
+8.1  
+ 
+Figure 1: Representation of probabilities of collecting results for fatigue strength tests. a) shows 
+probability of a runout, implying that the specimen fatigue strength is not below SR – i.e. that it is 
+right-censored. b) shows a failure at SF only, and c) a runout and failure pair. 
+The likelihood 𝐿𝑖 of a single test 𝑖 is evaluated following the approach of Engler-Pinto et al 11,12 and 
+Smalakys et al 46, represented graphically in Figure 1 and Eq. (4), where Φ(𝑥) is the cumulative 
+distribution function (CDF). The staircase test can either runout (where 𝑗𝑖 = 0, and said as “right – 
+censored”) or fail (where 𝑗𝑖 = 1, or it is “left – censored”). For step testing, the stress is incremented 
+until failure, so there are no runouts. The specimen can either fail on the first step (𝑗𝑖 = 1, 𝑘 = 1, 
+left– censored) or fail on any other step (𝑗𝑖 = 1, 𝑘 ≠ 1, interval – censored). Therefore, Eq. (4) can 
+be rewritten as Eq. (5): 
+ 
+ 𝐿𝑖 = 𝑝(𝑗𝑖|[𝑥𝑖,𝑘, 𝜽] ) = {
+1 − Φ(𝑥𝑖),       Runout → right − censored
+Φ(𝑥𝑖), Failure → left − censored
+Φ(𝑥𝑖,𝑘) − Φ(𝑥𝑖,𝑘−1), Step → interval − censored
+ 
+(4) 
+ 𝐿𝑖 = 𝑝(𝑗𝑖|[𝑥𝑖,𝑘, 𝜽])
+= {
+Φ(𝑥𝑖) ∙ 𝛿1,𝑗𝑖 + [1 − Φ(𝑥𝑖)] ∙ 𝛿0,𝑗𝑖 − 𝑆𝑡𝑎𝑖𝑟𝑐𝑎𝑠𝑒
+Φ(𝑥𝑖,𝑘) ∙ 𝛿1,𝑘 ∙ 𝛿1,𝐽𝑖 + [Φ(𝑥𝑖,𝑘) − Φ(𝑥𝑖,𝑘−1)] ∙ (1 − 𝛿1,𝑘) ∙ 𝛿1,𝐽𝑖 − 𝑆𝑡𝑒𝑝 
+(5) 
+
+
+=== PDF PAGE 6 ===
+6 
+ 
+Where it is assumed that the step test stress is incremented until failure. The likelihood 𝑝(𝒋|[𝒙, 𝜽]) 
+with N specimens is obtained by multiplying the likelihoods for all specimens Eq. (6): 
+ 
+𝐿 = 𝑝(𝒋|[𝒙, 𝜽]) = ∏ 𝐿𝑖
+𝑁
+𝑖=1
+ (6) 
+2.1 APPLYING BAYESIAN MAXIMUM ENTROPY SAMPLING TO FATIGUE DATA 
+The goal of precisely estimating distribution parameters can be thought of as generating the most 
+compact, or tightly constrained, joint posterior parameter distribution. To choose the next stress to 
+test that will maximize this predictive power, Ryan, Drovandi et al 43 recommend maximising the 
+expected gain in Shannon information 𝐼 Eq. (7) in the joint posterior. The next stress to test is 
+therefore chosen to maximise the expected information as in Eq. (8) from sampling at a subsequent 
+stress 𝑥𝑖+1. Often called entropy, this expected information can be intuited as a quantitative 
+measure of the compactness of the posterior distribution, a derivation can be found in 42–44,47: 
+ 
+𝐼(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏𝒙, 𝒋])) = − ln(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏, 𝒙, 𝒋])) (7) 
+ 𝑒𝑛𝑡(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏, 𝒙, 𝒋])) = 𝐸[𝐼(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏𝒙, 𝒋]))]
+= − ∫ 𝑑𝜃  𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏𝒙, 𝒋]) ln(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏, 𝒙, 𝒋])) 
+(8) 
+To maximise the compactness of the posterior distribution, we define a gain in entropy 
+Υ(𝑗𝑖+1|𝑥𝒊+𝟏, 𝒋, 𝒙) from the addition of a possible data 𝑗𝑖+1 (a failure or runout) at 𝑥𝑖+1: 
+ 
+Υ(𝑗𝑖+1|𝑥𝒊+𝟏, 𝒋, 𝒙) = 𝑒𝑛𝑡(𝑝(𝜽)) − 𝑒𝑛𝑡(𝑝(𝜽|[𝑗𝑖+1, 𝑥𝒊+𝟏, 𝒙, 𝒋])) (9) 
+As 𝑒𝑛𝑡(𝑝(𝜽)) does not vary with data, we can neglect this term. We therefore build a utility function 
+𝑈(𝑥𝑖+1) to evaluate the expected value in the change of entropy 𝐸[Υ(𝐽|𝑥𝒊+𝟏, 𝒋, 𝒙)] of including the 
+datapoint 𝑥𝑖+1 over all possible outcomes 𝐽 of the next specimen: 
+ 𝑈(𝑥𝑖+1) = −𝐸[Υ(𝐽|𝑥𝒊+𝟏, 𝒋, 𝒙)]
+= ∑ 𝑝(𝐽|[𝒙𝒊+𝟏, 𝒋, 𝒙], 𝜽) ∫ 𝑑𝜽  𝑝(𝐽|[𝒙𝒊+𝟏, 𝒋, 𝒙], 𝜽) ln(𝑝(𝐽|[𝒙𝒊+𝟏, 𝒋, 𝒙], 𝜽))
+𝐽
+ (10) 
+This can be intuited as evaluating the expected gain of information for testing the next specimen at 
+some stress, for all outcomes. The maximisation of this utility function therefore allows for the 
+greatest expected entropy gain.  
+For staircase-type testing, the utility function 𝐔𝒔𝒕𝒂𝒊𝒓𝒄𝒂𝒔𝒆(𝑥𝑖+1) is built by considering both possible 
+outcomes: a runout or failure at stress 𝑥𝑖+1 and evaluates this expected entropy change as a 
+function of the test stress: 
+ 
+𝐔𝒔𝒕𝒂𝒊𝒓𝒄𝒂𝒔𝒆(𝑥𝑖+1) = Υ(0|𝑥𝑖+1, 𝒋, 𝒙) 𝑝(0|[𝑥𝑖+1, 𝒋, 𝒙], 𝜽) 
++Υ(1|𝑥𝑖+1, 𝒋, 𝒙) 𝑝(1|[𝑥𝑖+1, 𝒋, 𝒙], 𝜽) 
+(11) 
+
+=== PDF PAGE 7 ===
+7 
+ 
+This can be understood as determining the expected value for each possible outcome through the 
+entropy gain, and its associated probability given the previous data. In this case, we aim to find the 
+test stress 𝑥𝑖+1 which maximises 𝐔𝑠𝑡𝑎𝑖𝑟𝑐𝑎𝑠𝑒.  
+For step-type testing, the design space allows for varying two test parameters: the starting stress 
+𝑥𝑖,0, as well as the step size 𝜉. The utility function 𝐔𝑠𝑡𝑒𝑝(𝑥𝑖+1,1, 𝜉) is similarly built by considering 
+possible outcomes as discussed above. Since the specimen could fail on any step – the expected Υ 
+from each step contributes to the expected utility. Therefore, the utility function becomes Eq. (12): 
+ 𝐔𝑠𝑡𝑒𝑝(𝑥𝑖+1,1, 𝜉) = Υ(1|𝑥𝑖+1,1, 𝒋, 𝒙) 𝑝(1|[𝑥𝑖+1, 𝒋, 𝒙], 𝜽) 
++ ∑ Υ(1|𝑥𝑖+1,𝑘, 𝒋, 𝒙) 𝑝(1|[𝑥𝑖+1,𝑘, 𝒋, 𝒙], 𝜽)
+𝑁𝑘
+𝑘=2
+ 
+(12) 
+where the first term denotes failing on the first step, and the sum across 𝑘 evaluates the utility of 
+failing at each subsequent step, recalling that 𝑥𝑖+1,𝑘 = 𝑥𝑖+1,1 + 𝑘𝜉. Here, 𝑁𝑘 is the number of 
+possible test stresses (𝑘) from the starting stress to the maximum possible test stress. The sum need 
+only be defined up to the point where the probability of collecting a runout and fail pair, 
+𝑝(1|𝑥𝑖+1,𝑘, 𝜽), becomes infinitesimally small. In the computational implementation, as seen on 
+GitHub under “BayesOptFatigue”, this was arbitrarily taken as the maximum value of the location or 
+mean parameter plus six times the maximum spread value, which was shown to be sufficient. 
+3 COMPUTATIONAL FRAMEWORK 
+To validate our framework, a simulated material’s fatigue response is generated. We arbitrarily 
+generalise the fatigue response for any life as a modified Basquin model with a fatigue limit, to 
+determine the fatigue strength at a certain life Eq. (13):  
+ 
+𝑆𝑚𝑒𝑎𝑛 = 𝛼 log(𝑁)−𝛽 + 𝑐 (13) 
+where the Basquin constants 𝛼, 𝛽, and c are taken in this simulated system to be 600 
+MPa/log(cycle), 1, and 300 MPa, respectively. As such, the mean fatigue strength at 106 cycles is 400 
+MPa. The modelling of the entire fatigue curve is at this stage arbitrary, but this is useful when 
+extending the Bayesian approach to multiple lives 48. 
+We use a Monte-Carlo based method for generating a simulated sample set with many fatigue 
+responses by perturbing this mean response in stress by a distribution with some characteristic 
+spread. These simulated results use a Normal distribution as in Eq. (3) which is chosen as a simple 
+model, though readers are invited to the literature on the basis for fatigue strength models 49,50,59–
+62,51–58, and six other distributions are implemented in the code. Thus, a specimen with a determined 
+fatigue response is a member of a sample set with a broad fatigue response. The simulation treats 
+each sample curve as unique, and to be tested as in the experimental protocols (e.g. they can only 
+fail once). This can be written as Eq. (14):  
+ 
+𝑆𝑖 = 𝛼 log(𝑁)−𝛽 + 𝑐 + 𝛿(0, 𝜎) (14) 
+where 𝛿(0, 𝜎) is a random number with distribution centred about zero, and a spread (e.g. standard 
+deviation) defined by 𝜎. This results in a mean fatigue response at 106 cycles is 400 MPa, and a 
+
+=== PDF PAGE 8 ===
+8 
+ 
+spread of 𝜎. In this framework, a single specimen's curve is selected to be subject to the test 
+protocol, for either a single test or multiple step tests. For the selected specimen, if the fatigue 
+strength at life log (𝑁) is higher than the test stress, it has not failed, while if the fatigue strength is 
+lower than the test stress, it has failed. This allows for the simulated testing of large sample sets and 
+comparison between protocols (Figure 2). 
+ 
+Figure 2: Example simulated sample set with each specimen modelled as a Basquin curve perturbed 
+in stress by a normally distributed random variable.  
+In this computational method, the prior is built as a discrete N-Dimensional array with the 
+characteristic distribution parameters along the axes such as location and spread, or mean and 
+standard deviation in the case of a Normal distribution. The range of values of parameters defines 
+the extent of the flat prior and the grid size affects the precision of model parameter estimates. The 
+sequential evaluation and normalisation of the posterior is therefore Eq. (15):  
+ 
+𝑝(𝜃|𝒙) = 𝑝(𝜃|𝒙1:𝑖−1)𝑝(𝑥𝑖|𝜃)
+∑𝑝(𝜃|𝒙1:𝑖−1)𝑝(𝑥𝑖|𝜃) (15) 
+As such, each element in this array with coordinate of (𝜃1, 𝜃2 …) gives the probability that these 
+discrete parameter values represent the data. 𝑒𝑛𝑡(𝑝) is therefore calculated by summing the 
+probability contributions from every possible combination of model parameters of the desired 
+distribution. 
+A flat prior is initialised by creating an array of equal values such that ∑𝑝(𝜃|𝒙) = 1. A more detailed 
+view of this process is included in the README of the GitHub repository 45.  
+
+
+=== PDF PAGE 9 ===
+9 
+ 
+3.1 BAYESIAN STAIRCASE PROTOCOL 
+The Bayesian Staircase collection strategy (Figure 3) broadly resembles the conventional staircase 
+method in three ways: the interpretation of the algorithm’s behaviour, an approximate similarity in 
+collection in the initial points, and an analysis based on a sample set containing failed specimens and 
+runout data.  
+ 
+Figure 3: Staircase plot (a, c) and associated utility function plots (b, d) for 4, and 90 specimens. The 
+simulated sample set had a mean of 400 MPa and distribution width of 40 MPa.  
+The conventional staircase protocol implicitly infers that the fatigue strength is below the test stress 
+if a specimen has failed, and vice versa. The Bayesian protocol can be seen to follow this similar 
+process, but considers all prior samples when determining the next test stress rather than following 
+a rigid protocol. The first few specimens perform a binary search to estimate the mean fatigue 
+strength. As the estimate becomes more precise, there is less information to be gained by testing at 
+the centre of the distribution, and the algorithm then tries to determine the standard deviation. This 
+can be seen in Figure 3) d) as the transition in the utility function to a bimodal curve with peaks at 
+approximately one standard deviation from the mean. This transition quantifies the intuitive 
+approach of estimating the mean followed by the spread of a sample set, similar in behaviour to 
+Never’s D-optimal test strategy 63.  
+The evolution of the estimate in the joint posterior can be seen in Figure 4. The Bayesian protocol 
+can be seen to constrain the estimates for mean and standard deviation, with fewer model 
+parameters falling within the 90% HPD surface as data are collected. It can likewise be seen that the 
+
+
+=== PDF PAGE 10 ===
+10 
+ 
+estimate for mean is determined within 10 samples to a reasonable degree of confidence, while the 
+standard deviation requires further testing. 
+ 
+Figure 4: Evolution of joint posterior surface for Bayesian Staircase protocol. The simulated sample 
+set had a mean of 400 MPa and a distribution width of 40 MPa. Contours are at 50 and 90% HPD 
+interval. The 2D array of model parameters can be seen, with projections showing the probability for 
+each individual parameter. 
+The Bayesian protocol has several advantages to the regular staircase method: very little information 
+is required about the sample set prior to testing, testing parameters are not reliant on prior 
+knowledge, and a faster convergence is obtained. The first two points follow from the protocol’s 
+process, and the latter can be seen in Figure 5. This figure shows the trend in error as a function of 
+specimen number for various protocol parameters, as well as the error after 100 samples as a 
+function of the ratio of stress increment to the true distribution standard deviation. The percentage 
+error is calculated relative to the known true distribution parameters, for example for the mean: 
+𝐸𝑟𝑟𝑜𝑟𝜇 = 100 ∗
+𝜇𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑒−𝜇𝑟𝑒𝑎𝑙
+𝜇𝑟𝑒𝑎𝑙
+ .  
+ 
+
+
+=== PDF PAGE 11 ===
+11 
+ 
+ 
+Figure 5: Convergence plot of a) mean and b) standard deviation for a variety of step sizes, and 
+comparison of error after 100 samples in c) mean and d) standard deviation between Staircase (red) 
+and Bayesian Staircase (green) protocol. The simulated sample set had a mean of 400 MPa and a 
+distribution with of 40 MPa, and the simulations in c) and d) are repeated 200 times to generate a 
+standard deviation in the values (shaded regions). The comparison plot in c) and d) can be seen to be 
+a cross section of a) and b) after 100 samples for a larger number of step ratios. a) and b) lines are 
+smoothed in the x axis with a window of 5 samples. 
+The behaviour of the conventional method can be seen to be strongly sensitive to the protocol 
+parameters. This implies that the choice of step size greatly influences the error in the result for 
+conventional staircase testing. The Bayesian protocol outperforms or matches the conventional 
+protocol for all possible step sizes. 
+3.2 BAYESIAN STEP PROTOCOL 
+We create a protocol that finds an optimal step size and starting stress, setting out the stress levels 
+for an individual specimen. For constant life testing, the optimum step size is always the smallest 
+step size as it provides the smallest interval of fatigue strength for the specimen. This trivial result 
+reflects the trade-off described above, but without regard for damage effects. Therefore, the benefit 
+of this Bayesian approach in comparison to the conventional protocol arises when using larger step 
+sizes: where damage is less of a concern and the role of starting stress can greatly influence 
+
+
+=== PDF PAGE 12 ===
+12 
+ 
+accuracy. Thus, the dimensionality of the utility surface can be reduced to only considering varying 
+the starting stress with a constant step size. Here, we choose 160 MPa, or 4 times the standard 
+deviation, shown in Figure 6. This significantly larger step size is used only as a demonstrator of the 
+effect of starting stress. 
+Generally, the protocol follows similar behaviour to the Bayesian Step protocol. The starting stress 
+has large variations at low numbers of samples where varying the possible failure stresses gives a 
+quicker estimation of the mean fatigue strength. When the step size is larger than the width of the 
+sample strength distribution, the starting stress tends towards where the stress levels intersect 
+stresses approximately one standard deviation away from the mean, analogous to the behaviour 
+noted in section 3.1. Conversely, when the step size is much smaller than the width of the sample 
+strength distribution, there is comparatively less to gain by varying starting stresses. 
+ 
+Figure 6: a) Staircase plot of the Bayesian Stress Step protocol, showing the starting stress as a 
+function of specimen number. The specimens simulated had a mean strength of 400MPa and a 
+distribution width of 40 MPa. The stress step was 160 MPa, with a maximum starting stress of 160 
+MPa. b) Utility function showing the relative utility of various starting stresses, at a selection of 
+specimen numbers, colour-coded as in a). c) Utility at 70 samples is shown when allowing for a 
+variation in step size, showing the preference for smaller step sizes. In this case, the vertical slice at a 
+stress step of 160 MPa is equal to the curve at 70 specimens in b).  
+As in the case of the staircase protocols, a comparison can be made between the conventional stress 
+step protocol and its Bayesian counterpart, as a function of the stress increment size shown in Figure 
+
+
+=== PDF PAGE 13 ===
+13 
+ 
+7. As discussed in section 8.2, mean values of error for step testing do not capture the bi-modal 
+distribution in error, i.e. an experimentalist is most likely to observe higher error for small numbers 
+of samples. It should also be noted that the error level, even at this reduced number of specimens, is 
+lower than for staircase testing at small step sizes. This is in line with common practice, highlighting 
+the trade-off in choosing protocols between efficiency and concern about damage. 
+ 
+Figure 7:  Convergence plot of a) mean and b) standard deviation for a variety of step sizes, and 
+comparison of error after 30 samples in c) mean and d) standard deviation between conventional 
+(red) and Bayesian (green) for a variety of ratios between step size and true distribution width. The 
+simulated sample set had a mean of 400 MPa and a distribution with of 40 MPa, and the simulations 
+in c) and d) are repeated 200 to generate a standard deviation in the values (shaded regions). The 
+comparison plot in c) and d) can be seen to be a cross section of a) and b) after 30 samples for a 
+larger number of step ratios. a) and b) lines are smoothed in the x axis with a window of 5 samples. 
+The benefit from the Bayesian Step protocol comes when using larger step sizes and the relative 
+difference of starting a fraction of a step away (Figure 7). For these larger step sizes, the Bayesian 
+protocol has a significantly better performance in estimating both mean and standard deviation. For 
+example, the Bayesian protocol with a 15 σ step size and obtained a better estimate of mean than a 
+conventional step protocol with 5 σ step after 30 samples. 
+Stress step tests can therefore be used with comparatively less concern over damage by using 
+significantly larger step sizes and varying the starting stress. Compared to the conventional protocol, 
+
+
+=== PDF PAGE 14 ===
+14 
+ 
+a stress step size approximately twice as large can be used to obtain the same error level for a set 
+number of specimens. 
+3.3 STATISTICAL MODEL SELECTION 
+The choice of statistical distribution model to describe fatigue strength will strongly affect the 
+probability of failure especially away from the median stress. This has motivated work in 
+determining model suitability 49,50,59–61,51–58. We provide a tool for the comparison of different 
+statistical models given experimental data collected, such that model suitability can be explored. 
+This work focusses on Bayes Information Criterion (BIC), shown in Eq. (16). BIC is based on the 
+maximum log-likelihood 𝐿̂, number of observations 𝑛, and the number of parameters 𝑘 in the 
+model. The term with number of parameters penalizes against models with more parameters as 
+they will be more liable to overfitting. Models with a lower BIC should be selected over other 
+models. 
+ 
+𝐵𝐼𝐶 = 𝑘 ln(𝑛) − 2 ln(𝐿̂) (16) 
+ 
+𝐿̂ = max 𝑝(𝒋|[𝒙, 𝜽]) (17) 
+𝐿̂ is the maximum value of the likelihood function Eq. (17) which describes the probability of 
+observing data given a model 𝑀, data 𝒋|𝒙, and parameters 𝜽. Thus, 𝐿̂ gives a measure of the 
+goodness of fit of the data to the best model of that functional form. Following Kass and Raftery 64, 
+the value of the BIC can give evidence for a model over another model with lower values indicating 
+more evidence. To compare two models, Δ𝐵𝐼𝐶 can be defined as Δ𝐵𝐼𝐶 = 𝐵𝐼𝐶1 − 𝐵𝐼𝐶2, and shows 
+evidence for 𝐵𝐼𝐶1 if it is negative. Values of Δ𝐵𝐼𝐶 between 0 and 2 indicates weak evidence, 2 and 6 
+indicates substantial evidence, and 6 to 10 indicates strong evidence for the lower BIC.  
+A simulated experiment was performed to observe the effectiveness of conventional and Bayesian 
+protocols in distinguishing different distribution models, with the result shown in in Figure 8. The 
+ability of this criterion to select from these distributions can be seen to be dependent on the 
+protocol used as well as the model of the input sample distribution: step-type protocols resolve the 
+distribution type much more effectively than staircase-type protocols.Figure 8 Repeat experiments 
+comparing to 3-parameter Weibull, Gumbell, and Frechet produced similar distinction between 
+distribution models, with stress-step methods providing stronger distinction between distributions. 
+More generally, step-type protocols with larger step size relative to distribution were more effective 
+at distinguishing distribution type, and it is harder to distinguish Log-Normal from Normal.  
+However, it must be noted that the distinction between these distributions remains unclear after 80 
+specimens, and further testing is required to develop a confident distinction with these protocols. 
+This does suggest the possibility of developing a utility function with an experimental aim to 
+maximise the distinction between distributions.  
+
+=== PDF PAGE 15 ===
+15 
+ 
+ 
+Figure 8: Evolution in 𝛥𝐵𝐼𝐶 (difference in Bayes Information Criterion) for data with Normal 
+distribution and mean of 400 MPa with standard deviation 40 MPa. 𝛥𝐵𝐼𝐶 is calculated relative to 
+𝐵𝐼𝐶 for 2-Parameter Weibull distributions, with the lowest BIC indicating a distribution with stronger 
+evidence. a) Staircase, b) Bayesian Staircase, c) Stress Step, d) Bayesian Stress Step protocols based 
+on 100 repeats (shaded region corresponding to one standard deviation). Step size was 40 MPa and 
+starting stress was 380 MPa for Staircase and 120 MPa for Step. The dashed lines represent the level 
+of evidence shown as in Kass and Raftery 64. 
+3.4 COMPARING PROTOCOLS AND LIMITATIONS 
+The comparison between conventional and Bayesian-type protocols as shown in Figure 5 and Figure 
+7 are a result of our definition of convergence. However, this visualisation significantly reduces the 
+information present in the simulations, and our definition of convergence is just one of many ways 
+to compare results. The current definition only considers the deviation of the MAP from the true 
+value. Further considerations can be made, for instance, by observing the gradient at which the MAP 
+reaches a value and does not change, the number of specimens required for this converged value 
+not to change by some threshold, and analysis considering the distribution in parameter 
+probabilities. However, regardless of the definition, it was observed that Bayesian counterparts to 
+conventional methods lead to faster, narrower, and more accurate estimates of both parameters, 
+independent of prior knowledge. Furthermore, in comparing the protocols considered in this 
+analysis, there is a clear difference between the rate of convergence between single-stress tests and 
+multiple-stress tests. Stress step methods may be favourable when fewer specimens are available, 
+whereas single-stress tests may be favourable when conducting tests in a shorter amount of time or 
+without concern of loading history.  
+
+
+=== PDF PAGE 16 ===
+16 
+ 
+Examining further, these results also give an insight into the common practice of the conventional 
+protocols. The staircase method can be seen to have the lowest error in determining the mean when 
+the stress increment is near the standard deviation, reflecting the common practice discussed as 
+early as in the original Dixon-Mood reports 3. However, it can also be seen that this common practice 
+forgoes the nuance in this decision. Figure 9 shows the convergence plot as shown in Figure 5 with 
+only the staircase results after 100 samples, overlaid with the errors as obtained after 30 and 60 
+samples.  
+ 
+Figure 9: Comparison of error in a) mean and b) standard deviation as shown in Figure 5 c) and d) 
+examining only the staircase protocol for a variety of sample numbers. 
+While the optimal increment for measuring the mean to the lowest error is indeed equal to the 
+standard deviation, this is not true for measuring the standard deviation. Furthermore, the optimal 
+increment for measuring both mean and standard deviation changes with sample number. Initially, it 
+is more effective to collect data with a larger increment, a result that is reflected in the Bayesian 
+protocol during the binary search and ensuing collection. This highlights the significant advantage of 
+the Bayesian protocol: an evolving sequential adaptation of the testing parameters to the data.  
+However, whilst the Bayesian methods avoid requiring estimates of the fatigue system to be 
+measured in determining starting stress or step size, the construction of the prior itself is necessary. 
+Both the range in parameters values as well as the coarseness of this discrete mesh require some 
+broad estimation, though this requirement is substantially more flexible: the binary search is 
+sufficiently quick at determining the mean if it is within the extent of the prior. Coarseness of the 
+discrete mesh is only a concern when, for reasons of computational efficiency, the mesh has been 
+coarsened to such a degree that the model predicts likelihood for one set of parameters, and zero 
+probability for neighbouring parameters. During collection of either simulated or experimental 
+results, this can be easily visualised and amended. 
+This method lends itself to generalisation to allow for a broader set of experimental goals. The 
+method can be generalised to extend across the P-SN space 48. From earlier discussions of 
+distribution types, it may be possible to generate a utility function that maximises the distinction 
+between distribution types 44. This represents a potential for future work, highlighting the need in 
+engineering practice to ensure predictive capability at the extremes of the distribution. 
+
+
+=== PDF PAGE 17 ===
+17 
+ 
+4 EXPERIMENTAL VALIDATION 
+An experimental validation of the above simulations was carried out to confirm the basis of the 
+Monte Carlo sample set and demonstrate the protocols in a physical laboratory setting.  
+Fatigue data is generated using a novel small scale ultrasonic fatigue setup developed by J Gong. 
+Data are collected at 20 kHz to rapidly generate SN data on a laser cut foil of 304L stainless steel. 
+Figure 10 shows the unique geometry, with the exact fatigue response not being used to infer any 
+property of the base material. 
+ 
+Figure 10: Optical micrograph of specimen geometry. The length and width of the cantilever are 600 
+and 200 µm, and the foil from which it is cut is 100 µm thick. The system acts as a tuned harmonic 
+oscillator with the large rectangular mass acting as a counterweight. The geometry is designed in 
+Finite Element Analysis (FEA) to determine the stress during vibration.  
+The specimens were randomly extracted for positions across the foil of material and assigned to 
+protocols in a randomised order to reduce time-dependent effects. Conventional protocol 
+parameters used are summarised in Table 3, and were based on best estimates from previous 
+testing on similar specimens with the same method: a mean of approximately 300 MPa and a spread 
+of ~30 MPa. It should be noted that this guidance from preliminary testing is a requirement to set up 
+conventional testing but is not needed for the Bayesian protocols. 
+Table 3: Experimental Protocol Parameters 
+Protocol Starting Stress (MPa) Stress Step (MPa) 
+Staircase 325 30 
+Step 150 30 
+
+
+=== PDF PAGE 18 ===
+18 
+ 
+ 
+ 
+Figure 11: Staircase Plots for the four experimental datasets. a) Regular staircase test, b) Bayesian 
+Staircase, c) Regular Stress Step, d) Bayesian Stress Step. The stress increment in all tests (except 
+Bayesian Staircase) is 30MPa, and the starting stress for the Stress Step protocol is 150MPa.  
+Figure 11 shows the raw data from each of the protocols. All protocols follow the expected 
+behaviour, including a similarity to the Bayesian behaviour as shown in section 3.  
+When analysing the results of all 120 specimens together – representing the most precise estimate 
+of the fatigue behaviour - the material system has a fatigue strength of 290 ± 10 MPa at 106 cycles, 
+with a spread of approximately 40 ± 10 MPa.  It can be seen in Table 4 and Figure 12 that the 
+Bayesian protocol equivalents outperformed their conventional methods, with more accurate MAPs 
+and narrower HPD intervals, despite good initial assumptions for starting stress and stress increment 
+size in the conventional protocols. The analysis of these results via conventional methods, such as 
+Dixon-Mood for staircase, or fitted distributions for stress steps, are included alongside their 
+respective Bayesian estimates in Table 4.  
+  
+
+
+=== PDF PAGE 19 ===
+19 
+ 
+Table 4: Results for the experimental campaign to compare the four sampling protocols. 
+Protocol 
+Conventional Analysis, MPa Bayesian Analysis, MPa: MAP, [95% 
+HPD interval] 
+Mean Standard Deviation Mean Standard Deviation 
+Staircase 
+Dixon-Mood analysis. N.B, the qualification 
+factor is 0.18 (>0.3 required) 
+277 [113, 368] 
+  
+83 [33,300] 
+ 
+290 10 
+Bayesian 
+Staircase 
+  276 [233, 319] 35 [17, 114] 
+Step 
+Fitted Normal distribution through 
+regression: R2 = 0.39. Value ± 95% 
+confidence interval: 
+285 [268, 302] 35 [26,51] 
+285 ± 15 37 ± 8 
+Bayesian 
+Step 
+  296 [277,315] 39 [29, 56] 
+Whole 
+Dataset 
+  288 [277,298] 
+  
+39 [32, 49] 
+ 
+ 
+ 
+Figure 12: Evolution in parameter estimates as a function of sample number, for a) mean and b) 
+standard deviation for the four protocols tested. Line represents the MAP, and shaded regions 
+indicate the 95% HPD interval.  
+The conventional methods are unable to determine with reasonable confidence the parameter 
+values that are best determined by considering the complete dataset – both the Dixon-Mood 
+Qualification factor and the fitted distribution R2 being too low. In addition, the Bayesian analysis of 
+conventional data is better at generating reasonable estimates of parameters with a quantified 
+error, with values within the range of the whole dataset estimate. 
+In general, the stress step methods unsurprisingly provide the tightest estimates of parameters. 
+Ideally, a larger step size would have been used for the experiments to create more distinction 
+between the Bayesian and conventional protocols, and would have minimised the effects of damage 
+or coaxing that may have affected the result. However, in this experiment, no appreciable difference 
+was seen in model parameters between step and staircase results.  
+
+
+=== PDF PAGE 20 ===
+20 
+ 
+Finally, a comparison can be made between distribution models. Accounting for all the tested 
+specimens, there is more evidence for the 2 parameter Weibull distribution over all other common 
+distributions as shown in Figure 13. 
+ 
+Figure 13: Experimental evolution of 𝛥𝐵𝐼𝐶 combining data collected using all protocols, showing 
+positive evidence for the Weibull distribution over normal and strong over log-normal 64. Specimen 5 
+of the Bayesian step method results (Figure 5 d) was omitted due to experimental error. See Figure 8 
+for more details. 
+5 CONCLUSIONS 
+We show that Bayesian statistics can be applied to fatigue strength testing. We present two open 
+source alternatives to the conventional staircase and stress step protocols. These can be shown to 
+provide better estimates for model parameters such as location and spread, such as mean and 
+standard deviation. Furthermore, these methods are independent of rigid definitions for step size or 
+starting stress, as required in conventional protocols. Using a Monte Carlo simulation framework, we 
+demonstrate the benefit that these protocols bring, and validate these through experiment. 
+Furthermore, simulation show insight into the behaviour underlying the conventional protocols, 
+further demonstrating the limitations of fixed step sizes.  
+Finally, this framework permits comparisons of distribution models, allowing design engineers to 
+make better trade-offs for weight and reliability. We also show with experimental data that a 2-
+parameter Weibull distribution may better fit fatigue strength data, and offer the reader the tool to 
+compare distribution models for other fatigue data. 
+These tools can be applied to any pass-fail testing application, fatigue or otherwise, and is material 
+independent. The method, built for both the collection of data during experiments as well as the 
+analysis of collected data, is made freely available under the GitHub repository “BayesOptFatigue”.  
+
+
+=== PDF PAGE 21 ===
+21 
+ 
+6 CREDIT TAXONOMY 
+CM Magazzeni: Conceptualisation, Data curation, Software, Formal Analysis, Validation, 
+Investigation, visualisation, methodology, Writing – original draft, project administration 
+R Rose: Conceptualisation, Data curation, Software, Formal Analysis, Validation, Investigation, 
+visualisation, methodology, Writing – original draft, project administration 
+C Gearhart: Conceptualisation, Resources, Software, Formal analysis, supervision, methodology, 
+writing – review & editing 
+J Gong: Investigation, methodology 
+AJ Wilkinson: Funding acquisition, Writing – review & editing 
+7 ACKNOWLEDGMENTS  
+CMM wishes to acknowledge Rolls Royce plc, the Royal Commission for the Exhibition of 1851, and 
+the EPSRC for financial support. This work was authored in part by the National Renewable Energy 
+Laboratory, operated by Alliance for Sustainable Energy, LLC, for the U.S. Department of Energy 
+(DOE) under Contract No. DE-AC36-08GO28308. The views expressed in the article do not 
+necessarily represent the views of the DOE or the U.S. Government. The U.S. Government retains 
+and the publisher, by accepting the article for publication, acknowledges that the U.S. Government 
+retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published 
+form of this work, or allow others to do so, for U.S. Government purposes. 
+  
+
+=== PDF PAGE 22 ===
+22 
+ 
+8 APPENDIX 
+8.1 CHOICE OF INITIAL PRIOR 
+When choosing an initial prior for inference based on the normal distribution, two non-informative 
+priors were investigated.  As suggested by Box and Tiao 65 the Jeffreys prior Eq. (18) promotes 
+models with small standard deviations.  
+ 𝑃(𝜃|𝒙) ∝ 𝜎−1 (18) 
+Alternatively, a constant prior over a range is used, which has the advantage that it is 
+mathematically equivalent to a maximum likelihood approach. The choice of using a flat prior, as 
+opposed to the Jeffreys prior, is justified by both its simplicity as well a notable feature in the trend 
+of Shannon information at low specimen number 65,66. When using a Jeffreys prior the Shannon 
+information drops significantly after approximately 10 samples (Figure 14). This is generally observed 
+as an initial under-estimation of the standard deviation, in line with the prior construction, followed 
+by an increase in the estimate and uncertainty in the standard deviation. This overconfidence in a 
+low standard deviation was deemed, particularly in the context of fatigue testing, as sub-optimal, 
+despite the subsequent faster convergence to the same parameter values. For these reasons, a fully 
+flat prior was used in the testing and simulation reported in this work.  
+However, it must be clear that a flat prior is also not assumption-free. Rather, the standard deviation 
+is deemed equally likely to lie within the extent that is specified in the permitted 2D parameter 
+space.  
+ 
+Figure 14: Comparison of negative Shannon Entropy between tests with priors initialised as: uniform 
+probability (red), and non-informative (blue). The tests were performed on a simulated set with 
+strength 400 MPa and distribution width 40 MPa at 106 cycles for 100 specimens using the Bayesian 
+Staircase protocol. The shaded error bars represent the standard deviation between 500 repeats.  
+
+
+=== PDF PAGE 23 ===
+23 
+ 
+8.2 VARIABILITY IN STEP TESTING WITH LARGE STEP SIZES 
+As discussed in the main text, step sizes in step testing should be as large as possible to minimise the 
+effects of coaxing and damage on the fatigue failure distribution observed from a test campaign. 
+However, the larger the step size, the higher the chance that the failure stress is “jumped over” 
+during testing: specimens always survive and fail at the same stress levels. 1515 
+This can also be understood as placing a large importance on the initial test stress: if only few of the 
+subsequent test levels intersect the distribution, it is easier to introduce bias. This bias produces a 
+bimodal distribution in the MAP estimate with the modal value sometimes far away from the mean 
+value (Figure 165), making the mean error for step testing not representative of what an experiment 
+campaign is likely to observe. 
+ 
+Figure 165: Histogram of errors in conventional step testing after 5 samples, with a step size 5 times 
+the true standard deviation of the simulation dataset, at 200 repeats with a random starting stress 
+between 0 MPa and the step size. 
+  
+
+
+=== PDF PAGE 24 ===
+24 
+ 
+9 REFERENCES 
+1 Reed R, Smith J, Christ B. The economic effects of fracture in the United States. Natl Bur 
+Stand Spec Publ. 1983: 1–7. 
+2 Nicholas T. Step loading for very high cycle fatigue. Fatigue Fract Eng Mater Struct. 2002;25: 
+861–869. 
+3 Dixon WJ, Mood AM. A Method for Obtaining and Analyzing Sensitivity Data. J Am Stat Assoc. 
+1948;43: 109–126. 
+4 ASTM. A tentative guide for fatigue testing and the statistical anaylsis of fatigue data. 1958. 
+5 Pascual FG, Meeker WQ. Analysis of Fatigue Data with Runouts Based on a Model with 
+Nonconstant Standard Deviation and a Fatigue Limit Parameter. J Test Eval. 1997;25: 292–
+301. 
+6 ISO 12107. Metallic materials — Fatigue testing — Statistical planning and analysis of data - 
+ISO 12107. Test. 2006;2006: 13. 
+7 Nelson W. Accelerated Life Testing - Step-Stress Models and Data Analyses. IEEE Trans Reliab. 
+1980;R-29: 103–108. 
+8 Morrissey RJ, McDowell DL, Nicholas T. Frequency and stress ratio effects in high cycle fatigue 
+of Ti-6Al-4V. Int J Fatigue. 1999;21: 679–685. 
+9 Lin SK, Lee YL, Lu MW. Evaluation of the staircase and the accelerated test methods for 
+fatigue limit distributions. Int J Fatigue. 2001;23: 75–83. 
+10 Pollak RD. Analysis of Methods for Determining High Cycle Fatigue Strength of a Material with 
+Investigation of Ti-6Al-4V Gigacycle Fatigue Behavior. Fac Grad Sch Eng Manag Force Inst 
+Technol. 2005: 278. 
+11 Engler-Pinto CC, Lasecki J V., Frisch RJ, Allison JE. Statistical approaches applied to very high 
+cycle fatigue. In: E. Allison J, Jones JW, M. Larsen J, O. Ritchie R, eds. VHCF-4 - 4th 
+International Conference on Very High Cycle Fatigue. TMS; 2007:369–376. 
+12 Engler-Pinto Jr CC, Lasecki J V., Frisch Sr RJ, et al. Statistical Approaches Applied to Fatigue 
+Test Data Analysis. Vol 114.2005. 
+13 Xi L, Songlin Z. Changes in mechanical properties of vehicle components after strengthening 
+under low-amplitude loads below the fatigue limit. Fatigue Fract Eng Mater Struct. 2009;32: 
+847–855. 
+14 Zioupos P, Casinos A. Cumulative damage and the response of human bone in two-step 
+loading fatigue. J Biomech. 1998;31: 825–833. 
+15 Hectors K, De Waele W. Cumulative damage and life prediction models for high-cycle fatigue 
+of metals: A review. Metals (Basel). 2021;11: 1–32. 
+16 Risitano A, Risitano G. Cumulative damage evaluation of steel using infrared thermography. 
+Theor Appl Fract Mech. 2010;54: 82–90. 
+17 Lerch BA, Draper SL, Pereira JM. Conducting high-cycle fatigue strength step tests on gamma 
+TiAl. Metall Mater Trans A Phys Metall Mater Sci. 2002;33: 3871–3874. 
+18 Bergant M, Werner T, Madia M, Yawny A, Zerbst U. Short crack propagation analysis and 
+fatigue strength assessment of additively manufactured materials: An application to AISI 
+
+=== PDF PAGE 25 ===
+25 
+ 
+316L. Int J Fatigue. 2021;151: 106396. 
+19 Andreau O, Pessard E, Koutiri I, Peyre P, Saintier N. Influence of the position and size of 
+various deterministic defects on the high cycle fatigue resistance of a 316L steel 
+manufactured by laser powder bed fusion. Int J Fatigue. 2021;143: 105930. 
+20 Andreau O, Pessard E, Koutiri I, et al. A competition between the contour and hatching zones 
+on the high cycle fatigue behaviour of a 316L stainless steel: Analyzed using X-ray computed 
+tomography. Mater Sci Eng A. 2019;757: 146–159. 
+21 Pan X, Guo S, Tian Z, et al. Fatigue performance improvement of laser shock peened hole on 
+powder metallurgy Ni-based superalloy labyrinth disc. Surf Coatings Technol. 2021;409: 
+126829. 
+22 Song Q, Sun C. Mechanism of crack initiation and early growth of high strength steels in very 
+high cycle fatigue regime. Mater Sci Eng A. 2020;771: 138648. 
+23 Dehghani M, Tremblay R, Leclerc M. Fatigue failure of 350WT steel under large-strain seismic 
+loading at room and subfreezing temperatures. Constr Build Mater. 2017;145: 602–618. 
+24 Mehdizadeh M, Khonsari MM. On the application of fracture fatigue entropy to variable 
+frequency and loading amplitude. Theor Appl Fract Mech. 2018;98: 30–37. 
+25 Zhao Z, Wang L, Liu C, Liu L, Chen W. Prediction of High-Cycle Fatigue Performance of 
+1Cr11Ni2W2MoV Stainless Steel Plate after Foreign Object Damage. Int J Aerosp Eng. 
+2020;2020. 
+26 Mackay R, Byczynski G. An Evaluation of the Staircase and Over-Stress Probe Methods for 
+Fatigue Life Characterization in Aluminum Sand Castings. Int J Met. April 2021: 1–18. 
+27 Dallago M, Winiarski B, Zanini F, Carmignato S, Benedetti M. On the effect of geometrical 
+imperfections and defects on the fatigue strength of cellular lattice structures additively 
+manufactured via Selective Laser Melting. Int J Fatigue. 2019;124: 348–360. 
+28 Nourian-Avval A, Khonsari MM. Rapid prediction of fatigue life based on thermodynamic 
+entropy generation. Int J Fatigue. 2021;145: 106105. 
+29 Gao JW, Pan XN, Han J, et al. Influence of artificial defects on fatigue strength of induction 
+hardened S38C axles. Int J Fatigue. 2020;139: 105746. 
+30 Guo Q, Guo X, Fan J, Syed R, Wu C. An energy method for rapid evaluation of high-cycle 
+fatigue parameters based on intrinsic dissipation. Int J Fatigue. 2015;80: 136–144. 
+31 Luo S, He W, Chen K, Nie X, Zhou L, Li Y. Regain the fatigue strength of laser additive 
+manufactured Ti alloy via laser shock peening. J Alloys Compd. 2018;750: 626–635. 
+32 Xu ZW, Wu SC, Wang XS. Fatigue evaluation for high-speed railway axles with surface scratch. 
+Int J Fatigue. 2019;123: 79–86. 
+33 Murakami Y, Takagi T, Wada K, Matsunaga H. Essential structure of S-N curve: Prediction of 
+fatigue life and fatigue limit of defective materials and nature of scatter. Int J Fatigue. 
+2021;146: 106138. 
+34 Abroug F, Pessard E, Germain G, Morel F. HCF of AA7050 alloy containing surface defects: 
+Study of the statistical size effect. Int J Fatigue. 2018;110: 81–94. 
+35 Baragetti S, Božić Ž, Arcieri E V. Stress and fracture surface analysis of uncoated and coated 
+7075-T6 specimens under the rotating bending fatigue loading. Eng Fail Anal. 2020;112: 
+
+=== PDF PAGE 26 ===
+26 
+ 
+104512. 
+36 Hu X, Jia X, Bao Z, Song Y. Effect of notch geometry on the fatigue strength and critical 
+distance of TC4 titanium alloy †. J Mech Sci Technol. 2017;31: 4727–4737. 
+37 Gao JW, Yu MH, Liao D, et al. Fatigue and damage tolerance assessment of induction 
+hardened S38C axles under different foreign objects. Int J Fatigue. 2021;149: 106276. 
+38 Lindley D V. Bayesian Statistics. Society for Industrial and Applied Mathematics; 1972. 
+39 Lindley D V. The Choice of Variables in Multiple Regression. J R Stat Soc Ser B. 1968;30: 31–
+53. 
+40 Lindley D V. On a Measure of the Information Provided by an Experiment. Ann Math Stat. 
+1956;27: 986–1005. 
+41 DasGupta A. Review of Optimal Bayes Designs. 1995. 
+42 Chaloner K, Verdinelli I, K. Chaloner IV. Bayesian experimental design: A review. Stat Sci. 
+1995;10: 273–304. 
+43 Ryan EG, Drovandi CC, Mcgree JM, Pettitt AN. Fully Bayesian Optimal Experimental Design: A 
+Review. Queensl Univ Technol. 2016: 1–39. 
+44 Ryan EG, Drovandi CC, McGree JM, Pettitt AN. A Review of Modern Computational 
+Algorithms for Bayesian Optimal Design. Int Stat Rev. 2016;84: 128–154. 
+45 Magazzeni CM, Rose R. cmmagazz/BayesOptFatigue: Code for “Bayesian Optimised Collection 
+Strategies for Fatigue Testing Constant Life Testing.” Available at: 
+https://github.com/cmmagazz/BayesOptFatigue. Accessed September 17, 2021. 
+46 Smalakys L, Melninkaitis A. Predicting lifetime of optical components with Bayesian inference. 
+Opt Express. 2021;29: 903. 
+47 Han C, Chaloner K. Bayesian Experimental Design for Nonlinear Mixed-Effects Models with 
+Application to HIV Dynamics. 2004;60: 25–33. 
+48 Magazzeni CM. Towards Local Property Assessment of Advanced Manufactured 
+Microstructures - A Case Study in Linear Friction Welded Titanium. 2022. 
+49 Li H, Wen D, Lu Z, Wang Y, Deng F. Identifying the Probability Distribution of Fatigue Life 
+Using the Maximum Entropy Principle. Entropy 2016, Vol 18, Page 111. 2016;18: 111. 
+50 Zhao YX, Yang B. Probabilistic measurements of the fatigue limit data from a small sampling 
+up-and-down test method. Int J Fatigue. 2008;30: 2094–2103. 
+51 Schneider CRA, Maddox SJ. Commission XIII-WG1 BEST PRACTICE GUIDE ON STATISTICAL 
+ANALYSIS OF FATIGUE DATA. 2003. 
+52 Chi-liu S. The Statistical analysis of fatigue data. 1994. 
+53 Grove D, Campean F. A comparison of two methods of analysing staircase fatigue test data. 
+Qual Reliab Eng Int. 2008;24: 485–497. 
+54 Lin S-K, Lee Y-L, Lu M-W. Evaluation of the staircase and the accelerated test methods for 
+fatigue limit distributions. Int J Fatigue. 2001;23: 75–83. 
+55 Yadav OP, Rathod V, Rathore A, Jain R. Probabilistic modeling of fatigue damage 
+accumulation for reliability prediction. Int J Qual Stat Reliab. 2011;2011. 
+
+=== PDF PAGE 27 ===
+27 
+ 
+56 Zhang J, Kececioglu DB, Technologies IS of S and A. New Approaches to Determine the 
+Endurance Strength Distribution. ISSAT; 1998. 
+57 Choucair H, Jawad B. Analyzing Field Failures of Engine Valve Springs in Presence of Non 
+Metallic Inclusions by Applying Statistical and Fracture Mechanics Models. SAE Int J Mater 
+Manuf. 2009;2: 265–273. 
+58 Anderson K V., Daniewicz SR. Statistical analysis of the influence of defects on fatigue life 
+using a Gumbel distribution. Int J Fatigue. 2018;112: 78–83. 
+59 Hor A, Saintier N, Robert C, Palin-Luc T, Morel F. Statistical assessment of multiaxial HCF 
+criteria at the grain scale. Int J Fatigue. 67: 151–158. 
+60 Schönning A, Neal J, Eason PD, Tiryakioğlu M, Logan ZS. On fatigue life variability in bone 
+cement. https://doi.org/101080/0267083620201821965. 2020;36: 1695–1703. 
+61 El Khoukhi D, Morel F, Saintier N, et al. Experimental investigation of the size effect in high 
+cycle fatigue: Role of the defect population in cast aluminium alloys. Int J Fatigue. 2019;129: 
+105222. 
+62 Hoole J, Sartor P, Booker J, Cooper J, Gogouvitis X V., Schmidt RK. Systematic statistical 
+characterisation of stress-life datasets using 3-Parameter distributions. Int J Fatigue. 
+2019;129: 105216. 
+63 Never BT. A D-Optimality-Based Sensitivity Test. Technometrics. 1994;36: 61–70. 
+64 Kass RE, Raftery AE. Bayes factors. J Am Stat Assoc. 1995;90: 773–795. 
+65 Box GEP, Tiao GC. Bayesian Inference in Statistical Analysis. Hoboken, NJ, USA: John Wiley & 
+Sons, Inc.; 1992. 
+66 Fox EP, Sivia DS. Data Analysis: A Bayesian Tutorial. Technometrics. 1998;40: 155–156. 
+ 
+ 

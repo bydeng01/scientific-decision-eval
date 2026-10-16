@@ -1,0 +1,61 @@
+{
+  "job_id": "r02-E009-sol",
+  "group_id": "E009",
+  "model_id": "sol",
+  "repeat": 1,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_049f538d2b3efeaf016ab0cec7ef4087d28af3e80207298c92",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 869
+    },
+    "input_tokens": 845,
+    "output_tokens": 24,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.004705,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.042085541994311,
+    "derivation_wall_seconds": 4.183300188742578e-05,
+    "derivation_cpu_seconds": 4.199999999998649e-05
+  },
+  "request_sha256": "e820cb72f4e4a61249560980521ae91f674d0761ba9f4014e96c88e8e8e35870",
+  "receipt_sha256": "67f5db01dd4327e6fa6b725ea32ec877effe6a0573f8d886d1a74ae7239ba6c4",
+  "simulated": false,
+  "halt_model": false
+}

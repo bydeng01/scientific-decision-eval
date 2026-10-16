@@ -1,0 +1,66 @@
+{
+  "job_id": "r01-B004-terra",
+  "group_id": "B004",
+  "model_id": "terra",
+  "repeat": 0,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-terra",
+  "response_id": "resp_0b1b79612c29d787016ab0ce9e46f887d2986d0a633dc7b719",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1290,
+      "input_tokens_details": {
+        "cache_write_tokens": 1287,
+        "cached_tokens": 0
+      },
+      "output_tokens": 32,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1322
+    },
+    "input_tokens": 1290,
+    "output_tokens": 32,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.003609,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.7197521659836639,
+    "derivation_wall_seconds": 4.658399848267436e-05,
+    "derivation_cpu_seconds": 4.500000000001725e-05
+  },
+  "request_sha256": "4aa19f22e91589ebde2150821f16555b0ee2beddea610a3c97f310fa9c4bad80",
+  "receipt_sha256": "f1d5e58643e6a3d4033a19b827d53b480a2a08e62829c9afe3c01be73168d616",
+  "simulated": false,
+  "halt_model": false
+}

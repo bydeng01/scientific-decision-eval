@@ -1,0 +1,374 @@
+{
+  "batch_id": "batch-001",
+  "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+  "source_records": [
+    {
+      "source_id": "N-STRIP",
+      "title": "NIST/SEMATECH e-Handbook: 5.5.5. How can I account for nested variation (restricted randomization)?",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section5/pri55.htm",
+      "doi": null,
+      "version": "Undated live handbook page, archived at access",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "NIST-HANDBOOK",
+      "local_files": [
+        "evidence/NIST-pri55.html",
+        "evidence/NIST-pri55.txt",
+        "evidence/NIST-figure-5-16.gif",
+        "evidence/NIST-figure-5-16.png"
+      ],
+      "inspected_locations": [
+        "Strip-Plot Designs: wafer-processing example",
+        "Figure 5.16 and surrounding execution-order paragraphs",
+        "Three sizes of experimental units",
+        "Replication"
+      ],
+      "limitations": [
+        "Authoritative methodological illustration, not a reported empirical wafer dataset.",
+        "The D/E/F stage is annealing. An operation-label typo in the source is normalized to 'annealed' in the benchmark adaptation, consistently with the factor definitions and diagram. Original source files retain their original wording for provenance."
+      ],
+      "related_sources": [
+        "Existing source N and problem C01 use the same handbook page, but the electroplating example."
+      ],
+      "linked_problem_ids": [
+        "E001"
+      ]
+    },
+    {
+      "source_id": "WIND-2021",
+      "title": "Results from a wake-steering experiment at a commercial wind plant: investigating the wind speed dependence of wake-steering performance",
+      "url": "https://wes.copernicus.org/articles/6/1427/2021/",
+      "doi": "10.5194/wes-6-1427-2021",
+      "version": "Final article, 12 November 2021, Wind Energy Science 6, 1427-1453",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "SMV-WAKE-STEERING",
+      "local_files": [
+        "evidence/wind.html",
+        "evidence/wind.pdf",
+        "evidence/wind.txt",
+        "evidence/wind-p06.png",
+        "evidence/wind-p09.png",
+        "evidence/wind-p10.png"
+      ],
+      "inspected_locations": [
+        "Sections 2.1-2.2, pp. 1430-1432 (PDF 4-6)",
+        "Figure 5, p. 1432 (PDF 6)",
+        "Sections 4.1-4.3, pp. 1435-1436 (PDF 9-10)"
+      ],
+      "limitations": [
+        "Hourly toggling identifies controller-mode application boundaries; it does not establish randomization or independence between applications.",
+        "The paper reports resampling one-minute observations. That analysis description is retained; the present question concerns assignment, not a verdict on all confidence intervals.",
+        "No timestamped campaign log is included in this package; no total number of eligible hourly applications is inferred."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E002"
+      ]
+    },
+    {
+      "source_id": "CAT-2020",
+      "title": "Copper nanoparticles on controlled pore glass (CPG) as highly efficient heterogeneous catalysts for 'click reactions'",
+      "url": "https://www.nature.com/articles/s41598-020-77629-3",
+      "doi": "10.1038/s41598-020-77629-3",
+      "version": "Scientific Reports 10, 20547, 25 November 2020",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "CU-CPG-RECYCLING",
+      "local_files": [
+        "evidence/catalyst.html",
+        "evidence/catalyst.pdf",
+        "evidence/catalyst.txt",
+        "evidence/catalyst-p03.png",
+        "evidence/catalyst-p05.png",
+        "evidence/catalyst-p06.png"
+      ],
+      "inspected_locations": [
+        "Results and discussion, PDF p. 3",
+        "Figures 2 and 3, PDF p. 5",
+        "Procedure for recycling, PDF pp. 3 and 6"
+      ],
+      "limitations": [
+        "Figure 2 endpoint conversion does not establish unchanged kinetics: Figure 3 and the text report slowing after two cycles.",
+        "The recycling procedure uses two hours; the three-hour general procedure is a different scope.",
+        "These eight cycles document one catalyst reuse history. They do not establish independent synthesis-series replication, complete material conservation, or identical catalyst composition across cycles."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E003"
+      ]
+    },
+    {
+      "source_id": "POW-2023",
+      "title": "Effective Ti-6Al-4V Powder Recycling in LPBF Additive Manufacturing Considering Powder History",
+      "url": "https://researchonline.jcu.edu.au/86205/7/86205.pdf",
+      "doi": "10.3390/su152115582",
+      "version": "Repository copy with final Sustainability 2023, 15, 15582 headers; published 2 November 2023",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "TI64-POWDER-HISTORY",
+      "local_files": [
+        "evidence/powder.pdf",
+        "evidence/powder.txt",
+        "evidence/powder-repository.html",
+        "evidence/powder-repository.txt",
+        "evidence/powder-p05.png",
+        "evidence/powder-p06.png"
+      ],
+      "inspected_locations": [
+        "Section 2.3, PDF pp. 4-6",
+        "Figures 1-2, PDF pp. 5-6",
+        "Build-8 top-up paragraph and final paragraph, PDF p. 6"
+      ],
+      "limitations": [
+        "The repository PDF visibly overprints earlier text on portions of pp. 5-6, including older peer-review headers. The build-8 statement and final sampling paragraph remain readable; the overprint is saved, not silently repaired.",
+        "The bulk index assumes degradation related to material built and no interactions. It is not a particle-level lineage ledger.",
+        "Exact input-lot IDs, fractions, and per-particle exposure histories are not established by the supplied methods. This is an evidence-coverage statement, not a claim that the investigators never kept such records.",
+        "Publisher HTML returned HTTP 403 during acquisition; the repository copy was inspected."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E004"
+      ]
+    },
+    {
+      "source_id": "FAT-2022",
+      "title": "Bayesian Optimised Collection Strategies for Fatigue Strength Testing",
+      "url": "https://arxiv.org/pdf/2107.02685v3",
+      "doi": "10.48550/arXiv.2107.02685",
+      "version": "arXiv:2107.02685v3, 21 September 2022; 27-page preprint",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "304L-FATIGUE-STRATEGIES",
+      "local_files": [
+        "evidence/fatigue-2107.02685v3.pdf",
+        "evidence/fatigue-2107.02685v3.txt",
+        "evidence/fatigue-2107.02685v3-p03.png",
+        "evidence/fatigue-2107.02685v3-p17.png",
+        "evidence/fatigue-2107.02685v3-p18.png"
+      ],
+      "inspected_locations": [
+        "Table 2, PDF p. 3",
+        "Section 4 and Table 3, PDF p. 17",
+        "Figure 11(a) and caption, PDF p. 18"
+      ],
+      "limitations": [
+        "The regular staircase in Figure 11(a) is the selected protocol. The step tests in Figure 11(c,d) repeatedly load the same specimen and must not be merged into this scope.",
+        "Random specimen extraction and randomized protocol order do not imply randomized stress selection.",
+        "No digitized stress-by-specimen dataset is asserted; no exact count at a chosen stress is estimated from plot pixels.",
+        "Figure 11(a)'s visible stress spacing appears smaller than the 30 MPa increment stated in Table 3 and the figure caption. The achieved numerical step is unresolved here; the next-specimen and outcome-dependent allocation descriptions remain explicit."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E005"
+      ]
+    },
+    {
+      "source_id": "COS-2018",
+      "title": "Statistical properties of paired fixed fields",
+      "url": "https://arxiv.org/pdf/1806.01871v1",
+      "doi": "10.48550/arXiv.1806.01871",
+      "version": "arXiv:1806.01871v1, submitted 5 June 2018; PDF draft dated 7 June 2018",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "PAIRED-FIXED-COSMOLOGY",
+      "local_files": [
+        "evidence/paired-fixed-1806.01871v1.pdf",
+        "evidence/paired-fixed-1806.01871v1.txt",
+        "evidence/paired-fixed-1806.01871v1-p02.png",
+        "evidence/paired-fixed-1806.01871v1-p04.png"
+      ],
+      "inspected_locations": [
+        "Section 2: fixed and paired fields, PDF pp. 2-3",
+        "Section 3.1 and Table 1, PDF pp. 3-4",
+        "Section 3.2, Equation 10 and discussion of cross-correlation, PDF p. 5"
+      ],
+      "limitations": [
+        "Phase reversal is a deterministic initial-field relationship; it does not mean every final observable is perfectly anticorrelated.",
+        "The N1000 paired-fixed subset is separate from the 100 standard realizations and the N20/H200/H20 sets.",
+        "The published article DOI 10.3847/1538-4357/aae52b is a related version, not a second source or an audited replacement for v1."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E006"
+      ]
+    },
+    {
+      "source_id": "LENS2-DOC",
+      "title": "CESM2 Large Ensemble Community Project (LENS2)",
+      "url": "https://www.cesm.ucar.edu/community-projects/lens2",
+      "doi": null,
+      "version": "Undated official project documentation, live snapshot at access",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "CESM2-LENS2",
+      "local_files": [
+        "evidence/lens2.html",
+        "evidence/lens2.txt"
+      ],
+      "inspected_locations": [
+        "Initialization descriptions for members 1-10, 11-90, and 91-100",
+        "Modifications incorporated in the second half of the LENS2 simulations, all paragraphs"
+      ],
+      "limitations": [
+        "The SMBB half also contains emission and carbon-flux code corrections; a between-half contrast does not isolate smoothing alone.",
+        "The project reports no significant model-solution or climate-changing impacts from the respective corrections. That report does not establish identical implementations.",
+        "The local snapshot is authoritative for this problem; a future website update could change the documentation."
+      ],
+      "related_sources": [
+        "The project cites Rodgers et al. (2021); the paper is not counted as another independently inspected source here."
+      ],
+      "linked_problem_ids": [
+        "E007"
+      ]
+    },
+    {
+      "source_id": "FOLD-2025",
+      "title": "Powerful Foldover Designs",
+      "url": "https://arxiv.org/pdf/2507.14648v1",
+      "doi": "10.48550/arXiv.2507.14648",
+      "version": "arXiv:2507.14648v1, submitted 19 July 2025; PDF cover dated 22 July 2025",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "ETHYLENE-FOLDOVER",
+      "local_files": [
+        "evidence/foldover-2507.14648.pdf",
+        "evidence/foldover-2507.14648.txt",
+        "evidence/foldover-2507.14648-p22.png",
+        "evidence/foldover-2507.14648-p23.png",
+        "evidence/foldover-table7.png"
+      ],
+      "inspected_locations": [
+        "Introduction: sign-reversing foldover, PDF p. 2",
+        "Table 1, factor names and low/high levels, PDF p. 3; temperature wording compared with Section 6, PDF p. 22",
+        "Section 6, Ethylene Experiment, PDF pp. 22-23",
+        "Table 7 and caption, PDF p. 23",
+        "Table 8 caption, PDF p. 23"
+      ],
+      "limitations": [
+        "The caption describes foldover pairs, while the preceding paragraph explicitly mentions both replicates and foldover pairs. The full matrix resolves which are equal conditions; no incompatible assignment remains.",
+        "Table 1 (PDF p. 3) provides the eight factor names and low/high levels. It lists temperature levels of 750 and 800 °C, whereas Section 6 describes each cycle as operating at 800 °C. This discrepancy remains unresolved for reconstructing physical operating conditions. The present judgment concerns equality of the eight-factor coded settings in Table 7, not chemical equivalence outside that design.",
+        "Later publication is not substituted for the inspected preprint."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E008"
+      ]
+    },
+    {
+      "source_id": "N-FOLD",
+      "title": "NIST/SEMATECH e-Handbook: 5.3.3.8.1. Mirror-image foldover designs",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3381.htm",
+      "doi": null,
+      "version": "Undated live handbook page, archived at access",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "NIST-HANDBOOK",
+      "local_files": [
+        "evidence/NIST-foldover.html",
+        "evidence/NIST-foldover.txt"
+      ],
+      "inspected_locations": [
+        "Foldover design definition and alias explanation"
+      ],
+      "limitations": [
+        "Methodological corroboration only; the ethylene treatment records come from FOLD-2025."
+      ],
+      "related_sources": [
+        "N-STRIP and existing source N belong to the same handbook."
+      ],
+      "linked_problem_ids": [
+        "E008"
+      ]
+    },
+    {
+      "source_id": "MET-2016",
+      "title": "Extensive Comparison between INRIM and a Secondary Calibration Laboratory using a Multifunction Electrical Calibrator",
+      "url": "https://arxiv.org/pdf/1510.07866v3",
+      "doi": "10.48550/arXiv.1510.07866",
+      "version": "arXiv:1510.07866v3, 21 April 2016; downloaded PDF has 7 pages",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "INRIM-MFC-ILC",
+      "local_files": [
+        "evidence/metrology-1510.07866v3.pdf",
+        "evidence/metrology-1510.07866v3.txt",
+        "evidence/metrology-1510.07866v3-p03.png",
+        "evidence/metrology-1510.07866v3-p04.png"
+      ],
+      "inspected_locations": [
+        "Section III.A, PDF p. 2",
+        "Sections IV-V, Figure 3 and Equations 1-5, PDF p. 3",
+        "Table II, PDF p. 4",
+        "Conclusions, PDF p. 6"
+      ],
+      "limitations": [
+        "The preprint retains a template identification header; this is not a second experiment.",
+        "The source takes precautions against possible drift and reports instrument stability; a bracketing design does not establish observed drift.",
+        "Shared traceability creates particular correlated uncertainty contributions. Separate laboratory executions remain real; the question does not declare all uncertainty components identical or all errors perfectly correlated."
+      ],
+      "related_sources": [],
+      "linked_problem_ids": [
+        "E009"
+      ]
+    },
+    {
+      "source_id": "CLOUD-2018",
+      "title": "Evaluation of the Wyoming Weather Modification Pilot Project (WWMPP) Using Two Approaches: Traditional Statistics and Ensemble Modeling",
+      "url": "https://www.researchgate.net/publication/328180082_Evaluation_of_the_Wyoming_Weather_Modification_Pilot_Project_WWMPP_Using_Two_Approaches_Traditional_Statistics_and_Ensemble_Modeling",
+      "doi": "10.1175/JAMC-D-17-0335.1",
+      "version": "Rasmussen et al., Journal of Applied Meteorology and Climatology 57 (2018), 2639-2660; author-uploaded full text, 26 December 2018",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "WWMPP",
+      "local_files": [],
+      "inspected_locations": [
+        "Section 2, pp. 2640-2642",
+        "Figure 1 caption and complementary-shading explanation, pp. 2641-2642",
+        "Section 2a, Table 1 and Figure 2, pp. 2642-2643",
+        "Section 2 statistical discussion",
+        "Publisher Table 1, printed p. 2642: all monthly generator-exclusion cells and margins, with the caption checked against the author-uploaded full text. https://journals.ametsoc.org/view/journals/apme/57/11/full-jamc-d-17-0335.1-t1.jpg"
+      ],
+      "limitations": [
+        "Full article text was inspected through the author-uploaded ResearchGate page; full PDF retrieval and publisher article access returned HTTP 403. Publisher Table 1 was retrieved separately and visually checked on 2026-09-21.",
+        "Table 1 generator exclusions sum to eight across monthly cells, but the margins and prose report nine. The March cells sum to zero versus a row total of one; the 2008/09 cells sum to two versus a column total of three. The 118 retained EUs are the author-reported total, not a reconciled reconstruction from every cell. No missing event is imputed.",
+        "The Table 1 caption assigns four EUs failing both precipitation and generator checks to precipitation QC. The nine generator exclusions are additional to the 27 precipitation exclusions; overlapping failures are not subtracted again.",
+        "The prose calls the winters 2008-13, while Table 1 uses 2008/09-2013/14. The present scope is the explicitly reported 118 retained EUs, not reconstructed dates.",
+        "Wind-direction criteria differ between the introductory account and Section 2b; this does not change the documented complementary assignment.",
+        "Cross-range exposure evidence used in E010 comes from CLOUD-2014 slides 24 and 29, not an independently replicated experiment.",
+        "The paper's p-value gloss is not adopted as a probability that the null hypothesis is true; significance testing is outside this problem."
+      ],
+      "related_sources": [
+        "CLOUD-2014 is the same experiment, not independent source replication."
+      ],
+      "linked_problem_ids": [
+        "E010"
+      ]
+    },
+    {
+      "source_id": "CLOUD-2014",
+      "title": "Wyoming Weather Modification Pilot Project: Final Results Presentation",
+      "url": "https://crwua.org/wp-content/uploads/2024/01/WWMPP-CRWUA-Dec-2014.pdf",
+      "doi": null,
+      "version": "Investigators' December 2014 results presentation; 50-slide public copy hosted in a 2024 directory",
+      "access_date": "2026-09-21 (UTC); 2026-09-20 (America/New_York)",
+      "source_family": "WWMPP",
+      "local_files": [
+        "evidence/cloud-2014-report.pdf",
+        "evidence/cloud-2014-report.txt",
+        "evidence/cloud-2014-report-p16.png",
+        "evidence/cloud-2014-report-p17.png",
+        "evidence/cloud-2014-report-p18.png",
+        "evidence/cloud-2014-report-p24.png",
+        "evidence/cloud-2014-report-p29.png"
+      ],
+      "inspected_locations": [
+        "Slides 16-18: paired design, measurements, and 118-case assignment plot",
+        "Slides 24 and 29: possible cross-range contamination"
+      ],
+      "limitations": [
+        "The slide plot labels Medicine Bow, whereas the 2018 Figure 1 plot labels Sierra Madre. Their colors must not be joined as though they identify the same target.",
+        "The PDF has malformed object offsets tolerated by the PDF readers; rendered slides were checked.",
+        "The slide p-value wording is not used as a statistical reference."
+      ],
+      "related_sources": [
+        "CLOUD-2018 reports the same WWMPP trial."
+      ],
+      "linked_problem_ids": [
+        "E010"
+      ]
+    }
+  ],
+  "grouping_note": "Source families group related documents and prior use, not statistically independent observations. N-STRIP shares the existing C01 source N; N-FOLD is the same handbook. CLOUD-2014 and CLOUD-2018 are one trial.",
+  "source_family_count": 10,
+  "newly_introduced_source_families": 9
+}

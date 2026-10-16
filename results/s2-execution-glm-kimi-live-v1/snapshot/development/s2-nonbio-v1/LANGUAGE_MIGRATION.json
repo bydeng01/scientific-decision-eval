@@ -1,0 +1,26 @@
+{
+  "revision": "s2-nonbio-en-v1",
+  "language": "en",
+  "previous_language": "zh",
+  "date": "2026-09-20",
+  "request": "English-language materials for the research community.",
+  "historical_snapshot": "history/zh-preflight-v2",
+  "previous_results": "../../results/s2-nonbio-preflight-v2",
+  "current_results": "../../results/s2-nonbio-preflight-en-v1",
+  "translation_review": "The user approved the English wording and its correspondence to the recorded scope, targets, source IDs, claims and evidence.",
+  "scope_changed": false,
+  "source_set_changed": false,
+  "reference_sha256_before": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+  "status": "English wording approved by user; scope/reference invariants and 16 English preflight regression tests passed",
+  "reference_sha256_after": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+  "checks": {
+    "reference_file_byte_identical": true,
+    "nonlinguistic_case_fields_unchanged": true,
+    "source_ids_and_locations_unchanged": true,
+    "english_review_matches_machine_passages": true,
+    "active_package_has_no_chinese_text": true,
+    "english_preflight_tests_passed": 16,
+    "human_translation_signoff": "User approved the English wording on 2026-09-24; scientific scope remains unchanged."
+  },
+  "user_approved_on": "2026-09-24"
+}

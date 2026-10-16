@@ -1,0 +1,80 @@
+{
+  "job_id": "r01-E007-jev",
+  "group_id": "E007",
+  "model_id": "jev",
+  "repeat": 0,
+  "answers": {
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false,
+      "claim_assessment": "inconsistent_in_both_clauses"
+    },
+    "clauses": {
+      "single_protocol": "inconsistent",
+      "single_change": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "E007-Q01": {
+      "probabilities": {
+        "within_run_replicates": 0,
+        "two_protocol_groups": 1,
+        "other": 0,
+        "conflicting": 0,
+        "all_smbb": 0,
+        "all_original": 0,
+        "not_stated": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    },
+    "E007-Q02": {
+      "probabilities": {
+        "not_stated": 0,
+        "conflicting": 0,
+        "smoothing_only": 0,
+        "initialization_only": 0,
+        "bundled_changes": 1
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972153-jts9SOl497iBXSxSR5Un",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1294,
+      "output_tokens": 151,
+      "cost": 5.4348e-05
+    },
+    "input_tokens": 1294,
+    "output_tokens": 151,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 5.4348e-05,
+    "usage_cost_estimate_usd": 5.434800000000001e-05,
+    "usage_cost_upper_estimate_usd": 5.434800000000001e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.27014366700313985,
+    "derivation_wall_seconds": 3.929197555407882e-05,
+    "derivation_cpu_seconds": 3.900000000001125e-05
+  },
+  "request_sha256": "0bc243a4cd255dcbe13e1efba99cd3f77b3c6f4b53c30dd21fbb76dba74d1498",
+  "receipt_sha256": "fdb9ed962b70ec50cdaa55af20608fd945aa531cbb8a3c123d03d7f87e8940a3",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,78 @@
+{
+  "job_id": "r03-B001-kimi_k3",
+  "group_id": "B001",
+  "model_id": "kimi_k3",
+  "repeat": 2,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978552-ndqdd7C1c2naTillzLoE",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1391,
+      "completion_tokens": 181,
+      "total_tokens": 1572,
+      "cost": 0.003432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003432,
+        "upstream_inference_prompt_cost": 0.000717,
+        "upstream_inference_completions_cost": 0.002715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 145,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1391,
+    "output_tokens": 181,
+    "resource_errors": [],
+    "cached_input_tokens": 1280,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 145,
+    "reported_cost_usd": 0.003432,
+    "usage_cost_estimate_usd": 0.003432,
+    "usage_cost_upper_estimate_usd": 0.006888,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 7.11193870799616,
+    "derivation_wall_seconds": 6.824999582022429e-05,
+    "derivation_cpu_seconds": 6.699999999992823e-05
+  },
+  "request_sha256": "7c8b3189dfaeb210b80c8ef082beb8b78577cc7dbf37e5f1f4fd51c8228a27fb",
+  "receipt_sha256": "fe5c8a4cdef813daaf34183a6a52292bd23802f50a2c50a516b52ca805b3f370",
+  "simulated": false,
+  "halt_model": false
+}

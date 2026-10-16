@@ -1,0 +1,73 @@
+{
+  "job_id": "r01-E009-qwen_max",
+  "group_id": "E009",
+  "model_id": "qwen_max",
+  "repeat": 0,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789974420-w8odAwJb1uFwAjBI2xmh",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 787,
+      "completion_tokens": 380,
+      "total_tokens": 1167,
+      "cost": 0.003854,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003854,
+        "upstream_inference_prompt_cost": 0.001574,
+        "upstream_inference_completions_cost": 0.00228
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 362,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 787,
+    "output_tokens": 380,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 362,
+    "reported_cost_usd": 0.003854,
+    "usage_cost_estimate_usd": 0.003854,
+    "usage_cost_upper_estimate_usd": 0.0042475,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 10.536027166992426,
+    "derivation_wall_seconds": 4.90829988848418e-05,
+    "derivation_cpu_seconds": 4.799999999999249e-05
+  },
+  "request_sha256": "3c13c82c742a43765a18b9edf4ab6992091dbb2b5bec0580f15f408176da0ab4",
+  "receipt_sha256": "2813bae3538eacea711e72f81b7dc1290b999e5a6fb85fba8b2659ba42095f3c",
+  "simulated": false,
+  "halt_model": false
+}

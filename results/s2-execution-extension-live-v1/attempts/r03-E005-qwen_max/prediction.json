@@ -1,0 +1,72 @@
+{
+  "job_id": "r03-E005-qwen_max",
+  "group_id": "E005",
+  "model_id": "qwen_max",
+  "repeat": 2,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975257-KiKfhhk9LvNiRaKPfG10",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 776,
+      "completion_tokens": 510,
+      "total_tokens": 1286,
+      "cost": 0.004612,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004612,
+        "upstream_inference_prompt_cost": 0.001552,
+        "upstream_inference_completions_cost": 0.00306
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 492,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 776,
+    "output_tokens": 510,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 492,
+    "reported_cost_usd": 0.004612,
+    "usage_cost_estimate_usd": 0.004612,
+    "usage_cost_upper_estimate_usd": 0.005,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 13.435439791996032,
+    "derivation_wall_seconds": 6.287498399615288e-05,
+    "derivation_cpu_seconds": 5.300000000008076e-05
+  },
+  "request_sha256": "0e78be1bc28593f30d6dafa20622d50c639123e6349045476b3b5035be4fcdb6",
+  "receipt_sha256": "972fdca03d27c95fa4935e2a7f682e4baa4ea30b2cce0061976f1d410d1012fe",
+  "simulated": false,
+  "halt_model": false
+}

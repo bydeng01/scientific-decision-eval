@@ -1,0 +1,74 @@
+{
+  "job_id": "r01-B002-astra",
+  "group_id": "B002",
+  "model_id": "astra",
+  "repeat": 0,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-6-astra",
+  "response_id": "resp_0cbb50e793a0646d016ab0ce5d6ec487d29161b9ea9206c327",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 1217,
+        "cached_tokens": 0
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1246
+    },
+    "input_tokens": 1220,
+    "output_tokens": 26,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.01655,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 3.0178082909842487,
+    "derivation_wall_seconds": 5.379199865274131e-05,
+    "derivation_cpu_seconds": 5.3999999999998494e-05
+  },
+  "request_sha256": "3ba9bf2e672ba69233875b3ad13aea7338f1f2d25301a0d2b8b62001e9bf8258",
+  "receipt_sha256": "879b286d630cf016c3a0cf33deb3a2b4137eeac60779614f0832b83475225e5b",
+  "simulated": false,
+  "halt_model": false
+}

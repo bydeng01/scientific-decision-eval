@@ -1,0 +1,11 @@
+{
+  "http_status": 200,
+  "raw_body": "{\"model\":\"claude-sonnet-5\",\"id\":\"msg_011CfG7aoBg9X4tcbCxehmHo\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"Er0DCpABCBIYAipA/QcFqVHj+G+YDkttz/tq3ehHj5EwtKeO3APSqVa/DY6WAK+/3fEuGPZd/6L8+2U7ACHsvZ13TrFr7Ev7TEz/4TIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQyZjU3MGU2Yi0zYTNhLTRjMWYtOTdjOS01NTAzNTEyYTM5M2KoAZGew9UGEgwxoKsYFxv3TrscP7YaDCBldyZ0puBhRDCRPiIw6O1Dt8v3YYyA41imkDSaMC4nof7V36eNgAVJb0VbGZKvK/E9Xec02MOeKgDQcr+UKtkB7YjQaq5T6iycez6x9YJ0TUe4hDL3lOvIbafhK7lOHcVooHUajk+MQjULmWI+xU+FSd/xvoPSf/zt+sFqQlX5ZSK3dDnkaqzkiDpl1mb0uJOQm5JdBJA3tGXTCK0CgbztSYfOThVU1RkWK4ogVBjnfUCnU9YZvoZMKqtemA2u4nlni5k5rH29yomTXjI/tipVvirytv9ip65NWLddYpStq+OOI2B7AKYS93qca+0yPanhxrqqAu5r+QZA4GtlDSDxozZGCsRNG6Xm3lUvwZVGGWLFI2M8DJnyQRgB\"},{\"type\":\"text\",\"text\":\"{\\\"q1\\\":\\\"within_founder_mosaicism\\\",\\\"q2\\\":\\\"preexisting_albino_allele\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":2446,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":119,\"output_tokens_details\":{\"thinking_tokens\":84},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 06:30:41 GMT",
+    "request-id": "req_011CfG7ao1FtSLVik5r738ak"
+  },
+  "latency_seconds": 2.5611645830213092,
+  "transport_error": null,
+  "received_at": "2026-09-21T06:30:41.935469+00:00"
+}

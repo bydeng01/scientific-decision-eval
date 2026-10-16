@@ -1,0 +1,167 @@
+{
+  "started_at": "2026-09-21T06:32:17.476108+00:00",
+  "request_sha256": "2d73582daebd6537ad62a56c5a747ef03e6bf6f38b13c140272c9a1a1e1d5c22",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": {
+      "target_treatment": "Brd1 genotype-group replication in the eight-animal RNA-pooling arm.",
+      "scope": "The four eight-animal pools: 8R pool 1/2 and 8W pool 1/2. The complete pooling figure is transcribed, but three-animal pools and individually sequenced libraries are filtered out of this claim. Genotype groups are inherited, not a claim of randomized drug administration.",
+      "evidence": [
+        {
+          "source_id": "BIO-RNA-2015",
+          "location": "Main PDF p. 6, RNA samples and RNA-seq analysis; Additional file 10",
+          "kind": "source_faithful_adaptation",
+          "text": "RNA was extracted from amygdala samples of eight female Brd1+/- mice and eight WT littermates. For each genotype, two eight-animal pools were prepared from equal RNA amounts from the same eight contributors. RNA was pooled before cDNA synthesis and library preparation. Additional file 10 labels the contributors R1-R8 and W1-W8 and shows both copies of each pool."
+        },
+        {
+          "source_id": "BIO-RNA-2015",
+          "location": "Main PDF p. 6, DEG analyses; Figure 2 caption; Additional file 10",
+          "kind": "source_faithful_adaptation",
+          "text": "The reported bulk analysis counts reads into gene-expression profiles for the prepared libraries. The study separately sequenced individual samples and three-animal pools for comparison. Those separate individual profiles are available in the study but are not observations produced by the four selected eight-animal pooled libraries."
+        }
+      ],
+      "records": {
+        "pools": [
+          {
+            "pool_id": "3R pool 1",
+            "genotype": "Brd1+/-",
+            "pool_size": 3,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          {
+            "pool_id": "3R pool 2",
+            "genotype": "Brd1+/-",
+            "pool_size": 3,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          {
+            "pool_id": "8R pool 1",
+            "genotype": "Brd1+/-",
+            "pool_size": 8,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3",
+              "R4",
+              "R5",
+              "R6",
+              "R7",
+              "R8"
+            ]
+          },
+          {
+            "pool_id": "8R pool 2",
+            "genotype": "Brd1+/-",
+            "pool_size": 8,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3",
+              "R4",
+              "R5",
+              "R6",
+              "R7",
+              "R8"
+            ]
+          },
+          {
+            "pool_id": "3W pool 1",
+            "genotype": "WT",
+            "pool_size": 3,
+            "contributors": [
+              "W1",
+              "W3",
+              "W4"
+            ]
+          },
+          {
+            "pool_id": "3W pool 2",
+            "genotype": "WT",
+            "pool_size": 3,
+            "contributors": [
+              "W1",
+              "W3",
+              "W4"
+            ]
+          },
+          {
+            "pool_id": "8W pool 1",
+            "genotype": "WT",
+            "pool_size": 8,
+            "contributors": [
+              "W1",
+              "W2",
+              "W3",
+              "W4",
+              "W5",
+              "W6",
+              "W7",
+              "W8"
+            ]
+          },
+          {
+            "pool_id": "8W pool 2",
+            "genotype": "WT",
+            "pool_size": 8,
+            "contributors": [
+              "W1",
+              "W2",
+              "W3",
+              "W4",
+              "W5",
+              "W6",
+              "W7",
+              "W8"
+            ]
+          }
+        ],
+        "select_pool_size": 8,
+        "record_origin": "All eight pool memberships transcribed from Additional file 10. Source pool labels and contributor IDs are preserved, including W1/W3/W4 in both three-animal WT pools."
+      }
+    },
+    "questions": {
+      "q1": {
+        "type": "choice",
+        "instructions": "At what stage are the animals' contributions combined in the selected pooled arm? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+        "criteria": {
+          "rna_before_library": "RNA from different animals is physically combined before cDNA synthesis and library preparation.",
+          "indexed_libraries_only": "Each animal first receives its own separate library, and only those identifiable libraries are combined for sequencing.",
+          "numerical_average_only": "Animals are assayed separately throughout; only their final expression estimates are averaged in software.",
+          "tissue_before_extraction": "Intact tissues from different animals are combined before a single shared RNA extraction.",
+          "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+          "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+          "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+        }
+      },
+      "q2": {
+        "type": "choice",
+        "instructions": "What biological attribution is established for a gene-expression profile from one selected pooled library in the reported analysis? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+        "criteria": {
+          "pool_aggregate": "The profile describes the combined contributors to that pool; it is not a separately observed profile for each contributor.",
+          "all_individuals_resolved": "The analysis assigns a separate complete expression profile to every contributing animal within that pooled library.",
+          "some_individuals_resolved": "The analysis assigns separate complete profiles to some contributors, while retaining an unresolved aggregate for the rest.",
+          "new_single_animal": "The library measures one new animal that is distinct from all animals used to make the pool.",
+          "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+          "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+          "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+        }
+      }
+    },
+    "provider": {
+      "allow_fallbacks": false
+    }
+  },
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "job_id": "r03-B003-jev",
+  "attempt": 1,
+  "repeat": 2,
+  "simulated": false
+}

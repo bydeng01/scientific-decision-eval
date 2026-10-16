@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789978763-rD4EtO6ZF8SbuPNvEJ7W\",\"object\":\"chat.completion\",\"created\":1789978763,\"model\":\"moonshotai/kimi-k3\",\"provider\":\"Moonshot AI\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"f0_pregnant_dams\\\",\\\"q2\\\":\\\"mother_embryo_and_fetal_germline\\\"}\",\"refusal\":null,\"reasoning\":\"We need answer JSON only. Need use supplied evidence. q1: Evidence says only pregnant F0 rats received experimental injections during E8-14; F1 bred etc. So f0_pregnant_dams.\\nq2: Source distinguishes injected F0 mother, directly exposed F1 embryo, and germ cells inside that embryo that will generate F2. F3 beyond window. Thus mother_embryo_and_fetal_germline. Ensure no extra text.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"We need answer JSON only. Need use supplied evidence. q1: Evidence says only pregnant F0 rats received experimental injections during E8-14; F1 bred etc. So f0_pregnant_dams.\\nq2: Source distinguishes injected F0 mother, directly exposed F1 embryo, and germ cells inside that embryo that will generate F2. F3 beyond window. Thus mother_embryo_and_fetal_germline. Ensure no extra text.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1391,\"completion_tokens\":130,\"total_tokens\":1521,\"cost\":0.002667,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":1280,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.002667,\"upstream_inference_prompt_cost\":0.000717,\"upstream_inference_completions_cost\":0.00195},\"completion_tokens_details\":{\"reasoning_tokens\":94,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:19:28 GMT"
+  },
+  "latency_seconds": 10.849956582998857,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:19:34.524514+00:00"
+}

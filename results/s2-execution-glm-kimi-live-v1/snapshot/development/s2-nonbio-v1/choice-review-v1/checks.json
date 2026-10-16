@@ -1,0 +1,260 @@
+{
+  "case_count": 12,
+  "scientific_case_count": 11,
+  "engineering_case_count": 1,
+  "distinct_question_definitions": 15,
+  "all_cases_linked": true,
+  "all_expected_options_exist": true,
+  "evidence_scope_target_copied_exactly": true,
+  "d03_three_fields_separate": true,
+  "d01_o_option_ids_preserved": false,
+  "english_only": true,
+  "active_in_runner": false,
+  "model_calls": 0,
+  "human_choice_review": "user_approved",
+  "protected_sha256_unchanged": {
+    "development/s2-nonbio-v1/inputs/cases.json": "efc7c632e9a39e25bb2752278cbbf08b7c2c58ff7dd6ff091a403aa7ea721246",
+    "development/s2-nonbio-v1/inputs/evidence.json": "6c36186233b22594f224456739510481a48b37930dd54563f6f53b98c936d966",
+    "development/s2-nonbio-v1/inputs/sources.json": "ee85c4f837b9bc7389ab539c1f9902d1e5c512d4d6ba765798210527561a27cd",
+    "development/s2-nonbio-v1/evaluation/references.json": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+    "development/s2-nonbio-v1/rules.py": "50db9181e9b409d0c33bae2546213484b1013d95d12dc4348fc5098ac4ac795e",
+    "development/s2-nonbio-v1/run.py": "6d66dfb62c3079de420319ba58f1368ab2cd73bda5f24bfea7617ca5c896fe06",
+    "development/s2-nonbio-v1/score.py": "c6bfc8a07b238edc4086f1959f1d1027ca4f5de3c1c91a2fbcfed5081532c38a",
+    "development/s2-nonbio-v1/budget.json": "986be5578bdeb3fa6866f3fea02ab24ec31a775c5fa1c89584a3c332cd5cec21",
+    "results/s2-nonbio-preflight-en-v1/call_matrix.json": "94eb8dadbf918bbf1caf1164d1973db51768c1143e94553bacba62fece4e3622",
+    "JEV_SCIENCE_CONTRIBUTION_V1.md": "02e61923a0fcab9d27f42dab4653393a0c04cc6e2010faf050749e09ace37fa1"
+  },
+  "document_json_consistent": true,
+  "all_original_claims_present": true,
+  "existing_case_outcomes_preserved": true,
+  "local_links_valid": true,
+  "artifact_sha256": {
+    "CHOICES_REVIEW.md": "d344a45628902c015981ee28cb5ecd0537e17439057dc8c037faed827acac232",
+    "choice-review-v1/inputs.json": "5eb1eb04021592d38b849755494068a90e0c5350ddc4540498194beb9c299c0a",
+    "choice-review-v1/evaluation.json": "ffb7d038b5a2bda293e07b5caf0502775970085386090d28879ae830f29f5030",
+    "choice-review-v1/REVIEW_LOG.md": "14c144a3a29c36b97077d69d5b2aa1a8efd4563253bb5a58929060b9d4f2a5b1",
+    "choice-review-v1/history/initial-drafts/manifest.json": "b8ee419b6d838df9f2e7d7c5fb846d60638a855d8a2f04464610216f1687fc32",
+    "ALL_CASES_REVIEW.md": "acd2619eb9726afe135d10954e10f2950eae1b13e19b271bb9bec73625a36831",
+    "README.md": "757a664bc4c7e8241c7d5c68b8f47a3613ec408e7bc42b3ff3c579bda74a0664",
+    "../../JEV_SCIENCE_TASK_REVIEW.md": "377172642be6d51c404f4e1ca80001fdf2cc8f4821b6811130ff78c4bfb962ac",
+    "choice-review-v1/verify_review.py": "b1889cbd948f914d2806425fc2ee3470aa394657044efcf8785b8058514028f6"
+  },
+  "review_session": {
+    "started_at": "2026-09-20T21:09:57-04:00",
+    "current_group": null,
+    "review_order": [
+      "D01",
+      "D02",
+      "D03",
+      "C01",
+      "H01",
+      "C02"
+    ],
+    "human_confirmed_question_ids": [],
+    "human_review_attribution": "The user approved the prepared review as a whole; no separate question-by-question confirmation or independent multi-reviewer annotation.",
+    "log": "choice-review-v1/REVIEW_LOG.md",
+    "initial_snapshot_manifest": "choice-review-v1/history/initial-drafts/manifest.json",
+    "status": "user_approved",
+    "completed_at": "2026-09-20T21:19:56-04:00",
+    "user_approved_question_ids": [
+      "D01.unit",
+      "D01.membership",
+      "D01-O.omitted_unit",
+      "D02.unit",
+      "D02.membership",
+      "D03.treatment_level",
+      "D03.run_boundary",
+      "D03.specimen_assignment",
+      "C01-T.unit",
+      "C01-A.unit",
+      "H01-L.unit",
+      "H01-T.unit",
+      "H01-T.membership",
+      "C02.unit",
+      "C02.identifier"
+    ],
+    "user_approved_on": "2026-09-24",
+    "approval_scope": "prepared_review_as_a_whole"
+  },
+  "per_question_human_choice_review": {
+    "D01.unit": "user_approved",
+    "D01.membership": "user_approved",
+    "D01-O.omitted_unit": "user_approved",
+    "D02.unit": "user_approved",
+    "D02.membership": "user_approved",
+    "D03.treatment_level": "user_approved",
+    "D03.run_boundary": "user_approved",
+    "D03.specimen_assignment": "user_approved",
+    "C01-T.unit": "user_approved",
+    "C01-A.unit": "user_approved",
+    "H01-L.unit": "user_approved",
+    "H01-T.unit": "user_approved",
+    "H01-T.membership": "user_approved",
+    "C02.unit": "user_approved",
+    "C02.identifier": "user_approved"
+  },
+  "snapshot_sha256_verified": true,
+  "revision": "s2-choice-review-v1-r2",
+  "user_choice_review": "approved",
+  "d01_o_original_option_ids_retained": true,
+  "d01_o_mixing_unit_still_omitted": true,
+  "per_question_user_choice_review": {
+    "D01.unit": "accepted_with_revisions",
+    "D01.membership": "accepted_with_revisions",
+    "D01-O.omitted_unit": "accepted_with_revisions",
+    "D02.unit": "accepted_with_revisions",
+    "D02.membership": "accepted_with_revisions",
+    "D03.treatment_level": "accepted_with_revisions",
+    "D03.run_boundary": "accepted_with_revisions",
+    "D03.specimen_assignment": "accepted_with_revisions",
+    "C01-T.unit": "accepted_with_revisions",
+    "C01-A.unit": "accepted_with_revisions",
+    "H01-L.unit": "accepted_with_revisions",
+    "H01-T.unit": "accepted_with_revisions",
+    "H01-T.membership": "accepted_with_revisions",
+    "C02.unit": "accepted_with_revisions",
+    "C02.identifier": "accepted_with_revisions"
+  },
+  "option_id_changes": {
+    "D01.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D01.membership": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D01-O.omitted_unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D02.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D02.membership": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D03.treatment_level": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "D03.run_boundary": {
+      "added": [
+        "partial_identification"
+      ],
+      "removed": []
+    },
+    "D03.specimen_assignment": {
+      "added": [],
+      "removed": []
+    },
+    "C01-T.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "C01-A.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "H01-L.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "H01-T.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "H01-T.membership": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "C02.unit": {
+      "added": [
+        "conflicting"
+      ],
+      "removed": []
+    },
+    "C02.identifier": {
+      "added": [
+        "scar_character",
+        "conflicting"
+      ],
+      "removed": []
+    }
+  },
+  "previous_validation": {
+    "performed_at": "2026-09-20T21:09:57-04:00",
+    "method": "Offline Python standard-library file checks; no runner execution or model calls.",
+    "passed_checks": [
+      "JSON parsing with duplicate-key rejection; unique question IDs",
+      "12 items, 6 groups, 5 sources, 15 question definitions",
+      "Bidirectional case/question links and matching evaluation IDs",
+      "Exact Markdown/JSON instructions, option IDs/descriptions, applicability, reference options and rationales",
+      "All expected options exist; all question statuses remain pending in Markdown and JSON",
+      "Evidence, scope, target, and original claims preserved",
+      "Case outcomes match existing evaluation references; omission branch preserved",
+      "D01 scope, D03 separate questions, and corrected C02 six-row/operator scope preserved",
+      "No answer-key fields in question inputs; no CJK text in draft artifacts",
+      "Local review-document links exist",
+      "Recorded protected-file and draft hashes match current files",
+      "Initial snapshot copies match their sources byte for byte",
+      "Existing call matrix has zero model calls; inactive draft flags preserved"
+    ],
+    "not_performed": [
+      "New source audit",
+      "Human Choice approval",
+      "Active runner execution",
+      "Model API calls or training"
+    ]
+  },
+  "latest_validation": {
+    "status": "passed",
+    "performed_at": "2026-09-20T21:22:43-04:00",
+    "command": "python3 development/s2-nonbio-v1/choice-review-v1/verify_review.py --update-checks",
+    "method": "Offline static artifact checks; no runner execution, source download, or model API call.",
+    "passed_checks": [
+      "JSON parsing rejects duplicate keys; 15 unique definitions cover 12 items, 6 groups and 5 sources",
+      "Exact document/JSON instructions, option IDs and descriptions, applicability, references and rationales",
+      "Bidirectional case/question links; unchanged supplied evidence, targets and scopes",
+      "All 15 per-question delegated-review decisions match the log; no human confirmation inferred",
+      "All reference option IDs and case outcomes unchanged; added option IDs accounted for",
+      "D01 scope, three D03 questions, omission fixture and corrected C02 six-row scope retained",
+      "Input fields exclude answer-key annotations; reviewed artifact text is English",
+      "Local review-document links exist; snapshot file hashes match the original manifest",
+      "Protected active inputs, references, code, budget, call matrix and frozen contribution hashes unchanged",
+      "Inherited source-review content unchanged beyond its Choice navigation paragraph",
+      "Existing call matrix records zero calls and draft flags remain inactive",
+      "Artifact SHA-256 hashes updated and verified"
+    ],
+    "not_performed": [
+      "Independent human annotation",
+      "New source audit",
+      "Active runner execution",
+      "Model API calls or training"
+    ]
+  }
+}

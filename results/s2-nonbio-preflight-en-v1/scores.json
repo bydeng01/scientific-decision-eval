@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "split": "reviewed_development",
+    "scientific_items": 11,
+    "engineering_items": 1,
+    "text_rules": {
+      "relation_exact": {
+        "correct": 11,
+        "denominator": 11
+      },
+      "count_correct": {
+        "correct": 11,
+        "denominator": 11
+      },
+      "label_correct": {
+        "correct": 11,
+        "denominator": 11
+      },
+      "action_correct": {
+        "correct": 11,
+        "denominator": 11
+      }
+    },
+    "human_oracle": {
+      "oracle_count_correct": {
+        "correct": 11,
+        "denominator": 11
+      },
+      "oracle_label_correct": {
+        "correct": 11,
+        "denominator": 11
+      }
+    },
+    "confusion_matrix": [
+      {
+        "reference": "supported",
+        "prediction": "supported",
+        "n": 5
+      },
+      {
+        "reference": "supported",
+        "prediction": "inconsistent",
+        "n": 0
+      },
+      {
+        "reference": "supported",
+        "prediction": "insufficient",
+        "n": 0
+      },
+      {
+        "reference": "supported",
+        "prediction": null,
+        "n": 0
+      },
+      {
+        "reference": "inconsistent",
+        "prediction": "supported",
+        "n": 0
+      },
+      {
+        "reference": "inconsistent",
+        "prediction": "inconsistent",
+        "n": 5
+      },
+      {
+        "reference": "inconsistent",
+        "prediction": "insufficient",
+        "n": 0
+      },
+      {
+        "reference": "inconsistent",
+        "prediction": null,
+        "n": 0
+      },
+      {
+        "reference": "insufficient",
+        "prediction": "supported",
+        "n": 0
+      },
+      {
+        "reference": "insufficient",
+        "prediction": "inconsistent",
+        "n": 0
+      },
+      {
+        "reference": "insufficient",
+        "prediction": "insufficient",
+        "n": 1
+      },
+      {
+        "reference": "insufficient",
+        "prediction": null,
+        "n": 0
+      }
+    ],
+    "incorrect_count_claim_missed": 0,
+    "incorrect_count_claim_false_alarm": 0,
+    "model_quality": null,
+    "model_quality_status": "not_measured",
+    "post_record_request_quality": null,
+    "post_record_request_quality_status": "not_measured",
+    "groups": 6,
+    "sources": 5,
+    "language": "en",
+    "input_revision": "s2-nonbio-en-v1",
+    "source_groups": {
+      "U": [
+        "D01",
+        "D03"
+      ],
+      "A": [
+        "D02"
+      ],
+      "N": [
+        "C01"
+      ],
+      "H": [
+        "H01"
+      ],
+      "J": [
+        "C02"
+      ]
+    }
+  },
+  "per_case": [
+    {
+      "case_id": "D01",
+      "group_id": "D01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true
+    },
+    {
+      "case_id": "D01-S",
+      "group_id": "D01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "supported",
+      "predicted_label": "supported",
+      "parsed": true
+    },
+    {
+      "case_id": "D01-O",
+      "group_id": "D01",
+      "scientific": false,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true,
+      "engineering_correct": true,
+      "oracle_engineering_correct": true
+    },
+    {
+      "case_id": "D02",
+      "group_id": "D02",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true
+    },
+    {
+      "case_id": "D02-S",
+      "group_id": "D02",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "supported",
+      "predicted_label": "supported",
+      "parsed": true
+    },
+    {
+      "case_id": "D03",
+      "group_id": "D03",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "insufficient",
+      "predicted_label": "insufficient",
+      "parsed": true,
+      "atom_scores": {
+        "treatment_level": true,
+        "run_boundary": true,
+        "specimen_assignment": true
+      }
+    },
+    {
+      "case_id": "C01-T",
+      "group_id": "C01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true
+    },
+    {
+      "case_id": "C01-A",
+      "group_id": "C01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "supported",
+      "predicted_label": "supported",
+      "parsed": true
+    },
+    {
+      "case_id": "H01-L",
+      "group_id": "H01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "supported",
+      "predicted_label": "supported",
+      "parsed": true
+    },
+    {
+      "case_id": "H01-T",
+      "group_id": "H01",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true
+    },
+    {
+      "case_id": "C02",
+      "group_id": "C02",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "inconsistent",
+      "predicted_label": "inconsistent",
+      "parsed": true
+    },
+    {
+      "case_id": "C02-S",
+      "group_id": "C02",
+      "scientific": true,
+      "relation_exact": true,
+      "count_correct": true,
+      "label_correct": true,
+      "action_correct": true,
+      "oracle_count_correct": true,
+      "oracle_label_correct": true,
+      "reference_label": "supported",
+      "predicted_label": "supported",
+      "parsed": true
+    }
+  ]
+}

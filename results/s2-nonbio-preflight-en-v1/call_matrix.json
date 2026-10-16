@@ -1,0 +1,243 @@
+{
+  "language": "en",
+  "input_revision": "s2-nonbio-en-v1",
+  "status": "no_model_branch",
+  "rows": [
+    {
+      "case_id": "D01",
+      "group_id": "D01",
+      "variant": "D01",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "D01-S",
+      "group_id": "D01",
+      "variant": "D01-S",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "D01-O",
+      "group_id": "D01",
+      "variant": "D01-O",
+      "route": "rule_plus_engineering_simulation",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "D02",
+      "group_id": "D02",
+      "variant": "D02",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "D02-S",
+      "group_id": "D02",
+      "variant": "D02-S",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "D03",
+      "group_id": "D03",
+      "variant": "D03",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "treatment_level",
+        "run_boundary",
+        "specimen_assignment"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "C01-T",
+      "group_id": "C01",
+      "variant": "C01-T",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "C01-A",
+      "group_id": "C01",
+      "variant": "C01-A",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "H01-L",
+      "group_id": "H01",
+      "variant": "H01-L",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "H01-T",
+      "group_id": "H01",
+      "variant": "H01-T",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "C02",
+      "group_id": "C02",
+      "variant": "C02",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    },
+    {
+      "case_id": "C02-S",
+      "group_id": "C02",
+      "variant": "C02-S",
+      "route": "rule",
+      "resolved_atomic_fields": [
+        "unit_and_membership"
+      ],
+      "remaining_atomic_questions": [],
+      "unresolved_input_review": null,
+      "model": null,
+      "interface": null,
+      "model_repeats": 0,
+      "base_calls": 0,
+      "retry_limit": 0,
+      "fallback_limit": 0,
+      "max_attempts_including_failures": 0,
+      "worst_cost_usd": "0.000000000"
+    }
+  ],
+  "total_max_attempts_including_failures": 0,
+  "worst_batch_cost_usd": "0.000000000",
+  "failure_retry_reserve_usd": "0.000000000",
+  "initial_remaining_after_worst_case_usd": "0.331958884",
+  "total_remaining_after_worst_case_usd": "9.331958884",
+  "within_budget": true
+}

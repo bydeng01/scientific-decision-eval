@@ -1,0 +1,425 @@
+
+=== PDF PAGE 1 ===
+1
+Vol.:(0123456789)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports
+Copper nanoparticles on controlled 
+pore glass (CPG) as highly efficient 
+heterogeneous catalysts for “click 
+reactions”
+Abdolrahim A. Rafi, Ismail Ibrahem* & Armando Córdova*
+We herein report that supported copper nanoparticles (CuNPs) on commercially available controlled 
+pore glass (CPG), which exhibit high mechanical, thermal and chemical stability as compared to other 
+silica-based materials, serve as a useful heterogeneous catalyst system for 1,3-dipolar cycloadditions 
+(“click” reactions) between terminal alkynes and organic azides under green chemistry conditions. The 
+supported CuNPs-CPG catalyst exhibited a broad substrate scope and gave the corresponding triazole 
+products in high yields. The CuNPs-CPG catalyst exhibit recyclability and could be reuced multiple 
+times without contaminating the products with Cu.
+The click chemistry concept invented by Sharpless and co-workers, represent one of the most highly efficient and 
+powerful tools in synthetic organic  chemistry
+1. It has been proven to be highly efficient, reliable, wide in scope, 
+high yielding, stereospecific and can proceed under green chemistry conditions. In this context, the copper-(I)
+salt-catalyzed Huisgen 1,3-dipolar cycloaddition reaction between organic azides and alkynes is a stand out 
+reaction in click chemistry. It works under mild conditions, tolerates several functionalities, recation conditions 
+and have been used for a large varaiety of  applications
+2–6. For example, the Cu(I)-catalyzed alkyne-azide click 
+chemistry (CuAAC) reaction have produced 1,2,3-triazole derivatives are employed as antibacterial agents, 
+inhibitors, visualization and labeling of cells as well as several other medicinal chemistry  applications
+7–12. It is also 
+an important transformation for functionalization of gel-like 13 and solid  polysaccharides14, as well as different 
+ materials15,16. Copper nanoparticles (CuNPs) have proven to be more efficient catalysts for the CuAAC reaction 
+as compared to copper metal salts, reducing both the catalyst loading and the reaction  time17–22. In addition, 
+the presence of both CuI/CuII particles on the surface omits the use of ascorbate salts, which is neseccesery to 
+add as a reducing agent for converting the Cu(II) precatalyst to the catalytically active Cu(I) species as well as 
+avoiding aerobic oxidation of the Cu(I) back to a Cu(II)  species
+2,22. In addition, the choice of a heterogeneous 
+systems allows for avoidance of contaminating the products with Cu.
+Among the different supports that can be prepared with tunable morphology and specific surface func-
+tionalization, controlled pore glass (CPG), which belongs to the family of silica-based materials, remains a 
+relatively underdeveloped support within the nanocatalysis  field
+23–27. It has several advantages over supports, 
+which have been used for immobilization of metal nanoparticles: cost-effective synthesis, being commercial 
+available with different types of surface functionalities, efficient mass-transfer, high surface area, tunable mor -
+phology, producibility in many different shapes , high mechanical, thermal and chemical stability. They are also 
+used in industry for large scale applications. The resulting catalysts are more stable can also exhibit different 
+selectivity as compared to the same types of nanocatalysts supported on mesocellular  foam
+23,25,28–31, rice husk 
+derived  biosilicates32 and nanocellulose  foam33. Hence, there is a need for further developments of CPG as a 
+support within the nanocatalyst research area. In this context, we have previously assembled heterogeneous 
+palladium nanocatalysts (PdNP)23,25 and copper nanocatalysts (CuNP)24 on controlled pore glass (CPG), which 
+demonstrated notable levels of performance in catalysis. For example, in our previous work on the development 
+of a CuNP-CPG nanocatalyst we fabricated an efficient catalyst for the aerobic oxidation of alcohols to their cor-
+responding carbonyl  compounds
+24. In comparison to other supported CuNP nanocatalysts used for the CuAAC 
+reaction, the use of CPG as the support would allow for all of the above mentioned advantages (e.g. commercial 
+availability, , efficient mass-transfer, high surface area, tunable morphology, controlled pore size, producibility 
+in many different shapes , high mechanical, thermal and chemical stability) as well as being a robust material 
+OPEN
+Department of Natural Sciences, Engineering and Mathematics, Mid Sweden University, 851 70 Sundsvall, Sweden. 
+*email: ismail.ibrahem@miun.se; armando.cordova@miun.se
+
+=== PDF PAGE 2 ===
+2
+Vol:.(1234567890)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+approved for use in industrial synthesis and biochemistry applications. In fact, CPG is a preffered material in 
+the synthesis and purification of oligonucleotides, RNA and DNA.
+Based on our research interest in development of heterogeneous metal catalysts and the importance of the 
+CuAAC transformation, we began to assemble and investigate a CuNP-CPG nanocatalyst 1 as a heterogeneous 
+catalyst for the selective 1,3-dipolar cycloaddition between azides 2  and alkynes 3 for the synthesis of 1,4-tria-
+zoles 4 (Fig. 1).
+Herein we disclose that Cu-AmP-CPG serves as a higly efficient and recyclable heterogeneous catalyst for 
+the CuAAC (“click” chemistry) producing the corresponding 1,4-triazoles in high yields. The Cu-AmP-CPG-
+catalyzed click chemistry reactions proceed under environemtally friendly conditions and no Cu is leached 
+during the process.
+Results and discussion
+We began fabricating our heterogeneous catalyst by assembling copper nanoparticles on aminopropyl-(AmP)-
+functionalized CPG according to our previous procedures. The synthesized Cu-AmP-CPG (1 ) (5 mol%) was 
+next investigated as a heterogeneous catalyst for the 1,3-dipolar cycloaddition reaction between benzyl azide 2a 
+and propargyl alcohol 3a in a t-BuOH/H
+2O-1:1 mixture (Table 1, entry 1). After 1 h, the initial experiment gave 
+Si
+NH2
+Si
+NH2 CuI/II
+Si
+NH2
+Si
+NH2
+CuI/II
+Si
+NH2
+Si
+NH2
+CuI/II
+Si
+NH2
+Si
+NH2
+CuI/II
+R1
+N N
+N
+R2
+Cu(I/II)-CPG-AmP
+R1 N3
+2
+R2+
+3
+4
+ 1
+Figure 1.  Cu-AmP-CPG (1)-catalyzed 1,3-dipolar cycloaddition between azides 2 and propargyl alcohols 3.
+Table 1.  Initial examination and model reaction of catalytic 1,3-dipolar cycloaddition of benzyl azide 2a 
+and propargyl alcohol 3a.  a Reactions 
+performed using nanocatalyst 1, 2a (0.1 mmol) and 3 (0.15 mmol) in t-BuOH/H2O; 1:1 (0.5 mL). See SI for 
+details. b Conversion determined by  H1-NMR analysis using xylene as internal standard. c 2a (0.1 mmol) and 3a 
+(0.1 mmol) in t-BuOH/H2O; 1:1 (0.5 mL). d 2a (0.1 mmol) and 3a (0.1 mmol), neat reaction, no solvent.
+Entrya Cu-Amp-CPG 1 (%) Temp. (°C) Time (h) Conv. (%)b
+1 5 70 0.3  > 98
+2 2 70 0.5  > 98
+3 1 70 0.7  > 98
+4 1 r.t 2 15
+5 1 r.t 18  > 98
+6 1 50 2 73
+7 1 50 2.4  > 98
+8 – 70 3 –
+9c 1 70 0.8  > 98
+10c 0.5 70 3  > 98
+11c 0.25 70 4.7 98
+12d 0.25 70 3 98
+
+=== PDF PAGE 3 ===
+3
+Vol.:(0123456789)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+triazole 4a in > 98% conversion at 70 °C. Encouraged by this result, we continued to probe the recation condi -
+tions. The key results are summarized in Table 1.
+For example, it was also possible to run the cycloaddition with a significantly lower catalyst loading (1, 2 mol 
+%), which gave nearly full conversion within 1 h (entry 2, Table  1). Further reduction of the catalyst loading 
+increased the reaction time (entry 3 and 4, Table  1). Moreover, control experiments revealed that product 4a  
+was not formed in the absence of nanocatalyst 1 (entry 8, Table 1). To our delight, changing the ratio between 2 
+and 3a to 1:1 instead of 1:1.5 gave nearly full conversion to 4a using very low catalyst loadings (entries 10–12). 
+In this context, the reaction without solvent (neat condition) was also effective at a low catalyst loading of 1 
+(0.25 mol%) (entry 12, Table  1). The copper nanocatalyst 1, were recycled from the neat reaction by washing 
+with a fresh t-BuOH/H
+2O (1:1) mixture, which is a green solvent mixture. It is important that when the reaction 
+proceed to completion, the desired product 4a is simply isolated by filtration of 1, washing (t-BuOH/H2O (1:1)) 
+and final removal of the solvent. This avoids the use of silica-gel column chromatography techniques and toxic 
+organic solvents. With these results in hand, we selected t -BuOH/H
+2O (1:1) as the solvent mixture for prob -
+ing the reaction for different azides 2  and alkynes 3 over the neat reaction condition due to practical reasons 
+regarding the recycling of the nanocatalyst 1 (Table 2). As depicted in Table 2, a variety of substrates were used to 
+study the scope of the nanocatalyst 1-catalyzed “click” reaction between 2 and 3. The Cu-AmP-CPG 1-catalyzed 
+1,3-dipolar cycloaddition reactions were successful and afforded the corresponding triazoles (4a– 4k) in high 
+yields. Furthermore, we noticed that prolonged reaction times were required in some cases (entries 3 and 8).
+Recyclability is an important and crucial factor in developing a heterogeneous catalyst. Thus, we performed 
+recycling experiments of the Cu-AmP-CPG 1  catalyst (Figs.  2 and 3). We found that nanocatalyst 1  afforded 
+product 4a in excellent conversion over eight consecutive reaction cycles. However, when examining the kinet-
+ics of the first three cycles of the Cu-AmP-CPG 1 -catalyzed  cycloadditions34,35, we found that the recation was 
+completed much faster than the set time of 2 h and that the rate of reaction started to decrease after 2 cycles 
+(Fig. 3). Thus, we had been using more catalyst than needed to achieve full conversion in the allotted time of 
+Table 1. We were also able to recycle catalyst 1 when using differen substrates (Table 3).
+The leaching of Cu-AmP-CPG nanocatalyst 1  was also investigated. No leaching was observed. In fact, the 
+elemental analysis of the resulting recation mixture after removal of catalyst 1  had less amount of copper than 
+the reaction performed without catalyst 1  (Table 1, entry 8), which had a negligible amount of copper (i.e.  less 
+than 10 ppm). Thus, catalyst 1  does not leach. Elemental analysis of the product determined that no Cu was 
+present. In addition, a hot filtration experiment was performed where catalyst 1  was removed when formation 
+of 4a reached 10% by filtration. Next, the reaction mixtured was allowed to stir for 3 days without the presence 
+of catalyst 1. No formation of product 4a was observed.
+The Cu nanocatalyst was characterized by a number of analytic techniques, including transmission emis-
+sion microscopy (TEM), scanning electron microscopy (SEM), X-ray photoelectron spectroscopy (XPS) and 
+elemental analysis by inductively coupled plasma optical emission spectrometry (ICP-QES)24. The TEM analysis, 
+performed here revealed the Cu-Amp-CPG nanocatalyst (Fig. 4) displayed a well-dispersed and uniform pattern 
+of nanoparticles in the size range 1–20 nm, with an average particle size of 6.4 nm. The total amount of Cu of 
+AmP-CPG 1 was 3.3 wt% as determined by elemental analysis. The XPS analyses revealed that the manufactured 
+Cu-AmP-CPG nanocatalyst 1 had a Cu(II)/Cu(I) atomic ratio of 3.2:1. We also performed XPS analysis on the 
+recovered nanocatalyst 1 after completed reaction, which revealed only Cu(I) in the composition.
+Conclusions
+In summary, we have shown that Cu NPs can be successfully immobilized on controlled pore glass to form 
+Cu-AmP-CPG 1 and next used as a heterogeneous copper nanocatalyst for “click” chemistry without the use 
+of ascorbate as a reducing agent. With just a small nanocatalyst loading (0.25–1 mol%), 1 -catalyzed a range of 
+Huisgen 1,3-dipolar cycloadditions with high efficiency exhibiting a broad substrate scope to give the correspond-
+ing 1,4-triazole products in high yields. The Cu-AmP-CPG catalyst was simply recycled and multiple reaction 
+cycles. However, we found that the rate of reaction decreases after 2 cycles and this should be taken in account 
+when investigating silica based Cu NPG  catalysts
+20,21. The concept of immobilizing noble metals such as Cu on 
+recyclable CPG allows for future development of sustainable and green chemical approaches that should find 
+relevant and sutible future applications in additional chemical transfromations.
+Methods
+General procedure for the catalytic 1,3-dipolar cycloaddition between 2 and 3. A 6-mL micro-
+wave vial with a magnetic stir bar was charged with azide compound 2 (1.0 mmol, 1.0 equiv.) and Cu(I/II)-AmP-
+CPG (5.0 mg, 0.25 mol%). Next, alkyne 3 (1.0 mmol, 1.0 equiv.) and solvent (t-BuOH :  H
+2O, 1:1, 5 mL) were 
+added to the vial and the resulting mixture was allowed to stir at 70 °C. After 3 h of stirring, the solids were sepa-
+rated by centrifugation and the supernatant was removed. Next, additional solvent (t-BuOH :  H
+2O, 1:1, 5 mL) 
+was added and the solids were washed and separated by centrifugation again. After removal of the supernatant, 
+the combined solvents were evaporating under reduced pressure to afford the corresponding pure triazole 4.
+Procedure for recycling of the Cu-AmP -CPG nanocatalyst 1. A 6-mL microwave vial with a mag-
+netic stir bar was charged with azide compound 2a (0.25 mmol, 1.0 equiv.) and Cu(I/II)-AmP-CPG (10 mg, 
+5 mol%). Next, alkyne 3a (0.38 mmol, 1.5 equiv.) and solvent (t-BuOH:H
+2O, 1:1, 1.3 mL) were added to the vial 
+and the resulting mixture was allowed to stir at 70 °C. After 2 h of stirring, the solids were separated by centrifu-
+gation and the supernatant was removed. Next, additional solvent (t-BuOH :  H
+2O, 1:1, 5 mL) was added and 
+the solids were washed and separated by centrifugation again. After removal of the supernatant, the combined 
+solvents were evaporating under reduced pressure to afford the corresponding pure triazole 4a. The solid nano-
+
+=== PDF PAGE 4 ===
+4
+Vol:.(1234567890)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+Entry R R1
+Cat 
+(mol%) Prod Time (h) Yield [%]a
+1 Ph CH2OH 0.25 4.7 95
+2 Ph n-But 0.25 6 93
+3 Ph Ph 1 48 85
+4 Ph CH2CH(CO2Me)2 0.5 3 92
+5 Ph 0.5 7 95
+6 Ph 0.5 3 87
+7 Ph 0.25 5 92
+8 Ph 1 9 93
+9 n-C15H31 CH2OH 0.25
+4i
+N N
+N
+OH
+14 6 90 (81)b
+10 n-C15H31 n-C4H9 0.5 4j
+N N
+N
+14
+3
+7 81
+11 n-C15H31 0.25
+4k
+OAcOAcO
+OAc
+OAc
+N
+NN
+(  )
+14
+O 4 94
+Continued
+
+=== PDF PAGE 5 ===
+5
+Vol.:(0123456789)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+Table 2.  Scope of the 1,3-dipolar cycloaddition reaction catalyzed by Cu-AmP-CPG 1. 
+ Reactions performed using catalyst 1 
+(0.25 mol%), 2 (0.4 mmol) and 3 (0.4 mmol) in t-BuOH/H2O; 1:1 (2 mL) at 70 °C for the time shown. See SI 
+for details. a Isolated yield. b Neat condition (no solvent), 1 (1 mol%), 2 h.
+Entry R R1
+Cat 
+(mol%) Prod Time (h) Yield [%]a
+12 Ph O
+AcO
+OAc
+O
+OAcOAc
+0.5 O
+AcO
+OAc
+N
+NN
+O
+OAcOAc
+4l
+4 94
+13 Ph O
+HO
+OH
+O
+OH OH
+0.5 O
+HO
+OH
+N
+NN
+O
+OH OH
+4m
+14 N COOMe
+Boc
+CH2OH 0.5
+N COOMe
+N
+Boc
+N
+N
+HO
+4n 24 94
+Figure 2.  Recycling experiments of Cu-AmP-CPG 1-catalyzed 1,3-dipolar cycloaddition between benzyl azide 
+2a and propargyl alcohol 3a. Conversion to 4a.
+Figure 3.  Formation of 4a for cycles C1 to C3 for the Cu-AmP-CPG 1-catalyzed 1,3-dipolar cycloaddition 
+between benzyl azide 2a and propargyl alcohol 3a. C1 = cycle 1, C2 = cycle 2 and C3 = cycle 3.
+
+=== PDF PAGE 6 ===
+6
+Vol:.(1234567890)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+catalyst 1 that was separated from the reaction mixture by centrifugation was washed once with the reaction 
+solvent t-BuOH/H2O (1:1) and next re-utilized in the next experimental cycle as described above.
+Procedure for the synthesis of Cu-AmP-CPG (1). To a suspension of amine functionalized CPG (1.0 g, 
+1 equiv. amine content) in deionized water (25 mL, pH 9), was added a suspension of copper(II) trifluorometh-
+anesulfonate (Cu(OTf)2, 0.3 g, 2 equiv.) in deionized water (20 mL, pH 9) at room temperature. After stirring for 
+24 h, the prepared Cu(II)-AmP-CPG was transferred to a centrifuge vial (50 mL) and was washed with deion-
+ized  H
+2O (3 × 35 mL) and acetone (3 × 35 mL) by centrifugation. The washed Cu(II)-AmP-CPG was collected 
+by decantation and dried overnight under reduced pressure. Next, the dry Cu(II)-AmP-CPG was suspended in 
+deionized water (35 mL) and  NaBH
+4 (20 equiv.) in deionized water (15 mL) was added slowly at room tempera-
+ture. After stirring for 45 min, the resulting Cu(I/II)-AmP-CPG nanocatalyst was transferred to a centrifuge 
+vial (50 mL) and was washed with deionized  H
+2O (3 × 35 mL) and acetone (3 × 35 mL) by centrifugation and 
+subsequent removal of the supernatant. The washed Cu(I/II)-AmP-CPG was finally dried for 48 h under reduced 
+pressure.
+Table 3.  Recycling with different alkynes.  
+Reactions performed using catalyst 1 (5 mol%), 2 (0.1 mmol) and 3 (0.15 mmol) in t-BuOH/H2O; 1:1 (0.5 mL) 
+at 70 °C.
+Cycle R1 Product Time (min) Conv. (%)
+1 CH2OH 15  > 99
+2 n-C4H9 40  > 99
+3 O-p-MeO-C6H4 40  > 99
+Figure 4.  Transmission electron micrographs (TEM) of the mixed valence Cu-AmP-CPG nanocatalyst 1.
+
+=== PDF PAGE 7 ===
+7
+Vol.:(0123456789)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+Received: 15 May 2020; Accepted: 13 November 2020
+References
+ 1. Rostovtsev, V . V ., Green, L. G., Fokin, V . V . & Shaprless, K. B. A stepwise Huisgen cycloaddition process: copper(I)-catalyzed 
+regioselective “Ligation” of azides and terminal alkynes. Angew. Chem. Int. Ed. 41, 2596–2599 (2002).
+ 2. Himo, F . et al. Copper(I)-catalyzed synthesis of azoles. DFT study predicts unprecedented reactivity and intermediates. Am. Chem. 
+Soc. 127, 210–216 (2005).
+ 3. Lee, L. V . et al. A potent and highly selective inhibitor of human a-1,3-Fucosyltransferase via click chemistry. J. Am. Chem. Soc.  
+125, 9588–9589 (2003).
+ 4. Manetsch, R. et al. In situ click chemistry: enzyme inhibitors made to their own specifications. J. Am. Chem. Soc. 126, 12809–12818 
+(2004).
+ 5. Tornøe, C. W . & Meldal, M. American Peptide Society and Kluwer 263–264 (Academic Publications, San Diego, 2001).
+ 6. Tornøe, C. W ., Christensen, C. & Meldal, M. Peptidotriazoles on solid phase: [1,2,3]-Triazoles by regiospecific copper(I)-catalyzed 
+1,3-dipolar cycloadditions of terminal alkynes to azides. J. Org. Chem.  67, 3057–3064 (2002).
+ 7. Smit, F . J. et al. Synthesis and antimycobacterial activiy of disubstituted benzyltriazoles. Med. Chem. Res. 28, 2279–2293 (2019).
+ 8. Labadie, G. R., De la Iglesia, A. & Morbidoni, H. R. Targeting tuberculosis through a smaii focused library of 1,2,3-triazoles. Mol 
+Divers 15, 1017–1024 (2011).
+ 9. Doiron, J. et al. Synthesis and structure-activity relationship of 1-and 2-substituted-1,2,3-triazole letrozole-based analogues as 
+aromatase inhibitors. Eur. J. Med. Chem. 46, 4010–4024 (2011).
+ 10. Kolb, H. C. & Sharbless, K. B. The growing impact of click chemistry on drug discovery. Drug Disc. Today 8, 1128–1137 (2003).
+ 11. Tron, G. C. et al. Click chemistry reactions in medicinal chemistry: applications of the 1,3-dipolar cycloaddition between azides 
+and alkynes. Med. Res. Rev. 28, 278–308 (2008).
+ 12. Moorhouse, A. D. & Moses, J. E. Click chemistry and medicinal chemistry: a case of “cyclo-addiction” . ChemMedChem 3, 715–723 
+(2008).
+ 13. Punna, S., Kaltgrad, E. & Finn, M. G. ”Clickable” agarose for affinity chromatography. Biocojugate Chem. 16, 1536–1541 (2005).
+ 14. Hafren, J., Zou, W . & Córdova, A. Heterogeneous ” organoclick” derivatization of polysaccharides. Macromol. Rapid. Commun. 27, 
+1362–1366 (2006).
+ 15. Nandiva, H., Jiang, X. & Lahann, J. Click Chemistry: versatility and control in the hands of materials scientists. Adv. Mater.  19, 
+2197–2208 (2007).
+ 16. Lutz, J.-F . 1,3-Dipolar cycloadditions of azides and alkynes: a universal ligation tool in polymer and materials science. Angew. 
+Chem. Int. Ed. 46, 1018–1025 (2007).
+ 17. Kidwai, M., Mishra, N. K., Bansal, V ., Kumar, A. & Mozumdar, S. Novel one-pot Cu-nanoparticles-catalyzed Mannich reaction. 
+Tetrahedron Lett. 50, 1355–1358 (2009).
+ 18. Phithak, D., Sremethean, S., Arjsalee, J. & Saejueng, P . Nanocopper-catalyzed cross-coupling reaction for the synthesis of diaryleth-
+ers. APCBEE Procedia 3, 161–166 (2012).
+ 19. Park, I. S., Kwon, M. S., Kim, Y ., Lee, J. S. & Park, J. Heterogeneous copper catalyst for the cycloaddition of azides and alkynes 
+without additives under ambient conditions. Org. Lett. 10, 497–500 (2008).
+ 20. Gwande, M. B. et al. Cu and Cu-based nanoparticles: synthesis and applications in catalysis. Chem. Rev. 116, 3722–3811 (2016).
+ 21. Alonso, F ., Moglie, Y . & Radivoy, G. Copper nanoparticles in click chemistry. Acc. Chem. Res. 48, 2516–2528 (2015).
+ 22. Sanchez-Sanchez, A., Pérez-Baena, I. & Pomposo, J. A. Advances in click chemistry for single-chain nanoparticle construction. 
+Molecules 18, 3339–3355 (2013).
+ 23. Deiana, L. et al. Efficient and highly enantioselective aerobic oxidation-michael-carbocyclization cascade transformations by 
+integrated Pd(0)-CPG nanoparticle/chirale amine relay catalysis. Synthesis 46, 1303–1310 (2014).
+ 24. Ibrahem, I. et al. Copper nanoparticles on controlled pore glass and TEMPO for the aerobic oxidation of alcohols. Chem. Nano. 
+Mat. 4, 71–75 (2018).
+ 25. Palo-Nieto, C. et al. Integrated heterogeneous metal/enzymatic multiple relay catalysis for eco-friendly and asymmetric synthesis. 
+ACS Catal. 6, 3932–3940 (2016).
+ 26. Shen, C., Wang, Y . J., Xu, J. H., Wang, K. & Luo, G. S. Size control and catalytic activity of highly dispersed Pd nanoparticles sup-
+ported on porous glass beads. Langmuir 28, 7519–7527 (2012).
+ 27. Li, J., Mau, A.W .-H. & Strauss, C. R. The use of palladium on porous glass for catalytic coupling reactions. Chem. Commun.  14, 
+1275–1276 (1997).
+ 28. Shakeri, M., Tai, C.-W ., Göthelid, E., Oscarsson, S. & Bäckvall, J.-E. Small Pd nanoparticles in large pores of mesocellular foam: 
+an excellent catalyst for racemization of amines. Chem. Eur. J. 17, 13269–13273 (2011).
+ 29. Deiana, L. et al. Highly enantioselective cascade transformations by merging heterogeneous transition metal catalysis with asym-
+metric aminocatalysis. Sci. Rep 2, 851 (2012).
+ 30. Afewerki, S., Palo-Nieto, C. & Córdova, A. Efficient heterogeneous palladium-catalyzed transfer hydrogenolysis of benzylic alcohols 
+by formic acid. Synthesis 52, 2330–23336 (2020).
+ 31. Deiana, L. et al. Combined heterogeneous metal/chiral amine: multiple relay catalysis for versatile eco-friendly synthesis. Angew. 
+Chem. Int. Ed. Engl. 53, 3447–34451 (2014).
+ 32. Afewerki, S., Franco, A., Balu, A. M., Luque, R. & Córdova, A. Sustainable and recyclable heterogenous palladium catalysts from 
+rice husk-derived biosilicates for Suzuki-Miyaura cross-couplings, aerobic oxidations and stereoselective cascade carbocyclizations. 
+Sci. Rep. 10, 6407 (2020).
+ 33. Li, M.-B. et al. Silver-triggered activity of a heterogeneous palladium catalyst in oxidative carbonyl reactions. Angew. Chem. Int. 
+Ed. 59, 1039 (2020).
+ 34. Scott, S. L. A metter of life(time) and death. ACS Catal. 8, 8597–8599 (2018).
+Acknowledgements
+Financial support by Mid Sweden University and the European Union is acknowledget.
+Author contributions
+A.C. and I.I. designed and planed the research, A.A.R. and I.I. performed the experiments. A.C. and I.I. wrote 
+the paper. All the authors analyzed the data.
+Funding
+Open Access funding provided by Mid Sweden University. 
+
+=== PDF PAGE 8 ===
+8
+Vol:.(1234567890)Scientific Reports |        (2020) 10:20547  | https://doi.org/10.1038/s41598-020-77629-3
+www.nature.com/scientificreports/
+Competing interests 
+The authors declare no competing interests.
+Additional information
+Supplementary information  is available for this paper at https ://doi.org/10.1038/s4159 8-020-77629 -3.
+Correspondence and requests for materials should be addressed to I.I. or A.C.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and 
+institutional affiliations.
+Open Access  This article is licensed under a Creative Commons Attribution 4.0 International 
+License, which permits use, sharing, adaptation, distribution and reproduction in any medium or 
+format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the 
+Creative Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the 
+material. If material is not included in the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from 
+the copyright holder. To view a copy of this licence, visit http://creat iveco mmons .org/licen ses/by/4.0/.
+© The Author(s) 2020

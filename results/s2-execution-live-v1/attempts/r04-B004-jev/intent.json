@@ -1,0 +1,69 @@
+{
+  "started_at": "2026-09-21T06:33:44.803073+00:00",
+  "request_sha256": "60588e8a62ec0cdf88a6ecc0fd66f157adbbabb12feb3803b73714c00dfc1180",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": {
+      "target_treatment": "Tyr-targeted CRISPR/Cas9 zygote treatment versus replication of a defined, heritable mutant genotype.",
+      "scope": "The hybrid (B6CBAF1/J x FVB/NJ) founder cohort: albino mouse #30 illustrates within-founder allele diversity; the germline question concerns the hybrid pigmentation mosaics. The C57BL/6N test crosses are retained as a contrasting cohort, not transferred to the hybrids.",
+      "evidence": [
+        {
+          "source_id": "BIO-TYR-2014",
+          "location": "Methods: RNA injections into mouse zygotes; Tyr mutation analysis. Results: Characterization of CRISPR/Cas9-induced Tyr mutations",
+          "kind": "source_faithful_adaptation",
+          "text": "Tyr4a, Tyr4b, and Cas9 RNAs were introduced into zygotes. Tail-DNA analysis identified multiple mutant alleles in completely albino hybrid founder #30. The authors attribute the within-founder diversity to mosaicism, potentially arising from editing that persisted into cleavage stages. Deep sequencing reported 57 mutant alleles meeting its read-frequency threshold across 23 hybrid founders; these are not 57 injected animals."
+        },
+        {
+          "source_id": "BIO-TYR-2014",
+          "location": "Results: Germ line transmission of targeted Tyr alleles. Discussion: paragraph beginning Complete albinism and pigmentation mosaicism",
+          "kind": "source_faithful_adaptation",
+          "text": "C57BL/6N mosaics produced albino progeny in crosses with albino mates. The hybrid pigmentation mosaics were not tested this way: they already carried the FVB/NJ albino allele, which could produce albino offspring without demonstrating transmission of a newly induced allele. Somatic evidence and the C57BL/6N crosses do not establish new-allele transmission for those untested hybrids."
+        }
+      ],
+      "records": {
+        "deep_sequenced_hybrid_founders": 23,
+        "reported_mutant_alleles_at_threshold": 57,
+        "minimum_reported_read_fraction": 0.05,
+        "illustrative_albino_founder_id": "30",
+        "reported_alleles_in_founder_30": 5,
+        "record_origin": "Source Results and Methods, as archived in NCBI BioC XML; published aggregate counts, not a new sequence reanalysis or unique-origin count. The value 5 for founder #30 is the author-manuscript prose report; publisher Figure 3C lists six allele entries. The exact total remains unresolved."
+      }
+    },
+    "questions": {
+      "q1": {
+        "type": "choice",
+        "instructions": "What does the reported tail-DNA evidence establish about genotype uniformity in albino hybrid founder #30? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+        "criteria": {
+          "uniform_one_allele_pair": "All sampled cells can be represented by one common pair of Tyr alleles; albinism establishes a uniform mutant genotype.",
+          "within_founder_mosaicism": "Different mutant alleles occur within the same founder, so complete albinism does not establish one uniform mutant genotype.",
+          "one_founder_per_allele": "Each reported allele comes from a different injected animal; the animal identifier combines those founders.",
+          "no_edit_detected": "The tail-DNA evidence establishes only the unmodified reference sequence.",
+          "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+          "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+          "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+        }
+      },
+      "q2": {
+        "type": "choice",
+        "instructions": "Why would albino offspring from an albino-mate cross not, by phenotype alone, identify transmission of a newly induced allele in the hybrid pigmentation mosaics? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+        "criteria": {
+          "preexisting_albino_allele": "The hybrid founders already carry an inherited albino allele, so the same offspring phenotype need not identify a newly induced allele.",
+          "unique_new_allele_marker": "Albinism uniquely marks the newly induced allele because the hybrid parents carry no prior albino allele.",
+          "no_germline_possible": "The hybrid founders are established to lack germ cells, making transmission biologically impossible.",
+          "all_hybrid_alleles_verified": "Allele-specific progeny sequencing already establishes transmission of every newly induced hybrid-founder allele.",
+          "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+          "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+          "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+        }
+      }
+    },
+    "provider": {
+      "allow_fallbacks": false
+    }
+  },
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "job_id": "r04-B004-jev",
+  "attempt": 1,
+  "repeat": 3,
+  "simulated": false
+}

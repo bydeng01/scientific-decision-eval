@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-09-21T06:33:19.782150+00:00",
+  "request_sha256": "16da9439620333ec9c902e4e47b6867c78b477485d495c8b9e00719a0507e599",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": {
+      "target_treatment": "DC-voltage calibration of the same Fluke 5700A multifunction calibrator at a common setting s, with the shared INRIM 10 V reference-standard contribution.",
+      "scope": "Sections III-V's INRIM-Lab / Cal-Lab interlaboratory comparison. Restrict the dependence judgment to the DC-voltage traceability term in Equation 5; do not generalize it to all uncertainty components or electrical quantities.",
+      "evidence": [
+        {
+          "source_id": "MET-2016",
+          "location": "Sections III.A-IV, PDF pp. 2-3; Figure 3",
+          "kind": "source_faithful_adaptation",
+          "text": "The comparison uses verification without adjustment. The Cal-Lab traceability chain shares standards calibrated at INRIM with the INRIM-Lab chain, creating partial correlation. For DC voltage, Equation 5 identifies the INRIM calibration uncertainty of the 10 V standard in both chains."
+        },
+        {
+          "source_id": "MET-2016",
+          "location": "Section V, PDF p. 3, Equations 1-5; Conclusions, PDF p. 6",
+          "kind": "source_faithful_adaptation",
+          "text": "Cal-Lab measures before and after INRIM-Lab. Its two values at the same setting s are averaged to reduce possible calibrator drift in the comparison. The difference uncertainty includes a covariance term: u(d)^2 = u(E_L)^2 + u(E_I)^2 - 2 r u(E_L)u(E_I). Equation 5 gives r = u_B(std_DCV)^2/[u(E_I)u(E_L)]. The authors report high instrument stability."
+        }
+      ],
+      "records": {}
+    },
+    "questions": {
+      "q1": {
+        "type": "choice",
+        "instructions": "What relationship does the source establish between the laboratories' DC-voltage results with respect to the reference-calibration contribution in Equation 5? Select exactly one option. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "independent_reference": "The laboratories use independent realizations of this reference-calibration contribution.",
+          "shared_reference": "The laboratories share a reference-calibration contribution that induces covariance between their results.",
+          "identical_measurement": "The laboratory labels refer to the same measurement result copied into both records.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      },
+      "q2": {
+        "type": "choice",
+        "instructions": "What role do the Cal-Lab measurements before and after the INRIM visit play in this comparison? Select exactly one option. Use other only when the evidence establishes an answer outside the substantive alternatives. Use not_stated when missing, incomplete, or ambiguous supplied evidence prevents this judgment without unresolved incompatible statements. Use conflicting only for unresolved incompatible evidence about this same judgment and scope.",
+        "criteria": {
+          "bracketing_average": "They are repeated Cal-Lab measurements that bracket the INRIM visit and are averaged for the comparison.",
+          "two_laboratories": "They represent two additional laboratories providing separate interlaboratory results.",
+          "adjustment_contrast": "They are a before-and-after contrast of an intentional calibrator adjustment performed for this comparison.",
+          "other": "The evidence establishes a different substantive answer from those listed.",
+          "not_stated": "The supplied evidence does not establish the requested judgment.",
+          "conflicting": "The supplied evidence contains unresolved incompatible accounts of this judgment and scope."
+        }
+      }
+    },
+    "provider": {
+      "allow_fallbacks": false
+    }
+  },
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "job_id": "r04-E009-jev",
+  "attempt": 1,
+  "repeat": 3,
+  "simulated": false
+}

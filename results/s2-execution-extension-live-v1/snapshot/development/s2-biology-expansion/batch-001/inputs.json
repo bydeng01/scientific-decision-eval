@@ -1,0 +1,434 @@
+{
+  "schema_version": "s2-biology-expansion-v1",
+  "batch_id": "biology-batch-001",
+  "problems": [
+    {
+      "problem_id": "B001",
+      "title": "Prenatal dosing and the generations reached by one exposure window",
+      "source_ids": [
+        "BIO-EXP-2012"
+      ],
+      "target_treatment": "The original gestational dioxin (TCDD) injection regimen, distinguished from descendant lineage membership.",
+      "scope": "The Dioxin row in Supplemental Tables S1B and S1C, generations F1-F3, and the original F0 gestational exposure. Other chemicals, toxicity outcomes, effect sizes, and mechanisms of inheritance are outside this claim.",
+      "evidence": [
+        {
+          "source_id": "BIO-EXP-2012",
+          "location": "Main PDF p. 2, Results; p. 9, treatment and breeding methods",
+          "kind": "source_faithful_adaptation",
+          "text": "Only pregnant F0 rats received the experimental injections, during embryonic days 8-14. F1 animals were bred within exposure lineage to produce F2, and F2 produced F3; sibling and cousin crosses were avoided. The paper distinguishes the injected F0 mother, the directly exposed F1 embryo, and the germ cells inside that embryo that will generate F2. F3 lies beyond this original direct-exposure window under the paper's generational definition."
+        },
+        {
+          "source_id": "BIO-EXP-2012",
+          "location": "Supplemental Table S1B, PDF p. 1; Table S1C, PDF p. 2; Dioxin row",
+          "kind": "source_faithful_adaptation",
+          "text": "The Dioxin lineage has 4, 14, and 14 weaned litters in F1, F2, and F3. Female/male pup counts are 15/20, 68/78, and 84/78, respectively. These are descendant census records, not a register of newly injected animals or individual pedigrees."
+        }
+      ],
+      "scientific_claim": "The 162 F3 Dioxin-lineage pups are 162 newly injected TCDD treatment units, and F2 is the first descendant generation beyond the original direct-exposure window.",
+      "claim_origin": "benchmark_constructed_not_a_source_author_claim",
+      "declared_counts": {
+        "newly_injected_F3_animals": 162,
+        "first_generation_beyond_original_window": 2
+      },
+      "records": {
+        "census": [
+          {
+            "lineage": "Dioxin",
+            "generation": 1,
+            "weaned_litters": 4,
+            "female_pups": 15,
+            "male_pups": 20
+          },
+          {
+            "lineage": "Dioxin",
+            "generation": 2,
+            "weaned_litters": 14,
+            "female_pups": 68,
+            "male_pups": 78
+          },
+          {
+            "lineage": "Dioxin",
+            "generation": 3,
+            "weaned_litters": 14,
+            "female_pups": 84,
+            "male_pups": 78
+          }
+        ],
+        "record_origin": "Selected Dioxin rows transcribed from rendered Supplemental Tables S1B/S1C; generation numbers encode the source F labels."
+      },
+      "questions": [
+        {
+          "question_id": "B001-Q01",
+          "instruction": "To which animals was the original experimental injection regimen administered? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "f0_pregnant_dams": "The pregnant F0 females received the regimen; descendants were not separately injected with that experimental regimen.",
+            "each_generation": "Animals in every generation from F0 through F3 separately received the regimen.",
+            "f3_animals": "The F3 animals received the regimen; the F0 females did not.",
+            "isolated_germ_cells": "Isolated germ cells received the regimen outside the animals; pregnant females were not injected.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        },
+        {
+          "question_id": "B001-Q02",
+          "instruction": "Which biological compartments does the source place within the original F0 gestational direct-exposure window? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "maternal_soma_only": "Only the F0 mother is within that window; neither the F1 embryo nor its developing germ cells is included.",
+            "mother_and_fetal_soma_only": "The F0 mother and F1 embryo are included, but the germ cells that will generate F2 are excluded.",
+            "mother_embryo_and_fetal_germline": "The F0 mother, F1 embryo, and germ cells within that embryo that will generate F2 are included.",
+            "all_descendants": "Every later descendant generation remains directly exposed to the original administered compound merely by belonging to the lineage.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "B002",
+      "title": "Culture growth histories and resistance-mutation origins",
+      "source_ids": [
+        "BIO-LD-1943"
+      ],
+      "target_treatment": "Independent pre-selection culture growth histories and the interpretation of resistance after phage selection.",
+      "scope": "Table 1 experiment 11a versus Table 2 experiment 11, with the source's mutation-and-clonal-growth interpretation. Other experiment columns and mutation-rate estimation are excluded.",
+      "evidence": [
+        {
+          "source_id": "BIO-LD-1943",
+          "location": "Printed pp. 502-504 (PDF pp. 12-14), plating methods, Table 1 and Table 2",
+          "kind": "source_faithful_adaptation",
+          "text": "Table 1 uses parallel platings of samples from the same grown culture to check sampling and plating variability. Table 2 uses cultures grown separately in parallel before testing. In experiment 11a the ten resistant-colony counts are 46, 56, 52, 48, 65, 44, 49, 51, 56, 47. In experiment 11 they are 30, 10, 40, 45, 183, 12, 173, 23, 57, 51."
+        },
+        {
+          "source_id": "BIO-LD-1943",
+          "location": "Printed pp. 493, 496 and 507-508 (PDF pp. 3, 6 and 17-18)",
+          "kind": "source_faithful_adaptation",
+          "text": "Under the mutation interpretation, resistance can arise before virus exposure and be inherited by descendants. Early mutations can therefore contribute many resistant cells. The paper distinguishes mutation events from their descendants and interprets the fluctuations using clonal relatedness. Neither selected table assigns colonies to individual mutation origins."
+        }
+      ],
+      "scientific_claim": "The ten experiment-11a plates replicate ten independently grown cultures, and each resistant colony in the selected tables identifies a separate mutation origin.",
+      "claim_origin": "benchmark_constructed_not_a_source_author_claim",
+      "declared_counts": {
+        "independent_growth_histories_11a": 10
+      },
+      "records": {
+        "series": [
+          {
+            "experiment": "11a",
+            "table": "1",
+            "row_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "resistant_colonies": [
+              46,
+              56,
+              52,
+              48,
+              65,
+              44,
+              49,
+              51,
+              56,
+              47
+            ]
+          },
+          {
+            "experiment": "11",
+            "table": "2",
+            "row_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "resistant_colonies": [
+              30,
+              10,
+              40,
+              45,
+              183,
+              12,
+              173,
+              23,
+              57,
+              51
+            ]
+          }
+        ],
+        "record_origin": "Original row order checked visually in both scanned tables. Experiment 11a and 11 are distinct source labels; row indices identify samples or cultures according to the table."
+      },
+      "questions": [
+        {
+          "question_id": "B002-Q01",
+          "instruction": "How do the pre-selection growth histories differ between the selected experiment-11a and experiment-11 series? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "shared_then_separate": "The 11a samples share one grown culture; the 11 samples come from cultures grown separately before selection.",
+            "separate_then_shared": "The 11a samples come from separately grown cultures; the 11 samples share one grown culture.",
+            "both_separate": "Every selected record in both series comes from a separate pre-selection culture.",
+            "both_shared": "Within each series, every selected record samples one common pre-selection culture.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        },
+        {
+          "question_id": "B002-Q02",
+          "instruction": "Under the source's mutation-and-growth interpretation, what relation can connect distinct resistant cells present at plating? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "one_origin_per_cell": "Each resistant cell necessarily represents a different mutation origin.",
+            "clonal_descendants": "Several resistant cells can descend from one earlier resistance mutation; cell or colony abundance does not identify the number of origins.",
+            "selection_creates_each_origin": "Each resistant cell acquires a new resistance mutation only when virus is added, independently of pre-selection ancestry.",
+            "repeated_image": "The reported colonies are repeated images of one physical colony, with no distinct resistant cells.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "B003",
+      "title": "Repeated RNA pools and the biological information retained by a library",
+      "source_ids": [
+        "BIO-RNA-2015"
+      ],
+      "target_treatment": "Brd1 genotype-group replication in the eight-animal RNA-pooling arm.",
+      "scope": "The four eight-animal pools: 8R pool 1/2 and 8W pool 1/2. The complete pooling figure is transcribed, but three-animal pools and individually sequenced libraries are filtered out of this claim. Genotype groups are inherited, not a claim of randomized drug administration.",
+      "evidence": [
+        {
+          "source_id": "BIO-RNA-2015",
+          "location": "Main PDF p. 6, RNA samples and RNA-seq analysis; Additional file 10",
+          "kind": "source_faithful_adaptation",
+          "text": "RNA was extracted from amygdala samples of eight female Brd1+/- mice and eight WT littermates. For each genotype, two eight-animal pools were prepared from equal RNA amounts from the same eight contributors. RNA was pooled before cDNA synthesis and library preparation. Additional file 10 labels the contributors R1-R8 and W1-W8 and shows both copies of each pool."
+        },
+        {
+          "source_id": "BIO-RNA-2015",
+          "location": "Main PDF p. 6, DEG analyses; Figure 2 caption; Additional file 10",
+          "kind": "source_faithful_adaptation",
+          "text": "The reported bulk analysis counts reads into gene-expression profiles for the prepared libraries. The study separately sequenced individual samples and three-animal pools for comparison. Those separate individual profiles are available in the study but are not observations produced by the four selected eight-animal pooled libraries."
+        }
+      ],
+      "scientific_claim": "The four selected eight-animal pools contribute 32 distinct mice and 32 separately observed mouse-level expression profiles in the pooled arm. The pooling is only numerical averaging after individual expression measurement.",
+      "claim_origin": "benchmark_constructed_not_a_source_author_claim",
+      "declared_counts": {
+        "distinct_mice": 32,
+        "separately_observed_mouse_profiles": 32
+      },
+      "records": {
+        "pools": [
+          {
+            "pool_id": "3R pool 1",
+            "genotype": "Brd1+/-",
+            "pool_size": 3,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          {
+            "pool_id": "3R pool 2",
+            "genotype": "Brd1+/-",
+            "pool_size": 3,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          {
+            "pool_id": "8R pool 1",
+            "genotype": "Brd1+/-",
+            "pool_size": 8,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3",
+              "R4",
+              "R5",
+              "R6",
+              "R7",
+              "R8"
+            ]
+          },
+          {
+            "pool_id": "8R pool 2",
+            "genotype": "Brd1+/-",
+            "pool_size": 8,
+            "contributors": [
+              "R1",
+              "R2",
+              "R3",
+              "R4",
+              "R5",
+              "R6",
+              "R7",
+              "R8"
+            ]
+          },
+          {
+            "pool_id": "3W pool 1",
+            "genotype": "WT",
+            "pool_size": 3,
+            "contributors": [
+              "W1",
+              "W3",
+              "W4"
+            ]
+          },
+          {
+            "pool_id": "3W pool 2",
+            "genotype": "WT",
+            "pool_size": 3,
+            "contributors": [
+              "W1",
+              "W3",
+              "W4"
+            ]
+          },
+          {
+            "pool_id": "8W pool 1",
+            "genotype": "WT",
+            "pool_size": 8,
+            "contributors": [
+              "W1",
+              "W2",
+              "W3",
+              "W4",
+              "W5",
+              "W6",
+              "W7",
+              "W8"
+            ]
+          },
+          {
+            "pool_id": "8W pool 2",
+            "genotype": "WT",
+            "pool_size": 8,
+            "contributors": [
+              "W1",
+              "W2",
+              "W3",
+              "W4",
+              "W5",
+              "W6",
+              "W7",
+              "W8"
+            ]
+          }
+        ],
+        "select_pool_size": 8,
+        "record_origin": "All eight pool memberships transcribed from Additional file 10. Source pool labels and contributor IDs are preserved, including W1/W3/W4 in both three-animal WT pools."
+      },
+      "questions": [
+        {
+          "question_id": "B003-Q01",
+          "instruction": "At what stage are the animals' contributions combined in the selected pooled arm? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "rna_before_library": "RNA from different animals is physically combined before cDNA synthesis and library preparation.",
+            "indexed_libraries_only": "Each animal first receives its own separate library, and only those identifiable libraries are combined for sequencing.",
+            "numerical_average_only": "Animals are assayed separately throughout; only their final expression estimates are averaged in software.",
+            "tissue_before_extraction": "Intact tissues from different animals are combined before a single shared RNA extraction.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        },
+        {
+          "question_id": "B003-Q02",
+          "instruction": "What biological attribution is established for a gene-expression profile from one selected pooled library in the reported analysis? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "pool_aggregate": "The profile describes the combined contributors to that pool; it is not a separately observed profile for each contributor.",
+            "all_individuals_resolved": "The analysis assigns a separate complete expression profile to every contributing animal within that pooled library.",
+            "some_individuals_resolved": "The analysis assigns separate complete profiles to some contributors, while retaining an unresolved aggregate for the rest.",
+            "new_single_animal": "The library measures one new animal that is distinct from all animals used to make the pool.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        }
+      ]
+    },
+    {
+      "problem_id": "B004",
+      "title": "Mosaic founders and validation of newly induced germline alleles",
+      "source_ids": [
+        "BIO-TYR-2014"
+      ],
+      "target_treatment": "Tyr-targeted CRISPR/Cas9 zygote treatment versus replication of a defined, heritable mutant genotype.",
+      "scope": "The hybrid (B6CBAF1/J x FVB/NJ) founder cohort: albino mouse #30 illustrates within-founder allele diversity; the germline question concerns the hybrid pigmentation mosaics. The C57BL/6N test crosses are retained as a contrasting cohort, not transferred to the hybrids.",
+      "evidence": [
+        {
+          "source_id": "BIO-TYR-2014",
+          "location": "Methods: RNA injections into mouse zygotes; Tyr mutation analysis. Results: Characterization of CRISPR/Cas9-induced Tyr mutations",
+          "kind": "source_faithful_adaptation",
+          "text": "Tyr4a, Tyr4b, and Cas9 RNAs were introduced into zygotes. Tail-DNA analysis identified multiple mutant alleles in completely albino hybrid founder #30. The authors attribute the within-founder diversity to mosaicism, potentially arising from editing that persisted into cleavage stages. Deep sequencing reported 57 mutant alleles meeting its read-frequency threshold across 23 hybrid founders; these are not 57 injected animals."
+        },
+        {
+          "source_id": "BIO-TYR-2014",
+          "location": "Results: Germ line transmission of targeted Tyr alleles. Discussion: paragraph beginning Complete albinism and pigmentation mosaicism",
+          "kind": "source_faithful_adaptation",
+          "text": "C57BL/6N mosaics produced albino progeny in crosses with albino mates. The hybrid pigmentation mosaics were not tested this way: they already carried the FVB/NJ albino allele, which could produce albino offspring without demonstrating transmission of a newly induced allele. Somatic evidence and the C57BL/6N crosses do not establish new-allele transmission for those untested hybrids."
+        }
+      ],
+      "scientific_claim": "Every albino hybrid founder is a uniform defined Tyr genotype, and the reported 57 mutant alleles establish 57 separately injected, germline-validated mutant lines. Albino offspring from hybrid pigmentation mosaics would uniquely identify transmission of newly induced alleles.",
+      "claim_origin": "benchmark_constructed_not_a_source_author_claim",
+      "declared_counts": {
+        "separately_injected_founders_in_deep_sequencing_subset": 57,
+        "validated_new_germline_lines": 57
+      },
+      "records": {
+        "deep_sequenced_hybrid_founders": 23,
+        "reported_mutant_alleles_at_threshold": 57,
+        "minimum_reported_read_fraction": 0.05,
+        "illustrative_albino_founder_id": "30",
+        "reported_alleles_in_founder_30": 5,
+        "record_origin": "Source Results and Methods, as archived in NCBI BioC XML; published aggregate counts, not a new sequence reanalysis or unique-origin count. The value 5 for founder #30 is the author-manuscript prose report; publisher Figure 3C lists six allele entries. The exact total remains unresolved."
+      },
+      "questions": [
+        {
+          "question_id": "B004-Q01",
+          "instruction": "What does the reported tail-DNA evidence establish about genotype uniformity in albino hybrid founder #30? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "uniform_one_allele_pair": "All sampled cells can be represented by one common pair of Tyr alleles; albinism establishes a uniform mutant genotype.",
+            "within_founder_mosaicism": "Different mutant alleles occur within the same founder, so complete albinism does not establish one uniform mutant genotype.",
+            "one_founder_per_allele": "Each reported allele comes from a different injected animal; the animal identifier combines those founders.",
+            "no_edit_detected": "The tail-DNA evidence establishes only the unmodified reference sequence.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        },
+        {
+          "question_id": "B004-Q02",
+          "instruction": "Why would albino offspring from an albino-mate cross not, by phenotype alone, identify transmission of a newly induced allele in the hybrid pigmentation mosaics? Select exactly one option using the supplied evidence and stated scope. Do not count records, perform arithmetic, or assign the final claim label; code does that. Choose conflicting before any other option if unresolved statements are incompatible about this judgment in this scope. Choose other only for an established substantive answer outside the listed alternatives. Choose not_stated when missing, partial, or ambiguous evidence prevents the requested judgment without a conflict. Partial evidence is sufficient for a substantive option only when it establishes that option as worded; do not infer missing details.",
+          "options": {
+            "preexisting_albino_allele": "The hybrid founders already carry an inherited albino allele, so the same offspring phenotype need not identify a newly induced allele.",
+            "unique_new_allele_marker": "Albinism uniquely marks the newly induced allele because the hybrid parents carry no prior albino allele.",
+            "no_germline_possible": "The hybrid founders are established to lack germ cells, making transmission biologically impossible.",
+            "all_hybrid_alleles_verified": "Allele-specific progeny sequencing already establishes transmission of every newly induced hybrid-founder allele.",
+            "other": "The evidence establishes a substantive answer outside the listed alternatives.",
+            "not_stated": "Missing, partial, or ambiguous evidence does not establish the requested judgment, and no unresolved contradiction is present.",
+            "conflicting": "Unresolved evidence gives incompatible accounts of this judgment within the stated scope."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "job_id": "r04-E005-sol",
+  "group_id": "E005",
+  "model_id": "sol",
+  "repeat": 3,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_0b43e8ff83a393bf016ab0cfb19bf887d29ca7ab662ca69e3d",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 833,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 857
+    },
+    "input_tokens": 833,
+    "output_tokens": 24,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.004645,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.4727009999915026,
+    "derivation_wall_seconds": 4.349998198449612e-05,
+    "derivation_cpu_seconds": 4.2999999999793204e-05
+  },
+  "request_sha256": "1312c08c3550fbe8ab045913d2c2cf7bcd2c398706b357d83a5418ec4b130429",
+  "receipt_sha256": "a81f91e863d0b4928e0bbf1d1563d9a95e31ddfbf3ded88708e50d2e75bcc098",
+  "simulated": false,
+  "halt_model": false
+}

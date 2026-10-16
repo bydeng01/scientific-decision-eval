@@ -1,0 +1,78 @@
+{
+  "job_id": "r01-B001-deepseek_flash",
+  "group_id": "B001",
+  "model_id": "deepseek_flash",
+  "repeat": 0,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4.1-flash",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789974546-m2pjUZ6DdlDLJSHfdbLg",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1324,
+      "completion_tokens": 392,
+      "total_tokens": 1716,
+      "cost": 0.00055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00055,
+        "upstream_inference_prompt_cost": 0.00029128,
+        "upstream_inference_completions_cost": 0.00025872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 364,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1324,
+    "output_tokens": 392,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 364,
+    "reported_cost_usd": 0.00055,
+    "usage_cost_estimate_usd": 0.00055,
+    "usage_cost_upper_estimate_usd": 0.00055,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 6.725971416017273,
+    "derivation_wall_seconds": 5.633398541249335e-05,
+    "derivation_cpu_seconds": 5.599999999994498e-05
+  },
+  "request_sha256": "7f0d04f1fa596f34f7771359a5a9c992444f6e55b10ff42884c5c3508126fad6",
+  "receipt_sha256": "86567af9b447e1d75126a718a7997104c9307973b13ec28b1f1747464613c92b",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,66 @@
+{
+  "job_id": "r03-B001-terra",
+  "group_id": "B001",
+  "model_id": "terra",
+  "repeat": 2,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-terra",
+  "response_id": "resp_09930f549dc39c01016ab0cf454bcc87d2b480218a72741510",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1226
+      },
+      "output_tokens": 35,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1264
+    },
+    "input_tokens": 1229,
+    "output_tokens": 35,
+    "resource_errors": [],
+    "cached_input_tokens": 1226,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0034925,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.08440699998755,
+    "derivation_wall_seconds": 5.591599619947374e-05,
+    "derivation_cpu_seconds": 5.6000000000056005e-05
+  },
+  "request_sha256": "cd8a777e07e19d336e16a1346212b217f65e41011ef982a81e85aa490e610d6f",
+  "receipt_sha256": "5aba0d7df827e8a13200ea45e187ce20d7a79b80586de9a92b856dd3a41f1329",
+  "simulated": false,
+  "halt_model": false
+}

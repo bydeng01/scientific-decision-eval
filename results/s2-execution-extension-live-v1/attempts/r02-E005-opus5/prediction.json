@@ -1,0 +1,64 @@
+{
+  "job_id": "r02-E005-opus5",
+  "group_id": "E005",
+  "model_id": "opus5",
+  "repeat": 1,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "claude-opus-5",
+  "served_provider": null,
+  "response_id": "msg_011CfGBEJfbbbyopcDd1T1Td",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1642,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "input_tokens": 1642,
+    "output_tokens": 26,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": 0.00886,
+    "usage_cost_upper_estimate_usd": 0.00886,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 3.07844991600723,
+    "derivation_wall_seconds": 4.229097976349294e-05,
+    "derivation_cpu_seconds": 4.2000000000097515e-05
+  },
+  "request_sha256": "e66acf39c4f368a4a9150195a9106f5c9884c1da1ecbe0ec9e9135f93b4b8cbd",
+  "receipt_sha256": "aa5ebd4a266aeae5e7ed672555514be4dc95c9ced3c135ed6dba387dda8c7de1",
+  "simulated": false,
+  "halt_model": false
+}

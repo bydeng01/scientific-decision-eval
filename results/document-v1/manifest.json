@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-20T01:05:26.489038+00:00",
+  "budget_usd": 1.0,
+  "scope": "synthetic development-only smoke test",
+  "cases": 32,
+  "requests": 128,
+  "models": {
+    "openai/gpt-4.1-mini": {
+      "prompt": 0.4,
+      "completion": 1.6
+    },
+    "anthropic/claude-haiku-4.5": {
+      "prompt": 1.0,
+      "completion": 5.0
+    }
+  },
+  "max_reserved_usd": 0.4858528,
+  "sha256": {
+    "cases.jsonl": "94d09c00d21794e29e125937f0d4552b45ba3b6dcdbd421dbc4c2f9386bdcefd",
+    "requests.jsonl": "3ba735e1698310ad3951aa68024079892e2d88b6c4ee5bb1b0c358517c710bb0",
+    "document_pilot.py": "83b511eed1f37f90abaa1e31c3b6bdb90dfa0db9b18d933a01b8f3a77cd5faa2"
+  }
+}

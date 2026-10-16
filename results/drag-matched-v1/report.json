@@ -1,0 +1,343 @@
+{
+  "common_native_case_ids": [],
+  "aggregates": {
+    "reference": {
+      "all_available": {
+        "n": 4,
+        "episodes": 2,
+        "complete_episodes": 2,
+        "mean_correct": 0.75,
+        "mean_brier": 0.2527088645916473,
+        "mean_log_loss": 0.4012635309513253,
+        "mean_tv": 0.0,
+        "mean_retained_size": 1.75,
+        "median_tv": 0.0,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 2,
+        "wrong_at_first_crossing": 0
+      },
+      "round1": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.5,
+        "mean_brier": 0.5054172787838346,
+        "mean_log_loss": 0.8021913902187547,
+        "mean_tv": 0.0,
+        "mean_retained_size": 2.5,
+        "median_tv": 0.0,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round2": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 1.0,
+        "mean_brier": 4.503994600963564e-07,
+        "mean_log_loss": 0.0003356716838957954,
+        "mean_tv": 0.0,
+        "mean_retained_size": 1.0,
+        "median_tv": 0.0,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    },
+    "uniform": {
+      "all_available": {
+        "n": 4,
+        "episodes": 2,
+        "complete_episodes": 2,
+        "mean_correct": 0.5,
+        "mean_brier": 0.6666666666666667,
+        "mean_log_loss": 1.0986122886681098,
+        "mean_tv": 0.4362655385768202,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.49556691716494156,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round1": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.5,
+        "mean_brier": 0.6666666666666667,
+        "mean_log_loss": 1.0986122886681098,
+        "mean_tv": 0.2061999695206004,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.2061999695206004,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round2": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.5,
+        "mean_brier": 0.6666666666666667,
+        "mean_log_loss": 1.0986122886681098,
+        "mean_tv": 0.66633110763304,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.66633110763304,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    },
+    "openrouter-jev native": {
+      "all_available": {
+        "n": 3,
+        "episodes": 2,
+        "complete_episodes": 1,
+        "mean_correct": 0.0,
+        "mean_brier": 0.9776000000000001,
+        "mean_log_loss": 1.6269745625248662,
+        "mean_tv": 0.4620852604381532,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.322327461337062,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round1": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.0,
+        "mean_brier": 0.8381,
+        "mean_log_loss": 1.336824387192439,
+        "mean_tv": 0.24812789065726615,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.24812789065726615,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round2": {
+        "n": 1,
+        "episodes": 1,
+        "complete_episodes": 0,
+        "mean_correct": 0.0,
+        "mean_brier": 1.2566000000000002,
+        "mean_log_loss": 2.2072749131897207,
+        "mean_tv": 0.8899999999999273,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.8899999999999273,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    },
+    "openai native": {
+      "all_available": {
+        "n": 4,
+        "episodes": 2,
+        "complete_episodes": 2,
+        "mean_correct": 0.75,
+        "mean_brier": 0.25273802485218,
+        "mean_log_loss": 0.40130272534796163,
+        "mean_tv": 1.6782055072543446e-05,
+        "mean_retained_size": 1.75,
+        "median_tv": 1.39897021213687e-05,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 2,
+        "wrong_at_first_crossing": 0
+      },
+      "round1": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.5,
+        "mean_brier": 0.5054756,
+        "mean_log_loss": 0.802270038219509,
+        "mean_tv": 3.330507655405126e-05,
+        "mean_retained_size": 2.5,
+        "median_tv": 3.330507655405126e-05,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round2": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 1.0,
+        "mean_brier": 4.4970435999997697e-07,
+        "mean_log_loss": 0.0003354124764142589,
+        "mean_tv": 2.5903359103563014e-07,
+        "mean_retained_size": 1.0,
+        "median_tv": 2.5903359103563014e-07,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    },
+    "anthropic native": {
+      "all_available": {
+        "n": 0
+      },
+      "round1": {
+        "n": 0
+      },
+      "round2": {
+        "n": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    },
+    "Jev rounding sensitivity": {
+      "all_available": {
+        "n": 4,
+        "episodes": 2,
+        "complete_episodes": 2,
+        "mean_correct": 0.0,
+        "mean_brier": 0.9240666666666668,
+        "mean_log_loss": 1.4948839940606773,
+        "mean_tv": 0.5130628324784864,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.494161504968274,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round1": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.0,
+        "mean_brier": 0.8381,
+        "mean_log_loss": 1.336824387192439,
+        "mean_tv": 0.24812789065726615,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.24812789065726615,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "round2": {
+        "n": 2,
+        "episodes": 2,
+        "complete_episodes": 0,
+        "mean_correct": 0.0,
+        "mean_brier": 1.0100333333333333,
+        "mean_log_loss": 1.6529436009289156,
+        "mean_tv": 0.7779977742997066,
+        "mean_retained_size": 3.0,
+        "median_tv": 0.7779977742997066,
+        "excluded_states": 0,
+        "confident_wrong_states": 0,
+        "zero_true_probability_states": 0,
+        "any_exclusion_complete_episodes": 0,
+        "any_confident_wrong_complete_episodes": 0,
+        "first_crossing_episodes": 0,
+        "wrong_at_first_crossing": 0
+      },
+      "common_native_states": {
+        "n": 0
+      }
+    }
+  },
+  "costs": {
+    "openrouter-jev": {
+      "calls": 5,
+      "charge_usd": 0.000235116,
+      "mean_latency_seconds": 0.46510159139870666,
+      "trajectory_attempts": 4,
+      "trajectory_native_valid": 3
+    },
+    "openai": {
+      "calls": 5,
+      "charge_usd": 0.3518,
+      "mean_latency_seconds": 37.584973533201264,
+      "trajectory_attempts": 4,
+      "trajectory_native_valid": 4
+    },
+    "anthropic / 2048-token condition": {
+      "calls": 2,
+      "charge_usd": 0.02561,
+      "mean_latency_seconds": 9.771227562498098,
+      "trajectory_attempts": 1,
+      "trajectory_native_valid": 0
+    }
+  },
+  "sonnet_output_cap": 2048,
+  "openai_output_cap": 2048,
+  "new_attempts": 5,
+  "cumulative_cost_usd": 0.377645116,
+  "analysis_sha256": "ff0cc39f3f67d52889338fb1f4a6553f35cc486eb270ec4d862853068c15d91a",
+  "report_source_sha256": "26e5e41f4788c3d890956dcae95b9eec9956a305fd06ff2713eadb454c81e475"
+}

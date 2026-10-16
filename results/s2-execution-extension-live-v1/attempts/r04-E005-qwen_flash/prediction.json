@@ -1,0 +1,72 @@
+{
+  "job_id": "r04-E005-qwen_flash",
+  "group_id": "E005",
+  "model_id": "qwen_flash",
+  "repeat": 3,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-flash",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975878-9nBegv8gjUYbKgUoOMtZ",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 814,
+      "completion_tokens": 518,
+      "total_tokens": 1332,
+      "cost": 0.000262648,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000262648,
+        "upstream_inference_prompt_cost": 1.9188e-05,
+        "upstream_inference_completions_cost": 0.00024346
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 493,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 814,
+    "output_tokens": 518,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 493,
+    "reported_cost_usd": 0.000262648,
+    "usage_cost_estimate_usd": 0.000262648,
+    "usage_cost_upper_estimate_usd": 0.00040626,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 16.427720000006957,
+    "derivation_wall_seconds": 6.758299423381686e-05,
+    "derivation_cpu_seconds": 6.599999999989947e-05
+  },
+  "request_sha256": "42e56cedb1019cd848fd09938230e4a222aff158da171e4efe2217e6a0c3ad60",
+  "receipt_sha256": "dbf006b5aa1bd8aa0e28276aea115af1b7f9fd93661510718f05ca522e66b796",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,22 @@
+{
+  "results/credit-diagnostic-v1/analysis.json": "ecd7918471929c91a74a7e45375cfadf80e0b277417fe28a8b598178cd7328f9",
+  "results/credit-diagnostic-v1/cases.jsonl": "e4481d31db8a4773c7c7e279a57aefb32df905c3a788565f712d5dce38501df3",
+  "results/credit-diagnostic-v1/manifest.json": "f8908907766d26ff3f4feba8024146d8b0803c941ffa8beed15c55832889defc",
+  "results/credit-diagnostic-v1/model_catalog.json": "aafcf40a98bef8bfdaba037c457a33bf9bf3a3273a25cb7748e87b2a4c2fa504",
+  "results/credit-diagnostic-v1/requests.jsonl": "eaaa94457d1434cefdb720914c91bef80a69cd3bd9b52473096715e5655b89b2",
+  "results/credit-diagnostic-v1/responses.jsonl": "69136ae80a06b966e8689eae0656e22cde9fbf7d3575a1225a1e8ae38360930a",
+  "results/credit-diagnostic-v1/summary.md": "5d464213a81edefc9f56d453572d2096acab29603145433ddc68b3b9a9b2c5c3",
+  "results/document-v1/analysis.json": "0f99bba5a4704583e4492cd60772a4b5731ef01c05885301d01cfff765a71c77",
+  "results/document-v1/cases.jsonl": "94d09c00d21794e29e125937f0d4552b45ba3b6dcdbd421dbc4c2f9386bdcefd",
+  "results/document-v1/manifest.json": "4f7e8ed4d73546552fe2a0f89d1c8af05d7c315911c55a09293eb75584b729a3",
+  "results/document-v1/model_catalog.json": "aafcf40a98bef8bfdaba037c457a33bf9bf3a3273a25cb7748e87b2a4c2fa504",
+  "results/document-v1/requests.jsonl": "3ba735e1698310ad3951aa68024079892e2d88b6c4ee5bb1b0c358517c710bb0",
+  "results/document-v1/responses.jsonl": "bc06a8c1338d2d1ca974b1654047ba891731bbba27f38a3f248374c26539da69",
+  "results/document-v1/runner_snapshot.py": "83b511eed1f37f90abaa1e31c3b6bdb90dfa0db9b18d933a01b8f3a77cd5faa2",
+  "results/document-v1/summary.md": "ede04216584bda24c04f7d69fa750dd0215761c2e56de7ba85b01c2f2e77b0a6",
+  "results/offline-v1/coverage.png": "4658809d17515e56de5a2ec4177ca68eb26908439cce3f372eefd05eaf250bd1",
+  "results/offline-v1/manifest.json": "b9d554d8fb64f1d2ed8851a89fceb5f32f826b3cf7051f86a0e2ed4a859448cc",
+  "results/offline-v1/mechanisms.json": "4ed05f65dc8ccd21e12a5cab437470f1146dce71ac9c013e15bcb001d5b9f156",
+  "results/offline-v1/runs.jsonl": "d99a5d9147fc2cf6909ca6e4aaa4f6ada660dbe719fba18675f593ca31d8161f",
+  "results/offline-v1/summary.md": "5164ff65e40a1145c78f48e623778c5ef08fd3b9bb7e3e0d3d4d4d3ce076abf0"
+}

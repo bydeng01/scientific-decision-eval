@@ -1,0 +1,35 @@
+{
+  "artifact_sha256": {
+    "ERRORS.md": "01ae509414c716a7a52b4da3a680b17a1a349ad654540a7eccf546511efb98f8",
+    "PAPER_READINESS.md": "d7450a1251ed0f246cd92451cdf4d4c2d48ab296132a55d2506fe5773cfaba06",
+    "REPORT.md": "0fba1ddc1eea09708231516c992a02938b2d6bb4636d384e2886ac35bcee5a8c",
+    "analyze.py": "44d66924e1a10435889eac09d9d41b92070ee514958b619f289d38739641bda9",
+    "audit-extension.json": "775fa5077c6a02edae8ea0a48f24abd19b590c01f3b55738c901773b72eb80bf",
+    "audit-glm_kimi.json": "bf0aee574f85659df92a08348f18d3192e2c8592ec9c3e2f870c7569c351d111",
+    "audit-original.json": "2467871d079a4ba0638e8bc85abff5ff5f94502f2dbd895f801f4097e47f02b0",
+    "choices.json": "fb40e8c03cf55c7dec8834635b23f2922109df2ab24d656f6c5f0c2c79cc808b",
+    "outcomes.json": "04778c7e74849a2e7f54e1757dd868262491ed76596c08165f10b1781a483e4b",
+    "protected-sha256.json": "7900ff85b12597e74f31a341d154e2261bed9693cbd0feb99fff780825adc0e6",
+    "render_report.py": "6a1cb343a409f9fb5f57005e1606c815a524ccf1733576734087f1d20545e15c",
+    "requests.json": "34af48d8aca15a2e179a4d9b9edff040b1d010ce2b1a10a9a32db15db78b6a99",
+    "rescored-extension.json": "76604badcaeec25ec1207492f9e4116c50ddb841bb336eec3e01864996ded4d2",
+    "rescored-glm_kimi.json": "6852243a3305c1222b35cc5a75c0a0d04e467887daba3ea2f5e0b6bd0c936493",
+    "rescored-original.json": "360339f212251315796bfb5206d8ccac1fbe260f7a3ece76d0f1acef5842d124",
+    "summary.json": "010d08c351d593e51872cf54d9f9e138c8be5a664e3a13e6a1c7e981a82e85cf",
+    "verify_analysis.py": "ba9d410ee34b05a64e5863277a48143ceaae88d2c3bd0a1fb16a5bcd7ef9cc6a"
+  },
+  "checks_passed": [
+    "unreported_totals_stay_null_and_observed_zero_stays_zero",
+    "cache_write_field_reconciled_and_reasoning_not_billed_twice",
+    "anthropic_cache_is_additive_to_ordinary_input",
+    "latency_nearest_rank_and_missing_interval",
+    "socket_construction_blocked_before_network_access",
+    "fixed_model_denominators_and_operational_vs_semantic_errors",
+    "all_seven_semantic_errors_are_masked_by_final_label",
+    "interrupted_and_rate_limited_request_costs_remain_unknown",
+    "success_latency_excludes_short_error_responses",
+    "third_cohort_complete_with_rate_limits_distinct_from_semantic_errors"
+  ],
+  "protected_files_unchanged": 2390,
+  "reproduction_byte_identical": true
+}

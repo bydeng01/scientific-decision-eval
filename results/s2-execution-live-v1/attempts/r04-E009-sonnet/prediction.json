@@ -1,0 +1,64 @@
+{
+  "job_id": "r04-E009-sonnet",
+  "group_id": "E009",
+  "model_id": "sonnet",
+  "repeat": 3,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "claude-sonnet-5",
+  "response_id": "msg_011CfG7nUvuiZ9YPLZLhrA1V",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1680,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "input_tokens": 1680,
+    "output_tokens": 26,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": 0.00362,
+    "usage_cost_upper_estimate_usd": 0.00362,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.9108177500020247,
+    "derivation_wall_seconds": 7.054198067635298e-05,
+    "derivation_cpu_seconds": 7.00000000000145e-05
+  },
+  "request_sha256": "405ed4b72723a3583a3d4df31b418cce750649d2b1cd5c2ecd944fb9d34fde77",
+  "receipt_sha256": "9d53c4dedaac128740fb8e452d8da8cba032924442615b89da0c2f93437168b9",
+  "simulated": false,
+  "halt_model": false
+}

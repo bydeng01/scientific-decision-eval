@@ -1,0 +1,2050 @@
+[
+  {
+    "case_id": "plain-0",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-1",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-2",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-3",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-4",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-5",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-6",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-7",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-0",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 1,
+      "renewal_ok": 1,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-1",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 1,
+      "renewal_ok": 1,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-2",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 1,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-3",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-4",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-5",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 1,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.5,
+      "graph_certificate": 0.5,
+      "graph_independent": 0.45
+    }
+  },
+  {
+    "case_id": "superseded-6",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.09999999999999998,
+      "graph_certificate": 0.09999999999999998,
+      "graph_independent": 0.09999999999999998
+    }
+  },
+  {
+    "case_id": "superseded-7",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.09999999999999998,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-0",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-1",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-2",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 1,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-3",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 1,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-4",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-5",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-6",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-7",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-2",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-3",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 1,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-4",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-5",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-6",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-7",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-0",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-1",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-2",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-3",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-4",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-5",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-6",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-7",
+    "family": "plain",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-0",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-1",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-2",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-3",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-4",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-5",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-6",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-7",
+    "family": "superseded",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-0",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-1",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-2",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-3",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-4",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-5",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-6",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-7",
+    "family": "other_applicant",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 1,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-2",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-3",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-4",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-5",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-6",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-7",
+    "family": "credit_exclusions",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-0",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-1",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-2",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-3",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-4",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-5",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-6",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-7",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-0",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-1",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-2",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-3",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-4",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-5",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-6",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-7",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-0",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-1",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-2",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-3",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-4",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-5",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-6",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-7",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-2",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-3",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-4",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.050000000000000044,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-5",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.09999999999999998,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-6",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 0
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-7",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "nodes",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": {
+      "is_renewal": 0,
+      "renewal_ok": 0,
+      "new_ok": 1
+    },
+    "scores": {
+      "uniform": 0.0,
+      "graph_certificate": 0.0,
+      "graph_independent": 0.0
+    }
+  },
+  {
+    "case_id": "plain-0",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "plain-1",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "plain-2",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.010000000000000009
+    }
+  },
+  {
+    "case_id": "plain-3",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 1,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "plain-4",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-5",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "plain-6",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "plain-7",
+    "family": "plain",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "superseded-0",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "superseded-1",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "superseded-2",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "superseded-3",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "superseded-4",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-5",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "superseded-6",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "superseded-7",
+    "family": "superseded",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "other_applicant-0",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-1",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-2",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-3",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "other_applicant-4",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-5",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-6",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "other_applicant-7",
+    "family": "other_applicant",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-2",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 0,
+    "error": 1,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.050000000000000044
+    }
+  },
+  {
+    "case_id": "credit_exclusions-3",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-4",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-5",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 0,
+    "gold": 0,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-6",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  },
+  {
+    "case_id": "credit_exclusions-7",
+    "family": "credit_exclusions",
+    "model": "anthropic/claude-haiku-4.5",
+    "mode": "direct",
+    "action": 1,
+    "gold": 1,
+    "error": 0,
+    "node_errors": null,
+    "scores": {
+      "direct": 0.0
+    }
+  }
+]

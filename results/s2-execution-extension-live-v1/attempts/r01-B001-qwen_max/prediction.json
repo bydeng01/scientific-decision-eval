@@ -1,0 +1,78 @@
+{
+  "job_id": "r01-B001-qwen_max",
+  "group_id": "B001",
+  "model_id": "qwen_max",
+  "repeat": 0,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789974533-CImipNplumTXoCzMWhXn",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1156,
+      "completion_tokens": 479,
+      "total_tokens": 1635,
+      "cost": 0.005186,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005186,
+        "upstream_inference_prompt_cost": 0.002312,
+        "upstream_inference_completions_cost": 0.002874
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 447,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1156,
+    "output_tokens": 479,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 447,
+    "reported_cost_usd": 0.005186,
+    "usage_cost_estimate_usd": 0.005186,
+    "usage_cost_upper_estimate_usd": 0.005764,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 12.705519624985754,
+    "derivation_wall_seconds": 6.799999391660094e-05,
+    "derivation_cpu_seconds": 6.8000000000068e-05
+  },
+  "request_sha256": "f49f5789480facbe176adcd1f0dbae400cdd8b3cf08e2225b49d53aa8e72200e",
+  "receipt_sha256": "5b75e3047287781301ae42117ea3ff0cbd7a95cd057d6008327367047124601d",
+  "simulated": false,
+  "halt_model": false
+}

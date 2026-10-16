@@ -1,0 +1,66 @@
+{
+  "job_id": "r02-B004-luna",
+  "group_id": "B004",
+  "model_id": "luna",
+  "repeat": 1,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_081370404b428c59016ab0cf12973887d2b79624b82b5dc5cd",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1290,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1287
+      },
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1388
+    },
+    "input_tokens": 1290,
+    "output_tokens": 98,
+    "resource_errors": [],
+    "cached_input_tokens": 1287,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 64,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0004401,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.2625677500036545,
+    "derivation_wall_seconds": 4.5249995309859514e-05,
+    "derivation_cpu_seconds": 4.399999999993298e-05
+  },
+  "request_sha256": "0d8707526fc21f9971ebf3df3e7ec25a632b1fa82647ffa114ca0e97f986b7a0",
+  "receipt_sha256": "986a3da0412bcf4c48f6bf563d69350139baa6b7535c4e712b61a6c49d87669b",
+  "simulated": false,
+  "halt_model": false
+}

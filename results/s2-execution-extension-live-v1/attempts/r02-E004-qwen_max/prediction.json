@@ -1,0 +1,72 @@
+{
+  "job_id": "r02-E004-qwen_max",
+  "group_id": "E004",
+  "model_id": "qwen_max",
+  "repeat": 1,
+  "answers": {
+    "E004-Q01": "mixed_histories",
+    "E004-Q02": "partial_identification"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "exact_parent_lot_count": null,
+      "complete_assignment_available": false,
+      "claim_assessment": "inconsistent_single_history; insufficient_exact_assignments"
+    },
+    "clauses": {
+      "single_history": "inconsistent",
+      "exact_assignments": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789974967-u9i6AtJAKOpuWSBWHZdw",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 788,
+      "completion_tokens": 655,
+      "total_tokens": 1443,
+      "cost": 0.005506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005506,
+        "upstream_inference_prompt_cost": 0.001576,
+        "upstream_inference_completions_cost": 0.00393
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 637,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 788,
+    "output_tokens": 655,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 637,
+    "reported_cost_usd": 0.005506,
+    "usage_cost_estimate_usd": 0.005506,
+    "usage_cost_upper_estimate_usd": 0.0059,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 16.806599041010486,
+    "derivation_wall_seconds": 4.512499435804784e-05,
+    "derivation_cpu_seconds": 4.399999999993298e-05
+  },
+  "request_sha256": "7d9092ffde3530cd19d844383589f8da2a7e2becbbd2d68a291efba59b3066df",
+  "receipt_sha256": "b311c0fec91826a955ae2a27fa45cc68c9efbbb0c7a60e88812356e1c0c32bd2",
+  "simulated": false,
+  "halt_model": false
+}

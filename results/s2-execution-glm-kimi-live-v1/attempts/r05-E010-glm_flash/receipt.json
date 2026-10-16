@@ -1,0 +1,10 @@
+{
+  "http_status": 429,
+  "raw_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"z-ai/glm-5.3-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Fireworks\",\"is_byok\":false,\"provider_error_code\":\"invalid_request_error\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\"user_id\":\"user_3CeKLS6HEByEG2VIbDRQUOzFGGL\"}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:20:38 GMT"
+  },
+  "latency_seconds": 0.5080101669882424,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:20:38.106132+00:00"
+}

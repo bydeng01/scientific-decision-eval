@@ -1,0 +1,884 @@
+[
+  {
+    "group_id": "D01",
+    "status": "resolved",
+    "answers": {
+      "D01.unit": "mixing_batch",
+      "D01.membership": "shared",
+      "D01-O.omitted_unit": "other"
+    },
+    "audit": [
+      {
+        "question_id": "D01.unit",
+        "matched_evidence": [
+          {
+            "rule": "mixing.1",
+            "start": 0,
+            "end": 59,
+            "text": "Mixer speed and duration are set for each mixing operation."
+          },
+          {
+            "rule": "mixing.2",
+            "start": 59,
+            "end": 147,
+            "text": " Mechanical testing includes 24-hour and 28-day groups, with three prisms in each group."
+          },
+          {
+            "rule": "mixing.3",
+            "start": 147,
+            "end": 376,
+            "text": " This check covers only the 28-day group from the same mixing operation and the same curing regimen: the three prisms each undergo flexural testing, followed by compression testing of the two half-prisms produced from each prism."
+          }
+        ]
+      },
+      {
+        "question_id": "D01.membership",
+        "matched_evidence": [
+          {
+            "rule": "mixing.1",
+            "start": 0,
+            "end": 59,
+            "text": "Mixer speed and duration are set for each mixing operation."
+          },
+          {
+            "rule": "mixing.2",
+            "start": 59,
+            "end": 147,
+            "text": " Mechanical testing includes 24-hour and 28-day groups, with three prisms in each group."
+          },
+          {
+            "rule": "mixing.3",
+            "start": 147,
+            "end": 376,
+            "text": " This check covers only the 28-day group from the same mixing operation and the same curing regimen: the three prisms each undergo flexural testing, followed by compression testing of the two half-prisms produced from each prism."
+          }
+        ]
+      },
+      {
+        "question_id": "D01-O.omitted_unit",
+        "matched_evidence": [
+          {
+            "rule": "mixing.1",
+            "start": 0,
+            "end": 59,
+            "text": "Mixer speed and duration are set for each mixing operation."
+          },
+          {
+            "rule": "mixing.2",
+            "start": 59,
+            "end": 147,
+            "text": " Mechanical testing includes 24-hour and 28-day groups, with three prisms in each group."
+          },
+          {
+            "rule": "mixing.3",
+            "start": 147,
+            "end": 376,
+            "text": " This check covers only the 28-day group from the same mixing operation and the same curing regimen: the three prisms each undergo flexural testing, followed by compression testing of the two half-prisms produced from each prism."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "D01": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "D01-S": {
+          "count": 1,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        },
+        "D01-O": {
+          "engineering": {
+            "choice": "other",
+            "action": "complete_candidates_or_transfer",
+            "downstream_count": null
+          }
+        }
+      }
+    },
+    "wall_seconds": 0.0006522499897982925,
+    "cpu_seconds": 0.0006519999999999998,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "D02",
+    "status": "resolved",
+    "answers": {
+      "D02.unit": "build",
+      "D02.membership": "shared"
+    },
+    "audit": [
+      {
+        "question_id": "D02.unit",
+        "matched_evidence": [
+          {
+            "rule": "build.1",
+            "start": 0,
+            "end": 110,
+            "text": "The study manufactured specimens with different geometries and orientations in a single complete EB-PBF build."
+          },
+          {
+            "rule": "build.2",
+            "start": 110,
+            "end": 225,
+            "text": " In Table 2, the E8-3 row with Z orientation lists specimens 7, 8, and 9 under Replicate 1, 2, and 3, respectively."
+          }
+        ]
+      },
+      {
+        "question_id": "D02.membership",
+        "matched_evidence": [
+          {
+            "rule": "build.1",
+            "start": 0,
+            "end": 110,
+            "text": "The study manufactured specimens with different geometries and orientations in a single complete EB-PBF build."
+          },
+          {
+            "rule": "build.2",
+            "start": 110,
+            "end": 225,
+            "text": " In Table 2, the E8-3 row with Z orientation lists specimens 7, 8, and 9 under Replicate 1, 2, and 3, respectively."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "D02": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "D02-S": {
+          "count": 1,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "wall_seconds": 0.00039241701597347856,
+    "cpu_seconds": 0.00038599999999999746,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "D03",
+    "status": "resolved",
+    "answers": {
+      "D03.treatment_level": "water_bath_temperature_control",
+      "D03.run_boundary": "not_stated",
+      "D03.specimen_assignment": "not_stated"
+    },
+    "audit": [
+      {
+        "question_id": "D03.treatment_level",
+        "matched_evidence": [
+          {
+            "rule": "water.1",
+            "start": 0,
+            "end": 72,
+            "text": "The methods record curing environment category and temperature by batch."
+          },
+          {
+            "rule": "water.2",
+            "start": 72,
+            "end": 220,
+            "text": " In the water-curing branch, a water bath at a set temperature is used from demolding until day 28; an in-bath probe measures the water temperature."
+          },
+          {
+            "rule": "water.3",
+            "start": 220,
+            "end": 296,
+            "text": " Mechanical testing at 28 days uses a group of three prisms from that batch."
+          },
+          {
+            "rule": "water.4",
+            "start": 296,
+            "end": 373,
+            "text": " Figure 2 shows the curing equipment, including a photograph of a water bath."
+          }
+        ]
+      },
+      {
+        "question_id": "D03.run_boundary",
+        "matched_evidence": [
+          {
+            "rule": "water.1",
+            "start": 0,
+            "end": 72,
+            "text": "The methods record curing environment category and temperature by batch."
+          },
+          {
+            "rule": "water.2",
+            "start": 72,
+            "end": 220,
+            "text": " In the water-curing branch, a water bath at a set temperature is used from demolding until day 28; an in-bath probe measures the water temperature."
+          },
+          {
+            "rule": "water.3",
+            "start": 220,
+            "end": 296,
+            "text": " Mechanical testing at 28 days uses a group of three prisms from that batch."
+          },
+          {
+            "rule": "water.4",
+            "start": 296,
+            "end": 373,
+            "text": " Figure 2 shows the curing equipment, including a photograph of a water bath."
+          }
+        ]
+      },
+      {
+        "question_id": "D03.specimen_assignment",
+        "matched_evidence": [
+          {
+            "rule": "water.1",
+            "start": 0,
+            "end": 72,
+            "text": "The methods record curing environment category and temperature by batch."
+          },
+          {
+            "rule": "water.2",
+            "start": 72,
+            "end": 220,
+            "text": " In the water-curing branch, a water bath at a set temperature is used from demolding until day 28; an in-bath probe measures the water temperature."
+          },
+          {
+            "rule": "water.3",
+            "start": 220,
+            "end": 296,
+            "text": " Mechanical testing at 28 days uses a group of three prisms from that batch."
+          },
+          {
+            "rule": "water.4",
+            "start": 296,
+            "end": 373,
+            "text": " Figure 2 shows the curing equipment, including a photograph of a water bath."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "D03": {
+          "count": null,
+          "label": "insufficient",
+          "action": "request_run_boundary_and_specimen_run_records"
+        }
+      }
+    },
+    "wall_seconds": 0.00042620798922143877,
+    "cpu_seconds": 0.0004259999999999958,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "C01",
+    "status": "resolved",
+    "answers": {
+      "C01-T.unit": "whole_plot_group",
+      "C01-A.unit": "strip"
+    },
+    "audit": [
+      {
+        "question_id": "C01-T.unit",
+        "matched_evidence": [
+          {
+            "rule": "plating.1",
+            "start": 0,
+            "end": 53,
+            "text": "Four copper strips enter a single treatment together."
+          },
+          {
+            "rule": "plating.2",
+            "start": 53,
+            "end": 203,
+            "text": " Temperature and concentration apply jointly to this group; within the group, two strips are randomly assigned to low current and two to high current."
+          },
+          {
+            "rule": "plating.3",
+            "start": 203,
+            "end": 272,
+            "text": " Each of the four temperature-concentration combinations is run once."
+          },
+          {
+            "rule": "plating.4",
+            "start": 272,
+            "end": 514,
+            "text": " The source explicitly defines a single copper strip as the experimental unit for current (subplot experimental unit), and the group of four strips treated together as the unit for temperature and concentration (whole-plot experimental unit)."
+          }
+        ]
+      },
+      {
+        "question_id": "C01-A.unit",
+        "matched_evidence": [
+          {
+            "rule": "plating.1",
+            "start": 0,
+            "end": 53,
+            "text": "Four copper strips enter a single treatment together."
+          },
+          {
+            "rule": "plating.2",
+            "start": 53,
+            "end": 203,
+            "text": " Temperature and concentration apply jointly to this group; within the group, two strips are randomly assigned to low current and two to high current."
+          },
+          {
+            "rule": "plating.3",
+            "start": 203,
+            "end": 272,
+            "text": " Each of the four temperature-concentration combinations is run once."
+          },
+          {
+            "rule": "plating.4",
+            "start": 272,
+            "end": 514,
+            "text": " The source explicitly defines a single copper strip as the experimental unit for current (subplot experimental unit), and the group of four strips treated together as the unit for temperature and concentration (whole-plot experimental unit)."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "C01-T": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "C01-A": {
+          "count": 2,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "wall_seconds": 0.0006783329881727695,
+    "cpu_seconds": 0.00068,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "H01",
+    "status": "resolved",
+    "answers": {
+      "H01-L.unit": "column_region",
+      "H01-T.unit": "whole_specimen",
+      "H01-T.membership": "shared"
+    },
+    "audit": [
+      {
+        "question_id": "H01-L.unit",
+        "matched_evidence": [
+          {
+            "rule": "combinatorial.1",
+            "start": 0,
+            "end": 140,
+            "text": "A continuous nickel-alloy combinatorial specimen contains multiple column regions, each processed at a specified laser power and scan speed."
+          },
+          {
+            "rule": "combinatorial.2",
+            "start": 140,
+            "end": 212,
+            "text": " Columns 1, 10, 16, 19, and 24 in Table 2 use the same default settings."
+          },
+          {
+            "rule": "combinatorial.3",
+            "start": 212,
+            "end": 355,
+            "text": " The study produced multiple specimens of the same geometry; one whole specimen received stress-relief treatment at 800°C and another at 870°C."
+          },
+          {
+            "rule": "combinatorial.4",
+            "start": 355,
+            "end": 501,
+            "text": " The authors explicitly describe a split-plot design because each combinatorial specimen was fabricated and stress-relieved as a continuous whole."
+          },
+          {
+            "rule": "combinatorial.5",
+            "start": 501,
+            "end": 578,
+            "text": " Multiple indentation measurements were then taken within each column region."
+          },
+          {
+            "rule": "combinatorial.6",
+            "start": 578,
+            "end": 733,
+            "text": "\nThis check covers only the combinatorial specimen treated at 870°C and the default-setting columns listed above; other specimens and columns are excluded."
+          }
+        ]
+      },
+      {
+        "question_id": "H01-T.unit",
+        "matched_evidence": [
+          {
+            "rule": "combinatorial.1",
+            "start": 0,
+            "end": 140,
+            "text": "A continuous nickel-alloy combinatorial specimen contains multiple column regions, each processed at a specified laser power and scan speed."
+          },
+          {
+            "rule": "combinatorial.2",
+            "start": 140,
+            "end": 212,
+            "text": " Columns 1, 10, 16, 19, and 24 in Table 2 use the same default settings."
+          },
+          {
+            "rule": "combinatorial.3",
+            "start": 212,
+            "end": 355,
+            "text": " The study produced multiple specimens of the same geometry; one whole specimen received stress-relief treatment at 800°C and another at 870°C."
+          },
+          {
+            "rule": "combinatorial.4",
+            "start": 355,
+            "end": 501,
+            "text": " The authors explicitly describe a split-plot design because each combinatorial specimen was fabricated and stress-relieved as a continuous whole."
+          },
+          {
+            "rule": "combinatorial.5",
+            "start": 501,
+            "end": 578,
+            "text": " Multiple indentation measurements were then taken within each column region."
+          },
+          {
+            "rule": "combinatorial.6",
+            "start": 578,
+            "end": 733,
+            "text": "\nThis check covers only the combinatorial specimen treated at 870°C and the default-setting columns listed above; other specimens and columns are excluded."
+          }
+        ]
+      },
+      {
+        "question_id": "H01-T.membership",
+        "matched_evidence": [
+          {
+            "rule": "combinatorial.1",
+            "start": 0,
+            "end": 140,
+            "text": "A continuous nickel-alloy combinatorial specimen contains multiple column regions, each processed at a specified laser power and scan speed."
+          },
+          {
+            "rule": "combinatorial.2",
+            "start": 140,
+            "end": 212,
+            "text": " Columns 1, 10, 16, 19, and 24 in Table 2 use the same default settings."
+          },
+          {
+            "rule": "combinatorial.3",
+            "start": 212,
+            "end": 355,
+            "text": " The study produced multiple specimens of the same geometry; one whole specimen received stress-relief treatment at 800°C and another at 870°C."
+          },
+          {
+            "rule": "combinatorial.4",
+            "start": 355,
+            "end": 501,
+            "text": " The authors explicitly describe a split-plot design because each combinatorial specimen was fabricated and stress-relieved as a continuous whole."
+          },
+          {
+            "rule": "combinatorial.5",
+            "start": 501,
+            "end": 578,
+            "text": " Multiple indentation measurements were then taken within each column region."
+          },
+          {
+            "rule": "combinatorial.6",
+            "start": 578,
+            "end": 733,
+            "text": "\nThis check covers only the combinatorial specimen treated at 870°C and the default-setting columns listed above; other specimens and columns are excluded."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "H01-L": {
+          "count": 5,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        },
+        "H01-T": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        }
+      }
+    },
+    "wall_seconds": 0.0007108749996405095,
+    "cpu_seconds": 0.0007100000000000023,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "C02",
+    "status": "resolved",
+    "answers": {
+      "C02.unit": "wear_event",
+      "C02.identifier": "part_id"
+    },
+    "audit": [
+      {
+        "question_id": "C02.unit",
+        "matched_evidence": [
+          {
+            "rule": "wear.1",
+            "start": 0,
+            "end": 76,
+            "text": "Wear scars are generated at different circumferential positions on a cutter."
+          },
+          {
+            "rule": "wear.2",
+            "start": 76,
+            "end": 186,
+            "text": " Each scar results from a machining operation performed by one operator, who then scans that scar three times."
+          },
+          {
+            "rule": "wear.3",
+            "start": 186,
+            "end": 281,
+            "text": " The first character of PART ID identifies the cutter, and the second identifies the wear scar."
+          },
+          {
+            "rule": "wear.4",
+            "start": 281,
+            "end": 480,
+            "text": " From Figure 2.6, this check selects six scan records for cutter 1, PART IDs 1A and 1B: 1A, 1A, and 1A are assigned to operator O1; 1B, 1B, and 1B are assigned to operator O3; 1C and 1D are excluded."
+          }
+        ]
+      },
+      {
+        "question_id": "C02.identifier",
+        "matched_evidence": [
+          {
+            "rule": "wear.1",
+            "start": 0,
+            "end": 76,
+            "text": "Wear scars are generated at different circumferential positions on a cutter."
+          },
+          {
+            "rule": "wear.2",
+            "start": 76,
+            "end": 186,
+            "text": " Each scar results from a machining operation performed by one operator, who then scans that scar three times."
+          },
+          {
+            "rule": "wear.3",
+            "start": 186,
+            "end": 281,
+            "text": " The first character of PART ID identifies the cutter, and the second identifies the wear scar."
+          },
+          {
+            "rule": "wear.4",
+            "start": 281,
+            "end": 480,
+            "text": " From Figure 2.6, this check selects six scan records for cutter 1, PART IDs 1A and 1B: 1A, 1A, and 1A are assigned to operator O1; 1B, 1B, and 1B are assigned to operator O3; 1C and 1D are excluded."
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "cases": {
+        "C02": {
+          "count": 2,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "C02-S": {
+          "count": 2,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "wall_seconds": 0.0013489169941749424,
+    "cpu_seconds": 0.0012839999999999935,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E001",
+    "status": "resolved",
+    "answers": {
+      "E001-Q01": "crossed_regrouping",
+      "E001-Q02": "wafer"
+    },
+    "audit": [
+      {
+        "pattern": "Each implant setting processes (?P<n>\\w+) wafers together\\. After all implant batches, every anneal batch receives one wafer from each implant batch and is annealed at its assigned D/E/F setting\\. Thus annealing regroups the wafers\\. The first implant setting executed is 3 and the first anneal setting executed is 5; treatment codes are not execution-order indices\\.",
+        "matched_text": "Each implant setting processes eight wafers together. After all implant batches, every anneal batch receives one wafer from each implant batch and is annealed at its assigned D/E/F setting. Thus annealing regroups the wafers. The first implant setting executed is 3 and the first anneal setting executed is 5; treatment codes are not execution-order indices.",
+        "captures": {
+          "n": "eight"
+        }
+      },
+      {
+        "pattern": "The handbook assigns implant effects to implant batches, anneal effects to anneal batches, and cross-stage interactions to individual wafers\\. The figure is one block or replicate\\. Without replicated blocks, it describes using A\\*B\\*C and D\\*E\\*F as error terms only under models excluding those three-factor interactions; each then supplies one degree of freedom\\.",
+        "matched_text": "The handbook assigns implant effects to implant batches, anneal effects to anneal batches, and cross-stage interactions to individual wafers. The figure is one block or replicate. Without replicated blocks, it describes using A*B*C and D*E*F as error terms only under models excluding those three-factor interactions; each then supplies one degree of freedom.",
+        "captures": {}
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "output": {
+        "implant_batches": 8,
+        "anneal_batches": 8,
+        "wafer_records": 64,
+        "full_setting_combinations": 64,
+        "wafers_per_full_setting": 1,
+        "complete_blocks": 1,
+        "claim_assessment": "inconsistent"
+      },
+      "clauses": {
+        "per_setting_replicates": "inconsistent",
+        "interaction_unit": "consistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "wall_seconds": 0.0003847920161206275,
+    "cpu_seconds": 0.00037900000000000433,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E002",
+    "status": "resolved",
+    "answers": {
+      "E002-Q01": "hourly_switch",
+      "E002-Q02": "transition_exclusion"
+    },
+    "audit": [
+      {
+        "pattern": "Measurements are downsampled to one-minute records\\. Figure 5 switches SMV6 between baseline and wake-steering control hourly\\. The offset within controlled periods follows the wind-dependent controller schedule; hourly mode assignment is different from instantaneous yaw offset\\.",
+        "matched_text": "Measurements are downsampled to one-minute records. Figure 5 switches SMV6 between baseline and wake-steering control hourly. The offset within controlled periods follows the wind-dependent controller schedule; hourly mode assignment is different from instantaneous yaw offset.",
+        "captures": {}
+      },
+      {
+        "pattern": "After operational and power-curve filtering, the first ten minutes after each mode switch are removed for yaw-controller transients\\. Further power and lidar-availability filters apply to yaw analyses\\. The authors bootstrap one-minute observations at least 2,000 times, by wind-direction bin where applicable, resampling baseline and controlled observations separately\\.",
+        "matched_text": "After operational and power-curve filtering, the first ten minutes after each mode switch are removed for yaw-controller transients. Further power and lidar-availability filters apply to yaw analyses. The authors bootstrap one-minute observations at least 2,000 times, by wind-direction bin where applicable, resampling baseline and controlled observations separately.",
+        "captures": {}
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "output": {
+        "actual_eligible_application_count": null,
+        "minute_rows_are_new_assignments": false,
+        "claim_assessment": "inconsistent"
+      },
+      "clauses": {
+        "new_minute_assignments": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "wall_seconds": 0.0003252500027883798,
+    "cpu_seconds": 0.00031099999999999184,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E003",
+    "status": "resolved",
+    "answers": {
+      "E003-Q01": "recovered_carryover"
+    },
+    "audit": [
+      {
+        "pattern": "The recycling reaction uses 2a \\(0\\.25 mmol\\), 3a \\(0\\.38 mmol\\), catalyst \\(10 mg, 5 mol%\\), and t-BuOH/water \\(1:1\\) at 70 degrees C for two hours\\. Solids are separated, washed, and the recovered catalyst is used in the next cycle\\. Figure 2 reports (?P<cycles>\\w+) consecutive cycles with high endpoint conversion\\.",
+        "matched_text": "The recycling reaction uses 2a (0.25 mmol), 3a (0.38 mmol), catalyst (10 mg, 5 mol%), and t-BuOH/water (1:1) at 70 degrees C for two hours. Solids are separated, washed, and the recovered catalyst is used in the next cycle. Figure 2 reports eight consecutive cycles with high endpoint conversion.",
+        "captures": {
+          "cycles": "eight"
+        }
+      },
+      {
+        "pattern": "The source reports that reaction rates begin to decrease after two cycles, despite completion before the two-hour endpoint\\. Figure 3 distinguishes C1, C2, and C3\\. Catalyst synthesis is described separately from recovery and reuse\\.",
+        "matched_text": "The source reports that reaction rates begin to decrease after two cycles, despite completion before the two-hour endpoint. Figure 3 distinguishes C1, C2, and C3. Catalyst synthesis is described separately from recovery and reuse.",
+        "captures": {}
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "output": {
+        "reported_reaction_cycles": 8,
+        "documented_recycling_series": 1,
+        "independent_synthesis_count_established_by_cycles": null,
+        "claim_assessment": "inconsistent"
+      },
+      "clauses": {
+        "fresh_preparation_per_cycle": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "wall_seconds": 0.0004624580033123493,
+    "cpu_seconds": 0.00039800000000000946,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E004",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 1.7499842215329409e-06,
+    "cpu_seconds": 1.9999999999881224e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E005",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 8.750066626816988e-07,
+    "cpu_seconds": 1.000000000001e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E006",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 6.250047590583563e-07,
+    "cpu_seconds": 0.0,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E007",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 7.499766070395708e-07,
+    "cpu_seconds": 0.0,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E008",
+    "status": "resolved",
+    "answers": {
+      "E008-Q01": "complete_setting_equality"
+    },
+    "audit": [
+      {
+        "pattern": "The ethylene experiment uses 20 runs and eight process factors\\. The authors prepare a fresh salt sample for each run and clean the vessel\\. Oxidation and regeneration steps include gas collection\\. Table 7 treats each column as a run; the preceding text explicitly describes the arrangement as replicates and foldover pairs\\. The source reports p=2 pure-error degrees of freedom and f=1 fake-factor degree of freedom\\.",
+        "matched_text": "The ethylene experiment uses 20 runs and eight process factors. The authors prepare a fresh salt sample for each run and clean the vessel. Oxidation and regeneration steps include gas collection. Table 7 treats each column as a run; the preceding text explicitly describes the arrangement as replicates and foldover pairs. The source reports p=2 pure-error degrees of freedom and f=1 fake-factor degree of freedom.",
+        "captures": {}
+      },
+      {
+        "pattern": "Foldover reverses coded factor signs to create additional treatment settings and address aliasing\\. Complementary settings can belong to a foldover pair without being the same complete treatment condition\\. The full Table 7 transcription is supplied below; no repeated columns are removed\\.",
+        "matched_text": "Foldover reverses coded factor signs to create additional treatment settings and address aliasing. Complementary settings can belong to a foldover pair without being the same complete treatment condition. The full Table 7 transcription is supplied below; no repeated columns are removed.",
+        "captures": {}
+      }
+    ],
+    "derived": {
+      "status": "derived",
+      "output": {
+        "run_count": 20,
+        "distinct_complete_settings": 18,
+        "repeated_column_groups": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "singleton_settings": 16,
+        "pure_error_df": 2,
+        "claim_assessment": "inconsistent"
+      },
+      "clauses": {
+        "ten_settings_twice_each": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "wall_seconds": 0.0006011250079609454,
+    "cpu_seconds": 0.0005109999999999976,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E009",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 1.3750104699283838e-06,
+    "cpu_seconds": 1.000000000001e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "E010",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 9.169743862003088e-07,
+    "cpu_seconds": 2.000000000002e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "B001",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 8.330098353326321e-07,
+    "cpu_seconds": 0.0,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "B002",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 9.579816833138466e-07,
+    "cpu_seconds": 1.000000000001e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "B003",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 6.499991286545992e-06,
+    "cpu_seconds": 5.999999999992123e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  },
+  {
+    "group_id": "B004",
+    "status": "unresolved_by_code",
+    "answers": {},
+    "audit": [],
+    "derived": null,
+    "wall_seconds": 1.667009200900793e-06,
+    "cpu_seconds": 2.000000000002e-06,
+    "model_calls": 0,
+    "api_cost_usd": 0
+  }
+]

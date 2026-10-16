@@ -1,0 +1,75 @@
+{
+  "job_id": "r05-E010-qwen_max",
+  "group_id": "E010",
+  "model_id": "qwen_max",
+  "repeat": 4,
+  "answers": {
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false,
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    "clauses": {
+      "independent_assignment": "inconsistent",
+      "zero_exposure": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789976457-1c8rA5xW4bEGWlVIVOKd",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 990,
+      "completion_tokens": 875,
+      "total_tokens": 1865,
+      "cost": 0.00723,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00723,
+        "upstream_inference_prompt_cost": 0.00198,
+        "upstream_inference_completions_cost": 0.00525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 858,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 990,
+    "output_tokens": 875,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 858,
+    "reported_cost_usd": 0.00723,
+    "usage_cost_estimate_usd": 0.00723,
+    "usage_cost_upper_estimate_usd": 0.007725,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 20.279997916979482,
+    "derivation_wall_seconds": 4.5374996261671185e-05,
+    "derivation_cpu_seconds": 4.399999999993298e-05
+  },
+  "request_sha256": "cd3079bb27903c55a00f7143ca81d65a1a804093b8707eb1e26f7c056508a820",
+  "receipt_sha256": "dae22e1e486f87a270d49882e209c57977057dbe9b1dfd8bca033cdd7dcc9e01",
+  "simulated": false,
+  "halt_model": false
+}

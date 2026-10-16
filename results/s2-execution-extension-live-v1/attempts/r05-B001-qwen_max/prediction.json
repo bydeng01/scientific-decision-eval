@@ -1,0 +1,78 @@
+{
+  "job_id": "r05-B001-qwen_max",
+  "group_id": "B001",
+  "model_id": "qwen_max",
+  "repeat": 4,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789976143-QVfNqshdQOmiiIsxTke2",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1156,
+      "completion_tokens": 733,
+      "total_tokens": 1889,
+      "cost": 0.004918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004918,
+        "upstream_inference_prompt_cost": 0.00052,
+        "upstream_inference_completions_cost": 0.004398
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 704,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1156,
+    "output_tokens": 733,
+    "resource_errors": [],
+    "cached_input_tokens": 1024,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 704,
+    "reported_cost_usd": 0.004918,
+    "usage_cost_estimate_usd": 0.004918,
+    "usage_cost_upper_estimate_usd": 0.007288,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 18.714514082996175,
+    "derivation_wall_seconds": 5.616698763333261e-05,
+    "derivation_cpu_seconds": 5.599999999983396e-05
+  },
+  "request_sha256": "f49f5789480facbe176adcd1f0dbae400cdd8b3cf08e2225b49d53aa8e72200e",
+  "receipt_sha256": "f81849f81d27e17d9a5a1fcb7ac4f42565b735139a7aa06e469c1d641e264020",
+  "simulated": false,
+  "halt_model": false
+}

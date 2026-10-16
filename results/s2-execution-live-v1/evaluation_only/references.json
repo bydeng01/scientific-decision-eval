@@ -1,0 +1,298 @@
+{
+  "answers": {
+    "D01.unit": "mixing_batch",
+    "D01.membership": "shared",
+    "D01-O.omitted_unit": "other",
+    "D02.unit": "build",
+    "D02.membership": "shared",
+    "D03.treatment_level": "water_bath_temperature_control",
+    "D03.run_boundary": "not_stated",
+    "D03.specimen_assignment": "not_stated",
+    "C01-T.unit": "whole_plot_group",
+    "C01-A.unit": "strip",
+    "H01-L.unit": "column_region",
+    "H01-T.unit": "whole_specimen",
+    "H01-T.membership": "shared",
+    "C02.unit": "wear_event",
+    "C02.identifier": "part_id",
+    "E001-Q01": "crossed_regrouping",
+    "E001-Q02": "wafer",
+    "E002-Q01": "hourly_switch",
+    "E002-Q02": "transition_exclusion",
+    "E003-Q01": "recovered_carryover",
+    "E004-Q01": "mixed_histories",
+    "E004-Q02": "partial_identification",
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen",
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average",
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes",
+    "E008-Q01": "complete_setting_equality",
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average",
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only",
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline",
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants",
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate",
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "outcomes": {
+    "D01": {
+      "cases": {
+        "D01": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "D01-S": {
+          "count": 1,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        },
+        "D01-O": {
+          "engineering": {
+            "choice": "other",
+            "action": "complete_candidates_or_transfer",
+            "downstream_count": null
+          }
+        }
+      }
+    },
+    "D02": {
+      "cases": {
+        "D02": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "D02-S": {
+          "count": 1,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "D03": {
+      "cases": {
+        "D03": {
+          "count": null,
+          "label": "insufficient",
+          "action": "request_run_boundary_and_specimen_run_records"
+        }
+      }
+    },
+    "C01": {
+      "cases": {
+        "C01-T": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "C01-A": {
+          "count": 2,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "H01": {
+      "cases": {
+        "H01-L": {
+          "count": 5,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        },
+        "H01-T": {
+          "count": 1,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        }
+      }
+    },
+    "C02": {
+      "cases": {
+        "C02": {
+          "count": 2,
+          "label": "inconsistent",
+          "action": "revise_scoped_claim"
+        },
+        "C02-S": {
+          "count": 2,
+          "label": "supported",
+          "action": "accept_scoped_claim"
+        }
+      }
+    },
+    "E001": {
+      "claim_assessment": "inconsistent",
+      "implant_batches": 8,
+      "anneal_batches": 8,
+      "wafer_records": 64,
+      "full_setting_combinations": 64,
+      "wafers_per_full_setting": 1,
+      "complete_blocks": 1,
+      "description": "64 implant–anneal combinations, each corresponding to one wafer observation."
+    },
+    "E002": {
+      "claim_assessment": "inconsistent",
+      "actual_eligible_application_count": null,
+      "minute_rows_are_new_assignments": false
+    },
+    "E003": {
+      "claim_assessment": "inconsistent",
+      "reported_reaction_cycles": 8,
+      "documented_recycling_series": 1,
+      "independent_synthesis_count_established_by_cycles": null
+    },
+    "E004": {
+      "claim_assessment": "inconsistent_single_history; insufficient_exact_assignments",
+      "exact_parent_lot_count": null,
+      "complete_assignment_available": false
+    },
+    "E005": {
+      "claim_assessment": "inconsistent",
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null
+    },
+    "E006": {
+      "claim_assessment": "inconsistent",
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100
+    },
+    "E007": {
+      "claim_assessment": "inconsistent_in_both_clauses",
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false
+    },
+    "E008": {
+      "claim_assessment": "inconsistent",
+      "run_count": 20,
+      "distinct_complete_settings": 18,
+      "repeated_column_groups": [
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "singleton_settings": 16,
+      "pure_error_df": 2
+    },
+    "E009": {
+      "claim_assessment": "inconsistent",
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null
+    },
+    "E010": {
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label",
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false
+    },
+    "B001": {
+      "status": "derived",
+      "semantic_choices": [
+        "f0_pregnant_dams",
+        "mother_embryo_and_fetal_germline"
+      ],
+      "counts": {
+        "F3_pups": 162,
+        "F3_weaned_litters": 14,
+        "newly_injected_F3_animals": 0,
+        "first_generation_beyond_original_window": 3,
+        "distinct_F0_ancestors": null
+      },
+      "clauses": {
+        "new_F3_injections": "inconsistent",
+        "first_generation_beyond_window": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "B002": {
+      "status": "derived",
+      "semantic_choices": [
+        "shared_then_separate",
+        "clonal_descendants"
+      ],
+      "counts": {
+        "platings": {
+          "11a": 10,
+          "11": 10
+        },
+        "growth_histories": {
+          "11a": 1,
+          "11": 10
+        },
+        "colony_totals": {
+          "11a": 514,
+          "11": 624
+        },
+        "exact_mutation_origins": null
+      },
+      "clauses": {
+        "independent_histories_11a": "inconsistent",
+        "one_colony_one_origin": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "B003": {
+      "status": "derived",
+      "semantic_choices": [
+        "rna_before_library",
+        "pool_aggregate"
+      ],
+      "counts": {
+        "selected_libraries": 4,
+        "distinct_contributors": 16,
+        "distinct_contributors_by_genotype": {
+          "Brd1+/-": 8,
+          "WT": 8
+        },
+        "contributor_appearances": 32,
+        "separately_observed_contributor_profiles": 0
+      },
+      "clauses": {
+        "distinct_mice": "inconsistent",
+        "individual_profiles": "inconsistent",
+        "pooling_only_after_individual_measurement": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    },
+    "B004": {
+      "status": "derived",
+      "semantic_choices": [
+        "within_founder_mosaicism",
+        "preexisting_albino_allele"
+      ],
+      "counts": {
+        "deep_sequenced_hybrid_founders": 23,
+        "reported_mutant_alleles": 57,
+        "validated_new_germline_lines": null
+      },
+      "clauses": {
+        "every_albino_founder_uniform": "inconsistent",
+        "separately_injected_founders": "inconsistent",
+        "validated_new_germline_lines": "insufficient_evidence",
+        "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+      },
+      "final_label": "inconsistent"
+    }
+  }
+}

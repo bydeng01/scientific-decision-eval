@@ -1,0 +1,146 @@
+[
+  {
+    "case_id": "plain-0",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "plain-0",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "plain-1",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "plain-1",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "plain-7",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "plain-7",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "superseded-0",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 1
+  },
+  {
+    "case_id": "superseded-0",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "superseded-5",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 1,
+    "revised_error": 1
+  },
+  {
+    "case_id": "superseded-5",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "other_applicant-0",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "other_applicant-0",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "credit_exclusions-0",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 23,
+    "gold_new_ok": 0,
+    "original_error": 1,
+    "revised_error": 0
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "model": "openai/gpt-4.1-mini",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  },
+  {
+    "case_id": "credit_exclusions-1",
+    "model": "anthropic/claude-haiku-4.5",
+    "exact_transcription": true,
+    "code_credits": 24,
+    "gold_new_ok": 1,
+    "original_error": 0,
+    "revised_error": 0
+  }
+]

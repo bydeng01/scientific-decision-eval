@@ -1,0 +1,12 @@
+{"case_id": "D01", "result": {"count": 1, "counts": {"target": 1, "prism": 3, "half_prism": 6}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "D01-S", "result": {"count": 1, "counts": {"target": 1, "prism": 3, "half_prism": 6}, "label": "supported", "action": "accept_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "D01-O", "result": {"count": 1, "counts": {"target": 1, "prism": 3, "half_prism": 6}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "D02", "result": {"count": 1, "counts": {"target": 1, "specimen": 3}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "D02-S", "result": {"count": 1, "counts": {"target": 1, "specimen": 3}, "label": "supported", "action": "accept_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "D03", "result": {"count": null, "counts": {"target": null, "prism": 3}, "label": "insufficient", "action": "request_run_boundary_and_specimen_run_records"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "C01-T", "result": {"count": 1, "counts": {"target": 1}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "C01-A", "result": {"count": 2, "counts": {"target": 2}, "label": "supported", "action": "accept_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "H01-L", "result": {"count": 5, "counts": {"target": 5}, "label": "supported", "action": "accept_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "H01-T", "result": {"count": 1, "counts": {"target": 1}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "C02", "result": {"count": 2, "counts": {"target": 2, "cutter": 1, "scan": 6}, "label": "inconsistent", "action": "revise_scoped_claim"}, "origin": "human relation oracle; not text extraction"}
+{"case_id": "C02-S", "result": {"count": 2, "counts": {"target": 2, "cutter": 1, "scan": 6}, "label": "supported", "action": "accept_scoped_claim"}, "origin": "human relation oracle; not text extraction"}

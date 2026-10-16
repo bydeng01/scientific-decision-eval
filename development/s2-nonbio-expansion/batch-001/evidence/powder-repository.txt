@@ -1,0 +1,91 @@
+Effective Ti-6Al-4V Powder Recycling in LPBF Additive Manufacturing Considering Powder History
+Effective Ti-6Al-4V Powder Recycling in LPBF Additive Manufacturing Considering Powder History   - ResearchOnline@JCU
+Staff
+JCU App
+Library
+LearnJCU
+Contact
+Give
+ResearchOnline
+About
+Search
+Browse
+JCU Authors
+All Authors
+College or Centre
+Year
+Other
+Contact Us
+Login
+Login
+Effective Ti-6Al-4V Powder Recycling in LPBF Additive Manufacturing Considering Powder History
+Koushik, Tejas
+,
+Shen, Haopeng
+,
+Hao Kan, Wen
+,
+Gao, Mu
+,
+Yi, Junlan
+,
+Ma, Chao
+,
+Chao Voon Lim, Samuel
+,
+Ngai Sum Chiu, Louis
+, and
+Huang, Aijun
+(2023)
+Effective Ti-6Al-4V Powder Recycling in LPBF Additive Manufacturing Considering Powder History.
+Sustainability, 15 (21). 15582.
+Preview
+PDF (Published Version)
+- Published Version
+Available under License
+Creative Commons Attribution
+.
+Download (726kB)
+|
+Preview
+DOI:
+10.3390/su152115582
+View at Publisher Website:
+https://doi.org/10.3390/su152115582
+1
+Abstract
+Laser powder bed fusion (LPBF) is an outstanding additive manufacturing (AM) technology that can enable both complicated geometries and desired mechanical properties in high-value components. However, the process reliability and cost have been the obstacles to the extensive industrial adoptions of LPBF. This work aims to develop a powder recycling procedure to reduce production cost and minimize process uncertainties due to powder degradation. We used a recycle index (R) to reuse Ti-6Al-4V powder through 10 production cycles. Using this recycle index is more reasonable than simply replying on recycle numbers as it incorporates the powder usage history. A recycling procedure with simple virgin powder top-up can effectively mitigate powder degradation and maintain stable powder properties, chemical compositions, and tensile properties. The experimental finding points to a sustainable recycling strategy of Ti alloy powders with minimal material waste and without noticeable detriment to observed mechanical performance through LPBF production cycles.
+Item ID:
+86205
+Item Type:
+Article
+           
+           
+           
+           (Research - C1)
+ISSN:
+2071-1050
+Keywords:
+additive manufacturing; powder bed; powder recycling; Ti alloys
+Copyright Information:
+© 2023 by the authors. Licensee MDPI, Basel, Switzerland.
+
+This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/).
+Date Deposited:
+24 Jul 2025 07:04
+FoR Codes:
+40 ENGINEERING > 4014 Manufacturing engineering > 401401 Additive manufacturing @ 100%
+SEO Codes:
+28 EXPANDING KNOWLEDGE > 2801 Expanding knowledge > 280110 Expanding knowledge in engineering @ 100%
+Downloads:
+Total: 1
+Last 12 Months: 1
+More Statistics
+Actions (Repository Staff Only)
+Item Control Page
+© James Cook University 1995 to 2023
+CRICOS Provider Code: 00117J
+ABN 46253211955
+Terms of use
+Privacy
+Disclaimer

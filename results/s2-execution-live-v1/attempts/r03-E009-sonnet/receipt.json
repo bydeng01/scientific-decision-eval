@@ -1,0 +1,11 @@
+{
+  "http_status": 200,
+  "raw_body": "{\"model\":\"claude-sonnet-5\",\"id\":\"msg_011CfG7e4BQmFKYJxhXUwMqL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"q1\\\":\\\"shared_reference\\\",\\\"q2\\\":\\\"bracketing_average\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":1680,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":26,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 06:31:25 GMT",
+    "request-id": "req_011CfG7e3sYeqTi5ns63XZrj"
+  },
+  "latency_seconds": 1.8004234170075506,
+  "transport_error": null,
+  "received_at": "2026-09-21T06:31:25.312373+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "job_id": "r05-B001-deepseek_flash",
+  "group_id": "B001",
+  "model_id": "deepseek_flash",
+  "repeat": 4,
+  "answers": {},
+  "errors": {
+    "B001-Q01": "http_429",
+    "B001-Q02": "http_429"
+  },
+  "derived": null,
+  "diagnostics": {},
+  "status": "failed",
+  "served_model": null,
+  "served_provider": null,
+  "response_id": null,
+  "resources": {
+    "raw_usage": {},
+    "input_tokens": null,
+    "output_tokens": null,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": null,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.3116724580177106,
+    "derivation_wall_seconds": 1.791701652109623e-05,
+    "derivation_cpu_seconds": 1.7999999999851468e-05
+  },
+  "request_sha256": "7f0d04f1fa596f34f7771359a5a9c992444f6e55b10ff42884c5c3508126fad6",
+  "receipt_sha256": "015a1f43ec8fe43be4b4255cdc96edb03205cdd19623184d3fa302cf3431f92b",
+  "simulated": false,
+  "halt_model": false
+}
