@@ -1,0 +1,72 @@
+{
+  "job_id": "r04-E006-qwen_flash",
+  "group_id": "E006",
+  "model_id": "qwen_flash",
+  "repeat": 3,
+  "answers": {
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independent_phase_draws": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-flash",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975914-T9rvsjztNS7ZRuLGv5xI",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 816,
+      "completion_tokens": 458,
+      "total_tokens": 1274,
+      "cost": 0.000234748,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000234748,
+        "upstream_inference_prompt_cost": 1.9488e-05,
+        "upstream_inference_completions_cost": 0.00021526
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 432,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 816,
+    "output_tokens": 458,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 432,
+    "reported_cost_usd": 0.000234748,
+    "usage_cost_estimate_usd": 0.00023474799999999998,
+    "usage_cost_upper_estimate_usd": 0.00037846,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 14.88241733299219,
+    "derivation_wall_seconds": 4.5167020289227366e-05,
+    "derivation_cpu_seconds": 4.500000000007276e-05
+  },
+  "request_sha256": "69b3dbcfcd64419e904b390c8d01918f97964561d49558a02614ef7a23a57b7d",
+  "receipt_sha256": "9fff72359cb359a4762f02c2edfa861d008a4cf00e70ae4c67252d45a9b356a1",
+  "simulated": false,
+  "halt_model": false
+}

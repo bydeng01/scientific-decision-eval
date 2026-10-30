@@ -1,0 +1,70 @@
+{
+  "job_id": "r01-B003-sol",
+  "group_id": "B003",
+  "model_id": "sol",
+  "repeat": 0,
+  "answers": {
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "rna_before_library",
+      "pool_aggregate"
+    ],
+    "counts": {
+      "selected_libraries": 4,
+      "distinct_contributors": 16,
+      "distinct_contributors_by_genotype": {
+        "Brd1+/-": 8,
+        "WT": 8
+      },
+      "contributor_appearances": 32,
+      "separately_observed_contributor_profiles": 0
+    },
+    "clauses": {
+      "distinct_mice": "inconsistent",
+      "individual_profiles": "inconsistent",
+      "pooling_only_after_individual_measurement": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_0ec7659757757aea016ab0ce96219c87d29aa723b8bf6550f6",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1425,
+      "input_tokens_details": {
+        "cache_write_tokens": 1422,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1449
+    },
+    "input_tokens": 1425,
+    "output_tokens": 24,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.007605,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.1141837910108734,
+    "derivation_wall_seconds": 6.695801857858896e-05,
+    "derivation_cpu_seconds": 6.60000000000105e-05
+  },
+  "request_sha256": "9ca5758027dee77d71833538b597fe2234d13e480fefc71ee6953eb1426e01b7",
+  "receipt_sha256": "b763426c2ef996e65934ee27a4d972e1e4f64dfba7871b8ae9e3fa85fbd1ec77",
+  "simulated": false,
+  "halt_model": false
+}

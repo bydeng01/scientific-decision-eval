@@ -1,0 +1,69 @@
+{
+  "job_id": "r01-B001-sonnet",
+  "group_id": "B001",
+  "model_id": "sonnet",
+  "repeat": 0,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "claude-sonnet-5",
+  "response_id": "msg_011CfG7QwTyH6C1aVsp8JgUo",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 2221,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 40,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "input_tokens": 2221,
+    "output_tokens": 40,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": 0.004842,
+    "usage_cost_upper_estimate_usd": 0.004842,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.4694047090015374,
+    "derivation_wall_seconds": 5.962501745671034e-05,
+    "derivation_cpu_seconds": 5.900000000003125e-05
+  },
+  "request_sha256": "6688c4b6710b6874cc13789e501f3d1740bf275917170c061492088d575593ec",
+  "receipt_sha256": "8fe49bd7c20f675c4072bb0583e8fee8ee17517bdabccb197b86a3f4c7cdde98",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,1136 @@
+
+=== PDF PAGE 1 ===
+Citation: Koushik, T.; Shen, H.; Kan,
+W.H.; Gao, M.; Yi, J.; Ma, C.; Lim,
+S.C.V .; Chiu, L.N.S.; Huang, A.
+Effective Ti-6Al-4V Powder Recycling
+in LPBF Additive Manufacturing
+Considering Powder History.
+Sustainability 2023, 15, 15582.
+https://doi.org/10.3390/
+su152115582
+Academic Editors: Jan Baeyens and
+Hosam Saleh
+Received: 19 April 2023
+Revised: 25 September 2023
+Accepted: 28 September 2023
+Published: 2 November 2023
+Copyright: © 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+sustainability
+Article
+Effective Ti-6Al-4V Powder Recycling in LPBF Additive
+Manufacturing Considering Powder History
+Tejas Koushik 1,2 , Haopeng Shen 1,3
+ , Wen Hao Kan 1,3
+ , Mu Gao 1,3 , Junlan Yi 4, Chao Ma 4,
+Samuel Chao Voon Lim 1,3
+ , Louis Ngai Sum Chiu 1,3, *
+ and Aijun Huang 1,2,3
+1 Monash Centre for Additive Manufacturing, Clayton, VIC 3168, Australia;
+tejas.maheshkoushik@my.jcu.edu.au (T.K.); haopeng.shen@outlook.com (H.S.);
+wen.kan@sydney.edu.au (W.H.K.); mu.gao@monash.edu (M.G.); samuel.lim@monash.edu (S.C.V .L.);
+aijun.huang@monash.edu (A.H.)
+2 Mechanical and Aerospace Engineering, Monash University, Clayton, VIC 3168, Australia
+3 Materials Science and Engineering, Monash University, Clayton, VIC 3168, Australia
+4 Shanghai Aircraft Manufacturing Company, Shanghai 200436, China; yijunlan@comac.cc (J.Y.);
+machao2@comac.cc (C.M.)
+* Correspondence: louis.chiu@monash.edu
+Abstract: Laser powder bed fusion (LPBF) is an outstanding additive manufacturing (AM) technol-
+ogy that can enable both complicated geometries and desired mechanical properties in high-value
+components. However, the process reliability and cost have been the obstacles to the extensive
+industrial adoptions of LPBF. This work aims to develop a powder recycling procedure to reduce
+production cost and minimize process uncertainties due to powder degradation. We used a recycle
+index (R) to reuse Ti-6Al-4V powder through 10 production cycles. Using this recycle index is more
+reasonable than simply replying on recycle numbers as it incorporates the powder usage history.
+A recycling procedure with simple virgin powder top-up can effectively mitigate powder degra-
+dation and maintain stable powder properties, chemical compositions, and tensile properties. The
+experimental ﬁnding points to a sustainable recycling strategy of Ti alloy powders with minimal
+material waste and without noticeable detriment to observed mechanical performance through LPBF
+production cycles.
+Keywords: additive manufacturing; powder bed; powder recycling; Ti alloys
+1. Introduction
+Additive manufacturing (AM) utilizes a layer-by-layer approach to build complex
+3D shapes from simple 2D slices. This method provides more freedom to design unique
+geometries and the ability to integrate multiple assemblies into a single part. There are
+multiple techniques under the broad umbrella of AM and they are generally categorized by
+the feedstock forms (powder, wire, liquid, etc.) and the joining techniques (laser sintering,
+electron beam melting, liquid bonding, UV curing, etc.) [ 1]. LPBF has been a main AM
+technology applied in critical sectors because of its ability to produce metallic components
+with high product quality and mechanical properties [1]. In LPBF processes, only a small
+portion of the powder is melted and consumed for the final components. The remaining
+powder is usually retrieved for the next production cycle. This recycling practice is one
+of the most important measures to reduce the total cost of LPBF. Powder recycling in AM
+productions can minimize material waste, which has been a paramount feature in modern
+technologies in the context of sustainability , circular economy , and environmental impact [2].
+However, powder degradation occurs with the powder recycling through powder bed
+AM production cycles, which brings uncertainties in feedstock quality and part integrity.
+Powder recycling in LPBF production cycles can cause changes in particle sizes, particle
+morphologies, powder rheology, and chemical composition [3–5]. These changes mainly
+Sustainability 2023, 15, 15582. https://doi.org/10.3390/su152115582 https://www.mdpi.com/journal/sustainability
+
+=== PDF PAGE 2 ===
+Sustainability 2023, 15, 15582 2 of 17
+result from the excessive energy from the laser fusion process. Apart from the desired melt-
+ing and re-solidiﬁcation processes, the heating source also forms spatters and agglomerates
+of partially melted particles [6–8].
+In LPBF, the powder re-coater blade moves across from the powder dispenser and
+coats a uniform layer over the build plate. This process requires a good “spreadability” of
+the powder to ensure a uniform thin layer of powder. While the spreadability is a qualitative
+description of the powder, it is usually correlated to the powder ﬂowability which can be
+quantitatively measured. The powder ﬂowability, a bulk property, depends on its particle
+size distribution (PSD), morphology, surface chemistry, and moisture level [9]. The powder
+size and morphology are important considerations in powder metallurgy [10–12]. High
+densiﬁcation from high packing density is desired. The powder compaction depends
+on the powder size distribution and the morphologies. These properties are known to
+change, and the feedstock variation can affect performance of the ﬁnal parts produced by
+LPBF [13–15]. This work selected the Ti-6Al-4V alloy for the reuse study considering it is
+one of the most important AM alloys for high-value parts widely used in aerospace [16]
+and biomedical industries [17]. Ti-6Al-4V accounts for up to 60% of all titanium (Ti) alloy
+production, thanks to its excellent combination of ductility and strength at room and high
+temperatures [18].
+Previous studies have demonstrated this impact on the total LPBF production costs of
+Ti powders due to the lack of standard powder recycling procedures [19].
+Controlling the feedstock quality is critical to the ﬁnal part quality in LPBF, particularly
+the microstructure and mechanical properties. Oxygen is an alpha stabilizer and is a known
+issue in Ti alloy processing as it embrittles the materials and reduces toughness and fatigue
+properties. The study by Jia [ 20] showed that increasing oxygen content of Ti-6Al-4V
+powder during LPBF introduced anisotropy in tensile behavior primarily due to the change
+of β grain size. Various studies have shown a clear consequence on the microstructure with
+powder recycling [21]. It was found that increased oxygen content in recycling of Ti-6Al-4V
+powders was accommodated in the β phase in the LPBF parts. The oxygen pickup and the
+change of microstructure can reduce fatigue performance and fracture toughness in the
+LPBF parts built with reused powders.
+Other minor elements (e.g., C, N, H) picked up during powder recycling can also affect
+the powder quality. Silverstein and Eliezer [ 22] showed that trapped hydrogen during
+LPBF can lead to formation of TiH that can embrittle the ﬁnal parts. The source of carbon
+contamination mainly occurs during powder handling stages and storage. Dissolved
+carbon in Ti-6Al-4V alloys is known to improve mechanical strength due to precipitation
+hardening or solid solution strengthening. However, increase in carbon content has been
+shown to promote grain growth [23]. Presence of nitrogen during LPBF has been shown
+to increase yield strength and ultimate tensile strength due to a nitrogen solid solution.
+Further, formation of nano-β phases has been shown to increase with N content during
+LPBF [24]. However, presence of titanium nitrides can lead to formation of brittle TiN
+phases that can strengthen the alloy at the cost of reduced ductility.
+Nandwana et al. [13] reported a gradual oxygen increase from 0.138 wt.% in the virgin
+powder to 0.182 wt.% after just ﬁve build cycles in electron beam powder bed fusion of
+Ti-6Al-4V powder. This implies an oxygen pickup rate of 0.011 wt.% per reuse cycle. If the
+starting feedstock was Ti-6Al-4V Grade 5 powder (max. 0.2% oxygen), it would exceed the
+qualiﬁcation range after about 6 times of recycling. Another study of electron beam powder
+bed fusion of Ti-6Al-4V also reported a very different oxygen pickup rate at about 0.005%
+increase per reuse cycle from 0.08 wt.% in the virgin powder to 0.19 wt.% after 21 times of
+recycling [14]. To maintain the material qualiﬁcation for Ti-6Al-4V ELI powder (Grade23,
+max. 0.13 wt.% oxygen), this production condition would allow recycling up to about
+10 times. The actual experiment results showed that the powder went above 0.13 wt.% after
+only 6 reuse cycles. This indicated that relying on the number of reuse cycles to control the
+powder quality is not reliable. Quintana et al. [4] performed a study on recycling Ti-6Al-4V
+powders in LPBF production cycles, which also showed a progressive increase at about
+
+=== PDF PAGE 3 ===
+Sustainability 2023, 15, 15582 3 of 17
+0.000645% per cycle in oxygen pickup, from 0.09 wt.% in the virgin powder to 0.11 wt.%
+after 31 reuse cycles. To maintain the material qualiﬁcation for Ti-6Al-4V ELI powder,
+their LPBF production setup would allow recycling up to about 62 times. Another similar
+study on Ti-6Al-4V powder recycling with a different LPBF system showed a similar trend
+but different oxygen pickup rate [ 25]. Shalnova et al. [ 26] studied the effect of powder
+recycling in laser direct energy deposition (DED). They found that the argon protection
+could effectively control powder oxidation. The parts built with initial powder (0.079%
+oxygen) and recycled powder (0.099% oxygen) showed negligible microstructure difference.
+The micro hardness increased slightly in the parts built with recycled powder. The strength
+ﬂuctuated without showing an obvious trend with more recycling. They concluded that
+no tangible changes to mechanical properties were detected in the annealed DED samples
+with an increase of used Ti-6Al-4V powder content up to 50% in the build. Different from
+Shalnova et al. [26], Yang et al. [27] conducted a recycle study in a reactive atmosphere
+with various oxygen level. They found that parts built with recycled powder had coarse α
+lamellar thickness and higher β phase content than those built with fresh powder. They
+found that the tensile strength increased slightly with more oxygen pickup in the ﬁnal
+parts, which agrees with the study by Shalnova et al. [ 26]. Derimow and Harabe [ 28]
+showed that oxidation rates Ti-6AL-4V powder differed during LPBF and electron beam
+PBF irrespective of the powder reuse strategy. This was attributed to the higher temperature
+achieved during build production. Formation of surface oxide layer on powder particles
+can lead to a lack of fusion during electron beam PBF, which will cause a reduction in part
+strength [15]. Lastly, residual oxygen content present in the powder handling systems
+could also contribute to an increase in oxygen content.
+These recycling studies all pointed to a fact that the number of reuse cycles cannot be
+used as a reliable index to control the feedstock quality regarding oxygen pickup. To control
+the quality of the reused powder, the process history of each build cycle must be considered.
+Build number or recycle number has been the common metric to evaluate the powder
+degradation during powder recycling in LPBF productions. However, the actual powder
+degradation depends on the process conditions and environment in LPPBF system, espe-
+cially the energy input and solidiﬁcation volume, which generates spatters as the main
+source of contaminants [21,29]. This work aims to develop and evaluate build volume ratio
+(BV ratio) and recycle index (R index) to consider the solidiﬁcation percentage and powder
+usage history through LPBF builds. The ﬁndings can contribute to more reliable powder
+recycling to reduce material cost and improve the sustainability of LPBF productions.
+2. Methods
+2.1. System and Powder
+This work used an industrial LPBF system EOS M290 (EOS GmbH, Krailling, Germany),
+which is equipped with a 400 W Yb-fiber laser and a beam focus of 100µm. All the LPBF
+productions used high-purity argon gas (purity > 99.997%) to ensure minimal oxidation. All
+components and test samples manufactured in this study used a layer thickness of 30µm.
+The process parameters were optimized parameters developed for Ti-6Al-4V powders to
+obtain high-density parts (relative density > 99.9%).
+Commercially available plasma atomized Ti-6Al-4V Grade 23 powder (supplied by AP&C
+Inc., Montreal, QC, Canada) was used in the LPBF builds. This study refers to the as-received
+powder from the manufacturer as the virgin powder (Composition specification shown in
+Table1). The virgin powder had a particle size range between 15µm and 45 µm. The chemical
+composition of the reused powders was investigated throughout the recycle builds.
+Table 1. Chemical composition of the Ti-6Al-4V Grade 23 virgin powder.
+Ti Al V Fe O C N H
+wt.% Balance 6.27 3.94 0.20 0.107 0.019 0.009 0.002
+
+=== PDF PAGE 4 ===
+Sustainability 2023, 15, 15582 4 of 17
+2.2. Characterization and T esting
+The chemical compositions were analyzed by a commercial lab (Luvak Inc., Boylston,
+MA, USA). The elements were measured according to the methods speciﬁed in international
+standards: inert gas fusion for oxygen and nitrogen (ASTM E1409) [30], combustion infrared
+detection for carbon (ASTM E1941) [31], inert gas fusion for hydrogen (ASTM E1447) [32],
+and direct current plasma emission spectroscopy for all other elements (ASTM E 2371) [33].
+The physical properties analyzed for the reused powders included: (1) presence
+of contaminants; (2) particle size and shape; (3) apparent density; (4) ﬂowability; and
+(5) moisture. The particle size distribution of the powders was determined using a laser
+diffraction instrument (Mastersizer 2000, Malvern, UK) according to the method as speciﬁed
+in ASTM E2651-19 [34]. The particle size analysis has a repeatability of ±0.5 µm.
+The powder flowability was determined using the Hall flow test. It measures the time
+taken for exactly 50 g of powder to flow through an orifice, reported as seconds/50 g. Free
+flowing powders are defined as powders that can pass the Hall flow test and non-free flowing
+powders refers to powders that are unable to pass this test. This work used the Carney
+flow test to measure the flowability of non-free flowing powders in the Hall flow test. The
+procedures for the Hall flow test and the Carney flow test were conducted according to
+ASTM B855 [35] and ASTM B964-16 [36] standards, respectively . The apparent density of
+the powders was also measured to quantitatively compare the packing efficiency of the
+reused powders. In the SLM process, the packaging efficiency of the powders between the
+individual layers can affect the laser absorption, defect formation, and surface finish of the
+final parts. The measurement of apparent density was carried out for free-flowing powders
+according to ASTM B417 standard [37] and non-free flowing powders according to ASTM
+B212 standard [38].
+The Hausner ratio indicates the compaction of the powder. It is calculated by dividing
+the apparent density and tap density. Tap density along with apparent density allows us
+to quantify the interparticle friction which is an essential powder characteristic affecting
+its ability to produce uniform layers during powder spreading [39]. The tap density was
+measured by feeding powder into an empty cylinder. The cylinder is then tapped on a
+ﬁxed platform until there is no visible change in the height of the powder. The powder
+was then weighed using an analytical balance, the tap density was determined by dividing
+the mass with measured volume of the powder [40]. The Hausner ratio is calculated by
+dividing the apparent density and tap density.
+The porosity and microstructure of samples built with reused powders was measured
+using image analysis of polished section. The samples were ground with SiC grinding
+papers gradually from 300 up to 4000 grit and polished with 0.25 µm OP-S colloidal silica
+solution. The images were captured using an optical microscopy (Olympus PMG-3) and
+analyzed using ImageJ software (V1.53k). To observe the microstructure, polished samples
+were immersed in Kroll’s reagent for 30 s.
+Cylindrical samples were built to investigate the effect of powder recycling on mechanical
+properties. The cylindrical bars for tensile specimens were heat treated at 800◦C for 6 h in a
+vacuum furnace after the LPBF builds. This heat treatment is known to give a good balance
+of strength and ductility to the final parts [41]. First, it decomposes the brittle α phase to
+α+β phases. It also relieves the residual stresses from the laser melting and re-solidification
+process. Both effects improve the ductility . After the heat treatment, the cylindrical bars were
+machined into tensile specimens and tested according to the ASTM E8/E8M standard [42].
+The diameter and length of the gauge section were 48 mm and 6 mm, respectively . The tensile
+samples were machined with a fine finishing to the final diameter with a±0.01 mm precision.
+The measured diameters were used during tensile testing.
+2.3. Quantifying Powder Recycling
+This study adopted a powder refreshing method by mixing virgin powder with reused
+powder throughout the LPBF builds to control the powder quality. The ﬂow chart in
+Figure 1 describes the procedures for the powder feedstock used in each build.
+
+=== PDF PAGE 5 ===
+Sustainability 2023, 15, 15582 5 of 17
+Sustainability 2023, 15, x FOR PEER REVIEW  5  of  18 
+ 
+mm,  respectively.  The  tensile  samples were  machined with a  fine  finishing to  the final 
+diameter with a ±0.01 mm precision. The measured diameters were used during tensile 
+testing. 
+2.3. Quantifying Powder Recycling 
+This study adopted a powder refreshing method by mixing virgin powder with re‐
+used powder throughout the LPBF builds to con trol  the powder quality. The flow chart 
+in Figure 1 describes the procedures for the powder feedstock used in each build. 
+ 
+Figure 1. Experiment procedures and schematic for the BV ration and R index. 
+To quantify the powder recycling, this work introduced a build volume ratio (BV) by 
+dividing  the  total  volume  of  the  components  and  the  total  volume  of  the  powder  dis‐
+pensed into the build chamber for the printing job (Equation (1)). To capture the effect of 
+multiple builds and the mixing of vi rgin  and used powder, a recycle index (R) is defined 
+as  a  ratio  of volume  of  powder consumed  to the input volume  of  powder. The  recycle 
+index for build  𝑛  is shown in Equation (2). 
+BV ratio ൌ𝑉௖௢௡௦௨௠௘ௗ ௣௢௪ௗ௘௥
+𝑉௜௡௣௨௧ ௣௢௪ௗ௘௥    (1)
+R index ൌ
+∑ 𝑉௖௢௡௦௨௠௘ௗ ௣௢௪ௗ௘௥,௞
+௜
+௞ୀ଴
+∑ 𝑉௜௡௣௨௧ ௣௢௪ௗ௘௥,௞
+௜
+௞ୀ଴
+  (2)
+where  𝑉௖௢௡௦௨௠௘ௗ  is the powder volume used in a specific build. This powder consumed 
+in the build is about the same mass as the laser solidified parts and the spatters sieved out 
+in the recovered powder. Powder was carefully retrieved the sieved to minimize powder 
+loss. The R index considers the total powder consume d  from build 1 to build i. For exam‐
+ple, if 50% of 1 kg powder is used in build 1, then for build 2 feedstock, the R index is 0.5 
+if no virgin powder is topped up; or the R index is 0.33 if another 0.5 kg powder is added 
+to ma
+ke a 1 kg input powder for build 2. 
+Figure 1. Experiment procedures and schematic for the BV ration and R index.
+To quantify the powder recycling, this work introduced a build volume ratio (BV) by
+dividing the total volume of the components and the total volume of the powder dispensed
+into the build chamber for the printing job (Equation (1)). To capture the effect of multiple
+builds and the mixing of virgin and used powder, a recycle index (R) is deﬁned as a ratio of
+volume of powder consumed to the input volume of powder. The recycle index for build n
+is shown in Equation (2).
+BV ratio =
+Vconsumed powder
+Vinput powder
+(1)
+R index = ∑i
+k=0 Vconsumed powder ,k
+∑i
+k=0 Vinput powder , k
+(2)
+where Vconsumed is the powder volume used in a speciﬁc build. This powder consumed in
+the build is about the same mass as the laser solidiﬁed parts and the spatters sieved out in
+the recovered powder. Powder was carefully retrieved the sieved to minimize powder loss.
+The R index considers the total powder consumed from build 1 to build i. For example, if
+50% of 1 kg powder is used in build 1, then for build 2 feedstock, the R index is 0.5 if no
+virgin powder is topped up; or the R index is 0.33 if another 0.5 kg powder is added to
+make a 1 kg input powder for build 2.
+The signiﬁcance of the R index is that it is compatible with different types of recycling
+studies. Currently, two different recycling approaches exist in the literature: the single-
+batch and the top-up approaches. At ﬁrst glance, they are not comparable. However,
+both approaches can be made comparable via the R index, if the volumes of the input
+powder and solidiﬁed material for each build in the series are known. This allows for the
+determination of equivalence across different approaches as well as builds of different sizes
+or on different machines.
+The key assumption made in establishing the R index is that the effect of recycling
+correlates linearly with the amount of solid material built and there are no interaction
+effects. The reason for this set of assumptions is based on the physical setup of the SLM
+process. During the laser melting process, only the powder in a small region near the scan
+
+=== PDF PAGE 6 ===
+Sustainability 2023, 15, 15582 6 of 17
+track will experience a change in temperature that can cause degradation. This area will
+be proportional to the scan track length, which in turn is proportional to the scan area. In
+addition, only the powder dispensed into the build chamber is considered as the powder
+that remains undispersed was not affected by factors detrimental to its quality. Therefore,
+this single index represents the combined effects of repeated laser exposure, heating and
+cooling cycles, accumulation of sputter, agglomeration, sintering, and chemical change of
+powder as it is being repeatedly used.
+The R index allows one to quantify the history of the powder batch based on the
+extent of previous use which incorporated the volume of the part built. This allows the
+quantiﬁcation of the extent of recycling to a greater degree of accuracy. Since the builds
+are not the same, simply counting the number of times that the powder was reused is
+insufﬁcient to describe the extent of recycling, which is the conventional method. Moreover,
+the addition of virgin powder is an additional variable that the conventional method cannot
+capture. In the present study, the BV ratios for each build in the sequence within this study
+and R indices of the input powder for these builds are as indicated in Figure 2.
+Sustainability 2023, 15, x FOR PEER REVIEW  6  of  18 
+ 
+The significance of the R index is that it is compatible with different types of recycling 
+studies. Currently, two different recycling approaches exist in the literature: the single‐
+batch and the top‐up approaches. At first glance, they are not comparable. However, both 
+approaches can be made comparable via the R index ,  if the volumes of the input powder 
+and solidified material for each build in the series are known. This allows for the determi‐
+nation of equivalence across different approaches as well as builds of different sizes or on 
+different machines. 
+The key assumption made in establishing the R index is th at  the effect of recycling 
+correlates  linearly  with  the  amount  of  solid  material  built  and  there  are  no  interaction 
+effects. The reason for this set of assumptions is based on the physical setup of the SLM 
+process. During the laser melting process, only the powder in a small region near th e  scan 
+track will experience a change in temperature that can cause degradation. This area will 
+be proportional to the scan track length, which in turn is proportional to the scan area. In 
+addition, only the powder dispensed into the build chamber is considered as the powder 
+that remains undispersed was no t  affected by factors detrimental to its quality. Therefore, 
+this single index represents the combined effects of repeated laser exposure, heating and 
+cooling cycles, accumulation of sputter, agglomeration, sintering, and chemical change of 
+powder as it is being repeatedly used. 
+The  R  index  allows  one  to  quantify  the  history  of  th e   powder  batch  based  on  the 
+extent of previous use which incorporated the volume of the part built. This allows the 
+quantification of the extent of recycling to a greater degree of accuracy. Since the builds 
+are  not  the  same,  simply  counting  the  number  of  times  that  the  powder  was  reused  is 
+insu
+fficient to describe the extent of recycling, which is the conventional method. Moreo‐
+ver, the addition of virgin powder is an additional variable that the conventional method 
+cannot capture. In the present study, the BV ratios for each build in the sequence within 
+this study and R indices of the inpu t  powder for these builds are as indicated in Figure 2. 
+ 
+Figure 2. Variation of the BV ratio and R index across the recycle builds (build 0 represents the virgin 
+powder). 
+To extract the most information out of the recycling build, the build program is sep‐
+arated into three separate regimes. For build 0 (virgin powder) to build 3 (3rd reuse cycle 
+build), the  BV  is  constant.  In  builds  4 to  7, a  variety  of  BVs  are utilized to  confirm the 
+assumption  of  th e   linear  relationship  between  powder degradation  and  the  amount  of 
+solid built. This is particularly important when applied to an industrial setting in pursuit 
+Figure 2. V ariation of the BV ratio and R index across the recycle builds (build 0 represents the virgin powder).
+To extract the most information out of the recycling build, the build program is separated
+into three separate regimes. For build 0 (virgin powder) to build 3 (3rd reuse cycle build),
+the BV is constant. In builds 4 to 7, a variety of BVs are utilized to confirm the assumption
+of the linear relationship between powder degradation and the amount of solid built. This
+is particularly important when applied to an industrial setting in pursuit of ever greater
+customization which is a major advantage offered by additive manufacturing. Beginning
+from build 8, previously reused powder of various extents of recycling was used in the top-up
+process to give an indication of the overall applicability of the present approach.
+The R index was used to track the extent of recycling in the present study. The state
+of the powder particles as well as the resultant microstructure and tensile properties at
+an R index of 0.00, 0.04, 0.15, 0.24, and 0.40 were characterized to understand the effect of
+powder reuse. Note that the R index corresponds to the state of the powder at the start of
+the build, since the R index would increase at the end of the build due to the solid material
+built during the build. These R indices correspond to the use of virgin powder and powder
+at the 1st, 3rd, 6th, and 10th reuse cycle (topped up as necessary) in the respective builds.
+
+=== PDF PAGE 7 ===
+Sustainability 2023, 15, 15582 7 of 17
+3. Results and Discussion
+3.1. Quantifying Powder Recycling
+3.1.1. Morphology
+The SEM images of the powder recovered from build 10 shown in Figure3b showed no
+loss in sphericity, but the number of observed satellites gradually increased as compared to
+the virgin powder in Figure 3a. This is consistent with previous studies that have reported
+a reduction of sphericity only after 30 build cycles [4]. The sieved-out debris contained the
+unwanted agglomerates and sintered powder clusters that were expected from the SLM
+process. This demonstrated that sieving using a 63 µm sieve effectively maintained powder
+morphology quality in the reused powder.
+Sustainability 2023, 15, x FOR PEER REVIEW  7  of  18 
+ 
+of ever greater customization which is a major advantage offered by additive manufac‐
+turing. Beginning from build 8, previously reused powder of various extents of recycling 
+was  used  in  the  top‐up  process  to  give  an  indication  of  the  overall  applicability  of  the 
+present approach. 
+The R index was used to tra ck  the extent of recycling in the present study. The state 
+of the powder particles as well as the resultant microstructure and tensile properties at an 
+R index of 0.00, 0.04, 0.15, 0.24, and 0.40 were characterized to understand the effect of 
+powder reuse. Note that the R index corresponds to the state of the powder at th e start of 
+the build, since the R index would increase at the end of the build due to the solid material 
+built during the build. These R indices correspond to the use of virgin powder and powder 
+at the 1st, 3rd, 6th, and 10 th  reuse cycle (topped up as necessary) in the respective builds. 
+3. Results and Discussion 
+3.1. Quantifying Powder Recycling 
+3.1.1. Morphology 
+The SEM images of the powder recovered from build 10 shown in Figure 3b showed 
+no loss in sphericity, but the number of observed satellites gradually increased as com‐
+pared to the vi rgin powder in Figure 3a. This is consistent with previous studies that have 
+reported a reduction of sphericity only after 30 build cycles [4]. The sieved‐out debris con‐
+tained the unwanted agglomerates and sintered powder clusters that were expected from 
+the SLM process. This demonstrated that sieving usin g  a 63 μm sieve effectively main‐
+tained powder morphology quality in the reused powder. 
+ 
+Figure 3. The virgin powder and the recycled powder (after sieving and refreshing of virgin pow‐
+der) showed very similar morphology in SEM images of (a) virgin powder before build 1, (b) recy‐
+cled powder at build 10, and in optical images showing the corresponding the polished cross sec‐
+tions of the (c) virgin powder and (d) the recycled pow
+der. 
+  
+Figure 3. The virgin powder and the recycled powder (after sieving and refreshing of virgin powder)
+showed very similar morphology in SEM images of (a) virgin powder before build 1, (b) recycled
+powder at build 10, and in optical images showing the corresponding the polished cross sections of
+the (c) virgin powder and (d) the recycled powder.
+3.1.2. Particle Size Distribution
+Particle size distribution study using laser diffraction on the powder samples, shown
+in Figure 4, revealed that the average particle size of the D50 remains at 31 µm ± 2 µm over
+the entire study. A similar trend could be observed in the case of the D10 and D90, having
+an average value of 21 µm (±2 µm) and 50 µm (±1 µm), respectively. The present results
+compare favorably with the existing literature. Quintana et al. [4] reported a steady D10 and
+D50 value and a slightly decreasing D90 with increased recycling. The slight reduction in
+D90 was attributed to the sieving step included prior to every build; eliminating the larger
+particles with satellites and agglomerates which had accumulated because of repeated laser
+exposure. In contrast, Alamos et al. [43] reported that while there is no change in the D50
+and D90 values, the D10 value increased slightly between the virgin powder and the 1st
+recycle build and then remained constant over subsequent builds.
+
+=== PDF PAGE 8 ===
+Sustainability 2023, 15, 15582 8 of 17
+Sustainability 2023, 15, x FOR PEER REVIEW  8  of  18 
+ 
+3.1.2. Particle Size Distribution 
+Particle size distribution study using laser diffraction on the powder samples, shown 
+in Figure 4, revealed that the average particle size of the D50 remains at 31 μm ± 2 μm 
+over the entire study. A similar trend could be observed in the case of the D10 and D90, 
+having an av
+erage value of 21 μm (±2 μm) and 50 μm (±1 μm), respectively. The present 
+results compare favorably with the existing literature. Quintana et al. [4] reported a steady 
+D10 and D50 value and a slightly decreasing D90 with increased recycling. The slight re‐
+duction in D90 wa s  attributed to the sieving step included prior to every build; eliminat‐
+ing the larger particles with satellites and agglomerates which had accumulated because 
+of repeated laser exposure. In contrast, Alamos et al. [43] reported that while there is no 
+change in the D50 and D90 values, the D10 value in creased  slightly between the virgin 
+powder and the 1st recycle build and then remained constant over subsequent builds. 
+The  constant  D90  result  showed  that  the  sieving  step  is  effective  at  removing  the 
+larger  agglomerates  and  powder  clusters  produced  during  the  SLM  process,  while  the 
+D10 results show that the smaller particles are not pr eferentially consumed or otherwise 
+removed during the handling process as summarized by Alamos et al. [43]. Overall, our 
+recycling process has demonstrated its ability to control the various factors and maintain 
+the desired PSD. 
+ 
+Figure 4. PSD variation with increasing extent of powder recycling represented by (a) build number, 
+(b) BV ratio, and (c) R index. The solid lines represent the linear regression. 
+3.1.3. Flowability 
+The Hall test performed on the reused powder (Figure 5a) showed an improved flow‐
+ability after the 1st recycling step and remained relatively steady for all subsequent builds. 
+Similarly, a very slow decline in the Hausner ratio was observed (Figure 5b). This obser‐
+vation is consistent with the reused pow der  retaining its sphericity through the number 
+of build cycles [44]. The consistency of the flowability characteristics is indicative of the 
+inter‐particle friction being constant through the recycling process and that loss of sphe‐
+ricity or contamination [45] had not occurred. 
+It  should  be mentioned  that  the  virgin powder  (at  bu ild  0),  although it  had  a size 
+similar to the recycled powder, showed worse flowability. The powder did not pass the 
+Hall flow test, therefore there is no Hall flow rate at build 0 in Figure 5d. A possible reason 
+is that the power of a size at 31 μm (D 50)  is in the transition zone from non‐flowing pow‐
+der to free‐flowing powder, as reported in the work by Shen et al. [46]. They reported that 
+the flowability of Ti alloy powder of around 30 μm can be very sensitive to moisture level. 
+The flowability can be improved significantly as the heat in a bu ild cycle reduces the mois‐
+ture level [46]. 
+Figure 4. PSD variation with increasing extent of powder recycling represented by (a) build number,
+(b) BV ratio, and (c) R index. The solid lines represent the linear regression.
+The constant D90 result showed that the sieving step is effective at removing the larger
+agglomerates and powder clusters produced during the SLM process, while the D10 results
+show that the smaller particles are not preferentially consumed or otherwise removed during
+the handling process as summarized by Alamos et al. [43]. Overall, our recycling process has
+demonstrated its ability to control the various factors and maintain the desired PSD.
+3.1.3. Flowability
+The Hall test performed on the reused powder (Figure 5a) showed an improved
+ﬂowability after the 1st recycling step and remained relatively steady for all subsequent
+builds. Similarly, a very slow decline in the Hausner ratio was observed (Figure 5b).
+This observation is consistent with the reused powder retaining its sphericity through the
+number of build cycles [44]. The consistency of the ﬂowability characteristics is indicative
+of the inter-particle friction being constant through the recycling process and that loss of
+sphericity or contamination [45] had not occurred.
+Sustainability 2023, 15, x FOR PEER REVIEW  9  of  18 
+ 
+ 
+Figure 5. (a–c) Powder packing (Hausner ratio) and (d–f) powder flowability (Hall flow) showed 
+no obvious trend with increasing powder recycling represented by build number, BV ratio, or R 
+index. Solid lines show the linear fitting. The coefficient of determination R2 indicates the goodness 
+of the linear fit ting.  
+The  unchanging  surface  morphology,  PSD,  and  flowability  characteristics  as  the 
+powder is recycled in the various builds indicate that the spreadability of the powder is 
+maintained. Coupled with the fact that the recycling was using unequal build volumes, 
+one can reach the conclusion that as long as the R index is below 0. 40,  the recoat charac‐
+teristics are preserved. 
+3.1.4. Powder Chemistry 
+The powder chemistries of reused powder shown in Figure 6 appear to be very sim‐
+ilar except for a slight increase in oxygen content. The chemical composition of the reused 
+powder remained within standard specifications for Ti‐6Al‐4V grade 23 .  The source of the 
+increased oxygen content can be attributed to spatter inclusion in the powder batch dur‐
+ing laser exposure [4]. Nandwana et al. [13] showed that source of oxygen was more from 
+the sudden absence of vacuum in the powder recycling system of electron beam melting 
+machines, th is  was further illustrated in multiple studies [21]. Harkin et al. [47], utilizing 
+a  top‐up  recycling  strategy  for  laser  powder  bed  fusion,  indicated  that  oxygen  content 
+reached the maximum acceptable value of 0.13% at the 8th cycle of powder reuse. In our 
+study (as shown in Figure 6), the increase in oxygen re ported between each build is small 
+due  to  the  recycling  strategy  that  was  employed  here.  Adding  virgin  powder  to  every 
+build cycle progressively dilutes the oxygen content and allows the powder batch to re‐
+main within specifications for Ti‐6Al‐4V grade 23 powder. Furthermore, the correlation 
+of R index an d oxygen content (Figure 6c), were found to be higher compared to build 
+number (Figure 6a), which indicates that the R index could be a better indicator of oxygen 
+content compared to the conventionally used build number. In other words, the powder 
+oxygen content “remembers” the powder usage history. 
+Figure 5. (a–c) Powder packing (Hausner ratio) and (d–f) powder ﬂowability (Hall ﬂow) showed no
+obvious trend with increasing powder recycling represented by build number, BV ratio, or R index.
+Solid lines show the linear ﬁtting. The coefﬁcient of determination R2 indicates the goodness of the
+linear ﬁtting.
+
+=== PDF PAGE 9 ===
+Sustainability 2023, 15, 15582 9 of 17
+It should be mentioned that the virgin powder (at build 0), although it had a size
+similar to the recycled powder, showed worse ﬂowability. The powder did not pass the
+Hall ﬂow test, therefore there is no Hall ﬂow rate at build 0 in Figure 5d. A possible reason
+is that the power of a size at 31 µm (D50) is in the transition zone from non-ﬂowing powder
+to free-ﬂowing powder, as reported in the work by Shen et al. [46]. They reported that the
+ﬂowability of Ti alloy powder of around 30 µm can be very sensitive to moisture level. The
+ﬂowability can be improved signiﬁcantly as the heat in a build cycle reduces the moisture
+level [46].
+The unchanging surface morphology , PSD, and flowability characteristics as the powder
+is recycled in the various builds indicate that the spreadability of the powder is maintained.
+Coupled with the fact that the recycling was using unequal build volumes, one can reach the
+conclusion that as long as the R index is below 0.40, the recoat characteristics are preserved.
+3.1.4. Powder Chemistry
+The powder chemistries of reused powder shown in Figure6 appear to be very similar
+except for a slight increase in oxygen content. The chemical composition of the reused
+powder remained within standard speciﬁcations for Ti-6Al-4V grade 23. The source of
+the increased oxygen content can be attributed to spatter inclusion in the powder batch
+during laser exposure [4]. Nandwana et al. [13] showed that source of oxygen was more
+from the sudden absence of vacuum in the powder recycling system of electron beam
+melting machines, this was further illustrated in multiple studies [21]. Harkin et al. [47],
+utilizing a top-up recycling strategy for laser powder bed fusion, indicated that oxygen
+content reached the maximum acceptable value of 0.13% at the 8th cycle of powder reuse.
+In our study (as shown in Figure 6), the increase in oxygen reported between each build
+is small due to the recycling strategy that was employed here. Adding virgin powder to
+every build cycle progressively dilutes the oxygen content and allows the powder batch to
+remain within speciﬁcations for Ti-6Al-4V grade 23 powder. Furthermore, the correlation
+of R index and oxygen content (Figure 6c), were found to be higher compared to build
+number (Figure 6a), which indicates that the R index could be a better indicator of oxygen
+content compared to the conventionally used build number. In other words, the powder
+oxygen content “remembers” the powder usage history.
+Sustainability 2023, 15, x FOR PEER REVIEW  10  of  18 
+ 
+ 
+(a)  (b)  (c) 
+Figure 6. Variation of oxygen content as a function of (a) build number, (b) BV ratio, and (c) R index. 
+Dashed lines at 0.13%  and 0.2% show the maximum allowable  oxygen content for Grade 23 and 
+Grade 5 Ti‐6Al‐4V powders, respectively. Solid lines show the linear fitting. R2 and root mean 
+squared errors (RMSE) values are included to show the goodness of the linear fitting. 
+3.2. Build Material Characterisation 
+3.2.1. Density and Microstructure 
+The built material exhibited very high density across all the recycle builds. A material 
+density of between 99.51% to 99.92% was achieved in all builds in the present study. Fig‐
+ure 7 shows a typical cross section of the built material. 
+ 
+Figure 7. (a,b) Representative cross‐sectional images taken from two different regions of the as‐built 
+samples (recycle 10 build) showing very little visible porosities. The measured relative density was 
+above 99.9% for all samples. 
+Microstructure characterization of the as‐built components after heat treatment at 800 
+°C for 6 h revealed an α + β type microstructure as shown in Figure 8. The white lamellae 
+represent the α phase and the dark regions represent the β phase. The microstructure of 
+the material built using reused powder is typical of th at  of Ti‐6Al‐4V alloy. The high cool‐
+ing rates of L‐PBF lead to the initial formation of martensitic structures. The heat treatment 
+as suggested by Cao et al. [41] was implemented in this study to ensure the maximum 
+conversion of martensite into α + β phases, leading to the formation of a Widmanstätten 
+pa
+ttern. This conversion of the martensitic structure results in a drop in ultimate tensile 
+strength (UTS) and yield strength (YS) while improving elongation (i.e., >12% elongation) 
+of the resulting material, as will be shown below in the next section in Table 2. The micro‐
+structure observed resembles the m icrostructure  usually reported in Ti‐6Al‐4V alloys pro‐
+cessed using electron beam‐assisted melting [15]. 
+Figure 6. Variation of oxygen content as a function of (a) build number, (b) BV ratio, and (c) R index.
+Dashed lines at 0.13% and 0.2% show the maximum allowable oxygen content for Grade 23 and Grade 5
+Ti-6Al-4V powders, respectively . Solid lines show the linear fitting. R2 and root mean squared errors
+(RMSE) values are included to show the goodness of the linear fitting.
+
+=== PDF PAGE 10 ===
+Sustainability 2023, 15, 15582 10 of 17
+3.2. Build Material Characterisation
+3.2.1. Density and Microstructure
+The built material exhibited very high density across all the recycle builds. A material
+density of between 99.51% to 99.92% was achieved in all builds in the present study. Figure7
+shows a typical cross section of the built material.
+Sustainability 2023, 15, x FOR PEER REVIEW  10  of  18 
+ 
+ 
+(a)  (b)  (c) 
+Figure 6. Variation of oxygen content as a function of (a) build number, (b) BV ratio, and (c) R index. 
+Dashed lines at 0.13%  and 0.2% show the maximum allowable  oxygen content for Grade 23 and 
+Grade 5 Ti‐6Al‐4V powders, respectively. Solid lines show the linear fitting. R2 and root mean 
+squared errors (RMSE) values are included to show the goodness of the linear fitting. 
+3.2. Build Material Characterisation 
+3.2.1. Density and Microstructure 
+The built material exhibited very high density across all the recycle builds. A material 
+density of between 99.51% to 99.92% was achieved in all builds in the present study. Fig‐
+ure 7 shows a typical cross section of the built material. 
+ 
+Figure 7. (a,b) Representative cross‐sectional images taken from two different regions of the as‐built 
+samples (recycle 10 build) showing very little visible porosities. The measured relative density was 
+above 99.9% for all samples. 
+Microstructure characterization of the as‐built components after heat treatment at 800 
+°C for 6 h revealed an α + β type microstructure as shown in Figure 8. The white lamellae 
+represent the α phase and the dark regions represent the β phase. The microstructure of 
+the material built using reused powder is typical of th at  of Ti‐6Al‐4V alloy. The high cool‐
+ing rates of L‐PBF lead to the initial formation of martensitic structures. The heat treatment 
+as suggested by Cao et al. [41] was implemented in this study to ensure the maximum 
+conversion of martensite into α + β phases, leading to the formation of a Widmanstätten 
+pa
+ttern. This conversion of the martensitic structure results in a drop in ultimate tensile 
+strength (UTS) and yield strength (YS) while improving elongation (i.e., >12% elongation) 
+of the resulting material, as will be shown below in the next section in Table 2. The micro‐
+structure observed resembles the m icrostructure  usually reported in Ti‐6Al‐4V alloys pro‐
+cessed using electron beam‐assisted melting [15]. 
+Figure 7. (a,b) Representative cross-sectional images taken from two different regions of the as-built
+samples (recycle 10 build) showing very little visible porosities. The measured relative density was
+above 99.9% for all samples.
+Microstructure characterization of the as-built components after heat treatment at 800◦C
+for 6 h revealed an α + β type microstructure as shown in Figure 8. The white lamellae
+represent theα phase and the dark regions represent theβ phase. The microstructure of the
+material built using reused powder is typical of that of Ti-6Al-4V alloy . The high cooling
+rates of L-PBF lead to the initial formation of martensitic structures. The heat treatment as
+suggested by Cao et al. [41] was implemented in this study to ensure the maximum conversion
+of martensite intoα + β phases, leading to the formation of a Widmanstätten pattern. This
+conversion of the martensitic structure results in a drop in ultimate tensile strength (UTS)
+and yield strength (YS) while improving elongation (i.e., >12% elongation) of the resulting
+material, as will be shown below in the next section in Table2. The microstructure observed
+resembles the microstructure usually reported in Ti-6Al-4V alloys processed using electron
+beam-assisted melting [15].
+Sustainability 2023, 15, x FOR PEER REVIEW  11  of  18 
+ 
+ 
+Figure 8. The heat‐treated samples built with different levels of recycling show similar microstruc‐
+ture, showing visible prior β boundaries, colonies of acicular α phases, and transformed β phases. 
+(a) recycle build 2 and (b) recycle build 6. 
+The highly consistent microstructure in Figure 8 was also mirrored by the fracture 
+surfaces where identical features were exhibited (Figure 9). 
+ 
+Figure 9. Fracture surface of sample from recycle build 1 (a) and recycle build 6 (b). 
+   
+Figure 8. The heat-treated samples built with different levels of recycling show similar microstructure,
+showing visible priorβ boundaries, colonies of acicularα phases, and transformedβ phases. (a) recycle
+build 2 and (b) recycle build 6.
+The highly consistent microstructure in Figure 8 was also mirrored by the fracture
+surfaces where identical features were exhibited (Figure 9).
+
+=== PDF PAGE 11 ===
+Sustainability 2023, 15, 15582 11 of 17
+Sustainability 2023, 15, x FOR PEER REVIEW  11  of  18 
+ 
+ 
+Figure 8. The heat‐treated samples built with different levels of recycling show similar microstruc‐
+ture, showing visible prior β boundaries, colonies of acicular α phases, and transformed β phases. 
+(a) recycle build 2 and (b) recycle build 6. 
+The highly consistent microstructure in Figure 8 was also mirrored by the fracture 
+surfaces where identical features were exhibited (Figure 9). 
+ 
+Figure 9. Fracture surface of sample from recycle build 1 (a) and recycle build 6 (b). 
+   
+Figure 9. Fracture surface of sample from recycle build 1 (a) and recycle build 6 (b).
+3.2.2. Tensile Performance
+The tensile results from this study are shown in Table 2. The changes of the tensile
+properties are minor, and the properties conform with the AMS 4928 (Committee 1957)
+mechanical properties minimum standard, i.e., 896–930 MPa tensile strength, 820–860 MPa
+yield strength, 8–10% elongation, and a 10–25% area reduction. The mechanical properties
+from work on reused powder builds in the literature are also shown and compared in
+Table 2. Most of the existing literature utilized the single batch approach recycling with
+sieving, where no powder is added during recycling. This method would be considered
+the more adverse condition for the reused powder than the top-up method used in the
+present study using virgin powder to refresh the feedstock.
+The present mechanical results are consistent with that reported in the literature. Very
+minor increases in YS and UTS with increasing extent of recycling have been attributed
+to oxide inclusions during powder recycling [ 20] and/or pick-up during the building
+process [14,48]. However, others have reported no correlation between oxygen pick-up and
+the small increase in the YS and UTS [4]. On the other hand, the oxygen content of the built
+components in the present study was not a good indicator of the mechanical properties of
+heat treated components, which is in contrast with Tang et al.’s [14] ﬁnding.
+
+=== PDF PAGE 12 ===
+Sustainability 2023, 15, 15582 12 of 17
+Table 2. Comparison of tensile results of the AM build between present study and literature.
+Process
+Condition
+Recycle
+Method
+Recycle Times/BV
+Ratio/
+R Index
+Powder/
+(Part) Oxygen
+Content (%)
+Mechanical Properties
+YS (MPa) UTS (MPa) E ( ε) R.A (%)
+Present
+study
+LPBF and heat treated
+at 800 ◦C 6 h
+Sieving and
+refreshing
+0/0.12/0 0.107 948 ± 8 1034 ± 5 16.0 ± 2.0 36 ± 6
+1/0.12/0.04 0.109 946 ± 14 1035 ± 6 17.0 ± 1.0 38 ± 2
+3/0.13/0.15 0.118 929 ± 23 1035 ± 6 17.0 ± 1.0 38 ± 3
+6/0.12/0.24 0.115 939 ± 27 1033 ± 17 16.0 ± 1.4 37 ± 5
+10/0.16/0.40 0.129 930 ± 28 1033 ± 17 14.5 ± 1.0 40 ± 5
+[43]
+LPBF and heat treated
+at 650 ◦C 3 h then 800
+◦C 2 h
+Sieving only
+0 (0.125) 933 ± 5 1030 ± 4 15.7 ± 0.5 56 ± 2
+1 (0.110) 938 ± 9 1027 ± 5 17.3 ± 0.4 59 ± 1
+4 (0.120) 947 ± 6 1034 ± 3 15.3 ± 0.3 54 ± 1
+8 (0.125) 958 ± 7 1043 ± 2 15.3 ± 0.3 51 ± 1
+[25] LPBF and heat treated
+in vacuum Sieving only
+1 0.090 839 1012 7 14
+12 0.103 934 1052 12 30
+18 0.119 921 1056 17 42
+24 0.122 918 1051 7 12
+31 0.119 897 1041 10 18
+38 0.121 989 1095 17 47
+[4] LPBF and HIP at 920 ◦C
+102 MPa 2 h Sieving only
+1 0.11 879 ± 7.6 984 ± 0.6 14 ± 0.6 44 ± 0.6
+4 0.13 871 ± 6.0 988 ± 1.0 15 ± 0.6 45 ± 1.2
+17 0.12 893 ± 3.1 1001 ± 0.6 15 ± 0.0 47 ± 0.0
+31 0.11 881 ± 3.6 1003 ± 1.2 15 ± 0.6 44 ± 0.6
+[49] LPBF and heat treated
+at 704 ◦C 1 h Sieving only 0 0.10 992 1090 14.0 -
+15 0.12 978 1073 14.5 -
+[14] EBM, preheat to 730 ◦C Sieving only
+0 0.08 834 ± 10.0 920 ± 10.0 16 ± 0.3 54 ± 3.0
+2 0.097 870 ± 8.0 970 ± 10.0 15 ± 0.3 46 ± 3.0
+6 0.14 822 ± 25.0 910 ± 20.0 14 ± 1.0 53 ± 4.0
+11 0.17 892 ± 4.5 987 ± 3.5 18 ± 0.8 50 ± 1.0
+16 0.18 940 ± 3.6 1028 ± 4.1 15 ± 1.8 42 ± 4.1
+21 0.19 960 ± 30.0 1039 ± 2.7 16 ± 0.9 -
+As shown in Table 2, this work obtained very consistent tensile properties. The
+variation of average yield strength is only −22% (−19 MPa) from the virgin powder build.
+The results from the work by Park et al. [ 25] and Tang et al. [ 14] showed a signiﬁcant
+increase of yield strength +150 MPa (+18%) and +126 MPa (+15%). The increase can be
+attributed to the effect of oxygen pickup in the powder which strengthens the material.
+However, the fracture toughness and fatigue properties may be reduced.
+Taking a close look at the yield strength in this work, it can be found in Figure10 that
+the yield strength decreased with increasing extent of powder recycle. Comparing build
+number, BV ratio, R index, the yield strength showed the best correlation with BV ratio. This
+implies that during the LPBF production, a larger volume resulted in a noticeable decrease
+in the yield strength. A possible reason is the spatters generated during laser melting. These
+spatters are usually larger than the feedstock powder particles. The larger size can cause lack of
+fusion issues, which may introduce more defects in the parts, which reduces the yield strength.
+However, the cross sections did not show a clear change of porosity in the parts. More careful
+inspections using X-ray micro-CT can help to improve understanding.
+Sustainability 2023, 15, x FOR PEER REVIEW  13  of  18 
+ 
+of yield strength +150 MPa (+18%) and +126 MPa (+15%). The increase can be attributed 
+to the effect of oxygen pickup in the powder which strengthens the material. However, 
+the fracture toughness and fatigue properties may be reduced. 
+Taking a close look at the yield strength in this work, it can be fo und  in Figure 10 that 
+the yield strength decreased with increasing extent of powder recycle. Comparing build 
+number, BV ratio, R index, the yield strength showed the best correlation with BV ratio. 
+This implies that during the LPBF production, a larger volume resulted in a noticeable 
+decrease  in  the  yield  st rength.   A  possible  reason  is  the  spatters  generated  during  laser 
+melting. These spatters are usually larger than the feedstock powder particles. The larger 
+size can cause lack of fusion issues, which may introduce more defects in the parts, which 
+reduces the yield strength. However, the cross sections did not show a clear ch ange  of 
+porosity in the parts. More careful inspections using X‐ray micro‐CT can help to improve 
+understanding. 
+ 
+Figure 10. Observed variation in material yield strength as a function of (a) build number, (b) BV 
+ratio, and (c) R index. The solid lines represent the trends associated with each plot. R2 and root 
+mean squared errors (RMSE) values are included to show the goodness of linear fitting. 
+3.3. Assessment of Powder Processing Methodology 
+The key issue in the present work is to establish whether the proposed methodology 
+can ensure that the used powder can be returned to a state that is comparable to that of 
+virgin powder to ensure consistent powder properties and material performance. Previ‐
+ously,  in  Sec tion   3.1,  the  quality  of  the  processed  powder  was  evaluated  and  it  was 
+demonstrated that the recycled powder met the same characteristic and performance cri‐
+teria as the virgin powder. In addition, Section 3.2 established that the performance of the 
+built material was indistinguishable from that built using the virgin powder. In thi s sec‐
+tion,  heat‐affected  powder  collected  near  the  gas  outlet  and  the  oversized  powder  col‐
+lected in the sieving process were analyzed to gain a better understanding of the mecha‐
+nism behind the effectiveness of the proposed processing methodology. 
+In the EOS M290 LPBF machine (EOS GmbH, Krailling, Germ any)  used in this study, 
+the protective argon gas forms a shielding gas flow over the powder bed to remove fumes 
+and spatters during the LPBF process. The heat‐affected powder samples were collected 
+from the build platform near the gas outlet. This sample was composed of unused powder 
+and the heated‐af fected particles that were redistributed by the gas flow. The sieved‐out 
+spatter samples were the oversized particles sieved out using a 53 μm mesh. These parti‐
+cles were formed from partial sintering of powder particles into clusters due to the laser 
+energy in the LPBF process as well as an y  larger process‐affected material. The oversized 
+particles sieved out during the powder recycling have a much higher oxygen and nitrogen 
+content compared to the virgin powder (Figure 11), which proved that the sieving process 
+can remove powder that had its chemical composition altered by the laser scan process. 
+Figure 10. Observed variation in material yield strength as a function of ( a) build number, (b) BV
+ratio, and (c) R index. The solid lines represent the trends associated with each plot. R 2 and root
+mean squared errors (RMSE) values are included to show the goodness of linear ﬁtting.
+
+=== PDF PAGE 13 ===
+Sustainability 2023, 15, 15582 13 of 17
+3.3. Assessment of Powder Processing Methodology
+The key issue in the present work is to establish whether the proposed methodology
+can ensure that the used powder can be returned to a state that is comparable to that of vir-
+gin powder to ensure consistent powder properties and material performance. Previously,
+in Section 3.1, the quality of the processed powder was evaluated and it was demonstrated
+that the recycled powder met the same characteristic and performance criteria as the virgin
+powder. In addition, Section 3.2 established that the performance of the built material was
+indistinguishable from that built using the virgin powder. In this section, heat-affected pow-
+der collected near the gas outlet and the oversized powder collected in the sieving process
+were analyzed to gain a better understanding of the mechanism behind the effectiveness of
+the proposed processing methodology.
+In the EOS M290 LPBF machine (EOS GmbH, Krailling, Germany) used in this study,
+the protective argon gas forms a shielding gas ﬂow over the powder bed to remove fumes
+and spatters during the LPBF process. The heat-affected powder samples were collected
+from the build platform near the gas outlet. This sample was composed of unused powder
+and the heated-affected particles that were redistributed by the gas ﬂow. The sieved-out
+spatter samples were the oversized particles sieved out using a 53µm mesh. These particles
+were formed from partial sintering of powder particles into clusters due to the laser energy
+in the LPBF process as well as any larger process-affected material. The oversized particles
+sieved out during the powder recycling have a much higher oxygen and nitrogen content
+compared to the virgin powder (Figure 11), which proved that the sieving process can
+remove powder that had its chemical composition altered by the laser scan process.
+Sustainability 2023, 15, x FOR PEER REVIEW  14  of  18 
+ 
+ 
+Figure 11. Chemical composition of oversize particles compared with the virgin powder: (a) oxygen 
+content, (b) nitrogen content. 
+However, it is impossible to measure the total amount of process‐affected material 
+and sintered clusters generated over the course of a build that can degrade the powder 
+batch. By assessing the PSD of the heat‐affected particles and sieved‐out spatters (Figure 
+12), as well as the PSD (Figure 4) and ch emical  composition (Figure 6) of the sieved recy‐
+cled  powder,  the effectiveness  of the  recycling  process can  be  inferred.  The  PSD of the 
+heat‐affected  particles  encompassed  a  large  range,  substantially  larger  than  that  of  the 
+reference virgin powder. This is consistent with its expected composition of unused pow‐
+der an d  process‐affected material (which is supported by their trace chemical composi‐
+tion, Figure 13). The sieved‐out particle samples had a PSD exclusively above that of the 
+reference virgin powder, i.e., the D10 of the oversized powder was higher than the D50 
+and close to the D90 of the heat‐af fected  powder. This suggests that the sieving process 
+can effectively remove powder outside the PSD range of the reference virgin powder. The 
+heat‐affected  powder  PSD  indicates  that  the  process‐affected  powder  is  substantially 
+larger  than  the  original  powder  size,  which  would  be  effectively  removed  by  sieving. 
+While it is possib le  that there is process‐affect material inside the PSD range of the refer‐
+ence virgin material, their volume and associated accumulation of trace element is insuf‐
+ficient to affect the overall process, as demonstrated by the stable chemical composition 
+throughout the entire recycling program. Thus, it can be concluded th at  the proposed re‐
+cycling methodology is effective over the studied range. 
+ 
+Figure 12. Particle size distribution of (a) used powder and (b) oversize particles compared to the 
+virgin powder. 
+Figure 11. Chemical composition of oversize particles compared with the virgin powder: (a) oxygen
+content, (b) nitrogen content.
+However, it is impossible to measure the total amount of process-affected material and
+sintered clusters generated over the course of a build that can degrade the powder batch. By
+assessing the PSD of the heat-affected particles and sieved-out spatters (Figure 12), as well
+as the PSD (Figure 4) and chemical composition (Figure 6) of the sieved recycled powder,
+the effectiveness of the recycling process can be inferred. The PSD of the heat-affected
+particles encompassed a large range, substantially larger than that of the reference virgin
+powder. This is consistent with its expected composition of unused powder and process-
+affected material (which is supported by their trace chemical composition, Figure 13). The
+sieved-out particle samples had a PSD exclusively above that of the reference virgin powder,
+i.e., the D10 of the oversized powder was higher than the D50 and close to the D90 of
+the heat-affected powder. This suggests that the sieving process can effectively remove
+powder outside the PSD range of the reference virgin powder. The heat-affected powder
+PSD indicates that the process-affected powder is substantially larger than the original
+powder size, which would be effectively removed by sieving. While it is possible that there
+is process-affect material inside the PSD range of the reference virgin material, their volume
+and associated accumulation of trace element is insufﬁcient to affect the overall process, as
+
+=== PDF PAGE 14 ===
+Sustainability 2023, 15, 15582 14 of 17
+demonstrated by the stable chemical composition throughout the entire recycling program.
+Thus, it can be concluded that the proposed recycling methodology is effective over the
+studied range.
+Sustainability 2023, 15, x FOR PEER REVIEW  14  of  18 
+ 
+ 
+Figure 11. Chemical composition of oversize particles compared with the virgin powder: (a) oxygen 
+content, (b) nitrogen content. 
+However, it is impossible to measure the total amount of process‐affected material 
+and sintered clusters generated over the course of a build that can degrade the powder 
+batch. By assessing the PSD of the heat‐affected particles and sieved‐out spatters (Figure 
+12), as well as the PSD (Figure 4) and ch emical  composition (Figure 6) of the sieved recy‐
+cled  powder,  the effectiveness  of the  recycling  process can  be  inferred.  The  PSD of the 
+heat‐affected  particles  encompassed  a  large  range,  substantially  larger  than  that  of  the 
+reference virgin powder. This is consistent with its expected composition of unused pow‐
+der an d  process‐affected material (which is supported by their trace chemical composi‐
+tion, Figure 13). The sieved‐out particle samples had a PSD exclusively above that of the 
+reference virgin powder, i.e., the D10 of the oversized powder was higher than the D50 
+and close to the D90 of the heat‐af fected  powder. This suggests that the sieving process 
+can effectively remove powder outside the PSD range of the reference virgin powder. The 
+heat‐affected  powder  PSD  indicates  that  the  process‐affected  powder  is  substantially 
+larger  than  the  original  powder  size,  which  would  be  effectively  removed  by  sieving. 
+While it is possib le  that there is process‐affect material inside the PSD range of the refer‐
+ence virgin material, their volume and associated accumulation of trace element is insuf‐
+ficient to affect the overall process, as demonstrated by the stable chemical composition 
+throughout the entire recycling program. Thus, it can be concluded th at  the proposed re‐
+cycling methodology is effective over the studied range. 
+ 
+Figure 12. Particle size distribution of (a) used powder and (b) oversize particles compared to the 
+virgin powder. 
+Figure 12. Particle size distribution of (a) used powder and (b) oversize particles compared to the
+virgin powder.
+Sustainability 2023, 15, x FOR PEER REVIEW  15  of  18 
+ 
+ 
+Figure  13.  Chemical  composition  of  used  powder  compared  with  the  virgin  powder:  (a)  oxygen 
+content, (b) nitrogen content. 
+4. Conclusions 
+This work used three recycle metrics (recycle number, BV ratio, and R index) to eval‐
+uate  the  change  of  powder properties and  part  properties.  The  build  volume ratio  (BV 
+ratio) considers the ratio between consumed powder and input powder, which reflects 
+the effects of laser heating and by‐products (e. g.,  spatters) generated in one build. The R 
+index tracks the total powder consumption and total input powder. This work conducted 
+10 powder recycles, with BV ratio from 0.12 to 0.22 and R index up to 0.4. The experimental 
+results showed that the powder properties and part tensile properties can be well con‐
+trol
+led  through  recycle  methods  using sieving and refreshing  with  virgin  powder.  The 
+following conclusions can be drawn. 
+1. Powder particle size showed negligible variation through the 10 recycles. The D50 size 
+only changed from 33 μm to 31 μm. 
+2. Powder  compaction  and  flowability  also  showed  negligible  variation  through  the 
+powder cycles. The Hausner ratio showed a slight stronger correlation with R index, 
+indicating  a  better  compaction  in  the  powder.  In  general,  the  changes  of  Hausner 
+ratio and Hall flow rate are st ill  marginal and have no effect on powder packing and 
+spreading. 
+3. Oxygen pickup increases with more powder recycles. The powder oxygen content 
+showed stronger linear correlation to the R index (which considers the whole powder 
+usage history) than recycle number and BV ratio. With the fixed processing condi‐
+tion
+s  (chamber  oxygen  level  and  laser  process  parameters),  the  powder  degraded 
+close to the Grade 23 limit after about 40% powder consumption or 10 builds in this 
+work with 0.107% in the virgin powder to 0.129% in the 10th recycled powder. 
+4. The tensile properties showed slight change in yield strength wh ile ultimate strength 
+and ductility (elongation and reduction of area) only fluctuated slightly. The yield 
+strength had the best linear correlation to the BV ratio, then R index and least to re‐
+cycle number. This implies that the in situ powder degradation (due to thermal ex‐
+posure and spatters) probably ha d  a more detrimental effect on the yield strength. A 
+possible reason is the potential defects from more spatters generated in a larger print‐
+ing volume. 
+In conclusion, powder recycling by sieving and refreshing with virgin powder can 
+effectively control the powder properties except oxygen content. A better powder han‐
+dling met hod,  including better storage conditions and lower chamber oxygen level, can 
+reduce the powder degradation. Moreover, other powder reprocessing methods (e.g., ox‐
+idation  reduction)  can  further  reduce  material  waste.  This  will  be  considered  in  future 
+work to improve the sustainability of LPBF productions. 
+Figure 13. Chemical composition of used powder compared with the virgin powder: ( a) oxygen
+content, (b) nitrogen content.
+4. Conclusions
+This work used three recycle metrics (recycle number, BV ratio, and R index) to
+evaluate the change of powder properties and part properties. The build volume ratio (BV
+ratio) considers the ratio between consumed powder and input powder, which reﬂects
+the effects of laser heating and by-products (e.g., spatters) generated in one build. The R
+index tracks the total powder consumption and total input powder. This work conducted
+10 powder recycles, with BV ratio from 0.12 to 0.22 and R index up to 0.4. The experimental
+results showed that the powder properties and part tensile properties can be well controlled
+through recycle methods using sieving and refreshing with virgin powder. The following
+conclusions can be drawn.
+1. Powder particle size showed negligible variation through the 10 recycles. The D50 size
+only changed from 33 µm to 31 µm.
+2. Powder compaction and ﬂowability also showed negligible variation through the
+powder cycles. The Hausner ratio showed a slight stronger correlation with R index,
+indicating a better compaction in the powder. In general, the changes of Hausner
+ratio and Hall ﬂow rate are still marginal and have no effect on powder packing and
+spreading.
+3. Oxygen pickup increases with more powder recycles. The powder oxygen content
+showed stronger linear correlation to the R index (which considers the whole powder
+
+=== PDF PAGE 15 ===
+Sustainability 2023, 15, 15582 15 of 17
+usage history) than recycle number and BV ratio. With the ﬁxed processing conditions
+(chamber oxygen level and laser process parameters), the powder degraded close to
+the Grade 23 limit after about 40% powder consumption or 10 builds in this work with
+0.107% in the virgin powder to 0.129% in the 10th recycled powder.
+4. The tensile properties showed slight change in yield strength while ultimate strength
+and ductility (elongation and reduction of area) only ﬂuctuated slightly. The yield
+strength had the best linear correlation to the BV ratio, then R index and least to
+recycle number. This implies that the in situ powder degradation (due to thermal
+exposure and spatters) probably had a more detrimental effect on the yield strength.
+A possible reason is the potential defects from more spatters generated in a larger
+printing volume.
+In conclusion, powder recycling by sieving and refreshing with virgin powder can
+effectively control the powder properties except oxygen content. A better powder handling
+method, including better storage conditions and lower chamber oxygen level, can reduce
+the powder degradation. Moreover, other powder reprocessing methods (e.g., oxidation
+reduction) can further reduce material waste. This will be considered in future work to
+improve the sustainability of LPBF productions.
+Author Contributions: Conceptualization: H.S., S.C.V .L. and L.N.S.C.; Funding acquisition: J.Y ., C.M.
+and A.H.; Investigation: T.K., H.S., W.H.K. and M.G.; Methodology: H.S., W.H.K., S.C.V .L. and L.N.S.C.;
+Project administration: C.M. and A.H.; Supervision: A.H., S.C.V .L. and L.N.S.C.; Writing—original draft:
+T.K.; Writing—review & editing: H.S., W.H.K., S.C.V .L. and L.N.S.C. All authors have read and agreed to
+the published version of the manuscript.
+Funding: This research was funded by the Shanghai Aircraft Manufacturing Company (ID: 94320).
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Data available upon request from the authors.
+Acknowledgments: This work is supported by the Shanghai Aircraft Manufacturing Company
+(ID: 94320). The authors acknowledge the use of facilities within the Monash Centre for Additive
+Manufacturing (MCAM), as well as the Monash Centre for Electron Microscopy (MCEM), a Node of
+Microscopy Australia, particularly the electron microscope funded by Australian Research Council
+grant LE0882821.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Gibson, I.; Rosen, D.; Stucker, B.Additive Manufacturing T echnologies: 3D Printing, Rapid Prototyping, and Direct Digital Manufacturing,
+2nd ed.; Springer: New York, NY, USA, 2015.
+2. Oros Daraban, A.E.; Negrea, C.S.; Artimon, F.G.P .; Angelescu, D.; Popan, G.; Gheorghe, S.I.; Gheorghe, M. A Deep Look at Metal
+Additive Manufacturing Recycling and Use Tools for Sustainability Performance. Sustainability 2019, 11, 5494. [CrossRef]
+3. Strondl, A.; Lyckfeldt, O.; Brodin, H.; Ackelid, U. Characterization and Control of Powder Properties for Additive Manufacturing.
+TMS 2015, 67, 549–554. [CrossRef]
+4. Quintana, O.; Alvarez, J.; McMillan, R.; Tong, W.; Tomonto, C. Effects of Reusing Ti-6Al-4V Powder in a Selective Laser Melting
+Additive System Operated in an Industrial Setting. TMS 2018, 70, 1863–1869. [CrossRef]
+5. Mohd Yusuf, S.; Cutler, S.; Gao, N. Review: The Impact of Metal Additive Manufacturing on the Aerospace Industry. Metals 2019,
+9, 1286. [CrossRef]
+6. Khairallah, S.A.; Anderson, A.T.; Rubenchik, A.; King, W.E. Laser powder-bed fusion additive manufacturing: Physics of complex
+melt ﬂow and formation mechanisms of pores, spatter, and denudation zones. Acta Mater. 2016, 108, 36–45. [CrossRef]
+7. Quinn, P .; O’Halloran, S.; Lawlor, J.; Raghavendra, R. The effect of metal EOS 316L stainless steel additive manufacturing powder
+recycling on part characteristics and powder reusability. Adv. Mater. Process. T echnol. 2019, 5, 348–359. [CrossRef]
+8. Fedina, T.; Sundqvist, J.; Kaplan, A.F.H. Spattering and oxidation phenomena during recycling of low alloy steel powder in Laser
+Powder Bed Fusion. Mater. T oday Commun.2021, 27, 102241. [CrossRef]
+9. Chu, F.; Zhang, K.; Shen, H.; Liu, M.; Huang, W.; Zhang, X.; Liang, E.; Zhou, Z.; Lei, L.; Hou, J.; et al. Inﬂuence of satellite
+and agglomeration of powder on the processability of AlSi10Mg powder in Laser Powder Bed Fusion. J. Mater. Res. 2021, 11,
+2059–2073. [CrossRef]
+
+=== PDF PAGE 16 ===
+Sustainability 2023, 15, 15582 16 of 17
+10. Bonatti, R.S.; Meyer, Y.A.; Bortolozo, A.D.; Costa, D.; Osório, W.R. Morphology and size effects on densiﬁcation and mechanical
+behavior of sintered powders from Al-Si and Al-Cu casting alloys. J. Alloys Compd. 2019, 786, 717–732. [CrossRef]
+11. Satizabal, L.M.; Caurin, H.F.N.; Meyer, Y.A.; Padilha, G.S.; Bortolozo, A.D.; Osório, W.R. Distinct heat treatments and powder size
+ratios affecting mechanical responses of Al/Si/Cu composites. J. Compos. Mater. 2021, 55, 3589–3605. [CrossRef]
+12. Bonatti, R.S.; Meyer, Y.A.; Padilha, G.S.; Bortolozo, A.D.; Osório, W.R. Silicon Content Affecting Corrosion Behavior of Alp/Sip
+Composites in a Biodiesel Blend. Corrosion 2020, 76, 1109–1121. [CrossRef] [PubMed]
+13. Nandwana, P .; Peter, W.; Dehoff, R.; Lowe, L.; Kirka, M.; Medina, F.; Babu, S. Recyclability Study on Inconel 718 and Ti-6Al-4V
+Powders for Use in Electron Beam Melting. Metall. Mater. T rans. B 2016, 47, 754–762. [CrossRef]
+14. Tang, H.; Qian, M.; Liu, N.; Zhang, X.; Yang, G.; Wang, J. Effect of Powder Reuse Times on Additive Manufacturing of Ti-6Al-4V
+by Selective Electron Beam Melting. TMS 2015, 67, 555–563. [CrossRef]
+15. Popov, V .V .; Katz-Demyanetz, A.; Garkun, A.; Bamberger, M. The effect of powder recycling on the mechanical properties and
+microstructure of electron beam melted Ti-6Al-4 V specimens. Addit. Manuf. 2018, 22, 834–843. [CrossRef]
+16. Liu, Z.; He, B.; Lyu, T.; Zou, Y. A Review on Additive Manufacturing of Titanium Alloys for Aerospace Applications: Directed
+Energy Deposition and Beyond Ti-6Al-4V .JOM 2021, 73, 1804–1818. [CrossRef]
+17. Jang, T.-S.; Kim, D.; Han, G.; Yoon, C.-B.; Jung, H.-D. Powder based additive manufacturing for biomedical application of titanium
+and its alloys: A review. Biomed. Eng. Lett. 2020, 10, 505–516. [CrossRef]
+18. Lütjering, G. Titanium, 2nd ed.; Springer: Berlin, UK; New York, NY, USA, 2007.
+19. Leicht, A. Aspects of Building Geometry and Powder Characteristics in Powder Bed Fusion; Chalmers Tekniska Hogskola: Göteborg,
+Sweden, 2018.
+20. Guoyu, J. The Effect of Oxygen Content on the Tensile Properties of SLMed Ti6Al4V Alloy. Ph.D. Thesis, Monash University,
+Clayton, VIC, Australia, 2017.
+21. Sun, Y.; Aindow, M.; Hebert, R.J. The effect of recycling on the oxygen distribution in Ti-6Al-4V powder for additive manufacturing.
+Mater. High T emp Microsc. Oxid. 2018, 35, 217–224. [CrossRef]
+22. Silverstein, R.; Eliezer, D. Hydrogen trapping in 3D-printed (additive manufactured) Ti-6Al-4V .Mater. Charact. 2018, 144, 297–304.
+[CrossRef]
+23. Peterson, J.; Issariyapat, A.; Umeda, J.; Kondoh, K. The effects of heat treatment and carbon content on the microstructure and
+mechanical properties of laser powder bed fusion Ti-6Al-4V with dissolved TiC particles. J. Alloys Compd. 2022, 920, 165930.
+[CrossRef]
+24. Liu, L.; Chen, C.; Zhao, R.; Wang, X.; Tao, H.; Shuai, S.; Wang, J.; Liao, H.; Ren, Z. In-situ nitrogen strengthening of selective laser
+melted Ti6Al4V with superior mechanical performance. Addit. Manuf. 2021, 46, 102142. [CrossRef]
+25. Park, S.B.; Road, B.; Kingdom, U. Investigating the Effects of Multiple Re-Use of Ti6Al4V Powder in Additive Manufacturing; Renishaw:
+Staffordshire, UK, 2016; pp. 1–10.
+26. Shalnova, S.A.; Kuzminova, Y.O.; Evlashin, S.A.; Klimova-Korsmik, O.G.; Vildanov, A.M.; Shibalova, A.A.; Turichin, G.A. Effect
+of recycled powder content on the structure and mechanical properties of Ti-6Al-4V alloy produced by direct energy deposition.
+J. Alloys Compd. 2022, 893, 162264. [CrossRef]
+27. Yang, K.V .; Looze, G.R.d.; Nguyen, V .; Wilson, R.S. Directed-energy deposition of Ti-6Al-4V alloy using fresh and recycled
+feedstock powders under reactive atmosphere. Addit. Manuf. 2022, 58, 103043. [CrossRef]
+28. Derimow, N.; Hrabe, N. Oxidation in Reused Powder Bed Fusion Additive Manufacturing Ti-6Al-4V Feedstock: A Brief Review.
+JOM 2021, 73, 3618–3638. [CrossRef]
+29. Guleryuz, H.; Cimenoglu, H. Oxidation of Ti–6Al–4V alloy. J. Alloys Compd. 2009, 472, 241–246. [CrossRef]
+30. ASTM E1409-13; Standard Test Method for Determination of Oxygen and Nitrogen in Titanium and Titanium Alloys by Inert Gas
+Fusion. ASTM International: West Conshohocken, PA, USA, 2013.
+31. ASTM E1941-10; Standard Test Method for Determination of Carbon in Refractory and Reactive Metals and Their Alloys by
+Combustion Analysis. ASTM International: West Conshohocken, PA, USA, 2016.
+32. ASTM E1447-10; Standard Test Method for Determination of Hydrogen in Titanium and Titanium Alloys by Inert Gas Fusion
+Thermal Conductivity/Infrared Detection Method. ASTM International: West Conshohocken, PA, USA, 2016.
+33. ASTM E2371-13; Standard Test Method for Analysis of Titanium and Titanium Alloys by Direct Current Plasma and Induc-
+tively Coupled Plasma Atomic Emission Spectrometry (Performance-Based Test Methodology). ASTM International: West
+Conshohocken, PA, USA, 2013.
+34. ASTM E2651-19; Standard Guide for Powder Particle Size Analysis. ASTM International: West Conshohocken, PA, USA, 2019.
+35. ASTM B855-17; Standard Test Method for Volumetric Flow Rate of Metal Powders Using the Arnold Meter and Hall Flowmeter
+Funnel. ASTM International: West Conshohocken, PA, USA, 2017.
+36. ASTM B964-16; Standard Test Methods for Flow Rate of Metal Powders Using the Carney Funnel. ASTM International: West
+Conshohocken, PA, USA, 2016.
+37. ASTM B417-18; Standard Test Method for Apparent Density of Non-Free-Flowing Metal Powders Using the Carney Funnel.
+ASTM International: West Conshohocken, PA, USA, 2018.
+38. ASTM B212-21; Standard Test Method for Apparent Density of Free-Flowing Metal Powders Using the Hall Flowmeter Funnel.
+ASTM International: West Conshohocken, PA, USA, 2021.
+
+=== PDF PAGE 17 ===
+Sustainability 2023, 15, 15582 17 of 17
+39. Marcu, T.; Todea, M.; Gligor, I.; Berce, P .; Popa, C. Effect of surface conditioning on the ﬂowability of Ti6Al7Nb powder for
+selective laser melting applications. Appl. Surf. Sci. 2012, 258, 3276–3282. [CrossRef]
+40. Artamonov, V .V .; Bykov, A.O.; Bykov, P .O.; Artamonov, V .P . Measurement of the tap density of metal powders.Powder Metall.
+Met. Ceram. 2013, 52, 237–239. [CrossRef]
+41. Cao, S.; Chen, Z.; Lim, C.; Yang, K.; Jia, Q.; Jarvis, T.; Tomus, D.; Wu, X. Defect, Microstructure, and Mechanical Property of
+Ti-6Al-4V Alloy Fabricated by High-Power Selective Laser Melting. TMS 2017, 69, 2684–2692. [CrossRef]
+42. ASTM E8/E8M; Standard Test Methods for Tension Testing of Metallic Materials. ASTM International: West Conshohocken, PA,
+USA, 2016.
+43. Alamos, F.J.; Schiltz, J.; Kozlovsky, K.; Attardo, R.; Tomonto, C.; Pelletiers, T.; Schmid, S.R. Effect of powder reuse on mechanical
+properties of Ti-6Al-4V produced through selective laser melting. Int. J. Refract. Met. Hard Mater. 2020, 91, 105273. [CrossRef]
+44. Suzuki, M.; Sato, H.; Hasegawa, M.; Hirota, M. Effect of size distribution on tapping properties of ﬁne powder. Powder T echnol.
+2001, 118, 53–57. [CrossRef]
+45. Kaleem, M.A.; Alam, M.Z.; Khan, M.; Jaffery, S.H.I.; Rashid, B. An experimental investigation on accuracy of Hausner Ratio and
+Carr Index of powders in additive manufacturing processes. Met. Powder Rep. 2020, 76 (Suppl. S1), S50–S54. [CrossRef]
+46. Shen, H.; Rometsch, P .; Wu, X.; Huang, A. Inﬂuence of Gas Flow Speed on Laser Plume Attenuation and Powder Bed Particle
+Pickup in Laser Powder Bed Fusion. JOM 2020, 72, 1039–1051. [CrossRef]
+47. Harkin, R.; Wu, H.; Nikam, S.; Quinn, J.; McFadden, S. Reuse of Grade 23 Ti6Al4V Powder during the Laser-Based Powder Bed
+Fusion Process. Metals 2020, 10, 1700. [CrossRef]
+48. Denti, L.; Sola, A.; Defanti, S.; Sciancalepore, C.; Bondioli, F. Effect of Powder Recycling in Laser-based Powder Bed Fusion of
+Ti-6Al-4V .Manuf. T echnol.2019, 19, 190–196. [CrossRef]
+49. Carrion, P .; Soltani-Tehrani, A.; Phan, N.; Shamsaei, N. Powder Recycling Effects on the Tensile and Fatigue Behavior of Additively
+Manufactured Ti-6Al-4V Parts. JOM 2019, 71, 963–973. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

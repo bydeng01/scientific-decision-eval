@@ -1,0 +1,38 @@
+{
+  "revision_id": "SOURCE-QUALIFICATION-20260921-E010",
+  "revised_on": "2026-09-21",
+  "authorized_by": "author",
+  "summary": "E010 retains 118 as the author-reported number of quality-controlled EUs and records the one-case difference between Table 1 generator-exclusion cells and margins.",
+  "references_changed": false,
+  "question_instructions_or_options_changed": false,
+  "deterministic_outputs_changed": false,
+  "new_human_scientific_approval": false,
+  "input_revisions": [
+    {
+      "problem_id": "E010",
+      "prior_decision_id": "UR010",
+      "before_problem_input_sha256": "d2808507acf4060f4f76ecd8431564f2841eb6c1dae94732201ccb7b99b56520",
+      "after_problem_input_sha256": "25256af09f4a1555a44281865ce742937e6318e4dd8bddb62b7e99b08d176e82",
+      "edits": [
+        {
+          "path": [
+            "evidence",
+            0,
+            "text"
+          ],
+          "before": "Within an EU, seeding is randomly assigned to one range and not the other. The authors explicitly say the Medicine Bow assignment plot would have the opposite shading from the Sierra Madre plot. Of 154 EUs, 27 are excluded by precipitation QC and nine by generator performance, leaving 118 for the primary analysis.",
+          "after": "Within an EU, seeding is randomly assigned to one range and not the other. The authors explicitly say the Medicine Bow assignment plot would have the opposite shading from the Sierra Madre plot. The authors report 154 EUs, 27 precipitation-QC exclusions, and nine additional generator-performance exclusions, leaving 118 for the primary analysis. The monthly generator-exclusion cells in Table 1 sum to eight, while its margins and the prose report nine; the retained count here follows the authors' reported totals."
+        },
+        {
+          "path": [
+            "evidence",
+            0,
+            "location"
+          ],
+          "before": "Section 2 and Figure 1 explanation, pp. 2640-2642",
+          "after": "Section 2, Figure 1 explanation, and Table 1 with its caption, pp. 2640-2643"
+        }
+      ]
+    }
+  ]
+}

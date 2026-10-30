@@ -1,0 +1,70 @@
+{
+  "job_id": "r05-B003-luna",
+  "group_id": "B003",
+  "model_id": "luna",
+  "repeat": 4,
+  "answers": {
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "rna_before_library",
+      "pool_aggregate"
+    ],
+    "counts": {
+      "selected_libraries": 4,
+      "distinct_contributors": 16,
+      "distinct_contributors_by_genotype": {
+        "Brd1+/-": 8,
+        "WT": 8
+      },
+      "contributor_appearances": 32,
+      "separately_observed_contributor_profiles": 0
+    },
+    "clauses": {
+      "distinct_mice": "inconsistent",
+      "individual_profiles": "inconsistent",
+      "pooling_only_after_individual_measurement": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_0aa4ce68b2da6e27016ab0d027c8b087d2a0f002b5da17b7ad",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1425,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1422
+      },
+      "output_tokens": 53,
+      "output_tokens_details": {
+        "reasoning_tokens": 27
+      },
+      "total_tokens": 1478
+    },
+    "input_tokens": 1425,
+    "output_tokens": 53,
+    "resource_errors": [],
+    "cached_input_tokens": 1422,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 27,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00041985000000000004,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.1362458750081714,
+    "derivation_wall_seconds": 6.849999772384763e-05,
+    "derivation_cpu_seconds": 6.799999999973494e-05
+  },
+  "request_sha256": "4bd5bd55c5286b394e9f7a44e6e10a5b12f183cc362350d7442c33d3b0ec4416",
+  "receipt_sha256": "bd7056e1130be2bb0b49f5336e8bd76e7a5cd9f483d94900b335503097a64261",
+  "simulated": false,
+  "halt_model": false
+}

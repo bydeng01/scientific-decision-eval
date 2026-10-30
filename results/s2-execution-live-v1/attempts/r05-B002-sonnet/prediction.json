@@ -1,0 +1,77 @@
+{
+  "job_id": "r05-B002-sonnet",
+  "group_id": "B002",
+  "model_id": "sonnet",
+  "repeat": 4,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "claude-sonnet-5",
+  "response_id": "msg_011CfG7u2JiCuWrqe18JdR48",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 2216,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 29,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "input_tokens": 2216,
+    "output_tokens": 29,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": 0.004722,
+    "usage_cost_upper_estimate_usd": 0.004722,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.0779768750071526,
+    "derivation_wall_seconds": 5.3750001825392246e-05,
+    "derivation_cpu_seconds": 5.2999999999858716e-05
+  },
+  "request_sha256": "91e98ce2e07eb0c825420a24f9ade82cab33328201684458c8dc6ae82ba2d160",
+  "receipt_sha256": "0b963708d1b39ca2c6dab1e66fbbf4839a9af32219307ece4180b768e13fee21",
+  "simulated": false,
+  "halt_model": false
+}

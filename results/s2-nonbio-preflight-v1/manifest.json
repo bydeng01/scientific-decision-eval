@@ -1,0 +1,33 @@
+{
+  "started_at_utc": "2026-09-20T23:53:55.569883+00:00",
+  "python": "3.12.8",
+  "mode": "offline_dry_run",
+  "split": "reviewed_development",
+  "paid_execution_enabled": false,
+  "input_and_code_sha256": {
+    "development/s2-nonbio-v1/inputs/cases.json": "939c4c9c013e2b77a0e2fe3aec24476229602c0e81b00372fe03885259478aed",
+    "development/s2-nonbio-v1/inputs/evidence.json": "70f8f9948ee2d14b2256db9d755cc7836d2b704f041ffc230ce2ae0af579c2d6",
+    "development/s2-nonbio-v1/inputs/sources.json": "479f2dd4f59c5909cd3113d8d5f9417ba34639c212912116d858e068a960f8b6",
+    "development/s2-nonbio-v1/evaluation/references.json": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+    "development/s2-nonbio-v1/budget.json": "986be5578bdeb3fa6866f3fea02ab24ec31a775c5fa1c89584a3c332cd5cec21",
+    "development/s2-nonbio-v1/run.py": "b93e9bc2be901692b798917205176ad3eb2d6cab7f4ffbe6af1c0415e8a7f4b1",
+    "development/s2-nonbio-v1/rules.py": "309e45a5a992abb0f47eecf4083eeb2b3d76cdf905752e13ff7b16f0a3144a2f",
+    "development/s2-nonbio-v1/score.py": "c6bfc8a07b238edc4086f1959f1d1027ca4f5de3c1c91a2fbcfed5081532c38a",
+    "development/s2-nonbio-v1/test_preflight.py": "8fcaa6f7847b9c31b4a961a2616876b0ca33b777d615b04c76e94de3715af00b",
+    "development/s2-nonbio-v1/check_counts.py": "da8e854f47f939609d1a70a59acf1b1764cf4b77137571953ab2ea190303ccae",
+    "development/s2-nonbio-v1/official_api_check.json": "421645894ff5bf46795deb991e1d6067ba7f7efae200f803c46fa39bdeea11c4"
+  },
+  "predictions_sha256_before_loading_references": "c87ba48b9826f00d86bf6c273d490b3c8654f1afa0cd4b8088b5d69072e562c2",
+  "artifact_sha256": {
+    "SUMMARY.md": "3c7092664450c152b3916046360dd09df888f444031f20319db78d45bd1b908c",
+    "actual_inputs.jsonl": "7798196623a97e79913bcf4884373d1c71e130d4f213f371b266d65ca0e01a7a",
+    "call_matrix.json": "34690474db71e38bac0be6510d0f5dbe036aa09cea4fa2d33d3873b3e4be0735",
+    "model_attempts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model_requests.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "oracle_predictions.jsonl": "22949eb38434ccc26ac46ccd874b944b68ab34bc5c992fc2f6bcceba4e10c471",
+    "predictions.jsonl": "c87ba48b9826f00d86bf6c273d490b3c8654f1afa0cd4b8088b5d69072e562c2",
+    "resource_summary.json": "492c82d95b39a30c0f235c31d3c17b4e2d5582c9550846837e21b31a2ca1dfb6",
+    "resources.jsonl": "013f1a5406fead221febb1c3eb5b149bd82fed3a364749e632b695c5fcf533bc",
+    "scores.json": "468ac4200bb1f4086cc95e76efb9b9095866cc73596b04a53be4027511b55f1d"
+  }
+}

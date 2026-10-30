@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "{\"model\":\"typesafe/jev-1.13-20260917\",\"answers\":{\"q1\":{\"type\":\"choice\",\"choice\":\"within_founder_mosaicism\",\"probabilities\":{\"no_edit_detected\":0,\"one_founder_per_allele\":0,\"within_founder_mosaicism\":0.84,\"other\":0,\"uniform_one_allele_pair\":0,\"conflicting\":0.16,\"not_stated\":0},\"confidence\":0.81},\"q2\":{\"type\":\"choice\",\"choice\":\"preexisting_albino_allele\",\"probabilities\":{\"not_stated\":0,\"preexisting_albino_allele\":1,\"no_germline_possible\":0,\"other\":0,\"all_hybrid_alleles_verified\":0,\"conflicting\":0,\"unique_new_allele_marker\":0},\"confidence\":1}},\"usage\":{\"input_tokens\":1637,\"output_tokens\":201,\"cost\":0.000068754},\"id\":\"gen-dec-1789972465-bsu7SWnHcDIYTZI0gVfF\",\"provider\":\"TypeSafe\"}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 06:34:25 GMT"
+  },
+  "latency_seconds": 0.3698798749828711,
+  "transport_error": null,
+  "received_at": "2026-09-21T06:34:25.425010+00:00"
+}

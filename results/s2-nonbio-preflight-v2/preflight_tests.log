@@ -1,0 +1,20 @@
+test_budget_history_and_no_paid_mode (__main__.PreflightChecks.test_budget_history_and_no_paid_mode) ... ok
+test_build_ids_are_extracted_and_scope_filtered (__main__.PreflightChecks.test_build_ids_are_extracted_and_scope_filtered) ... ok
+test_c02_correct_operator_and_six_row_range (__main__.PreflightChecks.test_c02_correct_operator_and_six_row_range) ... ok
+test_candidate_omission_only_gates_simulated_branch (__main__.PreflightChecks.test_candidate_omission_only_gates_simulated_branch) ... ok
+test_d03_three_fields_and_no_invented_run_count (__main__.PreflightChecks.test_d03_three_fields_and_no_invented_run_count) ... ok
+test_evidence_verbatim_from_inherited_review (__main__.PreflightChecks.test_evidence_verbatim_from_inherited_review) ... ok
+test_heat_scope_and_duplicate_ids (__main__.PreflightChecks.test_heat_scope_and_duplicate_ids) ... ok
+test_ids_and_claim_numbers_do_not_drive_relation_extraction (__main__.PreflightChecks.test_ids_and_claim_numbers_do_not_drive_relation_extraction) ... ok
+test_input_allowlist_rejects_gold (__main__.PreflightChecks.test_input_allowlist_rejects_gold) ... ok
+test_mix_numerals_and_scope_conditions (__main__.PreflightChecks.test_mix_numerals_and_scope_conditions) ... ok
+test_no_reference_or_network_access_during_predictions (__main__.PreflightChecks.test_no_reference_or_network_access_during_predictions) ... ok
+test_offline_runner_records_nulls_and_empty_attempts (__main__.PreflightChecks.test_offline_runner_records_nulls_and_empty_attempts) ... ok
+test_reviewed_text_predictions_and_separate_oracle (__main__.PreflightChecks.test_reviewed_text_predictions_and_separate_oracle) ... ok
+test_unknown_or_missing_clauses_are_not_scientific_insufficiency (__main__.PreflightChecks.test_unknown_or_missing_clauses_are_not_scientific_insufficiency) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.049s
+
+OK
+{"output": "/var/folders/9b/zhwjk4l535sckdssqnp0yp8h0000gn/T/tmp0c5vfy5n/run", "checks_pass": true, "model_calls": 0, "matrix_status": "no_model_branch", "initial_balance_usd": "0.331958884"}

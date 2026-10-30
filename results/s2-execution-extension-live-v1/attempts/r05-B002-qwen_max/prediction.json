@@ -1,0 +1,86 @@
+{
+  "job_id": "r05-B002-qwen_max",
+  "group_id": "B002",
+  "model_id": "qwen_max",
+  "repeat": 4,
+  "answers": {
+    "B002-Q01": "separate_then_shared",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "separate_then_shared",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 10,
+        "11": 1
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "consistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789976329-RVKzPqugEWL5s3MNauNg",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1223,
+      "completion_tokens": 445,
+      "total_tokens": 1668,
+      "cost": 0.003324,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003324,
+        "upstream_inference_prompt_cost": 0.000654,
+        "upstream_inference_completions_cost": 0.00267
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 421,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1223,
+    "output_tokens": 445,
+    "resource_errors": [],
+    "cached_input_tokens": 1024,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 421,
+    "reported_cost_usd": 0.003324,
+    "usage_cost_estimate_usd": 0.003324,
+    "usage_cost_upper_estimate_usd": 0.0057275,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 11.668715665990021,
+    "derivation_wall_seconds": 6.891702651046216e-05,
+    "derivation_cpu_seconds": 6.299999999992423e-05
+  },
+  "request_sha256": "c69e23bfd83ab9fad01c16a3cdc9704690b2c68dd04b0cc5824685383bdaecf9",
+  "receipt_sha256": "381d87e5c9c08f394f8292e1e281807714c39a4477c10c86bedaef2633f667d1",
+  "simulated": false,
+  "halt_model": false
+}

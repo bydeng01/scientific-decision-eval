@@ -1,0 +1,120 @@
+{
+  "analysis_reproduction": {
+    "checks_passed": 10,
+    "byte_identical_files": 17,
+    "protected_files": 2390
+  },
+  "execution_and_source_checks": {
+    "source_checks": [
+      {
+        "command": "development/s2-nonbio-v1/choice-review-v1/verify_review.py",
+        "returncode": 0,
+        "summary": "PASS: 15 questions; 12 items; document/JSON, review attribution, references, snapshots and protected hashes verified."
+      },
+      {
+        "command": "development/s2-nonbio-expansion/batch-001/verify_batch.py",
+        "returncode": 0,
+        "result": {
+          "status": "passed",
+          "problem_count": 10,
+          "question_count": 18,
+          "review_summary": {
+            "author_accepted_problems": 10,
+            "pending_problems": 0,
+            "author_accepted_questions": 18,
+            "pending_questions": 0
+          },
+          "artifact_hashes_verified": 68,
+          "snapshot": {
+            "present": true,
+            "integrity_verified": true,
+            "manifest_sha256": "d0cf6c998e49ed8b86e7ed44fa675555a12d5ec9c3570d914ef5c4b1adc41f46",
+            "note": "Input snapshot integrity was checked at the recorded validation."
+          },
+          "original_files_unchanged": 49,
+          "scientific_correctness": "not established by these checks",
+          "checks_sha256": "59371040b26c08f9583533a47a4a6a1aba3dc03c07ea5a1ec7c6378c5de95b74"
+        }
+      },
+      {
+        "command": "development/s2-biology-expansion/batch-001/verify_batch.py",
+        "returncode": 0,
+        "result": {
+          "status": "passed",
+          "existing_groups": 16,
+          "new_groups": 4,
+          "collection_total": 20,
+          "new_questions": 8,
+          "accepted_groups": 4,
+          "accepted_questions": 8,
+          "pending_groups": 0,
+          "pending_questions": 0,
+          "reference_output_checks": 4,
+          "fallback_answer_checks": 24,
+          "source_assets_verified": 22,
+          "preexisting_files_unchanged": 323,
+          "preexisting_files_with_authorized_revisions": 7,
+          "preexisting_files_with_preserved_review_appendices": 1,
+          "authorized_source_qualifications": 1,
+          "checks": [
+            "Unique IDs and exact reference coverage",
+            "Markdown matches JSON",
+            "Author review decisions match accepted content hashes and review states",
+            "Source asset hashes",
+            "Known source records and deterministic outputs agree",
+            "Pool scope filtering and donor deduplication",
+            "Unknown ancestry, mutation origins, and germline counts remain null",
+            "Fallback precedence and missing-answer rejection",
+            "Original inventory hashes retained; exact authorized source revisions checked"
+          ],
+          "package_files_hashed": 41
+        }
+      },
+      {
+        "command": "development/s2-nonbio-v1/test_preflight.py",
+        "returncode": 0,
+        "result": {
+          "checks_pass": true,
+          "model_calls": 0,
+          "matrix_status": "no_model_branch",
+          "initial_balance_usd": "0.331958884"
+        },
+        "test_summary": {
+          "test_count": 16,
+          "elapsed_seconds": 0.078,
+          "status": "passed"
+        }
+      },
+      {
+        "command": "development/s2-nonbio-v1/check_counts.py",
+        "returncode": 0,
+        "test_summary": {
+          "test_count": 11,
+          "elapsed_seconds": 0.0,
+          "status": "passed"
+        }
+      }
+    ],
+    "execution_tests": [
+      {
+        "file": "test_execution.py",
+        "test_summary": {
+          "test_count": 32,
+          "elapsed_seconds": 3.627,
+          "status": "passed"
+        }
+      },
+      {
+        "file": "test_extension.py",
+        "test_summary": {
+          "test_count": 10,
+          "elapsed_seconds": 0.664,
+          "status": "passed"
+        }
+      }
+    ],
+    "status": "passed",
+    "api_calls": 0
+  },
+  "record_type": "historical_validation_summary"
+}

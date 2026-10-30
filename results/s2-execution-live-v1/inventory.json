@@ -1,0 +1,976 @@
+{
+  "split": "reviewed_development",
+  "groups": 20,
+  "choices": 41,
+  "scientific_choices": 40,
+  "engineering_choices": 1,
+  "scientific_claims": 25,
+  "engineering_cases": 1,
+  "source_records": 21,
+  "source_families": 18,
+  "recent_independent_review_groups": 10,
+  "recent_independent_review_choices": 18,
+  "route_choices": {
+    "code": 21,
+    "model": 20
+  },
+  "route_groups": {
+    "code": 10,
+    "model": 10
+  },
+  "rows": [
+    {
+      "group_id": "D01",
+      "question_id": "D01.unit",
+      "case_ids": [
+        "D01",
+        "D01-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/0",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D01.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D01",
+      "question_id": "D01.membership",
+      "case_ids": [
+        "D01",
+        "D01-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/1",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D01.membership/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D01",
+      "question_id": "D01-O.omitted_unit",
+      "case_ids": [
+        "D01-O"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": true,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/2",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D01-O.omitted_unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D02",
+      "question_id": "D02.unit",
+      "case_ids": [
+        "D02",
+        "D02-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "A"
+      ],
+      "source_families": [
+        "original:A"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/3",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D02.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D02",
+      "question_id": "D02.membership",
+      "case_ids": [
+        "D02",
+        "D02-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "A"
+      ],
+      "source_families": [
+        "original:A"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/4",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D02.membership/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D03",
+      "question_id": "D03.treatment_level",
+      "case_ids": [
+        "D03"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/5",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D03.treatment_level/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D03",
+      "question_id": "D03.run_boundary",
+      "case_ids": [
+        "D03"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/6",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D03.run_boundary/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "D03",
+      "question_id": "D03.specimen_assignment",
+      "case_ids": [
+        "D03"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "U"
+      ],
+      "source_families": [
+        "original:U"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/7",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/D03.specimen_assignment/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "C01",
+      "question_id": "C01-T.unit",
+      "case_ids": [
+        "C01-T"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "N"
+      ],
+      "source_families": [
+        "NIST-HANDBOOK"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/8",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/C01-T.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "C01",
+      "question_id": "C01-A.unit",
+      "case_ids": [
+        "C01-A"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "N"
+      ],
+      "source_families": [
+        "NIST-HANDBOOK"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/9",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/C01-A.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "H01",
+      "question_id": "H01-L.unit",
+      "case_ids": [
+        "H01-L"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "H"
+      ],
+      "source_families": [
+        "original:H"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/10",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/H01-L.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "H01",
+      "question_id": "H01-T.unit",
+      "case_ids": [
+        "H01-T"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "H"
+      ],
+      "source_families": [
+        "original:H"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/11",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/H01-T.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "H01",
+      "question_id": "H01-T.membership",
+      "case_ids": [
+        "H01-T"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "H"
+      ],
+      "source_families": [
+        "original:H"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/12",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/H01-T.membership/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "C02",
+      "question_id": "C02.unit",
+      "case_ids": [
+        "C02",
+        "C02-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "J"
+      ],
+      "source_families": [
+        "original:J"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/13",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/C02.unit/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "C02",
+      "question_id": "C02.identifier",
+      "case_ids": [
+        "C02",
+        "C02-S"
+      ],
+      "package": "original",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "J"
+      ],
+      "source_families": [
+        "original:J"
+      ],
+      "input_file": "development/s2-nonbio-v1/choice-review-v1/inputs.json",
+      "group_pointer": "/questions",
+      "input_pointer": "/questions/14",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-v1/choice-review-v1/evaluation.json",
+      "reference_locator": "/questions/C02.identifier/expected_option",
+      "derivation": "original_cases"
+    },
+    {
+      "group_id": "E001",
+      "question_id": "E001-Q01",
+      "case_ids": [
+        "E001"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "N-STRIP"
+      ],
+      "source_families": [
+        "NIST-HANDBOOK"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/0",
+      "input_pointer": "/problems/0/questions/0",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/0/questions/0/reference_option",
+      "derivation": "E001"
+    },
+    {
+      "group_id": "E001",
+      "question_id": "E001-Q02",
+      "case_ids": [
+        "E001"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "N-STRIP"
+      ],
+      "source_families": [
+        "NIST-HANDBOOK"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/0",
+      "input_pointer": "/problems/0/questions/1",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/0/questions/1/reference_option",
+      "derivation": "E001"
+    },
+    {
+      "group_id": "E002",
+      "question_id": "E002-Q01",
+      "case_ids": [
+        "E002"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "WIND-2021"
+      ],
+      "source_families": [
+        "SMV-WAKE-STEERING"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/1",
+      "input_pointer": "/problems/1/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/1/questions/0/reference_option",
+      "derivation": "E002"
+    },
+    {
+      "group_id": "E002",
+      "question_id": "E002-Q02",
+      "case_ids": [
+        "E002"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "WIND-2021"
+      ],
+      "source_families": [
+        "SMV-WAKE-STEERING"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/1",
+      "input_pointer": "/problems/1/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/1/questions/1/reference_option",
+      "derivation": "E002"
+    },
+    {
+      "group_id": "E003",
+      "question_id": "E003-Q01",
+      "case_ids": [
+        "E003"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "CAT-2020"
+      ],
+      "source_families": [
+        "CU-CPG-RECYCLING"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/2",
+      "input_pointer": "/problems/2/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/2/questions/0/reference_option",
+      "derivation": "E003"
+    },
+    {
+      "group_id": "E004",
+      "question_id": "E004-Q01",
+      "case_ids": [
+        "E004"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "POW-2023"
+      ],
+      "source_families": [
+        "TI64-POWDER-HISTORY"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/3",
+      "input_pointer": "/problems/3/questions/0",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/3/questions/0/reference_option",
+      "derivation": "E004"
+    },
+    {
+      "group_id": "E004",
+      "question_id": "E004-Q02",
+      "case_ids": [
+        "E004"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "POW-2023"
+      ],
+      "source_families": [
+        "TI64-POWDER-HISTORY"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/3",
+      "input_pointer": "/problems/3/questions/1",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/3/questions/1/reference_option",
+      "derivation": "E004"
+    },
+    {
+      "group_id": "E005",
+      "question_id": "E005-Q01",
+      "case_ids": [
+        "E005"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "FAT-2022"
+      ],
+      "source_families": [
+        "304L-FATIGUE-STRATEGIES"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/4",
+      "input_pointer": "/problems/4/questions/0",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/4/questions/0/reference_option",
+      "derivation": "E005"
+    },
+    {
+      "group_id": "E005",
+      "question_id": "E005-Q02",
+      "case_ids": [
+        "E005"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "FAT-2022"
+      ],
+      "source_families": [
+        "304L-FATIGUE-STRATEGIES"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/4",
+      "input_pointer": "/problems/4/questions/1",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/4/questions/1/reference_option",
+      "derivation": "E005"
+    },
+    {
+      "group_id": "E006",
+      "question_id": "E006-Q01",
+      "case_ids": [
+        "E006"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "COS-2018"
+      ],
+      "source_families": [
+        "PAIRED-FIXED-COSMOLOGY"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/5",
+      "input_pointer": "/problems/5/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/5/questions/0/reference_option",
+      "derivation": "E006"
+    },
+    {
+      "group_id": "E006",
+      "question_id": "E006-Q02",
+      "case_ids": [
+        "E006"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "COS-2018"
+      ],
+      "source_families": [
+        "PAIRED-FIXED-COSMOLOGY"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/5",
+      "input_pointer": "/problems/5/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/5/questions/1/reference_option",
+      "derivation": "E006"
+    },
+    {
+      "group_id": "E007",
+      "question_id": "E007-Q01",
+      "case_ids": [
+        "E007"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "LENS2-DOC"
+      ],
+      "source_families": [
+        "CESM2-LENS2"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/6",
+      "input_pointer": "/problems/6/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/6/questions/0/reference_option",
+      "derivation": "E007"
+    },
+    {
+      "group_id": "E007",
+      "question_id": "E007-Q02",
+      "case_ids": [
+        "E007"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "LENS2-DOC"
+      ],
+      "source_families": [
+        "CESM2-LENS2"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/6",
+      "input_pointer": "/problems/6/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/6/questions/1/reference_option",
+      "derivation": "E007"
+    },
+    {
+      "group_id": "E008",
+      "question_id": "E008-Q01",
+      "case_ids": [
+        "E008"
+      ],
+      "package": "nonbio",
+      "route": "code",
+      "engineering": false,
+      "source_ids": [
+        "FOLD-2025",
+        "N-FOLD"
+      ],
+      "source_families": [
+        "ETHYLENE-FOLDOVER",
+        "NIST-HANDBOOK"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/7",
+      "input_pointer": "/problems/7/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/7/questions/0/reference_option",
+      "derivation": "E008"
+    },
+    {
+      "group_id": "E009",
+      "question_id": "E009-Q01",
+      "case_ids": [
+        "E009"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "MET-2016"
+      ],
+      "source_families": [
+        "INRIM-MFC-ILC"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/8",
+      "input_pointer": "/problems/8/questions/0",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/8/questions/0/reference_option",
+      "derivation": "E009"
+    },
+    {
+      "group_id": "E009",
+      "question_id": "E009-Q02",
+      "case_ids": [
+        "E009"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "MET-2016"
+      ],
+      "source_families": [
+        "INRIM-MFC-ILC"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/8",
+      "input_pointer": "/problems/8/questions/1",
+      "recent_independent_review": false,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/8/questions/1/reference_option",
+      "derivation": "E009"
+    },
+    {
+      "group_id": "E010",
+      "question_id": "E010-Q01",
+      "case_ids": [
+        "E010"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "CLOUD-2018",
+        "CLOUD-2014"
+      ],
+      "source_families": [
+        "WWMPP"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/9",
+      "input_pointer": "/problems/9/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/9/questions/0/reference_option",
+      "derivation": "E010"
+    },
+    {
+      "group_id": "E010",
+      "question_id": "E010-Q02",
+      "case_ids": [
+        "E010"
+      ],
+      "package": "nonbio",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "CLOUD-2018",
+        "CLOUD-2014"
+      ],
+      "source_families": [
+        "WWMPP"
+      ],
+      "input_file": "development/s2-nonbio-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/9",
+      "input_pointer": "/problems/9/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-nonbio-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/9/questions/1/reference_option",
+      "derivation": "E010"
+    },
+    {
+      "group_id": "B001",
+      "question_id": "B001-Q01",
+      "case_ids": [
+        "B001"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-EXP-2012"
+      ],
+      "source_families": [
+        "MANIKKAM-2012-EXPOSURE"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/0",
+      "input_pointer": "/problems/0/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/0/questions/0/reference_option",
+      "derivation": "B001"
+    },
+    {
+      "group_id": "B001",
+      "question_id": "B001-Q02",
+      "case_ids": [
+        "B001"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-EXP-2012"
+      ],
+      "source_families": [
+        "MANIKKAM-2012-EXPOSURE"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/0",
+      "input_pointer": "/problems/0/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/0/questions/1/reference_option",
+      "derivation": "B001"
+    },
+    {
+      "group_id": "B002",
+      "question_id": "B002-Q01",
+      "case_ids": [
+        "B002"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-LD-1943"
+      ],
+      "source_families": [
+        "LURIA-DELBRUECK-1943"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/1",
+      "input_pointer": "/problems/1/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/1/questions/0/reference_option",
+      "derivation": "B002"
+    },
+    {
+      "group_id": "B002",
+      "question_id": "B002-Q02",
+      "case_ids": [
+        "B002"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-LD-1943"
+      ],
+      "source_families": [
+        "LURIA-DELBRUECK-1943"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/1",
+      "input_pointer": "/problems/1/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/1/questions/1/reference_option",
+      "derivation": "B002"
+    },
+    {
+      "group_id": "B003",
+      "question_id": "B003-Q01",
+      "case_ids": [
+        "B003"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-RNA-2015"
+      ],
+      "source_families": [
+        "RAJKUMAR-2015-POOLING"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/2",
+      "input_pointer": "/problems/2/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/2/questions/0/reference_option",
+      "derivation": "B003"
+    },
+    {
+      "group_id": "B003",
+      "question_id": "B003-Q02",
+      "case_ids": [
+        "B003"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-RNA-2015"
+      ],
+      "source_families": [
+        "RAJKUMAR-2015-POOLING"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/2",
+      "input_pointer": "/problems/2/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/2/questions/1/reference_option",
+      "derivation": "B003"
+    },
+    {
+      "group_id": "B004",
+      "question_id": "B004-Q01",
+      "case_ids": [
+        "B004"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-TYR-2014"
+      ],
+      "source_families": [
+        "YEN-2014-TYR"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/3",
+      "input_pointer": "/problems/3/questions/0",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/3/questions/0/reference_option",
+      "derivation": "B004"
+    },
+    {
+      "group_id": "B004",
+      "question_id": "B004-Q02",
+      "case_ids": [
+        "B004"
+      ],
+      "package": "biology",
+      "route": "model",
+      "engineering": false,
+      "source_ids": [
+        "BIO-TYR-2014"
+      ],
+      "source_families": [
+        "YEN-2014-TYR"
+      ],
+      "input_file": "development/s2-biology-expansion/batch-001/inputs.json",
+      "group_pointer": "/problems/3",
+      "input_pointer": "/problems/3/questions/1",
+      "recent_independent_review": true,
+      "reference_file": "development/s2-biology-expansion/batch-001/evaluation.json",
+      "reference_locator": "/problems/3/questions/1/reference_option",
+      "derivation": "B004"
+    }
+  ]
+}

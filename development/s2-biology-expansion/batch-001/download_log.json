@@ -1,0 +1,234 @@
+[
+  {
+    "file": "evidence/vinclozolin-2013.html",
+    "requested_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059922",
+    "accessed_at_utc": "2026-09-21T03:40:06.636502+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059922",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 259164,
+    "sha256": "5afa10b32f7a5282f11dde528782fa561187c588e4572a4d6b2232af90602297",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/vinclozolin-2013.pdf",
+    "requested_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0059922&type=printable",
+    "accessed_at_utc": "2026-09-21T03:40:06.636753+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0059922&type=printable",
+    "content_type": "application/pdf",
+    "bytes": 1991340,
+    "sha256": "71886a55f639474b914bf6bc45e52c4386c25dc5140e65fd3791a0c9c84308ca",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/vinclozolin-2010.html",
+    "requested_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0013100",
+    "accessed_at_utc": "2026-09-21T03:40:06.636863+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0013100",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 308032,
+    "sha256": "906ec9ab9d3be8865b13d9ffa65a8b95a94a3e2d4bb6d8fc93dae764df5069d2",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/vinclozolin-2010.pdf",
+    "requested_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0013100&type=printable",
+    "accessed_at_utc": "2026-09-21T03:40:06.636954+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0013100&type=printable",
+    "content_type": "application/pdf",
+    "bytes": 6343752,
+    "sha256": "ef6fdc5c0e52c8f00fe07333da96515d968a62c7b0f743af10d52e0b42d6c182",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/luria-delbruck-1943.pdf",
+    "requested_url": "https://www.bx.psu.edu/~anton/bioinf1-2014/delbruck-luria-1943.pdf",
+    "accessed_at_utc": "2026-09-21T03:40:06.637050+00:00",
+    "status_code": 200,
+    "final_url": "https://www.bx.psu.edu/~anton/bioinf1-2014/delbruck-luria-1943.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1323047,
+    "sha256": "36f6457c5f4aa55faed9fca9af990df23d9eac2e5ab3b131c61526d2733dbea9",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/pooling-2015.html",
+    "requested_url": "https://link.springer.com/article/10.1186/s12864-015-1767-y",
+    "accessed_at_utc": "2026-09-21T03:40:06.637113+00:00",
+    "status_code": 200,
+    "final_url": "https://link.springer.com/article/10.1186/s12864-015-1767-y",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 448486,
+    "sha256": "e7ba3d787776bc5b33851f6f6b950933d41d730e5bf713fbb14659b93cb6d243",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/pooling-2015.pdf",
+    "requested_url": "https://kclpure.kcl.ac.uk/portal/files/57290725/Experimental_validation_of_methods_MORS_Accepted_10Jul2015_GOLD_VoR.pdf",
+    "accessed_at_utc": "2026-09-21T03:40:07.341371+00:00",
+    "status_code": 403,
+    "final_url": "https://kclpure.kcl.ac.uk/portal/files/57290725/Experimental_validation_of_methods_MORS_Accepted_10Jul2015_GOLD_VoR.pdf",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://kclpure.kcl.ac.uk/portal/files/57290725/Experimental_validation_of_methods_MORS_Accepted_10Jul2015_GOLD_VoR.pdf",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014.html",
+    "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/",
+    "accessed_at_utc": "2026-09-21T03:40:07.394893+00:00",
+    "status_code": 403,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/exposure-2012.html",
+    "requested_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031901",
+    "accessed_at_utc": "2026-09-21T03:41:53.495305+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031901",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 236538,
+    "sha256": "d85bf597685b10ce3df85d47b907a5709594d87baeec02f683bac7f7a2c1e3b4",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/exposure-2012.pdf",
+    "requested_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0031901&type=printable",
+    "accessed_at_utc": "2026-09-21T03:41:53.495551+00:00",
+    "status_code": 200,
+    "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0031901&type=printable",
+    "content_type": "application/pdf",
+    "bytes": 906426,
+    "sha256": "cccbe5e282e604e5134ea0035b285b68ac4d54f210fe7c816ad12c8d81339cdc",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/exposure-2012-tableS1.pdf",
+    "requested_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0031901.s010&type=supplementary",
+    "accessed_at_utc": "2026-09-21T03:41:53.495662+00:00",
+    "status_code": 404,
+    "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0031901.s010&type=supplementary",
+    "content_type": "text/html;charset=UTF-8",
+    "error": "404 Client Error: Not Found for url: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0031901.s010&type=supplementary",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/pooling-2015.pdf",
+    "requested_url": "https://link.springer.com/content/pdf/10.1186/s12864-015-1767-y.pdf",
+    "accessed_at_utc": "2026-09-21T03:41:53.495775+00:00",
+    "status_code": 200,
+    "final_url": "https://link.springer.com/content/pdf/10.1186/s12864-015-1767-y.pdf",
+    "content_type": "application/pdf",
+    "bytes": 2048007,
+    "sha256": "8799a5db1301fd1a876aa680a52ebc249d8c181700ad4d384c5145e8d4caecd2",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/pooling-2015-design.jpeg",
+    "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12864-015-1767-y/MediaObjects/12864_2015_1767_MOESM10_ESM.jpeg",
+    "accessed_at_utc": "2026-09-21T03:41:53.495837+00:00",
+    "status_code": 200,
+    "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12864-015-1767-y/MediaObjects/12864_2015_1767_MOESM10_ESM.jpeg",
+    "content_type": "image/jpeg",
+    "bytes": 1371764,
+    "sha256": "198df2af56ffe2f85c3a6557e77e34521e482cd039b71555280eb72de47fdf31",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/mosaic-2014.xml",
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4166609/fullTextXML",
+    "accessed_at_utc": "2026-09-21T03:41:53.495893+00:00",
+    "status_code": 500,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4166609/fullTextXML",
+    "content_type": "application/json",
+    "error": "500 Server Error:  for url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4166609/fullTextXML",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014.pdf",
+    "requested_url": "https://europepmc.org/articles/PMC4166609?pdf=render",
+    "accessed_at_utc": "2026-09-21T03:41:53.828295+00:00",
+    "status_code": 403,
+    "final_url": "https://europepmc.org/articles/PMC4166609?pdf=render",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://europepmc.org/articles/PMC4166609?pdf=render",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014-europe.html",
+    "requested_url": "https://europepmc.org/articles/PMC4166609",
+    "accessed_at_utc": "2026-09-21T03:41:54.079246+00:00",
+    "status_code": 403,
+    "final_url": "https://europepmc.org/articles/PMC4166609",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://europepmc.org/articles/PMC4166609",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/exposure-2012-tableS1.pdf",
+    "requested_url": "https://journals.plos.org/plosone/article/file?type=supplementary&id=10.1371/journal.pone.0031901.s007",
+    "accessed_at_utc": "2026-09-21T03:43:02.409261+00:00",
+    "status_code": 200,
+    "final_url": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0031901/1/pone.0031901.s007.pdf?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20260920%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260920T214045Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=28af80335023288c0e0db08f2ee197231e23547b3f80d385dde7bdc60c1f7fdcc58c71964c3eb5d8baab874d82e732add47fa4a06e9116944802790ff056417876265b8fa3f863d2ea09c92070f6895ee2a519503625998b4d85017cb0e5564b1824ee0958db85755ba643f45cc2cd89b5df195dde4e9d082a28deb79d9739ec8486ea6fa6a227fe73a5ee5ccdd20423655ce299059824cbe98d7ccba5d5d4de0898f03b015ea23cb0759485efe0d02f7f58ef391282550abd08bab561f641d7cdba97bd9ddf47e232083e1c5f843dc742a81ed5f2e7b934332cf5ce5f551ef170480901062f71b00ef7ceea7880f5f61bfbed231c3e3dd361fd59bb98ff7f4e",
+    "content_type": "application/pdf",
+    "bytes": 42673,
+    "sha256": "3384fe16a88043988db7acad85fd884ae7873a4cb28f9a12fe747c3ee47fb20c",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/mosaic-2014-bioc.xml",
+    "requested_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4166609/unicode",
+    "accessed_at_utc": "2026-09-21T03:43:02.409524+00:00",
+    "status_code": 200,
+    "final_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4166609/unicode",
+    "content_type": "text/xml",
+    "bytes": 65275,
+    "sha256": "a590357a37e0e4d5c1d718d85b51f428ddd0139595d030aff7ea1ab6791d0973",
+    "retained_asset": true
+  },
+  {
+    "file": "evidence/mosaic-2014-pmc.html",
+    "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609",
+    "accessed_at_utc": "2026-09-21T03:43:02.409610+00:00",
+    "status_code": 403,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014-oa.xml",
+    "requested_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC4166609",
+    "accessed_at_utc": "2026-09-21T03:44:24.489074+00:00",
+    "status_code": 404,
+    "final_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC4166609",
+    "content_type": "text/html; charset=ISO-8859-1",
+    "error": "404 Client Error: Not Found for url: https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC4166609",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014.pdf",
+    "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/pdf/nihms627582.pdf",
+    "accessed_at_utc": "2026-09-21T03:44:24.489304+00:00",
+    "status_code": 403,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/pdf/nihms627582.pdf",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/pdf/nihms627582.pdf",
+    "retained_asset": false
+  },
+  {
+    "file": "evidence/mosaic-2014-figure3.jpg",
+    "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4166609/bin/nihms627582f3.jpg",
+    "accessed_at_utc": "2026-09-21T03:44:24.489414+00:00",
+    "status_code": 403,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4166609/bin/nihms627582f3.jpg",
+    "content_type": "text/html; charset=UTF-8",
+    "error": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/instance/4166609/bin/nihms627582f3.jpg",
+    "retained_asset": false
+  }
+]

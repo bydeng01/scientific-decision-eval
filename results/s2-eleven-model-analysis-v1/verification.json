@@ -1,0 +1,31 @@
+{
+  "artifact_sha256": {
+    "ERRORS.md": "fa10d1dd9ba107741c2731a29df8bb6b47d0bab5dc989f7be0757872643b4e9a",
+    "REPORT.md": "1d3da9a964a621b99a10a6bfd07341f94456c41d361e9ce127ff81109ad73090",
+    "analyze.py": "0451d7381d0cbff367a2e568da91da27cc2436aad8f9d3859574326cb394ac7e",
+    "audit-extension.json": "775fa5077c6a02edae8ea0a48f24abd19b590c01f3b55738c901773b72eb80bf",
+    "audit-original.json": "2467871d079a4ba0638e8bc85abff5ff5f94502f2dbd895f801f4097e47f02b0",
+    "choices.json": "6d0a441b7075de034ed0f9df98c2af460df241ce643716d809581baef6a096b0",
+    "outcomes.json": "5b459bb7ccbf86fa0e1113a020f9c3c9cb401f24ea340326b052aeeaaf1807c5",
+    "protected-sha256.json": "0e74a0fc70689d0da136f695a4ffec0f63eda094a850b12eb92fab05d721b880",
+    "render_report.py": "19732cd6b33ffdb04e3973aca8724f102f1081692899d162e5fec047588279f9",
+    "requests.json": "9163b11e8b17c5b6f3854d369cc79fd62868552d15acfa4ab40dc6fe58100fa3",
+    "rescored-extension.json": "76604badcaeec25ec1207492f9e4116c50ddb841bb336eec3e01864996ded4d2",
+    "rescored-original.json": "360339f212251315796bfb5206d8ccac1fbe260f7a3ece76d0f1acef5842d124",
+    "summary.json": "53b1cba1240c7ba7b375249dafe2973cf8f57068513a26ea1be7f7b2a0980986",
+    "verify_analysis.py": "a12d5aeb1a0a75ba94a12ac351cdc94e4f5ed0275514eac6c281c37ffbd2dcf4"
+  },
+  "checks_passed": [
+    "unreported_totals_stay_null_and_observed_zero_stays_zero",
+    "cache_write_field_reconciled_and_reasoning_not_billed_twice",
+    "anthropic_cache_is_additive_to_ordinary_input",
+    "latency_nearest_rank_and_missing_interval",
+    "socket_construction_blocked_before_network_access",
+    "fixed_model_denominators_and_operational_vs_semantic_errors",
+    "all_seven_semantic_errors_are_masked_by_final_label",
+    "interrupted_and_rate_limited_request_costs_remain_unknown",
+    "success_latency_excludes_short_error_responses"
+  ],
+  "protected_files_unchanged": 1979,
+  "reproduction_byte_identical": true
+}

@@ -1,0 +1,12 @@
+{
+  "state": "closed; no additional calls planned",
+  "sha256": {
+    "manifest.json": "ce7c4c4e6e83da8adbdbafa82e38a48b93180a8b9f60c908087c672fa2d26cdf",
+    "carry_in.jsonl": "966f33c6e545a3b5a197a18ed5f71ea332a82815b35e4a6d246abec3b5f24932",
+    "api_ledger.jsonl": "82f1b928eaffe49ec69a51e9419832d9da7df7f850bbb02eea2bd654acfe9af6",
+    "analysis.json": "ff0cc39f3f67d52889338fb1f4a6553f35cc486eb270ec4d862853068c15d91a",
+    "report.json": "dad2f0a6454c97045a6e447cd5df6e8189c3e44288895187c7108f32bac9965c",
+    "summary.md": "5d5fd35a78b2f858f253c202456b9faf6cf06a6ab715dcf11cd7c67506524cc8",
+    "sources/summarize_drag_matched.py": "26e5e41f4788c3d890956dcae95b9eec9956a305fd06ff2713eadb454c81e475"
+  }
+}

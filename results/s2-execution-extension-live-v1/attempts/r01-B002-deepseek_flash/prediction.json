@@ -1,0 +1,86 @@
+{
+  "job_id": "r01-B002-deepseek_flash",
+  "group_id": "B002",
+  "model_id": "deepseek_flash",
+  "repeat": 0,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4.1-flash",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789974468-pzKDcJpK4FkZFYedyOgu",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1338,
+      "completion_tokens": 414,
+      "total_tokens": 1752,
+      "cost": 0.0005676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005676,
+        "upstream_inference_prompt_cost": 0.00029436,
+        "upstream_inference_completions_cost": 0.00027324
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 393,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1338,
+    "output_tokens": 414,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 393,
+    "reported_cost_usd": 0.0005676,
+    "usage_cost_estimate_usd": 0.0005676,
+    "usage_cost_upper_estimate_usd": 0.0005676,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 4.723031915986212,
+    "derivation_wall_seconds": 7.97079992480576e-05,
+    "derivation_cpu_seconds": 7.899999999994023e-05
+  },
+  "request_sha256": "3b6e3ac188c08f37d123549d5c76a629e3ae7642d1eb9ca22e0381c525ec613d",
+  "receipt_sha256": "f4c962fa945fe58545aa7a5b2641b096d1515663d76ac69872626118eca304f8",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,237 @@
+[
+  {
+    "id": "anthropic/claude-haiku-4.5",
+    "canonical_slug": "anthropic/claude-4.5-haiku-20251001",
+    "hugging_face_id": "",
+    "name": "Anthropic: Claude Haiku 4.5",
+    "created": 1760547638,
+    "description": "Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s performance...",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125",
+      "input_cache_write_1h": "0.000002"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": 64000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-4.5-haiku-20251001/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1101,
+          "win_rate": 41.1,
+          "rank": 88
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1159,
+          "win_rate": 49.3,
+          "rank": 41
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1130,
+          "win_rate": 44.9,
+          "rank": 85
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1139,
+          "win_rate": 45.7,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1120,
+          "win_rate": 44.7,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1049,
+          "win_rate": 39.1,
+          "rank": 73
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1115,
+          "win_rate": 42.6,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1135,
+          "win_rate": 45.1,
+          "rank": 86
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 16.9,
+        "coding_index": 43.9,
+        "agentic_index": 8
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  {
+    "id": "openai/gpt-4.1-mini",
+    "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-4.1 Mini",
+    "created": 1744651381,
+    "description": "GPT-4.1 Mini is a mid-sized model delivering performance competitive with GPT-4o at substantially lower latency and cost. It retains a 1 million token context window and scores 45.1% on hard...",
+    "context_length": 1047576,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000004",
+      "completion": "0.0000016",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001"
+    },
+    "top_provider": {
+      "context_length": 1047576,
+      "max_completion_tokens": 32768,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "max_completion_tokens",
+      "max_tokens",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-06-30",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-4.1-mini-2025-04-14/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 865,
+          "win_rate": 30.5,
+          "rank": 115
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1009,
+          "win_rate": 47.5,
+          "rank": 113
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1047,
+          "win_rate": 49.2,
+          "rank": 101
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1094,
+          "win_rate": 58.5,
+          "rank": 91
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 976,
+          "win_rate": 45.4,
+          "rank": 107
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1010,
+          "win_rate": 47.8,
+          "rank": 115
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": null,
+        "coding_index": 20.2,
+        "agentic_index": null
+      }
+    }
+  }
+]

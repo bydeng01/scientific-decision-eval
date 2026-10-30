@@ -1,0 +1,12 @@
+{
+  "currency": "USD",
+  "total_cap": "10.000000000",
+  "initial_stage_cap": "1.000000000",
+  "historical_reported_or_estimated_cost": "0.668041116",
+  "initial_stage_remaining": "0.331958884",
+  "history_basis": "Historical reported or estimated expenditure; not a reconciled invoice.",
+  "max_model_calls": 0,
+  "max_retries": 0,
+  "max_fallbacks": 0,
+  "paid_execution_enabled": false
+}

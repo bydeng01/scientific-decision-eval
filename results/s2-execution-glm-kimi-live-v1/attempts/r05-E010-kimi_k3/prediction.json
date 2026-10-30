@@ -1,0 +1,75 @@
+{
+  "job_id": "r05-E010-kimi_k3",
+  "group_id": "E010",
+  "model_id": "kimi_k3",
+  "repeat": 4,
+  "answers": {
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false,
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    "clauses": {
+      "independent_assignment": "inconsistent",
+      "zero_exposure": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978838-v8PhDVM1IVqTOgGxbZo9",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1197,
+      "completion_tokens": 346,
+      "total_tokens": 1543,
+      "cost": 0.0060162,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0060162,
+        "upstream_inference_prompt_cost": 0.0008262,
+        "upstream_inference_completions_cost": 0.00519
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 322,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1197,
+    "output_tokens": 346,
+    "resource_errors": [],
+    "cached_input_tokens": 1024,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 322,
+    "reported_cost_usd": 0.0060162,
+    "usage_cost_estimate_usd": 0.0060162,
+    "usage_cost_upper_estimate_usd": 0.008781,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 17.728000333998352,
+    "derivation_wall_seconds": 7.729101344011724e-05,
+    "derivation_cpu_seconds": 7.700000000010476e-05
+  },
+  "request_sha256": "94e61d989bf014c0c257bde00ce903433fdf927687f0092ffbb917822b21b43c",
+  "receipt_sha256": "6f0f572c274b2df0786beaa027f04224da54e603d7fd51da2fd5fec75ef9dc6c",
+  "simulated": false,
+  "halt_model": false
+}

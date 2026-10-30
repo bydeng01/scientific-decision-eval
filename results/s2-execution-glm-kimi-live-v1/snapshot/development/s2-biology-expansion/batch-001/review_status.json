@@ -1,0 +1,67 @@
+{
+  "case_content_approved_by_author": true,
+  "review_rule": "Review status is recorded per group and question. Source checks and arithmetic checks do not constitute independent human review.",
+  "groups": {
+    "B001": {
+      "status": "author_reviewed",
+      "questions": {
+        "B001-Q01": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR001"
+        },
+        "B001-Q02": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR001"
+        }
+      }
+    },
+    "B002": {
+      "status": "author_reviewed",
+      "questions": {
+        "B002-Q01": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR002"
+        },
+        "B002-Q02": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR002"
+        }
+      }
+    },
+    "B003": {
+      "status": "author_reviewed",
+      "questions": {
+        "B003-Q01": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR003"
+        },
+        "B003-Q02": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR003"
+        }
+      }
+    },
+    "B004": {
+      "status": "author_reviewed",
+      "questions": {
+        "B004-Q01": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR004"
+        },
+        "B004-Q02": {
+          "status": "author_reviewed",
+          "approved_by_author": true,
+          "decision": "BIO-UR004"
+        }
+      }
+    }
+  },
+  "reviewed_by": "author"
+}

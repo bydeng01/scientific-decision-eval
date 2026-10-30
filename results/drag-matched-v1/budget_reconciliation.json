@@ -1,0 +1,51 @@
+[
+  {
+    "provider": "openrouter-jev",
+    "case_id": "empty-prior",
+    "original_charge_usd": 0.01,
+    "reconciled_charge_usd": 3.8976e-05,
+    "response_id": "gen-dec-1789874393-EidRNEzKeKkD3hYAgflP"
+  },
+  {
+    "provider": "openrouter-jev",
+    "case_id": "dev-00-r1",
+    "original_charge_usd": 0.01,
+    "reconciled_charge_usd": 4.5738e-05,
+    "response_id": "gen-dec-1789874487-RMH7FcnmlRyxzUfoAFdp"
+  },
+  {
+    "provider": "openrouter-jev",
+    "case_id": "dev-00-r2",
+    "original_charge_usd": 0.01,
+    "reconciled_charge_usd": 5.229e-05,
+    "response_id": "gen-dec-1789874487-rgXkEicxf6HP6HcFFvH2"
+  },
+  {
+    "provider": "openrouter-jev",
+    "case_id": "dev-01-r1",
+    "original_charge_usd": 0.01,
+    "reconciled_charge_usd": 4.5738e-05,
+    "response_id": "gen-dec-1789874488-R7eRpWgDeVXnRe7CqWKQ"
+  },
+  {
+    "provider": "openrouter-jev",
+    "case_id": "dev-01-r2",
+    "original_charge_usd": 0.01,
+    "reconciled_charge_usd": 5.2374e-05,
+    "response_id": "gen-dec-1789874488-foa69NIkNwG8HQjeXJfE"
+  },
+  {
+    "provider": "openai",
+    "case_id": "empty-prior",
+    "original_charge_usd": 0.1566125,
+    "reconciled_charge_usd": 0.0102125,
+    "response_id": "resp_0e6c64b05eccfbc4016aaf525316e887d2b813d85756bc3542"
+  },
+  {
+    "provider": "anthropic",
+    "case_id": "empty-prior",
+    "original_charge_usd": 0.029072,
+    "reconciled_charge_usd": 0.002714,
+    "response_id": "msg_011CfDyj62yHoynxZ1QuKsGn"
+  }
+]

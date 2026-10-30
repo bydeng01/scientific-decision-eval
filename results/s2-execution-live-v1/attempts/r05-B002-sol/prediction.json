@@ -1,0 +1,74 @@
+{
+  "job_id": "r05-B002-sol",
+  "group_id": "B002",
+  "model_id": "sol",
+  "repeat": 4,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_010ad42312a3c1ee016ab0d003650887d29cfba654c07dc748",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1217
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1246
+    },
+    "input_tokens": 1220,
+    "output_tokens": 26,
+    "resource_errors": [],
+    "cached_input_tokens": 1217,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00662,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.2326304590096697,
+    "derivation_wall_seconds": 8.970801718533039e-05,
+    "derivation_cpu_seconds": 7.899999999994023e-05
+  },
+  "request_sha256": "392c6b6f66bf34bc3bbf2e02a7b3f01f8bf595c76131cda9f4c6dc1227caf69f",
+  "receipt_sha256": "7016fc796e9d815a4447440639f6ca401c5a683166d37fb6e0e6cce00dde7d51",
+  "simulated": false,
+  "halt_model": false
+}

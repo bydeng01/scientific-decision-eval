@@ -1,0 +1,72 @@
+{
+  "job_id": "r02-E005-kimi_k3",
+  "group_id": "E005",
+  "model_id": "kimi_k3",
+  "repeat": 1,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978478-415rKYLvZq8hgCSYqnLZ",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 994,
+      "completion_tokens": 66,
+      "total_tokens": 1060,
+      "cost": 0.0018984,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018984,
+        "upstream_inference_prompt_cost": 0.0009084,
+        "upstream_inference_completions_cost": 0.00099
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 41,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 994,
+    "output_tokens": 66,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 41,
+    "reported_cost_usd": 0.0018984,
+    "usage_cost_estimate_usd": 0.0018984000000000002,
+    "usage_cost_upper_estimate_usd": 0.003972,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 6.940080041997135,
+    "derivation_wall_seconds": 5.616599810309708e-05,
+    "derivation_cpu_seconds": 5.6000000000056005e-05
+  },
+  "request_sha256": "d3d40f4705766853acd10075db6d925c9b6594e49d88ea8828f23c7cc57287ce",
+  "receipt_sha256": "be49e0414d0f76c7df3704f5096144cbb46ab0ac59ecc4df660160e1ca1bc87b",
+  "simulated": false,
+  "halt_model": false
+}

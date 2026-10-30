@@ -1,0 +1,60 @@
+{
+  "job_id": "r03-E006-luna",
+  "group_id": "E006",
+  "model_id": "luna",
+  "repeat": 2,
+  "answers": {
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independent_phase_draws": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_03cad6f97efa84ae016ab0cf4b53ac87d29b6eb64a1fa9cfe2",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 835,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 858
+    },
+    "input_tokens": 835,
+    "output_tokens": 23,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00023635,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.958324665989494,
+    "derivation_wall_seconds": 5.7375000324100256e-05,
+    "derivation_cpu_seconds": 5.699999999997374e-05
+  },
+  "request_sha256": "4332a499a977c963777d1c77debf5ab877611db35ccf6cd04793805c5adadd16",
+  "receipt_sha256": "c6c4e82a8ba33da9aed29a82bf4b8318be4b68b1e2244d2c41f86cd7d4a9dde9",
+  "simulated": false,
+  "halt_model": false
+}

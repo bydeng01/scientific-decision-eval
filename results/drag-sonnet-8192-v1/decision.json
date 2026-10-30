@@ -1,0 +1,24 @@
+{
+  "decision": "stop expansion of raw-trajectory Jev candidate",
+  "scope": "exposed development diagnostic; two systems, four states; full 24-state screen incomplete",
+  "native_jev_valid_states": 3,
+  "attempted_jev_states": 4,
+  "common_valid_native_states": 3,
+  "astra_valid_states": 4,
+  "sonnet_2048_valid_attempted": [
+    0,
+    1
+  ],
+  "sonnet_8192_valid_attempted": [
+    3,
+    4
+  ],
+  "cumulative_api_attempts": 16,
+  "cumulative_reported_plus_estimated_usd": 0.668041116,
+  "initial_cap_usd": 1,
+  "authorized_total_usd": 10,
+  "pending_requests": 0,
+  "calibration_test_data_generated": false,
+  "tests_passed": 22,
+  "status_document_sha256": "acf104371eb2d0001f26fad3700fe8d4f5573b20d85a5331e1dbaf3c245b3a74"
+}

@@ -1,0 +1,38 @@
+{
+  "job_id": "r05-E009-glm_flash",
+  "group_id": "E009",
+  "model_id": "glm_flash",
+  "repeat": 4,
+  "answers": {},
+  "errors": {
+    "E009-Q01": "http_429",
+    "E009-Q02": "http_429"
+  },
+  "derived": null,
+  "diagnostics": {},
+  "status": "failed",
+  "served_model": null,
+  "served_provider": null,
+  "response_id": null,
+  "resources": {
+    "raw_usage": {},
+    "input_tokens": null,
+    "output_tokens": null,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": null,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.46334675000980496,
+    "derivation_wall_seconds": 1.7792015569284558e-05,
+    "derivation_cpu_seconds": 1.8000000000073513e-05
+  },
+  "request_sha256": "a721d090e4f1a5fe864e3f0f2ac247a3ae0023e85554cb5b625e0bf623af1f64",
+  "receipt_sha256": "d88e93c743571d38b3f67f8f52116c55a39728980e19d514f0d9a0a4c20ba020",
+  "simulated": false,
+  "halt_model": false
+}

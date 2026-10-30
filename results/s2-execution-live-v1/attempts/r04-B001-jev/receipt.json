@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "{\"model\":\"typesafe/jev-1.13-20260917\",\"answers\":{\"q1\":{\"type\":\"choice\",\"choice\":\"f0_pregnant_dams\",\"probabilities\":{\"each_generation\":0,\"f3_animals\":0,\"other\":0,\"conflicting\":0,\"f0_pregnant_dams\":1,\"isolated_germ_cells\":0,\"not_stated\":0},\"confidence\":1},\"q2\":{\"type\":\"choice\",\"choice\":\"mother_embryo_and_fetal_germline\",\"probabilities\":{\"mother_embryo_and_fetal_germline\":1,\"all_descendants\":0,\"other\":0,\"conflicting\":0,\"mother_and_fetal_soma_only\":0,\"maternal_soma_only\":0,\"not_stated\":0},\"confidence\":1}},\"usage\":{\"input_tokens\":1597,\"output_tokens\":191,\"cost\":0.000067074},\"id\":\"gen-dec-1789972431-Xc7fGGEnYumJNhYrD96Z\",\"provider\":\"TypeSafe\"}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 06:33:52 GMT"
+  },
+  "latency_seconds": 0.4000041660037823,
+  "transport_error": null,
+  "received_at": "2026-09-21T06:33:52.032191+00:00"
+}

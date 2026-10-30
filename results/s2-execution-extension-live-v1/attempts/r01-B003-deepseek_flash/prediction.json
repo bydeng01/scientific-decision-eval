@@ -1,0 +1,82 @@
+{
+  "job_id": "r01-B003-deepseek_flash",
+  "group_id": "B003",
+  "model_id": "deepseek_flash",
+  "repeat": 0,
+  "answers": {
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "rna_before_library",
+      "pool_aggregate"
+    ],
+    "counts": {
+      "selected_libraries": 4,
+      "distinct_contributors": 16,
+      "distinct_contributors_by_genotype": {
+        "Brd1+/-": 8,
+        "WT": 8
+      },
+      "contributor_appearances": 32,
+      "separately_observed_contributor_profiles": 0
+    },
+    "clauses": {
+      "distinct_mice": "inconsistent",
+      "individual_profiles": "inconsistent",
+      "pooling_only_after_individual_measurement": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4.1-flash",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789974576-mWuUK5uC4e2IJ0tME0Lg",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1543,
+      "completion_tokens": 431,
+      "total_tokens": 1974,
+      "cost": 0.00062392,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00062392,
+        "upstream_inference_prompt_cost": 0.00033946,
+        "upstream_inference_completions_cost": 0.00028446
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 410,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1543,
+    "output_tokens": 431,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 410,
+    "reported_cost_usd": 0.00062392,
+    "usage_cost_estimate_usd": 0.00062392,
+    "usage_cost_upper_estimate_usd": 0.00062392,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 6.7311112500028685,
+    "derivation_wall_seconds": 7.291699876077473e-05,
+    "derivation_cpu_seconds": 7.299999999998974e-05
+  },
+  "request_sha256": "ec95d3e6b5aee8fcc0c7669a211bb2364318860bf8c5e5872dbba3f50d4637dd",
+  "receipt_sha256": "68b525665119f5f4fac1a5e352a31a0a64a2f3fb63fa1f7bc2b939a9c42c5ef6",
+  "simulated": false,
+  "halt_model": false
+}

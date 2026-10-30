@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n{\"id\":\"gen-1789978383-rrirf4KCD2tAUoDmuGos\",\"object\":\"chat.completion\",\"created\":1789978383,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"Fireworks\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"within_founder_mosaicism\\\",\\\"q2\\\":\\\"preexisting_albino_allele\\\"}\",\"refusal\":null,\"reasoning\":\"Q1: Tail-DNA evidence in founder #30 shows multiple mutant alleles within the same founder → within_founder_mosaicism. The evidence says \\\"identified multiple mutant alleles in completely albino hybrid founder #30... attribute to mosaicism.\\\" So Q1: within_founder_mosaicism.\\n\\nQ2: Hybrids already carry FVB/NJ albino allele → preexisting_albino_allele.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"Q1: Tail-DNA evidence in founder #30 shows multiple mutant alleles within the same founder → within_founder_mosaicism. The evidence says \\\"identified multiple mutant alleles in completely albino hybrid founder #30... attribute to mosaicism.\\\" So Q1: within_founder_mosaicism.\\n\\nQ2: Hybrids already carry FVB/NJ albino allele → preexisting_albino_allele.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1183,\"completion_tokens\":108,\"total_tokens\":1291,\"cost\":0.00023145,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00023145,\"upstream_inference_prompt_cost\":0.00017745,\"upstream_inference_completions_cost\":0.000054},\"completion_tokens_details\":{\"reasoning_tokens\":84,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:13:03 GMT"
+  },
+  "latency_seconds": 1.821059542009607,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:13:04.852957+00:00"
+}

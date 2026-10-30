@@ -1,0 +1,30 @@
+{
+  "config": {
+    "seed": 20260920,
+    "repeats": 20,
+    "train_sizes": [
+      512,
+      4096
+    ],
+    "n_cal": 4000,
+    "alpha": 0.05,
+    "delta": 0.05,
+    "n_thresholds": 21,
+    "q_levels": [
+      0.55,
+      0.8,
+      0.98
+    ]
+  },
+  "started_utc": "2026-09-20T01:00:14.481440+00:00",
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "source_hashes": {
+    "scripts/offline_pilot.py": "d3cace8638f7a31457d51bc1faf90869ff815330a206366f0834d1bcfa29ff8f",
+    "PROTOCOL.md": "17d490260a55f3ef3198f6b566d0426d0cf9f89b97ab7f803120dd62da59eb21"
+  }
+}

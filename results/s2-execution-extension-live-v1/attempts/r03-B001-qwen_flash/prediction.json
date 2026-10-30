@@ -1,0 +1,38 @@
+{
+  "job_id": "r03-B001-qwen_flash",
+  "group_id": "B001",
+  "model_id": "qwen_flash",
+  "repeat": 2,
+  "answers": {},
+  "errors": {
+    "B001-Q01": "http_429",
+    "B001-Q02": "http_429"
+  },
+  "derived": null,
+  "diagnostics": {},
+  "status": "failed",
+  "served_model": null,
+  "served_provider": null,
+  "response_id": null,
+  "resources": {
+    "raw_usage": {},
+    "input_tokens": null,
+    "output_tokens": null,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": null,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 5.755944250005996,
+    "derivation_wall_seconds": 1.8749997252598405e-05,
+    "derivation_cpu_seconds": 1.8000000000295557e-05
+  },
+  "request_sha256": "306e8a665a3c0acd85b0c394698b389a169709176d495053018c7ae823df125a",
+  "receipt_sha256": "9495ca81791f17a10f1c3a92bef54fdb2c72c4a5d4ddf517f8b0026f88211e20",
+  "simulated": false,
+  "halt_model": false
+}

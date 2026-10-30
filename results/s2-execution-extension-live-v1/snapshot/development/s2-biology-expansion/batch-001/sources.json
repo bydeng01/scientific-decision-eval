@@ -1,0 +1,112 @@
+{
+  "source_records": [
+    {
+      "source_id": "BIO-EXP-2012",
+      "citation": "Manikkam et al. (2012). Transgenerational Actions of Environmental Compounds on Reproductive Disease and Identification of Epigenetic Biomarkers of Ancestral Exposures. PLOS ONE 7(2): e31901.",
+      "doi": "10.1371/journal.pone.0031901",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031901",
+      "source_family": "MANIKKAM-2012-EXPOSURE",
+      "version": "Published article and linked Supplemental Table S1 (.s007).",
+      "verified_locations": [
+        "Main PDF p. 2 Results: F0-only injection, breeding, and F0/F1/F2 developmental exposure explanation; visually checked.",
+        "Main PDF p. 9 treatment and breeding methods; visually checked.",
+        "Supplemental Table S1B p. 1 and S1C p. 2, Dioxin row; visually checked cell by cell."
+      ],
+      "limitations": [
+        "No individual pedigree was reconstructed. Four F1 weaned litters are not treated as a complete register of all injected F0 dams.",
+        "The source's mechanistic and toxicological claims are not benchmark reference conclusions. The generational classification concerns the original exposure window, not measured chemical absence."
+      ],
+      "accessed_at_utc": "2026-09-21T03:51:49.442079+00:00",
+      "local_files": {
+        "evidence/exposure-2012.html": "d85bf597685b10ce3df85d47b907a5709594d87baeec02f683bac7f7a2c1e3b4",
+        "evidence/exposure-2012.pdf": "cccbe5e282e604e5134ea0035b285b68ac4d54f210fe7c816ad12c8d81339cdc",
+        "evidence/exposure-2012.txt": "6d8f48d2c043f51c11acb145d7bf42dbc262d32db05484981d0046ba51a7d235",
+        "evidence/exposure-2012-p02.png": "1ae81c90299fa747f75b086c5c73acdf4a0ee11ff5c956cd1170a773e75a3cef",
+        "evidence/exposure-2012-p09.png": "17b2828ebb500888eeece66091bf5d3319ce7d6866f63dcc315e50c488df503a",
+        "evidence/exposure-2012-tableS1.pdf": "3384fe16a88043988db7acad85fd884ae7873a4cb28f9a12fe747c3ee47fb20c",
+        "evidence/exposure-2012-tableS1.txt": "5092fcf7fd58b90a98c31be4508236ec47da340e508d95dab204d201b480c030",
+        "evidence/exposure-2012-tableS1-p01.png": "d41f0ac039d7050f5b628c10d3160d36a0552194de869eb7e112619bc5997f53",
+        "evidence/exposure-2012-tableS1-p02.png": "1ddc8b918114048a596b8ec4b1d56994cb622bfd16e1371568a2ac2994bb789f"
+      }
+    },
+    {
+      "source_id": "BIO-LD-1943",
+      "citation": "Luria and Delbrueck (1943). Mutations of Bacteria from Virus Sensitivity to Virus Resistance. Genetics 28: 491-511.",
+      "doi": "10.1093/genetics/28.6.491",
+      "url": "https://doi.org/10.1093/genetics/28.6.491",
+      "source_family": "LURIA-DELBRUECK-1943",
+      "version": "Scan of the original 21-page article; public Pennsylvania State University mirror.",
+      "verified_locations": [
+        "Printed p. 493, mutation and descendant hypotheses; text checked.",
+        "Printed p. 502, plating methods; text checked.",
+        "Printed p. 503 Table 1, experiment 11a, all ten counts; visually checked.",
+        "Printed p. 504 Table 2, experiment 11, all ten counts; visually checked.",
+        "Printed pp. 496 and 507-508, clone definition and mutation-rate limitations; text checked."
+      ],
+      "limitations": [
+        "OCR reading order is unreliable for the tables; the numeric transcription uses the rendered scan.",
+        "No exact mutation-origin allocation, mutation-rate estimate, or new significance test is produced."
+      ],
+      "accessed_at_utc": "2026-09-21T03:51:49.442079+00:00",
+      "local_files": {
+        "evidence/luria-delbruck-1943.pdf": "36f6457c5f4aa55faed9fca9af990df23d9eac2e5ab3b131c61526d2733dbea9",
+        "evidence/luria-delbruck-1943.txt": "72e829b27d5d4c978fa57b974554f9e58d0c421aafcc2b0bd04625c0c71a303a",
+        "evidence/luria-delbruck-1943-p03.png": "eacfe1055cb6b834c767d7a5d6a3f661113113dcae121a4cf837ba2366d735fc",
+        "evidence/luria-delbruck-1943-p12.png": "89197ad6a45b57e47c8af92d97a4aa71d624d1277f6ab97503b108e5398cc19f",
+        "evidence/luria-delbruck-1943-p13.png": "47062fbd4c15874c47b43f48ccf49e946b7a1ae274414ab447578d6c687ff101",
+        "evidence/luria-delbruck-1943-p14.png": "454da6aa0b45bcbee721a699ddaf584bbde7c8cf96ec39acdf6adf2bd11ce60e"
+      }
+    },
+    {
+      "source_id": "BIO-RNA-2015",
+      "citation": "Rajkumar et al. (2015). Experimental validation of methods for differential gene expression analysis and sample pooling in RNA-seq. BMC Genomics 16:548.",
+      "doi": "10.1186/s12864-015-1767-y",
+      "url": "https://link.springer.com/article/10.1186/s12864-015-1767-y",
+      "source_family": "RAJKUMAR-2015-POOLING",
+      "version": "Published article and original Additional file 10 (JPEG).",
+      "verified_locations": [
+        "Main PDF p. 6, RNA samples, RNA-seq analysis and DEG analyses; visually checked.",
+        "Additional file 10, every pool label and contributor list; visually checked.",
+        "Figure 2 caption and separate individual-sample comparison; text checked."
+      ],
+      "limitations": [
+        "The study also provides individual libraries. Their existence is retained in the evidence; the benchmark claim is explicitly restricted to the pooled arm.",
+        "No differential-expression analysis is rerun, and no general claim about pooling accuracy or scalar effective sample size is made."
+      ],
+      "accessed_at_utc": "2026-09-21T03:51:49.442079+00:00",
+      "local_files": {
+        "evidence/pooling-2015.html": "e7ba3d787776bc5b33851f6f6b950933d41d730e5bf713fbb14659b93cb6d243",
+        "evidence/pooling-2015.pdf": "8799a5db1301fd1a876aa680a52ebc249d8c181700ad4d384c5145e8d4caecd2",
+        "evidence/pooling-2015.txt": "f5f41285d6eccdefee2bf2a5b8edd45cd55801599584993a580a876261e4d922",
+        "evidence/pooling-2015-p06.png": "5938be44d9365edf4e6c8ef059a480e6c607b2ed3b5ad13d18610bd88d1119cd",
+        "evidence/pooling-2015-design.jpeg": "198df2af56ffe2f85c3a6557e77e34521e482cd039b71555280eb72de47fdf31"
+      }
+    },
+    {
+      "source_id": "BIO-TYR-2014",
+      "citation": "Yen et al. (2014). Somatic mosaicism and allele complexity induced by CRISPR/Cas9 RNA injections in mouse zygotes. Developmental Biology 393(1):3-9.",
+      "doi": "10.1016/j.ydbio.2014.06.017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4166609/",
+      "source_family": "YEN-2014-TYR",
+      "version": "NCBI BioC XML of PMC4166609 / NIHMS627582; primary author-manuscript text.",
+      "verified_locations": [
+        "Methods: RNA injections into mouse zygotes and Tyr mutation analysis.",
+        "Results: Characterization of CRISPR/Cas9-induced Tyr mutations, including mouse #30 and the 23-founder aggregate.",
+        "Results: Germ line transmission of targeted Tyr alleles.",
+        "Discussion: Complete albinism and pigmentation mosaicism paragraph, explicitly stating why hybrid mosaics were not tested.",
+        "Publisher Figure 3C, Mouse 30: deletion alleles 1-5 and insertion allele 6; visually checked on 2026-09-21. [Publisher Figure 3](https://ars.els-cdn.com/content/image/1-s2.0-S0012160614003133-gr3_lrg.jpg)"
+      ],
+      "limitations": [
+        "The archived NCBI BioC XML is author-manuscript text. Publisher Figure 3C was retrieved separately and visually inspected; the full publisher text/PDF remains unavailable for version comparison.",
+        "The author-manuscript Results paragraph beginning A variety of mutations within exon 4 reports five mutant alleles in mouse #30 and also discusses allele 6. Publisher Figure 3C lists six #30 entries: alleles 1-5 under deletions and allele 6 under insertions. The exact count remains unresolved; both accounts support within-founder mosaicism. The figure column n counts sequenced clones per allele.",
+        "The Results and Discussion contain inconsistent insertion/deletion or allele-effect wording for C57BL/6N mouse #14; that sequence-level interpretation is excluded.",
+        "The 5% reporting threshold does not enumerate every allele or cell. No F1 sequence dataset was reanalysed."
+      ],
+      "accessed_at_utc": "2026-09-21T03:51:49.442079+00:00",
+      "local_files": {
+        "evidence/mosaic-2014-bioc.xml": "a590357a37e0e4d5c1d718d85b51f428ddd0139595d030aff7ea1ab6791d0973",
+        "evidence/mosaic-2014-bioc.txt": "e2d16d4a2524663fbc89400d7c2603fe8bad9b65ed1844a7faba320818b1d0e2"
+      }
+    }
+  ]
+}

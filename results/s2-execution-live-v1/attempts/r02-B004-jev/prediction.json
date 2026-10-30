@@ -1,0 +1,86 @@
+{
+  "job_id": "r02-B004-jev",
+  "group_id": "B004",
+  "model_id": "jev",
+  "repeat": 1,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "B004-Q01": {
+      "probabilities": {
+        "uniform_one_allele_pair": 0,
+        "other": 0,
+        "one_founder_per_allele": 0,
+        "no_edit_detected": 0,
+        "conflicting": 0.14,
+        "not_stated": 0,
+        "within_founder_mosaicism": 0.86
+      },
+      "confidence": 0.83,
+      "raw_probability_sum": 1.0
+    },
+    "B004-Q02": {
+      "probabilities": {
+        "conflicting": 0,
+        "other": 0,
+        "all_hybrid_alleles_verified": 0,
+        "unique_new_allele_marker": 0,
+        "preexisting_albino_allele": 1,
+        "not_stated": 0,
+        "no_germline_possible": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972242-Uwqb5BPsACVMB4zkBm85",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1637,
+      "output_tokens": 201,
+      "cost": 6.8754e-05
+    },
+    "input_tokens": 1637,
+    "output_tokens": 201,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 6.8754e-05,
+    "usage_cost_estimate_usd": 6.8754e-05,
+    "usage_cost_upper_estimate_usd": 6.8754e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.3900509999948554,
+    "derivation_wall_seconds": 4.0749990148469806e-05,
+    "derivation_cpu_seconds": 4.100000000017978e-05
+  },
+  "request_sha256": "60588e8a62ec0cdf88a6ecc0fd66f157adbbabb12feb3803b73714c00dfc1180",
+  "receipt_sha256": "f5f1d49d40d75523eef12405f2909b31d88c39943d2d5d679d1f6c74b0ba7d4b",
+  "simulated": false,
+  "halt_model": false
+}

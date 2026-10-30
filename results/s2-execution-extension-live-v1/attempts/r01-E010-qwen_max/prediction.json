@@ -1,0 +1,75 @@
+{
+  "job_id": "r01-E010-qwen_max",
+  "group_id": "E010",
+  "model_id": "qwen_max",
+  "repeat": 0,
+  "answers": {
+    "E010-Q01": "complementary_assignment",
+    "E010-Q02": "assignment_only"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_EUs": 154,
+      "retained_EUs": 118,
+      "joint_assignment_events": 118,
+      "range_level_records": 236,
+      "independent_range_draws_claim": false,
+      "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label"
+    },
+    "clauses": {
+      "independent_assignment": "inconsistent",
+      "zero_exposure": "insufficient_evidence"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789974336-o66Hg3c1Xb8IKyTvhXGv",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 990,
+      "completion_tokens": 1087,
+      "total_tokens": 2077,
+      "cost": 0.008502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008502,
+        "upstream_inference_prompt_cost": 0.00198,
+        "upstream_inference_completions_cost": 0.006522
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1070,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 990,
+    "output_tokens": 1087,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 1070,
+    "reported_cost_usd": 0.008502,
+    "usage_cost_estimate_usd": 0.008502,
+    "usage_cost_upper_estimate_usd": 0.008997,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 27.73909083401668,
+    "derivation_wall_seconds": 7.054099114611745e-05,
+    "derivation_cpu_seconds": 7.00000000000145e-05
+  },
+  "request_sha256": "cd3079bb27903c55a00f7143ca81d65a1a804093b8707eb1e26f7c056508a820",
+  "receipt_sha256": "97e7b044dedd425a2f03b87f3500bbebfa4b46c0265e0262c0f99f8188c367b2",
+  "simulated": false,
+  "halt_model": false
+}

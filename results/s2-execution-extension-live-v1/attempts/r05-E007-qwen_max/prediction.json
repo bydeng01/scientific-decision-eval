@@ -1,0 +1,74 @@
+{
+  "job_id": "r05-E007-qwen_max",
+  "group_id": "E007",
+  "model_id": "qwen_max",
+  "repeat": 4,
+  "answers": {
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false,
+      "claim_assessment": "inconsistent_in_both_clauses"
+    },
+    "clauses": {
+      "single_protocol": "inconsistent",
+      "single_change": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789976592-0am38jghls4oLo1arY52",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 896,
+      "completion_tokens": 516,
+      "total_tokens": 1412,
+      "cost": 0.004888,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004888,
+        "upstream_inference_prompt_cost": 0.001792,
+        "upstream_inference_completions_cost": 0.003096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 498,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 896,
+    "output_tokens": 516,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 498,
+    "reported_cost_usd": 0.004888,
+    "usage_cost_estimate_usd": 0.004888,
+    "usage_cost_upper_estimate_usd": 0.005336,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 14.238491583993891,
+    "derivation_wall_seconds": 5.279199103824794e-05,
+    "derivation_cpu_seconds": 5.3000000000302805e-05
+  },
+  "request_sha256": "fbcba4745b0f5676611789183908101fa0aa404cfead170153d7a3660f775226",
+  "receipt_sha256": "de98c30e0c995d58388925f85ec30e8ed174b87c7596216304e1414aa17f932d",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,61 @@
+{
+  "job_id": "r03-E009-terra",
+  "group_id": "E009",
+  "model_id": "terra",
+  "repeat": 2,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-terra",
+  "response_id": "resp_06a2fa4a112bdc0b016ab0cf3edb5887d2bb6ec1e2bf2a287d",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 869
+    },
+    "input_tokens": 845,
+    "output_tokens": 24,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0024005,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.2395998749998398,
+    "derivation_wall_seconds": 5.233401316218078e-05,
+    "derivation_cpu_seconds": 5.199999999994098e-05
+  },
+  "request_sha256": "6d6a9362b9c5049851fb2835b65897e81255450c06a75832c27045b672824edb",
+  "receipt_sha256": "75ada637ca2fc81d6306cb39cfd25cff243cfd417fe7e0e5641590ef2580a773",
+  "simulated": false,
+  "halt_model": false
+}

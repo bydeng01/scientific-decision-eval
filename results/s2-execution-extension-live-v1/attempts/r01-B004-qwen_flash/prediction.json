@@ -1,0 +1,78 @@
+{
+  "job_id": "r01-B004-qwen_flash",
+  "group_id": "B004",
+  "model_id": "qwen_flash",
+  "repeat": 0,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-flash",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789974625-UBUpeYc7EVhN4ZREYXSX",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1239,
+      "completion_tokens": 1324,
+      "total_tokens": 2563,
+      "cost": 0.00080813,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00080813,
+        "upstream_inference_prompt_cost": 0.00018585,
+        "upstream_inference_completions_cost": 0.00062228
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1296,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1239,
+    "output_tokens": 1324,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 1296,
+    "reported_cost_usd": 0.00080813,
+    "usage_cost_estimate_usd": 0.00080813,
+    "usage_cost_upper_estimate_usd": 0.00087008,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 18.07601399999112,
+    "derivation_wall_seconds": 0.00014849999570287764,
+    "derivation_cpu_seconds": 0.00014700000000000824
+  },
+  "request_sha256": "c823bc4e1d1f83da2ae3622862ea2a63f0db6342f86a448eb668de2f33b27cfc",
+  "receipt_sha256": "4b59dfe129a80c28b5de6c06f508c987eb4ec4688d95e9cbbeaeade4a5b2edc7",
+  "simulated": false,
+  "halt_model": false
+}

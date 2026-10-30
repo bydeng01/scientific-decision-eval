@@ -1,0 +1,72 @@
+CESM2 Large Ensemble Community Project (LENS2) | Community Earth System Model
+CESM2 Large Ensemble Community Project (LENS2) | Community Earth System Model
+Skip to main content
+CESM2 Large Ensemble Community Project (LENS2)
+We are pleased to announce the completion of the CESM2 Large Ensemble Project, produced in partnership with the
+the IBS Center for Climate Physics
+in South Korea. The CESM2 Large Ensemble (LENS2) consists of 100 members at 1-degree spatial resolution covering the period 1850-2100 under CMIP6 historical and SSP370 future radiative forcing scenarios. Data from this ensemble is available via
+the NSF NCAR Geoscience Data Exchange
+.
+Unlike the
+CESM1 Large Ensemble (LENS1)
+, LENS2 uses a combination of different oceanic and atmospheric initial states to create ensemble spread as follows (see illustrations in
+Figs. 1 and 2
+below).
+Members 1-10: These begin from years 1001, 1021, 1041, 1061, 1081, 1101, 1121, 1141, 1161, and 1181 of the 1400-year pre-industrial control simulation. This segment of the control simulation was chosen to minimize drift (See
+Fig. 1
+).
+Members 11-90: These begin from 4 pre-selected years of the pre-industrial control simulation based on the phase of the Atlantic meridional overturning circulation (AMOC). For each of the 4 initial states, there are 20 ensemble members created by randomly perturbing the atmospheric potential temperature field by order 10^-14K. The chosen start dates (model years 1231, 1251, 1281, and 1301) sample AMOC and sea surface height (SSH) in the Labrador Sea at their maximum, minimum, and transition states (see
+Fig. 2
+).
+Members 91-100: These begin from years 1011, 1031, 1051, 1071, 1091, 1111, 1131, 1151, 1171, and 1191 of the 1400-year pre-industrial control simulation. This group includes an extensive / comprehensive set of output fields -- referred to as the mother of all runs, "MOAR" outputs, which can be used to drive regional climate models, in addition to
+COSP
+output. (See
+Fig. 1
+)
+This initialization design is intended to enable an assessment of oceanic (AMOC) and atmospheric contributions to ensemble spread, and the impact of AMOC initial-condition memory on the global Earth system.
+Modifications incorporated in the second half of the LENS2 simulations
+Biomass burning (BMB) emissions in CMIP6 utilize remote sensing data during 1997-2014, which contain more year-to-year variability compared to the data sources used before and after that time (
+Fasullo et al., 2022
+;
+DeRepentigny et al., 2022
+). In CESM2, some aspects of the extratropical Northern Hemisphere climate response (in particular, air temperature and sea ice) are sensitive to such a “discontinuity” in BMB variability due to non-linear aerosol-cloud interactions, the details of which are still under investigation. In view of this sensitivity, which was discovered well into the LENS2 project, it was decided to divide LENS2 into two 50-member sub-ensembles: one which uses the original CMIP6 BMB protocol [identical to that used in the CESM2 presentation paper:
+Danabasoglu et al., 2020
+] and one which uses a smoothed version of the CMIP6 BMB protocol (11-year running means) that is more comparable to the treatment of CMIP6 BMB emissions used before 1997 and after 2014. Note that this smoothing affects the BMB fluxes used in the 2nd 50-member ensemble during 1990-2020. Details of the modified BMB protocol are provided in the Supplemental Materials to the LENS2 introduction paper (
+Rodgers et al., 2021
+).
+The 50-members that use the original CMIP6 BMB protocol and the 50 members that use the smoothed CMIP6 BMB protocol (hereafter referred to as “SMBB”) are evenly distributed amongst the different initialization dates. Specifically, for each of the 4 “macro perturbation” AMOC start dates (see
+Figure 2
+), the first 10 “micro perturbation” members use the original CMIP6 BMB files and the second 10 “micro perturbation” members use the SMBB files. Similarly, for the 20 members that begin from different years in the pre-industrial control run, those with even-numbered start decades (e.g., 1001, 1021, 1041, 1061, 1081, 1101, 1121, 1141, 1161, and 1181: see #1 above) use the original CMIP6 BMB files, and those with odd-numbered start decades (e.g., 1011, 1031, 1051, 1071, 1091, 1111, 1131, 1151, 1171, and 1191: see
+Figure
+1
+) use the SMBB files.
+In addition, the CESM2 code base for the SMBB simulations incorporates two sets of bug corrections that were present in the first 50 members. The first concerns the SO2, SO4, and SOAG emission datasets. Regarding SO2 and SO4, the “shipping” and “agriculture + solvents + wast” components were inadvertently swapped during the transition from historical to future period, that is, starting in 2015. The incorrect SO2 partitioning does not impact the results as its components are summed up anyways before it is used. In contrast, the correction for the SO4 datasets can impact the solutions because the particle sizes and their associated numbers differ for the SO4 components. The SOAG emissions are calculated from several hydrocarbons, and they were not recalculated after an earlier bug correction in converting units of the lumped species for the biomass burning emissions. This issue was corrected. Our evaluations did not show any significant changes of model solutions from these particular corrections.
+The second correction concerns the presence of a sporadic large CO2 uptake over land due to a large negative flux of carbon, occurring at crop harvest in a single time step. Although such a negative carbon flux component term in the autotrophic respiration is necessary to maintain carbon balance, large CO2 spikes are not desirable. To avoid these spikes, the flux occurring at a single time step is "dribbled" to the atmosphere over a time scale of about half a year. Our evaluations did not reveal any climate changing impacts of this modification.
+Finally, several additional fields were added to the output datasets for the atmosphere, ocean, land, and wave models.
+How to acknowledge CESM2-LENS
+When presenting results based on the CESM2 Large Ensemble in either oral or written form, please acknowledge the CESM2 Large Ensemble Community Project and supercomputing resources provided by
+the IBS Center for Climate Physics
+in South Korea, and reference the DOI of
+Rodgers et al., 2021
+.
+Project Leads, in alphabetical order
+Dr. Gokhan Danabasoglu [
+gokhan@ucar.edu
+]
+Dr. Clara Deser [
+cdeser@ucar.edu
+]
+Dr. Keith Rodgers [
+krodgers@pusan.ac.kr
+]
+Dr. Axel Timmermann [
+timmermann@pusan.ac.kr
+]
+Reference Figures
+Figure 1
+Figure 2
+CESM2 Large Ensemble Community Project (LENS2)
+Data Sets Available to the Community
+Instructions
+Output Variables
+Publications

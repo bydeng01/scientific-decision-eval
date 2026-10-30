@@ -1,0 +1,46 @@
+{
+  "config": {
+    "seed": 20260921,
+    "repeats": 20,
+    "budgets": [
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "alpha": 0.05,
+    "delta": 0.05,
+    "n_thresholds": 21,
+    "regimes": [
+      "honest",
+      "overconfident",
+      "saturated"
+    ]
+  },
+  "methods": [
+    "uniform_full",
+    "graph_certificate_full",
+    "graph_independent_full",
+    "graph_certificate_matched",
+    "graph_independent_matched",
+    "e2e_hgb",
+    "e2e_logistic",
+    "e2e_cell",
+    "graph_hgb",
+    "oracle_observable"
+  ],
+  "started_utc": "2026-09-20T01:47:58.581122+00:00",
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "source_hashes": {
+    "scripts/label_efficiency.py": "4dfbc4ce7d9f211ccca5290b3b1cd454df66c6e2ee22aacdf4a5ba839a94f67a",
+    "scripts/offline_pilot.py": "d3cace8638f7a31457d51bc1faf90869ff815330a206366f0834d1bcfa29ff8f",
+    "LABEL_EFFICIENCY_PROTOCOL.md": "4ff8d5d9250a2a47cbaaf7ed7bcf9c4d84e16632d36d4f911e5ce547421485f6"
+  },
+  "tail_probability": 2.9761904761904762e-05,
+  "zero_error_accepted_needed": 204
+}

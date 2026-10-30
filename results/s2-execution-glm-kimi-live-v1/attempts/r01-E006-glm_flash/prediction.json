@@ -1,0 +1,72 @@
+{
+  "job_id": "r01-E006-glm_flash",
+  "group_id": "E006",
+  "model_id": "glm_flash",
+  "repeat": 0,
+  "answers": {
+    "E006-Q01": "phase_reversed",
+    "E006-Q02": "pair_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "paired_realizations": 100,
+      "paired_execution_count": 200,
+      "values_entering_pair_ensemble": 100,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independent_phase_draws": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "z-ai/glm-5.3-flash",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789978254-VKwSfZHhkFXaU1gStNhn",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 755,
+      "completion_tokens": 39,
+      "total_tokens": 794,
+      "cost": 0.00013275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013275,
+        "upstream_inference_prompt_cost": 0.00011325,
+        "upstream_inference_completions_cost": 1.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 755,
+    "output_tokens": 39,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 23,
+    "reported_cost_usd": 0.00013275,
+    "usage_cost_estimate_usd": 0.00013275,
+    "usage_cost_upper_estimate_usd": 0.00013275,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.318681667005876,
+    "derivation_wall_seconds": 7.325000478886068e-05,
+    "derivation_cpu_seconds": 7.299999999998974e-05
+  },
+  "request_sha256": "c1c24ff24e26b8d02d11176853616e3e15843e8ecd0fb45837f57c3ed3346a76",
+  "receipt_sha256": "697300025daa3b3067ca08c1e23bd75ea6ffcd9ecb450ed09ab8b0c492941d0c",
+  "simulated": false,
+  "halt_model": false
+}

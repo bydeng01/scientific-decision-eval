@@ -1,0 +1,78 @@
+{
+  "job_id": "r01-B001-deepseek_pro",
+  "group_id": "B001",
+  "model_id": "deepseek_pro",
+  "repeat": 0,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4-pro-0813",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789974552-0I1Gaoznk7sTscS2mDaD",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1377,
+      "completion_tokens": 394,
+      "total_tokens": 1771,
+      "cost": 0.00337788,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00337788,
+        "upstream_inference_prompt_cost": 0.00181764,
+        "upstream_inference_completions_cost": 0.00156024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 366,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1377,
+    "output_tokens": 394,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 366,
+    "reported_cost_usd": 0.00337788,
+    "usage_cost_estimate_usd": 0.00337788,
+    "usage_cost_upper_estimate_usd": 0.00337788,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 6.413466417026939,
+    "derivation_wall_seconds": 6.500000017695129e-05,
+    "derivation_cpu_seconds": 6.499999999998174e-05
+  },
+  "request_sha256": "12cb1ef77d6e268d26916724caaf7987d7249553b1a4a326e4c889ea01bc0382",
+  "receipt_sha256": "b01b542202cce2d149bfc4c681c3607c470e7c6507d59f257cddf35421be7c09",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,74 @@
+{
+  "job_id": "r04-B002-terra",
+  "group_id": "B002",
+  "model_id": "terra",
+  "repeat": 3,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-terra",
+  "response_id": "resp_06983e186ba031b8016ab0cf873a0887d284295b57e6c3dad7",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1217
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1246
+    },
+    "input_tokens": 1220,
+    "output_tokens": 26,
+    "resource_errors": [],
+    "cached_input_tokens": 1217,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.003362,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.9353441249986645,
+    "derivation_wall_seconds": 5.0875009037554264e-05,
+    "derivation_cpu_seconds": 5.100000000002325e-05
+  },
+  "request_sha256": "fb379d067ffbf7889b26ff0d2086ff111d2335a9d35b4a4266e2e23413296e64",
+  "receipt_sha256": "3037447e3d30925a466e37acc38c8eb0e4d55edf4cc2a39777cbb6f44eab1b7b",
+  "simulated": false,
+  "halt_model": false
+}

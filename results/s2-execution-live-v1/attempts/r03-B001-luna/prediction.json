@@ -1,0 +1,66 @@
+{
+  "job_id": "r03-B001-luna",
+  "group_id": "B001",
+  "model_id": "luna",
+  "repeat": 2,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_0bd03c30566cdd9e016ab0cf43cadc87d2b766648a615683de",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1226
+      },
+      "output_tokens": 95,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1324
+    },
+    "input_tokens": 1229,
+    "output_tokens": 95,
+    "resource_errors": [],
+    "cached_input_tokens": 1226,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 58,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00042125,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.4957240000076126,
+    "derivation_wall_seconds": 0.0001433329889550805,
+    "derivation_cpu_seconds": 0.00014300000000000423
+  },
+  "request_sha256": "1dc152dfaa014a9be4d5399801f81dbfaac0435bd22f3d0565bb5716abc76659",
+  "receipt_sha256": "221f433760e1d7ab79b774706255ad5be5c94097a19e0db30ea1475995042945",
+  "simulated": false,
+  "halt_model": false
+}

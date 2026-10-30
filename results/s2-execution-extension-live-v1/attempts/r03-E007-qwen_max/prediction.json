@@ -1,0 +1,74 @@
+{
+  "job_id": "r03-E007-qwen_max",
+  "group_id": "E007",
+  "model_id": "qwen_max",
+  "repeat": 2,
+  "answers": {
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false,
+      "claim_assessment": "inconsistent_in_both_clauses"
+    },
+    "clauses": {
+      "single_protocol": "inconsistent",
+      "single_change": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975533-1QioFdcl5kT3QtYjL8W2",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 896,
+      "completion_tokens": 643,
+      "total_tokens": 1539,
+      "cost": 0.00565,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00565,
+        "upstream_inference_prompt_cost": 0.001792,
+        "upstream_inference_completions_cost": 0.003858
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 625,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 896,
+    "output_tokens": 643,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 625,
+    "reported_cost_usd": 0.00565,
+    "usage_cost_estimate_usd": 0.00565,
+    "usage_cost_upper_estimate_usd": 0.006098,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 15.57511316597811,
+    "derivation_wall_seconds": 0.00012587499804794788,
+    "derivation_cpu_seconds": 0.00012600000000029254
+  },
+  "request_sha256": "fbcba4745b0f5676611789183908101fa0aa404cfead170153d7a3660f775226",
+  "receipt_sha256": "116489cdd96db3d7cf18f153f21efd49420b6aac39f01920f989b1c0afc04099",
+  "simulated": false,
+  "halt_model": false
+}

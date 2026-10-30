@@ -1,0 +1,49 @@
+{
+  "read_at": "2026-09-21T01:33:05.929169+00:00",
+  "current_groups": [
+    "D01",
+    "D02",
+    "D03",
+    "C01",
+    "H01",
+    "C02"
+  ],
+  "current_scientific_claims": 11,
+  "engineering_fixtures": 1,
+  "atomic_questions": 15,
+  "sources": [
+    "U",
+    "A",
+    "N",
+    "H",
+    "J"
+  ],
+  "later_expansion_batches_found": [],
+  "unfinished_expansion_batches_found": [],
+  "archived_versions_counted": false,
+  "original_choice_review_attribution": "Author reviewed; no independent multi-reviewer annotation.",
+  "protected_sha256": {
+    "development/s2-nonbio-v1/ALL_CASES_REVIEW.md": "acd2619eb9726afe135d10954e10f2950eae1b13e19b271bb9bec73625a36831",
+    "development/s2-nonbio-v1/CHOICES_REVIEW.md": "d344a45628902c015981ee28cb5ecd0537e17439057dc8c037faed827acac232",
+    "development/s2-nonbio-v1/text_revision.json": "f4a1a9fd469347803839880febccf5179c0bae705abd86bf0ceac0eebd677b3a",
+    "development/s2-nonbio-v1/PREFLIGHT.md": "0bfb50ba7f7597b431956155c2b432aba3b6257fc1a1990ddf2ac5435c7b5067",
+    "development/s2-nonbio-v1/README.md": "757a664bc4c7e8241c7d5c68b8f47a3613ec408e7bc42b3ff3c579bda74a0664",
+    "development/s2-nonbio-v1/budget.json": "986be5578bdeb3fa6866f3fea02ab24ec31a775c5fa1c89584a3c332cd5cec21",
+    "development/s2-nonbio-v1/check_counts.py": "da8e854f47f939609d1a70a59acf1b1764cf4b77137571953ab2ea190303ccae",
+    "development/s2-nonbio-v1/choice-review-v1/REVIEW_LOG.md": "14c144a3a29c36b97077d69d5b2aa1a8efd4563253bb5a58929060b9d4f2a5b1",
+    "development/s2-nonbio-v1/choice-review-v1/checks.json": "d1223cee0eb16cc1434f1e9cda649220d99da46b553f036bd073f175339fb802",
+    "development/s2-nonbio-v1/choice-review-v1/evaluation.json": "ffb7d038b5a2bda293e07b5caf0502775970085386090d28879ae830f29f5030",
+    "development/s2-nonbio-v1/choice-review-v1/inputs.json": "5eb1eb04021592d38b849755494068a90e0c5350ddc4540498194beb9c299c0a",
+    "development/s2-nonbio-v1/choice-review-v1/verify_review.py": "b1889cbd948f914d2806425fc2ee3470aa394657044efcf8785b8058514028f6",
+    "development/s2-nonbio-v1/evaluation/README.md": "5e04d6566539bb48d75e75610cb685abbf9739e6e6fbc1586d9ae7ec6bab7c39",
+    "development/s2-nonbio-v1/evaluation/references.json": "852988df7e0e6c6d27ba72289626577785e1b798e8e8c94c705cb1f9f66bdd32",
+    "development/s2-nonbio-v1/inputs/cases.json": "efc7c632e9a39e25bb2752278cbbf08b7c2c58ff7dd6ff091a403aa7ea721246",
+    "development/s2-nonbio-v1/inputs/evidence.json": "6c36186233b22594f224456739510481a48b37930dd54563f6f53b98c936d966",
+    "development/s2-nonbio-v1/inputs/sources.json": "ee85c4f837b9bc7389ab539c1f9902d1e5c512d4d6ba765798210527561a27cd",
+    "development/s2-nonbio-v1/official_api_check.json": "421645894ff5bf46795deb991e1d6067ba7f7efae200f803c46fa39bdeea11c4",
+    "development/s2-nonbio-v1/rules.py": "50db9181e9b409d0c33bae2546213484b1013d95d12dc4348fc5098ac4ac795e",
+    "development/s2-nonbio-v1/run.py": "6d66dfb62c3079de420319ba58f1368ab2cd73bda5f24bfea7617ca5c896fe06",
+    "development/s2-nonbio-v1/score.py": "c6bfc8a07b238edc4086f1959f1d1027ca4f5de3c1c91a2fbcfed5081532c38a",
+    "development/s2-nonbio-v1/test_preflight.py": "ef74b05f4c37de3a6f3e4bf6463cc74d114d5657b970193d9b546579963d1a6e"
+  }
+}

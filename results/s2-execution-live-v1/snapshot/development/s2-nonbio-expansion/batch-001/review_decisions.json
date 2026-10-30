@@ -1,0 +1,299 @@
+{
+  "batch_id": "batch-001",
+  "decisions": [
+    {
+      "decision_id": "UR001",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_with_requested_minor_edits",
+      "approved_problem_ids": [
+        "E001"
+      ],
+      "approved_questions": {
+        "E001-Q01": {
+          "reference_option": "crossed_regrouping",
+          "question_input_sha256": "7dc2659eec19d50152548c6b582e21136821469e09f70cc2fea5032444e898e2"
+        },
+        "E001-Q02": {
+          "reference_option": "wafer",
+          "question_input_sha256": "ea4bdf605596d065edd28beb902b3cbdb536a4137246a5ab54b8d794ad1e0247"
+        }
+      },
+      "approved_scope": "The methodological example is acceptable for this batch.",
+      "revisions_applied": [
+        "Normalized the D/E/F stage to annealed in current adaptations and source annotations.",
+        "Clarified the evaluation-only outcome as 64 implant–anneal combinations, each corresponding to one wafer observation."
+      ],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "55d9cf682a455cfdaabdbb22ca41038bdbf9e2846ebd3a8447d358029fa87804"
+    },
+    {
+      "decision_id": "UR002",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_with_requested_minor_edits",
+      "approved_problem_ids": [
+        "E002"
+      ],
+      "approved_questions": {
+        "E002-Q01": {
+          "reference_option": "hourly_switch",
+          "question_input_sha256": "356849a5eaa7dd3f1fc9c198b4c3f533cfc39e2ffe7518fef3dc37ee8a5b6dc0"
+        },
+        "E002-Q02": {
+          "reference_option": "transition_exclusion",
+          "question_input_sha256": "1f979d21221f3a6914a123e80b27e0f15cab32754766bf0f58d40e7919140fc4"
+        }
+      },
+      "approved_scope": "The benchmark scope is appropriate.",
+      "revisions_applied": [
+        "Clarified the evaluation-only downstream role and inference boundary: controller-mode application boundaries do not establish independent applications.",
+        "Synchronized the source limitation and current review document with this distinction."
+      ],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "2bc246d8f9b5315e48a7471a593056cc46a6a90204dedc2ac5f799825955446b"
+    },
+    {
+      "decision_id": "UR003",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_with_requested_minor_edits",
+      "approved_problem_ids": [
+        "E003"
+      ],
+      "approved_questions": {
+        "E003-Q01": {
+          "reference_option": "recovered_carryover",
+          "question_input_sha256": "8c805d97bb99328c473e19dc0d483f9f36b1ddd6b9b62bd25d96cda8bac51b8b"
+        }
+      },
+      "approved_scope": "The eight Figure 2 cycles represent a single catalyst reuse history, not eight independent catalyst preparations or replications.",
+      "revisions_applied": [
+        "Clarified the evaluation-only inference boundary: recovered carryover denotes procedural reuse and implies neither complete material conservation nor identical catalyst composition across cycles.",
+        "Synchronized the source limitation and current review document with this scope."
+      ],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "817d27ba339b36351114ade7a98ba89dc5224ace0eb0565182ad878891bffb07"
+    },
+    {
+      "decision_id": "UR004",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "E004"
+      ],
+      "approved_questions": {
+        "E004-Q01": {
+          "reference_option": "mixed_histories",
+          "question_input_sha256": "4f49f5499eb74a5cddf170faf406eef02c775b524e75e929ad66c1680783b134"
+        },
+        "E004-Q02": {
+          "reference_option": "partial_identification",
+          "question_input_sha256": "7e9827b37dc591bb40a791fe073e5f014a811246116823b67e12cf3704ab9c09"
+        }
+      },
+      "approved_scope": "Mixed reuse-history feedstock in the build-8-and-later top-up regime, with incomplete lot identity, mixture fraction, and prior-build assignment for build 8. History streams are distinct from original powder lots; the bulk R index does not establish exact genealogy. The downstream exact_parent_lot_count remains null and complete_assignment_available remains false.",
+      "revisions_applied": [],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "a4a28374c9dc83fb1cfaa06baf954ef980c8c6aac8a4606404b3cec7b9a7c37a"
+    },
+    {
+      "decision_id": "UR005",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "E005"
+      ],
+      "approved_questions": {
+        "E005-Q01": {
+          "reference_option": "response_adaptive",
+          "question_input_sha256": "1db57cb017502c54b240dd8717946046c34bb8164e522ef7a4aaa7800a306dcf"
+        },
+        "E005-Q02": {
+          "reference_option": "new_specimen",
+          "question_input_sha256": "e0db4fcdece23815cf8047b1b3a7b73be2638756623b4f9b4068699c3cd70a40"
+        }
+      },
+      "approved_scope": "Regular staircase outcome-dependent stress assignment to a new specimen. The accepted 295 MPa and 355 MPa values are protocol-derived, not reconstructed observations. Random specimen extraction and protocol order do not establish independent stress randomization; allocation dependence does not establish specimen failure correlation. The fixed-stress observed replicate count remains null.",
+      "revisions_applied": [],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "fc36b50e3ff58413f9ce5efa3389453946aabd6c84662c79184cb92c9700e4b2"
+    },
+    {
+      "decision_id": "UR006",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "E006"
+      ],
+      "approved_questions": {
+        "E006-Q01": {
+          "reference_option": "phase_reversed",
+          "question_input_sha256": "1ef74aa53b45919bde2f9286b4c5053fe300b9009b68a6adf01133910a534034"
+        },
+        "E006-Q02": {
+          "reference_option": "pair_average",
+          "question_input_sha256": "165c6ffe919aa12a843f5213303dcfb3d9d2084b7efb9ac5549dce429e787e8b"
+        }
+      },
+      "approved_scope": "The N1000 paired-fixed subset has 100 paired realizations, 200 executions, and 100 pair-level values. Phase reversal relates the initial fields of two separate executions and does not constitute an independent second initial-condition draw or imply perfectly anticorrelated evolved observables. The accepted pair-average aggregation does not establish an effective sample size for every observable.",
+      "revisions_applied": [],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "9e2b260b2c913a294ec26ea4d78096e33b50b91d03fb7d2dd153f1686cc90d28"
+    },
+    {
+      "decision_id": "UR007",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_with_requested_minor_edits",
+      "approved_problem_ids": [
+        "E007"
+      ],
+      "approved_questions": {
+        "E007-Q01": {
+          "reference_option": "two_protocol_groups",
+          "question_input_sha256": "2c94e436af1a277b80554183476c49e5a4e54df044f0c66b10ee088d9ee465a6"
+        },
+        "E007-Q02": {
+          "reference_option": "bundled_changes",
+          "question_input_sha256": "2d1dcaeba1e4d2789626f77fa4c25d93d7d104e51f0ff2a28b4e40fa152243c6"
+        }
+      },
+      "approved_scope": "The 100 LENS2 members comprise 50 original and 50 SMBB protocol members under the official initialization mapping. The SMBB half includes other documented implementation changes, so the between-half contrast does not isolate smoothing alone. Initialization dates are not forcing treatments. Reported small or undetected impacts do not establish identical implementations or a single-variable causal contrast. The proposed references and downstream schema are unchanged.",
+      "revisions_applied": [
+        "Replaced the E007-Q02 evidence rationale with the author-reviewed wording distinguishing the existence of additional implementation changes from the source-reported impact evaluations."
+      ],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "fad7b77d84bb681e8165571ccef753bc4718c93322a2e6cbe5512965ada87f6b"
+    },
+    {
+      "decision_id": "UR008",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_with_requested_minor_edits",
+      "approved_problem_ids": [
+        "E008"
+      ],
+      "approved_questions": {
+        "E008-Q01": {
+          "reference_option": "complete_setting_equality",
+          "question_input_sha256": "8a76994b87e1a3cc6a8575f762400c182705bacfa555aa043d6f1ee849035f43"
+        }
+      },
+      "approved_scope": "Exact equality of all eight coded factor settings across separate executions defines complete treatment replication. The author accepted 20 runs, 18 distinct settings, repeated table-column groups [11,12] and [13,14], 16 singleton settings, and two pure-error degrees of freedom. Table positions do not establish execution order, sign complementarity is not treatment equality, response differences do not negate treatment equality, and the source variance-related degrees of freedom are not all pure error. The source note now acknowledges Table 1 and retains the unresolved temperature-description discrepancy for physical-condition reconstruction.",
+      "revisions_applied": [
+        "Replaced the incorrect factor-dictionary limitation with the exact author-reviewed source note, synchronized its review-issue copies, and added the Table 1 inspection location."
+      ],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "d786df8110ec476a850ac4d9e3a1fa0b0db62b83f344981eba6f1224dd7f6986"
+    },
+    {
+      "decision_id": "UR009",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "E009"
+      ],
+      "approved_questions": {
+        "E009-Q01": {
+          "reference_option": "shared_reference",
+          "question_input_sha256": "8b87cb59c004baa2469f62e4b51cc3ba914a29c6c4cd3b6234abe11c3ffa8960"
+        },
+        "E009-Q02": {
+          "reference_option": "bracketing_average",
+          "question_input_sha256": "3087fd7d56f28e967fdea96f00b86cbb573a43d4d167f091e7713474519c8b43"
+        }
+      },
+      "approved_scope": "The author accepted the shared DC-voltage reference-calibration contribution and the Cal-Lab bracketing average, with two compared laboratory results across three calibration visits. The shared covariance subtraction remains 2*u_B(std_DCV)^2 and the exact effective replication count remains null. S2 inclusion is approved as a counting/dependence judgment about shared reference provenance, without expansion to the full uncertainty budget, other electrical quantities, effective sample size, or perfect correlation.",
+      "revisions_applied": [],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "aad7e1e1f2fc0137af8abb6a01cfc9c9da7b5bae3e69c915a2deafc6215088c2"
+    },
+    {
+      "decision_id": "UR010",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "decision": "accepted_as_proposed",
+      "approved_problem_ids": [
+        "E010"
+      ],
+      "approved_questions": {
+        "E010-Q01": {
+          "reference_option": "complementary_assignment",
+          "question_input_sha256": "b9fe19681432bc030b4ad9784fc57fbf486e08487ee31bc2f38f5581c5592f8c"
+        },
+        "E010-Q02": {
+          "reference_option": "assignment_only",
+          "question_input_sha256": "fca03fb3df62df58c0a1ca8636d48323612d15944ab58d5526ced2de5b9d62e6"
+        }
+      },
+      "approved_scope": "The author accepted complementary assignment within each four-hour EU and the distinction between assigned-unseeded and physical exposure. The downstream outcome retains 154 original EUs, 118 quality-controlled EUs and joint assignment events, 236 EU-by-range records, and a false independent-range-draws claim. Cross-range contamination does not redefine assigned treatment/control; the 21 transport cases and 18 modeled enhancement cases do not supply per-EU exposure labels. S2 inclusion is approved without effect-size, p-value, or causal conclusions.",
+      "revisions_applied": [],
+      "references_changed": false,
+      "question_instructions_or_options_changed": false,
+      "model_inputs_changed": false,
+      "current_problem_input_sha256_after_requested_edits": "d2808507acf4060f4f76ecd8431564f2841eb6c1dae94732201ccb7b99b56520"
+    }
+  ],
+  "follow_up_reviews": [
+    {
+      "follow_up_id": "UR005-F01",
+      "prior_decision_id": "UR005",
+      "reviewed_on": "2026-09-21",
+      "reviewer": "author",
+      "review_status": "approved",
+      "decision": "approval_reaffirmed_with_retained_evidence_note",
+      "problem_id": "E005",
+      "confirmed_answers": {
+        "E005-Q01": "response_adaptive",
+        "E005-Q02": "new_specimen"
+      },
+      "approval_scope": "The Choice answers concern the staircase allocation mechanism and do not depend on resolving the numerical stress-step discrepancy.",
+      "evidence_note": [
+        "The paper reports a 30 MPa stress step in Table 3 and Figure 11 caption.",
+        "The author-released Figure 11 plotting file contains a saved staircase stress sequence with 16.25 MPa adjacent spacing.",
+        "No public correction or experimental log was found to determine whether these represent the same quantity."
+      ],
+      "numerical_next_stress_inference": "unresolved_for_executed_experiment",
+      "retained_calculation_scope": "The existing 295/355 MPa values are conditional arithmetic using the reported 30 MPa parameter, not established next stresses in the executed sequence.",
+      "source_links": [
+        {
+          "url": "https://arxiv.org/pdf/2107.02685v3",
+          "locations": "Table 3: PDF p. 17 / printed p. 17; Figure 11 caption: PDF p. 18 / printed p. 18"
+        },
+        {
+          "url": "https://github.com/cmmagazz/BayesOptFatigue/tree/7dae4bc61c8929be20dcf818e19c509b5f019cd5/examplefigures/Figure%2011",
+          "locations": "Author-released regular staircase plotting file; saved stress sequence"
+        }
+      ],
+      "question_instructions_or_options_changed": false,
+      "references_changed": false,
+      "rationales_changed": false,
+      "model_inputs_changed": false,
+      "downstream_evaluation_changed": false,
+      "hash_records_changed": false,
+      "attribution": "Explicit author reaffirmation of the two existing Choice approvals. The preceding machine audit is not recorded as human approval."
+    }
+  ]
+}

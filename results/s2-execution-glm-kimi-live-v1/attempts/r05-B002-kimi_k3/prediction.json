@@ -1,0 +1,86 @@
+{
+  "job_id": "r05-B002-kimi_k3",
+  "group_id": "B002",
+  "model_id": "kimi_k3",
+  "repeat": 4,
+  "answers": {
+    "B002-Q01": "shared_then_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "shared_then_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 1,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "inconsistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978802-2EBEYUg4qNZAZk4ZMUld",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1383,
+      "completion_tokens": 307,
+      "total_tokens": 1690,
+      "cost": 0.005298,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005298,
+        "upstream_inference_prompt_cost": 0.000693,
+        "upstream_inference_completions_cost": 0.004605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 280,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1383,
+    "output_tokens": 307,
+    "resource_errors": [],
+    "cached_input_tokens": 1280,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 280,
+    "reported_cost_usd": 0.005298,
+    "usage_cost_estimate_usd": 0.005298,
+    "usage_cost_upper_estimate_usd": 0.008754,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 12.683858625008725,
+    "derivation_wall_seconds": 5.854197661392391e-05,
+    "derivation_cpu_seconds": 5.8000000000113516e-05
+  },
+  "request_sha256": "5d36dbfa085f3246a204c7023fafedfdac787371a7517c9851bc83fc21d2f21c",
+  "receipt_sha256": "ab31db5ffd65091feceea485b7a70292c6ba02cb1297f81287ca55d08d1d267c",
+  "simulated": false,
+  "halt_model": false
+}

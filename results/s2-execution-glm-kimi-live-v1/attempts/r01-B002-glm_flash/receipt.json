@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n{\"id\":\"gen-1789978310-tfeHlJW6aDya1OooIARo\",\"object\":\"chat.completion\",\"created\":1789978310,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"Fireworks\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n\\\"q1\\\": \\\"shared_then_separate\\\",\\n\\\"q2\\\": \\\"clonal_descendants\\\"\\n}\",\"refusal\":null,\"reasoning\":\"Q1: Table 1 (11a) uses parallel platings from the same grown culture → shared. Table 2 (11) uses cultures grown separately → separate. That's \\\"shared_then_separate\\\"? Definition: \\\"The 11a samples share one grown culture; the 11 samples come from cultures grown separately before selection.\\\" Yes.\\n\\nQ2: clonal_descendants.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"Q1: Table 1 (11a) uses parallel platings from the same grown culture → shared. Table 2 (11) uses cultures grown separately → separate. That's \\\"shared_then_separate\\\"? Definition: \\\"The 11a samples share one grown culture; the 11 samples come from cultures grown separately before selection.\\\" Yes.\\n\\nQ2: clonal_descendants.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1147,\"completion_tokens\":102,\"total_tokens\":1249,\"cost\":0.00022305,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00022305,\"upstream_inference_prompt_cost\":0.00017205,\"upstream_inference_completions_cost\":0.000051},\"completion_tokens_details\":{\"reasoning_tokens\":78,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:11:53 GMT"
+  },
+  "latency_seconds": 3.2701710410183296,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:11:54.050045+00:00"
+}

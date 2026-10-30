@@ -1,0 +1,72 @@
+{
+  "job_id": "r01-E005-kimi_k3",
+  "group_id": "E005",
+  "model_id": "kimi_k3",
+  "repeat": 0,
+  "answers": {
+    "E005-Q01": "response_adaptive",
+    "E005-Q02": "new_specimen"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "next_stress_after_initial_failure_MPa": 295,
+      "next_stress_after_initial_runout_MPa": 355,
+      "observed_replicates_at_any_fixed_stress": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "independently_randomized_stresses": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978315-Y6XZCXtS1BYI2FnxO9Fk",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 994,
+      "completion_tokens": 196,
+      "total_tokens": 1190,
+      "cost": 0.005922,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005922,
+        "upstream_inference_prompt_cost": 0.002982,
+        "upstream_inference_completions_cost": 0.00294
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 171,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 994,
+    "output_tokens": 196,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 171,
+    "reported_cost_usd": 0.005922,
+    "usage_cost_estimate_usd": 0.005922,
+    "usage_cost_upper_estimate_usd": 0.005922,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 10.614213459019084,
+    "derivation_wall_seconds": 7.545901462435722e-05,
+    "derivation_cpu_seconds": 7.40000000000185e-05
+  },
+  "request_sha256": "d3d40f4705766853acd10075db6d925c9b6594e49d88ea8828f23c7cc57287ce",
+  "receipt_sha256": "9b0550cc5389a48fc5a0c5552c37051357c3ebba0678dfe5ea4689c95c05140a",
+  "simulated": false,
+  "halt_model": false
+}

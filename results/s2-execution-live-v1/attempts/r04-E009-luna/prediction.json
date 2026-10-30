@@ -1,0 +1,61 @@
+{
+  "job_id": "r04-E009-luna",
+  "group_id": "E009",
+  "model_id": "luna",
+  "repeat": 3,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-luna",
+  "response_id": "resp_084843f4d6657618016ab0cfa726fc87d2ad62c21b92182833",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 52,
+      "output_tokens_details": {
+        "reasoning_tokens": 26
+      },
+      "total_tokens": 897
+    },
+    "input_tokens": 845,
+    "output_tokens": 52,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 26,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00027364999999999996,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.3111016670009121,
+    "derivation_wall_seconds": 5.5459007853642106e-05,
+    "derivation_cpu_seconds": 5.500000000013827e-05
+  },
+  "request_sha256": "87671fe12719c2a59037294b426d95de38109daec9a682215830399f75fc230c",
+  "receipt_sha256": "32fb09e46cd9bd6e79da42206593d5ea648d293efee26e3f7d61bea6e9e19172",
+  "simulated": false,
+  "halt_model": false
+}

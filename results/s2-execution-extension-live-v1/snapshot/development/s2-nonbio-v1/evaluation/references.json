@@ -1,0 +1,647 @@
+{
+  "D01": {
+    "oracle_relation": {
+      "unit": "mixing_batch",
+      "memberships": [
+        [
+          "prism1.half1",
+          "batch1"
+        ],
+        [
+          "prism1.half2",
+          "batch1"
+        ],
+        [
+          "prism2.half1",
+          "batch1"
+        ],
+        [
+          "prism2.half2",
+          "batch1"
+        ],
+        [
+          "prism3.half1",
+          "batch1"
+        ],
+        [
+          "prism3.half2",
+          "batch1"
+        ]
+      ],
+      "entities": {
+        "prism": [
+          "prism1",
+          "prism2",
+          "prism3"
+        ],
+        "half_prism": [
+          "prism1.half1",
+          "prism1.half2",
+          "prism2.half1",
+          "prism2.half2",
+          "prism3.half1",
+          "prism3.half2"
+        ]
+      },
+      "atoms": {},
+      "parent_edges": [
+        [
+          "prism1.half1",
+          "prism1"
+        ],
+        [
+          "prism1.half2",
+          "prism1"
+        ],
+        [
+          "prism2.half1",
+          "prism2"
+        ],
+        [
+          "prism2.half2",
+          "prism2"
+        ],
+        [
+          "prism3.half1",
+          "prism3"
+        ],
+        [
+          "prism3.half2",
+          "prism3"
+        ],
+        [
+          "prism1",
+          "batch1"
+        ],
+        [
+          "prism2",
+          "batch1"
+        ],
+        [
+          "prism3",
+          "batch1"
+        ]
+      ]
+    },
+    "count": 1,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim"
+  },
+  "D01-S": {
+    "oracle_relation": {
+      "unit": "mixing_batch",
+      "memberships": [
+        [
+          "prism1.half1",
+          "batch1"
+        ],
+        [
+          "prism1.half2",
+          "batch1"
+        ],
+        [
+          "prism2.half1",
+          "batch1"
+        ],
+        [
+          "prism2.half2",
+          "batch1"
+        ],
+        [
+          "prism3.half1",
+          "batch1"
+        ],
+        [
+          "prism3.half2",
+          "batch1"
+        ]
+      ],
+      "entities": {
+        "prism": [
+          "prism1",
+          "prism2",
+          "prism3"
+        ],
+        "half_prism": [
+          "prism1.half1",
+          "prism1.half2",
+          "prism2.half1",
+          "prism2.half2",
+          "prism3.half1",
+          "prism3.half2"
+        ]
+      },
+      "atoms": {},
+      "parent_edges": [
+        [
+          "prism1.half1",
+          "prism1"
+        ],
+        [
+          "prism1.half2",
+          "prism1"
+        ],
+        [
+          "prism2.half1",
+          "prism2"
+        ],
+        [
+          "prism2.half2",
+          "prism2"
+        ],
+        [
+          "prism3.half1",
+          "prism3"
+        ],
+        [
+          "prism3.half2",
+          "prism3"
+        ],
+        [
+          "prism1",
+          "batch1"
+        ],
+        [
+          "prism2",
+          "batch1"
+        ],
+        [
+          "prism3",
+          "batch1"
+        ]
+      ]
+    },
+    "count": 1,
+    "label": "supported",
+    "action": "accept_scoped_claim"
+  },
+  "D01-O": {
+    "oracle_relation": {
+      "unit": "mixing_batch",
+      "memberships": [
+        [
+          "prism1.half1",
+          "batch1"
+        ],
+        [
+          "prism1.half2",
+          "batch1"
+        ],
+        [
+          "prism2.half1",
+          "batch1"
+        ],
+        [
+          "prism2.half2",
+          "batch1"
+        ],
+        [
+          "prism3.half1",
+          "batch1"
+        ],
+        [
+          "prism3.half2",
+          "batch1"
+        ]
+      ],
+      "entities": {
+        "prism": [
+          "prism1",
+          "prism2",
+          "prism3"
+        ],
+        "half_prism": [
+          "prism1.half1",
+          "prism1.half2",
+          "prism2.half1",
+          "prism2.half2",
+          "prism3.half1",
+          "prism3.half2"
+        ]
+      },
+      "atoms": {},
+      "parent_edges": [
+        [
+          "prism1.half1",
+          "prism1"
+        ],
+        [
+          "prism1.half2",
+          "prism1"
+        ],
+        [
+          "prism2.half1",
+          "prism2"
+        ],
+        [
+          "prism2.half2",
+          "prism2"
+        ],
+        [
+          "prism3.half1",
+          "prism3"
+        ],
+        [
+          "prism3.half2",
+          "prism3"
+        ],
+        [
+          "prism1",
+          "batch1"
+        ],
+        [
+          "prism2",
+          "batch1"
+        ],
+        [
+          "prism3",
+          "batch1"
+        ]
+      ]
+    },
+    "count": 1,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim",
+    "engineering": {
+      "choice": "other",
+      "action": "complete_candidates_or_transfer",
+      "downstream_count": null
+    }
+  },
+  "D02": {
+    "oracle_relation": {
+      "unit": "build",
+      "memberships": [
+        [
+          "7",
+          "build1"
+        ],
+        [
+          "8",
+          "build1"
+        ],
+        [
+          "9",
+          "build1"
+        ]
+      ],
+      "entities": {
+        "specimen": [
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      "atoms": {}
+    },
+    "count": 1,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim"
+  },
+  "D02-S": {
+    "oracle_relation": {
+      "unit": "build",
+      "memberships": [
+        [
+          "7",
+          "build1"
+        ],
+        [
+          "8",
+          "build1"
+        ],
+        [
+          "9",
+          "build1"
+        ]
+      ],
+      "entities": {
+        "specimen": [
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      "atoms": {}
+    },
+    "count": 1,
+    "label": "supported",
+    "action": "accept_scoped_claim"
+  },
+  "D03": {
+    "oracle_relation": {
+      "unit": null,
+      "memberships": [
+        [
+          "prism1",
+          null
+        ],
+        [
+          "prism2",
+          null
+        ],
+        [
+          "prism3",
+          null
+        ]
+      ],
+      "entities": {
+        "prism": [
+          "prism1",
+          "prism2",
+          "prism3"
+        ]
+      },
+      "atoms": {
+        "treatment_level": "water_bath_temperature_control",
+        "run_boundary": "not_stated",
+        "specimen_assignment": "not_stated"
+      }
+    },
+    "count": null,
+    "label": "insufficient",
+    "action": "request_run_boundary_and_specimen_run_records"
+  },
+  "C01-T": {
+    "oracle_relation": {
+      "unit": "whole_plot_group",
+      "memberships": [
+        [
+          "strip1",
+          "group1"
+        ],
+        [
+          "strip2",
+          "group1"
+        ],
+        [
+          "strip3",
+          "group1"
+        ],
+        [
+          "strip4",
+          "group1"
+        ]
+      ],
+      "entities": {},
+      "atoms": {}
+    },
+    "count": 1,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim"
+  },
+  "C01-A": {
+    "oracle_relation": {
+      "unit": "strip",
+      "memberships": [
+        [
+          "strip1",
+          "strip1"
+        ],
+        [
+          "strip2",
+          "strip2"
+        ]
+      ],
+      "entities": {},
+      "atoms": {}
+    },
+    "count": 2,
+    "label": "supported",
+    "action": "accept_scoped_claim"
+  },
+  "H01-L": {
+    "oracle_relation": {
+      "unit": "column",
+      "memberships": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "10",
+          "10"
+        ],
+        [
+          "16",
+          "16"
+        ],
+        [
+          "19",
+          "19"
+        ],
+        [
+          "24",
+          "24"
+        ]
+      ],
+      "entities": {},
+      "atoms": {}
+    },
+    "count": 5,
+    "label": "supported",
+    "action": "accept_scoped_claim"
+  },
+  "H01-T": {
+    "oracle_relation": {
+      "unit": "treated_whole_sample",
+      "memberships": [
+        [
+          "1",
+          "sample870"
+        ],
+        [
+          "10",
+          "sample870"
+        ],
+        [
+          "16",
+          "sample870"
+        ],
+        [
+          "19",
+          "sample870"
+        ],
+        [
+          "24",
+          "sample870"
+        ]
+      ],
+      "entities": {},
+      "atoms": {}
+    },
+    "count": 1,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim"
+  },
+  "C02": {
+    "oracle_relation": {
+      "unit": "wear_event",
+      "memberships": [
+        [
+          "scan1",
+          "1A"
+        ],
+        [
+          "scan2",
+          "1A"
+        ],
+        [
+          "scan3",
+          "1A"
+        ],
+        [
+          "scan4",
+          "1B"
+        ],
+        [
+          "scan5",
+          "1B"
+        ],
+        [
+          "scan6",
+          "1B"
+        ]
+      ],
+      "entities": {
+        "cutter": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "scan": [
+          "scan1",
+          "scan2",
+          "scan3",
+          "scan4",
+          "scan5",
+          "scan6"
+        ]
+      },
+      "atoms": {},
+      "scan_rows": [
+        {
+          "row": 1,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 2,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 3,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 4,
+          "part": "1B",
+          "operator": "O3"
+        },
+        {
+          "row": 5,
+          "part": "1B",
+          "operator": "O3"
+        },
+        {
+          "row": 6,
+          "part": "1B",
+          "operator": "O3"
+        }
+      ]
+    },
+    "count": 2,
+    "label": "inconsistent",
+    "action": "revise_scoped_claim"
+  },
+  "C02-S": {
+    "oracle_relation": {
+      "unit": "wear_event",
+      "memberships": [
+        [
+          "scan1",
+          "1A"
+        ],
+        [
+          "scan2",
+          "1A"
+        ],
+        [
+          "scan3",
+          "1A"
+        ],
+        [
+          "scan4",
+          "1B"
+        ],
+        [
+          "scan5",
+          "1B"
+        ],
+        [
+          "scan6",
+          "1B"
+        ]
+      ],
+      "entities": {
+        "cutter": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "scan": [
+          "scan1",
+          "scan2",
+          "scan3",
+          "scan4",
+          "scan5",
+          "scan6"
+        ]
+      },
+      "atoms": {},
+      "scan_rows": [
+        {
+          "row": 1,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 2,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 3,
+          "part": "1A",
+          "operator": "O1"
+        },
+        {
+          "row": 4,
+          "part": "1B",
+          "operator": "O3"
+        },
+        {
+          "row": 5,
+          "part": "1B",
+          "operator": "O3"
+        },
+        {
+          "row": 6,
+          "part": "1B",
+          "operator": "O3"
+        }
+      ]
+    },
+    "count": 2,
+    "label": "supported",
+    "action": "accept_scoped_claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "job_id": "r01-B001-astra",
+  "group_id": "B001",
+  "model_id": "astra",
+  "repeat": 0,
+  "answers": {
+    "B001-Q01": "f0_pregnant_dams",
+    "B001-Q02": "mother_embryo_and_fetal_germline"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "f0_pregnant_dams",
+      "mother_embryo_and_fetal_germline"
+    ],
+    "counts": {
+      "F3_pups": 162,
+      "F3_weaned_litters": 14,
+      "newly_injected_F3_animals": 0,
+      "first_generation_beyond_original_window": 3,
+      "distinct_F0_ancestors": null
+    },
+    "clauses": {
+      "new_F3_injections": "inconsistent",
+      "first_generation_beyond_window": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-6-astra",
+  "response_id": "resp_0857bb7e9fdb1805016ab0ce90e85087d2a4c78476d7aad14c",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 1226,
+        "cached_tokens": 0
+      },
+      "output_tokens": 35,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1264
+    },
+    "input_tokens": 1229,
+    "output_tokens": 35,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.0171125,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 2.112942874984583,
+    "derivation_wall_seconds": 5.0125003326684237e-05,
+    "derivation_cpu_seconds": 4.999999999999449e-05
+  },
+  "request_sha256": "fe0526d1aecbcb635b110050f88015673f35529d5f8fc6aee2588e5ca090a966",
+  "receipt_sha256": "cc8270ad348673f76f7a256acdd6aac7d35c37812cf1202330c7462e3667c273",
+  "simulated": false,
+  "halt_model": false
+}

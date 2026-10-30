@@ -1,0 +1,82 @@
+{
+  "job_id": "r02-B003-kimi_k3",
+  "group_id": "B003",
+  "model_id": "kimi_k3",
+  "repeat": 1,
+  "answers": {
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "rna_before_library",
+      "pool_aggregate"
+    ],
+    "counts": {
+      "selected_libraries": 4,
+      "distinct_contributors": 16,
+      "distinct_contributors_by_genotype": {
+        "Brd1+/-": 8,
+        "WT": 8
+      },
+      "contributor_appearances": 32,
+      "separately_observed_contributor_profiles": 0
+    },
+    "clauses": {
+      "distinct_mice": "inconsistent",
+      "individual_profiles": "inconsistent",
+      "pooling_only_after_individual_measurement": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978428-WbM0hrVlPEjmwC1sUtJV",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1585,
+      "completion_tokens": 319,
+      "total_tokens": 1904,
+      "cost": 0.0053928,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0053928,
+        "upstream_inference_prompt_cost": 0.0006078,
+        "upstream_inference_completions_cost": 0.004785
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 295,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1585,
+    "output_tokens": 319,
+    "resource_errors": [],
+    "cached_input_tokens": 1536,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 295,
+    "reported_cost_usd": 0.0053928,
+    "usage_cost_estimate_usd": 0.0053928000000000005,
+    "usage_cost_upper_estimate_usd": 0.00954,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 9.447898624988738,
+    "derivation_wall_seconds": 8.62909946590662e-05,
+    "derivation_cpu_seconds": 8.60000000000305e-05
+  },
+  "request_sha256": "a537fca7da9bddd5565b2952da6c5233cf8514330e06337d7bee7d9f259e8162",
+  "receipt_sha256": "dce6c1f4ffab6d25e7c4d5b6fa667df60d5489c7169d2d132bf3e08721bee60c",
+  "simulated": false,
+  "halt_model": false
+}

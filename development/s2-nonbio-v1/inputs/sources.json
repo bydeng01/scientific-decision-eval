@@ -1,0 +1,61 @@
+[
+  {
+    "source_id": "U",
+    "citation": "Rezazadeh et al. (2026), *Dataset on the reproducibility of UHPC mechanical properties under a fixed recipe with controlled production variability*, Scientific Data 13, 1058. DOI: `10.1038/s41597-026-07805-z`.",
+    "urls": [
+      "https://www.nature.com/articles/s41597-026-07805-z",
+      "https://www.nature.com/articles/s41597-026-07805-z.pdf"
+    ],
+    "recorded_pdf_sha256": "c8bc5a28b954a10f6f426c1c80edba12a287f18ee0d1224dd3b5e57cae74cc86",
+    "hash_status": "inherited review record; not re-downloaded this turn",
+    "review_record": "../ALL_CASES_REVIEW.md section 4",
+    "type": "peer-reviewed materials paper"
+  },
+  {
+    "source_id": "A",
+    "citation": "Shanbhag et al. (2021), *Data related to the effect of specimen geometry and orientation on tensile properties of Ti-6Al-4V manufactured by electron beam powder bed fusion*, Data in Brief 39, 107613. DOI: `10.1016/j.dib.2021.107613`.",
+    "urls": [
+      "https://doi.org/10.1016/j.dib.2021.107613",
+      "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/c76e04af-b2c6-42ff-89d0-a7492f9fef9e/content"
+    ],
+    "recorded_pdf_sha256": "29e9118aba9bb30856132da99f85a84d8c8b3a9b851249e5b0e0d8a5ef29bb5f",
+    "hash_status": "inherited review record; not re-downloaded this turn",
+    "review_record": "../ALL_CASES_REVIEW.md section 4",
+    "type": "peer-reviewed materials paper"
+  },
+  {
+    "source_id": "N",
+    "citation": "NIST/SEMATECH, How can I account for nested variation (restricted randomization)?, e-Handbook section 5.5.5.",
+    "urls": [
+      "https://itl.nist.gov/div898/handbook/pri/section5/pri55.htm"
+    ],
+    "recorded_pdf_sha256": null,
+    "hash_status": "inherited review record; not re-downloaded this turn",
+    "review_record": "../ALL_CASES_REVIEW.md section 4",
+    "type": "teaching handbook"
+  },
+  {
+    "source_id": "H",
+    "citation": "Weaver et al. (2021), *Demonstration of a laser powder bed fusion combinatorial sample for high-throughput microstructure and indentation characterization*, Materials & Design 209, 109969. DOI: `10.1016/j.matdes.2021.109969`.",
+    "urls": [
+      "https://doi.org/10.1016/j.matdes.2021.109969",
+      "https://www.nist.gov/publications/demonstration-laser-powder-bed-fusion-combinatorial-sample-high-throughput",
+      "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929236"
+    ],
+    "recorded_pdf_sha256": "938d055b7139ba045b6f57d8c2e0de4c70b5bfee38bf838e8f3e6ece788a0b0d",
+    "hash_status": "inherited review record; not re-downloaded this turn",
+    "review_record": "../ALL_CASES_REVIEW.md section 4",
+    "type": "peer-reviewed materials paper"
+  },
+  {
+    "source_id": "J",
+    "citation": "Jason Wiggins (US Synthetic), *Advanced Measurement System Analysis for a Destructive Gauge Using a Split-Plot Design*.",
+    "urls": [
+      "https://community.jmp.com/kvoqx44227/attachments/kvoqx44227/discovery-2017-content/17/5/Advanced%20Measurement%20System%20Analysis%20for%20a%20Destructive%20Gauge%20Using%20a%20Split%20Design.pdf"
+    ],
+    "recorded_pdf_sha256": "2bcd966891e949502d879fe495440267cbe45f823234ff7bc888871a5bf95e7d",
+    "hash_status": "inherited review record; not re-downloaded this turn",
+    "review_record": "../ALL_CASES_REVIEW.md section 4",
+    "type": "industrial case report"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "job_id": "r02-E009-kimi_k3",
+  "group_id": "E009",
+  "model_id": "kimi_k3",
+  "repeat": 1,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "moonshotai/kimi-k3",
+  "served_provider": "Moonshot AI",
+  "response_id": "gen-1789978418-lb2euUu9WxsLWOfpBj5S",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1009,
+      "completion_tokens": 274,
+      "total_tokens": 1283,
+      "cost": 0.0050634,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0050634,
+        "upstream_inference_prompt_cost": 0.0009534,
+        "upstream_inference_completions_cost": 0.00411
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 249,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1009,
+    "output_tokens": 274,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 249,
+    "reported_cost_usd": 0.0050634,
+    "usage_cost_estimate_usd": 0.0050634,
+    "usage_cost_upper_estimate_usd": 0.007137,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 9.849254875007318,
+    "derivation_wall_seconds": 5.5791984777897596e-05,
+    "derivation_cpu_seconds": 5.500000000002725e-05
+  },
+  "request_sha256": "afa243512118ec8f8a8bae709b7b0d5b14b0b7261fdb6055e2980f7045b04a50",
+  "receipt_sha256": "dd6aec45b8656232a4f0b58cdc6216f4fefb2b3c8509462e0d31c1493a80c2c5",
+  "simulated": false,
+  "halt_model": false
+}

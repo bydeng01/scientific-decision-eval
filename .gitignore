@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+.mplconfig/
+.DS_Store
+
+# Source PDFs excluded from distribution
+/development/s2-nonbio-expansion/batch-001/evidence/paired-fixed-1806.01871v1.pdf
+/development/s2-nonbio-expansion/batch-001/evidence/metrology-1510.07866v3.pdf
+/development/s2-nonbio-expansion/batch-001/evidence/cloud-2014-report.pdf
+/development/s2-biology-expansion/batch-001/evidence/luria-delbruck-1943.pdf
+
+# Local case-screening records
+/.local-development/

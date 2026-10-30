@@ -1,0 +1,86 @@
+{
+  "job_id": "r04-B002-qwen_max",
+  "group_id": "B002",
+  "model_id": "qwen_max",
+  "repeat": 3,
+  "answers": {
+    "B002-Q01": "both_separate",
+    "B002-Q02": "clonal_descendants"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "both_separate",
+      "clonal_descendants"
+    ],
+    "counts": {
+      "platings": {
+        "11a": 10,
+        "11": 10
+      },
+      "growth_histories": {
+        "11a": 10,
+        "11": 10
+      },
+      "colony_totals": {
+        "11a": 514,
+        "11": 624
+      },
+      "exact_mutation_origins": null
+    },
+    "clauses": {
+      "independent_histories_11a": "consistent",
+      "one_colony_one_origin": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-max-0902",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789975690-rtdKqyqBwHYwjRcdZsKL",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1223,
+      "completion_tokens": 688,
+      "total_tokens": 1911,
+      "cost": 0.004782,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004782,
+        "upstream_inference_prompt_cost": 0.000654,
+        "upstream_inference_completions_cost": 0.004128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 666,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1223,
+    "output_tokens": 688,
+    "resource_errors": [],
+    "cached_input_tokens": 1024,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 666,
+    "reported_cost_usd": 0.004782,
+    "usage_cost_estimate_usd": 0.004782,
+    "usage_cost_upper_estimate_usd": 0.0071855,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 16.09121466698707,
+    "derivation_wall_seconds": 0.00015287499991245568,
+    "derivation_cpu_seconds": 0.00015199999999992997
+  },
+  "request_sha256": "c69e23bfd83ab9fad01c16a3cdc9704690b2c68dd04b0cc5824685383bdaecf9",
+  "receipt_sha256": "67111fbffefb7c899f3d65e6e1b06269b96e675094103e888744ff184bfa27e3",
+  "simulated": false,
+  "halt_model": false
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "derived resource accounting only",
+  "sha256": {
+    "reporter_snapshot.py": "f445b5a82ef763f1b93557e05e784e7aad2753890d7210009ce9f5e26edf0fc2",
+    "resources.json": "5a2a7db2d5e486cfe3366821f0bdd09c16b58295c7ddc7f9c39016e31fa61b38",
+    "summary.md": "375870fdbc1cfc09412e6fbfc1786028f3e0f6d413cec87b4c24a187eb973215"
+  }
+}

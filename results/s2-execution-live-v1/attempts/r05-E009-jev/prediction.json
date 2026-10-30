@@ -1,0 +1,78 @@
+{
+  "job_id": "r05-E009-jev",
+  "group_id": "E009",
+  "model_id": "jev",
+  "repeat": 4,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "E009-Q01": {
+      "probabilities": {
+        "not_stated": 0,
+        "shared_reference": 1,
+        "conflicting": 0,
+        "independent_reference": 0,
+        "identical_measurement": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    },
+    "E009-Q02": {
+      "probabilities": {
+        "other": 0,
+        "not_stated": 0,
+        "bracketing_average": 1,
+        "conflicting": 0,
+        "adjustment_contrast": 0,
+        "two_laboratories": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972471-n7xDVW5nxkWAVTActPpp",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1151,
+      "output_tokens": 141,
+      "cost": 4.8342e-05
+    },
+    "input_tokens": 1151,
+    "output_tokens": 141,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 4.8342e-05,
+    "usage_cost_estimate_usd": 4.8342000000000006e-05,
+    "usage_cost_upper_estimate_usd": 4.8342000000000006e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.32812345802085474,
+    "derivation_wall_seconds": 7.733399979770184e-05,
+    "derivation_cpu_seconds": 7.700000000010476e-05
+  },
+  "request_sha256": "16da9439620333ec9c902e4e47b6867c78b477485d495c8b9e00719a0507e599",
+  "receipt_sha256": "be7e11514f9feb8fce15c73b6e8b20141309a35ef858f29ed93b05e9dd263020",
+  "simulated": false,
+  "halt_model": false
+}

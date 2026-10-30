@@ -1,0 +1,66 @@
+{
+  "job_id": "r01-B004-sol",
+  "group_id": "B004",
+  "model_id": "sol",
+  "repeat": 0,
+  "answers": {
+    "B004-Q01": "within_founder_mosaicism",
+    "B004-Q02": "preexisting_albino_allele"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "within_founder_mosaicism",
+      "preexisting_albino_allele"
+    ],
+    "counts": {
+      "deep_sequenced_hybrid_founders": 23,
+      "reported_mutant_alleles": 57,
+      "validated_new_germline_lines": null
+    },
+    "clauses": {
+      "every_albino_founder_uniform": "inconsistent",
+      "separately_injected_founders": "inconsistent",
+      "validated_new_germline_lines": "insufficient_evidence",
+      "albino_offspring_uniquely_identify_new_allele": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "gpt-5.6-sol",
+  "response_id": "resp_06101f91a705f8c0016ab0cea0027087d2ae651505228033c6",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1290,
+      "input_tokens_details": {
+        "cache_write_tokens": 1287,
+        "cached_tokens": 0
+      },
+      "output_tokens": 32,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1322
+    },
+    "input_tokens": 1290,
+    "output_tokens": 32,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": 0,
+    "reported_cost_usd": null,
+    "usage_cost_estimate_usd": null,
+    "usage_cost_upper_estimate_usd": 0.00709,
+    "billing_status": "unreported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 1.1503402499947697,
+    "derivation_wall_seconds": 4.512499435804784e-05,
+    "derivation_cpu_seconds": 4.500000000001725e-05
+  },
+  "request_sha256": "cf704bde99f5243522ebd7fb17a0bb5d53e7d8ef7b46bc24d8b023c926f210a0",
+  "receipt_sha256": "050cd2789a0169755859bd33533ffd9c74ebc301a5175030f2b90240cd09c305",
+  "simulated": false,
+  "halt_model": false
+}

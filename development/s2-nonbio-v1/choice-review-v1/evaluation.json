@@ -1,0 +1,201 @@
+{
+  "version": "s2-choice-review-v1",
+  "evaluation_only": true,
+  "questions": {
+    "D01.unit": {
+      "expected_option": "mixing_batch",
+      "rationale": "The passage assigns mixer speed and duration to each mixing operation. Prism and half-prism production occur downstream.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for distinguishing mixing-operation units from downstream test specimens. Speed and duration have one stated application level. Added an explicit conflict outcome and narrowed missing-information handling."
+    },
+    "D01.membership": {
+      "expected_option": "shared",
+      "rationale": "The stated scope explicitly places these prisms in the same mixing operation and curing regimen.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for establishing whether the selected prisms represent shared or separate mixing operations. Named prisms explicitly and distinguished a known mixed pattern from unresolved membership and conflicting records."
+    },
+    "D01-O.omitted_unit": {
+      "expected_option": "other",
+      "rationale": "The identified mixing-batch unit is intentionally absent. Other requests candidate completion or transfer; not_stated would incorrectly describe the evidence.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted as an engineering candidate-omission check. The mixing-batch alternative remains absent; other remains the reference. Added conflicting without changing the active omission fixture."
+    },
+    "D02.unit": {
+      "expected_option": "build",
+      "rationale": "The complete process is the EB-PBF build; the table lists specimens manufactured within it.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for distinguishing a complete EB-PBF build from a tensile specimen within that build. The target remains the complete process in the supplied passage. Added explicit conflict handling."
+    },
+    "D02.membership": {
+      "expected_option": "shared",
+      "rationale": "The complete passage states that the study manufactured its specimens in a single complete build.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for determining whether specimens 7, 8, and 9 share a build. The table heading Replicate does not establish repeated builds. Named the selected specimens and separated mixed membership, missing information, and conflict."
+    },
+    "D03.treatment_level": {
+      "expected_option": "water_bath_temperature_control",
+      "rationale": "A bath setpoint and an in-bath probe establish the control level. This option makes no claim about the number or boundaries of bath runs.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for locating physical temperature control at the water bath. This answer identifies neither a run count nor run boundaries. Added explicit conflict handling."
+    },
+    "D03.run_boundary": {
+      "expected_option": "not_stated",
+      "rationale": "The curing period and bath photograph do not delineate individual run executions.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted after distinguishing complete, partial, absent, and conflicting run identification. The instruction asks one coverage judgment. A bath photograph, equipment identity, or curing period alone does not distinguish run executions."
+    },
+    "D03.specimen_assignment": {
+      "expected_option": "not_stated",
+      "rationale": "The supplied material lists the prism group but contains no prism-to-run records.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted after requiring assignments to identified run executions and making the no-assignment outcome exclude conflict. Complete and partial assignment remain separate. No specimen-to-run assignment is supplied."
+    },
+    "C01-T.unit": {
+      "expected_option": "whole_plot_group",
+      "rationale": "The source explicitly defines the treated group as the whole-plot unit for temperature and concentration.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for the source-defined unit of jointly applied temperature and concentration in the second NIST batch-process scenario. Both factors share one group-level unit here. Added explicit conflict handling."
+    },
+    "C01-A.unit": {
+      "expected_option": "strip",
+      "rationale": "The source explicitly defines an individual strip as the subplot unit for current.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for the source-defined current unit. Code counts the two low-current strips within the fixed temperature-concentration combination. Added explicit conflict handling."
+    },
+    "H01-L.unit": {
+      "expected_option": "column_region",
+      "rationale": "Laser parameters are assigned to column regions. This is an application-unit judgment, not a claim of independent manufacturing replicates.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for distinguishing column-level laser-parameter application from whole-specimen treatment and indentation measurements. No independent manufacturing, sampling, or measurement-error claim is introduced. Added explicit conflict handling."
+    },
+    "H01-T.unit": {
+      "expected_option": "whole_specimen",
+      "rationale": "Stress relief is applied to the continuous specimen as a whole. This does not identify or count furnace runs.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for identifying the whole continuous specimen as the stress-relief application unit. The question does not identify or count furnace runs. Added explicit conflict handling."
+    },
+    "H01-T.membership": {
+      "expected_option": "shared",
+      "rationale": "The scope selects columns within the one whole specimen treated at 870 degrees Celsius.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for relating the five selected default-setting columns to the selected 870-degree whole specimen. Named column regions explicitly and separated mixed membership, missing information, and conflict."
+    },
+    "C02.unit": {
+      "expected_option": "wear_event",
+      "rationale": "A scar is generated by machining and then scanned repeatedly. Repeated scans do not generate new scars.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted for distinguishing scar-generating machining events from scans and cutter-level pooling. Code retains the corrected six-row scope and counts two events. Added explicit conflict handling."
+    },
+    "C02.identifier": {
+      "expected_option": "part_id",
+      "rationale": "The first PART ID character identifies the cutter and the second identifies its scar. The complete PART ID retains both identities. Code groups only the six selected 1A/O1 and 1B/O3 rows by this field.",
+      "status": "author_reviewed_mapping",
+      "human_choice_review": "author_reviewed",
+      "author_choice_review": "accepted_with_revisions",
+      "review_note": "Accepted after asking which identifier encodes both cutter and scar identity and adding the second-character alternative. Within the fixed cutter-1 scope, scar character alone also separates A and B; the original wording did not make the full-ID requirement unique. The revised question resolves that ambiguity without changing selected rows or counts."
+    }
+  },
+  "case_outcomes": {
+    "D01": {
+      "count": 1,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim"
+    },
+    "D01-S": {
+      "count": 1,
+      "label": "supported",
+      "action": "accept_scoped_claim"
+    },
+    "D01-O": {
+      "count": 1,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim",
+      "engineering": {
+        "choice": "other",
+        "action": "complete_candidates_or_transfer",
+        "downstream_count": null
+      }
+    },
+    "D02": {
+      "count": 1,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim"
+    },
+    "D02-S": {
+      "count": 1,
+      "label": "supported",
+      "action": "accept_scoped_claim"
+    },
+    "D03": {
+      "count": null,
+      "label": "insufficient",
+      "action": "request_run_boundary_and_specimen_run_records"
+    },
+    "C01-T": {
+      "count": 1,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim"
+    },
+    "C01-A": {
+      "count": 2,
+      "label": "supported",
+      "action": "accept_scoped_claim"
+    },
+    "H01-L": {
+      "count": 5,
+      "label": "supported",
+      "action": "accept_scoped_claim"
+    },
+    "H01-T": {
+      "count": 1,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim"
+    },
+    "C02": {
+      "count": 2,
+      "label": "inconsistent",
+      "action": "revise_scoped_claim"
+    },
+    "C02-S": {
+      "count": 2,
+      "label": "supported",
+      "action": "accept_scoped_claim"
+    }
+  },
+  "revision": "s2-choice-review-v1-r2",
+  "review": {
+    "reviewer": "author",
+    "scope": "Choice definitions and reference mappings.",
+    "human_question_confirmation": false,
+    "log": "REVIEW_LOG.md#accepted-review",
+    "reviewed_on": "2026-09-24"
+  }
+}

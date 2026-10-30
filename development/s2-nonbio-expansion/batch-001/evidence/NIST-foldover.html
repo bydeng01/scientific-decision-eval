@@ -1,0 +1,1304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+<HEAD>
+<script async type="text/javascript"
+        id="_fed_an_ua_tag"
+        src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-37115410-50&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="GENERATOR" CONTENT="Mozilla/4.05 [en] (WinNT; U) [Netscape]">
+<TITLE>5.3.3.8.1. Mirror-Image foldover designs</TITLE>
+<link rel="stylesheet" href="../../nist-header-footer/css/nist-combined.css">
+<script src="../../nist-header-footer/js/jquery-1.9.0.min.js"
+        type="text/javascript" defer="defer"></script>
+<script src="../../nist-header-footer/js/nist-header-footer.js"
+        type="text/javascript" defer="defer"></script>
+</HEAD>
+
+<BODY BGCOLOR="FFFFCC">
+
+<IMG SRC="../../gifs/nvgtbr.gif" BORDER=0 VALIGN="TOP" ISMAP USEMAP="#MenuBar">
+<map name="MenuBar">
+<area shape="rect" alt="Next Page" href="pri3382.htm" coords="463,27,504,45">
+<area shape="rect" alt="Previous Page" href="pri338.htm" coords="417,28,459,45">
+<area shape="rect" alt="Home" href="../../index.htm" coords="52,0,100,43">
+<area shape="rect" alt="Tools & Aids" href="../../toolaids.htm" coords="165,27,264,46">
+<area shape="rect" alt="Search Handbook" href="../../search.htm" coords="307,28,366,44">
+<area shape="default" nohref>
+</map>
+<BR>
+
+<TABLE CELLSPACING=20 CELLPADDING=0 WIDTH=540>
+
+<TR>
+<TD VALIGN=TOP COLSPAN=2>
+<FONT SIZE=-1>
+<FONT COLOR="#D60021">5.</FONT>
+<FONT COLOR="#00105A"><A HREF="../pri.htm">Process Improvement</a></FONT>
+<BR>
+<FONT COLOR="#D60021">5.3.</FONT>
+<FONT COLOR="#00105A"><A HREF="pri3.htm">Choosing an experimental design</a></FONT>
+<BR>
+<FONT COLOR="#D60021">5.3.3.</FONT>
+<FONT COLOR="#00105A"><A HREF="pri33.htm">How do you select an experimental design?</a></FONT>
+<BR>
+<FONT COLOR="#D60021">5.3.3.8.</FONT>
+<FONT COLOR="#00105A"><A HREF="pri338.htm">Improving fractional factorial design resolution</a></FONT>
+<BR>
+</FONT>
+<BR>
+<TABLE>
+<TR>
+<TD VALIGN=top>
+<H2><FONT COLOR="#D60021">5.3.3.8.1.</FONT></H2>
+</TD>
+<TD VALIGN=top>
+<H2>Mirror-Image foldover designs</H2>
+</TD>
+</TR >
+</TABLE>
+</TD>
+</TR>
+
+
+
+
+
+
+
+
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<i>A foldover design is obtained from a fractional factorial design
+by reversing the signs of all the columns</i>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+A mirror-image fold-over (or foldover, without the hyphen) design is
+used to augment <a href="pri334.htm">fractional factorial designs</a> to
+increase the <a href="../section7/pri7.htm#Resolution">resolution</a> of
+<!--<img align=absmiddle src="eqns/res3.gif" alt="2(III)^(k-p)"> -->
+\( 2_{III}^{3-1} \)
+and Plackett-Burman designs.  It is obtained by reversing the signs of
+all the columns of the original design matrix.  The original design
+runs are combined with the mirror-image fold-over design runs, and this
+combination can then be used to estimate all main effects clear of any
+two-factor interaction.  This is referred to as: <i>breaking the alias
+link between main effects and two-factor interactions.</i>
+<p>
+Before we illustrate this concept with an example, we briefly review
+the basic concepts involved.
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+<b>Review of Fractional 2<sup>k-p</sup> Designs</b>
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<i>A resolution III design, combined with its mirror-image foldover,
+becomes resolution IV</i>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+In general, a design type that uses a specified fraction of the runs
+from a full factorial and is balanced and orthogonal is called a
+<i>fractional factorial</i>.
+<p>
+A 2-level fractional factorial is constructed as follows: <i>Let the
+number of runs be 2<sup>k-p</sup>. Start by constructing the full
+factorial for the k-p variables.  Next associate the extra factors
+with higher-order interaction columns.  The
+<a href="pri3347.htm#TABLE">Table</a> shown previously details how to
+do this to achieve a minimal amount of confounding.</i>
+<p>
+For example, consider the 2<sup>5-2</sup> design (a resolution III
+design).  The full factorial for <i>k</i> = 5 requires 2<sup>5</sup> = 32
+runs.  The fractional factorial can be achieved in 2<sup>5-2</sup> = 8
+runs, called a quarter (1/4) fractional design, by setting
+<i>X</i><sub>4</sub> = <i>X</i><sub>1</sub>*<i>X</i><sub>2</sub> and
+<i>X</i><sub>5</sub> = <i>X</i><sub>1</sub>*<i>X</i><sub>3</sub>.
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Design matrix for a 2<sup>5-2</sup> fractional factorial
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+The design matrix for a 2<sup>5-2 </sup>fractional factorial looks like:
+<p>
+<center>
+<table border width=350>
+<caption align=center>
+   <b>TABLE 3.34: Design Matrix for a 2<sup>5-2</sup> Fractional
+   Factorial</b>
+</caption>
+<tr>
+   <th align=center valign=top>
+      run
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>1</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>4</sub> = <i>X</i><sub>1</sub><i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>5</sub> = <i>X</i><sub>1</sub><i>X</i><sub>3</sub>
+   </th>
+</tr>
+<tr>
+   <td align=center valign=top>
+      1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      2
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      3
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      4
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      5
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      6
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      7
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      8
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+</table>
+</center>
+
+<!-- <img SRC="eqns/fold1.gif" height=284 width=352> -->
+
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+<b>Design Generators, Defining Relation and the Mirror-Image Foldover</b>
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Increase to resolution IV design by augmenting design matrix
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+In this design the <i>X</i><sub>1</sub><i>X</i><sub>2</sub> column was
+used to generate the <i>X</i>4 main effect and the
+<i>X</i><sub>1</sub><i>X</i><sub>3</sub> column was used to generate the
+<i>X</i><sub>5</sub> main effect.  The design generators are:
+4 = 12 and 5 = 13 and the defining relation is I = 124 = 135 = 2345.
+Every main effect is confounded (aliased) with at least one first-order
+interaction (see the <a href="eqns/2to5m2.txt">confounding structure</a>
+for this design).
+<p>
+We can increase the resolution of this design to IV if we augment the
+8 original runs, adding on the 8 runs from the mirror-image fold-over
+design.  These runs make up another 1/4 fraction design with design
+generators 4 = -12 and 5 = -13 and defining relation
+I = -124 = -135 = 2345. The augmented runs are:
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Augmented runs for the design matrix 
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+<center>
+<table border width=350>
+<tr>
+   <th align=center valign=top>
+      run
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>1</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>4</sub> = -<i>X</i><sub>1</sub><i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=top>
+      <i>X</i><sub>5</sub> = -<i>X</i><sub>1</sub><i>X</i><sub>3</sub>
+   </th>
+</tr>
+<tr>
+   <td align=center valign=top>
+      9
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      10
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      11
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      12
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      13
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      14
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      15
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      16
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+</table>
+</center>
+
+<!-- <img SRC="eqns/fold1a.gif" height=284 width=362> -->
+
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Mirror-image foldover design reverses all signs in original design
+matrix
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+A <i>mirror-image foldover design</i> is the original design with <i>all
+signs reversed</i>.  It breaks the alias chains between <i>every main
+factor and two-factor interaction</i>of a resolution III design.  That
+is, we can estimate <i>all the main effects clear of any two-factor
+interaction</i>.
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+<a NAME="Working with 4 Design"></a><b>A 1/16 Design Generator
+Example</b>
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+2<sup>7-3</sup> example
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+Now we consider a more complex example.
+<p>
+We would like to study the effects of 7 variables.  A full 2-level
+factorial, 2<sup>7</sup>, would require 128 runs.
+<p>
+Assume economic reasons restrict us to 8 runs.  We will build a
+2<sup>7-4</sup> = 2<sup>3</sup> full factorial and assign certain
+products of columns to the <i>X</i>4, <i>X</i>5, <i>X</i>6 and
+<i>X</i>7 variables.  This will generate a resolution III
+design in which all of the main effects are aliased with first-order
+and higher interaction terms.  The design matrix (see the previous
+<a href="pri3347.htm#TABLE">Table</a> for a complete description of
+this fractional factorial design) is:
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Design matrix for 2<sup>7-3</sup> fractional factorial
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+<center>
+<table border width=350>
+<caption align=center>
+   <b>Design Matrix for a 2<sup>7-3</sup> Fractional Factorial</b>
+</caption>
+<tr>
+   <th align=center valign=bottom>
+      run
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>1</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>4</sub> = <i>X</i><sub>1</sub><i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>5</sub> = <i>X</i><sub>1</sub><i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>6</sub> = <i>X</i><sub>2</sub><i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>7</sub> =
+      <i>X</i><sub>1</sub><i>X</i><sub>2</sub><i>X</i><sub>3</sub>
+   </th>
+</tr>
+<tr>
+   <td align=center valign=top>
+      1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      2
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      3
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      4
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      5
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      6
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      7
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      8
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+</table>
+</center>
+
+<!-- <img SRC="eqns/fold4.gif" height=305 width=436> -->
+
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Design generators and defining relation for this example
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+The design generators for this 1/16 fractional factorial design are:
+<ul>
+   4 = 12, 5 = 13, 6 = 23 and 7 = 123
+</ul>
+From these we obtain, by multiplication, the defining relation:
+<ul>
+   I = 124 = 135 = 236 = 347 = 257 = 167 = 456 = 1237 =
+   <br>2345 = 1346 = 1256 = 1457 = 2467 = 3567 = 1234567.
+</ul>
+
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Computing alias structure for complete design
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+Using this defining relation, we can easily compute the alias structure
+for the complete design, as shown previously in the
+<a href="eqns/2to7m4.txt">link to the fractional design Table</a> given
+<a href="pri3347.htm">earlier</a>.  For example, to figure out which
+effects are aliased (confounded) with factor <i>X</i><sub>1</sub> we
+multiply the defining relation by 1 to obtain:
+<ul>
+   1 = 24 = 35 = 1236 = 1347 = 1257 = 67 = 1456 = 237 = 12345 = 346
+   = 256 = 457 = 12467 = 13567 = 234567
+</ul>
+In order to simplify matters, let us ignore all interactions with 3 or
+more factors; we then have the following 2-factor alias pattern for
+<i>X</i><sub>1</sub>: 1 = 24 = 35 = 67 or, using the full notation,
+<i>X</i><sub>1</sub> = <i>X</i><sub>2</sub>*<i>X</i><sub>4</sub> =
+<i>X</i><sub>3</sub>*<i>X</i><sub>5</sub> =
+<i>X</i><sub>6</sub>*<i>X</i><sub>7</sub>.
+<p>
+The same procedure can be used to obtain all the other aliases for each
+of the main effects, generating the following list:
+<p>
+<center>
+1 = 24 = 35 = 67
+<br>2 = 14 = 36 = 57
+<br>3 = 15 = 26 = 47
+<br>4 = 12 = 37 = 56
+<br>5 = 13 = 27 = 46
+<br>6 = 17 = 23 = 45
+<br>7 = 16 = 25 = 34
+</center>
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Signs in every column of original design matrix reversed for
+mirror-image foldover design
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+The chosen design used a set of generators with all positive signs.
+The mirror-image foldover design uses generators with negative signs for
+terms with an even number of factors or, 4 = -12, 5 = -13, 6 = -23 and
+7 = 123.  This generates a design matrix that is equal to the original
+design matrix with every sign in every column reversed.
+<p>
+If we augment the initial 8 runs with the 8 mirror-image foldover design
+runs (with all column signs reversed), we can de-alias all the main
+effect estimates from the 2-way interactions. The additional runs are:
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Design matrix for mirror-image foldover runs
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+
+<center>
+<table border width=350>
+<caption align=center>
+   <b>Design Matrix for the Mirror-Image Foldover Runs of the
+   2<sup>7-3</sup> Fractional Factorial</b>
+</caption>
+<tr>
+   <th align=center valign=bottom>
+      run
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>1</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>4</sub> = <i>X</i><sub>1</sub><i>X</i><sub>2</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>5</sub> = <i>X</i><sub>1</sub><i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>6</sub> = <i>X</i><sub>2</sub><i>X</i><sub>3</sub>
+   </th>
+   <th align=center valign=bottom>
+      <i>X</i><sub>7</sub> =
+      <i>X</i><sub>1</sub><i>X</i><sub>2</sub><i>X</i><sub>3</sub>
+   </th>
+</tr>
+<tr>
+   <td align=center valign=top>
+      1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      2
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      3
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      4
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      5
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      6
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      7
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      +1
+   </td>
+</tr>
+<tr>
+   <td align=center valign=top>
+      8
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+   <td align=center valign=top>
+      -1
+   </td>
+</tr>
+</table>
+</center>
+
+<!-- <img SRC="eqns/fold5.gif" height=280 width=456>  -->
+
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<!-- begin paragraph -->
+<TR>
+<TD WIDTH=15% VALIGN=top>
+<I>
+Alias structure for augmented runs
+</I>
+</TD>
+<TD WIDTH=85% VALIGN=TOP>
+Following the same steps as before and making the same assumptions about
+the omission of higher-order interactions in the alias structure, we
+arrive at:
+<center>
+<p>1 = -24 = -35 = -67
+<br>2 = -14 = -36 =- 57
+<br>3 = -15 = -26 = -47
+<br>4 = -12 = -37 = -56
+<br>5 = -13 = -27 = -46
+<br>6 = -17 = -23 = -45
+<br>7 = -16 = -25 = -34
+</center>
+<p>
+With both sets of runs, we can now estimate all the main effects free
+from two factor interactions.
+</TD>
+</TR>
+<!-- end paragraph -->
+
+<tr>
+<td VALIGN=TOP WIDTH="15%"><!-- Add marginal notes below -->
+<I>
+Build a resolution IV design from a resolution III design
+</I>
+</td>
+
+<td VALIGN=TOP WIDTH="85%"><!-- Add main text below -->
+<b>Note</b><i>: In general, a mirror-image foldover design is a method
+to build a resolution IV design from a resolution III design. It is never
+used to follow-up a resolution IV design</i>.
+</td>
+</tr>
+
+
+
+
+
+
+
+   
+</TABLE>
+
+<IMG SRC="../../gifs/nvgbrbtm.gif" BORDER=0 USEMAP="#nvbar.nvbar">
+<map name="nvbar.nvbar">
+<area shape="rect" href="http://www.nist.gov" coords="22,6,67,20">
+<area shape="rect" href="https://www.itl.nist.gov/div898/handbook" coords="3,23,92,40">
+<area shape="rect" alt="Home" href="../../index.htm" coords="114,12,165,31">
+<area shape="rect" alt="Tools & Aids" href="../../toolaids.htm" coords="190,12,290,31">
+<area shape="rect" alt="Search Handbook" href="../../search.htm" coords="318,14,376,30">
+<area shape="rect" alt="Previous Page" href="pri338.htm" coords="428,15,471,29">
+<area shape="rect" alt="Next Page" href="pri3382.htm" coords="476,15,517,30">
+<area shape="default" nohref>
+</map>
+   
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e556a71a9805e0',t:'MTc4OTk1NDU4MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></BODY>
+
+</HTML>

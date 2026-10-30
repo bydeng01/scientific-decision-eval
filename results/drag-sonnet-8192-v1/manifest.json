@@ -1,0 +1,32 @@
+{
+  "scope": "Sonnet 8192-token completion diagnostic; original 2048 failure retained",
+  "source": "results/drag-matched-v1",
+  "source_manifest_sha256": "ce7c4c4e6e83da8adbdbafa82e38a48b93180a8b9f60c908087c672fa2d26cdf",
+  "source_new_ledger_sha256": "82f1b928eaffe49ec69a51e9419832d9da7df7f850bbb02eea2bd654acfe9af6",
+  "carry_in_usd": 0.377645116,
+  "full_batch_reserved_upper_usd": 0.742269116,
+  "initial_cap_usd": 1.0,
+  "total_budget_usd": 10,
+  "cancelled_unattempted_original_slots": [
+    "dev-00-r2",
+    "dev-01-r1",
+    "dev-01-r2"
+  ],
+  "repeat_with_changed_setting": "dev-00-r1",
+  "max_output_tokens": 8192,
+  "sha256": {
+    "carry_in.jsonl": "09a94d617818d29e542b6ee236543f2b9d012a1d48cad9b7569b33ed28c2c3e7",
+    "plans.json": "ad3e9dbf4d41c6e9c74727a61168aab7a2fd8c588ae20790ff02ca40bf01be23",
+    "reference.jsonl": "6df2b4f2ba3d53842375d4741205d129876cb621e1b7cb1a04d0f55765a67910",
+    "requests.jsonl": "a30c23d93c4999201df0bd8c7906d3dae33004d1751581064cc46ede7bf3615f",
+    "sources/DRAG_MATCHED_CHECK.md": "10c717d77d9577566c03bd90b22d9abe47d1ee8dca54d6d44d385d617f949681",
+    "sources/DRAG_SONNET_COMPLETION.md": "cb49f0f42271adfb1bf2ef6637cad43cd748209a28f2729e2a06bedd57916e66",
+    "sources/configure_science_keys.py": "8ad99b84aead1aae92427c5c79066f400ce1f804bf6192f080d046d45feeb1aa",
+    "sources/drag_baseline_control.py": "2b7e41a6772ab9a91a2d7fae6062a7a58ca9d6f09eae84c57a7e93d517f228ed",
+    "sources/drag_matched_comparison.py": "a9ac31fba60e30f9998af9c23f52efc6e73ba27bbcaf44501b7247bb8e5f90c0",
+    "sources/drag_pilot.py": "abd09c8e1a1a80d522e990d61462d90e4b13de482ac13fb57d77ece34bd6f061",
+    "sources/drag_sonnet_completion.py": "e2523af0c5f320a6320c22e21d3bb9ab38378302639e6e3bf45d411cc505eb70",
+    "sources/test_drag_matched_comparison.py": "b466990744d75e230deb9b216c0bb967a9be9278e15675f46c6e41726c929760",
+    "sources/test_drag_sonnet_completion.py": "c5d069cb1ac96a44ac069816f679b506c55661623c342f8f3b69806fbf46234f"
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "schema_version": "s2-expansion-evaluation-v1",
+  "batch_id": "batch-001",
+  "problem_count": 10,
+  "question_count": 18,
+  "reference_status": "fully_author_accepted",
+  "problems": [
+    {
+      "problem_id": "E001",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "C01",
+        "D01"
+      ],
+      "substantive_difference": "C01 has nested whole-plot and strip treatments. Here the same objects are regrouped between stages, producing crossed memberships and an intersection unit. A single parent tree no longer represents the assignment.",
+      "structure_without_domain_nouns": "Objects first share one partition, then are redistributed across another; effects depend on either partition or their intersections.",
+      "scientific_significance": "A one-parent batch identifier loses one treatment stage. The correct grouping prevents eight different joint settings from being treated as eight repeats of one joint setting.",
+      "deterministic_work": {
+        "resolution_status": "established_for_supplied_structured_evidence",
+        "judgment": "Interpret the crossed membership and the effect-specific experimental unit.",
+        "code": "Enumerate the source-described Cartesian grid, group wafers by both setting codes, and compare per-cell replication with the claim. Keep full-block replication separate. Source explanations make a zero-model-call route valid.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "implant_batches": 8,
+          "anneal_batches": 8,
+          "wafer_records": 64,
+          "full_setting_combinations": 64,
+          "wafers_per_full_setting": 1,
+          "complete_blocks": 1,
+          "description": "64 implant–anneal combinations, each corresponding to one wafer observation."
+        },
+        "inference_boundary": "One wafer per cell is not a claim of 64 mutually independent errors or replicated whole blocks."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E001-Q01",
+          "reference_option": "crossed_regrouping",
+          "evidence_rationale": "The source explicitly sends one wafer from each implant batch to each anneal setting; neither stage's batch partition contains the other.",
+          "downstream_role": "Selects a two-stage membership representation before code groups complete treatment combinations.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "decision_id": "UR001",
+            "record_file": "review_decisions.json",
+            "author_statement": "E001-Q01/Q02 accepted; no reference changes needed."
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E001-Q02",
+          "reference_option": "wafer",
+          "evidence_rationale": "The handbook explicitly identifies the single wafer as the unit for cross-stage interaction effects.",
+          "downstream_role": "Determines the relevant level for the joint-treatment replication claim; it does not count wafers or blocks.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "decision_id": "UR001",
+            "record_file": "review_decisions.json",
+            "author_statement": "E001-Q01/Q02 accepted; no reference changes needed."
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted by the author in UR001 with terminology and count-wording edits. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "N-STRIP"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "author_review_decision_id": "UR001",
+        "reviewed_by": "author"
+      },
+      "resolved_review_issues": [
+        "UR001: Author accepted the methodological example for this batch.",
+        "UR001: D/E/F annealing terminology normalized and combination-count wording clarified; references unchanged."
+      ]
+    },
+    {
+      "problem_id": "E002",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D03",
+        "C02"
+      ],
+      "substantive_difference": "D03 lacks execution boundaries; these boundaries are explicit temporal switches with a transient exclusion. C02 repeatedly measures a completed event, whereas SMV6 actually changes treatment during reuse.",
+      "structure_without_domain_nouns": "One carrier receives changing interventions over time; observations must inherit switch-period identity after a transition filter.",
+      "scientific_significance": "Replicating time samples does not replicate controller assignments. The transition rule also prevents a new mode's early response from being mistaken for a separately applied treatment.",
+      "deterministic_work": {
+        "resolution_status": "established_for_scoped_claim; full_campaign_count_unassessed",
+        "judgment": "Interpret the switch boundary and transition segment.",
+        "code": "With timestamped records, attach observations to hourly mode periods, apply the source filters, and count retained applications separately from rows. No actual log is supplied, so no campaign total is generated. The present claim is resolved by the explicit protocol.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "actual_eligible_application_count": null,
+          "minute_rows_are_new_assignments": false
+        },
+        "inference_boundary": "An application boundary marks a controller-mode period. Hourly switching alone establishes neither randomization nor independence between applications."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E002-Q01",
+          "reference_option": "hourly_switch",
+          "evidence_rationale": "Figure 5 explicitly gives an hourly toggle on SMV6; one-minute sampling and wind bins do not reassign the controller mode.",
+          "downstream_role": "Defines the controller-mode application boundary before timestamps are grouped; this does not establish independent applications.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "decision_id": "UR002",
+            "record_file": "review_decisions.json",
+            "author_statement": "E002-Q01/Q02 accepted; no reference changes needed."
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E002-Q02",
+          "reference_option": "transition_exclusion",
+          "evidence_rationale": "Section 4.1 removes this interval because of yaw-controller transients; it does not create or relabel an assignment.",
+          "downstream_role": "Tells code how to retain application identity while excluding transition observations.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "decision_id": "UR002",
+            "record_file": "review_decisions.json",
+            "author_statement": "E002-Q01/Q02 accepted; no reference changes needed."
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted by the author in UR002, with application boundaries distinguished from independence. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "WIND-2021"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "author_review_decision_id": "UR002",
+        "reviewed_by": "author"
+      },
+      "resolved_review_issues": [
+        "UR002: Author accepted both questions and the benchmark scope; references unchanged.",
+        "UR002: Application boundaries are explicitly distinguished from independent applications.",
+        "The source minute-bootstrap description remains available; no uncertainty reanalysis is performed."
+      ]
+    },
+    {
+      "problem_id": "E003",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D01",
+        "C02"
+      ],
+      "substantive_difference": "D01's descendants are freshly split specimens; C02's scans remeasure a finished event. Here new reaction operations alter and reuse the same catalyst over an ordered history, with documented kinetic change.",
+      "structure_without_domain_nouns": "A material carrier is recovered after an operation and reused in a new operation; later outcomes inherit earlier exposure.",
+      "scientific_significance": "Cycle results address retained activity of a reused catalyst. They cannot estimate variation across eight independent catalyst syntheses, and equal endpoint conversions do not remove the observed kinetic history.",
+      "deterministic_work": {
+        "resolution_status": "established_for_supplied_protocol",
+        "judgment": "Identify material carryover across separately initiated reactions.",
+        "code": "Represent the eight stated cycles as a chronological reuse chain, retain reaction-operation and catalyst-preparation levels separately, and reject the fresh-preparation interpretation. This explicit method is code-resolvable; no model call is required.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "reported_reaction_cycles": 8,
+          "documented_recycling_series": 1,
+          "independent_synthesis_count_established_by_cycles": null
+        },
+        "inference_boundary": "Recovered carryover denotes procedural reuse; it establishes neither complete material conservation nor identical catalyst composition across cycles. One described reuse series is not proof that the entire study performed only one synthesis or one series."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E003-Q01",
+          "reference_option": "recovered_carryover",
+          "evidence_rationale": "The recycling method recovers, washes, and reuses the solid in the next experimental cycle. These are new reaction operations with inherited catalyst history.",
+          "downstream_role": "Distinguishes reuse-performance evidence from fresh-preparation replication before code labels the claim.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR003",
+            "author_statement": "E003-Q01 accepted; no reference changes needed."
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted by the author in UR003, with recovered carryover limited to procedural reuse. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "CAT-2020"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR003"
+      },
+      "resolved_review_issues": [
+        "UR003: Author accepted E003-Q01 and the scope of one catalyst reuse history across the eight Figure 2 cycles; reference unchanged.",
+        "UR003: Recovered carryover is limited to procedural reuse, without implying complete material conservation or identical catalyst composition across cycles."
+      ]
+    },
+    {
+      "problem_id": "E004",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D01",
+        "D03"
+      ],
+      "substantive_difference": "D01 is a one-parent split; D03 lacks assignment knowledge. Here a many-parent history merge is positively known while its exhaustive lot allocation remains unavailable. Known mixed membership and incomplete identification lead to separate outputs.",
+      "structure_without_domain_nouns": "Several previously exposed material streams merge; the merge is known but a bulk summary does not identify every ancestor or fraction.",
+      "scientific_significance": "A bulk recycling index can support a process-level comparison while failing to identify particle or lot-level replication. Lineage merges require both membership structure and coverage checks.",
+      "deterministic_work": {
+        "resolution_status": "established_for_mixture_and_coverage; exact_lineage_not_estimable_from_supplied_evidence",
+        "judgment": "Separate a known mixed-origin structure from the completeness of its assignments.",
+        "code": "Retain a multiple-parent relation with unresolved lot assignments. Do not create one parent per history label, invert R into reuse counts, or replace unknown counts with zero.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent_single_history; insufficient_exact_assignments",
+          "exact_parent_lot_count": null,
+          "complete_assignment_available": false
+        },
+        "inference_boundary": "Missing supplied assignments do not establish missing experimental replication or missing records in the actual study."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E004-Q01",
+          "reference_option": "mixed_histories",
+          "evidence_rationale": "The build-8 paragraph explicitly adds previously reused powder with different extents of recycling. This is a known mixture, not ambiguous membership.",
+          "downstream_role": "Selects a multiple-parent history representation; it supplies no exact parent count.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR004",
+            "author_statement": "Confirmed. E004-Q01 and E004-Q02 are both acceptable as proposed."
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E004-Q02",
+          "reference_option": "partial_identification",
+          "evidence_rationale": "The protocol establishes the mixed-history origin, but supplies no complete lot/fraction/exposure mapping. R does not uniquely invert to that mapping.",
+          "downstream_role": "Prevents code from turning a broad mixture category into an exact count or allocation of source lots.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR004",
+            "author_statement": "Confirmed. E004-Q01 and E004-Q02 are both acceptable as proposed."
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted as proposed by the author in UR004, retaining the distinction between history streams and original powder lots and the incomplete genealogy boundary. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "POW-2023"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR004"
+      },
+      "resolved_review_issues": [
+        "UR004: Author accepted both questions as proposed. The disclosed PDF overprint remains a source limitation in sources.json.",
+        "UR004: Author accepted partial identification of the requested lot/fraction/history mapping and the downstream representation. History streams remain distinct from original powder lots; the bulk R index does not determine exact genealogy."
+      ]
+    },
+    {
+      "problem_id": "E005",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D03",
+        "H01"
+      ],
+      "substantive_difference": "Those problems concern level/run assignment or treatments within a pre-existing specimen. Here the preceding outcome determines a later new specimen's treatment, so the assignment graph includes an outcome-to-treatment link.",
+      "structure_without_domain_nouns": "A new object is treated at a level chosen from the preceding object's response; object separation and allocation independence diverge.",
+      "scientific_significance": "New physical specimens do not make treatment allocation independent of prior outcomes. This distinction changes how repeated stress-level observations enter a fatigue-strength analysis.",
+      "deterministic_work": {
+        "resolution_status": "established_for_explicit_protocol; observed_sequence_reconstruction_unassessed",
+        "judgment": "Identify the allocation dependency and the specimen boundary.",
+        "code": "Apply the documented up/down rule to outcome records if available; group equal stresses by code. The 30 MPa increment and grouping operations are computed in code. The offline check verifies the rule's arithmetic at the documented starting value only, not a reconstructed dataset.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "next_stress_after_initial_failure_MPa": 295,
+          "next_stress_after_initial_runout_MPa": 355,
+          "observed_replicates_at_any_fixed_stress": null
+        },
+        "inference_boundary": "This is about conditional allocation, not proof that physical specimen failures have a particular correlation."
+      },
+      "review_issues": [
+        "Resolve the apparent plot/parameter spacing discrepancy before any numeric extension. The offline 325 +/- 30 calculation checks only the stated protocol."
+      ],
+      "questions": [
+        {
+          "question_id": "E005-Q01",
+          "reference_option": "response_adaptive",
+          "evidence_rationale": "Table 2 specifies the outcome-dependent update. Randomization of specimen extraction and protocol order is a different operation.",
+          "downstream_role": "Identifies dependence in treatment allocation before code reconstructs a stress sequence.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR005",
+            "author_statement": "E005-Q01 and E005-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E005-Q02",
+          "reference_option": "new_specimen",
+          "evidence_rationale": "The staircase row says next specimen and classifies the protocol as a single test per specimen. Retesting the same specimen belongs to the separate step protocol.",
+          "downstream_role": "Separates adaptive dependence between assignments from repeated exposure of one specimen.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR005",
+            "author_statement": "E005-Q01 and E005-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted as proposed by the author in UR005, retaining protocol-only arithmetic and the distinction between allocation dependence and specimen failure correlation. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "FAT-2022"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR005"
+      },
+      "resolved_review_issues": [
+        "UR005: Author accepted both questions with the proposed references unchanged; staircase allocation depends on the previous outcome and advances to a new specimen.",
+        "UR005: Author accepted the downstream outcome as protocol arithmetic only, without reconstructing observed stresses or stress-level replication from Figure 11(a).",
+        "UR005: Random specimen extraction and protocol order do not establish independent stress randomization; outcome-dependent allocation does not establish specimen failure correlation."
+      ]
+    },
+    {
+      "problem_id": "E006",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D02",
+        "C02"
+      ],
+      "substantive_difference": "D02 has multiple specimens within one build; C02 has repeated measurements of one event. This source has two genuine full executions, coupled by a deterministic transformation of their initial conditions and deliberately aggregated as one realization.",
+      "structure_without_domain_nouns": "Two full executions use transformed rather than independently drawn initial inputs; their outputs form one paired statistic.",
+      "scientific_significance": "Execution counts measure computational work. Replication for the reported paired estimator is organized by the deliberately coupled realization, so those counts cannot be interchanged.",
+      "deterministic_work": {
+        "resolution_status": "established_for_supplied_table_and_formalism",
+        "judgment": "Interpret the phase coupling and reported realization statistic.",
+        "code": "Multiply the stated realization count by two for execution accounting; retain 100 pair-level values. Do not replace pair-level variation with the variance of 200 independent phase draws.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "paired_realizations": 100,
+          "paired_execution_count": 200,
+          "values_entering_pair_ensemble": 100
+        },
+        "inference_boundary": "Neither this bookkeeping nor phase reversal establishes an effective sample size for every observable."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E006-Q01",
+          "reference_option": "phase_reversed",
+          "evidence_rationale": "The source defines the pair through a pi phase shift; a second execution is not a second independent phase draw.",
+          "downstream_role": "Identifies the initial-condition coupling that determines the realization boundary.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR006",
+            "author_statement": "E006-Q01 and E006-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E006-Q02",
+          "reference_option": "pair_average",
+          "evidence_rationale": "Equation 10 averages the two members within a pair before ensemble statistics are formed.",
+          "downstream_role": "Selects the aggregation object; code performs averaging and execution-versus-realization counting.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR006",
+            "author_statement": "E006-Q01 and E006-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted as proposed by the author in UR006, distinguishing execution counts from independent initial-condition draws and retaining the initial-field and aggregation-unit boundaries. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "COS-2018"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR006"
+      },
+      "resolved_review_issues": [
+        "UR006: Author accepted both questions with the proposed references unchanged; the two separate executions have phase-related initial fields and contribute a pair average to the source statistic.",
+        "UR006: Author accepted 100 paired realizations, 200 executions, and 100 pair-level values. Execution counts do not establish 200 independent initial-condition samples.",
+        "UR006: Initial Fourier-field sign reversal does not imply perfect anticorrelation of evolved observables; the aggregation unit does not establish an effective sample size for every observable."
+      ]
+    },
+    {
+      "problem_id": "E007",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "H01",
+        "D03"
+      ],
+      "substantive_difference": "H01 varies factors within a physical treatment scope and D03 separates a named level from missing runs. LENS2 documents a mid-project protocol version change bundled with other changes, plus a full group mapping; membership is known but a single-change causal contrast is not identified.",
+      "structure_without_domain_nouns": "A nominal collection contains implementation versions; version membership is mapped, but concurrent changes prevent isolating one intervention.",
+      "scientific_significance": "Nominal project membership does not establish identical treatment implementation. Correct subgroup counts still leave an identification problem when changes were introduced together.",
+      "deterministic_work": {
+        "resolution_status": "established_for_documented_group_mapping",
+        "judgment": "Interpret protocol identity and the scope of the implementation change.",
+        "code": "Use the documented group mapping to count original and SMBB members, then compose separate membership and single-change-identification outcomes. Do not infer treatment effects or statistical independence.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent_in_both_clauses",
+          "original_members": 50,
+          "smbb_members": 50,
+          "total_members": 100,
+          "smoothing_only_contrast": false
+        },
+        "inference_boundary": "The documentation reports evaluations of the corrections; this problem does not estimate their effects."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E007-Q01",
+          "reference_option": "two_protocol_groups",
+          "evidence_rationale": "The official page explicitly divides the collection into original and SMBB halves with a mapping across initialization groups.",
+          "downstream_role": "Selects treatment-protocol membership before code totals matching members.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR007",
+            "author_statement": "E007-Q01 and E007-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E007-Q02",
+          "reference_option": "bundled_changes",
+          "evidence_rationale": "The same documentation lists emission and carbon-flux corrections in the SMBB half. The project reports no significant model-solution changes from the emission corrections and no climate-changing impacts from the carbon-flux modification. These impact evaluations do not establish that smoothing was the only implementation change.",
+          "downstream_role": "Blocks a smoothing-only interpretation of a group comparison even after code has correctly assigned members.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR007",
+            "author_statement": "E007-Q01 and E007-Q02 are accepted with the proposed references unchanged.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted by the author in UR007 with a Q02 rationale clarification distinguishing additional implementation changes from their reported impact evaluations. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "LENS2-DOC"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR007"
+      },
+      "resolved_review_issues": [
+        "UR007: Author accepted both questions as one scientific problem with the proposed references and downstream schema unchanged.",
+        "UR007: Membership follows the official initialization mapping: 50 original and 50 SMBB members. Initialization dates are not forcing treatments.",
+        "UR007: The Q02 rationale retains the reported impact evaluations while distinguishing them from the existence of other implementation changes. Small or undetected impacts do not establish a smoothing-only causal contrast."
+      ]
+    },
+    {
+      "problem_id": "E008",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D02",
+        "C01"
+      ],
+      "substantive_difference": "D02 asks whether specimens share an execution; here separate executions are explicit. The issue is whether a design transformation preserves the full treatment and supplies pure-error replication, which requires an equality criterion followed by deterministic matrix accounting.",
+      "structure_without_domain_nouns": "Separate executions use either identical or complementary treatment vectors; a design pair need not be a replicate pair.",
+      "scientific_significance": "Foldover can provide variance information without making every pair an exact replicate. Conflating alias-control structure with replicated conditions changes the pure-error accounting.",
+      "deterministic_work": {
+        "resolution_status": "established_zero_model_call_control",
+        "judgment": "Interpret full-treatment equality versus foldover complementarity.",
+        "code": "Group the transcribed columns by all eight factor signs; count repeated settings and sum n_g-1 for pure-error degrees of freedom. Compare with the authors' p=2. The explicit design and source explanation support deterministic resolution; do not route a model call solely because an existing phrase parser lacks this case.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "run_count": 20,
+          "distinct_complete_settings": 18,
+          "repeated_column_groups": [
+            [
+              11,
+              12
+            ],
+            [
+              13,
+              14
+            ]
+          ],
+          "singleton_settings": 16,
+          "pure_error_df": 2
+        },
+        "inference_boundary": "The counted degrees of freedom concern exact coded repetitions. Their use as an error estimator still follows the source's modeling assumptions."
+      },
+      "review_issues": [
+        "Table 1 (PDF p. 3) provides the eight factor names and low/high levels. It lists temperature levels of 750 and 800 °C, whereas Section 6 describes each cycle as operating at 800 °C. This discrepancy remains unresolved for reconstructing physical operating conditions. The present judgment concerns equality of the eight-factor coded settings in Table 7, not chemical equivalence outside that design."
+      ],
+      "questions": [
+        {
+          "question_id": "E008-Q01",
+          "reference_option": "complete_setting_equality",
+          "evidence_rationale": "Replication of the full condition requires equal full setting vectors in separate preparations. A sign complement is a different treatment; the fresh-sample procedure establishes separate executions.",
+          "downstream_role": "Chooses the scientifically relevant equality key. Column comparison, deduplication, replicate counts, and pure-error degrees of freedom are code work.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR008",
+            "author_statement": "E008-Q01 reference, downstream outcome, and the proposed source-note replacement are accepted.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted by the author in UR008 after the author checked relevant sources. The author reviewed the reference, downstream outcome, and source-note correction while retaining the coded-design and temperature-description boundaries. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "FOLD-2025",
+          "N-FOLD"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR008"
+      },
+      "resolved_review_issues": [
+        "UR008: Author accepted complete_setting_equality and the proposed downstream outcome after checking the sources.",
+        "UR008: Corrected the claim that factor names and levels were absent. Table 1 supplies them; the temperature-description discrepancy remains documented and unresolved for physical-condition reconstruction.",
+        "UR008: The full transcription contains all 160 factor entries and 20 responses. Columns 11/12 and 13/14 are table positions, not execution chronology; differing responses do not negate treatment equality.",
+        "UR008: Foldover complementarity is distinct from exact treatment replication. The two pure-error degrees of freedom are not the full three degrees of freedom used by the source variance estimate."
+      ]
+    },
+    {
+      "problem_id": "E009",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "D01",
+        "C02"
+      ],
+      "substantive_difference": "D01 shares a manufacturing parent and C02 remeasures one event. These are separate laboratories and executions whose uncertainty shares a calibration ancestor; bracketing visits have a stated aggregation role. Counting distinct execution IDs alone would miss the dependence.",
+      "structure_without_domain_nouns": "Distinct execution chains inherit a common calibration input; repeated visits bracket a comparison and do not create new laboratories.",
+      "scientific_significance": "Independent execution and independent traceability are different requirements. A calibration comparison must retain the common reference contribution even when the laboratories performed separate work.",
+      "deterministic_work": {
+        "resolution_status": "established_for_source_equations_and_protocol",
+        "judgment": "Locate the shared traceability ancestor and interpret the bracketing measurements.",
+        "code": "Average the two Cal-Lab values at equal s, compare with INRIM, and retain covariance. Offline algebra checks that substitution of Equation 5 yields a subtraction of 2*u_B(std_DCV)^2; no new calibration data or uncertainty values are invented.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent",
+          "compared_laboratory_results": 2,
+          "calibration_visits": 3,
+          "shared_covariance_term": "2*u_B(std_DCV)^2",
+          "exact_effective_replication_count": null
+        },
+        "inference_boundary": "Shared calibration ancestry does not imply identical total errors or a known scalar effective sample size."
+      },
+      "review_issues": [],
+      "questions": [
+        {
+          "question_id": "E009-Q01",
+          "reference_option": "shared_reference",
+          "evidence_rationale": "The source locates the INRIM 10 V calibration contribution in both traceability chains and retains it in Equation 5. Separate laboratory executions do not eliminate that common contribution.",
+          "downstream_role": "Determines whether code retains the shared-reference covariance term; it does not evaluate that term numerically.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR009",
+            "author_statement": "E009-Q01, E009-Q02, the downstream outcome, and the S2 scope are accepted without modification.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E009-Q02",
+          "reference_option": "bracketing_average",
+          "evidence_rationale": "Section V averages the two Cal-Lab calibrations to reduce possible drift, while Section III.A specifies verification without adjustment.",
+          "downstream_role": "Selects the laboratory-level aggregation and prevents bracketing observations from becoming additional laboratories or a treatment contrast.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR009",
+            "author_statement": "E009-Q01, E009-Q02, the downstream outcome, and the S2 scope are accepted without modification.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted as proposed by the author in UR009 after the author checked the sources and logic, including the stated S2 scope and downstream outcome. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "MET-2016"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR009"
+      },
+      "resolved_review_issues": [
+        "UR009: Author accepted both questions, the downstream outcome, and inclusion within S2 as a counting/dependence judgment about a shared reference-calibration contribution.",
+        "UR009: The approved scope is limited to the specified DC-voltage contribution. It does not extend to the full uncertainty budget, other electrical quantities, effective sample size, or perfect correlation.",
+        "UR009: The bracketing average addresses possible drift and is not an adjustment contrast. The source limitation distinguishing a precaution from observed drift remains in place."
+      ]
+    },
+    {
+      "problem_id": "E010",
+      "review_status": "author_reviewed",
+      "closest_existing_problem_ids": [
+        "C01",
+        "C02"
+      ],
+      "substantive_difference": "C01 nests units under group treatments; C02 separates measurements from events. Here one randomized decision sets complementary treatments on concurrent targets, and assignment labels differ from realized exposure when spillover is possible.",
+      "structure_without_domain_nouns": "A joint random choice gives complementary treatments to two targets; separate target records do not create separate draws, and allocation does not guarantee exposure isolation.",
+      "scientific_significance": "Two simultaneously observed targets do not imply two independent assignment draws. Exposure records could change an exposure-based analysis without changing the original paired allocation.",
+      "deterministic_work": {
+        "resolution_status": "established_for_reported_assignment_and_totals; per_EU_exposure_unassessed",
+        "judgment": "Identify complementary assignment and distinguish allocation from realized exposure.",
+        "code": "Retain 118 joint allocation events and two range-level records per retained event; verify 154-27-9. Do not reconstruct target assignments from differently labeled plots or classify per-EU exposure without its evidence.",
+        "expected_outcome": {
+          "claim_assessment": "inconsistent_independent_assignment; zero_exposure_not_established_by_label",
+          "original_EUs": 154,
+          "retained_EUs": 118,
+          "joint_assignment_events": 118,
+          "range_level_records": 236,
+          "independent_range_draws_claim": false
+        },
+        "inference_boundary": "This does not certify temporal independence among all EUs or re-estimate the cloud-seeding effect."
+      },
+      "review_issues": [
+        "Calendar and wind-criterion discrepancies are retained in sources.json but do not conflict with the selected allocation judgment."
+      ],
+      "questions": [
+        {
+          "question_id": "E010-Q01",
+          "reference_option": "complementary_assignment",
+          "evidence_rationale": "The article explicitly describes mutually exclusive seeding and opposite assignment-plot shading for the two ranges.",
+          "downstream_role": "Defines the joint assignment event; code counts paired EUs separately from range records.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR010",
+            "author_statement": "E010-Q01, E010-Q02, the downstream outcome, and the S2 scope are accepted without modification.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        },
+        {
+          "question_id": "E010-Q02",
+          "reference_option": "assignment_only",
+          "evidence_rationale": "The 2014 presentation reports measured and modeled cross-range effects. Assignment therefore does not certify zero exposure, and those diagnostics do not establish exposure in every unseeded range-period.",
+          "downstream_role": "Keeps the assignment-based replicate accounting distinct from any exposure-based reclassification.",
+          "review_status": "author_reviewed",
+          "approved_by_author": true,
+          "approval_evidence": {
+            "record_file": "review_decisions.json",
+            "decision_id": "UR010",
+            "author_statement": "E010-Q01, E010-Q02, the downstream outcome, and the S2 scope are accepted without modification.",
+            "statement_is_translation": true
+          },
+          "reviewed_by": "author"
+        }
+      ],
+      "reference_provenance": {
+        "basis": "References from the inspected source locations were reviewed and accepted as proposed by the author in UR010 after the author checked the sources and reasoning, including the downstream outcome and S2 scope. This is author review, not independent blind annotation.",
+        "source_ids": [
+          "CLOUD-2018",
+          "CLOUD-2014"
+        ],
+        "claim_origin": "benchmark_constructed; not attributed to the source authors",
+        "reviewed_by": "author",
+        "author_review_decision_id": "UR010"
+      },
+      "resolved_review_issues": [
+        "UR010: Author accepted both questions, the downstream outcome, and the S2 scope without modification. Each retained EU has one joint allocation with complementary range-level assignments.",
+        "UR010: Author accepted 118 retained EUs and 236 EU-by-range records. The record expansion does not create 236 independent assignments; cross-range contamination does not redefine the assigned treatment and control.",
+        "UR010: The two source plots retain their distinct target identities. The 21 measured transport cases and 18 modeled enhancement cases are different diagnostics and do not supply per-EU exposure labels.",
+        "UR010: The approved scope excludes effect sizes, p-values, causal conclusions, and certification of temporal independence among EUs. Calendar and wind-criterion discrepancies remain documented source limitations."
+      ]
+    }
+  ],
+  "review_summary": {
+    "author_accepted_problems": 10,
+    "pending_problems": 0,
+    "author_accepted_questions": 18,
+    "pending_questions": 0
+  }
+}

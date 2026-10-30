@@ -1,0 +1,161 @@
+{
+  "version": "s2-execution-dev-v2-model-extension",
+  "status": "development_not_frozen",
+  "prepared_on": "2026-09-21",
+  "budget": {
+    "policy": "no_monetary_cap_requested_by_user",
+    "cap_usd": null,
+    "historical_caps_apply": false,
+    "instruction_date": "2026-09-21",
+    "historical_ledger": "development/s2-nonbio-v1/budget.json",
+    "historical_accounting": "preserved; do not combine old estimates with new measured charges"
+  },
+  "repetitions": 5,
+  "concurrency": 1,
+  "timeout_seconds": 300,
+  "max_retries": 0,
+  "max_fallbacks": 0,
+  "request_size_limit_bytes": 98304,
+  "schedule_seed": 20260921,
+  "models": [
+    {
+      "id": "qwen_flash",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "qwen/qwen3.8-flash",
+      "accepted_response_models": [
+        "qwen/qwen3.8-flash",
+        "qwen/qwen3.8-flash-20260826"
+      ],
+      "provider_slug": "alibaba",
+      "accepted_response_providers": [
+        "Alibaba"
+      ],
+      "catalog_endpoint": "Alibaba | qwen/qwen3.8-flash-20260826",
+      "quantization": "unknown",
+      "tier": "low_cost",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 0.15,
+        "output": 0.47,
+        "cached_input": 0.016,
+        "cache_write": 0.19999999999999998
+      }
+    },
+    {
+      "id": "qwen_max",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "qwen/qwen3.8-max-0902",
+      "accepted_response_models": [
+        "qwen/qwen3.8-max-0902",
+        "qwen/qwen3.8-max-20260902"
+      ],
+      "provider_slug": "alibaba",
+      "accepted_response_providers": [
+        "Alibaba"
+      ],
+      "catalog_endpoint": "Alibaba | qwen/qwen3.8-max-20260902",
+      "quantization": "unknown",
+      "tier": "higher_capability",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 2.0,
+        "output": 6.0,
+        "cached_input": 0.25,
+        "cache_write": 2.5
+      }
+    },
+    {
+      "id": "deepseek_flash",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "accepted_response_models": [
+        "deepseek/deepseek-v4.1-flash",
+        "deepseek/deepseek-v4.1-flash-20260910"
+      ],
+      "provider_slug": "fireworks",
+      "accepted_response_providers": [
+        "Fireworks"
+      ],
+      "catalog_endpoint": "Fireworks | deepseek/deepseek-v4.1-flash-20260910",
+      "quantization": "unknown",
+      "tier": "low_cost",
+      "reasoning_effort": "high",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 0.22,
+        "output": 0.66,
+        "cached_input": 0.007
+      }
+    },
+    {
+      "id": "deepseek_pro",
+      "provider": "openrouter_chat",
+      "credential_provider": "openrouter",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "accepted_response_models": [
+        "deepseek/deepseek-v4-pro-0813",
+        "deepseek/deepseek-v4-pro-20260813"
+      ],
+      "provider_slug": "fireworks",
+      "accepted_response_providers": [
+        "Fireworks"
+      ],
+      "catalog_endpoint": "Fireworks | deepseek/deepseek-v4-pro-20260813",
+      "quantization": "unknown",
+      "tier": "higher_capability",
+      "reasoning_effort": "high",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 1.32,
+        "output": 3.9600000000000004,
+        "cached_input": 0.044
+      }
+    },
+    {
+      "id": "opus5",
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "accepted_response_models": [
+        "claude-opus-5"
+      ],
+      "tier": "cross_provider_high_capability",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 32768,
+      "usd_per_million": {
+        "input": 5,
+        "output": 25,
+        "cached_input": 0.5,
+        "cache_write": 6.25
+      }
+    }
+  ],
+  "conditions": [
+    "code_only",
+    "model_semantics_plus_code",
+    "reference_oracle"
+  ],
+  "rationale": {
+    "repetitions": "Five repeated executions describe within-input answer stability and latency spread. They do not add independent cases and are not a power calculation. No majority-vote replacement.",
+    "concurrency": "One request in flight avoids local queue and cross-model load confounding in this small latency comparison.",
+    "timeout": "300-second total deadline accommodates medium reasoning; timeouts remain operational failures rather than replacement samples.",
+    "retries": "Zero automatic retries or fallback: preserve first-attempt failure rates and prevent duplicate billing after ambiguous transport. Repetitions are planned independent executions, not failure replacements.",
+    "output_cap": "32768 includes reasoning and final JSON, above the OpenAI guidance to initially reserve at least 25000. It is a safety envelope, not a spending budget.",
+    "versions": "Qwen Max 0902 and DeepSeek Pro 0813 are explicit snapshots. Named Flash routes are tied to the saved endpoint catalog and returned IDs; no immutable-weight claim. Unknown returned IDs halt that model.",
+    "tiers": "Five additional model configurations; Opus 4.8 is excluded.",
+    "routing": "Existing OpenRouter credentials serve Qwen via Alibaba and DeepSeek via Fireworks. Both DeepSeek endpoints support JSON schema and the inherited 32768 output cap. DeepInfra Pro currently caps completions at 16384, so it was not chosen. Opus uses the existing direct Anthropic path. No provider fallback.",
+    "effort": "Qwen requests medium through the router; Opus uses adaptive medium to match the existing Sonnet condition. DeepSeek requests its documented ordinary high setting explicitly; medium is a compatibility alias for high in the first-party API. Effort names are not matched compute budgets. Router acceptance does not establish actual internal effort.",
+    "accounting": "OpenRouter-reported dollar charges are primary for the four routed models. Price snapshots are separate estimates, including cached input and writes where available. Cached billing quantities remain unknown when absent."
+  },
+  "cohort": {
+    "id": "s2-model-extension-v1",
+    "previous_run": "results/s2-execution-live-v1",
+    "authorization": "Five-model extension evaluated on the same S2 development inputs on 2026-09-21.",
+    "comparison": "Same development inputs and scoring; later execution cohort. No historical calls repeated.",
+    "new_models_only": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "job_id": "r04-E009-deepseek_flash",
+  "group_id": "E009",
+  "model_id": "deepseek_flash",
+  "repeat": 3,
+  "answers": {
+    "E009-Q01": "shared_reference",
+    "E009-Q02": "bracketing_average"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "compared_laboratory_results": 2,
+      "calibration_visits": 3,
+      "shared_covariance_term": "2*u_B(std_DCV)^2",
+      "exact_effective_replication_count": null,
+      "claim_assessment": "inconsistent"
+    },
+    "clauses": {
+      "drop_shared_covariance": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4.1-flash",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789975838-DK86HkR7xGZ91A2SjoDB",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 919,
+      "completion_tokens": 265,
+      "total_tokens": 1184,
+      "cost": 0.00020881,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 790,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00020881,
+        "upstream_inference_prompt_cost": 3.391e-05,
+        "upstream_inference_completions_cost": 0.0001749
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 246,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 919,
+    "output_tokens": 265,
+    "resource_errors": [],
+    "cached_input_tokens": 790,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 246,
+    "reported_cost_usd": 0.00020881,
+    "usage_cost_estimate_usd": 0.00020881,
+    "usage_cost_upper_estimate_usd": 0.00037708,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 3.273857541003963,
+    "derivation_wall_seconds": 4.975000047124922e-05,
+    "derivation_cpu_seconds": 4.8000000000048004e-05
+  },
+  "request_sha256": "69380402b291ffc4f30e4c098187611c5bc254ff79728b03161dcd1acfe1eecb",
+  "receipt_sha256": "cb155594f20d75bf88f1d322c430a4d6e7fb5feaa53617ee07549f9e1f26313e",
+  "simulated": false,
+  "halt_model": false
+}

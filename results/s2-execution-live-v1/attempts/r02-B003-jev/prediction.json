@@ -1,0 +1,90 @@
+{
+  "job_id": "r02-B003-jev",
+  "group_id": "B003",
+  "model_id": "jev",
+  "repeat": 1,
+  "answers": {
+    "B003-Q01": "rna_before_library",
+    "B003-Q02": "pool_aggregate"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "semantic_choices": [
+      "rna_before_library",
+      "pool_aggregate"
+    ],
+    "counts": {
+      "selected_libraries": 4,
+      "distinct_contributors": 16,
+      "distinct_contributors_by_genotype": {
+        "Brd1+/-": 8,
+        "WT": 8
+      },
+      "contributor_appearances": 32,
+      "separately_observed_contributor_profiles": 0
+    },
+    "clauses": {
+      "distinct_mice": "inconsistent",
+      "individual_profiles": "inconsistent",
+      "pooling_only_after_individual_measurement": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {
+    "B003-Q01": {
+      "probabilities": {
+        "tissue_before_extraction": 0,
+        "other": 0,
+        "rna_before_library": 1,
+        "conflicting": 0,
+        "indexed_libraries_only": 0,
+        "not_stated": 0,
+        "numerical_average_only": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    },
+    "B003-Q02": {
+      "probabilities": {
+        "new_single_animal": 0,
+        "other": 0,
+        "not_stated": 0,
+        "pool_aggregate": 1,
+        "conflicting": 0,
+        "some_individuals_resolved": 0,
+        "all_individuals_resolved": 0
+      },
+      "confidence": 1,
+      "raw_probability_sum": 1
+    }
+  },
+  "status": "complete",
+  "served_model": "typesafe/jev-1.13-20260917",
+  "response_id": "gen-dec-1789972180-9Ym7Nkpc7rRN04IXWphR",
+  "resources": {
+    "raw_usage": {
+      "input_tokens": 1952,
+      "output_tokens": 183,
+      "cost": 8.1984e-05
+    },
+    "input_tokens": 1952,
+    "output_tokens": 183,
+    "resource_errors": [],
+    "cached_input_tokens": null,
+    "cache_creation_tokens": null,
+    "reasoning_tokens": null,
+    "reported_cost_usd": 8.1984e-05,
+    "usage_cost_estimate_usd": 8.1984e-05,
+    "usage_cost_upper_estimate_usd": 8.1984e-05,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 0.25976037498912774,
+    "derivation_wall_seconds": 3.966601798310876e-05,
+    "derivation_cpu_seconds": 4.0000000000040004e-05
+  },
+  "request_sha256": "2d73582daebd6537ad62a56c5a747ef03e6bf6f38b13c140272c9a1a1e1d5c22",
+  "receipt_sha256": "22bc1d086498e934739e00728554ed5a8cac481f93abb6f0154006046f488a90",
+  "simulated": false,
+  "halt_model": false
+}

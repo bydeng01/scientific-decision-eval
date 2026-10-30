@@ -1,0 +1,25 @@
+{"id": "empty-prior", "episode": null, "round": 0, "truth": null, "posterior": [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]}
+{"id": "dev-00-r1", "episode": "dev-00", "round": 1, "truth": "H1", "parameters": [0.4, 0.0], "posterior": [0.5523274613370619, 0.008195047602936064, 0.4394774910600018]}
+{"id": "dev-00-r2", "episode": "dev-00", "round": 2, "truth": "H1", "parameters": [0.4, 0.0], "posterior": [0.9999999999999272, 9.229162893087301e-40, 7.25098260594105e-14]}
+{"id": "dev-01-r1", "episode": "dev-01", "round": 1, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [0.38998917116142423, 0.363939148816046, 0.24607168002252963]}
+{"id": "dev-01-r2", "episode": "dev-01", "round": 2, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [1.45913951558939e-19, 0.9993288819328191, 0.0006711180671804987]}
+{"id": "dev-02-r1", "episode": "dev-02", "round": 1, "truth": "H3", "parameters": [0.4, 0.4], "posterior": [0.6730955739571268, 3.29835895675114e-07, 0.3269040962069774]}
+{"id": "dev-02-r2", "episode": "dev-02", "round": 2, "truth": "H3", "parameters": [0.4, 0.4], "posterior": [6.576261706611923e-68, 2.3743795556212847e-28, 1.0]}
+{"id": "dev-03-r1", "episode": "dev-03", "round": 1, "truth": "H1", "parameters": [0.8, 0.0], "posterior": [0.9416787692316992, 1.3640998376904153e-09, 0.058321229404200946]}
+{"id": "dev-03-r2", "episode": "dev-03", "round": 2, "truth": "H1", "parameters": [0.8, 0.0], "posterior": [0.9999999999586144, 5.884402400399507e-55, 4.138547540421771e-11]}
+{"id": "dev-04-r1", "episode": "dev-04", "round": 1, "truth": "H2", "parameters": [0.0, 0.4], "posterior": [0.3485687189011256, 0.42908222510753935, 0.22234905599133495]}
+{"id": "dev-04-r2", "episode": "dev-04", "round": 2, "truth": "H2", "parameters": [0.0, 0.4], "posterior": [2.483526979459128e-61, 0.9999999999777036, 2.229630658646751e-11]}
+{"id": "dev-05-r1", "episode": "dev-05", "round": 1, "truth": "H3", "parameters": [0.1, 0.1], "posterior": [0.0878751489418459, 0.6143196204270315, 0.29780523063112274]}
+{"id": "dev-05-r2", "episode": "dev-05", "round": 2, "truth": "H3", "parameters": [0.1, 0.1], "posterior": [6.413321907172354e-35, 5.930976186359596e-34, 1.0]}
+{"id": "dev-06-r1", "episode": "dev-06", "round": 1, "truth": "H1", "parameters": [0.2, 0.0], "posterior": [0.27325947705645004, 0.2468878530404457, 0.47985266990310455]}
+{"id": "dev-06-r2", "episode": "dev-06", "round": 2, "truth": "H1", "parameters": [0.2, 0.0], "posterior": [1.0, 1.1861402670540162e-217, 1.8967824275637597e-87]}
+{"id": "dev-07-r1", "episode": "dev-07", "round": 1, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [0.0006421051299022522, 0.9678164244949978, 0.03154147037509982]}
+{"id": "dev-07-r2", "episode": "dev-07", "round": 2, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [3.3301207104879155e-27, 0.9999999829005369, 1.70994631555792e-08]}
+{"id": "dev-08-r1", "episode": "dev-08", "round": 1, "truth": "H3", "parameters": [0.2, 0.1], "posterior": [0.4649256188573059, 0.3168661355735256, 0.21820824556916857]}
+{"id": "dev-08-r2", "episode": "dev-08", "round": 2, "truth": "H3", "parameters": [0.2, 0.1], "posterior": [7.294260700495923e-10, 0.001564991621027752, 0.9984350076495457]}
+{"id": "dev-09-r1", "episode": "dev-09", "round": 1, "truth": "H1", "parameters": [0.2, 0.0], "posterior": [0.2797912319968244, 0.1875540377589366, 0.5326547302442389]}
+{"id": "dev-09-r2", "episode": "dev-09", "round": 2, "truth": "H1", "parameters": [0.2, 0.0], "posterior": [1.0, 1.0791356908958422e-214, 6.611575694634026e-87]}
+{"id": "dev-10-r1", "episode": "dev-10", "round": 1, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [0.010725975509180665, 0.8659176014475112, 0.12335642304330822]}
+{"id": "dev-10-r2", "episode": "dev-10", "round": 2, "truth": "H2", "parameters": [0.0, 0.2], "posterior": [4.819171320556596e-21, 0.9999880017176948, 1.1998282305665675e-05]}
+{"id": "dev-11-r1", "episode": "dev-11", "round": 1, "truth": "H3", "parameters": [0.2, 0.1], "posterior": [0.036707844939965525, 0.23602262332194476, 0.7272695317380898]}
+{"id": "dev-11-r2", "episode": "dev-11", "round": 2, "truth": "H3", "parameters": [0.2, 0.1], "posterior": [0.002278305039391367, 1.0285106419471633e-09, 0.9977216939320976]}

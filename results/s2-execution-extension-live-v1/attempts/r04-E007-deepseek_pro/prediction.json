@@ -1,0 +1,74 @@
+{
+  "job_id": "r04-E007-deepseek_pro",
+  "group_id": "E007",
+  "model_id": "deepseek_pro",
+  "repeat": 3,
+  "answers": {
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false,
+      "claim_assessment": "inconsistent_in_both_clauses"
+    },
+    "clauses": {
+      "single_protocol": "inconsistent",
+      "single_change": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "deepseek/deepseek-v4-pro-0813",
+  "served_provider": "Fireworks",
+  "response_id": "gen-1789975819-xzfLRFLnFyDgCauKA1k3",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 1060,
+      "completion_tokens": 441,
+      "total_tokens": 1501,
+      "cost": 0.00314556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00314556,
+        "upstream_inference_prompt_cost": 0.0013992,
+        "upstream_inference_completions_cost": 0.00174636
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 420,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 1060,
+    "output_tokens": 441,
+    "resource_errors": [],
+    "cached_input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 420,
+    "reported_cost_usd": 0.00314556,
+    "usage_cost_estimate_usd": 0.0031455600000000004,
+    "usage_cost_upper_estimate_usd": 0.0031455600000000004,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 5.19056408299366,
+    "derivation_wall_seconds": 4.7874986194074154e-05,
+    "derivation_cpu_seconds": 4.6999999999908226e-05
+  },
+  "request_sha256": "44c04c09f7bfc5be82e7c4583f5c1172339b90fa66ee038fdc7a46b3a2ba5455",
+  "receipt_sha256": "9a7e86cf7df189dad6c8bbcf6c40cad1f6b705e035c25d530c0361da808fe69d",
+  "simulated": false,
+  "halt_model": false
+}

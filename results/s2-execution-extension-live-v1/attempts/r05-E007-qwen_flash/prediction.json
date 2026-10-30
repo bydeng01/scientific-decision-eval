@@ -1,0 +1,74 @@
+{
+  "job_id": "r05-E007-qwen_flash",
+  "group_id": "E007",
+  "model_id": "qwen_flash",
+  "repeat": 4,
+  "answers": {
+    "E007-Q01": "two_protocol_groups",
+    "E007-Q02": "bundled_changes"
+  },
+  "errors": {},
+  "derived": {
+    "status": "derived",
+    "output": {
+      "original_members": 50,
+      "smbb_members": 50,
+      "total_members": 100,
+      "smoothing_only_contrast": false,
+      "claim_assessment": "inconsistent_in_both_clauses"
+    },
+    "clauses": {
+      "single_protocol": "inconsistent",
+      "single_change": "inconsistent"
+    },
+    "final_label": "inconsistent"
+  },
+  "diagnostics": {},
+  "status": "complete",
+  "served_model": "qwen/qwen3.8-flash",
+  "served_provider": "Alibaba",
+  "response_id": "gen-1789976581-LJSNLW8fhwDph1DrvfjR",
+  "resources": {
+    "raw_usage": {
+      "prompt_tokens": 934,
+      "completion_tokens": 675,
+      "total_tokens": 1609,
+      "cost": 0.000354438,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000354438,
+        "upstream_inference_prompt_cost": 3.7188e-05,
+        "upstream_inference_completions_cost": 0.00031725
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 648,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "input_tokens": 934,
+    "output_tokens": 675,
+    "resource_errors": [],
+    "cached_input_tokens": 768,
+    "cache_creation_tokens": 0,
+    "reasoning_tokens": 648,
+    "reported_cost_usd": 0.000354438,
+    "usage_cost_estimate_usd": 0.000354438,
+    "usage_cost_upper_estimate_usd": 0.0005040499999999999,
+    "billing_status": "reported",
+    "estimate_basis": "documented standard token prices; not an invoice",
+    "latency_seconds": 11.462477792025311,
+    "derivation_wall_seconds": 4.779099253937602e-05,
+    "derivation_cpu_seconds": 4.8000000000492093e-05
+  },
+  "request_sha256": "6727998d8b720ba65050a984ddf51359accdf533073303b0bab360e8705f9e6b",
+  "receipt_sha256": "0e1c1d7357a8d2ea85f3d412be20e1a46277ba8b86a06c2755e7cc36db8274cc",
+  "simulated": false,
+  "halt_model": false
+}

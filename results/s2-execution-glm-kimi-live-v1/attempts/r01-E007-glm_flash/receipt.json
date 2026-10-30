@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n{\"id\":\"gen-1789978406-cp0O7ncoQIUIxI0BibO5\",\"object\":\"chat.completion\",\"created\":1789978406,\"model\":\"z-ai/glm-5.3-flash\",\"provider\":\"Fireworks\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\": \\\"two_protocol_groups\\\", \\\"q2\\\": \\\"bundled_changes\\\"}\",\"refusal\":null,\"reasoning\":\"q1: two protocol groups. q2: bundled_changes.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"q1: two protocol groups. q2: bundled_changes.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":822,\"completion_tokens\":33,\"total_tokens\":855,\"cost\":0.0001398,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0001398,\"upstream_inference_prompt_cost\":0.0001233,\"upstream_inference_completions_cost\":0.0000165},\"completion_tokens_details\":{\"reasoning_tokens\":13,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:13:27 GMT"
+  },
+  "latency_seconds": 1.3102364999940619,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:13:27.373463+00:00"
+}

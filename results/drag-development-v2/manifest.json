@@ -1,0 +1,28 @@
+{
+  "scope": "development-only, finite prior, fixed two-experiment sequence",
+  "seed": 20260920,
+  "episodes": 12,
+  "requests_per_provider": 25,
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "authorized_total_budget_usd": 10.0,
+  "initial_stage_budget_usd": 1.0,
+  "jev_reserve_per_request_usd": 0.01,
+  "jev_model": "typesafe/jev-1.13",
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "offline_task_gate": true,
+  "round1_weak_episodes": 10,
+  "round2_strong_episodes": 12,
+  "sha256": {
+    "requests.jsonl": "a30c23d93c4999201df0bd8c7906d3dae33004d1751581064cc46ede7bf3615f",
+    "reference.jsonl": "6df2b4f2ba3d53842375d4741205d129876cb621e1b7cb1a04d0f55765a67910",
+    "sources/DRAG_PILOT.md": "c26914f701b14ec316166ee0d185532ced2e7244c06754078646c8205771939a",
+    "sources/configure_science_keys.py": "8ad99b84aead1aae92427c5c79066f400ce1f804bf6192f080d046d45feeb1aa",
+    "sources/drag_pilot.py": "abd09c8e1a1a80d522e990d61462d90e4b13de482ac13fb57d77ece34bd6f061",
+    "sources/test_drag_pilot.py": "5d76cc3efdea932ba862e013e04f92c4481632887b189a17957141fea09c8581",
+    "interface_amendment.json": "0feaadfc59e9c6135077b7215543a7ee8efc57aac50a4262859a641d42874abc"
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "scope": "four exposed states; full 24-state screen incomplete",
+  "rows": [
+    {
+      "provider": "openrouter-jev",
+      "case_id": "empty-prior",
+      "native_status": "valid",
+      "probabilities": [
+        0.11,
+        0.05,
+        0.84
+      ],
+      "native_scores": {
+        "tv": 0.5066666666666666
+      },
+      "raw_probabilities": [
+        0.11,
+        0.05,
+        0.84
+      ],
+      "rounding_sensitivity": {
+        "raw_sum": 1.0,
+        "lower": [
+          0.105,
+          0.045000000000000005,
+          0.835
+        ],
+        "upper": [
+          0.115,
+          0.055,
+          0.845
+        ],
+        "derived_probabilities": [
+          0.10999999999999997,
+          0.04999999999999998,
+          0.84
+        ],
+        "minimum_tv_to_reference": 0.5016666666666667,
+        "reference_inside_rounding_intervals": false,
+        "scores": {
+          "tv": 0.5066666666666666
+        }
+      }
+    },
+    {
+      "provider": "openrouter-jev",
+      "case_id": "dev-00-r1",
+      "native_status": "valid",
+      "probabilities": [
+        0.23,
+        0.24,
+        0.53
+      ],
+      "native_scores": {
+        "tv": 0.322327461337062,
+        "brier": 0.9314,
+        "log_loss": 1.4696759700589417,
+        "zero_true_probability": false,
+        "correct": false,
+        "retained_size": 3,
+        "excluded": false,
+        "confident": false,
+        "confident_wrong": false
+      },
+      "raw_probabilities": [
+        0.23,
+        0.24,
+        0.53
+      ],
+      "rounding_sensitivity": {
+        "raw_sum": 1.0,
+        "lower": [
+          0.225,
+          0.235,
+          0.525
+        ],
+        "upper": [
+          0.23500000000000001,
+          0.245,
+          0.535
+        ],
+        "derived_probabilities": [
+          0.22999999999999995,
+          0.23999999999999994,
+          0.53
+        ],
+        "minimum_tv_to_reference": 0.317327461337062,
+        "reference_inside_rounding_intervals": false,
+        "scores": {
+          "tv": 0.322327461337062,
+          "brier": 0.9314,
+          "log_loss": 1.469675970058942,
+          "zero_true_probability": false,
+          "correct": false,
+          "retained_size": 3,
+          "excluded": false,
+          "confident": false,
+          "confident_wrong": false
+        }
+      }
+    },
+    {
+      "provider": "openrouter-jev",
+      "case_id": "dev-00-r2",
+      "native_status": "valid",
+      "probabilities": [
+        0.11,
+        0.26,
+        0.63
+      ],
+      "native_scores": {
+        "tv": 0.8899999999999273,
+        "brier": 1.2566000000000002,
+        "log_loss": 2.2072749131897207,
+        "zero_true_probability": false,
+        "correct": false,
+        "retained_size": 3,
+        "excluded": false,
+        "confident": false,
+        "confident_wrong": false
+      },
+      "raw_probabilities": [
+        0.11,
+        0.26,
+        0.63
+      ],
+      "rounding_sensitivity": {
+        "raw_sum": 1.0,
+        "lower": [
+          0.105,
+          0.255,
+          0.625
+        ],
+        "upper": [
+          0.115,
+          0.265,
+          0.635
+        ],
+        "derived_probabilities": [
+          0.10999999999999997,
+          0.25999999999999995,
+          0.63
+        ],
+        "minimum_tv_to_reference": 0.8849999999999274,
+        "reference_inside_rounding_intervals": false,
+        "scores": {
+          "tv": 0.8899999999999273,
+          "brier": 1.2566000000000002,
+          "log_loss": 2.207274913189721,
+          "zero_true_probability": false,
+          "correct": false,
+          "retained_size": 3,
+          "excluded": false,
+          "confident": false,
+          "confident_wrong": false
+        }
+      }
+    },
+    {
+      "provider": "openrouter-jev",
+      "case_id": "dev-01-r1",
+      "native_status": "valid",
+      "probabilities": [
+        0.28,
+        0.3,
+        0.42
+      ],
+      "native_scores": {
+        "tv": 0.17392831997747027,
+        "brier": 0.7447999999999999,
+        "log_loss": 1.2039728043259361,
+        "zero_true_probability": false,
+        "correct": false,
+        "retained_size": 3,
+        "excluded": false,
+        "confident": false,
+        "confident_wrong": false
+      },
+      "raw_probabilities": [
+        0.28,
+        0.3,
+        0.42
+      ],
+      "rounding_sensitivity": {
+        "raw_sum": 1.0,
+        "lower": [
+          0.275,
+          0.295,
+          0.415
+        ],
+        "upper": [
+          0.28500000000000003,
+          0.305,
+          0.425
+        ],
+        "derived_probabilities": [
+          0.28,
+          0.3,
+          0.42
+        ],
+        "minimum_tv_to_reference": 0.16892831997747026,
+        "reference_inside_rounding_intervals": false,
+        "scores": {
+          "tv": 0.17392831997747027,
+          "brier": 0.7447999999999999,
+          "log_loss": 1.2039728043259361,
+          "zero_true_probability": false,
+          "correct": false,
+          "retained_size": 3,
+          "excluded": false,
+          "confident": false,
+          "confident_wrong": false
+        }
+      }
+    },
+    {
+      "provider": "openrouter-jev",
+      "case_id": "dev-01-r2",
+      "native_status": "invalid_response",
+      "raw_probabilities": [
+        0.11,
+        0.33,
+        0.55
+      ],
+      "rounding_sensitivity": {
+        "raw_sum": 0.99,
+        "lower": [
+          0.105,
+          0.325,
+          0.545
+        ],
+        "upper": [
+          0.115,
+          0.335,
+          0.555
+        ],
+        "derived_probabilities": [
+          0.11333333333333327,
+          0.33333333333333326,
+          0.5533333333333333
+        ],
+        "minimum_tv_to_reference": 0.6643288819328192,
+        "reference_inside_rounding_intervals": false,
+        "scores": {
+          "tv": 0.665995548599486,
+          "brier": 0.7634666666666667,
+          "log_loss": 1.09861228866811,
+          "zero_true_probability": false,
+          "correct": false,
+          "retained_size": 3,
+          "excluded": false,
+          "confident": false,
+          "confident_wrong": false
+        }
+      }
+    },
+    {
+      "provider": "openai",
+      "case_id": "empty-prior",
+      "native_status": "valid",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "native_scores": {
+        "tv": 0.0
+      }
+    },
+    {
+      "provider": "anthropic",
+      "case_id": "empty-prior",
+      "native_status": "valid",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "native_scores": {
+        "tv": 0.0
+      }
+    },
+    {
+      "provider": "openai",
+      "case_id": "dev-00-r1",
+      "native_status": "valid",
+      "probabilities": [
+        0.5523,
+        0.0082,
+        0.4395
+      ],
+      "native_scores": {
+        "tv": 2.746133706202185e-05,
+        "brier": 0.39366278,
+        "log_loss": 0.5936639020749952,
+        "zero_true_probability": false,
+        "correct": true,
+        "retained_size": 2,
+        "excluded": false,
+        "confident": false,
+        "confident_wrong": false
+      }
+    },
+    {
+      "provider": "openai",
+      "case_id": "dev-00-r2",
+      "native_status": "valid",
+      "probabilities": [
+        0.999999999999926,
+        9.4e-40,
+        7.4e-14
+      ],
+      "native_scores": {
+        "tv": 1.3557096338385886e-15,
+        "brier": 1.0959680300982355e-26,
+        "log_loss": 7.405187574250068e-14,
+        "zero_true_probability": false,
+        "correct": true,
+        "retained_size": 1,
+        "excluded": false,
+        "confident": true,
+        "confident_wrong": false
+      }
+    },
+    {
+      "provider": "openai",
+      "case_id": "dev-01-r1",
+      "native_status": "valid",
+      "probabilities": [
+        0.39,
+        0.3639,
+        0.2461
+      ],
+      "native_scores": {
+        "tv": 3.914881604608067e-05,
+        "brier": 0.6172884200000001,
+        "log_loss": 1.0108761743640229,
+        "zero_true_probability": false,
+        "correct": false,
+        "retained_size": 3,
+        "excluded": false,
+        "confident": false,
+        "confident_wrong": false
+      }
+    },
+    {
+      "provider": "openai",
+      "case_id": "dev-01-r2",
+      "native_status": "valid",
+      "probabilities": [
+        1.46e-19,
+        0.9993294,
+        0.0006706
+      ],
+      "native_scores": {
+        "tv": 5.180671807155507e-07,
+        "brier": 8.994087199999539e-07,
+        "log_loss": 0.0006708249527544659,
+        "zero_true_probability": false,
+        "correct": true,
+        "retained_size": 1,
+        "excluded": false,
+        "confident": true,
+        "confident_wrong": false
+      }
+    },
+    {
+      "provider": "anthropic",
+      "case_id": "dev-00-r1",
+      "native_status": "invalid_response"
+    }
+  ],
+  "cost_usd": 0.377645116,
+  "distinct_api_attempts": 12,
+  "new_attempts": 5
+}

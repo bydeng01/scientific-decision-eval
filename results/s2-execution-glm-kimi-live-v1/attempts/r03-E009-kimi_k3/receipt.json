@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789978546-uY3g0bATAupqAHkNCHie\",\"object\":\"chat.completion\",\"created\":1789978546,\"model\":\"moonshotai/kimi-k3\",\"provider\":\"Moonshot AI\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"shared_reference\\\",\\\"q2\\\":\\\"bracketing_average\\\"}\",\"refusal\":null,\"reasoning\":\"We need answer JSON only. Evidence says shared standards calibrated at INRIM, partial correlation. Eq5 INRIM calibration uncertainty of 10V standard in both chains. So q1 shared_reference. Q2 measures before and after and two values averaged reduce drift => bracketing_average. Need raw JSON.\",\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"We need answer JSON only. Evidence says shared standards calibrated at INRIM, partial correlation. Eq5 INRIM calibration uncertainty of 10V standard in both chains. So q1 shared_reference. Q2 measures before and after and two values averaged reduce drift => bracketing_average. Need raw JSON.\",\"format\":\"unknown\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1009,\"completion_tokens\":85,\"total_tokens\":1094,\"cost\":0.0022284,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":768,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0022284,\"upstream_inference_prompt_cost\":0.0009534,\"upstream_inference_completions_cost\":0.001275},\"completion_tokens_details\":{\"reasoning_tokens\":60,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "response_headers": {
+    "date": "Mon, 21 Sep 2026 08:15:49 GMT"
+  },
+  "latency_seconds": 5.438373542012414,
+  "transport_error": null,
+  "received_at": "2026-09-21T08:15:52.049365+00:00"
+}
